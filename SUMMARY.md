@@ -42,6 +42,7 @@
 ## Developer Resources
 
 * [API quickstart](developer-resources/api-quickstart.md)
+<!-- AUTO-GENERATED:START -->
 * [REST API](developer-resources/rest-api/README.md)
   * [Accounts API](developer-resources/rest-api/accounts-api/README.md)
     * [Account](developer-resources/rest-api/accounts-api/account/README.md)
@@ -852,6 +853,7 @@
     * [Task Log](developer-resources/rest-api/task-api/task-log/README.md)
       * [Get task logs](developer-resources/rest-api/task-api/task-log/get-task-logs.md)
   * [Download OpenAPI specification](https://api.platform.softwareone.com/public/v1/openapi.json)
+<!-- AUTO-GENERATED:END -->
 * [API usage & reference](developer-resources/api-usage-and-reference/README.md)
   * [Resource Query Language](developer-resources/api-usage-and-reference/resource-query-language/README.md)
     * [RQL advanced tips](developer-resources/api-usage-and-reference/resource-query-language/rql-advanced-tips.md)
