@@ -1,162 +1,162 @@
-# Billing Api
+# Billing API
 
 You can also perform additional operations, including:
 
-*Retrieves aggregated billing analytics data.
+*  Retrieves aggregated billing analytics data.
 
-*Retrieves a specific credit memo attachment by its ID.
+*  Retrieves a specific credit memo attachment by its ID.
 
-*Updates an existing credit memo attachment.
+*  Updates an existing credit memo attachment.
 
-*Deletes an individual credit memo attachment.
+*  Deletes an individual credit memo attachment.
 
-*Retrieves a list of credit memo attachments.
+*  Retrieves a list of credit memo attachments.
 
-*Creates a new credit memo attachment.
+*  Creates a new credit memo attachment.
 
-*Creates new credit memos.
+*  Creates new credit memos.
 
-*Retrieves a specific custom ledger attachment by its ID.
+*  Retrieves a specific custom ledger attachment by its ID.
 
-*Updates an existing custom ledger attachment.
+*  Updates an existing custom ledger attachment.
 
-*Deletes a custom ledger attachment.
+*  Deletes a custom ledger attachment.
 
-*Retrieves a list of custom ledger attachments.
+*  Retrieves a list of custom ledger attachments.
 
-*Creates a new custom ledger attachment.
+*  Creates a new custom ledger attachment.
 
-*Retrieves a specific charge by its ID.
+*  Retrieves a specific charge by its ID.
 
-*Retrieves a list of charges for a specific custom ledger.
+*  Retrieves a list of charges for a specific custom ledger.
 
-*Creates a new custom ledger.
+*  Creates a new custom ledger.
 
-*Updates an existing custom ledger.
+*  Updates an existing custom ledger.
 
-*Deletes a custom ledger by ID.
+*  Deletes a custom ledger by ID.
 
-*Uploads a file for a specific custom ledger.
+*  Uploads a file for a specific custom ledger.
 
-*Accepts a custom ledger.
+*  Accepts a custom ledger.
 
-*Queues a custom ledger for ERP integration.
+*  Queues a custom ledger for ERP integration.
 
-*Retrieves a specific invoice attachment by its ID.
+*  Retrieves a specific invoice attachment by its ID.
 
-*Updates an existing invoice attachment.
+*  Updates an existing invoice attachment.
 
-*Deletes an invoice attachment.
+*  Deletes an invoice attachment.
 
-*Retrieves a list of invoice attachments.
+*  Retrieves a list of invoice attachments.
 
-*Creates a new invoice attachment.
+*  Creates a new invoice attachment.
 
-*Creates new invoices.
+*  Creates new invoices.
 
-*Retrieves a specific journal attachment by its ID.
+*  Retrieves a specific journal attachment by its ID.
 
-*Updates an existing journal attachment.
+*  Updates an existing journal attachment.
 
-*Deletes a journal attachment.
+*  Deletes a journal attachment.
 
-*Retrieves a list of journal attachments.
+*  Retrieves a list of journal attachments.
 
-*Creates a new journal attachment.
+*  Creates a new journal attachment.
 
-*Retrieves a specific charge by its ID.
+*  Retrieves a specific charge by its ID.
 
-*Retrieves a list of charges for a specific journal.
+*  Retrieves a list of charges for a specific journal.
 
-*Matches a charge to a subscription.
+*  Matches a charge to a subscription.
 
-*Ignores a charge.
+*  Ignores a charge.
 
-*Resets a charge.
+*  Resets a charge.
 
-*Creates a new journal.
+*  Creates a new journal.
 
-*Updates an existing journal.
+*  Updates an existing journal.
 
-*Deletes the specified journal.
+*  Deletes the specified journal.
 
-*Uploads a journal file.
+*  Uploads a journal file.
 
-*Regenerates a journal.
+*  Regenerates a journal.
 
-*Submits a journal for processing.
+*  Submits a journal for processing.
 
-*Enquires the journal.
+*  Enquires the journal.
 
-*Accepts a journal.
+*  Accepts a journal.
 
-*Resets a journal.
+*  Resets a journal.
 
-*Recalculates a journal.
+*  Recalculates a journal.
 
-*Retrieves a list of sellers for a specific journal.
+*  Retrieves a list of sellers for a specific journal.
 
-*Retrieves a specific ledger attachment by its ID.
+*  Retrieves a specific ledger attachment by its ID.
 
-*Updates an existing ledger attachment.
+*  Updates an existing ledger attachment.
 
-*Deletes a ledger attachment.
+*  Deletes a ledger attachment.
 
-*Retrieves a list of ledger attachments.
+*  Retrieves a list of ledger attachments.
 
-*Creates a new ledger attachment.
+*  Creates a new ledger attachment.
 
-*Retrieves a specific charge by its ID.
+*  Retrieves a specific charge by its ID.
 
-*Retrieves a list of charges for a specific ledger.
+*  Retrieves a list of charges for a specific ledger.
 
-*Updates a ledger.
+*  Updates a ledger.
 
-*Recalculates a ledger.
+*  Recalculates a ledger.
 
-*Accepts a ledger.
+*  Accepts a ledger.
 
-*Queues a ledger for ERP integration.
+*  Queues a ledger for ERP integration.
 
-*Creates a new manual override.
+*  Creates a new manual override.
 
-*Updates an existing manual override.
+*  Updates an existing manual override.
 
-*Retrieves a specific statement attachment by its ID.
+*  Retrieves a specific statement attachment by its ID.
 
-*Updates an existing statement attachment.
+*  Updates an existing statement attachment.
 
-*Deletes a statement attachment.
+*  Deletes a statement attachment.
 
-*Retrieves a list of statement attachments.
+*  Retrieves a list of statement attachments.
 
-*Creates a new statement attachment.
+*  Creates a new statement attachment.
 
-*Retrieves a specific charge by its ID.
+*  Retrieves a specific charge by its ID.
 
-*Retrieves a list of charges for a specific statement.
+*  Retrieves a list of charges for a specific statement.
 
-*Creates a new statement.
+*  Creates a new statement.
 
-*Updates an existing statement.
+*  Updates an existing statement.
 
-*Cancels a statement.
+*  Cancels a statement.
 
-*Marks a statement as error.
+*  Marks a statement as error.
 
-*Issues a statement.
+*  Issues a statement.
 
-*Sets statement to pending.
+*  Sets statement to pending.
 
-*Queues a statement.
+*  Queues a statement.
 
-*Retries a failed statement.
+*  Retries a failed statement.
 
-*Recalculates a statement.
+*  Recalculates a statement.
 
-*Adds a child statement to a consolidated parent statement.
+*  Adds a child statement to a consolidated parent statement.
 
-*Removes a child statement from a consolidated parent statement.
+*  Removes a child statement from a consolidated parent statement.
 
 
 ## Before you start
@@ -170,7 +170,7 @@ Review the shared API docs before you work with currency resources.
 
 ## Core concepts
 
-The Billing Api is built around the following core resources:
+The Billing API is built around the following core resources:
 
 *  **CreditMemoAttachment**  - Represents an attachment associated with a credit memo in the billing system.
 

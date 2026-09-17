@@ -1,108 +1,108 @@
-# Commerce Api
+# Commerce API
 
 You can also perform additional operations, including:
 
-*Creates a new agreement.
+*  Creates a new agreement.
 
-*Updates an existing agreement.
+*  Updates an existing agreement.
 
-*Renders an agreement template.
+*  Renders an agreement template.
 
-*Renders an agreement template.
+*  Renders an agreement template.
 
-*Lists attachments for the specified agreement.
+*  Lists attachments for the specified agreement.
 
-*Creates a new attachment for an agreement.
+*  Creates a new attachment for an agreement.
 
-*Gets an attachment by id or redirects to its download.
+*  Gets an attachment by id or redirects to its download.
 
-*Updates an existing agreement attachment.
+*  Updates an existing agreement attachment.
 
-*Deletes an agreement attachment.
+*  Deletes an agreement attachment.
 
-*Creates a new asset.
+*  Creates a new asset.
 
-*Updates an existing asset.
+*  Updates an existing asset.
 
-*Terminates an existing asset.
+*  Terminates an existing asset.
 
-*Renders an asset template.
+*  Renders an asset template.
 
-*Lists all agreement lines across the marketplace.
+*  Lists all agreement lines across the marketplace.
 
-*Lists agreement lines for the specified agreement.
+*  Lists agreement lines for the specified agreement.
 
-*Lists agreement lines for the specified subscription.
+*  Lists agreement lines for the specified subscription.
 
-*Lists order lines for the specified order.
+*  Lists order lines for the specified order.
 
-*Lists agreement lines for the specified asset.
+*  Lists agreement lines for the specified asset.
 
-*Lists assets for the specified order.
+*  Lists assets for the specified order.
 
-*Creates a new asset for the order.
+*  Creates a new asset for the order.
 
-*Gets an order asset by id.
+*  Gets an order asset by id.
 
-*Updates an existing order asset.
+*  Updates an existing order asset.
 
-*Deletes an existing order asset.
+*  Deletes an existing order asset.
 
-*Renders an order asset template.
+*  Renders an order asset template.
 
-*Creates a new order for an agreement or creates a purchase order with a new agreement.
+*  Creates a new order for an agreement or creates a purchase order with a new agreement.
 
-*Updates an order. Immutable fields such as state and agreement assignment cannot be changed.
+*  Updates an order. Immutable fields such as state and agreement assignment cannot be changed.
 
-*Deletes an order. Only draft orders can be deleted.
+*  Deletes an order. Only draft orders can be deleted.
 
-*Places an order and sets its status to processing.
+*  Places an order and sets its status to processing.
 
-*Query's an order, returning it to the client for updates.
+*  Query's an order, returning it to the client for updates.
 
-*Completes an order and updates the related agreement.
+*  Completes an order and updates the related agreement.
 
-*Quotes an order.
+*  Quotes an order.
 
-*Fails an order and sets its status to failed.
+*  Fails an order and sets its status to failed.
 
-*Validates an order by invoking the vendor connector validation workflow.
+*  Validates an order by invoking the vendor connector validation workflow.
 
-*Renders an order template.
+*  Renders an order template.
 
-*Renders an order template.
+*  Renders an order template.
 
-*Sends an order notification to a user.
+*  Sends an order notification to a user.
 
-*Lists subscriptions for the specified order.
+*  Lists subscriptions for the specified order.
 
-*Creates a new subscription for the order.
+*  Creates a new subscription for the order.
 
-*Gets an order subscription by id.
+*  Gets an order subscription by id.
 
-*Updates an existing order subscription.
+*  Updates an existing order subscription.
 
-*Deletes an order subscription.
+*  Deletes an order subscription.
 
-*Renders an order subscription template.
+*  Renders an order subscription template.
 
-*Gets split billing allocations for an agreement.
+*  Gets split billing allocations for an agreement.
 
-*Activates split billing for an agreement.
+*  Activates split billing for an agreement.
 
-*Updates split billing allocations for an agreement.
+*  Updates split billing allocations for an agreement.
 
-*Gets split billing allocations for a subscription.
+*  Gets split billing allocations for a subscription.
 
-*Updates split billing allocations for a subscription.
+*  Updates split billing allocations for a subscription.
 
-*Creates a new subscription.
+*  Creates a new subscription.
 
-*Updates an existing subscription.
+*  Updates an existing subscription.
 
-*Terminates an existing subscription.
+*  Terminates an existing subscription.
 
-*Renders a subscription template.
+*  Renders a subscription template.
 
 
 ## Before you start
@@ -116,7 +116,7 @@ Review the shared API docs before you work with currency resources.
 
 ## Core concepts
 
-The Commerce Api is built around the following core resources:
+The Commerce API is built around the following core resources:
 
 *  **Agreement**  - 
 

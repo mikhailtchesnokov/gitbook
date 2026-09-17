@@ -1,4 +1,4 @@
-# Integration Api
+# Integration API
 
 You can also perform additional operations, including:
 
@@ -14,7 +14,7 @@ Review the shared API docs before you work with currency resources.
 
 ## Core concepts
 
-The Integration Api is built around the following core resources:
+The Integration API is built around the following core resources:
 
 *  **ExtensionCategory**  - 
 

@@ -1,18 +1,18 @@
-# Spotlight Api
+# Spotlight API
 
 You can also perform additional operations, including:
 
-*Get spotlight objects for the current account and buyer group
+*  Get spotlight objects for the current account and buyer group
 
-*Refresh spotlight cache for the current account and buyer group
+*  Refresh spotlight cache for the current account and buyer group
 
-*Refresh spotlight cache for a specific object in the current context
+*  Refresh spotlight cache for a specific object in the current context
 
-*Get a list of spotlight queries
+*  Get a list of spotlight queries
 
-*Retrieve a spotlight query by ID
+*  Retrieve a spotlight query by ID
 
-*Update a spotlight query
+*  Update a spotlight query
 
 
 ## Before you start
@@ -26,7 +26,7 @@ Review the shared API docs before you work with currency resources.
 
 ## Core concepts
 
-The Spotlight Api is built around the following core resources:
+The Spotlight API is built around the following core resources:
 
 *  **SpotlightQuery**  - 
 

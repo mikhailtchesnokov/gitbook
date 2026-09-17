@@ -1,30 +1,30 @@
-# System Api
+# System API
 
 You can also perform additional operations, including:
 
-*Get a list of tasks
+*  Get a list of tasks
 
-*Create a task
+*  Create a task
 
-*Retrieve a task by ID
+*  Retrieve a task by ID
 
-*Update a task
+*  Update a task
 
-*Get a task result
+*  Get a task result
 
-*Get task logs
+*  Get task logs
 
-*Create a task log
+*  Create a task log
 
-*Transition a task to Processing
+*  Transition a task to Processing
 
-*Transition a task to Rescheduled
+*  Transition a task to Rescheduled
 
-*Transition a task to Queued
+*  Transition a task to Queued
 
-*Transition a task to Completed
+*  Transition a task to Completed
 
-*Transition a task to Failed
+*  Transition a task to Failed
 
 
 ## Before you start
@@ -38,7 +38,7 @@ Review the shared API docs before you work with currency resources.
 
 ## Core concepts
 
-The System Api is built around the following core resources:
+The System API is built around the following core resources:
 
 *  **Task**  - The Task represents the state of an asynchronous, usually long running operation.
 

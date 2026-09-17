@@ -1,98 +1,98 @@
-# Notifications Api
+# Notifications API
 
 You can also perform additional operations, including:
 
-*Creates a new message batch with attachments.
+*  Creates a new message batch with attachments.
 
-*Gets a list of resources.
+*  Gets a list of resources.
 
-*Gets a batch attachment.
+*  Gets a batch attachment.
 
-*Gets a resource by ID.
+*  Gets a resource by ID.
 
-*Creates a new category.
+*  Creates a new category.
 
-*Updates a category.
+*  Updates a category.
 
-*Deletes a category.
+*  Deletes a category.
 
-*Unpublishes a category.
+*  Unpublishes a category.
 
-*Publishes a category.
+*  Publishes a category.
 
-*Blocks a contact.
+*  Blocks a contact.
 
-*Creates a new contact.
+*  Creates a new contact.
 
-*Gets a list of resources.
+*  Gets a list of resources.
 
-*Unblocks a contact.
+*  Unblocks a contact.
 
-*Updates an existing contact.
+*  Updates an existing contact.
 
-*Deletes a contact.
+*  Deletes a contact.
 
-*Gets a resource by ID.
+*  Gets a resource by ID.
 
-*Gets contacts for a category and account.
+*  Gets contacts for a category and account.
 
-*Gets a list of resources.
+*  Gets a list of resources.
 
-*Gets a resource by ID.
+*  Gets a resource by ID.
 
-*Creates a new footer.
+*  Creates a new footer.
 
-*Gets a list of resources.
+*  Gets a list of resources.
 
-*Updates a footer.
+*  Updates a footer.
 
-*Deletes a footer.
+*  Deletes a footer.
 
-*Gets a resource by ID.
+*  Gets a resource by ID.
 
-*Gets a list of resources.
+*  Gets a list of resources.
 
-*Gets a resource by ID.
+*  Gets a resource by ID.
 
-*Activates a notification template.
+*  Activates a notification template.
 
-*Creates a notification template.
+*  Creates a notification template.
 
-*Deletes a notification template.
+*  Deletes a notification template.
 
-*Updates a notification template.
+*  Updates a notification template.
 
-*Disables a notification template.
+*  Disables a notification template.
 
-*Updates subscriber recipients.
+*  Updates subscriber recipients.
 
-*Gets a resource by ID.
+*  Gets a resource by ID.
 
-*Enables a subscriber.
+*  Enables a subscriber.
 
-*Disables a subscriber.
+*  Disables a subscriber.
 
-*Gets a list of resources.
+*  Gets a list of resources.
 
-*Activates a template variant.
+*  Activates a template variant.
 
-*Creates a template variant.
+*  Creates a template variant.
 
-*Deletes a template variant.
+*  Deletes a template variant.
 
-*Updates a template variant.
+*  Updates a template variant.
 
-*Disables a template variant.
+*  Disables a template variant.
 
-*Upsert webhooks
+*  Upsert webhooks
 
-*Updates webhook.
+*  Updates webhook.
 
-*Deletes webhook.
+*  Deletes webhook.
 
-*Enables webhook.
+*  Enables webhook.
 
-*Disables webhook.
+*  Disables webhook.
 
 
 ## Before you start
@@ -106,7 +106,7 @@ Review the shared API docs before you work with currency resources.
 
 ## Core concepts
 
-The Notifications Api is built around the following core resources:
+The Notifications API is built around the following core resources:
 
 *  **Batch**  - Represents a batch of notification messages that share common properties.
 

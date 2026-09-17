@@ -1,10 +1,10 @@
-# Program Api
+# Program API
 
 You can also perform additional operations, including:
 
-*Renders certificate template
+*  Renders certificate template
 
-*Renders enrollment template
+*  Renders enrollment template
 
 
 ## Before you start
@@ -18,7 +18,7 @@ Review the shared API docs before you work with currency resources.
 
 ## Core concepts
 
-The Program Api is built around the following core resources:
+The Program API is built around the following core resources:
 
 *  **Certificate**  - 
 

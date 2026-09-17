@@ -1,100 +1,100 @@
-# PublicCatalog Api
+# PublicCatalog API
 
 You can also perform additional operations, including:
 
-*Gets a single category by its identifier.
+*  Gets a single category by its identifier.
 
-*Updates an existing category record in the public catalog.
+*  Updates an existing category record in the public catalog.
 
-*Soft deletes an category record from the public catalog.
+*  Soft deletes an category record from the public catalog.
 
-*Creates a new category record in the public catalog.
+*  Creates a new category record in the public catalog.
 Accepts a request with necessary details to create the category.
 
-*Publishes an category by updating its status to published.
+*  Publishes an category by updating its status to published.
 
-*Unpublishes a specific category identified by its ID. This operation
+*  Unpublishes a specific category identified by its ID. This operation
 sets the category record to an unpublished state in the system.
 
-*Gets a single industry by its identifier.
+*  Gets a single industry by its identifier.
 
-*Updates an existing industry record in the public catalog.
+*  Updates an existing industry record in the public catalog.
 
-*Soft deletes an industry record from the public catalog.
+*  Soft deletes an industry record from the public catalog.
 
-*Creates a new industry record in the public catalog.
+*  Creates a new industry record in the public catalog.
 Accepts a request with necessary details to create the industry.
 
-*Publishes an industry by updating its status to published.
+*  Publishes an industry by updating its status to published.
 
-*Unpublishes a specific industry identified by its ID. This operation
+*  Unpublishes a specific industry identified by its ID. This operation
 sets the industry record to an unpublished state in the system.
 
-*Lists attachments for the specified product profile.
+*  Lists attachments for the specified product profile.
 
-*Creates a new attachment for an product profile.
+*  Creates a new attachment for an product profile.
 
-*Gets an attachment by id or redirects to its download.
+*  Gets an attachment by id or redirects to its download.
 
-*Updates an existing product profile attachment.
+*  Updates an existing product profile attachment.
 
-*Deletes an product profile attachment.
+*  Deletes an product profile attachment.
 
-*Represent Get media for product profile.
+*  Represent Get media for product profile.
 
-*Represent Add/Create media for product profile.
+*  Represent Add/Create media for product profile.
 
-*Represents get by media id.
+*  Represents get by media id.
 
-*Update media for product profile.
+*  Update media for product profile.
 
-*Delete media for product profile
+*  Delete media for product profile
 
-*Download Image.
+*  Download Image.
 
-*Gets a single product profile by its identifier.
+*  Gets a single product profile by its identifier.
 
-*Updates an existing product-profile record in the public catalog.
+*  Updates an existing product-profile record in the public catalog.
 
-*Soft deletes an product-profile record from the public catalog.
+*  Soft deletes an product-profile record from the public catalog.
 
-*Creates a new product-profile record in the public catalog.
+*  Creates a new product-profile record in the public catalog.
 Accepts a request with necessary details to create the product profiles.
 
-*Publishes an product-profile by updating its status to published.
+*  Publishes an product-profile by updating its status to published.
 
-*Unpublishes a specific product-profile identified by its ID. This operation
+*  Unpublishes a specific product-profile identified by its ID. This operation
 sets the product profiles record to an unpublished state in the system.
 
-*Retrieves the icon associated with a product-profile record.
+*  Retrieves the icon associated with a product-profile record.
 
-*Gets a single segment by its identifier.
+*  Gets a single segment by its identifier.
 
-*Updates an existing segment record in the public catalog.
+*  Updates an existing segment record in the public catalog.
 
-*Deletes a segment from the public catalog.
+*  Deletes a segment from the public catalog.
 
-*Creates a new segment record in the public catalog.
+*  Creates a new segment record in the public catalog.
 
-*Publishes a segment in the public catalog.
+*  Publishes a segment in the public catalog.
 
-*Unpublishes a segment in the public catalog.
+*  Unpublishes a segment in the public catalog.
 
-*Gets a single vendor profile by its identifier.
+*  Gets a single vendor profile by its identifier.
 
-*Updates an existing vendor-profile record in the public catalog.
+*  Updates an existing vendor-profile record in the public catalog.
 
-*Soft deletes an vendor-profile record from the public catalog.
+*  Soft deletes an vendor-profile record from the public catalog.
 
-*Creates a new vendor-profile record in the public catalog.
+*  Creates a new vendor-profile record in the public catalog.
 Accepts a request with necessary details to create the vendor-profiles.
 
-*Publishes an vendor-profile by updating its status to published.
+*  Publishes an vendor-profile by updating its status to published.
 
-*Unpublishes a specific vendor-profile identified by its ID. This operation
+*  Unpublishes a specific vendor-profile identified by its ID. This operation
 sets the vendor-profiles record to an unpublished state in the system.
 
-*Retrieves the icon associated with a vendor-profile record.
+*  Retrieves the icon associated with a vendor-profile record.
 
 
 ## Before you start
@@ -108,7 +108,7 @@ Review the shared API docs before you work with currency resources.
 
 ## Core concepts
 
-The PublicCatalog Api is built around the following core resources:
+The PublicCatalog API is built around the following core resources:
 
 *  **Category**  - Represents a notification category that can be used to organize and filter notifications.
 

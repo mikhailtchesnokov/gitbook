@@ -1,162 +1,162 @@
-# Accounts Api
+# Accounts API
 
 You can also perform additional operations, including:
 
-*Gets account notification settings.
+*  Gets account notification settings.
 
-*Updates account notification settings.
+*  Updates account notification settings.
 
-*List accounts
+*  List accounts
 
-*Create account
+*  Create account
 
-*Get account by ID
+*  Get account by ID
 
-*Update account
+*  Update account
 
-*Enable account
+*  Enable account
 
-*Disable account
+*  Disable account
 
-*Activate account
+*  Activate account
 
-*Deactivate account
+*  Deactivate account
 
-*Validate account
+*  Validate account
 
-*Get account icon
+*  Get account icon
 
-*List account users
+*  List account users
 
-*Create user (invite or add) inviting him into the account
+*  Create user (invite or add) inviting him into the account
 
-*Get account user by ID
+*  Get account user by ID
 
-*Update user in account
+*  Update user in account
 
-*Delete user from account
+*  Delete user from account
 
-*Add account user to group
+*  Add account user to group
 
-*Change account user groups
+*  Change account user groups
 
-*Remove account user from group
+*  Remove account user from group
 
-*Resend invite
+*  Resend invite
 
-*Send new invite
+*  Send new invite
 
-*Accept invite
+*  Accept invite
 
-*List API tokens
+*  List API tokens
 
-*Create API token
+*  Create API token
 
-*Get API token by ID
+*  Get API token by ID
 
-*Update API token
+*  Update API token
 
-*Delete API token
+*  Delete API token
 
-*Enable API token
+*  Enable API token
 
-*Disable API token
+*  Disable API token
 
-*List cloud tenants
+*  List cloud tenants
 
-*Create cloud tenant
+*  Create cloud tenant
 
-*Get cloud tenant by ID
+*  Get cloud tenant by ID
 
-*Delete cloud tenant
+*  Delete cloud tenant
 
-*Update cloud tenant
+*  Update cloud tenant
 
-*List ERP links
+*  List ERP links
 
-*Get ERP link by ID
+*  Get ERP link by ID
 
-*Update ERP link
+*  Update ERP link
 
-*Block ERP link
+*  Block ERP link
 
-*Unblock ERP link
+*  Unblock ERP link
 
-*List licensees
+*  List licensees
 
-*Create licensee
+*  Create licensee
 
-*Get licensee by ID
+*  Get licensee by ID
 
-*Update licensee
+*  Update licensee
 
-*Delete licensee
+*  Delete licensee
 
-*Enable licensee
+*  Enable licensee
 
-*Disable licensee
+*  Disable licensee
 
-*Get licensee icon
+*  Get licensee icon
 
-*List modules
+*  List modules
 
-*Get module by ID
+*  Get module by ID
 
-*List sellers
+*  List sellers
 
-*Create seller
+*  Create seller
 
-*Get seller by ID
+*  Get seller by ID
 
-*Update seller
+*  Update seller
 
-*Delete seller
+*  Delete seller
 
-*Activate seller
+*  Activate seller
 
-*Deactivate seller
+*  Deactivate seller
 
-*Disable seller
+*  Disable seller
 
-*Get seller icon
+*  Get seller icon
 
-*List service identities
+*  List service identities
 
-*Get service identity by ID
+*  Get service identity by ID
 
-*List user groups
+*  List user groups
 
-*Create user group
+*  Create user group
 
-*Get user group by ID
+*  Get user group by ID
 
-*Update user group
+*  Update user group
 
-*Delete user group
+*  Delete user group
 
-*List users
+*  List users
 
-*Get user by ID or unique filter
+*  Get user by ID or unique filter
 
-*Update user (multipart form)
+*  Update user (multipart form)
 
-*Delete user
+*  Delete user
 
-*Set user password
+*  Set user password
 
-*Unblock user
+*  Unblock user
 
-*Block user
+*  Block user
 
-*Check whether SSO is enabled (deprecated)
+*  Check whether SSO is enabled (deprecated)
 
-*Check SSO status
+*  Check SSO status
 
-*Get user icon
+*  Get user icon
 
-*List accounts associated with the user
+*  List accounts associated with the user
 
-*Update user's account settings
+*  Update user's account settings
 
 
 ## Before you start
@@ -170,7 +170,7 @@ Review the shared API docs before you work with currency resources.
 
 ## Core concepts
 
-The Accounts Api is built around the following core resources:
+The Accounts API is built around the following core resources:
 
 *  **Account**  - 
 

@@ -1,50 +1,50 @@
-# Procurement Api
+# Procurement API
 
 You can also perform additional operations, including:
 
-*Get a list of ERP items
+*  Get a list of ERP items
 
-*Upsert ERP items
+*  Upsert ERP items
 
-*Delete ERP items
+*  Delete ERP items
 
-*Retrieve an ERP item by ID
+*  Retrieve an ERP item by ID
 
-*Get a list of sales orders
+*  Get a list of sales orders
 
-*Upsert sales orders
+*  Upsert sales orders
 
-*Delete sales orders
+*  Delete sales orders
 
-*Retrieve a sales order by ID
+*  Retrieve a sales order by ID
 
-*Finalize a sales order
+*  Finalize a sales order
 
-*Retry a sales order will try to finalize order again if the order is in an error status.
+*  Retry a sales order will try to finalize order again if the order is in an error status.
 
-*Get sales order attachments
+*  Get sales order attachments
 
-*Download a sales order attachment
+*  Download a sales order attachment
 
-*Get a list of sales quotes
+*  Get a list of sales quotes
 
-*Upsert sales quotes
+*  Upsert sales quotes
 
-*Delete sales quotes
+*  Delete sales quotes
 
-*Retrieve a sales quote by ID
+*  Retrieve a sales quote by ID
 
-*Finalize a sales quote
+*  Finalize a sales quote
 
-*Reject a sales quote
+*  Reject a sales quote
 
-*Retry a sales quote will try to finalize or accept the quote again if the quote is in an error status.
+*  Retry a sales quote will try to finalize or accept the quote again if the quote is in an error status.
 
-*Accept a sales quote
+*  Accept a sales quote
 
-*Get sales quote attachments
+*  Get sales quote attachments
 
-*Download a sales quote attachment
+*  Download a sales quote attachment
 
 
 ## Before you start
@@ -58,7 +58,7 @@ Review the shared API docs before you work with currency resources.
 
 ## Core concepts
 
-The Procurement Api is built around the following core resources:
+The Procurement API is built around the following core resources:
 
 *  **ErpItem**  - 
 

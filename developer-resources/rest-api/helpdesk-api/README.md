@@ -1,186 +1,186 @@
-# Helpdesk Api
+# Helpdesk API
 
 You can also perform additional operations, including:
 
-*List all answers for a chat
+*  List all answers for a chat
 
-*Create a new answer from a published form
+*  Create a new answer from a published form
 
-*Retrieve an answer by ID
+*  Retrieve an answer by ID
 
-*Update answer parameter values
+*  Update answer parameter values
 
-*Soft-delete an answer
+*  Soft-delete an answer
 
-*Validates answer parameter values
+*  Validates answer parameter values
 
-*Submit an answer for review
+*  Submit an answer for review
 
-*Accept the answer and lock all parameters
+*  Accept the answer and lock all parameters
 
-*Request changes from the reporter
+*  Request changes from the reporter
 
-*Get a list of chats
+*  Get a list of chats
 
-*Create a new Chat
+*  Create a new Chat
 
-*Retrieve a chat by ID
+*  Retrieve a chat by ID
 
-*Update an existing Chat
+*  Update an existing Chat
 
-*Get a download redirect for a chat icon
+*  Get a download redirect for a chat icon
 
-*Get a list of chat attachments
+*  Get a list of chat attachments
 
-*Add attachments to an existing chat entry
+*  Add attachments to an existing chat entry
 
-*Retrieve a chat attachment by ID
+*  Retrieve a chat attachment by ID
 
-*Update a chat attachment data
+*  Update a chat attachment data
 
-*Delete a chat attachment by ID
+*  Delete a chat attachment by ID
 
-*Get a list of chat participants
+*  Get a list of chat participants
 
-*Add new chat participants
+*  Add new chat participants
 
-*Get a chat participant
+*  Get a chat participant
 
-*Update an existing participant.
+*  Update an existing participant.
 
-*Remove a participant from the chat
+*  Remove a participant from the chat
 
-*Get a list of feedbacks
+*  Get a list of feedbacks
 
-*Create a new feedback entry
+*  Create a new feedback entry
 
-*Retrieve a feedback by ID
+*  Retrieve a feedback by ID
 
-*Update an existing feedback
+*  Update an existing feedback
 
-*Delete feedback by ID
+*  Delete feedback by ID
 
-*Update feedback review status
+*  Update feedback review status
 
-*Get attachments for a feedback entry
+*  Get attachments for a feedback entry
 
-*Add attachments to an existing feedback entry
+*  Add attachments to an existing feedback entry
 
-*Get attachment for a feedback entry
+*  Get attachment for a feedback entry
 
-*Update a feedback attachment
+*  Update a feedback attachment
 
-*Delete a feedback attachment by ID
+*  Delete a feedback attachment by ID
 
-*Get a download redirect for a feedback attachment
+*  Get a download redirect for a feedback attachment
 
-*List all parameters in a form
+*  List all parameters in a form
 
-*Retrieve a parameter within a form by ID
+*  Retrieve a parameter within a form by ID
 
-*Get a list of forms
+*  Get a list of forms
 
-*Create a new Form
+*  Create a new Form
 
-*Retrieve a form by ID
+*  Retrieve a form by ID
 
-*Update an existing form
+*  Update an existing form
 
-*Delete a Form
+*  Delete a Form
 
-*Publish a Form
+*  Publish a Form
 
-*Unpublish a Form
+*  Unpublish a Form
 
-*Get a list of chat links
+*  Get a list of chat links
 
-*Create a new Link
+*  Create a new Link
 
-*Update a chat link
+*  Update a chat link
 
-*Delete a chat link by ID
+*  Delete a chat link by ID
 
-*Get a list of messages for a chat
+*  Get a list of messages for a chat
 
-*Create a new message in a chat
+*  Create a new message in a chat
 
-*Retrieve a message by ID
+*  Retrieve a message by ID
 
-*Update an existing message
+*  Update an existing message
 
-*Delete a message by ID
+*  Delete a message by ID
 
-*List parameters in a parameter group
+*  List parameters in a parameter group
 
-*Add parameter to a parameter group
+*  Add parameter to a parameter group
 
-*Retrieve a parameter within parameter group by ID
+*  Retrieve a parameter within parameter group by ID
 
-*Update parameter display order within a group
+*  Update parameter display order within a group
 
-*Remove parameter from a parameter group
+*  Remove parameter from a parameter group
 
-*List parameter groups in a form
+*  List parameter groups in a form
 
-*Add parameter group to a form
+*  Add parameter group to a form
 
-*Retrieve a parameter group within a form by ID
+*  Retrieve a parameter group within a form by ID
 
-*Update parameter group display order within a form
+*  Update parameter group display order within a form
 
-*Remove parameter group from a form
+*  Remove parameter group from a form
 
-*Create a new parameter definition.
+*  Create a new parameter definition.
 
-*Updates existing parameter definition.
+*  Updates existing parameter definition.
 
-*Deletes existing parameter definition.
+*  Deletes existing parameter definition.
 
-*Create a new parameter group
+*  Create a new parameter group
 
-*Update an existing parameter group
+*  Update an existing parameter group
 
-*Delete an existing parameter group
+*  Delete an existing parameter group
 
-*List forms linked to a parameter group
+*  List forms linked to a parameter group
 
-*Retrieve a form linked to a parameter group by ID
+*  Retrieve a form linked to a parameter group by ID
 
-*Get a list of queues
+*  Get a list of queues
 
-*Create a new queue
+*  Create a new queue
 
-*Retrieve a queue by ID
+*  Retrieve a queue by ID
 
-*Update an existing queue
+*  Update an existing queue
 
-*Delete an existing queue
+*  Delete an existing queue
 
-*Activate a queue
+*  Activate a queue
 
-*Disable a queue
+*  Disable a queue
 
-*Get a queue icon
+*  Get a queue icon
 
-*Get all parameters of a queue
+*  Get all parameters of a queue
 
-*Add a parameter to a queue
+*  Add a parameter to a queue
 
-*Get a single queue parameter
+*  Get a single queue parameter
 
-*Update a queue parameter
+*  Update a queue parameter
 
-*Remove a parameter from a queue
+*  Remove a parameter from a queue
 
-*Creates a new support case.
+*  Creates a new support case.
 
-*Update an existing support case
+*  Update an existing support case
 
-*Sets a support case to Mpt.Helpdesk.Models.Cases.SupportCaseStatus.Querying status.
+*  Sets a support case to Mpt.Helpdesk.Models.Cases.SupportCaseStatus.Querying status.
 
-*Sets a support case to Mpt.Helpdesk.Models.Cases.SupportCaseStatus.Processing status.
+*  Sets a support case to Mpt.Helpdesk.Models.Cases.SupportCaseStatus.Processing status.
 
-*Sets a support case to Mpt.Helpdesk.Models.Cases.SupportCaseStatus.Completed status.
+*  Sets a support case to Mpt.Helpdesk.Models.Cases.SupportCaseStatus.Completed status.
 
 
 ## Before you start
@@ -194,7 +194,7 @@ Review the shared API docs before you work with currency resources.
 
 ## Core concepts
 
-The Helpdesk Api is built around the following core resources:
+The Helpdesk API is built around the following core resources:
 
 *  **Answer**  - A form submission within a chat, containing parameter values filled by participants
 

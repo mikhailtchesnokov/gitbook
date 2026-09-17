@@ -46,7 +46,7 @@ Review the shared API docs before you work with currency resources.
 
 ## Core concepts
 
-The Exchange Api is built around the following core resources:
+The Exchange API is built around the following core resources:
 
 *  **Currency**  - Represents currency in exchange module.
 

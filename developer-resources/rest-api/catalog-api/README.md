@@ -1,4 +1,4 @@
-# Catalog Api
+# Catalog API
 
 You can also perform additional operations, including:
 
@@ -14,7 +14,7 @@ Review the shared API docs before you work with currency resources.
 
 ## Core concepts
 
-The Catalog Api is built around the following core resources:
+The Catalog API is built around the following core resources:
 
 *  **PricingPolicyAttachment**  - 
 

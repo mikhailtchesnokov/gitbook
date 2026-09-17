@@ -1,18 +1,18 @@
-# Audit Api
+# Audit API
 
 You can also perform additional operations, including:
 
-*Gets a list of audit event types.
+*  Gets a list of audit event types.
 
-*Retrieves an audit event type by ID.
+*  Retrieves an audit event type by ID.
 
-*Updates an event type.
+*  Updates an event type.
 
-*Creates a new audit record.
+*  Creates a new audit record.
 
-*Gets a list of audit records.
+*  Gets a list of audit records.
 
-*Retrieves an audit record by ID.
+*  Retrieves an audit record by ID.
 
 
 ## Before you start
@@ -26,7 +26,7 @@ Review the shared API docs before you work with currency resources.
 
 ## Core concepts
 
-The Audit Api is built around the following core resources:
+The Audit API is built around the following core resources:
 
 
 ## Browse collections
