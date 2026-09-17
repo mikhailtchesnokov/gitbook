@@ -24,7 +24,7 @@
 		</tr>
 		<tr>
 			<td><a href="./exchange-api/README.md">Exchange Api</a></td>
-			<td>Manage Currency, Pair, Rate 3</td>
+			<td>Manage Currency, Pair, Rate 4</td>
 			<td><a href="exchange-api2">exchange-api</a></td>
 		</tr>
 		<tr>
