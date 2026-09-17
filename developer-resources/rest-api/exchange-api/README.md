@@ -2,9 +2,9 @@
 
 You can also perform additional operations, including:
 
-*Gets a list of currencies.
+* Gets a list of currencies.
 
-*Creates a new currency.
+* Creates a new currency.
 
 *Retrieves a currency by ID.
 
