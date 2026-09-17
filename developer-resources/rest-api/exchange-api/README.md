@@ -1,38 +1,38 @@
-# Exchange Api
+# Exchange API
 
 You can also perform additional operations, including:
 
-* Gets a list of currencies.
+*  Gets a list of currencies.
 
-* Creates a new currency.
+*  Creates a new currency.
 
-*Retrieves a currency by ID.
+*  Retrieves a currency by ID.
 
-*Updates an existing currency.
+*  Updates an existing currency.
 
-*Deletes currency by ID.
+*  Deletes currency by ID.
 
-*Gets a download redirect for a currency icon.
+*  Gets a download redirect for a currency icon.
 
-*Gets a list of currency pairs.
+*  Gets a list of currency pairs.
 
-*Creates a new pair or pairs of currencies.
+*  Creates a new pair or pairs of currencies.
 
-*Updates pairs from bulk data.
+*  Updates pairs from bulk data.
 
-*Deletes multiple pairs from the body.
+*  Deletes multiple pairs from the body.
 
-*Retrieves a currency pair by ID.
+*  Retrieves a currency pair by ID.
 
-*Retrieves a rate by ID within a pair.
+*  Retrieves a rate by ID within a pair.
 
-*Gets a list of rates for a pair.
+*  Gets a list of rates for a pair.
 
-*Updates rates for a pair.
+*  Updates rates for a pair.
 
-*Creates a new rate.
+*  Creates a new rate.
 
-*Deletes rates from bulk data.
+*  Deletes rates from bulk data.
 
 
 ## Before you start
