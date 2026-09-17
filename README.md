@@ -19,7 +19,7 @@ layout:
     visible: true
 ---
 
-# Home 1
+# Home
 
 
 
