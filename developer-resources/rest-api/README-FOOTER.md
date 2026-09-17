@@ -1,3 +1,5 @@
+### Footer here
+
 <table data-search="false">
 	<thead>
 	<tr>
