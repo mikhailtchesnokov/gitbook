@@ -462,7 +462,7 @@
       * [List order subscriptions](developer-resources/rest-api/commerce-api/subscriptions/list-subscriptions-1.md)
       * [Get order subscription](developer-resources/rest-api/commerce-api/subscriptions/get-order-subscription.md)
       * [Remove order subscription](developer-resources/rest-api/commerce-api/subscriptions/remove-order-subscription.md)
-  * [Currency API](developer-resources/rest-api/currency-api/README.md)
+  * [Exchange API](developer-resources/rest-api/exchange-api/README.md)
     * [Currency](developer-resources/rest-api/currency-api/currency/README.md)
       * [Create currency](developer-resources/rest-api/currency-api/currency/create-currency.md)
       * [Update currency](developer-resources/rest-api/currency-api/currency/update-currency.md)

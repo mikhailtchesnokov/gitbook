@@ -23,9 +23,9 @@
 			<td><a href="public-catalog-api">public-catalog-api</a></td>
 		</tr>
 		<tr>
-			<td>[Exchange API](exchange-api/README.md)</td>
+			<td><a href="exchange-api/README.md">Exchange Api</a></td>
 			<td>Manage Currency, Pair, Rate 6</td>
-			<td><a href="exchange-api2">exchange-api</a></td>
+			<td><a href="exchange-api">exchange-api</a></td>
 		</tr>
 		<tr>
 			<td><a href="integration-api">Integration Api</a></td>
