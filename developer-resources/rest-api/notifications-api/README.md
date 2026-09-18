@@ -149,7 +149,7 @@ See the following sections to determine which roles are authorized to perform sp
 <tbody>
 	<tr>
 		<td>/public/v1/notifications/batches</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td>Gets a list of resources.</td>
 		<td>
 			<ul>
@@ -161,7 +161,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/notifications/batches/{batchId}/attachments/{attachmentId}</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td>Gets a batch attachment.</td>
 		<td>
 			<ul>
@@ -173,7 +173,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/notifications/batches/{id}</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td>Gets a resource by ID.</td>
 		<td>
 			<ul>
@@ -185,7 +185,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/notifications/batches</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td>Creates a new message batch with attachments.</td>
 		<td>
 			<ul>
@@ -214,7 +214,7 @@ See the following sections to determine which roles are authorized to perform sp
 <tbody>
 	<tr>
 		<td>/public/v1/notifications/categories</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td></td>
 		<td>
 			<ul>
@@ -226,7 +226,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/notifications/categories/{id}</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td></td>
 		<td>
 			<ul>
@@ -238,7 +238,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/notifications/categories</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td>Creates a new category.</td>
 		<td>
 			<ul>
@@ -250,7 +250,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/notifications/categories/{id}/unpublish</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td>Unpublishes a category.</td>
 		<td>
 			<ul>
@@ -262,7 +262,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/notifications/categories/{id}/publish</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td>Publishes a category.</td>
 		<td>
 			<ul>
@@ -274,7 +274,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/notifications/categories/{id}</td>
-		<td>Put</td>
+		<td>PUT</td>
 		<td>Updates a category.</td>
 		<td>
 			<ul>
@@ -286,7 +286,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/notifications/categories/{id}</td>
-		<td>Delete</td>
+		<td>DELETE</td>
 		<td>Deletes a category.</td>
 		<td>
 			<ul>
@@ -315,7 +315,7 @@ See the following sections to determine which roles are authorized to perform sp
 <tbody>
 	<tr>
 		<td>/public/v1/notifications/contacts</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td>Gets a list of resources.</td>
 		<td>
 			<ul>
@@ -327,7 +327,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/notifications/contacts/{id}</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td>Gets a resource by ID.</td>
 		<td>
 			<ul>
@@ -339,7 +339,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/notifications/accounts/{accountId}/categories/{categoryId}/contacts</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td>Gets contacts for a category and account.</td>
 		<td>
 			<ul>
@@ -351,7 +351,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/notifications/contacts/{id}/block</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td>Blocks a contact.</td>
 		<td>
 			<ul>
@@ -363,7 +363,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/notifications/contacts</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td>Creates a new contact.</td>
 		<td>
 			<ul>
@@ -375,7 +375,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/notifications/contacts/{id}/unblock</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td>Unblocks a contact.</td>
 		<td>
 			<ul>
@@ -387,7 +387,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/notifications/contacts/{id}</td>
-		<td>Put</td>
+		<td>PUT</td>
 		<td>Updates an existing contact.</td>
 		<td>
 			<ul>
@@ -399,7 +399,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/notifications/contacts/{id}</td>
-		<td>Delete</td>
+		<td>DELETE</td>
 		<td>Deletes a contact.</td>
 		<td>
 			<ul>
@@ -428,7 +428,7 @@ See the following sections to determine which roles are authorized to perform sp
 <tbody>
 	<tr>
 		<td>/public/v1/notifications/directories</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td>Gets a list of resources.</td>
 		<td>
 			<ul>
@@ -440,7 +440,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/notifications/directories/{id}</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td>Gets a resource by ID.</td>
 		<td>
 			<ul>
@@ -469,7 +469,7 @@ See the following sections to determine which roles are authorized to perform sp
 <tbody>
 	<tr>
 		<td>/public/v1/notifications/footers</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td>Gets a list of resources.</td>
 		<td>
 			<ul>
@@ -481,7 +481,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/notifications/footers/{id}</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td>Gets a resource by ID.</td>
 		<td>
 			<ul>
@@ -493,7 +493,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/notifications/footers</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td>Creates a new footer.</td>
 		<td>
 			<ul>
@@ -505,7 +505,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/notifications/footers/{id}</td>
-		<td>Put</td>
+		<td>PUT</td>
 		<td>Updates a footer.</td>
 		<td>
 			<ul>
@@ -517,7 +517,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/notifications/footers/{id}</td>
-		<td>Delete</td>
+		<td>DELETE</td>
 		<td>Deletes a footer.</td>
 		<td>
 			<ul>
@@ -546,7 +546,7 @@ See the following sections to determine which roles are authorized to perform sp
 <tbody>
 	<tr>
 		<td>/public/v1/notifications/messages</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td>Gets a list of resources.</td>
 		<td>
 			<ul>
@@ -558,7 +558,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/notifications/messages/{id}</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td>Gets a resource by ID.</td>
 		<td>
 			<ul>
@@ -587,7 +587,7 @@ See the following sections to determine which roles are authorized to perform sp
 <tbody>
 	<tr>
 		<td>/public/v1/notifications/templates</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td></td>
 		<td>
 			<ul>
@@ -599,7 +599,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/notifications/templates/{id}</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td></td>
 		<td>
 			<ul>
@@ -611,7 +611,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/notifications/templates/{id}/activate</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td>Activates a notification template.</td>
 		<td>
 			<ul>
@@ -623,7 +623,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/notifications/templates</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td>Creates a notification template.</td>
 		<td>
 			<ul>
@@ -635,7 +635,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/notifications/templates/{id}/disable</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td>Disables a notification template.</td>
 		<td>
 			<ul>
@@ -647,7 +647,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/notifications/templates/{id}</td>
-		<td>Put</td>
+		<td>PUT</td>
 		<td>Updates a notification template.</td>
 		<td>
 			<ul>
@@ -659,7 +659,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/notifications/templates/{id}</td>
-		<td>Delete</td>
+		<td>DELETE</td>
 		<td>Deletes a notification template.</td>
 		<td>
 			<ul>
@@ -688,7 +688,7 @@ See the following sections to determine which roles are authorized to perform sp
 <tbody>
 	<tr>
 		<td>/public/v1/notifications/subscribers/{id}</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td>Gets a resource by ID.</td>
 		<td>
 			<ul>
@@ -700,7 +700,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/notifications/subscribers</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td>Gets a list of resources.</td>
 		<td>
 			<ul>
@@ -712,7 +712,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/notifications/subscribers/{id}/enable</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td>Enables a subscriber.</td>
 		<td>
 			<ul>
@@ -724,7 +724,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/notifications/subscribers/{id}/disable</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td>Disables a subscriber.</td>
 		<td>
 			<ul>
@@ -736,7 +736,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/notifications/subscribers/{id}</td>
-		<td>Put</td>
+		<td>PUT</td>
 		<td>Updates subscriber recipients.</td>
 		<td>
 			<ul>
@@ -765,7 +765,7 @@ See the following sections to determine which roles are authorized to perform sp
 <tbody>
 	<tr>
 		<td>/public/v1/notifications/templates/{templateId}/variants</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td></td>
 		<td>
 			<ul>
@@ -777,7 +777,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/notifications/templates/{templateId}/variants/{id}</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td></td>
 		<td>
 			<ul>
@@ -789,7 +789,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/notifications/templates/{templateId}/variants/{id}/activate</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td>Activates a template variant.</td>
 		<td>
 			<ul>
@@ -801,7 +801,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/notifications/templates/{templateId}/variants</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td>Creates a template variant.</td>
 		<td>
 			<ul>
@@ -813,7 +813,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/notifications/templates/{templateId}/variants/{id}/disable</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td>Disables a template variant.</td>
 		<td>
 			<ul>
@@ -825,7 +825,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/notifications/templates/{templateId}/variants/{id}</td>
-		<td>Put</td>
+		<td>PUT</td>
 		<td>Updates a template variant.</td>
 		<td>
 			<ul>
@@ -837,7 +837,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/notifications/templates/{templateId}/variants/{id}</td>
-		<td>Delete</td>
+		<td>DELETE</td>
 		<td>Deletes a template variant.</td>
 		<td>
 			<ul>
@@ -866,7 +866,7 @@ See the following sections to determine which roles are authorized to perform sp
 <tbody>
 	<tr>
 		<td>/public/v1/notifications/webhooks</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td></td>
 		<td>
 			<ul>
@@ -878,7 +878,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/notifications/webhooks/{id}</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td></td>
 		<td>
 			<ul>
@@ -890,7 +890,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/notifications/webhooks</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td>Upsert webhooks</td>
 		<td>
 			<ul>
@@ -902,7 +902,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/notifications/webhooks/{id}/enable</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td>Enables webhook.</td>
 		<td>
 			<ul>
@@ -914,7 +914,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/notifications/webhooks/{id}/disable</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td>Disables webhook.</td>
 		<td>
 			<ul>
@@ -926,7 +926,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/notifications/webhooks/{id}</td>
-		<td>Put</td>
+		<td>PUT</td>
 		<td>Updates webhook.</td>
 		<td>
 			<ul>
@@ -938,7 +938,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/notifications/webhooks/{id}</td>
-		<td>Delete</td>
+		<td>DELETE</td>
 		<td>Deletes webhook.</td>
 		<td>
 			<ul>

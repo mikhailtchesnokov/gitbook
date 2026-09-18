@@ -49,7 +49,7 @@ See the following sections to determine which roles are authorized to perform sp
 <tbody>
 	<tr>
 		<td>/public/v1/audit/event-types</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td>Gets a list of audit event types.</td>
 		<td>
 			<ul>
@@ -61,7 +61,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/audit/event-types/{id}</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td>Retrieves an audit event type by ID.</td>
 		<td>
 			<ul>
@@ -73,7 +73,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/audit/event-types/{id}</td>
-		<td>Put</td>
+		<td>PUT</td>
 		<td>Updates an event type.</td>
 		<td>
 			<ul>
@@ -102,7 +102,7 @@ See the following sections to determine which roles are authorized to perform sp
 <tbody>
 	<tr>
 		<td>/public/v1/audit/records</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td>Gets a list of audit records.</td>
 		<td>
 			<ul>
@@ -114,7 +114,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/audit/records/{id}</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td>Retrieves an audit record by ID.</td>
 		<td>
 			<ul>
@@ -126,7 +126,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/audit/records</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td>Creates a new audit record.</td>
 		<td>
 			<ul>

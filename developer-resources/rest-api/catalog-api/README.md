@@ -73,7 +73,7 @@ See the following sections to determine which roles are authorized to perform sp
 <tbody>
 	<tr>
 		<td>/public/v1/catalog/pricing-policies/{pricingPolicyId}/attachments</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td></td>
 		<td>
 			<ul>
@@ -83,7 +83,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/catalog/pricing-policies/{pricingPolicyId}/attachments/{id}</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td></td>
 		<td>
 			<ul>
@@ -93,7 +93,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/catalog/pricing-policies/{pricingPolicyId}/attachments</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td></td>
 		<td>
 			<ul>
@@ -103,7 +103,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/catalog/pricing-policies/{pricingPolicyId}/attachments/{id}</td>
-		<td>Put</td>
+		<td>PUT</td>
 		<td></td>
 		<td>
 			<ul>
@@ -113,7 +113,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/catalog/pricing-policies/{pricingPolicyId}/attachments/{id}</td>
-		<td>Delete</td>
+		<td>DELETE</td>
 		<td></td>
 		<td>
 			<ul>
@@ -140,7 +140,7 @@ See the following sections to determine which roles are authorized to perform sp
 <tbody>
 	<tr>
 		<td>/public/v1/catalog/authorizations</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td></td>
 		<td>
 			<ul>
@@ -152,7 +152,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/catalog/authorizations/{id}</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td></td>
 		<td>
 			<ul>
@@ -164,7 +164,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/catalog/authorizations</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td></td>
 		<td>
 			<ul>
@@ -174,7 +174,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/catalog/authorizations/{id}</td>
-		<td>Put</td>
+		<td>PUT</td>
 		<td></td>
 		<td>
 			<ul>
@@ -185,7 +185,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/catalog/authorizations/{id}</td>
-		<td>Delete</td>
+		<td>DELETE</td>
 		<td></td>
 		<td>
 			<ul>
@@ -212,7 +212,7 @@ See the following sections to determine which roles are authorized to perform sp
 <tbody>
 	<tr>
 		<td>/public/v1/catalog/products/{productId}/documents/{id}</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td></td>
 		<td>
 			<ul>
@@ -224,7 +224,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/catalog/products/{productId}/documents</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td></td>
 		<td>
 			<ul>
@@ -236,7 +236,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/catalog/products/{productId}/documents</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td></td>
 		<td>
 			<ul>
@@ -246,7 +246,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/catalog/products/{productId}/documents/{id}/review</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td></td>
 		<td>
 			<ul>
@@ -256,7 +256,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/catalog/products/{productId}/documents/{id}/publish</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td></td>
 		<td>
 			<ul>
@@ -266,7 +266,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/catalog/products/{productId}/documents/{id}/unpublish</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td></td>
 		<td>
 			<ul>
@@ -277,7 +277,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/catalog/products/{productId}/documents/{id}</td>
-		<td>Put</td>
+		<td>PUT</td>
 		<td></td>
 		<td>
 			<ul>
@@ -289,7 +289,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/catalog/products/{productId}/documents/{id}</td>
-		<td>Delete</td>
+		<td>DELETE</td>
 		<td></td>
 		<td>
 			<ul>
@@ -317,7 +317,7 @@ See the following sections to determine which roles are authorized to perform sp
 <tbody>
 	<tr>
 		<td>/public/v1/catalog/products/{productId}/item-groups</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td></td>
 		<td>
 			<ul>
@@ -329,7 +329,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/catalog/products/{productId}/item-groups/{id}</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td></td>
 		<td>
 			<ul>
@@ -341,7 +341,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/catalog/products/{productId}/item-groups</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td></td>
 		<td>
 			<ul>
@@ -351,7 +351,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/catalog/products/{productId}/item-groups/{id}</td>
-		<td>Put</td>
+		<td>PUT</td>
 		<td></td>
 		<td>
 			<ul>
@@ -363,7 +363,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/catalog/products/{productId}/item-groups/{id}</td>
-		<td>Delete</td>
+		<td>DELETE</td>
 		<td></td>
 		<td>
 			<ul>
@@ -392,7 +392,7 @@ See the following sections to determine which roles are authorized to perform sp
 <tbody>
 	<tr>
 		<td>/public/v1/catalog/listings</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td></td>
 		<td>
 			<ul>
@@ -404,7 +404,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/catalog/listings/{id}</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td></td>
 		<td>
 			<ul>
@@ -416,7 +416,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/catalog/listings</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td></td>
 		<td>
 			<ul>
@@ -426,7 +426,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/catalog/listings/{id}</td>
-		<td>Put</td>
+		<td>PUT</td>
 		<td></td>
 		<td>
 			<ul>
@@ -436,7 +436,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/catalog/listings/{id}</td>
-		<td>Delete</td>
+		<td>DELETE</td>
 		<td></td>
 		<td>
 			<ul>
@@ -463,7 +463,7 @@ See the following sections to determine which roles are authorized to perform sp
 <tbody>
 	<tr>
 		<td>/public/v1/catalog/products/{productId}/parameter-groups</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td></td>
 		<td>
 			<ul>
@@ -475,7 +475,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/catalog/products/{productId}/parameter-groups/{id}</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td></td>
 		<td>
 			<ul>
@@ -487,7 +487,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/catalog/products/{productId}/parameter-groups</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td></td>
 		<td>
 			<ul>
@@ -497,7 +497,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/catalog/products/{productId}/parameter-groups/{id}</td>
-		<td>Put</td>
+		<td>PUT</td>
 		<td></td>
 		<td>
 			<ul>
@@ -507,7 +507,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/catalog/products/{productId}/parameter-groups/{id}</td>
-		<td>Delete</td>
+		<td>DELETE</td>
 		<td></td>
 		<td>
 			<ul>
@@ -534,7 +534,7 @@ See the following sections to determine which roles are authorized to perform sp
 <tbody>
 	<tr>
 		<td>/public/v1/catalog/products/{productId}/parameters</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td></td>
 		<td>
 			<ul>
@@ -546,7 +546,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/catalog/products/{productId}/parameters/{id}</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td></td>
 		<td>
 			<ul>
@@ -558,7 +558,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/catalog/products/{productId}/parameters</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td></td>
 		<td>
 			<ul>
@@ -568,7 +568,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/catalog/products/{productId}/parameters/{id}</td>
-		<td>Put</td>
+		<td>PUT</td>
 		<td></td>
 		<td>
 			<ul>
@@ -578,7 +578,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/catalog/products/{productId}/parameters/{id}</td>
-		<td>Delete</td>
+		<td>DELETE</td>
 		<td></td>
 		<td>
 			<ul>
@@ -605,7 +605,7 @@ See the following sections to determine which roles are authorized to perform sp
 <tbody>
 	<tr>
 		<td>/public/v1/catalog/price-lists</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td></td>
 		<td>
 			<ul>
@@ -617,7 +617,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/catalog/price-lists/{id}</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td></td>
 		<td>
 			<ul>
@@ -629,7 +629,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/catalog/price-lists</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td></td>
 		<td>
 			<ul>
@@ -640,7 +640,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/catalog/price-lists/{id}</td>
-		<td>Put</td>
+		<td>PUT</td>
 		<td></td>
 		<td>
 			<ul>
@@ -651,7 +651,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/catalog/price-lists/{id}</td>
-		<td>Delete</td>
+		<td>DELETE</td>
 		<td></td>
 		<td>
 			<ul>
@@ -679,7 +679,7 @@ See the following sections to determine which roles are authorized to perform sp
 <tbody>
 	<tr>
 		<td>/public/v1/catalog/price-lists/{priceListId}/items/{id}</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td></td>
 		<td>
 			<ul>
@@ -691,7 +691,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/catalog/price-lists/{priceListId}/items</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td></td>
 		<td>
 			<ul>
@@ -703,7 +703,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/catalog/price-lists/{priceListId}/items/{id}</td>
-		<td>Put</td>
+		<td>PUT</td>
 		<td></td>
 		<td>
 			<ul>
@@ -731,7 +731,7 @@ See the following sections to determine which roles are authorized to perform sp
 <tbody>
 	<tr>
 		<td>/public/v1/catalog/pricing-policies</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td></td>
 		<td>
 			<ul>
@@ -742,7 +742,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/catalog/pricing-policies/{id}</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td></td>
 		<td>
 			<ul>
@@ -753,7 +753,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/catalog/pricing-policies</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td></td>
 		<td>
 			<ul>
@@ -763,7 +763,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/catalog/pricing-policies/{id}/activate</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td></td>
 		<td>
 			<ul>
@@ -773,7 +773,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/catalog/pricing-policies/{id}/disable</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td></td>
 		<td>
 			<ul>
@@ -783,7 +783,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/catalog/pricing-policies/{id}</td>
-		<td>Put</td>
+		<td>PUT</td>
 		<td></td>
 		<td>
 			<ul>
@@ -793,7 +793,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/catalog/pricing-policies/{id}</td>
-		<td>Delete</td>
+		<td>DELETE</td>
 		<td></td>
 		<td>
 			<ul>
@@ -820,7 +820,7 @@ See the following sections to determine which roles are authorized to perform sp
 <tbody>
 	<tr>
 		<td>/public/v1/catalog/items</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td></td>
 		<td>
 			<ul>
@@ -832,7 +832,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/catalog/items/{id}</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td></td>
 		<td>
 			<ul>
@@ -844,7 +844,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/catalog/products/{productId}/items</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td></td>
 		<td>
 			<ul>
@@ -856,7 +856,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/catalog/products/{productId}/items/{id}</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td></td>
 		<td>
 			<ul>
@@ -868,7 +868,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/catalog/items</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td></td>
 		<td>
 			<ul>
@@ -880,7 +880,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/catalog/items/{id}/review</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td></td>
 		<td>
 			<ul>
@@ -892,7 +892,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/catalog/items/{id}/publish</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td></td>
 		<td>
 			<ul>
@@ -904,7 +904,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/catalog/items/{id}/unpublish</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td></td>
 		<td>
 			<ul>
@@ -916,7 +916,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/catalog/items/{id}</td>
-		<td>Put</td>
+		<td>PUT</td>
 		<td></td>
 		<td>
 			<ul>
@@ -928,7 +928,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/catalog/items/{id}</td>
-		<td>Delete</td>
+		<td>DELETE</td>
 		<td></td>
 		<td>
 			<ul>
@@ -957,7 +957,7 @@ See the following sections to determine which roles are authorized to perform sp
 <tbody>
 	<tr>
 		<td>/public/v1/catalog/products/{productId}/media/{id}</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td></td>
 		<td>
 			<ul>
@@ -969,7 +969,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/catalog/products/{productId}/media</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td></td>
 		<td>
 			<ul>
@@ -981,7 +981,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/catalog/products/{productId}/media/{id}/image</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td></td>
 		<td>
 			<ul>
@@ -993,7 +993,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/catalog/products/{productId}/media</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td></td>
 		<td>
 			<ul>
@@ -1003,7 +1003,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/catalog/products/{productId}/media/{id}/review</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td></td>
 		<td>
 			<ul>
@@ -1013,7 +1013,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/catalog/products/{productId}/media/{id}/publish</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td></td>
 		<td>
 			<ul>
@@ -1023,7 +1023,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/catalog/products/{productId}/media/{id}/unpublish</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td></td>
 		<td>
 			<ul>
@@ -1034,7 +1034,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/catalog/products/{productId}/media/{id}</td>
-		<td>Put</td>
+		<td>PUT</td>
 		<td></td>
 		<td>
 			<ul>
@@ -1044,7 +1044,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/catalog/products/{productId}/media/{id}</td>
-		<td>Delete</td>
+		<td>DELETE</td>
 		<td></td>
 		<td>
 			<ul>
@@ -1072,7 +1072,7 @@ See the following sections to determine which roles are authorized to perform sp
 <tbody>
 	<tr>
 		<td>/public/v1/catalog/products</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td></td>
 		<td>
 			<ul>
@@ -1084,7 +1084,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/catalog/products/{id}</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td></td>
 		<td>
 			<ul>
@@ -1096,7 +1096,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/catalog/products/{id}/icon</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td></td>
 		<td>
 			<ul>
@@ -1108,7 +1108,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/catalog/products</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td></td>
 		<td>
 			<ul>
@@ -1118,7 +1118,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/catalog/products/{id}/review</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td></td>
 		<td>
 			<ul>
@@ -1128,7 +1128,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/catalog/products/{id}/publish</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td></td>
 		<td>
 			<ul>
@@ -1138,7 +1138,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/catalog/products/{id}/unpublish</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td></td>
 		<td>
 			<ul>
@@ -1149,7 +1149,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/catalog/products/{id}</td>
-		<td>Put</td>
+		<td>PUT</td>
 		<td></td>
 		<td>
 			<ul>
@@ -1160,7 +1160,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/catalog/products/{id}/settings</td>
-		<td>Put</td>
+		<td>PUT</td>
 		<td></td>
 		<td>
 			<ul>
@@ -1171,7 +1171,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/catalog/products/{id}</td>
-		<td>Delete</td>
+		<td>DELETE</td>
 		<td></td>
 		<td>
 			<ul>
@@ -1198,7 +1198,7 @@ See the following sections to determine which roles are authorized to perform sp
 <tbody>
 	<tr>
 		<td>/public/v1/catalog/products/{productId}/templates</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td></td>
 		<td>
 			<ul>
@@ -1210,7 +1210,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/catalog/products/{productId}/templates/{id}</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td></td>
 		<td>
 			<ul>
@@ -1222,7 +1222,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/catalog/products/{productId}/templates</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td></td>
 		<td>
 			<ul>
@@ -1232,7 +1232,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/catalog/products/{productId}/templates/{id}</td>
-		<td>Put</td>
+		<td>PUT</td>
 		<td></td>
 		<td>
 			<ul>
@@ -1242,7 +1242,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/catalog/products/{productId}/templates/{id}</td>
-		<td>Delete</td>
+		<td>DELETE</td>
 		<td></td>
 		<td>
 			<ul>
@@ -1269,7 +1269,7 @@ See the following sections to determine which roles are authorized to perform sp
 <tbody>
 	<tr>
 		<td>/public/v1/catalog/products/{productId}/terms</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td></td>
 		<td>
 			<ul>
@@ -1281,7 +1281,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/catalog/products/{productId}/terms/{id}</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td></td>
 		<td>
 			<ul>
@@ -1293,7 +1293,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/catalog/products/{productId}/terms</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td></td>
 		<td>
 			<ul>
@@ -1303,7 +1303,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/catalog/products/{productId}/terms/{id}/review</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td></td>
 		<td>
 			<ul>
@@ -1313,7 +1313,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/catalog/products/{productId}/terms/{id}/publish</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td></td>
 		<td>
 			<ul>
@@ -1323,7 +1323,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/catalog/products/{productId}/terms/{id}/unpublish</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td></td>
 		<td>
 			<ul>
@@ -1334,7 +1334,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/catalog/products/{productId}/terms/{id}</td>
-		<td>Put</td>
+		<td>PUT</td>
 		<td></td>
 		<td>
 			<ul>
@@ -1344,7 +1344,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/catalog/products/{productId}/terms/{id}</td>
-		<td>Delete</td>
+		<td>DELETE</td>
 		<td></td>
 		<td>
 			<ul>
@@ -1371,7 +1371,7 @@ See the following sections to determine which roles are authorized to perform sp
 <tbody>
 	<tr>
 		<td>/public/v1/catalog/products/{productId}/terms/{termsAndConditionsId}/variants</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td></td>
 		<td>
 			<ul>
@@ -1383,7 +1383,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/catalog/products/{productId}/terms/{termsAndConditionsId}/variants/{id}</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td></td>
 		<td>
 			<ul>
@@ -1395,7 +1395,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/catalog/products/{productId}/terms/{termsAndConditionsId}/variants</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td></td>
 		<td>
 			<ul>
@@ -1405,7 +1405,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/catalog/products/{productId}/terms/{termsAndConditionsId}/variants/{id}/review</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td></td>
 		<td>
 			<ul>
@@ -1415,7 +1415,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/catalog/products/{productId}/terms/{termsAndConditionsId}/variants/{id}/publish</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td></td>
 		<td>
 			<ul>
@@ -1425,7 +1425,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/catalog/products/{productId}/terms/{termsAndConditionsId}/variants/{id}/unpublish</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td></td>
 		<td>
 			<ul>
@@ -1436,7 +1436,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/catalog/products/{productId}/terms/{termsAndConditionsId}/variants/{id}</td>
-		<td>Put</td>
+		<td>PUT</td>
 		<td></td>
 		<td>
 			<ul>
@@ -1446,7 +1446,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/catalog/products/{productId}/terms/{termsAndConditionsId}/variants/{id}</td>
-		<td>Delete</td>
+		<td>DELETE</td>
 		<td></td>
 		<td>
 			<ul>
@@ -1473,7 +1473,7 @@ See the following sections to determine which roles are authorized to perform sp
 <tbody>
 	<tr>
 		<td>/public/v1/catalog/units-of-measure</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td></td>
 		<td>
 			<ul>
@@ -1485,7 +1485,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/catalog/units-of-measure/{id}</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td></td>
 		<td>
 			<ul>
@@ -1497,7 +1497,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/catalog/units-of-measure</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td></td>
 		<td>
 			<ul>
@@ -1507,7 +1507,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/catalog/units-of-measure/{id}</td>
-		<td>Put</td>
+		<td>PUT</td>
 		<td></td>
 		<td>
 			<ul>

@@ -217,7 +217,7 @@ See the following sections to determine which roles are authorized to perform sp
 <tbody>
 	<tr>
 		<td>/public/v1/billing/analytics</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td>Retrieves aggregated billing analytics data.</td>
 		<td>
 			<ul>
@@ -246,7 +246,7 @@ See the following sections to determine which roles are authorized to perform sp
 <tbody>
 	<tr>
 		<td>/public/v1/billing/credit-memos/{creditMemoId}/attachments/{id}</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td>Retrieves a specific credit memo attachment by its ID.</td>
 		<td>
 			<ul>
@@ -257,7 +257,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/billing/credit-memos/{creditMemoId}/attachments</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td>Retrieves a list of credit memo attachments.</td>
 		<td>
 			<ul>
@@ -268,7 +268,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/billing/credit-memos/{creditMemoId}/attachments</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td>Creates a new credit memo attachment.</td>
 		<td>
 			<ul>
@@ -279,7 +279,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/billing/credit-memos/{creditMemoId}/attachments/{id}</td>
-		<td>Put</td>
+		<td>PUT</td>
 		<td>Updates an existing credit memo attachment.</td>
 		<td>
 			<ul>
@@ -290,7 +290,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/billing/credit-memos/{creditMemoId}/attachments/{id}</td>
-		<td>Delete</td>
+		<td>DELETE</td>
 		<td>Deletes an individual credit memo attachment.</td>
 		<td>
 			<ul>
@@ -318,7 +318,7 @@ See the following sections to determine which roles are authorized to perform sp
 <tbody>
 	<tr>
 		<td>/public/v1/billing/credit-memos</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td></td>
 		<td>
 			<ul>
@@ -330,7 +330,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/billing/credit-memos/{id}</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td></td>
 		<td>
 			<ul>
@@ -342,7 +342,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/billing/credit-memos</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td>Creates new credit memos.</td>
 		<td>
 			<ul>
@@ -369,7 +369,7 @@ See the following sections to determine which roles are authorized to perform sp
 <tbody>
 	<tr>
 		<td>/public/v1/billing/custom-ledgers/{customLedgerId}/attachments/{id}</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td>Retrieves a specific custom ledger attachment by its ID.</td>
 		<td>
 			<ul>
@@ -379,7 +379,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/billing/custom-ledgers/{customLedgerId}/attachments</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td>Retrieves a list of custom ledger attachments.</td>
 		<td>
 			<ul>
@@ -389,7 +389,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/billing/custom-ledgers/{customLedgerId}/attachments</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td>Creates a new custom ledger attachment.</td>
 		<td>
 			<ul>
@@ -399,7 +399,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/billing/custom-ledgers/{customLedgerId}/attachments/{id}</td>
-		<td>Put</td>
+		<td>PUT</td>
 		<td>Updates an existing custom ledger attachment.</td>
 		<td>
 			<ul>
@@ -409,7 +409,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/billing/custom-ledgers/{customLedgerId}/attachments/{id}</td>
-		<td>Delete</td>
+		<td>DELETE</td>
 		<td>Deletes a custom ledger attachment.</td>
 		<td>
 			<ul>
@@ -436,7 +436,7 @@ See the following sections to determine which roles are authorized to perform sp
 <tbody>
 	<tr>
 		<td>/public/v1/billing/custom-ledgers/{customLedgerId}/charges/{id}</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td>Retrieves a specific charge by its ID.</td>
 		<td>
 			<ul>
@@ -446,7 +446,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/billing/custom-ledgers/{customLedgerId}/charges</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td>Retrieves a list of charges for a specific custom ledger.</td>
 		<td>
 			<ul>
@@ -473,7 +473,7 @@ See the following sections to determine which roles are authorized to perform sp
 <tbody>
 	<tr>
 		<td>/public/v1/billing/custom-ledgers</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td></td>
 		<td>
 			<ul>
@@ -485,7 +485,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/billing/custom-ledgers/{id}</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td></td>
 		<td>
 			<ul>
@@ -497,7 +497,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/billing/custom-ledgers</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td>Creates a new custom ledger.</td>
 		<td>
 			<ul>
@@ -507,7 +507,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/billing/custom-ledgers/{id}/upload</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td>Uploads a file for a specific custom ledger.</td>
 		<td>
 			<ul>
@@ -517,7 +517,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/billing/custom-ledgers/{id}/accept</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td>Accepts a custom ledger.</td>
 		<td>
 			<ul>
@@ -527,7 +527,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/billing/custom-ledgers/{id}/queue</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td>Queues a custom ledger for ERP integration.</td>
 		<td>
 			<ul>
@@ -537,7 +537,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/billing/custom-ledgers/{id}</td>
-		<td>Put</td>
+		<td>PUT</td>
 		<td>Updates an existing custom ledger.</td>
 		<td>
 			<ul>
@@ -547,7 +547,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/billing/custom-ledgers/{id}</td>
-		<td>Delete</td>
+		<td>DELETE</td>
 		<td>Deletes a custom ledger by ID.</td>
 		<td>
 			<ul>
@@ -574,7 +574,7 @@ See the following sections to determine which roles are authorized to perform sp
 <tbody>
 	<tr>
 		<td>/public/v1/billing/invoices/{invoiceId}/attachments/{id}</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td>Retrieves a specific invoice attachment by its ID.</td>
 		<td>
 			<ul>
@@ -585,7 +585,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/billing/invoices/{invoiceId}/attachments</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td>Retrieves a list of invoice attachments.</td>
 		<td>
 			<ul>
@@ -596,7 +596,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/billing/invoices/{invoiceId}/attachments</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td>Creates a new invoice attachment.</td>
 		<td>
 			<ul>
@@ -607,7 +607,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/billing/invoices/{invoiceId}/attachments/{id}</td>
-		<td>Put</td>
+		<td>PUT</td>
 		<td>Updates an existing invoice attachment.</td>
 		<td>
 			<ul>
@@ -618,7 +618,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/billing/invoices/{invoiceId}/attachments/{id}</td>
-		<td>Delete</td>
+		<td>DELETE</td>
 		<td>Deletes an invoice attachment.</td>
 		<td>
 			<ul>
@@ -646,7 +646,7 @@ See the following sections to determine which roles are authorized to perform sp
 <tbody>
 	<tr>
 		<td>/public/v1/billing/invoices</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td></td>
 		<td>
 			<ul>
@@ -658,7 +658,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/billing/invoices/{id}</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td></td>
 		<td>
 			<ul>
@@ -670,7 +670,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/billing/invoices</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td>Creates new invoices.</td>
 		<td>
 			<ul>
@@ -697,7 +697,7 @@ See the following sections to determine which roles are authorized to perform sp
 <tbody>
 	<tr>
 		<td>/public/v1/billing/journals/{journalId}/attachments/{id}</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td>Retrieves a specific journal attachment by its ID.</td>
 		<td>
 			<ul>
@@ -708,7 +708,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/billing/journals/{journalId}/attachments</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td>Retrieves a list of journal attachments.</td>
 		<td>
 			<ul>
@@ -719,7 +719,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/billing/journals/{journalId}/attachments</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td>Creates a new journal attachment.</td>
 		<td>
 			<ul>
@@ -730,7 +730,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/billing/journals/{journalId}/attachments/{id}</td>
-		<td>Put</td>
+		<td>PUT</td>
 		<td>Updates an existing journal attachment.</td>
 		<td>
 			<ul>
@@ -741,7 +741,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/billing/journals/{journalId}/attachments/{id}</td>
-		<td>Delete</td>
+		<td>DELETE</td>
 		<td>Deletes a journal attachment.</td>
 		<td>
 			<ul>
@@ -769,7 +769,7 @@ See the following sections to determine which roles are authorized to perform sp
 <tbody>
 	<tr>
 		<td>/public/v1/billing/journals/{journalId}/charges/{id}</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td>Retrieves a specific charge by its ID.</td>
 		<td>
 			<ul>
@@ -780,7 +780,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/billing/journals/{journalId}/charges</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td>Retrieves a list of charges for a specific journal.</td>
 		<td>
 			<ul>
@@ -791,7 +791,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/billing/journals/{journalId}/charges/{id}/match</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td>Matches a charge to a subscription.</td>
 		<td>
 			<ul>
@@ -802,7 +802,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/billing/journals/{journalId}/charges/{id}/ignore</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td>Ignores a charge.</td>
 		<td>
 			<ul>
@@ -813,7 +813,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/billing/journals/{journalId}/charges/{id}/reset</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td>Resets a charge.</td>
 		<td>
 			<ul>
@@ -841,7 +841,7 @@ See the following sections to determine which roles are authorized to perform sp
 <tbody>
 	<tr>
 		<td>/public/v1/billing/journals</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td></td>
 		<td>
 			<ul>
@@ -853,7 +853,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/billing/journals/{id}</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td></td>
 		<td>
 			<ul>
@@ -865,7 +865,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/billing/journals</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td>Creates a new journal.</td>
 		<td>
 			<ul>
@@ -876,7 +876,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/billing/journals/{id}/upload</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td>Uploads a journal file.</td>
 		<td>
 			<ul>
@@ -887,7 +887,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/billing/journals/{id}/regenerate</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td>Regenerates a journal.</td>
 		<td>
 			<ul>
@@ -898,7 +898,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/billing/journals/{id}/submit</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td>Submits a journal for processing.</td>
 		<td>
 			<ul>
@@ -909,7 +909,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/billing/journals/{id}/enquiry</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td>Enquires the journal.</td>
 		<td>
 			<ul>
@@ -920,7 +920,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/billing/journals/{id}/accept</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td>Accepts a journal.</td>
 		<td>
 			<ul>
@@ -931,7 +931,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/billing/journals/{id}/reset</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td>Resets a journal.</td>
 		<td>
 			<ul>
@@ -942,7 +942,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/billing/journals/{id}/recalculate</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td>Recalculates a journal.</td>
 		<td>
 			<ul>
@@ -953,7 +953,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/billing/journals/{id}</td>
-		<td>Put</td>
+		<td>PUT</td>
 		<td>Updates an existing journal.</td>
 		<td>
 			<ul>
@@ -964,7 +964,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/billing/journals/{id}</td>
-		<td>Delete</td>
+		<td>DELETE</td>
 		<td>Deletes the specified journal.</td>
 		<td>
 			<ul>
@@ -992,7 +992,7 @@ See the following sections to determine which roles are authorized to perform sp
 <tbody>
 	<tr>
 		<td>/public/v1/billing/journals/{journalId}/sellers</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td>Retrieves a list of sellers for a specific journal.</td>
 		<td>
 			<ul>
@@ -1020,7 +1020,7 @@ See the following sections to determine which roles are authorized to perform sp
 <tbody>
 	<tr>
 		<td>/public/v1/billing/ledgers/{ledgerId}/attachments/{id}</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td>Retrieves a specific ledger attachment by its ID.</td>
 		<td>
 			<ul>
@@ -1030,7 +1030,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/billing/ledgers/{ledgerId}/attachments</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td>Retrieves a list of ledger attachments.</td>
 		<td>
 			<ul>
@@ -1040,7 +1040,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/billing/ledgers/{ledgerId}/attachments</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td>Creates a new ledger attachment.</td>
 		<td>
 			<ul>
@@ -1050,7 +1050,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/billing/ledgers/{ledgerId}/attachments/{id}</td>
-		<td>Put</td>
+		<td>PUT</td>
 		<td>Updates an existing ledger attachment.</td>
 		<td>
 			<ul>
@@ -1060,7 +1060,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/billing/ledgers/{ledgerId}/attachments/{id}</td>
-		<td>Delete</td>
+		<td>DELETE</td>
 		<td>Deletes a ledger attachment.</td>
 		<td>
 			<ul>
@@ -1087,7 +1087,7 @@ See the following sections to determine which roles are authorized to perform sp
 <tbody>
 	<tr>
 		<td>/public/v1/billing/ledgers/{ledgerId}/charges/{id}</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td>Retrieves a specific charge by its ID.</td>
 		<td>
 			<ul>
@@ -1097,7 +1097,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/billing/ledgers/{ledgerId}/charges</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td>Retrieves a list of charges for a specific ledger.</td>
 		<td>
 			<ul>
@@ -1124,7 +1124,7 @@ See the following sections to determine which roles are authorized to perform sp
 <tbody>
 	<tr>
 		<td>/public/v1/billing/ledgers/{id}</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td></td>
 		<td>
 			<ul>
@@ -1136,7 +1136,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/billing/ledgers</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td></td>
 		<td>
 			<ul>
@@ -1148,7 +1148,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/billing/ledgers/{id}/recalculate</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td>Recalculates a ledger.</td>
 		<td>
 			<ul>
@@ -1158,7 +1158,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/billing/ledgers/{id}/accept</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td>Accepts a ledger.</td>
 		<td>
 			<ul>
@@ -1168,7 +1168,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/billing/ledgers/{id}/queue</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td>Queues a ledger for ERP integration.</td>
 		<td>
 			<ul>
@@ -1178,7 +1178,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/billing/ledgers/{id}</td>
-		<td>Put</td>
+		<td>PUT</td>
 		<td>Updates a ledger.</td>
 		<td>
 			<ul>
@@ -1205,7 +1205,7 @@ See the following sections to determine which roles are authorized to perform sp
 <tbody>
 	<tr>
 		<td>/public/v1/billing/manual-overrides</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td></td>
 		<td>
 			<ul>
@@ -1217,7 +1217,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/billing/manual-overrides/{id}</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td></td>
 		<td>
 			<ul>
@@ -1229,7 +1229,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/billing/manual-overrides</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td>Creates a new manual override.</td>
 		<td>
 			<ul>
@@ -1239,7 +1239,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/billing/manual-overrides/{id}</td>
-		<td>Put</td>
+		<td>PUT</td>
 		<td>Updates an existing manual override.</td>
 		<td>
 			<ul>
@@ -1266,7 +1266,7 @@ See the following sections to determine which roles are authorized to perform sp
 <tbody>
 	<tr>
 		<td>/public/v1/billing/statements/{statementId}/attachments/{id}</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td>Retrieves a specific statement attachment by its ID.</td>
 		<td>
 			<ul>
@@ -1277,7 +1277,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/billing/statements/{statementId}/attachments</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td>Retrieves a list of statement attachments.</td>
 		<td>
 			<ul>
@@ -1288,7 +1288,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/billing/statements/{statementId}/attachments</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td>Creates a new statement attachment.</td>
 		<td>
 			<ul>
@@ -1299,7 +1299,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/billing/statements/{statementId}/attachments/{id}</td>
-		<td>Put</td>
+		<td>PUT</td>
 		<td>Updates an existing statement attachment.</td>
 		<td>
 			<ul>
@@ -1310,7 +1310,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/billing/statements/{statementId}/attachments/{id}</td>
-		<td>Delete</td>
+		<td>DELETE</td>
 		<td>Deletes a statement attachment.</td>
 		<td>
 			<ul>
@@ -1338,7 +1338,7 @@ See the following sections to determine which roles are authorized to perform sp
 <tbody>
 	<tr>
 		<td>/public/v1/billing/statements/{statementId}/charges/{id}</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td>Retrieves a specific charge by its ID.</td>
 		<td>
 			<ul>
@@ -1349,7 +1349,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/billing/statements/{statementId}/charges</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td>Retrieves a list of charges for a specific statement.</td>
 		<td>
 			<ul>
@@ -1377,7 +1377,7 @@ See the following sections to determine which roles are authorized to perform sp
 <tbody>
 	<tr>
 		<td>/public/v1/billing/statements</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td></td>
 		<td>
 			<ul>
@@ -1389,7 +1389,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/billing/statements/{id}</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td></td>
 		<td>
 			<ul>
@@ -1401,7 +1401,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/billing/statements</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td>Creates a new statement.</td>
 		<td>
 			<ul>
@@ -1412,7 +1412,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/billing/statements/{id}/cancel</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td>Cancels a statement.</td>
 		<td>
 			<ul>
@@ -1423,7 +1423,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/billing/statements/{id}/error</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td>Marks a statement as error.</td>
 		<td>
 			<ul>
@@ -1434,7 +1434,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/billing/statements/{id}/issue</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td>Issues a statement.</td>
 		<td>
 			<ul>
@@ -1445,7 +1445,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/billing/statements/{id}/pending</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td>Sets statement to pending.</td>
 		<td>
 			<ul>
@@ -1456,7 +1456,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/billing/statements/{id}/queue</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td>Queues a statement.</td>
 		<td>
 			<ul>
@@ -1467,7 +1467,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/billing/statements/{id}/retry</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td>Retries a failed statement.</td>
 		<td>
 			<ul>
@@ -1478,7 +1478,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/billing/statements/{id}/recalculate</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td>Recalculates a statement.</td>
 		<td>
 			<ul>
@@ -1489,7 +1489,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/billing/statements/{id}/children</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td>Adds a child statement to a consolidated parent statement.</td>
 		<td>
 			<ul>
@@ -1500,7 +1500,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/billing/statements/{id}</td>
-		<td>Put</td>
+		<td>PUT</td>
 		<td>Updates an existing statement.</td>
 		<td>
 			<ul>
@@ -1511,7 +1511,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/billing/statements/{id}/children/{childId}</td>
-		<td>Delete</td>
+		<td>DELETE</td>
 		<td>Removes a child statement from a consolidated parent statement.</td>
 		<td>
 			<ul>

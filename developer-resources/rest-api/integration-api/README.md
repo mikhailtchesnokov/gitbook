@@ -53,7 +53,7 @@ See the following sections to determine which roles are authorized to perform sp
 <tbody>
 	<tr>
 		<td>/public/v1/integration/categories</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td></td>
 		<td>
 			<ul>
@@ -65,7 +65,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/integration/categories/{id}</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td></td>
 		<td>
 			<ul>
@@ -77,7 +77,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/integration/categories</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td></td>
 		<td>
 			<ul>
@@ -87,7 +87,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/integration/categories/{id}/activate</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td></td>
 		<td>
 			<ul>
@@ -99,7 +99,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/integration/categories/{id}/deactivate</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td></td>
 		<td>
 			<ul>
@@ -111,7 +111,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/integration/categories/{id}</td>
-		<td>Put</td>
+		<td>PUT</td>
 		<td></td>
 		<td>
 			<ul>
@@ -138,7 +138,7 @@ See the following sections to determine which roles are authorized to perform sp
 <tbody>
 	<tr>
 		<td>/public/v1/integration/extensions/{extensionId}/documents</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td></td>
 		<td>
 			<ul>
@@ -150,7 +150,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/integration/extensions/{extensionId}/documents/{id}</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td></td>
 		<td>
 			<ul>
@@ -162,7 +162,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/integration/extensions/{extensionId}/documents</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td></td>
 		<td>
 			<ul>
@@ -174,7 +174,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/integration/extensions/{extensionId}/documents/{id}/publish</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td></td>
 		<td>
 			<ul>
@@ -186,7 +186,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/integration/extensions/{extensionId}/documents/{id}/unpublish</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td></td>
 		<td>
 			<ul>
@@ -198,7 +198,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/integration/extensions/{extensionId}/documents/{id}</td>
-		<td>Put</td>
+		<td>PUT</td>
 		<td></td>
 		<td>
 			<ul>
@@ -210,7 +210,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/integration/extensions/{extensionId}/documents/{id}</td>
-		<td>Delete</td>
+		<td>DELETE</td>
 		<td></td>
 		<td>
 			<ul>
@@ -239,7 +239,7 @@ See the following sections to determine which roles are authorized to perform sp
 <tbody>
 	<tr>
 		<td>/public/v1/integration/extensions</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td></td>
 		<td>
 			<ul>
@@ -251,7 +251,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/integration/extensions/{id}</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td></td>
 		<td>
 			<ul>
@@ -263,7 +263,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/integration/extensions/{id}/icon</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td></td>
 		<td>
 			<ul>
@@ -275,7 +275,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/integration/extensions/{id}/installations</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td></td>
 		<td>
 			<ul>
@@ -287,7 +287,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/integration/extensions/{id}/installations/{installationId}</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td></td>
 		<td>
 			<ul>
@@ -299,7 +299,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/integration/extensions</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td></td>
 		<td>
 			<ul>
@@ -309,7 +309,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/integration/extensions/{id}/publish</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td></td>
 		<td>
 			<ul>
@@ -319,7 +319,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/integration/extensions/{id}/unpublish</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td></td>
 		<td>
 			<ul>
@@ -330,7 +330,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/integration/extensions/{id}/regenerate</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td></td>
 		<td>
 			<ul>
@@ -340,7 +340,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/integration/extensions/{id}/token</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td></td>
 		<td>
 			<ul>
@@ -352,7 +352,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/integration/extensions/{id}</td>
-		<td>Put</td>
+		<td>PUT</td>
 		<td></td>
 		<td>
 			<ul>
@@ -363,7 +363,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/integration/extensions/{id}</td>
-		<td>Delete</td>
+		<td>DELETE</td>
 		<td></td>
 		<td>
 			<ul>
@@ -390,7 +390,7 @@ See the following sections to determine which roles are authorized to perform sp
 <tbody>
 	<tr>
 		<td>/public/v1/integration/installations</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td></td>
 		<td>
 			<ul>
@@ -402,7 +402,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/integration/installations/{id}</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td></td>
 		<td>
 			<ul>
@@ -414,7 +414,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/integration/installations</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td></td>
 		<td>
 			<ul>
@@ -426,7 +426,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/integration/installations/{id}/redeem</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td></td>
 		<td>
 			<ul>
@@ -438,7 +438,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/integration/installations/{id}/renew</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td></td>
 		<td>
 			<ul>
@@ -450,7 +450,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/integration/installations/{id}/token</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td></td>
 		<td>
 			<ul>
@@ -462,7 +462,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/integration/installations/-/token</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td></td>
 		<td>
 			<ul>
@@ -474,7 +474,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/integration/installations/{id}</td>
-		<td>Put</td>
+		<td>PUT</td>
 		<td></td>
 		<td>
 			<ul>
@@ -486,7 +486,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/integration/installations/{id}</td>
-		<td>Delete</td>
+		<td>DELETE</td>
 		<td></td>
 		<td>
 			<ul>
@@ -515,7 +515,7 @@ See the following sections to determine which roles are authorized to perform sp
 <tbody>
 	<tr>
 		<td>/public/v1/integration/extensions/{extensionId}/instances</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td></td>
 		<td>
 			<ul>
@@ -527,7 +527,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/integration/extensions/{extensionId}/instances/{id}</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td></td>
 		<td>
 			<ul>
@@ -539,7 +539,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/integration/extensions/{extensionId}/instances</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td></td>
 		<td>
 			<ul>
@@ -568,7 +568,7 @@ See the following sections to determine which roles are authorized to perform sp
 <tbody>
 	<tr>
 		<td>/public/v1/integration/extensions/{extensionId}/media</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td></td>
 		<td>
 			<ul>
@@ -580,7 +580,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/integration/extensions/{extensionId}/media/{id}</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td></td>
 		<td>
 			<ul>
@@ -592,7 +592,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/integration/extensions/{extensionId}/media/{id}/image</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td></td>
 		<td>
 			<ul>
@@ -604,7 +604,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/integration/extensions/{extensionId}/media</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td></td>
 		<td>
 			<ul>
@@ -614,7 +614,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/integration/extensions/{extensionId}/media/{id}/publish</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td></td>
 		<td>
 			<ul>
@@ -624,7 +624,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/integration/extensions/{extensionId}/media/{id}/unpublish</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td></td>
 		<td>
 			<ul>
@@ -634,7 +634,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/integration/extensions/{extensionId}/media/{id}</td>
-		<td>Put</td>
+		<td>PUT</td>
 		<td></td>
 		<td>
 			<ul>
@@ -644,7 +644,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/integration/extensions/{extensionId}/media/{id}</td>
-		<td>Delete</td>
+		<td>DELETE</td>
 		<td></td>
 		<td>
 			<ul>
@@ -671,7 +671,7 @@ See the following sections to determine which roles are authorized to perform sp
 <tbody>
 	<tr>
 		<td>/public/v1/integration/extensions/{extensionId}/terms</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td></td>
 		<td>
 			<ul>
@@ -683,7 +683,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/integration/extensions/{extensionId}/terms/{id}</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td></td>
 		<td>
 			<ul>
@@ -695,7 +695,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/integration/extensions/{extensionId}/terms</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td></td>
 		<td>
 			<ul>
@@ -705,7 +705,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/integration/extensions/{extensionId}/terms/{id}/publish</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td></td>
 		<td>
 			<ul>
@@ -715,7 +715,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/integration/extensions/{extensionId}/terms/{id}/unpublish</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td></td>
 		<td>
 			<ul>
@@ -725,7 +725,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/integration/extensions/{extensionId}/terms/{id}</td>
-		<td>Put</td>
+		<td>PUT</td>
 		<td></td>
 		<td>
 			<ul>
@@ -735,7 +735,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/integration/extensions/{extensionId}/terms/{id}</td>
-		<td>Delete</td>
+		<td>DELETE</td>
 		<td></td>
 		<td>
 			<ul>
@@ -762,7 +762,7 @@ See the following sections to determine which roles are authorized to perform sp
 <tbody>
 	<tr>
 		<td>/public/v1/integration/extensions/{extensionId}/terms/{termId}/variants</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td></td>
 		<td>
 			<ul>
@@ -774,7 +774,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/integration/extensions/{extensionId}/terms/{termId}/variants/{id}</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td></td>
 		<td>
 			<ul>
@@ -786,7 +786,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/integration/extensions/{extensionId}/terms/{termId}/variants</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td></td>
 		<td>
 			<ul>
@@ -796,7 +796,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/integration/extensions/{extensionId}/terms/{termId}/variants/{id}/publish</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td></td>
 		<td>
 			<ul>
@@ -806,7 +806,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/integration/extensions/{extensionId}/terms/{termId}/variants/{id}/unpublish</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td></td>
 		<td>
 			<ul>
@@ -816,7 +816,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/integration/extensions/{extensionId}/terms/{termId}/variants/{id}</td>
-		<td>Put</td>
+		<td>PUT</td>
 		<td></td>
 		<td>
 			<ul>
@@ -826,7 +826,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/integration/extensions/{extensionId}/terms/{termId}/variants/{id}</td>
-		<td>Delete</td>
+		<td>DELETE</td>
 		<td></td>
 		<td>
 			<ul>

@@ -51,7 +51,7 @@ See the following sections to determine which roles are authorized to perform sp
 <tbody>
 	<tr>
 		<td>/public/v1/spotlight/objects</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td>Get spotlight objects for the current account and buyer group</td>
 		<td>
 			<ul>
@@ -63,7 +63,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/spotlight/objects/-/refresh</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td>Refresh spotlight cache for the current account and buyer group</td>
 		<td>
 			<ul>
@@ -75,7 +75,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/spotlight/objects/{id}/refresh</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td>Refresh spotlight cache for a specific object in the current context</td>
 		<td>
 			<ul>
@@ -104,7 +104,7 @@ See the following sections to determine which roles are authorized to perform sp
 <tbody>
 	<tr>
 		<td>/public/v1/spotlight/queries</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td>Get a list of spotlight queries</td>
 		<td>
 			<ul>
@@ -116,7 +116,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/spotlight/queries/{id}</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td>Retrieve a spotlight query by ID</td>
 		<td>
 			<ul>
@@ -128,7 +128,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/spotlight/queries/{id}</td>
-		<td>Put</td>
+		<td>PUT</td>
 		<td>Update a spotlight query</td>
 		<td>
 			<ul>

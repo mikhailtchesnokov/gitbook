@@ -65,7 +65,7 @@ See the following sections to determine which roles are authorized to perform sp
 <tbody>
 	<tr>
 		<td>/public/v1/system/tasks</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td>Get a list of tasks</td>
 		<td>
 			<ul>
@@ -76,7 +76,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/system/tasks/{id}</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td>Retrieve a task by ID</td>
 		<td>
 			<ul>
@@ -87,7 +87,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/system/tasks/{id}/result</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td>Get a task result</td>
 		<td>
 			<ul>
@@ -99,7 +99,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/system/tasks/{id}/logs</td>
-		<td>Get</td>
+		<td>GET</td>
 		<td>Get task logs</td>
 		<td>
 			<ul>
@@ -110,7 +110,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/system/tasks</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td>Create a task</td>
 		<td>
 			<ul>
@@ -122,7 +122,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/system/tasks/{id}/logs</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td>Create a task log</td>
 		<td>
 			<ul>
@@ -134,7 +134,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/system/tasks/{id}/execute</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td>Transition a task to Processing</td>
 		<td>
 			<ul>
@@ -146,7 +146,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/system/tasks/{id}/reschedule</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td>Transition a task to Rescheduled</td>
 		<td>
 			<ul>
@@ -158,7 +158,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/system/tasks/{id}/queue</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td>Transition a task to Queued</td>
 		<td>
 			<ul>
@@ -170,7 +170,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/system/tasks/{id}/complete</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td>Transition a task to Completed</td>
 		<td>
 			<ul>
@@ -182,7 +182,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/system/tasks/{id}/fail</td>
-		<td>Post</td>
+		<td>POST</td>
 		<td>Transition a task to Failed</td>
 		<td>
 			<ul>
@@ -194,7 +194,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/system/tasks/{id}</td>
-		<td>Put</td>
+		<td>PUT</td>
 		<td>Update a task</td>
 		<td>
 			<ul>
