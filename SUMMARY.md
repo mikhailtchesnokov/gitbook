@@ -466,7 +466,7 @@
     * [Currencies](developer-resources/rest-api/currency-api/currency/README.md)
       * [Create currency](developer-resources/rest-api/currency-api/currency/create-currency.md)
       * [Update currency](developer-resources/rest-api/currency-api/currency/update-currency.md)
-      * [List currencies](developer-resources/rest-api/currency-api/currency/list-currencies.md)
+      * [Get list of currencies](developer-resources/rest-api/exchange-api/get-currencies.md)
       * [Get currency](developer-resources/rest-api/currency-api/currency/get-currency.md)
       * [Delete currency](developer-resources/rest-api/currency-api/currency/delete-currency.md)
     * [Pairs](developer-resources/rest-api/currency-api/pair/README.md)
