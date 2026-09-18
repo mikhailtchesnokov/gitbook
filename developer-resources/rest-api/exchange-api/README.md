@@ -74,7 +74,7 @@ See the following sections to determine which roles are authorized to perform sp
 </thead>
 <tbody>
 	<tr>
-		<td>/public/v1/exchange/currencies</td>
+		<td>[/public/v1/exchange/currencies](developer-resources/exchange-api/currencies/get-currencies.md)</td>
 		<td>GET</td>
 		<td>Gets a list of currencies.</td>
 		<td>
