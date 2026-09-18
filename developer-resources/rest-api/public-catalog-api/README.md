@@ -131,7 +131,7 @@ The API is organized into collections, each containing a set of operations. Acce
 
 See the following sections to determine which roles are authorized to perform specific operations within each collection:
 
-### Category
+### Categories
 
 <table>
 <thead>
@@ -156,14 +156,22 @@ See the following sections to determine which roles are authorized to perform sp
 		</td>
 	</tr>
 	<tr>
-		<td>/public/v1/public-catalog/categories</td>
-		<td>Get</td>
-		<td></td>
+		<td>/public/v1/public-catalog/categories/{id}</td>
+		<td>Put</td>
+		<td>Updates an existing category record in the public catalog.</td>
 		<td>
 			<ul>
 				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/public-catalog/categories/{id}</td>
+		<td>Delete</td>
+		<td>Soft deletes an category record from the public catalog.</td>
+		<td>
+			<ul>
+				  <li>Operations</li>
 			</ul>		
 		</td>
 	</tr>
@@ -175,6 +183,18 @@ Accepts a request with necessary details to create the category.</td>
 		<td>
 			<ul>
 				  <li>Operations</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/public-catalog/categories</td>
+		<td>Get</td>
+		<td></td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
 			</ul>		
 		</td>
 	</tr>
@@ -199,32 +219,12 @@ sets the category record to an unpublished state in the system.</td>
 			</ul>		
 		</td>
 	</tr>
-	<tr>
-		<td>/public/v1/public-catalog/categories/{id}</td>
-		<td>Put</td>
-		<td>Updates an existing category record in the public catalog.</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/public-catalog/categories/{id}</td>
-		<td>Delete</td>
-		<td>Soft deletes an category record from the public catalog.</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
 <tbody>
 </table>
 
 
 
-### Industry
+### Industries
 
 <table>
 <thead>
@@ -249,14 +249,22 @@ sets the category record to an unpublished state in the system.</td>
 		</td>
 	</tr>
 	<tr>
-		<td>/public/v1/public-catalog/industries</td>
-		<td>Get</td>
-		<td></td>
+		<td>/public/v1/public-catalog/industries/{id}</td>
+		<td>Put</td>
+		<td>Updates an existing industry record in the public catalog.</td>
 		<td>
 			<ul>
 				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/public-catalog/industries/{id}</td>
+		<td>Delete</td>
+		<td>Soft deletes an industry record from the public catalog.</td>
+		<td>
+			<ul>
+				  <li>Operations</li>
 			</ul>		
 		</td>
 	</tr>
@@ -268,6 +276,18 @@ Accepts a request with necessary details to create the industry.</td>
 		<td>
 			<ul>
 				  <li>Operations</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/public-catalog/industries</td>
+		<td>Get</td>
+		<td></td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
 			</ul>		
 		</td>
 	</tr>
@@ -286,26 +306,6 @@ Accepts a request with necessary details to create the industry.</td>
 		<td>Post</td>
 		<td>Unpublishes a specific industry identified by its ID. This operation
 sets the industry record to an unpublished state in the system.</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/public-catalog/industries/{id}</td>
-		<td>Put</td>
-		<td>Updates an existing industry record in the public catalog.</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/public-catalog/industries/{id}</td>
-		<td>Delete</td>
-		<td>Soft deletes an industry record from the public catalog.</td>
 		<td>
 			<ul>
 				  <li>Operations</li>
@@ -342,9 +342,9 @@ sets the industry record to an unpublished state in the system.</td>
 		</td>
 	</tr>
 	<tr>
-		<td>/public/v1/public-catalog/product-profiles/{productProfileId}/attachments/{id}</td>
-		<td>Get</td>
-		<td>Gets an attachment by id or redirects to its download.</td>
+		<td>/public/v1/public-catalog/product-profiles/{productProfileId}/attachments</td>
+		<td>Post</td>
+		<td>Creates a new attachment for an product profile.</td>
 		<td>
 			<ul>
 				  <li>Operations</li>
@@ -354,9 +354,9 @@ sets the industry record to an unpublished state in the system.</td>
 		</td>
 	</tr>
 	<tr>
-		<td>/public/v1/public-catalog/product-profiles/{productProfileId}/attachments</td>
-		<td>Post</td>
-		<td>Creates a new attachment for an product profile.</td>
+		<td>/public/v1/public-catalog/product-profiles/{productProfileId}/attachments/{id}</td>
+		<td>Get</td>
+		<td>Gets an attachment by id or redirects to its download.</td>
 		<td>
 			<ul>
 				  <li>Operations</li>
@@ -419,6 +419,17 @@ sets the industry record to an unpublished state in the system.</td>
 		</td>
 	</tr>
 	<tr>
+		<td>/public/v1/public-catalog/product-profiles/{productProfileId}/media</td>
+		<td>Post</td>
+		<td>Represent Add/Create media for product profile.</td>
+		<td>
+			<ul>
+				  <li>Vendor</li>
+				  <li>Operations</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
 		<td>/public/v1/public-catalog/product-profiles/{productProfileId}/media/{id}</td>
 		<td>Get</td>
 		<td>Represents get by media id.</td>
@@ -427,17 +438,6 @@ sets the industry record to an unpublished state in the system.</td>
 				  <li>Operations</li>
 				  <li>Client</li>
 				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/public-catalog/product-profiles/{productProfileId}/media</td>
-		<td>Post</td>
-		<td>Represent Add/Create media for product profile.</td>
-		<td>
-			<ul>
-				  <li>Vendor</li>
-				  <li>Operations</li>
 			</ul>		
 		</td>
 	</tr>
@@ -463,12 +463,24 @@ sets the industry record to an unpublished state in the system.</td>
 			</ul>		
 		</td>
 	</tr>
+	<tr>
+		<td>/public/v1/public-catalog/product-profiles/{productProfileId}/media/{id}/image</td>
+		<td>Get</td>
+		<td>Download Image.</td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
 <tbody>
 </table>
 
 
 
-### Productprofile
+### Productprofiles
 
 <table>
 <thead>
@@ -493,14 +505,23 @@ sets the industry record to an unpublished state in the system.</td>
 		</td>
 	</tr>
 	<tr>
-		<td>/public/v1/public-catalog/product-profiles</td>
-		<td>Get</td>
-		<td></td>
+		<td>/public/v1/public-catalog/product-profiles/{id}</td>
+		<td>Put</td>
+		<td>Updates an existing product-profile record in the public catalog.</td>
+		<td>
+			<ul>
+				  <li>Vendor</li>
+				  <li>Operations</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/public-catalog/product-profiles/{id}</td>
+		<td>Delete</td>
+		<td>Soft deletes an product-profile record from the public catalog.</td>
 		<td>
 			<ul>
 				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
 			</ul>		
 		</td>
 	</tr>
@@ -513,6 +534,18 @@ Accepts a request with necessary details to create the product profiles.</td>
 			<ul>
 				  <li>Vendor</li>
 				  <li>Operations</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/public-catalog/product-profiles</td>
+		<td>Get</td>
+		<td></td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
 			</ul>		
 		</td>
 	</tr>
@@ -540,23 +573,14 @@ sets the product profiles record to an unpublished state in the system.</td>
 		</td>
 	</tr>
 	<tr>
-		<td>/public/v1/public-catalog/product-profiles/{id}</td>
-		<td>Put</td>
-		<td>Updates an existing product-profile record in the public catalog.</td>
+		<td>/public/v1/public-catalog/product-profiles/{id}/icon</td>
+		<td>Get</td>
+		<td>Retrieves the icon associated with a product-profile record.</td>
 		<td>
 			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
 				  <li>Vendor</li>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/public-catalog/product-profiles/{id}</td>
-		<td>Delete</td>
-		<td>Soft deletes an product-profile record from the public catalog.</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
 			</ul>		
 		</td>
 	</tr>
@@ -565,7 +589,7 @@ sets the product profiles record to an unpublished state in the system.</td>
 
 
 
-### Segment
+### Segments
 
 <table>
 <thead>
@@ -590,14 +614,22 @@ sets the product profiles record to an unpublished state in the system.</td>
 		</td>
 	</tr>
 	<tr>
-		<td>/public/v1/public-catalog/segments</td>
-		<td>Get</td>
-		<td></td>
+		<td>/public/v1/public-catalog/segments/{id}</td>
+		<td>Put</td>
+		<td>Updates an existing segment record in the public catalog.</td>
 		<td>
 			<ul>
 				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/public-catalog/segments/{id}</td>
+		<td>Delete</td>
+		<td>Deletes a segment from the public catalog.</td>
+		<td>
+			<ul>
+				  <li>Operations</li>
 			</ul>		
 		</td>
 	</tr>
@@ -608,6 +640,18 @@ sets the product profiles record to an unpublished state in the system.</td>
 		<td>
 			<ul>
 				  <li>Operations</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/public-catalog/segments</td>
+		<td>Get</td>
+		<td></td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
 			</ul>		
 		</td>
 	</tr>
@@ -631,32 +675,12 @@ sets the product profiles record to an unpublished state in the system.</td>
 			</ul>		
 		</td>
 	</tr>
-	<tr>
-		<td>/public/v1/public-catalog/segments/{id}</td>
-		<td>Put</td>
-		<td>Updates an existing segment record in the public catalog.</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/public-catalog/segments/{id}</td>
-		<td>Delete</td>
-		<td>Deletes a segment from the public catalog.</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
 <tbody>
 </table>
 
 
 
-### Vendorprofile
+### Vendorprofiles
 
 <table>
 <thead>
@@ -681,14 +705,23 @@ sets the product profiles record to an unpublished state in the system.</td>
 		</td>
 	</tr>
 	<tr>
-		<td>/public/v1/public-catalog/vendor-profiles</td>
-		<td>Get</td>
-		<td></td>
+		<td>/public/v1/public-catalog/vendor-profiles/{id}</td>
+		<td>Put</td>
+		<td>Updates an existing vendor-profile record in the public catalog.</td>
+		<td>
+			<ul>
+				  <li>Vendor</li>
+				  <li>Operations</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/public-catalog/vendor-profiles/{id}</td>
+		<td>Delete</td>
+		<td>Soft deletes an vendor-profile record from the public catalog.</td>
 		<td>
 			<ul>
 				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
 			</ul>		
 		</td>
 	</tr>
@@ -700,6 +733,18 @@ Accepts a request with necessary details to create the vendor-profiles.</td>
 		<td>
 			<ul>
 				  <li>Operations</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/public-catalog/vendor-profiles</td>
+		<td>Get</td>
+		<td></td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
 			</ul>		
 		</td>
 	</tr>
@@ -727,23 +772,14 @@ sets the vendor-profiles record to an unpublished state in the system.</td>
 		</td>
 	</tr>
 	<tr>
-		<td>/public/v1/public-catalog/vendor-profiles/{id}</td>
-		<td>Put</td>
-		<td>Updates an existing vendor-profile record in the public catalog.</td>
+		<td>/public/v1/public-catalog/vendor-profiles/{id}/icon</td>
+		<td>Get</td>
+		<td>Retrieves the icon associated with a vendor-profile record.</td>
 		<td>
 			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
 				  <li>Vendor</li>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/public-catalog/vendor-profiles/{id}</td>
-		<td>Delete</td>
-		<td>Soft deletes an vendor-profile record from the public catalog.</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
 			</ul>		
 		</td>
 	</tr>

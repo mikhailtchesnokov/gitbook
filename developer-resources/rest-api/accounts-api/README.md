@@ -203,7 +203,48 @@ The API is organized into collections, each containing a set of operations. Acce
 
 See the following sections to determine which roles are authorized to perform specific operations within each collection:
 
-### Account
+### Settings
+
+<table>
+<thead>
+<tr>
+ <td>Operation</td>
+ <td>Method</td>
+ <td>Description</td>
+ <td>Access</td>
+</tr>
+</thead>
+<tbody>
+	<tr>
+		<td>/public/v1/accounts/accounts/{accountId}/settings/notifications</td>
+		<td>Get</td>
+		<td>Gets account notification settings.</td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/accounts/accounts/{accountId}/settings/notifications</td>
+		<td>Put</td>
+		<td>Updates account notification settings.</td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+<tbody>
+</table>
+
+
+
+### Accounts
 
 <table>
 <thead>
@@ -228,6 +269,18 @@ See the following sections to determine which roles are authorized to perform sp
 		</td>
 	</tr>
 	<tr>
+		<td>/public/v1/accounts/accounts</td>
+		<td>Post</td>
+		<td>Create account</td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
 		<td>/public/v1/accounts/accounts/{id}</td>
 		<td>Get</td>
 		<td>Get account by ID</td>
@@ -240,9 +293,9 @@ See the following sections to determine which roles are authorized to perform sp
 		</td>
 	</tr>
 	<tr>
-		<td>/public/v1/accounts/accounts</td>
-		<td>Post</td>
-		<td>Create account</td>
+		<td>/public/v1/accounts/accounts/{id}</td>
+		<td>Put</td>
+		<td>Update account</td>
 		<td>
 			<ul>
 				  <li>Operations</li>
@@ -312,9 +365,9 @@ See the following sections to determine which roles are authorized to perform sp
 		</td>
 	</tr>
 	<tr>
-		<td>/public/v1/accounts/accounts/{id}</td>
-		<td>Put</td>
-		<td>Update account</td>
+		<td>/public/v1/accounts/accounts/{id}/icon</td>
+		<td>Get</td>
+		<td>Get account icon</td>
 		<td>
 			<ul>
 				  <li>Operations</li>
@@ -328,7 +381,7 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Accountuser
+### Accountsuserslegacy
 
 <table>
 <thead>
@@ -342,7 +395,31 @@ See the following sections to determine which roles are authorized to perform sp
 <tbody>
 	<tr>
 		<td>/public/v1/accounts/{accountId}/users</td>
+		<td>Post</td>
+		<td></td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/accounts/{accountId}/users</td>
 		<td>Get</td>
+		<td></td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/accounts/{accountId}/users/{userId}</td>
+		<td>Put</td>
 		<td></td>
 		<td>
 			<ul>
@@ -365,9 +442,9 @@ See the following sections to determine which roles are authorized to perform sp
 		</td>
 	</tr>
 	<tr>
-		<td>/public/v1/accounts/accounts/{accountId}/users</td>
-		<td>Get</td>
-		<td>List account users</td>
+		<td>/public/v1/accounts/{accountId}/users/{userId}</td>
+		<td>Delete</td>
+		<td></td>
 		<td>
 			<ul>
 				  <li>Operations</li>
@@ -377,9 +454,21 @@ See the following sections to determine which roles are authorized to perform sp
 		</td>
 	</tr>
 	<tr>
-		<td>/public/v1/accounts/accounts/{accountId}/users/{userId}</td>
-		<td>Get</td>
-		<td>Get account user by ID</td>
+		<td>/public/v1/accounts/{accountId}/users/{userId}/accept-invite</td>
+		<td>Post</td>
+		<td></td>
+		<td>
+			<ul>
+				  <li>Vendor</li>
+				  <li>Client</li>
+				  <li>Operations</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/accounts/{accountId}/users/{userId}/resend-invite</td>
+		<td>Post</td>
+		<td></td>
 		<td>
 			<ul>
 				  <li>Operations</li>
@@ -389,7 +478,7 @@ See the following sections to determine which roles are authorized to perform sp
 		</td>
 	</tr>
 	<tr>
-		<td>/public/v1/accounts/{accountId}/users</td>
+		<td>/public/v1/accounts/{accountId}/users/{userId}/send-new-invite</td>
 		<td>Post</td>
 		<td></td>
 		<td>
@@ -404,6 +493,59 @@ See the following sections to determine which roles are authorized to perform sp
 		<td>/public/v1/accounts/{accountId}/users/{userId}/groups</td>
 		<td>Post</td>
 		<td></td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/accounts/{accountId}/users/{userId}/groups</td>
+		<td>Put</td>
+		<td></td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/accounts/{accountId}/users/{userId}/groups/{userGroupId}</td>
+		<td>Delete</td>
+		<td></td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+<tbody>
+</table>
+
+
+
+### Accountusers
+
+<table>
+<thead>
+<tr>
+ <td>Operation</td>
+ <td>Method</td>
+ <td>Description</td>
+ <td>Access</td>
+</tr>
+</thead>
+<tbody>
+	<tr>
+		<td>/public/v1/accounts/accounts/{accountId}/users</td>
+		<td>Get</td>
+		<td>List account users</td>
 		<td>
 			<ul>
 				  <li>Operations</li>
@@ -425,33 +567,9 @@ See the following sections to determine which roles are authorized to perform sp
 		</td>
 	</tr>
 	<tr>
-		<td>/public/v1/accounts/accounts/{accountId}/users/{userId}/groups</td>
-		<td>Post</td>
-		<td>Add account user to group</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/accounts/{accountId}/users/{userId}</td>
-		<td>Put</td>
-		<td></td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/accounts/{accountId}/users/{userId}/groups</td>
-		<td>Put</td>
-		<td></td>
+		<td>/public/v1/accounts/accounts/{accountId}/users/{userId}</td>
+		<td>Get</td>
+		<td>Get account user by ID</td>
 		<td>
 			<ul>
 				  <li>Operations</li>
@@ -473,6 +591,30 @@ See the following sections to determine which roles are authorized to perform sp
 		</td>
 	</tr>
 	<tr>
+		<td>/public/v1/accounts/accounts/{accountId}/users/{userId}</td>
+		<td>Delete</td>
+		<td>Delete user from account</td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/accounts/accounts/{accountId}/users/{userId}/groups</td>
+		<td>Post</td>
+		<td>Add account user to group</td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
 		<td>/public/v1/accounts/accounts/{accountId}/users/{userId}/groups</td>
 		<td>Put</td>
 		<td>Change account user groups</td>
@@ -485,7 +627,108 @@ See the following sections to determine which roles are authorized to perform sp
 		</td>
 	</tr>
 	<tr>
-		<td>/public/v1/accounts/{accountId}/users/{userId}</td>
+		<td>/public/v1/accounts/accounts/{accountId}/users/{userId}/groups/{userGroupId}</td>
+		<td>Delete</td>
+		<td>Remove account user from group</td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/accounts/accounts/{accountId}/users/{userId}/resend-invite</td>
+		<td>Post</td>
+		<td>Resend invite</td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/accounts/accounts/{accountId}/users/{userId}/send-new-invite</td>
+		<td>Post</td>
+		<td>Send new invite</td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/accounts/accounts/{accountId}/users/{userId}/accept-invite</td>
+		<td>Post</td>
+		<td>Accept invite</td>
+		<td>
+			<ul>
+				  <li>Vendor</li>
+				  <li>Client</li>
+				  <li>Operations</li>
+			</ul>		
+		</td>
+	</tr>
+<tbody>
+</table>
+
+
+
+### Accountuserslegacy
+
+<table>
+<thead>
+<tr>
+ <td>Operation</td>
+ <td>Method</td>
+ <td>Description</td>
+ <td>Access</td>
+</tr>
+</thead>
+<tbody>
+	<tr>
+		<td>/public/v1/accounts/account-users</td>
+		<td>Get</td>
+		<td></td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/accounts/account-users</td>
+		<td>Post</td>
+		<td></td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/accounts/account-users/{id}</td>
+		<td>Get</td>
+		<td></td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/accounts/account-users/{id}</td>
 		<td>Delete</td>
 		<td></td>
 		<td>
@@ -497,9 +740,69 @@ See the following sections to determine which roles are authorized to perform sp
 		</td>
 	</tr>
 	<tr>
-		<td>/public/v1/accounts/accounts/{accountId}/users/{userId}</td>
+		<td>/public/v1/accounts/account-users/{id}/groups</td>
+		<td>Post</td>
+		<td></td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/accounts/account-users/{id}/groups</td>
+		<td>Put</td>
+		<td></td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/accounts/account-users/{id}/groups/{userGroupId}</td>
 		<td>Delete</td>
-		<td>Delete user from account</td>
+		<td></td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/accounts/account-users/{id}/accept-invite</td>
+		<td>Post</td>
+		<td></td>
+		<td>
+			<ul>
+				  <li>Vendor</li>
+				  <li>Client</li>
+				  <li>Operations</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/accounts/account-users/{id}/resend-invite</td>
+		<td>Post</td>
+		<td></td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/accounts/account-users/{id}/send-new-invite</td>
+		<td>Post</td>
+		<td></td>
 		<td>
 			<ul>
 				  <li>Operations</li>
@@ -513,7 +816,7 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Apitoken
+### Apitokens
 
 <table>
 <thead>
@@ -538,18 +841,6 @@ See the following sections to determine which roles are authorized to perform sp
 		</td>
 	</tr>
 	<tr>
-		<td>/public/v1/accounts/api-tokens/{id}</td>
-		<td>Get</td>
-		<td>Get API token by ID</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
 		<td>/public/v1/accounts/api-tokens</td>
 		<td>Post</td>
 		<td>Create API token</td>
@@ -562,21 +853,9 @@ See the following sections to determine which roles are authorized to perform sp
 		</td>
 	</tr>
 	<tr>
-		<td>/public/v1/accounts/api-tokens/{id}/enable</td>
-		<td>Post</td>
-		<td>Enable API token</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/accounts/api-tokens/{id}/disable</td>
-		<td>Post</td>
-		<td>Disable API token</td>
+		<td>/public/v1/accounts/api-tokens/{id}</td>
+		<td>Get</td>
+		<td>Get API token by ID</td>
 		<td>
 			<ul>
 				  <li>Operations</li>
@@ -609,12 +888,36 @@ See the following sections to determine which roles are authorized to perform sp
 			</ul>		
 		</td>
 	</tr>
+	<tr>
+		<td>/public/v1/accounts/api-tokens/{id}/enable</td>
+		<td>Post</td>
+		<td>Enable API token</td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/accounts/api-tokens/{id}/disable</td>
+		<td>Post</td>
+		<td>Disable API token</td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
 <tbody>
 </table>
 
 
 
-### Buyer
+### Buyers
 
 <table>
 <thead>
@@ -628,31 +931,7 @@ See the following sections to determine which roles are authorized to perform sp
 <tbody>
 	<tr>
 		<td>/public/v1/accounts/buyers</td>
-		<td>Get</td>
-		<td></td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/accounts/buyers/{id}</td>
-		<td>Get</td>
-		<td></td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/accounts/buyers/{id}/transfer</td>
-		<td>Get</td>
+		<td>Post</td>
 		<td></td>
 		<td>
 			<ul>
@@ -664,7 +943,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/accounts/buyers</td>
-		<td>Post</td>
+		<td>Get</td>
 		<td></td>
 		<td>
 			<ul>
@@ -723,20 +1002,8 @@ See the following sections to determine which roles are authorized to perform sp
 		</td>
 	</tr>
 	<tr>
-		<td>/public/v1/accounts/buyers/{id}/transfer</td>
-		<td>Post</td>
-		<td></td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/accounts/buyers/{id}/synchronize</td>
-		<td>Post</td>
+		<td>/public/v1/accounts/buyers/{id}</td>
+		<td>Delete</td>
 		<td></td>
 		<td>
 			<ul>
@@ -760,7 +1027,67 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/accounts/buyers/{id}</td>
-		<td>Delete</td>
+		<td>Get</td>
+		<td></td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/accounts/buyers/{id}/transfer</td>
+		<td>Get</td>
+		<td></td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/accounts/buyers/{id}/transfer</td>
+		<td>Post</td>
+		<td></td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/accounts/buyers/{id}/validate</td>
+		<td>Post</td>
+		<td></td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/accounts/buyers/{id}/synchronize</td>
+		<td>Post</td>
+		<td></td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/accounts/buyers/{id}/icon</td>
+		<td>Get</td>
 		<td></td>
 		<td>
 			<ul>
@@ -775,7 +1102,7 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Cloudtenant
+### Cloudtenants
 
 <table>
 <thead>
@@ -800,18 +1127,6 @@ See the following sections to determine which roles are authorized to perform sp
 		</td>
 	</tr>
 	<tr>
-		<td>/public/v1/accounts/cloud-tenants/{id}</td>
-		<td>Get</td>
-		<td>Get cloud tenant by ID</td>
-		<td>
-			<ul>
-				  <li>Vendor</li>
-				  <li>Client</li>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
 		<td>/public/v1/accounts/cloud-tenants</td>
 		<td>Post</td>
 		<td>Create cloud tenant</td>
@@ -825,8 +1140,8 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/accounts/cloud-tenants/{id}</td>
-		<td>Put</td>
-		<td>Update cloud tenant</td>
+		<td>Get</td>
+		<td>Get cloud tenant by ID</td>
 		<td>
 			<ul>
 				  <li>Vendor</li>
@@ -847,12 +1162,24 @@ See the following sections to determine which roles are authorized to perform sp
 			</ul>		
 		</td>
 	</tr>
+	<tr>
+		<td>/public/v1/accounts/cloud-tenants/{id}</td>
+		<td>Put</td>
+		<td>Update cloud tenant</td>
+		<td>
+			<ul>
+				  <li>Vendor</li>
+				  <li>Client</li>
+				  <li>Operations</li>
+			</ul>		
+		</td>
+	</tr>
 <tbody>
 </table>
 
 
 
-### Erplink
+### Erplinks
 
 <table>
 <thead>
@@ -865,9 +1192,33 @@ See the following sections to determine which roles are authorized to perform sp
 </thead>
 <tbody>
 	<tr>
+		<td>/public/v1/accounts/erp-links</td>
+		<td>Get</td>
+		<td>List ERP links</td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
 		<td>/public/v1/accounts/erp-links/{id}</td>
 		<td>Get</td>
 		<td>Get ERP link by ID</td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/accounts/erp-links/{id}</td>
+		<td>Put</td>
+		<td>Update ERP link</td>
 		<td>
 			<ul>
 				  <li>Operations</li>
@@ -900,24 +1251,12 @@ See the following sections to determine which roles are authorized to perform sp
 			</ul>		
 		</td>
 	</tr>
-	<tr>
-		<td>/public/v1/accounts/erp-links/{id}</td>
-		<td>Put</td>
-		<td>Update ERP link</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
 <tbody>
 </table>
 
 
 
-### Licensee
+### Licensees
 
 <table>
 <thead>
@@ -942,6 +1281,18 @@ See the following sections to determine which roles are authorized to perform sp
 		</td>
 	</tr>
 	<tr>
+		<td>/public/v1/accounts/licensees</td>
+		<td>Post</td>
+		<td>Create licensee</td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
 		<td>/public/v1/accounts/licensees/{id}</td>
 		<td>Get</td>
 		<td>Get licensee by ID</td>
@@ -954,9 +1305,21 @@ See the following sections to determine which roles are authorized to perform sp
 		</td>
 	</tr>
 	<tr>
-		<td>/public/v1/accounts/licensees</td>
-		<td>Post</td>
-		<td>Create licensee</td>
+		<td>/public/v1/accounts/licensees/{id}</td>
+		<td>Put</td>
+		<td>Update licensee</td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/accounts/licensees/{id}</td>
+		<td>Delete</td>
+		<td>Delete licensee</td>
 		<td>
 			<ul>
 				  <li>Operations</li>
@@ -990,21 +1353,9 @@ See the following sections to determine which roles are authorized to perform sp
 		</td>
 	</tr>
 	<tr>
-		<td>/public/v1/accounts/licensees/{id}</td>
-		<td>Put</td>
-		<td>Update licensee</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/accounts/licensees/{id}</td>
-		<td>Delete</td>
-		<td>Delete licensee</td>
+		<td>/public/v1/accounts/licensees/{id}/icon</td>
+		<td>Get</td>
+		<td>Get licensee icon</td>
 		<td>
 			<ul>
 				  <li>Operations</li>
@@ -1018,7 +1369,7 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Module
+### Modules
 
 <table>
 <thead>
@@ -1030,6 +1381,18 @@ See the following sections to determine which roles are authorized to perform sp
 </tr>
 </thead>
 <tbody>
+	<tr>
+		<td>/public/v1/accounts/modules</td>
+		<td>Get</td>
+		<td>List modules</td>
+		<td>
+			<ul>
+				  <li>Vendor</li>
+				  <li>Client</li>
+				  <li>Operations</li>
+			</ul>		
+		</td>
+	</tr>
 	<tr>
 		<td>/public/v1/accounts/modules/{id}</td>
 		<td>Get</td>
@@ -1047,7 +1410,7 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Seller
+### Sellers
 
 <table>
 <thead>
@@ -1072,6 +1435,18 @@ See the following sections to determine which roles are authorized to perform sp
 		</td>
 	</tr>
 	<tr>
+		<td>/public/v1/accounts/sellers</td>
+		<td>Post</td>
+		<td>Create seller</td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
 		<td>/public/v1/accounts/sellers/{id}</td>
 		<td>Get</td>
 		<td>Get seller by ID</td>
@@ -1084,9 +1459,21 @@ See the following sections to determine which roles are authorized to perform sp
 		</td>
 	</tr>
 	<tr>
-		<td>/public/v1/accounts/sellers</td>
-		<td>Post</td>
-		<td>Create seller</td>
+		<td>/public/v1/accounts/sellers/{id}</td>
+		<td>Put</td>
+		<td>Update seller</td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/accounts/sellers/{id}</td>
+		<td>Delete</td>
+		<td>Delete seller</td>
 		<td>
 			<ul>
 				  <li>Operations</li>
@@ -1132,21 +1519,9 @@ See the following sections to determine which roles are authorized to perform sp
 		</td>
 	</tr>
 	<tr>
-		<td>/public/v1/accounts/sellers/{id}</td>
-		<td>Put</td>
-		<td>Update seller</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/accounts/sellers/{id}</td>
-		<td>Delete</td>
-		<td>Delete seller</td>
+		<td>/public/v1/accounts/sellers/{id}/icon</td>
+		<td>Get</td>
+		<td>Get seller icon</td>
 		<td>
 			<ul>
 				  <li>Operations</li>
@@ -1160,7 +1535,7 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Service
+### Services
 
 <table>
 <thead>
@@ -1172,6 +1547,18 @@ See the following sections to determine which roles are authorized to perform sp
 </tr>
 </thead>
 <tbody>
+	<tr>
+		<td>/public/v1/accounts/services</td>
+		<td>Get</td>
+		<td>List service identities</td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
 	<tr>
 		<td>/public/v1/accounts/services/{id}</td>
 		<td>Get</td>
@@ -1189,7 +1576,7 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Usergroup
+### Usergroups
 
 <table>
 <thead>
@@ -1214,9 +1601,9 @@ See the following sections to determine which roles are authorized to perform sp
 		</td>
 	</tr>
 	<tr>
-		<td>/public/v1/accounts/user-groups/{id}</td>
-		<td>Get</td>
-		<td>Get user group by ID</td>
+		<td>/public/v1/accounts/user-groups</td>
+		<td>Post</td>
+		<td>Create user group</td>
 		<td>
 			<ul>
 				  <li>Operations</li>
@@ -1226,9 +1613,9 @@ See the following sections to determine which roles are authorized to perform sp
 		</td>
 	</tr>
 	<tr>
-		<td>/public/v1/accounts/user-groups</td>
-		<td>Post</td>
-		<td>Create user group</td>
+		<td>/public/v1/accounts/user-groups/{id}</td>
+		<td>Get</td>
+		<td>Get user group by ID</td>
 		<td>
 			<ul>
 				  <li>Operations</li>
@@ -1266,7 +1653,7 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### User
+### Users
 
 <table>
 <thead>
@@ -1279,9 +1666,45 @@ See the following sections to determine which roles are authorized to perform sp
 </thead>
 <tbody>
 	<tr>
+		<td>/public/v1/accounts/users</td>
+		<td>Get</td>
+		<td>List users</td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
 		<td>/public/v1/accounts/users/{uniqueFilter}</td>
 		<td>Get</td>
 		<td>Get user by ID or unique filter</td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/accounts/users/{uniqueFilter}</td>
+		<td>Put</td>
+		<td>Update user (multipart form)</td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/accounts/users/{uniqueFilter}</td>
+		<td>Delete</td>
+		<td>Delete user</td>
 		<td>
 			<ul>
 				  <li>Operations</li>
@@ -1327,9 +1750,9 @@ See the following sections to determine which roles are authorized to perform sp
 		</td>
 	</tr>
 	<tr>
-		<td>/public/v1/accounts/users/{uniqueFilter}</td>
-		<td>Put</td>
-		<td>Update user (multipart form)</td>
+		<td>/public/v1/accounts/users/{uniqueFilter}/sso-check</td>
+		<td>Get</td>
+		<td>Check whether SSO is enabled (deprecated)</td>
 		<td>
 			<ul>
 				  <li>Operations</li>
@@ -1339,9 +1762,45 @@ See the following sections to determine which roles are authorized to perform sp
 		</td>
 	</tr>
 	<tr>
-		<td>/public/v1/accounts/users/{uniqueFilter}</td>
-		<td>Delete</td>
-		<td>Delete user</td>
+		<td>/public/v1/accounts/users/{uniqueFilter}/sso</td>
+		<td>Get</td>
+		<td>Check SSO status</td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/accounts/users/{uniqueFilter}/icon</td>
+		<td>Get</td>
+		<td>Get user icon</td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/accounts/users/{uniqueFilter}/accounts</td>
+		<td>Get</td>
+		<td>List accounts associated with the user</td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/accounts/users/{uniqueFilter}/accounts/{accountId}</td>
+		<td>Put</td>
+		<td>Update user's account settings</td>
 		<td>
 			<ul>
 				  <li>Operations</li>

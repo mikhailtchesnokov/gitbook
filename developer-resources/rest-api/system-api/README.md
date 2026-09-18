@@ -51,7 +51,7 @@ The API is organized into collections, each containing a set of operations. Acce
 
 See the following sections to determine which roles are authorized to perform specific operations within each collection:
 
-### Task
+### Tasks
 
 <table>
 <thead>
@@ -75,6 +75,18 @@ See the following sections to determine which roles are authorized to perform sp
 		</td>
 	</tr>
 	<tr>
+		<td>/public/v1/system/tasks</td>
+		<td>Post</td>
+		<td>Create a task</td>
+		<td>
+			<ul>
+				  <li>Vendor</li>
+				  <li>Client</li>
+				  <li>Operations</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
 		<td>/public/v1/system/tasks/{id}</td>
 		<td>Get</td>
 		<td>Retrieve a task by ID</td>
@@ -86,9 +98,44 @@ See the following sections to determine which roles are authorized to perform sp
 		</td>
 	</tr>
 	<tr>
-		<td>/public/v1/system/tasks</td>
+		<td>/public/v1/system/tasks/{id}</td>
+		<td>Put</td>
+		<td>Update a task</td>
+		<td>
+			<ul>
+				  <li>Vendor</li>
+				  <li>Client</li>
+				  <li>Operations</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/system/tasks/{id}/result</td>
+		<td>Get</td>
+		<td>Get a task result</td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/system/tasks/{id}/logs</td>
+		<td>Get</td>
+		<td>Get task logs</td>
+		<td>
+			<ul>
+				  <li>Vendor</li>
+				  <li>Operations</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/system/tasks/{id}/logs</td>
 		<td>Post</td>
-		<td>Create a task</td>
+		<td>Create a task log</td>
 		<td>
 			<ul>
 				  <li>Vendor</li>
@@ -149,58 +196,6 @@ See the following sections to determine which roles are authorized to perform sp
 		<td>/public/v1/system/tasks/{id}/fail</td>
 		<td>Post</td>
 		<td>Transition a task to Failed</td>
-		<td>
-			<ul>
-				  <li>Vendor</li>
-				  <li>Client</li>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/system/tasks/{id}</td>
-		<td>Put</td>
-		<td>Update a task</td>
-		<td>
-			<ul>
-				  <li>Vendor</li>
-				  <li>Client</li>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-<tbody>
-</table>
-
-
-
-### Tasklog
-
-<table>
-<thead>
-<tr>
- <td>Operation</td>
- <td>Method</td>
- <td>Description</td>
- <td>Access</td>
-</tr>
-</thead>
-<tbody>
-	<tr>
-		<td>/public/v1/system/tasks/{id}/logs</td>
-		<td>Get</td>
-		<td>Get task logs</td>
-		<td>
-			<ul>
-				  <li>Vendor</li>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/system/tasks/{id}/logs</td>
-		<td>Post</td>
-		<td>Create a task log</td>
 		<td>
 			<ul>
 				  <li>Vendor</li>
