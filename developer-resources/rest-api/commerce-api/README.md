@@ -139,7 +139,9 @@ The API is organized into collections, each containing a set of operations. Acce
 
 See the following sections to determine which roles are authorized to perform specific operations within each collection:
 
-### Agreements<table>
+### Agreements
+
+<table>
 <thead>
 <tr>
  <td>Operation</td>
@@ -329,7 +331,9 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Assets<table>
+### Assets
+
+<table>
 <thead>
 <tr>
  <td>Operation</td>
@@ -424,7 +428,9 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Lines<table>
+### Lines
+
+<table>
 <thead>
 <tr>
  <td>Operation</td>
@@ -451,7 +457,9 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Subscriptions<table>
+### Subscriptions
+
+<table>
 <thead>
 <tr>
  <td>Operation</td>
@@ -568,7 +576,9 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Orders<table>
+### Orders
+
+<table>
 <thead>
 <tr>
  <td>Operation</td>

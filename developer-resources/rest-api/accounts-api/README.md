@@ -203,7 +203,9 @@ The API is organized into collections, each containing a set of operations. Acce
 
 See the following sections to determine which roles are authorized to perform specific operations within each collection:
 
-### Accounts<table>
+### Accounts
+
+<table>
 <thead>
 <tr>
  <td>Operation</td>
@@ -494,7 +496,9 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### {accountid}<table>
+### {accountid}
+
+<table>
 <thead>
 <tr>
  <td>Operation</td>
@@ -641,7 +645,9 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### AccountUsers<table>
+### AccountUsers
+
+<table>
 <thead>
 <tr>
  <td>Operation</td>
@@ -776,7 +782,9 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### ApiTokens<table>
+### ApiTokens
+
+<table>
 <thead>
 <tr>
  <td>Operation</td>
@@ -875,7 +883,9 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Buyers<table>
+### Buyers
+
+<table>
 <thead>
 <tr>
  <td>Operation</td>
@@ -1058,7 +1068,9 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### CloudTenants<table>
+### CloudTenants
+
+<table>
 <thead>
 <tr>
  <td>Operation</td>
@@ -1133,7 +1145,9 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### ErpLinks<table>
+### ErpLinks
+
+<table>
 <thead>
 <tr>
  <td>Operation</td>
@@ -1208,7 +1222,9 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Licensees<table>
+### Licensees
+
+<table>
 <thead>
 <tr>
  <td>Operation</td>
@@ -1319,7 +1335,9 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Modules<table>
+### Modules
+
+<table>
 <thead>
 <tr>
  <td>Operation</td>
@@ -1358,7 +1376,9 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Sellers<table>
+### Sellers
+
+<table>
 <thead>
 <tr>
  <td>Operation</td>
@@ -1481,7 +1501,9 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Services<table>
+### Services
+
+<table>
 <thead>
 <tr>
  <td>Operation</td>
@@ -1520,7 +1542,9 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### UserGroups<table>
+### UserGroups
+
+<table>
 <thead>
 <tr>
  <td>Operation</td>
@@ -1595,7 +1619,9 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Users<table>
+### Users
+
+<table>
 <thead>
 <tr>
  <td>Operation</td>

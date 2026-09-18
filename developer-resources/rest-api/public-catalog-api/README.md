@@ -131,7 +131,9 @@ The API is organized into collections, each containing a set of operations. Acce
 
 See the following sections to determine which roles are authorized to perform specific operations within each collection:
 
-### Categories<table>
+### Categories
+
+<table>
 <thead>
 <tr>
  <td>Operation</td>
@@ -222,7 +224,9 @@ sets the category record to an unpublished state in the system.</td>
 
 
 
-### Industries<table>
+### Industries
+
+<table>
 <thead>
 <tr>
  <td>Operation</td>
@@ -313,7 +317,9 @@ sets the industry record to an unpublished state in the system.</td>
 
 
 
-### ProductProfiles<table>
+### ProductProfiles
+
+<table>
 <thead>
 <tr>
  <td>Operation</td>
@@ -549,7 +555,9 @@ sets the product profiles record to an unpublished state in the system.</td>
 
 
 
-### Segments<table>
+### Segments
+
+<table>
 <thead>
 <tr>
  <td>Operation</td>
@@ -638,7 +646,9 @@ sets the product profiles record to an unpublished state in the system.</td>
 
 
 
-### VendorProfiles<table>
+### VendorProfiles
+
+<table>
 <thead>
 <tr>
  <td>Operation</td>

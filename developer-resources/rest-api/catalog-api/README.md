@@ -59,7 +59,9 @@ The API is organized into collections, each containing a set of operations. Acce
 
 See the following sections to determine which roles are authorized to perform specific operations within each collection:
 
-### PricingPolicies<table>
+### PricingPolicies
+
+<table>
 <thead>
 <tr>
  <td>Operation</td>
@@ -196,7 +198,9 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Authorizations<table>
+### Authorizations
+
+<table>
 <thead>
 <tr>
  <td>Operation</td>
@@ -266,7 +270,9 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Products<table>
+### Products
+
+<table>
 <thead>
 <tr>
  <td>Operation</td>
@@ -990,7 +996,9 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Listings<table>
+### Listings
+
+<table>
 <thead>
 <tr>
  <td>Operation</td>
@@ -1059,7 +1067,9 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### PriceLists<table>
+### PriceLists
+
+<table>
 <thead>
 <tr>
  <td>Operation</td>
@@ -1166,7 +1176,9 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Items<table>
+### Items
+
+<table>
 <thead>
 <tr>
  <td>Operation</td>
@@ -1277,7 +1289,9 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### UnitsOfMeasure<table>
+### UnitsOfMeasure
+
+<table>
 <thead>
 <tr>
  <td>Operation</td>

@@ -39,7 +39,9 @@ The API is organized into collections, each containing a set of operations. Acce
 
 See the following sections to determine which roles are authorized to perform specific operations within each collection:
 
-### Categories<table>
+### Categories
+
+<table>
 <thead>
 <tr>
  <td>Operation</td>
@@ -122,7 +124,9 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Extensions<table>
+### Extensions
+
+<table>
 <thead>
 <tr>
  <td>Operation</td>
@@ -625,7 +629,9 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Installations<table>
+### Installations
+
+<table>
 <thead>
 <tr>
  <td>Operation</td>

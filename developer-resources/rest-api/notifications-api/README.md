@@ -135,7 +135,9 @@ The API is organized into collections, each containing a set of operations. Acce
 
 See the following sections to determine which roles are authorized to perform specific operations within each collection:
 
-### Batches<table>
+### Batches
+
+<table>
 <thead>
 <tr>
  <td>Operation</td>
@@ -198,7 +200,9 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Categories<table>
+### Categories
+
+<table>
 <thead>
 <tr>
  <td>Operation</td>
@@ -297,7 +301,9 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Contacts<table>
+### Contacts
+
+<table>
 <thead>
 <tr>
  <td>Operation</td>
@@ -396,7 +402,9 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Accounts<table>
+### Accounts
+
+<table>
 <thead>
 <tr>
  <td>Operation</td>
@@ -423,7 +431,9 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Directories<table>
+### Directories
+
+<table>
 <thead>
 <tr>
  <td>Operation</td>
@@ -462,7 +472,9 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Footers<table>
+### Footers
+
+<table>
 <thead>
 <tr>
  <td>Operation</td>
@@ -537,7 +549,9 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Messages<table>
+### Messages
+
+<table>
 <thead>
 <tr>
  <td>Operation</td>
@@ -576,7 +590,9 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Templates<table>
+### Templates
+
+<table>
 <thead>
 <tr>
  <td>Operation</td>
@@ -759,7 +775,9 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Subscribers<table>
+### Subscribers
+
+<table>
 <thead>
 <tr>
  <td>Operation</td>
@@ -834,7 +852,9 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Webhooks<table>
+### Webhooks
+
+<table>
 <thead>
 <tr>
  <td>Operation</td>

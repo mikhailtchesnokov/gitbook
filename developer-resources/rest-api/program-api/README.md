@@ -49,7 +49,9 @@ The API is organized into collections, each containing a set of operations. Acce
 
 See the following sections to determine which roles are authorized to perform specific operations within each collection:
 
-### Certificates<table>
+### Certificates
+
+<table>
 <thead>
 <tr>
  <td>Operation</td>
@@ -132,7 +134,9 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Enrollments<table>
+### Enrollments
+
+<table>
 <thead>
 <tr>
  <td>Operation</td>
@@ -339,7 +343,9 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Programs<table>
+### Programs
+
+<table>
 <thead>
 <tr>
  <td>Operation</td>

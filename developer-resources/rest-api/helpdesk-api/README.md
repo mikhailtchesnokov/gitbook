@@ -225,7 +225,9 @@ The API is organized into collections, each containing a set of operations. Acce
 
 See the following sections to determine which roles are authorized to perform specific operations within each collection:
 
-### Chats<table>
+### Chats
+
+<table>
 <thead>
 <tr>
  <td>Operation</td>
@@ -636,7 +638,9 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Feedback<table>
+### Feedback
+
+<table>
 <thead>
 <tr>
  <td>Operation</td>
@@ -795,7 +799,9 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Forms<table>
+### Forms
+
+<table>
 <thead>
 <tr>
  <td>Operation</td>
@@ -978,7 +984,9 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### ParameterGroups<table>
+### ParameterGroups
+
+<table>
 <thead>
 <tr>
  <td>Operation</td>
@@ -1137,7 +1145,9 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Parameters<table>
+### Parameters
+
+<table>
 <thead>
 <tr>
  <td>Operation</td>
@@ -1212,7 +1222,9 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Queues<table>
+### Queues
+
+<table>
 <thead>
 <tr>
  <td>Operation</td>
@@ -1383,7 +1395,9 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Cases<table>
+### Cases
+
+<table>
 <thead>
 <tr>
  <td>Operation</td>

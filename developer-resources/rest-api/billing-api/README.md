@@ -203,7 +203,9 @@ The API is organized into collections, each containing a set of operations. Acce
 
 See the following sections to determine which roles are authorized to perform specific operations within each collection:
 
-### Analytics<table>
+### Analytics
+
+<table>
 <thead>
 <tr>
  <td>Operation</td>
@@ -230,7 +232,9 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### CreditMemos<table>
+### CreditMemos
+
+<table>
 <thead>
 <tr>
  <td>Operation</td>
@@ -334,7 +338,9 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### CustomLedgers<table>
+### CustomLedgers
+
+<table>
 <thead>
 <tr>
  <td>Operation</td>
@@ -503,7 +509,9 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Invoices<table>
+### Invoices
+
+<table>
 <thead>
 <tr>
  <td>Operation</td>
@@ -607,7 +615,9 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Journals<table>
+### Journals
+
+<table>
 <thead>
 <tr>
  <td>Operation</td>
@@ -877,7 +887,9 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Ledgers<table>
+### Ledgers
+
+<table>
 <thead>
 <tr>
  <td>Operation</td>
@@ -1026,7 +1038,9 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### ManualOverrides<table>
+### ManualOverrides
+
+<table>
 <thead>
 <tr>
  <td>Operation</td>
@@ -1085,7 +1099,9 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Statements<table>
+### Statements
+
+<table>
 <thead>
 <tr>
  <td>Operation</td>

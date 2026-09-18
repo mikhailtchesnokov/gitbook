@@ -35,7 +35,9 @@ The API is organized into collections, each containing a set of operations. Acce
 
 See the following sections to determine which roles are authorized to perform specific operations within each collection:
 
-### EventTypes<table>
+### EventTypes
+
+<table>
 <thead>
 <tr>
  <td>Operation</td>
@@ -86,7 +88,9 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Records<table>
+### Records
+
+<table>
 <thead>
 <tr>
  <td>Operation</td>

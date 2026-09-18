@@ -65,81 +65,81 @@ See the following sections to determine which roles are authorized to perform sp
 
 <table>
 <thead>
-	<tr>
-	<td>Operation</td>
-	<td>Method</td>
-	<td>Description</td>
-	<td>Access</td>
-	</tr>
+<tr>
+ <td>Operation</td>
+ <td>Method</td>
+ <td>Description</td>
+ <td>Access</td>
+</tr>
 </thead>
 <tbody>
-		<tr>
-			<td>/public/v1/exchange/currencies</td>
-			<td>Get</td>
-			<td>Gets a list of currencies.</td>
-			<td>
-				<ul>
-					<li>Operations</li>
-					<li>Client</li>
-					<li>Vendor</li>
-				</ul>		
-			</td>
-		</tr>
-		<tr>
-			<td>/public/v1/exchange/currencies</td>
-			<td>Post</td>
-			<td>Creates a new currency.</td>
-			<td>
-				<ul>
-					<li>Operations</li>
-				</ul>		
-			</td>
-		</tr>
-		<tr>
-			<td>/public/v1/exchange/currencies/{id}</td>
-			<td>Get</td>
-			<td>Retrieves a currency by ID.</td>
-			<td>
-				<ul>
-					<li>Operations</li>
-					<li>Client</li>
-					<li>Vendor</li>
-				</ul>		
-			</td>
-		</tr>
-		<tr>
-			<td>/public/v1/exchange/currencies/{id}</td>
-			<td>Put</td>
-			<td>Updates an existing currency.</td>
-			<td>
-				<ul>
-					<li>Operations</li>
-				</ul>		
-			</td>
-		</tr>
-		<tr>
-			<td>/public/v1/exchange/currencies/{id}</td>
-			<td>Delete</td>
-			<td>Deletes currency by ID.</td>
-			<td>
-				<ul>
-					<li>Operations</li>
-				</ul>		
-			</td>
-		</tr>
-		<tr>
-			<td>/public/v1/exchange/currencies/{id}/icon</td>
-			<td>Get</td>
-			<td>Gets a download redirect for a currency icon.</td>
-			<td>
-				<ul>
-					<li>Operations</li>
-					<li>Client</li>
-					<li>Vendor</li>
-				</ul>		
-			</td>
-		</tr>
-	<tbody>
+	<tr>
+		<td>/public/v1/exchange/currencies</td>
+		<td>Get</td>
+		<td>Gets a list of currencies.</td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/exchange/currencies</td>
+		<td>Post</td>
+		<td>Creates a new currency.</td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/exchange/currencies/{id}</td>
+		<td>Get</td>
+		<td>Retrieves a currency by ID.</td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/exchange/currencies/{id}</td>
+		<td>Put</td>
+		<td>Updates an existing currency.</td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/exchange/currencies/{id}</td>
+		<td>Delete</td>
+		<td>Deletes currency by ID.</td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/exchange/currencies/{id}/icon</td>
+		<td>Get</td>
+		<td>Gets a download redirect for a currency icon.</td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+<tbody>
 </table>
 
 
