@@ -256,28 +256,6 @@ See the following sections to determine which roles are authorized to perform sp
 		</td>
 	</tr>
 	<tr>
-		<td>/public/v1/billing/credit-memos/{creditMemoId}/attachments/{id}</td>
-		<td>Put</td>
-		<td>Updates an existing credit memo attachment.</td>
-		<td>
-			<ul>
-				  <li>Client</li>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/billing/credit-memos/{creditMemoId}/attachments/{id}</td>
-		<td>Delete</td>
-		<td>Deletes an individual credit memo attachment.</td>
-		<td>
-			<ul>
-				  <li>Client</li>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
 		<td>/public/v1/billing/credit-memos/{creditMemoId}/attachments</td>
 		<td>Get</td>
 		<td>Retrieves a list of credit memo attachments.</td>
@@ -292,6 +270,28 @@ See the following sections to determine which roles are authorized to perform sp
 		<td>/public/v1/billing/credit-memos/{creditMemoId}/attachments</td>
 		<td>Post</td>
 		<td>Creates a new credit memo attachment.</td>
+		<td>
+			<ul>
+				  <li>Client</li>
+				  <li>Operations</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/billing/credit-memos/{creditMemoId}/attachments/{id}</td>
+		<td>Put</td>
+		<td>Updates an existing credit memo attachment.</td>
+		<td>
+			<ul>
+				  <li>Client</li>
+				  <li>Operations</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/billing/credit-memos/{creditMemoId}/attachments/{id}</td>
+		<td>Delete</td>
+		<td>Deletes an individual credit memo attachment.</td>
 		<td>
 			<ul>
 				  <li>Client</li>
@@ -318,16 +318,6 @@ See the following sections to determine which roles are authorized to perform sp
 <tbody>
 	<tr>
 		<td>/public/v1/billing/credit-memos</td>
-		<td>Post</td>
-		<td>Creates new credit memos.</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/billing/credit-memos</td>
 		<td>Get</td>
 		<td></td>
 		<td>
@@ -347,6 +337,16 @@ See the following sections to determine which roles are authorized to perform sp
 				  <li>Operations</li>
 				  <li>Client</li>
 				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/billing/credit-memos</td>
+		<td>Post</td>
+		<td>Creates new credit memos.</td>
+		<td>
+			<ul>
+				  <li>Operations</li>
 			</ul>		
 		</td>
 	</tr>
@@ -378,26 +378,6 @@ See the following sections to determine which roles are authorized to perform sp
 		</td>
 	</tr>
 	<tr>
-		<td>/public/v1/billing/custom-ledgers/{customLedgerId}/attachments/{id}</td>
-		<td>Put</td>
-		<td>Updates an existing custom ledger attachment.</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/billing/custom-ledgers/{customLedgerId}/attachments/{id}</td>
-		<td>Delete</td>
-		<td>Deletes a custom ledger attachment.</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
 		<td>/public/v1/billing/custom-ledgers/{customLedgerId}/attachments</td>
 		<td>Get</td>
 		<td>Retrieves a list of custom ledger attachments.</td>
@@ -411,6 +391,26 @@ See the following sections to determine which roles are authorized to perform sp
 		<td>/public/v1/billing/custom-ledgers/{customLedgerId}/attachments</td>
 		<td>Post</td>
 		<td>Creates a new custom ledger attachment.</td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/billing/custom-ledgers/{customLedgerId}/attachments/{id}</td>
+		<td>Put</td>
+		<td>Updates an existing custom ledger attachment.</td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/billing/custom-ledgers/{customLedgerId}/attachments/{id}</td>
+		<td>Delete</td>
+		<td>Deletes a custom ledger attachment.</td>
 		<td>
 			<ul>
 				  <li>Operations</li>
@@ -473,55 +473,35 @@ See the following sections to determine which roles are authorized to perform sp
 <tbody>
 	<tr>
 		<td>/public/v1/billing/custom-ledgers</td>
-		<td>Post</td>
-		<td>Creates a new custom ledger.</td>
+		<td>Get</td>
+		<td></td>
 		<td>
 			<ul>
 				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/billing/custom-ledgers/{id}</td>
+		<td>Get</td>
+		<td></td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
 			</ul>		
 		</td>
 	</tr>
 	<tr>
 		<td>/public/v1/billing/custom-ledgers</td>
-		<td>Get</td>
-		<td></td>
+		<td>Post</td>
+		<td>Creates a new custom ledger.</td>
 		<td>
 			<ul>
 				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/billing/custom-ledgers/{id}</td>
-		<td>Put</td>
-		<td>Updates an existing custom ledger.</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/billing/custom-ledgers/{id}</td>
-		<td>Delete</td>
-		<td>Deletes a custom ledger by ID.</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/billing/custom-ledgers/{id}</td>
-		<td>Get</td>
-		<td></td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
 			</ul>		
 		</td>
 	</tr>
@@ -549,6 +529,26 @@ See the following sections to determine which roles are authorized to perform sp
 		<td>/public/v1/billing/custom-ledgers/{id}/queue</td>
 		<td>Post</td>
 		<td>Queues a custom ledger for ERP integration.</td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/billing/custom-ledgers/{id}</td>
+		<td>Put</td>
+		<td>Updates an existing custom ledger.</td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/billing/custom-ledgers/{id}</td>
+		<td>Delete</td>
+		<td>Deletes a custom ledger by ID.</td>
 		<td>
 			<ul>
 				  <li>Operations</li>
@@ -584,28 +584,6 @@ See the following sections to determine which roles are authorized to perform sp
 		</td>
 	</tr>
 	<tr>
-		<td>/public/v1/billing/invoices/{invoiceId}/attachments/{id}</td>
-		<td>Put</td>
-		<td>Updates an existing invoice attachment.</td>
-		<td>
-			<ul>
-				  <li>Client</li>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/billing/invoices/{invoiceId}/attachments/{id}</td>
-		<td>Delete</td>
-		<td>Deletes an invoice attachment.</td>
-		<td>
-			<ul>
-				  <li>Client</li>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
 		<td>/public/v1/billing/invoices/{invoiceId}/attachments</td>
 		<td>Get</td>
 		<td>Retrieves a list of invoice attachments.</td>
@@ -620,6 +598,28 @@ See the following sections to determine which roles are authorized to perform sp
 		<td>/public/v1/billing/invoices/{invoiceId}/attachments</td>
 		<td>Post</td>
 		<td>Creates a new invoice attachment.</td>
+		<td>
+			<ul>
+				  <li>Client</li>
+				  <li>Operations</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/billing/invoices/{invoiceId}/attachments/{id}</td>
+		<td>Put</td>
+		<td>Updates an existing invoice attachment.</td>
+		<td>
+			<ul>
+				  <li>Client</li>
+				  <li>Operations</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/billing/invoices/{invoiceId}/attachments/{id}</td>
+		<td>Delete</td>
+		<td>Deletes an invoice attachment.</td>
 		<td>
 			<ul>
 				  <li>Client</li>
@@ -646,16 +646,6 @@ See the following sections to determine which roles are authorized to perform sp
 <tbody>
 	<tr>
 		<td>/public/v1/billing/invoices</td>
-		<td>Post</td>
-		<td>Creates new invoices.</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/billing/invoices</td>
 		<td>Get</td>
 		<td></td>
 		<td>
@@ -675,6 +665,16 @@ See the following sections to determine which roles are authorized to perform sp
 				  <li>Operations</li>
 				  <li>Client</li>
 				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/billing/invoices</td>
+		<td>Post</td>
+		<td>Creates new invoices.</td>
+		<td>
+			<ul>
+				  <li>Operations</li>
 			</ul>		
 		</td>
 	</tr>
@@ -707,28 +707,6 @@ See the following sections to determine which roles are authorized to perform sp
 		</td>
 	</tr>
 	<tr>
-		<td>/public/v1/billing/journals/{journalId}/attachments/{id}</td>
-		<td>Put</td>
-		<td>Updates an existing journal attachment.</td>
-		<td>
-			<ul>
-				  <li>Vendor</li>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/billing/journals/{journalId}/attachments/{id}</td>
-		<td>Delete</td>
-		<td>Deletes a journal attachment.</td>
-		<td>
-			<ul>
-				  <li>Vendor</li>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
 		<td>/public/v1/billing/journals/{journalId}/attachments</td>
 		<td>Get</td>
 		<td>Retrieves a list of journal attachments.</td>
@@ -743,6 +721,28 @@ See the following sections to determine which roles are authorized to perform sp
 		<td>/public/v1/billing/journals/{journalId}/attachments</td>
 		<td>Post</td>
 		<td>Creates a new journal attachment.</td>
+		<td>
+			<ul>
+				  <li>Vendor</li>
+				  <li>Operations</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/billing/journals/{journalId}/attachments/{id}</td>
+		<td>Put</td>
+		<td>Updates an existing journal attachment.</td>
+		<td>
+			<ul>
+				  <li>Vendor</li>
+				  <li>Operations</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/billing/journals/{journalId}/attachments/{id}</td>
+		<td>Delete</td>
+		<td>Deletes a journal attachment.</td>
 		<td>
 			<ul>
 				  <li>Vendor</li>
@@ -841,58 +841,36 @@ See the following sections to determine which roles are authorized to perform sp
 <tbody>
 	<tr>
 		<td>/public/v1/billing/journals</td>
+		<td>Get</td>
+		<td></td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/billing/journals/{id}</td>
+		<td>Get</td>
+		<td></td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/billing/journals</td>
 		<td>Post</td>
 		<td>Creates a new journal.</td>
 		<td>
 			<ul>
 				  <li>Vendor</li>
 				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/billing/journals</td>
-		<td>Get</td>
-		<td></td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/billing/journals/{id}</td>
-		<td>Put</td>
-		<td>Updates an existing journal.</td>
-		<td>
-			<ul>
-				  <li>Vendor</li>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/billing/journals/{id}</td>
-		<td>Delete</td>
-		<td>Deletes the specified journal.</td>
-		<td>
-			<ul>
-				  <li>Vendor</li>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/billing/journals/{id}</td>
-		<td>Get</td>
-		<td></td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
 			</ul>		
 		</td>
 	</tr>
@@ -973,6 +951,28 @@ See the following sections to determine which roles are authorized to perform sp
 			</ul>		
 		</td>
 	</tr>
+	<tr>
+		<td>/public/v1/billing/journals/{id}</td>
+		<td>Put</td>
+		<td>Updates an existing journal.</td>
+		<td>
+			<ul>
+				  <li>Vendor</li>
+				  <li>Operations</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/billing/journals/{id}</td>
+		<td>Delete</td>
+		<td>Deletes the specified journal.</td>
+		<td>
+			<ul>
+				  <li>Vendor</li>
+				  <li>Operations</li>
+			</ul>		
+		</td>
+	</tr>
 <tbody>
 </table>
 
@@ -1029,26 +1029,6 @@ See the following sections to determine which roles are authorized to perform sp
 		</td>
 	</tr>
 	<tr>
-		<td>/public/v1/billing/ledgers/{ledgerId}/attachments/{id}</td>
-		<td>Put</td>
-		<td>Updates an existing ledger attachment.</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/billing/ledgers/{ledgerId}/attachments/{id}</td>
-		<td>Delete</td>
-		<td>Deletes a ledger attachment.</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
 		<td>/public/v1/billing/ledgers/{ledgerId}/attachments</td>
 		<td>Get</td>
 		<td>Retrieves a list of ledger attachments.</td>
@@ -1062,6 +1042,26 @@ See the following sections to determine which roles are authorized to perform sp
 		<td>/public/v1/billing/ledgers/{ledgerId}/attachments</td>
 		<td>Post</td>
 		<td>Creates a new ledger attachment.</td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/billing/ledgers/{ledgerId}/attachments/{id}</td>
+		<td>Put</td>
+		<td>Updates an existing ledger attachment.</td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/billing/ledgers/{ledgerId}/attachments/{id}</td>
+		<td>Delete</td>
+		<td>Deletes a ledger attachment.</td>
 		<td>
 			<ul>
 				  <li>Operations</li>
@@ -1124,16 +1124,18 @@ See the following sections to determine which roles are authorized to perform sp
 <tbody>
 	<tr>
 		<td>/public/v1/billing/ledgers/{id}</td>
-		<td>Put</td>
-		<td>Updates a ledger.</td>
+		<td>Get</td>
+		<td></td>
 		<td>
 			<ul>
 				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
 			</ul>		
 		</td>
 	</tr>
 	<tr>
-		<td>/public/v1/billing/ledgers/{id}</td>
+		<td>/public/v1/billing/ledgers</td>
 		<td>Get</td>
 		<td></td>
 		<td>
@@ -1175,14 +1177,12 @@ See the following sections to determine which roles are authorized to perform sp
 		</td>
 	</tr>
 	<tr>
-		<td>/public/v1/billing/ledgers</td>
-		<td>Get</td>
-		<td></td>
+		<td>/public/v1/billing/ledgers/{id}</td>
+		<td>Put</td>
+		<td>Updates a ledger.</td>
 		<td>
 			<ul>
 				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
 			</ul>		
 		</td>
 	</tr>
@@ -1205,16 +1205,6 @@ See the following sections to determine which roles are authorized to perform sp
 <tbody>
 	<tr>
 		<td>/public/v1/billing/manual-overrides</td>
-		<td>Post</td>
-		<td>Creates a new manual override.</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/billing/manual-overrides</td>
 		<td>Get</td>
 		<td></td>
 		<td>
@@ -1222,6 +1212,28 @@ See the following sections to determine which roles are authorized to perform sp
 				  <li>Operations</li>
 				  <li>Client</li>
 				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/billing/manual-overrides/{id}</td>
+		<td>Get</td>
+		<td></td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/billing/manual-overrides</td>
+		<td>Post</td>
+		<td>Creates a new manual override.</td>
+		<td>
+			<ul>
+				  <li>Operations</li>
 			</ul>		
 		</td>
 	</tr>
@@ -1232,18 +1244,6 @@ See the following sections to determine which roles are authorized to perform sp
 		<td>
 			<ul>
 				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/billing/manual-overrides/{id}</td>
-		<td>Get</td>
-		<td></td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
 			</ul>		
 		</td>
 	</tr>
@@ -1276,28 +1276,6 @@ See the following sections to determine which roles are authorized to perform sp
 		</td>
 	</tr>
 	<tr>
-		<td>/public/v1/billing/statements/{statementId}/attachments/{id}</td>
-		<td>Put</td>
-		<td>Updates an existing statement attachment.</td>
-		<td>
-			<ul>
-				  <li>Client</li>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/billing/statements/{statementId}/attachments/{id}</td>
-		<td>Delete</td>
-		<td>Deletes a statement attachment.</td>
-		<td>
-			<ul>
-				  <li>Client</li>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
 		<td>/public/v1/billing/statements/{statementId}/attachments</td>
 		<td>Get</td>
 		<td>Retrieves a list of statement attachments.</td>
@@ -1312,6 +1290,28 @@ See the following sections to determine which roles are authorized to perform sp
 		<td>/public/v1/billing/statements/{statementId}/attachments</td>
 		<td>Post</td>
 		<td>Creates a new statement attachment.</td>
+		<td>
+			<ul>
+				  <li>Client</li>
+				  <li>Operations</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/billing/statements/{statementId}/attachments/{id}</td>
+		<td>Put</td>
+		<td>Updates an existing statement attachment.</td>
+		<td>
+			<ul>
+				  <li>Client</li>
+				  <li>Operations</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/billing/statements/{statementId}/attachments/{id}</td>
+		<td>Delete</td>
+		<td>Deletes a statement attachment.</td>
 		<td>
 			<ul>
 				  <li>Client</li>
@@ -1377,47 +1377,36 @@ See the following sections to determine which roles are authorized to perform sp
 <tbody>
 	<tr>
 		<td>/public/v1/billing/statements</td>
+		<td>Get</td>
+		<td></td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/billing/statements/{id}</td>
+		<td>Get</td>
+		<td></td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/billing/statements</td>
 		<td>Post</td>
 		<td>Creates a new statement.</td>
 		<td>
 			<ul>
 				  <li>Client</li>
 				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/billing/statements</td>
-		<td>Get</td>
-		<td></td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/billing/statements/{id}</td>
-		<td>Put</td>
-		<td>Updates an existing statement.</td>
-		<td>
-			<ul>
-				  <li>Client</li>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/billing/statements/{id}</td>
-		<td>Get</td>
-		<td></td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
 			</ul>		
 		</td>
 	</tr>
@@ -1502,6 +1491,17 @@ See the following sections to determine which roles are authorized to perform sp
 		<td>/public/v1/billing/statements/{id}/children</td>
 		<td>Post</td>
 		<td>Adds a child statement to a consolidated parent statement.</td>
+		<td>
+			<ul>
+				  <li>Client</li>
+				  <li>Operations</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/billing/statements/{id}</td>
+		<td>Put</td>
+		<td>Updates an existing statement.</td>
 		<td>
 			<ul>
 				  <li>Client</li>

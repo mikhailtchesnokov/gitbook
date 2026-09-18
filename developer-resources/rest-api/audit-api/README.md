@@ -102,17 +102,6 @@ See the following sections to determine which roles are authorized to perform sp
 <tbody>
 	<tr>
 		<td>/public/v1/audit/records</td>
-		<td>Post</td>
-		<td>Creates a new audit record.</td>
-		<td>
-			<ul>
-				  <li>Vendor</li>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/audit/records</td>
 		<td>Get</td>
 		<td>Gets a list of audit records.</td>
 		<td>
@@ -132,6 +121,17 @@ See the following sections to determine which roles are authorized to perform sp
 				  <li>Operations</li>
 				  <li>Client</li>
 				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/audit/records</td>
+		<td>Post</td>
+		<td>Creates a new audit record.</td>
+		<td>
+			<ul>
+				  <li>Vendor</li>
+				  <li>Operations</li>
 			</ul>		
 		</td>
 	</tr>

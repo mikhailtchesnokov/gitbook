@@ -86,16 +86,6 @@ See the following sections to determine which roles are authorized to perform sp
 		</td>
 	</tr>
 	<tr>
-		<td>/public/v1/exchange/currencies</td>
-		<td>Post</td>
-		<td>Creates a new currency.</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
 		<td>/public/v1/exchange/currencies/{id}</td>
 		<td>Get</td>
 		<td>Retrieves a currency by ID.</td>
@@ -104,6 +94,28 @@ See the following sections to determine which roles are authorized to perform sp
 				  <li>Operations</li>
 				  <li>Client</li>
 				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/exchange/currencies/{id}/icon</td>
+		<td>Get</td>
+		<td>Gets a download redirect for a currency icon.</td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/exchange/currencies</td>
+		<td>Post</td>
+		<td>Creates a new currency.</td>
+		<td>
+			<ul>
+				  <li>Operations</li>
 			</ul>		
 		</td>
 	</tr>
@@ -124,18 +136,6 @@ See the following sections to determine which roles are authorized to perform sp
 		<td>
 			<ul>
 				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/exchange/currencies/{id}/icon</td>
-		<td>Get</td>
-		<td>Gets a download redirect for a currency icon.</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
 			</ul>		
 		</td>
 	</tr>
@@ -160,6 +160,18 @@ See the following sections to determine which roles are authorized to perform sp
 		<td>/public/v1/exchange/pairs</td>
 		<td>Get</td>
 		<td>Gets a list of currency pairs.</td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/exchange/pairs/{id}</td>
+		<td>Get</td>
+		<td>Retrieves a currency pair by ID.</td>
 		<td>
 			<ul>
 				  <li>Operations</li>
@@ -195,18 +207,6 @@ See the following sections to determine which roles are authorized to perform sp
 		<td>
 			<ul>
 				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/exchange/pairs/{id}</td>
-		<td>Get</td>
-		<td>Retrieves a currency pair by ID.</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
 			</ul>		
 		</td>
 	</tr>
@@ -252,9 +252,9 @@ See the following sections to determine which roles are authorized to perform sp
 		</td>
 	</tr>
 	<tr>
-		<td>/public/v1/exchange/pairs/{pairId}/rates</td>
-		<td>Put</td>
-		<td>Updates rates for a pair.</td>
+		<td>/public/v1/exchange/pairs/-/rates</td>
+		<td>Post</td>
+		<td>Creates a new rate.</td>
 		<td>
 			<ul>
 				  <li>Operations</li>
@@ -262,9 +262,9 @@ See the following sections to determine which roles are authorized to perform sp
 		</td>
 	</tr>
 	<tr>
-		<td>/public/v1/exchange/pairs/-/rates</td>
-		<td>Post</td>
-		<td>Creates a new rate.</td>
+		<td>/public/v1/exchange/pairs/{pairId}/rates</td>
+		<td>Put</td>
+		<td>Updates rates for a pair.</td>
 		<td>
 			<ul>
 				  <li>Operations</li>

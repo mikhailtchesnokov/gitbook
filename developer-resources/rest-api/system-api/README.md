@@ -75,36 +75,12 @@ See the following sections to determine which roles are authorized to perform sp
 		</td>
 	</tr>
 	<tr>
-		<td>/public/v1/system/tasks</td>
-		<td>Post</td>
-		<td>Create a task</td>
-		<td>
-			<ul>
-				  <li>Vendor</li>
-				  <li>Client</li>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
 		<td>/public/v1/system/tasks/{id}</td>
 		<td>Get</td>
 		<td>Retrieve a task by ID</td>
 		<td>
 			<ul>
 				  <li>Vendor</li>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/system/tasks/{id}</td>
-		<td>Put</td>
-		<td>Update a task</td>
-		<td>
-			<ul>
-				  <li>Vendor</li>
-				  <li>Client</li>
 				  <li>Operations</li>
 			</ul>		
 		</td>
@@ -128,6 +104,18 @@ See the following sections to determine which roles are authorized to perform sp
 		<td>
 			<ul>
 				  <li>Vendor</li>
+				  <li>Operations</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/system/tasks</td>
+		<td>Post</td>
+		<td>Create a task</td>
+		<td>
+			<ul>
+				  <li>Vendor</li>
+				  <li>Client</li>
 				  <li>Operations</li>
 			</ul>		
 		</td>
@@ -196,6 +184,18 @@ See the following sections to determine which roles are authorized to perform sp
 		<td>/public/v1/system/tasks/{id}/fail</td>
 		<td>Post</td>
 		<td>Transition a task to Failed</td>
+		<td>
+			<ul>
+				  <li>Vendor</li>
+				  <li>Client</li>
+				  <li>Operations</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/system/tasks/{id}</td>
+		<td>Put</td>
+		<td>Update a task</td>
 		<td>
 			<ul>
 				  <li>Vendor</li>

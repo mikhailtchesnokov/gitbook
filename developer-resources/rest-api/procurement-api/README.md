@@ -98,6 +98,18 @@ See the following sections to determine which roles are authorized to perform sp
 		</td>
 	</tr>
 	<tr>
+		<td>/public/v1/procurement/erp-items/{id}</td>
+		<td>Get</td>
+		<td>Retrieve an ERP item by ID</td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Vendor</li>
+				  <li>Client</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
 		<td>/public/v1/procurement/erp-items</td>
 		<td>Post</td>
 		<td>Upsert ERP items</td>
@@ -113,18 +125,6 @@ See the following sections to determine which roles are authorized to perform sp
 		<td>/public/v1/procurement/erp-items</td>
 		<td>Delete</td>
 		<td>Delete ERP items</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Vendor</li>
-				  <li>Client</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/procurement/erp-items/{id}</td>
-		<td>Get</td>
-		<td>Retrieve an ERP item by ID</td>
 		<td>
 			<ul>
 				  <li>Operations</li>
@@ -163,26 +163,6 @@ See the following sections to determine which roles are authorized to perform sp
 		</td>
 	</tr>
 	<tr>
-		<td>/public/v1/procurement/sales-orders</td>
-		<td>Post</td>
-		<td>Upsert sales orders</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/procurement/sales-orders</td>
-		<td>Delete</td>
-		<td>Delete sales orders</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
 		<td>/public/v1/procurement/sales-orders/{id}</td>
 		<td>Get</td>
 		<td>Retrieve a sales order by ID</td>
@@ -191,26 +171,6 @@ See the following sections to determine which roles are authorized to perform sp
 				  <li>Client</li>
 				  <li>Operations</li>
 				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/procurement/sales-orders/{id}/finalize</td>
-		<td>Post</td>
-		<td>Finalize a sales order</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/procurement/sales-orders/{id}/retry</td>
-		<td>Post</td>
-		<td>Retry a sales order will try to finalize order again if the order is in an error status.</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
 			</ul>		
 		</td>
 	</tr>
@@ -235,6 +195,46 @@ See the following sections to determine which roles are authorized to perform sp
 				  <li>Client</li>
 				  <li>Operations</li>
 				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/procurement/sales-orders</td>
+		<td>Post</td>
+		<td>Upsert sales orders</td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/procurement/sales-orders/{id}/finalize</td>
+		<td>Post</td>
+		<td>Finalize a sales order</td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/procurement/sales-orders/{id}/retry</td>
+		<td>Post</td>
+		<td>Retry a sales order will try to finalize order again if the order is in an error status.</td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/procurement/sales-orders</td>
+		<td>Delete</td>
+		<td>Delete sales orders</td>
+		<td>
+			<ul>
+				  <li>Operations</li>
 			</ul>		
 		</td>
 	</tr>
@@ -268,26 +268,6 @@ See the following sections to determine which roles are authorized to perform sp
 		</td>
 	</tr>
 	<tr>
-		<td>/public/v1/procurement/sales-quotes</td>
-		<td>Post</td>
-		<td>Upsert sales quotes</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/procurement/sales-quotes</td>
-		<td>Delete</td>
-		<td>Delete sales quotes</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
 		<td>/public/v1/procurement/sales-quotes/{id}</td>
 		<td>Get</td>
 		<td>Retrieve a sales quote by ID</td>
@@ -296,6 +276,40 @@ See the following sections to determine which roles are authorized to perform sp
 				  <li>Client</li>
 				  <li>Operations</li>
 				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/procurement/sales-quotes/{id}/attachments</td>
+		<td>Get</td>
+		<td>Get sales quote attachments</td>
+		<td>
+			<ul>
+				  <li>Client</li>
+				  <li>Operations</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/procurement/sales-quotes/{id}/attachments/{attachmentId}</td>
+		<td>Get</td>
+		<td>Download a sales quote attachment</td>
+		<td>
+			<ul>
+				  <li>Client</li>
+				  <li>Operations</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/procurement/sales-quotes</td>
+		<td>Post</td>
+		<td>Upsert sales quotes</td>
+		<td>
+			<ul>
+				  <li>Operations</li>
 			</ul>		
 		</td>
 	</tr>
@@ -343,26 +357,12 @@ See the following sections to determine which roles are authorized to perform sp
 		</td>
 	</tr>
 	<tr>
-		<td>/public/v1/procurement/sales-quotes/{id}/attachments</td>
-		<td>Get</td>
-		<td>Get sales quote attachments</td>
+		<td>/public/v1/procurement/sales-quotes</td>
+		<td>Delete</td>
+		<td>Delete sales quotes</td>
 		<td>
 			<ul>
-				  <li>Client</li>
 				  <li>Operations</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/procurement/sales-quotes/{id}/attachments/{attachmentId}</td>
-		<td>Get</td>
-		<td>Download a sales quote attachment</td>
-		<td>
-			<ul>
-				  <li>Client</li>
-				  <li>Operations</li>
-				  <li>Vendor</li>
 			</ul>		
 		</td>
 	</tr>

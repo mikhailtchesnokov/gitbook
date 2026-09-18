@@ -53,45 +53,35 @@ See the following sections to determine which roles are authorized to perform sp
 <tbody>
 	<tr>
 		<td>/public/v1/integration/categories</td>
-		<td>Post</td>
+		<td>Get</td>
 		<td></td>
 		<td>
 			<ul>
 				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/integration/categories/{id}</td>
+		<td>Get</td>
+		<td></td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
 			</ul>		
 		</td>
 	</tr>
 	<tr>
 		<td>/public/v1/integration/categories</td>
-		<td>Get</td>
+		<td>Post</td>
 		<td></td>
 		<td>
 			<ul>
 				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/integration/categories/{id}</td>
-		<td>Put</td>
-		<td></td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/integration/categories/{id}</td>
-		<td>Get</td>
-		<td></td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
 			</ul>		
 		</td>
 	</tr>
@@ -116,6 +106,16 @@ See the following sections to determine which roles are authorized to perform sp
 				  <li>Operations</li>
 				  <li>Client</li>
 				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/integration/categories/{id}</td>
+		<td>Put</td>
+		<td></td>
+		<td>
+			<ul>
+				  <li>Operations</li>
 			</ul>		
 		</td>
 	</tr>
@@ -149,18 +149,6 @@ See the following sections to determine which roles are authorized to perform sp
 		</td>
 	</tr>
 	<tr>
-		<td>/public/v1/integration/extensions/{extensionId}/documents</td>
-		<td>Post</td>
-		<td></td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
 		<td>/public/v1/integration/extensions/{extensionId}/documents/{id}</td>
 		<td>Get</td>
 		<td></td>
@@ -173,20 +161,8 @@ See the following sections to determine which roles are authorized to perform sp
 		</td>
 	</tr>
 	<tr>
-		<td>/public/v1/integration/extensions/{extensionId}/documents/{id}</td>
-		<td>Delete</td>
-		<td></td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/integration/extensions/{extensionId}/documents/{id}</td>
-		<td>Put</td>
+		<td>/public/v1/integration/extensions/{extensionId}/documents</td>
+		<td>Post</td>
 		<td></td>
 		<td>
 			<ul>
@@ -220,6 +196,30 @@ See the following sections to determine which roles are authorized to perform sp
 			</ul>		
 		</td>
 	</tr>
+	<tr>
+		<td>/public/v1/integration/extensions/{extensionId}/documents/{id}</td>
+		<td>Put</td>
+		<td></td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/integration/extensions/{extensionId}/documents/{id}</td>
+		<td>Delete</td>
+		<td></td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
 <tbody>
 </table>
 
@@ -239,55 +239,70 @@ See the following sections to determine which roles are authorized to perform sp
 <tbody>
 	<tr>
 		<td>/public/v1/integration/extensions</td>
-		<td>Post</td>
+		<td>Get</td>
 		<td></td>
 		<td>
 			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/integration/extensions/{id}</td>
+		<td>Get</td>
+		<td></td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/integration/extensions/{id}/icon</td>
+		<td>Get</td>
+		<td></td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/integration/extensions/{id}/installations</td>
+		<td>Get</td>
+		<td></td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/integration/extensions/{id}/installations/{installationId}</td>
+		<td>Get</td>
+		<td></td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
 				  <li>Vendor</li>
 			</ul>		
 		</td>
 	</tr>
 	<tr>
 		<td>/public/v1/integration/extensions</td>
-		<td>Get</td>
+		<td>Post</td>
 		<td></td>
 		<td>
 			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/integration/extensions/{id}</td>
-		<td>Put</td>
-		<td></td>
-		<td>
-			<ul>
-				  <li>Vendor</li>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/integration/extensions/{id}</td>
-		<td>Delete</td>
-		<td></td>
-		<td>
-			<ul>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/integration/extensions/{id}</td>
-		<td>Get</td>
-		<td></td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
 				  <li>Vendor</li>
 			</ul>		
 		</td>
@@ -336,37 +351,22 @@ See the following sections to determine which roles are authorized to perform sp
 		</td>
 	</tr>
 	<tr>
-		<td>/public/v1/integration/extensions/{id}/icon</td>
-		<td>Get</td>
+		<td>/public/v1/integration/extensions/{id}</td>
+		<td>Put</td>
 		<td></td>
 		<td>
 			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
 				  <li>Vendor</li>
+				  <li>Operations</li>
 			</ul>		
 		</td>
 	</tr>
 	<tr>
-		<td>/public/v1/integration/extensions/{id}/installations</td>
-		<td>Get</td>
+		<td>/public/v1/integration/extensions/{id}</td>
+		<td>Delete</td>
 		<td></td>
 		<td>
 			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/integration/extensions/{id}/installations/{installationId}</td>
-		<td>Get</td>
-		<td></td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
 				  <li>Vendor</li>
 			</ul>		
 		</td>
@@ -390,7 +390,19 @@ See the following sections to determine which roles are authorized to perform sp
 <tbody>
 	<tr>
 		<td>/public/v1/integration/installations</td>
-		<td>Post</td>
+		<td>Get</td>
+		<td></td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/integration/installations/{id}</td>
+		<td>Get</td>
 		<td></td>
 		<td>
 			<ul>
@@ -402,43 +414,7 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/integration/installations</td>
-		<td>Get</td>
-		<td></td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/integration/installations/{id}</td>
-		<td>Put</td>
-		<td></td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/integration/installations/{id}</td>
-		<td>Delete</td>
-		<td></td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/integration/installations/{id}</td>
-		<td>Get</td>
+		<td>Post</td>
 		<td></td>
 		<td>
 			<ul>
@@ -496,6 +472,30 @@ See the following sections to determine which roles are authorized to perform sp
 			</ul>		
 		</td>
 	</tr>
+	<tr>
+		<td>/public/v1/integration/installations/{id}</td>
+		<td>Put</td>
+		<td></td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/integration/installations/{id}</td>
+		<td>Delete</td>
+		<td></td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
 <tbody>
 </table>
 
@@ -515,18 +515,6 @@ See the following sections to determine which roles are authorized to perform sp
 <tbody>
 	<tr>
 		<td>/public/v1/integration/extensions/{extensionId}/instances</td>
-		<td>Post</td>
-		<td></td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/integration/extensions/{extensionId}/instances</td>
 		<td>Get</td>
 		<td></td>
 		<td>
@@ -540,6 +528,18 @@ See the following sections to determine which roles are authorized to perform sp
 	<tr>
 		<td>/public/v1/integration/extensions/{extensionId}/instances/{id}</td>
 		<td>Get</td>
+		<td></td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/integration/extensions/{extensionId}/instances</td>
+		<td>Post</td>
 		<td></td>
 		<td>
 			<ul>
@@ -579,16 +579,6 @@ See the following sections to determine which roles are authorized to perform sp
 		</td>
 	</tr>
 	<tr>
-		<td>/public/v1/integration/extensions/{extensionId}/media</td>
-		<td>Post</td>
-		<td></td>
-		<td>
-			<ul>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
 		<td>/public/v1/integration/extensions/{extensionId}/media/{id}</td>
 		<td>Get</td>
 		<td></td>
@@ -601,18 +591,20 @@ See the following sections to determine which roles are authorized to perform sp
 		</td>
 	</tr>
 	<tr>
-		<td>/public/v1/integration/extensions/{extensionId}/media/{id}</td>
-		<td>Delete</td>
+		<td>/public/v1/integration/extensions/{extensionId}/media/{id}/image</td>
+		<td>Get</td>
 		<td></td>
 		<td>
 			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
 				  <li>Vendor</li>
 			</ul>		
 		</td>
 	</tr>
 	<tr>
-		<td>/public/v1/integration/extensions/{extensionId}/media/{id}</td>
-		<td>Put</td>
+		<td>/public/v1/integration/extensions/{extensionId}/media</td>
+		<td>Post</td>
 		<td></td>
 		<td>
 			<ul>
@@ -641,13 +633,21 @@ See the following sections to determine which roles are authorized to perform sp
 		</td>
 	</tr>
 	<tr>
-		<td>/public/v1/integration/extensions/{extensionId}/media/{id}/image</td>
-		<td>Get</td>
+		<td>/public/v1/integration/extensions/{extensionId}/media/{id}</td>
+		<td>Put</td>
 		<td></td>
 		<td>
 			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/integration/extensions/{extensionId}/media/{id}</td>
+		<td>Delete</td>
+		<td></td>
+		<td>
+			<ul>
 				  <li>Vendor</li>
 			</ul>		
 		</td>
@@ -671,54 +671,34 @@ See the following sections to determine which roles are authorized to perform sp
 <tbody>
 	<tr>
 		<td>/public/v1/integration/extensions/{extensionId}/terms</td>
-		<td>Post</td>
+		<td>Get</td>
 		<td></td>
 		<td>
 			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/integration/extensions/{extensionId}/terms/{id}</td>
+		<td>Get</td>
+		<td></td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
 				  <li>Vendor</li>
 			</ul>		
 		</td>
 	</tr>
 	<tr>
 		<td>/public/v1/integration/extensions/{extensionId}/terms</td>
-		<td>Get</td>
+		<td>Post</td>
 		<td></td>
 		<td>
 			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/integration/extensions/{extensionId}/terms/{id}</td>
-		<td>Put</td>
-		<td></td>
-		<td>
-			<ul>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/integration/extensions/{extensionId}/terms/{id}</td>
-		<td>Delete</td>
-		<td></td>
-		<td>
-			<ul>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/integration/extensions/{extensionId}/terms/{id}</td>
-		<td>Get</td>
-		<td></td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
 				  <li>Vendor</li>
 			</ul>		
 		</td>
@@ -736,6 +716,26 @@ See the following sections to determine which roles are authorized to perform sp
 	<tr>
 		<td>/public/v1/integration/extensions/{extensionId}/terms/{id}/unpublish</td>
 		<td>Post</td>
+		<td></td>
+		<td>
+			<ul>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/integration/extensions/{extensionId}/terms/{id}</td>
+		<td>Put</td>
+		<td></td>
+		<td>
+			<ul>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/integration/extensions/{extensionId}/terms/{id}</td>
+		<td>Delete</td>
 		<td></td>
 		<td>
 			<ul>
@@ -762,54 +762,34 @@ See the following sections to determine which roles are authorized to perform sp
 <tbody>
 	<tr>
 		<td>/public/v1/integration/extensions/{extensionId}/terms/{termId}/variants</td>
-		<td>Post</td>
+		<td>Get</td>
 		<td></td>
 		<td>
 			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/integration/extensions/{extensionId}/terms/{termId}/variants/{id}</td>
+		<td>Get</td>
+		<td></td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
 				  <li>Vendor</li>
 			</ul>		
 		</td>
 	</tr>
 	<tr>
 		<td>/public/v1/integration/extensions/{extensionId}/terms/{termId}/variants</td>
-		<td>Get</td>
+		<td>Post</td>
 		<td></td>
 		<td>
 			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/integration/extensions/{extensionId}/terms/{termId}/variants/{id}</td>
-		<td>Put</td>
-		<td></td>
-		<td>
-			<ul>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/integration/extensions/{extensionId}/terms/{termId}/variants/{id}</td>
-		<td>Delete</td>
-		<td></td>
-		<td>
-			<ul>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/integration/extensions/{extensionId}/terms/{termId}/variants/{id}</td>
-		<td>Get</td>
-		<td></td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
 				  <li>Vendor</li>
 			</ul>		
 		</td>
@@ -827,6 +807,26 @@ See the following sections to determine which roles are authorized to perform sp
 	<tr>
 		<td>/public/v1/integration/extensions/{extensionId}/terms/{termId}/variants/{id}/unpublish</td>
 		<td>Post</td>
+		<td></td>
+		<td>
+			<ul>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/integration/extensions/{extensionId}/terms/{termId}/variants/{id}</td>
+		<td>Put</td>
+		<td></td>
+		<td>
+			<ul>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/integration/extensions/{extensionId}/terms/{termId}/variants/{id}</td>
+		<td>Delete</td>
 		<td></td>
 		<td>
 			<ul>

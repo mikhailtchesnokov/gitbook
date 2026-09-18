@@ -149,18 +149,6 @@ See the following sections to determine which roles are authorized to perform sp
 <tbody>
 	<tr>
 		<td>/public/v1/notifications/batches</td>
-		<td>Post</td>
-		<td>Creates a new message batch with attachments.</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/notifications/batches</td>
 		<td>Get</td>
 		<td>Gets a list of resources.</td>
 		<td>
@@ -187,6 +175,18 @@ See the following sections to determine which roles are authorized to perform sp
 		<td>/public/v1/notifications/batches/{id}</td>
 		<td>Get</td>
 		<td>Gets a resource by ID.</td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/notifications/batches</td>
+		<td>Post</td>
+		<td>Creates a new message batch with attachments.</td>
 		<td>
 			<ul>
 				  <li>Operations</li>
@@ -225,45 +225,21 @@ See the following sections to determine which roles are authorized to perform sp
 		</td>
 	</tr>
 	<tr>
-		<td>/public/v1/notifications/categories</td>
-		<td>Post</td>
-		<td>Creates a new category.</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/notifications/categories/{id}</td>
-		<td>Put</td>
-		<td>Updates a category.</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/notifications/categories/{id}</td>
-		<td>Delete</td>
-		<td>Deletes a category.</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
 		<td>/public/v1/notifications/categories/{id}</td>
 		<td>Get</td>
 		<td></td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/notifications/categories</td>
+		<td>Post</td>
+		<td>Creates a new category.</td>
 		<td>
 			<ul>
 				  <li>Operations</li>
@@ -296,6 +272,30 @@ See the following sections to determine which roles are authorized to perform sp
 			</ul>		
 		</td>
 	</tr>
+	<tr>
+		<td>/public/v1/notifications/categories/{id}</td>
+		<td>Put</td>
+		<td>Updates a category.</td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/notifications/categories/{id}</td>
+		<td>Delete</td>
+		<td>Deletes a category.</td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
 <tbody>
 </table>
 
@@ -314,6 +314,42 @@ See the following sections to determine which roles are authorized to perform sp
 </thead>
 <tbody>
 	<tr>
+		<td>/public/v1/notifications/contacts</td>
+		<td>Get</td>
+		<td>Gets a list of resources.</td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/notifications/contacts/{id}</td>
+		<td>Get</td>
+		<td>Gets a resource by ID.</td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/notifications/accounts/{accountId}/categories/{categoryId}/contacts</td>
+		<td>Get</td>
+		<td>Gets contacts for a category and account.</td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
 		<td>/public/v1/notifications/contacts/{id}/block</td>
 		<td>Post</td>
 		<td>Blocks a contact.</td>
@@ -329,18 +365,6 @@ See the following sections to determine which roles are authorized to perform sp
 		<td>/public/v1/notifications/contacts</td>
 		<td>Post</td>
 		<td>Creates a new contact.</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/notifications/contacts</td>
-		<td>Get</td>
-		<td>Gets a list of resources.</td>
 		<td>
 			<ul>
 				  <li>Operations</li>
@@ -377,30 +401,6 @@ See the following sections to determine which roles are authorized to perform sp
 		<td>/public/v1/notifications/contacts/{id}</td>
 		<td>Delete</td>
 		<td>Deletes a contact.</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/notifications/contacts/{id}</td>
-		<td>Get</td>
-		<td>Gets a resource by ID.</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/notifications/accounts/{accountId}/categories/{categoryId}/contacts</td>
-		<td>Get</td>
-		<td>Gets contacts for a category and account.</td>
 		<td>
 			<ul>
 				  <li>Operations</li>
@@ -469,8 +469,20 @@ See the following sections to determine which roles are authorized to perform sp
 <tbody>
 	<tr>
 		<td>/public/v1/notifications/footers</td>
-		<td>Post</td>
-		<td>Creates a new footer.</td>
+		<td>Get</td>
+		<td>Gets a list of resources.</td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/notifications/footers/{id}</td>
+		<td>Get</td>
+		<td>Gets a resource by ID.</td>
 		<td>
 			<ul>
 				  <li>Operations</li>
@@ -481,8 +493,8 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/notifications/footers</td>
-		<td>Get</td>
-		<td>Gets a list of resources.</td>
+		<td>Post</td>
+		<td>Creates a new footer.</td>
 		<td>
 			<ul>
 				  <li>Operations</li>
@@ -507,18 +519,6 @@ See the following sections to determine which roles are authorized to perform sp
 		<td>/public/v1/notifications/footers/{id}</td>
 		<td>Delete</td>
 		<td>Deletes a footer.</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/notifications/footers/{id}</td>
-		<td>Get</td>
-		<td>Gets a resource by ID.</td>
 		<td>
 			<ul>
 				  <li>Operations</li>
@@ -586,6 +586,30 @@ See the following sections to determine which roles are authorized to perform sp
 </thead>
 <tbody>
 	<tr>
+		<td>/public/v1/notifications/templates</td>
+		<td>Get</td>
+		<td></td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/notifications/templates/{id}</td>
+		<td>Get</td>
+		<td></td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
 		<td>/public/v1/notifications/templates/{id}/activate</td>
 		<td>Post</td>
 		<td>Activates a notification template.</td>
@@ -610,21 +634,9 @@ See the following sections to determine which roles are authorized to perform sp
 		</td>
 	</tr>
 	<tr>
-		<td>/public/v1/notifications/templates</td>
-		<td>Get</td>
-		<td></td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/notifications/templates/{id}</td>
-		<td>Delete</td>
-		<td>Deletes a notification template.</td>
+		<td>/public/v1/notifications/templates/{id}/disable</td>
+		<td>Post</td>
+		<td>Disables a notification template.</td>
 		<td>
 			<ul>
 				  <li>Operations</li>
@@ -647,20 +659,8 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/notifications/templates/{id}</td>
-		<td>Get</td>
-		<td></td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/notifications/templates/{id}/disable</td>
-		<td>Post</td>
-		<td>Disables a notification template.</td>
+		<td>Delete</td>
+		<td>Deletes a notification template.</td>
 		<td>
 			<ul>
 				  <li>Operations</li>
@@ -688,8 +688,8 @@ See the following sections to determine which roles are authorized to perform sp
 <tbody>
 	<tr>
 		<td>/public/v1/notifications/subscribers/{id}</td>
-		<td>Put</td>
-		<td>Updates subscriber recipients.</td>
+		<td>Get</td>
+		<td>Gets a resource by ID.</td>
 		<td>
 			<ul>
 				  <li>Operations</li>
@@ -699,9 +699,9 @@ See the following sections to determine which roles are authorized to perform sp
 		</td>
 	</tr>
 	<tr>
-		<td>/public/v1/notifications/subscribers/{id}</td>
+		<td>/public/v1/notifications/subscribers</td>
 		<td>Get</td>
-		<td>Gets a resource by ID.</td>
+		<td>Gets a list of resources.</td>
 		<td>
 			<ul>
 				  <li>Operations</li>
@@ -735,9 +735,9 @@ See the following sections to determine which roles are authorized to perform sp
 		</td>
 	</tr>
 	<tr>
-		<td>/public/v1/notifications/subscribers</td>
-		<td>Get</td>
-		<td>Gets a list of resources.</td>
+		<td>/public/v1/notifications/subscribers/{id}</td>
+		<td>Put</td>
+		<td>Updates subscriber recipients.</td>
 		<td>
 			<ul>
 				  <li>Operations</li>
@@ -764,6 +764,30 @@ See the following sections to determine which roles are authorized to perform sp
 </thead>
 <tbody>
 	<tr>
+		<td>/public/v1/notifications/templates/{templateId}/variants</td>
+		<td>Get</td>
+		<td></td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/notifications/templates/{templateId}/variants/{id}</td>
+		<td>Get</td>
+		<td></td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
 		<td>/public/v1/notifications/templates/{templateId}/variants/{id}/activate</td>
 		<td>Post</td>
 		<td>Activates a template variant.</td>
@@ -788,21 +812,9 @@ See the following sections to determine which roles are authorized to perform sp
 		</td>
 	</tr>
 	<tr>
-		<td>/public/v1/notifications/templates/{templateId}/variants</td>
-		<td>Get</td>
-		<td></td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/notifications/templates/{templateId}/variants/{id}</td>
-		<td>Delete</td>
-		<td>Deletes a template variant.</td>
+		<td>/public/v1/notifications/templates/{templateId}/variants/{id}/disable</td>
+		<td>Post</td>
+		<td>Disables a template variant.</td>
 		<td>
 			<ul>
 				  <li>Operations</li>
@@ -825,20 +837,8 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/notifications/templates/{templateId}/variants/{id}</td>
-		<td>Get</td>
-		<td></td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/notifications/templates/{templateId}/variants/{id}/disable</td>
-		<td>Post</td>
-		<td>Disables a template variant.</td>
+		<td>Delete</td>
+		<td>Deletes a template variant.</td>
 		<td>
 			<ul>
 				  <li>Operations</li>
@@ -877,18 +877,6 @@ See the following sections to determine which roles are authorized to perform sp
 		</td>
 	</tr>
 	<tr>
-		<td>/public/v1/notifications/webhooks</td>
-		<td>Post</td>
-		<td>Upsert webhooks</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
 		<td>/public/v1/notifications/webhooks/{id}</td>
 		<td>Get</td>
 		<td></td>
@@ -901,21 +889,9 @@ See the following sections to determine which roles are authorized to perform sp
 		</td>
 	</tr>
 	<tr>
-		<td>/public/v1/notifications/webhooks/{id}</td>
-		<td>Put</td>
-		<td>Updates webhook.</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/notifications/webhooks/{id}</td>
-		<td>Delete</td>
-		<td>Deletes webhook.</td>
+		<td>/public/v1/notifications/webhooks</td>
+		<td>Post</td>
+		<td>Upsert webhooks</td>
 		<td>
 			<ul>
 				  <li>Operations</li>
@@ -940,6 +916,30 @@ See the following sections to determine which roles are authorized to perform sp
 		<td>/public/v1/notifications/webhooks/{id}/disable</td>
 		<td>Post</td>
 		<td>Disables webhook.</td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/notifications/webhooks/{id}</td>
+		<td>Put</td>
+		<td>Updates webhook.</td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/notifications/webhooks/{id}</td>
+		<td>Delete</td>
+		<td>Deletes webhook.</td>
 		<td>
 			<ul>
 				  <li>Operations</li>
