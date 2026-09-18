@@ -75,7 +75,7 @@ See the following sections to determine which roles are authorized to perform sp
 <tbody>
 	<tr>
 		<td><a href="/get-currencies.md">/public/v1/exchange/currencies</a></td>
-		<td>GET</td>
+		<td>GET [Click me](get-currencies.md)</td>
 		<td>Gets a list of currencies.</td>
 		<td>
 			<ul>
