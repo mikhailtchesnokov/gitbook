@@ -49,7 +49,7 @@ The API is organized into collections, each containing a set of operations. Acce
 
 See the following sections to determine which roles are authorized to perform specific operations within each collection:
 
-### Certificates
+### Certificate
 
 <table>
 <thead>
@@ -63,16 +63,6 @@ See the following sections to determine which roles are authorized to perform sp
 <tbody>
 	<tr>
 		<td>/public/v1/program/certificates</td>
-		<td>Post</td>
-		<td></td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/program/certificates</td>
 		<td>Get</td>
 		<td></td>
 		<td>
@@ -80,6 +70,28 @@ See the following sections to determine which roles are authorized to perform sp
 				  <li>Operations</li>
 				  <li>Client</li>
 				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/program/certificates/{id}</td>
+		<td>Get</td>
+		<td></td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/program/certificates</td>
+		<td>Post</td>
+		<td></td>
+		<td>
+			<ul>
+				  <li>Operations</li>
 			</ul>		
 		</td>
 	</tr>
@@ -105,36 +117,12 @@ See the following sections to determine which roles are authorized to perform sp
 			</ul>		
 		</td>
 	</tr>
-	<tr>
-		<td>/public/v1/program/certificates/{id}</td>
-		<td>Get</td>
-		<td></td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/program/certificates/{id}/render</td>
-		<td>Get</td>
-		<td>Renders certificate template</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
 <tbody>
 </table>
 
 
 
-### Enrollments
+### Enrollment
 
 <table>
 <thead>
@@ -148,17 +136,6 @@ See the following sections to determine which roles are authorized to perform sp
 <tbody>
 	<tr>
 		<td>/public/v1/program/enrollments</td>
-		<td>Post</td>
-		<td></td>
-		<td>
-			<ul>
-				  <li>Client</li>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/program/enrollments</td>
 		<td>Get</td>
 		<td></td>
 		<td>
@@ -166,6 +143,29 @@ See the following sections to determine which roles are authorized to perform sp
 				  <li>Operations</li>
 				  <li>Client</li>
 				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/program/enrollments/{id}</td>
+		<td>Get</td>
+		<td></td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/program/enrollments</td>
+		<td>Post</td>
+		<td></td>
+		<td>
+			<ul>
+				  <li>Client</li>
+				  <li>Operations</li>
 			</ul>		
 		</td>
 	</tr>
@@ -175,40 +175,6 @@ See the following sections to determine which roles are authorized to perform sp
 		<td></td>
 		<td>
 			<ul>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/program/enrollments/{id}</td>
-		<td>Put</td>
-		<td></td>
-		<td>
-			<ul>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/program/enrollments/{id}</td>
-		<td>Delete</td>
-		<td></td>
-		<td>
-			<ul>
-				  <li>Client</li>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/program/enrollments/{id}</td>
-		<td>Get</td>
-		<td></td>
-		<td>
-			<ul>
-				  <li>Operations</li>
 				  <li>Client</li>
 				  <li>Vendor</li>
 			</ul>		
@@ -267,35 +233,50 @@ See the following sections to determine which roles are authorized to perform sp
 		</td>
 	</tr>
 	<tr>
-		<td>/public/v1/program/enrollments/{id}/render</td>
-		<td>Get</td>
-		<td>Renders enrollment template</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/program/enrollments/{enrollmentId}/attachments/{id}</td>
-		<td>Get</td>
+		<td>/public/v1/program/enrollments/{id}</td>
+		<td>Put</td>
 		<td></td>
 		<td>
 			<ul>
-				  <li>Operations</li>
 				  <li>Client</li>
 				  <li>Vendor</li>
 			</ul>		
 		</td>
 	</tr>
 	<tr>
-		<td>/public/v1/program/enrollments/{enrollmentId}/attachments/{id}</td>
+		<td>/public/v1/program/enrollments/{id}</td>
 		<td>Delete</td>
 		<td></td>
 		<td>
 			<ul>
+				  <li>Client</li>
+				  <li>Operations</li>
+			</ul>		
+		</td>
+	</tr>
+<tbody>
+</table>
+
+
+
+### Enrollmentattachment
+
+<table>
+<thead>
+<tr>
+ <td>Operation</td>
+ <td>Method</td>
+ <td>Description</td>
+ <td>Access</td>
+</tr>
+</thead>
+<tbody>
+	<tr>
+		<td>/public/v1/program/enrollments/{enrollmentId}/attachments/{id}</td>
+		<td>Get</td>
+		<td></td>
+		<td>
+			<ul>
 				  <li>Operations</li>
 				  <li>Client</li>
 				  <li>Vendor</li>
@@ -303,8 +284,8 @@ See the following sections to determine which roles are authorized to perform sp
 		</td>
 	</tr>
 	<tr>
-		<td>/public/v1/program/enrollments/{enrollmentId}/attachments/{id}</td>
-		<td>Put</td>
+		<td>/public/v1/program/enrollments/{enrollmentId}/attachments</td>
+		<td>Get</td>
 		<td></td>
 		<td>
 			<ul>
@@ -327,8 +308,20 @@ See the following sections to determine which roles are authorized to perform sp
 		</td>
 	</tr>
 	<tr>
-		<td>/public/v1/program/enrollments/{enrollmentId}/attachments</td>
-		<td>Get</td>
+		<td>/public/v1/program/enrollments/{enrollmentId}/attachments/{id}</td>
+		<td>Put</td>
+		<td></td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/program/enrollments/{enrollmentId}/attachments/{id}</td>
+		<td>Delete</td>
 		<td></td>
 		<td>
 			<ul>
@@ -343,7 +336,7 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Programs
+### Programdocument
 
 <table>
 <thead>
@@ -368,21 +361,13 @@ See the following sections to determine which roles are authorized to perform sp
 		</td>
 	</tr>
 	<tr>
-		<td>/public/v1/program/programs/{programId}/documents/{id}</td>
-		<td>Delete</td>
+		<td>/public/v1/program/programs/{programId}/documents</td>
+		<td>Get</td>
 		<td></td>
 		<td>
 			<ul>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/program/programs/{programId}/documents/{id}</td>
-		<td>Put</td>
-		<td></td>
-		<td>
-			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
 				  <li>Vendor</li>
 			</ul>		
 		</td>
@@ -393,18 +378,6 @@ See the following sections to determine which roles are authorized to perform sp
 		<td></td>
 		<td>
 			<ul>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/program/programs/{programId}/documents</td>
-		<td>Get</td>
-		<td></td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
 				  <li>Vendor</li>
 			</ul>		
 		</td>
@@ -430,6 +403,43 @@ See the following sections to determine which roles are authorized to perform sp
 		</td>
 	</tr>
 	<tr>
+		<td>/public/v1/program/programs/{programId}/documents/{id}</td>
+		<td>Put</td>
+		<td></td>
+		<td>
+			<ul>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/program/programs/{programId}/documents/{id}</td>
+		<td>Delete</td>
+		<td></td>
+		<td>
+			<ul>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+<tbody>
+</table>
+
+
+
+### Programmedia
+
+<table>
+<thead>
+<tr>
+ <td>Operation</td>
+ <td>Method</td>
+ <td>Description</td>
+ <td>Access</td>
+</tr>
+</thead>
+<tbody>
+	<tr>
 		<td>/public/v1/program/programs/{programId}/media/{id}</td>
 		<td>Get</td>
 		<td></td>
@@ -442,21 +452,13 @@ See the following sections to determine which roles are authorized to perform sp
 		</td>
 	</tr>
 	<tr>
-		<td>/public/v1/program/programs/{programId}/media/{id}</td>
-		<td>Delete</td>
+		<td>/public/v1/program/programs/{programId}/media</td>
+		<td>Get</td>
 		<td></td>
 		<td>
 			<ul>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/program/programs/{programId}/media/{id}</td>
-		<td>Put</td>
-		<td></td>
-		<td>
-			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
 				  <li>Vendor</li>
 			</ul>		
 		</td>
@@ -467,18 +469,6 @@ See the following sections to determine which roles are authorized to perform sp
 		<td></td>
 		<td>
 			<ul>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/program/programs/{programId}/media</td>
-		<td>Get</td>
-		<td></td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
 				  <li>Vendor</li>
 			</ul>		
 		</td>
@@ -504,7 +494,56 @@ See the following sections to determine which roles are authorized to perform sp
 		</td>
 	</tr>
 	<tr>
-		<td>/public/v1/program/programs/{programId}/media/{id}/image</td>
+		<td>/public/v1/program/programs/{programId}/media/{id}</td>
+		<td>Put</td>
+		<td></td>
+		<td>
+			<ul>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/program/programs/{programId}/media/{id}</td>
+		<td>Delete</td>
+		<td></td>
+		<td>
+			<ul>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+<tbody>
+</table>
+
+
+
+### Programparametergroup
+
+<table>
+<thead>
+<tr>
+ <td>Operation</td>
+ <td>Method</td>
+ <td>Description</td>
+ <td>Access</td>
+</tr>
+</thead>
+<tbody>
+	<tr>
+		<td>/public/v1/program/programs/{programId}/parameter-groups</td>
+		<td>Get</td>
+		<td></td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/program/programs/{programId}/parameter-groups/{id}</td>
 		<td>Get</td>
 		<td></td>
 		<td>
@@ -526,18 +565,6 @@ See the following sections to determine which roles are authorized to perform sp
 		</td>
 	</tr>
 	<tr>
-		<td>/public/v1/program/programs/{programId}/parameter-groups</td>
-		<td>Get</td>
-		<td></td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
 		<td>/public/v1/program/programs/{programId}/parameter-groups/{id}</td>
 		<td>Put</td>
 		<td></td>
@@ -557,8 +584,37 @@ See the following sections to determine which roles are authorized to perform sp
 			</ul>		
 		</td>
 	</tr>
+<tbody>
+</table>
+
+
+
+### Programparameterdefinition
+
+<table>
+<thead>
+<tr>
+ <td>Operation</td>
+ <td>Method</td>
+ <td>Description</td>
+ <td>Access</td>
+</tr>
+</thead>
+<tbody>
 	<tr>
-		<td>/public/v1/program/programs/{programId}/parameter-groups/{id}</td>
+		<td>/public/v1/program/programs/{programId}/parameters</td>
+		<td>Get</td>
+		<td></td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/program/programs/{programId}/parameters/{id}</td>
 		<td>Get</td>
 		<td></td>
 		<td>
@@ -580,18 +636,6 @@ See the following sections to determine which roles are authorized to perform sp
 		</td>
 	</tr>
 	<tr>
-		<td>/public/v1/program/programs/{programId}/parameters</td>
-		<td>Get</td>
-		<td></td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
 		<td>/public/v1/program/programs/{programId}/parameters/{id}</td>
 		<td>Put</td>
 		<td></td>
@@ -611,8 +655,37 @@ See the following sections to determine which roles are authorized to perform sp
 			</ul>		
 		</td>
 	</tr>
+<tbody>
+</table>
+
+
+
+### Program
+
+<table>
+<thead>
+<tr>
+ <td>Operation</td>
+ <td>Method</td>
+ <td>Description</td>
+ <td>Access</td>
+</tr>
+</thead>
+<tbody>
 	<tr>
-		<td>/public/v1/program/programs/{programId}/parameters/{id}</td>
+		<td>/public/v1/program/programs</td>
+		<td>Get</td>
+		<td></td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/program/programs/{id}</td>
 		<td>Get</td>
 		<td></td>
 		<td>
@@ -626,60 +699,6 @@ See the following sections to determine which roles are authorized to perform sp
 	<tr>
 		<td>/public/v1/program/programs</td>
 		<td>Post</td>
-		<td></td>
-		<td>
-			<ul>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/program/programs</td>
-		<td>Get</td>
-		<td></td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/program/programs/{id}</td>
-		<td>Put</td>
-		<td></td>
-		<td>
-			<ul>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/program/programs/{id}</td>
-		<td>Delete</td>
-		<td></td>
-		<td>
-			<ul>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/program/programs/{id}</td>
-		<td>Get</td>
-		<td></td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/program/programs/{id}/settings</td>
-		<td>Put</td>
 		<td></td>
 		<td>
 			<ul>
@@ -708,7 +727,66 @@ See the following sections to determine which roles are authorized to perform sp
 		</td>
 	</tr>
 	<tr>
-		<td>/public/v1/program/programs/{id}/icon</td>
+		<td>/public/v1/program/programs/{id}</td>
+		<td>Put</td>
+		<td></td>
+		<td>
+			<ul>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/program/programs/{id}/settings</td>
+		<td>Put</td>
+		<td></td>
+		<td>
+			<ul>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/program/programs/{id}</td>
+		<td>Delete</td>
+		<td></td>
+		<td>
+			<ul>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+<tbody>
+</table>
+
+
+
+### Programtemplate
+
+<table>
+<thead>
+<tr>
+ <td>Operation</td>
+ <td>Method</td>
+ <td>Description</td>
+ <td>Access</td>
+</tr>
+</thead>
+<tbody>
+	<tr>
+		<td>/public/v1/program/programs/{programId}/templates</td>
+		<td>Get</td>
+		<td></td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/program/programs/{programId}/templates/{id}</td>
 		<td>Get</td>
 		<td></td>
 		<td>
@@ -725,18 +803,6 @@ See the following sections to determine which roles are authorized to perform sp
 		<td></td>
 		<td>
 			<ul>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/program/programs/{programId}/templates</td>
-		<td>Get</td>
-		<td></td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
 				  <li>Vendor</li>
 			</ul>		
 		</td>
@@ -761,8 +827,37 @@ See the following sections to determine which roles are authorized to perform sp
 			</ul>		
 		</td>
 	</tr>
+<tbody>
+</table>
+
+
+
+### Programtermsandconditions
+
+<table>
+<thead>
+<tr>
+ <td>Operation</td>
+ <td>Method</td>
+ <td>Description</td>
+ <td>Access</td>
+</tr>
+</thead>
+<tbody>
 	<tr>
-		<td>/public/v1/program/programs/{programId}/templates/{id}</td>
+		<td>/public/v1/program/programs/{programId}/terms</td>
+		<td>Get</td>
+		<td></td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/program/programs/{programId}/terms/{id}</td>
 		<td>Get</td>
 		<td></td>
 		<td>
@@ -779,50 +874,6 @@ See the following sections to determine which roles are authorized to perform sp
 		<td></td>
 		<td>
 			<ul>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/program/programs/{programId}/terms</td>
-		<td>Get</td>
-		<td></td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/program/programs/{programId}/terms/{id}</td>
-		<td>Put</td>
-		<td></td>
-		<td>
-			<ul>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/program/programs/{programId}/terms/{id}</td>
-		<td>Delete</td>
-		<td></td>
-		<td>
-			<ul>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/program/programs/{programId}/terms/{id}</td>
-		<td>Get</td>
-		<td></td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
 				  <li>Vendor</li>
 			</ul>		
 		</td>
@@ -848,29 +899,7 @@ See the following sections to determine which roles are authorized to perform sp
 		</td>
 	</tr>
 	<tr>
-		<td>/public/v1/program/programs/{programId}/terms/{programTermsAndConditionsId}/variants</td>
-		<td>Post</td>
-		<td></td>
-		<td>
-			<ul>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/program/programs/{programId}/terms/{programTermsAndConditionsId}/variants</td>
-		<td>Get</td>
-		<td></td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/program/programs/{programId}/terms/{programTermsAndConditionsId}/variants/{id}</td>
+		<td>/public/v1/program/programs/{programId}/terms/{id}</td>
 		<td>Put</td>
 		<td></td>
 		<td>
@@ -880,11 +909,40 @@ See the following sections to determine which roles are authorized to perform sp
 		</td>
 	</tr>
 	<tr>
-		<td>/public/v1/program/programs/{programId}/terms/{programTermsAndConditionsId}/variants/{id}</td>
+		<td>/public/v1/program/programs/{programId}/terms/{id}</td>
 		<td>Delete</td>
 		<td></td>
 		<td>
 			<ul>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+<tbody>
+</table>
+
+
+
+### Programtermsandconditionsvariant
+
+<table>
+<thead>
+<tr>
+ <td>Operation</td>
+ <td>Method</td>
+ <td>Description</td>
+ <td>Access</td>
+</tr>
+</thead>
+<tbody>
+	<tr>
+		<td>/public/v1/program/programs/{programId}/terms/{programTermsAndConditionsId}/variants</td>
+		<td>Get</td>
+		<td></td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
 				  <li>Vendor</li>
 			</ul>		
 		</td>
@@ -897,6 +955,16 @@ See the following sections to determine which roles are authorized to perform sp
 			<ul>
 				  <li>Operations</li>
 				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/program/programs/{programId}/terms/{programTermsAndConditionsId}/variants</td>
+		<td>Post</td>
+		<td></td>
+		<td>
+			<ul>
 				  <li>Vendor</li>
 			</ul>		
 		</td>
@@ -914,6 +982,26 @@ See the following sections to determine which roles are authorized to perform sp
 	<tr>
 		<td>/public/v1/program/programs/{programId}/terms/{programTermsAndConditionsId}/variants/{id}/unpublish</td>
 		<td>Post</td>
+		<td></td>
+		<td>
+			<ul>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/program/programs/{programId}/terms/{programTermsAndConditionsId}/variants/{id}</td>
+		<td>Put</td>
+		<td></td>
+		<td>
+			<ul>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/program/programs/{programId}/terms/{programTermsAndConditionsId}/variants/{id}</td>
+		<td>Delete</td>
 		<td></td>
 		<td>
 			<ul>

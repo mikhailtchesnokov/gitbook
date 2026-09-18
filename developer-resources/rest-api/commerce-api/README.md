@@ -139,7 +139,7 @@ The API is organized into collections, each containing a set of operations. Acce
 
 See the following sections to determine which roles are authorized to perform specific operations within each collection:
 
-### Agreements
+### Agreement
 
 <table>
 <thead>
@@ -153,16 +153,6 @@ See the following sections to determine which roles are authorized to perform sp
 <tbody>
 	<tr>
 		<td>/public/v1/commerce/agreements</td>
-		<td>Post</td>
-		<td>Creates a new agreement.</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/commerce/agreements</td>
 		<td>Get</td>
 		<td></td>
 		<td>
@@ -170,6 +160,28 @@ See the following sections to determine which roles are authorized to perform sp
 				  <li>Operations</li>
 				  <li>Client</li>
 				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/commerce/agreements/{id}</td>
+		<td>Get</td>
+		<td></td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/commerce/agreements</td>
+		<td>Post</td>
+		<td>Creates a new agreement.</td>
+		<td>
+			<ul>
+				  <li>Operations</li>
 			</ul>		
 		</td>
 	</tr>
@@ -185,42 +197,23 @@ See the following sections to determine which roles are authorized to perform sp
 			</ul>		
 		</td>
 	</tr>
-	<tr>
-		<td>/public/v1/commerce/agreements/{id}</td>
-		<td>Get</td>
-		<td></td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/commerce/agreements/{id}/template</td>
-		<td>Get</td>
-		<td>Renders an agreement template.</td>
-		<td>
-			<ul>
-				  <li>Vendor</li>
-				  <li>Client</li>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/commerce/agreements/{id}/render</td>
-		<td>Get</td>
-		<td>Renders an agreement template.</td>
-		<td>
-			<ul>
-				  <li>Vendor</li>
-				  <li>Client</li>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
+<tbody>
+</table>
+
+
+
+### Commerceagreementattachment
+
+<table>
+<thead>
+<tr>
+ <td>Operation</td>
+ <td>Method</td>
+ <td>Description</td>
+ <td>Access</td>
+</tr>
+</thead>
+<tbody>
 	<tr>
 		<td>/public/v1/commerce/agreements/{agreementId}/attachments</td>
 		<td>Get</td>
@@ -234,9 +227,9 @@ See the following sections to determine which roles are authorized to perform sp
 		</td>
 	</tr>
 	<tr>
-		<td>/public/v1/commerce/agreements/{agreementId}/attachments</td>
-		<td>Post</td>
-		<td>Creates a new attachment for an agreement.</td>
+		<td>/public/v1/commerce/agreements/{agreementId}/attachments/{id}</td>
+		<td>Get</td>
+		<td>Gets an attachment by id or redirects to its download.</td>
 		<td>
 			<ul>
 				  <li>Vendor</li>
@@ -246,9 +239,9 @@ See the following sections to determine which roles are authorized to perform sp
 		</td>
 	</tr>
 	<tr>
-		<td>/public/v1/commerce/agreements/{agreementId}/attachments/{id}</td>
-		<td>Get</td>
-		<td>Gets an attachment by id or redirects to its download.</td>
+		<td>/public/v1/commerce/agreements/{agreementId}/attachments</td>
+		<td>Post</td>
+		<td>Creates a new attachment for an agreement.</td>
 		<td>
 			<ul>
 				  <li>Vendor</li>
@@ -281,57 +274,12 @@ See the following sections to determine which roles are authorized to perform sp
 			</ul>		
 		</td>
 	</tr>
-	<tr>
-		<td>/public/v1/commerce/agreements/{agreementId}/lines</td>
-		<td>Get</td>
-		<td>Lists agreement lines for the specified agreement.</td>
-		<td>
-			<ul>
-				  <li>Vendor</li>
-				  <li>Client</li>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/commerce/agreements/{agreementId}/split</td>
-		<td>Get</td>
-		<td>Gets split billing allocations for an agreement.</td>
-		<td>
-			<ul>
-				  <li>Client</li>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/commerce/agreements/{agreementId}/split</td>
-		<td>Post</td>
-		<td>Activates split billing for an agreement.</td>
-		<td>
-			<ul>
-				  <li>Client</li>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/commerce/agreements/{agreementId}/split</td>
-		<td>Put</td>
-		<td>Updates split billing allocations for an agreement.</td>
-		<td>
-			<ul>
-				  <li>Client</li>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
 <tbody>
 </table>
 
 
 
-### Assets
+### Asset
 
 <table>
 <thead>
@@ -345,6 +293,30 @@ See the following sections to determine which roles are authorized to perform sp
 <tbody>
 	<tr>
 		<td>/public/v1/commerce/assets</td>
+		<td>Get</td>
+		<td></td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/commerce/assets/{id}</td>
+		<td>Get</td>
+		<td></td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/commerce/assets</td>
 		<td>Post</td>
 		<td>Creates a new asset.</td>
 		<td>
@@ -354,13 +326,11 @@ See the following sections to determine which roles are authorized to perform sp
 		</td>
 	</tr>
 	<tr>
-		<td>/public/v1/commerce/assets</td>
-		<td>Get</td>
-		<td></td>
+		<td>/public/v1/commerce/assets/{id}/terminate</td>
+		<td>Post</td>
+		<td>Terminates an existing asset.</td>
 		<td>
 			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
 				  <li>Vendor</li>
 			</ul>		
 		</td>
@@ -377,58 +347,12 @@ See the following sections to determine which roles are authorized to perform sp
 			</ul>		
 		</td>
 	</tr>
-	<tr>
-		<td>/public/v1/commerce/assets/{id}</td>
-		<td>Get</td>
-		<td></td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/commerce/assets/{id}/terminate</td>
-		<td>Post</td>
-		<td>Terminates an existing asset.</td>
-		<td>
-			<ul>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/commerce/assets/{id}/render</td>
-		<td>Get</td>
-		<td>Renders an asset template.</td>
-		<td>
-			<ul>
-				  <li>Vendor</li>
-				  <li>Client</li>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/commerce/assets/{assetId}/lines</td>
-		<td>Get</td>
-		<td>Lists agreement lines for the specified asset.</td>
-		<td>
-			<ul>
-				  <li>Vendor</li>
-				  <li>Client</li>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
 <tbody>
 </table>
 
 
 
-### Lines
+### Order
 
 <table>
 <thead>
@@ -441,80 +365,7 @@ See the following sections to determine which roles are authorized to perform sp
 </thead>
 <tbody>
 	<tr>
-		<td>/public/v1/commerce/lines</td>
-		<td>Get</td>
-		<td>Lists all agreement lines across the marketplace.</td>
-		<td>
-			<ul>
-				  <li>Vendor</li>
-				  <li>Client</li>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-<tbody>
-</table>
-
-
-
-### Subscriptions
-
-<table>
-<thead>
-<tr>
- <td>Operation</td>
- <td>Method</td>
- <td>Description</td>
- <td>Access</td>
-</tr>
-</thead>
-<tbody>
-	<tr>
-		<td>/public/v1/commerce/subscriptions/{subscriptionId}/lines</td>
-		<td>Get</td>
-		<td>Lists agreement lines for the specified subscription.</td>
-		<td>
-			<ul>
-				  <li>Vendor</li>
-				  <li>Client</li>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/commerce/subscriptions/{subscriptionId}/split</td>
-		<td>Get</td>
-		<td>Gets split billing allocations for a subscription.</td>
-		<td>
-			<ul>
-				  <li>Client</li>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/commerce/subscriptions/{subscriptionId}/split</td>
-		<td>Put</td>
-		<td>Updates split billing allocations for a subscription.</td>
-		<td>
-			<ul>
-				  <li>Client</li>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/commerce/subscriptions</td>
-		<td>Post</td>
-		<td>Creates a new subscription.</td>
-		<td>
-			<ul>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/commerce/subscriptions</td>
+		<td>/public/v1/commerce/orders</td>
 		<td>Get</td>
 		<td></td>
 		<td>
@@ -526,19 +377,7 @@ See the following sections to determine which roles are authorized to perform sp
 		</td>
 	</tr>
 	<tr>
-		<td>/public/v1/commerce/subscriptions/{id}</td>
-		<td>Put</td>
-		<td>Updates an existing subscription.</td>
-		<td>
-			<ul>
-				  <li>Vendor</li>
-				  <li>Client</li>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/commerce/subscriptions/{id}</td>
+		<td>/public/v1/commerce/orders/{id}</td>
 		<td>Get</td>
 		<td></td>
 		<td>
@@ -546,129 +385,6 @@ See the following sections to determine which roles are authorized to perform sp
 				  <li>Operations</li>
 				  <li>Client</li>
 				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/commerce/subscriptions/{id}/terminate</td>
-		<td>Post</td>
-		<td>Terminates an existing subscription.</td>
-		<td>
-			<ul>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/commerce/subscriptions/{id}/render</td>
-		<td>Get</td>
-		<td>Renders a subscription template.</td>
-		<td>
-			<ul>
-				  <li>Vendor</li>
-				  <li>Client</li>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-<tbody>
-</table>
-
-
-
-### Orders
-
-<table>
-<thead>
-<tr>
- <td>Operation</td>
- <td>Method</td>
- <td>Description</td>
- <td>Access</td>
-</tr>
-</thead>
-<tbody>
-	<tr>
-		<td>/public/v1/commerce/orders/{orderId}/lines</td>
-		<td>Get</td>
-		<td>Lists order lines for the specified order.</td>
-		<td>
-			<ul>
-				  <li>Vendor</li>
-				  <li>Client</li>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/commerce/orders/{orderId}/assets</td>
-		<td>Get</td>
-		<td>Lists assets for the specified order.</td>
-		<td>
-			<ul>
-				  <li>Vendor</li>
-				  <li>Client</li>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/commerce/orders/{orderId}/assets</td>
-		<td>Post</td>
-		<td>Creates a new asset for the order.</td>
-		<td>
-			<ul>
-				  <li>Vendor</li>
-				  <li>Client</li>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/commerce/orders/{orderId}/assets/{id}</td>
-		<td>Get</td>
-		<td>Gets an order asset by id.</td>
-		<td>
-			<ul>
-				  <li>Vendor</li>
-				  <li>Client</li>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/commerce/orders/{orderId}/assets/{id}</td>
-		<td>Put</td>
-		<td>Updates an existing order asset.</td>
-		<td>
-			<ul>
-				  <li>Vendor</li>
-				  <li>Client</li>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/commerce/orders/{orderId}/assets/{id}</td>
-		<td>Delete</td>
-		<td>Deletes an existing order asset.</td>
-		<td>
-			<ul>
-				  <li>Vendor</li>
-				  <li>Client</li>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/commerce/orders/{orderId}/assets/{id}/render</td>
-		<td>Get</td>
-		<td>Renders an order asset template.</td>
-		<td>
-			<ul>
-				  <li>Vendor</li>
-				  <li>Client</li>
-				  <li>Operations</li>
 			</ul>		
 		</td>
 	</tr>
@@ -681,54 +397,6 @@ See the following sections to determine which roles are authorized to perform sp
 				  <li>Vendor</li>
 				  <li>Client</li>
 				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/commerce/orders</td>
-		<td>Get</td>
-		<td></td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/commerce/orders/{id}</td>
-		<td>Put</td>
-		<td>Updates an order. Immutable fields such as state and agreement assignment cannot be changed.</td>
-		<td>
-			<ul>
-				  <li>Vendor</li>
-				  <li>Client</li>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/commerce/orders/{id}</td>
-		<td>Delete</td>
-		<td>Deletes an order. Only draft orders can be deleted.</td>
-		<td>
-			<ul>
-				  <li>Vendor</li>
-				  <li>Client</li>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/commerce/orders/{id}</td>
-		<td>Get</td>
-		<td></td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
 			</ul>		
 		</td>
 	</tr>
@@ -805,9 +473,9 @@ See the following sections to determine which roles are authorized to perform sp
 		</td>
 	</tr>
 	<tr>
-		<td>/public/v1/commerce/orders/{id}/template</td>
-		<td>Get</td>
-		<td>Renders an order template.</td>
+		<td>/public/v1/commerce/orders/{id}</td>
+		<td>Put</td>
+		<td>Updates an order. Immutable fields such as state and agreement assignment cannot be changed.</td>
 		<td>
 			<ul>
 				  <li>Vendor</li>
@@ -817,9 +485,9 @@ See the following sections to determine which roles are authorized to perform sp
 		</td>
 	</tr>
 	<tr>
-		<td>/public/v1/commerce/orders/{id}/render</td>
-		<td>Get</td>
-		<td>Renders an order template.</td>
+		<td>/public/v1/commerce/orders/{id}</td>
+		<td>Delete</td>
+		<td>Deletes an order. Only draft orders can be deleted.</td>
 		<td>
 			<ul>
 				  <li>Vendor</li>
@@ -828,33 +496,27 @@ See the following sections to determine which roles are authorized to perform sp
 			</ul>		
 		</td>
 	</tr>
-	<tr>
-		<td>/public/v1/commerce/orders/{id}/notify</td>
-		<td>Post</td>
-		<td>Sends an order notification to a user.</td>
-		<td>
-			<ul>
-				  <li>Client</li>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
+<tbody>
+</table>
+
+
+
+### Subscription
+
+<table>
+<thead>
+<tr>
+ <td>Operation</td>
+ <td>Method</td>
+ <td>Description</td>
+ <td>Access</td>
+</tr>
+</thead>
+<tbody>
 	<tr>
 		<td>/public/v1/commerce/orders/{orderId}/subscriptions</td>
 		<td>Get</td>
 		<td>Lists subscriptions for the specified order.</td>
-		<td>
-			<ul>
-				  <li>Vendor</li>
-				  <li>Client</li>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/commerce/orders/{orderId}/subscriptions</td>
-		<td>Post</td>
-		<td>Creates a new subscription for the order.</td>
 		<td>
 			<ul>
 				  <li>Vendor</li>
@@ -876,9 +538,77 @@ See the following sections to determine which roles are authorized to perform sp
 		</td>
 	</tr>
 	<tr>
+		<td>/public/v1/commerce/subscriptions</td>
+		<td>Get</td>
+		<td></td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/commerce/subscriptions/{id}</td>
+		<td>Get</td>
+		<td></td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/commerce/orders/{orderId}/subscriptions</td>
+		<td>Post</td>
+		<td>Creates a new subscription for the order.</td>
+		<td>
+			<ul>
+				  <li>Vendor</li>
+				  <li>Client</li>
+				  <li>Operations</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/commerce/subscriptions</td>
+		<td>Post</td>
+		<td>Creates a new subscription.</td>
+		<td>
+			<ul>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/commerce/subscriptions/{id}/terminate</td>
+		<td>Post</td>
+		<td>Terminates an existing subscription.</td>
+		<td>
+			<ul>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
 		<td>/public/v1/commerce/orders/{orderId}/subscriptions/{id}</td>
 		<td>Put</td>
 		<td>Updates an existing order subscription.</td>
+		<td>
+			<ul>
+				  <li>Vendor</li>
+				  <li>Client</li>
+				  <li>Operations</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/commerce/subscriptions/{id}</td>
+		<td>Put</td>
+		<td>Updates an existing subscription.</td>
 		<td>
 			<ul>
 				  <li>Vendor</li>
@@ -899,13 +629,90 @@ See the following sections to determine which roles are authorized to perform sp
 			</ul>		
 		</td>
 	</tr>
+<tbody>
+</table>
+
+
+
+### Splitbillingagreement
+
+<table>
+<thead>
+<tr>
+ <td>Operation</td>
+ <td>Method</td>
+ <td>Description</td>
+ <td>Access</td>
+</tr>
+</thead>
+<tbody>
 	<tr>
-		<td>/public/v1/commerce/orders/{orderId}/subscriptions/{id}/render</td>
+		<td>/public/v1/commerce/agreements/{agreementId}/split</td>
 		<td>Get</td>
-		<td>Renders an order subscription template.</td>
+		<td>Gets split billing allocations for an agreement.</td>
 		<td>
 			<ul>
-				  <li>Vendor</li>
+				  <li>Client</li>
+				  <li>Operations</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/commerce/agreements/{agreementId}/split</td>
+		<td>Post</td>
+		<td>Activates split billing for an agreement.</td>
+		<td>
+			<ul>
+				  <li>Client</li>
+				  <li>Operations</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/commerce/agreements/{agreementId}/split</td>
+		<td>Put</td>
+		<td>Updates split billing allocations for an agreement.</td>
+		<td>
+			<ul>
+				  <li>Client</li>
+				  <li>Operations</li>
+			</ul>		
+		</td>
+	</tr>
+<tbody>
+</table>
+
+
+
+### Splitbillingsubscription
+
+<table>
+<thead>
+<tr>
+ <td>Operation</td>
+ <td>Method</td>
+ <td>Description</td>
+ <td>Access</td>
+</tr>
+</thead>
+<tbody>
+	<tr>
+		<td>/public/v1/commerce/subscriptions/{subscriptionId}/split</td>
+		<td>Get</td>
+		<td>Gets split billing allocations for a subscription.</td>
+		<td>
+			<ul>
+				  <li>Client</li>
+				  <li>Operations</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/commerce/subscriptions/{subscriptionId}/split</td>
+		<td>Put</td>
+		<td>Updates split billing allocations for a subscription.</td>
+		<td>
+			<ul>
 				  <li>Client</li>
 				  <li>Operations</li>
 			</ul>		

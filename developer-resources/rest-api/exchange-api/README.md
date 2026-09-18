@@ -61,7 +61,7 @@ The API is organized into collections, each containing a set of operations. Acce
 
 See the following sections to determine which roles are authorized to perform specific operations within each collection:
 
-### Currencies
+### Currency
 
 <table>
 <thead>
@@ -86,16 +86,6 @@ See the following sections to determine which roles are authorized to perform sp
 		</td>
 	</tr>
 	<tr>
-		<td>/public/v1/exchange/currencies</td>
-		<td>Post</td>
-		<td>Creates a new currency.</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
 		<td>/public/v1/exchange/currencies/{id}</td>
 		<td>Get</td>
 		<td>Retrieves a currency by ID.</td>
@@ -104,6 +94,16 @@ See the following sections to determine which roles are authorized to perform sp
 				  <li>Operations</li>
 				  <li>Client</li>
 				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/exchange/currencies</td>
+		<td>Post</td>
+		<td>Creates a new currency.</td>
+		<td>
+			<ul>
+				  <li>Operations</li>
 			</ul>		
 		</td>
 	</tr>
@@ -127,24 +127,12 @@ See the following sections to determine which roles are authorized to perform sp
 			</ul>		
 		</td>
 	</tr>
-	<tr>
-		<td>/public/v1/exchange/currencies/{id}/icon</td>
-		<td>Get</td>
-		<td>Gets a download redirect for a currency icon.</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
 <tbody>
 </table>
 
 
 
-### Pairs
+### Pair
 
 <table>
 <thead>
@@ -156,48 +144,6 @@ See the following sections to determine which roles are authorized to perform sp
 </tr>
 </thead>
 <tbody>
-	<tr>
-		<td>/public/v1/exchange/pairs</td>
-		<td>Get</td>
-		<td>Gets a list of currency pairs.</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/exchange/pairs</td>
-		<td>Post</td>
-		<td>Creates a new pair or pairs of currencies.</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/exchange/pairs</td>
-		<td>Put</td>
-		<td>Updates pairs from bulk data.</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/exchange/pairs</td>
-		<td>Delete</td>
-		<td>Deletes multiple pairs from the body.</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
 	<tr>
 		<td>/public/v1/exchange/pairs/{id}</td>
 		<td>Get</td>
@@ -210,56 +156,12 @@ See the following sections to determine which roles are authorized to perform sp
 			</ul>		
 		</td>
 	</tr>
-	<tr>
-		<td>/public/v1/exchange/pairs/{pairId}/rates/{rateId}</td>
-		<td>Get</td>
-		<td>Retrieves a rate by ID within a pair.</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/exchange/pairs/{pairId}/rates</td>
-		<td>Get</td>
-		<td>Gets a list of rates for a pair.</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/exchange/pairs/{pairId}/rates</td>
-		<td>Put</td>
-		<td>Updates rates for a pair.</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/exchange/pairs/-/rates</td>
-		<td>Post</td>
-		<td>Creates a new rate.</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
 <tbody>
 </table>
 
 
 
-### Rates
+### Rate
 
 <table>
 <thead>
@@ -272,12 +174,14 @@ See the following sections to determine which roles are authorized to perform sp
 </thead>
 <tbody>
 	<tr>
-		<td>/public/v1/exchange/rates</td>
-		<td>Delete</td>
-		<td>Deletes rates from bulk data.</td>
+		<td>/public/v1/exchange/pairs/{pairId}/rates/{rateId}</td>
+		<td>Get</td>
+		<td>Retrieves a rate by ID within a pair.</td>
 		<td>
 			<ul>
 				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
 			</ul>		
 		</td>
 	</tr>

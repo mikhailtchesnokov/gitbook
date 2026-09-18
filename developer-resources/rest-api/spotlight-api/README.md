@@ -37,7 +37,7 @@ The API is organized into collections, each containing a set of operations. Acce
 
 See the following sections to determine which roles are authorized to perform specific operations within each collection:
 
-### Objects
+### Spotlightquery
 
 <table>
 <thead>
@@ -49,71 +49,6 @@ See the following sections to determine which roles are authorized to perform sp
 </tr>
 </thead>
 <tbody>
-	<tr>
-		<td>/public/v1/spotlight/objects</td>
-		<td>Get</td>
-		<td>Get spotlight objects for the current account and buyer group</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/spotlight/objects/-/refresh</td>
-		<td>Post</td>
-		<td>Refresh spotlight cache for the current account and buyer group</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/spotlight/objects/{id}/refresh</td>
-		<td>Post</td>
-		<td>Refresh spotlight cache for a specific object in the current context</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-<tbody>
-</table>
-
-
-
-### Queries
-
-<table>
-<thead>
-<tr>
- <td>Operation</td>
- <td>Method</td>
- <td>Description</td>
- <td>Access</td>
-</tr>
-</thead>
-<tbody>
-	<tr>
-		<td>/public/v1/spotlight/queries</td>
-		<td>Get</td>
-		<td>Get a list of spotlight queries</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
 	<tr>
 		<td>/public/v1/spotlight/queries/{id}</td>
 		<td>Get</td>

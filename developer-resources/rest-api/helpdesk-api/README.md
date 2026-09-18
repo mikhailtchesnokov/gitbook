@@ -225,7 +225,7 @@ The API is organized into collections, each containing a set of operations. Acce
 
 See the following sections to determine which roles are authorized to perform specific operations within each collection:
 
-### Chats
+### Answer
 
 <table>
 <thead>
@@ -250,18 +250,6 @@ See the following sections to determine which roles are authorized to perform sp
 		</td>
 	</tr>
 	<tr>
-		<td>/public/v1/helpdesk/chats/{chatId}/answers</td>
-		<td>Post</td>
-		<td>Create a new answer from a published form</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
 		<td>/public/v1/helpdesk/chats/{chatId}/answers/{id}</td>
 		<td>Get</td>
 		<td>Retrieve an answer by ID</td>
@@ -274,21 +262,9 @@ See the following sections to determine which roles are authorized to perform sp
 		</td>
 	</tr>
 	<tr>
-		<td>/public/v1/helpdesk/chats/{chatId}/answers/{id}</td>
-		<td>Put</td>
-		<td>Update answer parameter values</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/helpdesk/chats/{chatId}/answers/{id}</td>
-		<td>Delete</td>
-		<td>Soft-delete an answer</td>
+		<td>/public/v1/helpdesk/chats/{chatId}/answers</td>
+		<td>Post</td>
+		<td>Create a new answer from a published form</td>
 		<td>
 			<ul>
 				  <li>Operations</li>
@@ -346,9 +322,62 @@ See the following sections to determine which roles are authorized to perform sp
 		</td>
 	</tr>
 	<tr>
+		<td>/public/v1/helpdesk/chats/{chatId}/answers/{id}</td>
+		<td>Put</td>
+		<td>Update answer parameter values</td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/helpdesk/chats/{chatId}/answers/{id}</td>
+		<td>Delete</td>
+		<td>Soft-delete an answer</td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+<tbody>
+</table>
+
+
+
+### Chat
+
+<table>
+<thead>
+<tr>
+ <td>Operation</td>
+ <td>Method</td>
+ <td>Description</td>
+ <td>Access</td>
+</tr>
+</thead>
+<tbody>
+	<tr>
 		<td>/public/v1/helpdesk/chats</td>
 		<td>Get</td>
 		<td>Get a list of chats</td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/helpdesk/chats/{id}</td>
+		<td>Get</td>
+		<td>Retrieve a chat by ID</td>
 		<td>
 			<ul>
 				  <li>Operations</li>
@@ -371,18 +400,6 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/helpdesk/chats/{id}</td>
-		<td>Get</td>
-		<td>Retrieve a chat by ID</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/helpdesk/chats/{id}</td>
 		<td>Put</td>
 		<td>Update an existing Chat</td>
 		<td>
@@ -393,18 +410,23 @@ See the following sections to determine which roles are authorized to perform sp
 			</ul>		
 		</td>
 	</tr>
-	<tr>
-		<td>/public/v1/helpdesk/chats/{id}/icon</td>
-		<td>Get</td>
-		<td>Get a download redirect for a chat icon</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
+<tbody>
+</table>
+
+
+
+### Chatattachment
+
+<table>
+<thead>
+<tr>
+ <td>Operation</td>
+ <td>Method</td>
+ <td>Description</td>
+ <td>Access</td>
+</tr>
+</thead>
+<tbody>
 	<tr>
 		<td>/public/v1/helpdesk/chats/{chatId}/attachments</td>
 		<td>Get</td>
@@ -418,9 +440,9 @@ See the following sections to determine which roles are authorized to perform sp
 		</td>
 	</tr>
 	<tr>
-		<td>/public/v1/helpdesk/chats/{chatId}/attachments</td>
-		<td>Post</td>
-		<td>Add attachments to an existing chat entry</td>
+		<td>/public/v1/helpdesk/chats/{chatId}/attachments/{id}</td>
+		<td>Get</td>
+		<td>Retrieve a chat attachment by ID</td>
 		<td>
 			<ul>
 				  <li>Operations</li>
@@ -430,9 +452,9 @@ See the following sections to determine which roles are authorized to perform sp
 		</td>
 	</tr>
 	<tr>
-		<td>/public/v1/helpdesk/chats/{chatId}/attachments/{id}</td>
-		<td>Get</td>
-		<td>Retrieve a chat attachment by ID</td>
+		<td>/public/v1/helpdesk/chats/{chatId}/attachments</td>
+		<td>Post</td>
+		<td>Add attachments to an existing chat entry</td>
 		<td>
 			<ul>
 				  <li>Operations</li>
@@ -465,30 +487,23 @@ See the following sections to determine which roles are authorized to perform sp
 			</ul>		
 		</td>
 	</tr>
-	<tr>
-		<td>/public/v1/helpdesk/chats/{chatId}/participants</td>
-		<td>Get</td>
-		<td>Get a list of chat participants</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/helpdesk/chats/{chatId}/participants</td>
-		<td>Post</td>
-		<td>Add new chat participants</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
+<tbody>
+</table>
+
+
+
+### Chatparticipant
+
+<table>
+<thead>
+<tr>
+ <td>Operation</td>
+ <td>Method</td>
+ <td>Description</td>
+ <td>Access</td>
+</tr>
+</thead>
+<tbody>
 	<tr>
 		<td>/public/v1/helpdesk/chats/{chatId}/participants/{id}</td>
 		<td>Get</td>
@@ -525,6 +540,290 @@ See the following sections to determine which roles are authorized to perform sp
 			</ul>		
 		</td>
 	</tr>
+<tbody>
+</table>
+
+
+
+### Feedback
+
+<table>
+<thead>
+<tr>
+ <td>Operation</td>
+ <td>Method</td>
+ <td>Description</td>
+ <td>Access</td>
+</tr>
+</thead>
+<tbody>
+	<tr>
+		<td>/public/v1/helpdesk/feedback</td>
+		<td>Get</td>
+		<td>Get a list of feedbacks</td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/helpdesk/feedback/{id}</td>
+		<td>Get</td>
+		<td>Retrieve a feedback by ID</td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/helpdesk/feedback</td>
+		<td>Post</td>
+		<td>Create a new feedback entry</td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/helpdesk/feedback/{id}/review</td>
+		<td>Post</td>
+		<td>Update feedback review status</td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/helpdesk/feedback/{id}</td>
+		<td>Put</td>
+		<td>Update an existing feedback</td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/helpdesk/feedback/{id}</td>
+		<td>Delete</td>
+		<td>Delete feedback by ID</td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+<tbody>
+</table>
+
+
+
+### Feedbackattachment
+
+<table>
+<thead>
+<tr>
+ <td>Operation</td>
+ <td>Method</td>
+ <td>Description</td>
+ <td>Access</td>
+</tr>
+</thead>
+<tbody>
+	<tr>
+		<td>/public/v1/helpdesk/feedback/{feedbackId}/attachments</td>
+		<td>Get</td>
+		<td>Get attachments for a feedback entry</td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/helpdesk/feedback/{feedbackId}/attachments/{attachmentId}</td>
+		<td>Get</td>
+		<td>Get attachment for a feedback entry</td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/helpdesk/feedback/{feedbackId}/attachments</td>
+		<td>Post</td>
+		<td>Add attachments to an existing feedback entry</td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/helpdesk/feedback/{feedbackId}/attachments/{attachmentId}</td>
+		<td>Put</td>
+		<td>Update a feedback attachment</td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/helpdesk/feedback/{feedbackId}/attachments/{attachmentId}</td>
+		<td>Delete</td>
+		<td>Delete a feedback attachment by ID</td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+<tbody>
+</table>
+
+
+
+### Form
+
+<table>
+<thead>
+<tr>
+ <td>Operation</td>
+ <td>Method</td>
+ <td>Description</td>
+ <td>Access</td>
+</tr>
+</thead>
+<tbody>
+	<tr>
+		<td>/public/v1/helpdesk/forms</td>
+		<td>Get</td>
+		<td>Get a list of forms</td>
+		<td>
+			<ul>
+				  <li>Vendor</li>
+				  <li>Client</li>
+				  <li>Operations</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/helpdesk/forms/{id}</td>
+		<td>Get</td>
+		<td>Retrieve a form by ID</td>
+		<td>
+			<ul>
+				  <li>Vendor</li>
+				  <li>Client</li>
+				  <li>Operations</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/helpdesk/forms</td>
+		<td>Post</td>
+		<td>Create a new Form</td>
+		<td>
+			<ul>
+				  <li>Vendor</li>
+				  <li>Client</li>
+				  <li>Operations</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/helpdesk/forms/{id}/publish</td>
+		<td>Post</td>
+		<td>Publish a Form</td>
+		<td>
+			<ul>
+				  <li>Vendor</li>
+				  <li>Client</li>
+				  <li>Operations</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/helpdesk/forms/{id}/unpublish</td>
+		<td>Post</td>
+		<td>Unpublish a Form</td>
+		<td>
+			<ul>
+				  <li>Vendor</li>
+				  <li>Client</li>
+				  <li>Operations</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/helpdesk/forms/{id}</td>
+		<td>Put</td>
+		<td>Update an existing form</td>
+		<td>
+			<ul>
+				  <li>Vendor</li>
+				  <li>Client</li>
+				  <li>Operations</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/helpdesk/forms/{id}</td>
+		<td>Delete</td>
+		<td>Delete a Form</td>
+		<td>
+			<ul>
+				  <li>Vendor</li>
+				  <li>Client</li>
+				  <li>Operations</li>
+			</ul>		
+		</td>
+	</tr>
+<tbody>
+</table>
+
+
+
+### Chatlink
+
+<table>
+<thead>
+<tr>
+ <td>Operation</td>
+ <td>Method</td>
+ <td>Description</td>
+ <td>Access</td>
+</tr>
+</thead>
+<tbody>
 	<tr>
 		<td>/public/v1/helpdesk/chats/{chatId}/links</td>
 		<td>Get</td>
@@ -573,6 +872,23 @@ See the following sections to determine which roles are authorized to perform sp
 			</ul>		
 		</td>
 	</tr>
+<tbody>
+</table>
+
+
+
+### Chatmessage
+
+<table>
+<thead>
+<tr>
+ <td>Operation</td>
+ <td>Method</td>
+ <td>Description</td>
+ <td>Access</td>
+</tr>
+</thead>
+<tbody>
 	<tr>
 		<td>/public/v1/helpdesk/chats/{chatId}/messages</td>
 		<td>Get</td>
@@ -586,9 +902,9 @@ See the following sections to determine which roles are authorized to perform sp
 		</td>
 	</tr>
 	<tr>
-		<td>/public/v1/helpdesk/chats/{chatId}/messages</td>
-		<td>Post</td>
-		<td>Create a new message in a chat</td>
+		<td>/public/v1/helpdesk/chats/{chatId}/messages/{id}</td>
+		<td>Get</td>
+		<td>Retrieve a message by ID</td>
 		<td>
 			<ul>
 				  <li>Operations</li>
@@ -598,9 +914,9 @@ See the following sections to determine which roles are authorized to perform sp
 		</td>
 	</tr>
 	<tr>
-		<td>/public/v1/helpdesk/chats/{chatId}/messages/{id}</td>
-		<td>Get</td>
-		<td>Retrieve a message by ID</td>
+		<td>/public/v1/helpdesk/chats/{chatId}/messages</td>
+		<td>Post</td>
+		<td>Create a new message in a chat</td>
 		<td>
 			<ul>
 				  <li>Operations</li>
@@ -638,591 +954,7 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Feedback
-
-<table>
-<thead>
-<tr>
- <td>Operation</td>
- <td>Method</td>
- <td>Description</td>
- <td>Access</td>
-</tr>
-</thead>
-<tbody>
-	<tr>
-		<td>/public/v1/helpdesk/feedback</td>
-		<td>Get</td>
-		<td>Get a list of feedbacks</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/helpdesk/feedback</td>
-		<td>Post</td>
-		<td>Create a new feedback entry</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/helpdesk/feedback/{id}</td>
-		<td>Get</td>
-		<td>Retrieve a feedback by ID</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/helpdesk/feedback/{id}</td>
-		<td>Put</td>
-		<td>Update an existing feedback</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/helpdesk/feedback/{id}</td>
-		<td>Delete</td>
-		<td>Delete feedback by ID</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/helpdesk/feedback/{id}/review</td>
-		<td>Post</td>
-		<td>Update feedback review status</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/helpdesk/feedback/{feedbackId}/attachments</td>
-		<td>Get</td>
-		<td>Get attachments for a feedback entry</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/helpdesk/feedback/{feedbackId}/attachments</td>
-		<td>Post</td>
-		<td>Add attachments to an existing feedback entry</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/helpdesk/feedback/{feedbackId}/attachments/{attachmentId}</td>
-		<td>Get</td>
-		<td>Get attachment for a feedback entry</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/helpdesk/feedback/{feedbackId}/attachments/{attachmentId}</td>
-		<td>Put</td>
-		<td>Update a feedback attachment</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/helpdesk/feedback/{feedbackId}/attachments/{attachmentId}</td>
-		<td>Delete</td>
-		<td>Delete a feedback attachment by ID</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/helpdesk/feedback/{feedbackId}/attachments/{attachmentId}/download</td>
-		<td>Get</td>
-		<td>Get a download redirect for a feedback attachment</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-<tbody>
-</table>
-
-
-
-### Forms
-
-<table>
-<thead>
-<tr>
- <td>Operation</td>
- <td>Method</td>
- <td>Description</td>
- <td>Access</td>
-</tr>
-</thead>
-<tbody>
-	<tr>
-		<td>/public/v1/helpdesk/forms/{formId}/parameters</td>
-		<td>Get</td>
-		<td>List all parameters in a form</td>
-		<td>
-			<ul>
-				  <li>Vendor</li>
-				  <li>Client</li>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/helpdesk/forms/{formId}/parameters/{id}</td>
-		<td>Get</td>
-		<td>Retrieve a parameter within a form by ID</td>
-		<td>
-			<ul>
-				  <li>Vendor</li>
-				  <li>Client</li>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/helpdesk/forms</td>
-		<td>Get</td>
-		<td>Get a list of forms</td>
-		<td>
-			<ul>
-				  <li>Vendor</li>
-				  <li>Client</li>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/helpdesk/forms</td>
-		<td>Post</td>
-		<td>Create a new Form</td>
-		<td>
-			<ul>
-				  <li>Vendor</li>
-				  <li>Client</li>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/helpdesk/forms/{id}</td>
-		<td>Get</td>
-		<td>Retrieve a form by ID</td>
-		<td>
-			<ul>
-				  <li>Vendor</li>
-				  <li>Client</li>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/helpdesk/forms/{id}</td>
-		<td>Put</td>
-		<td>Update an existing form</td>
-		<td>
-			<ul>
-				  <li>Vendor</li>
-				  <li>Client</li>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/helpdesk/forms/{id}</td>
-		<td>Delete</td>
-		<td>Delete a Form</td>
-		<td>
-			<ul>
-				  <li>Vendor</li>
-				  <li>Client</li>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/helpdesk/forms/{id}/publish</td>
-		<td>Post</td>
-		<td>Publish a Form</td>
-		<td>
-			<ul>
-				  <li>Vendor</li>
-				  <li>Client</li>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/helpdesk/forms/{id}/unpublish</td>
-		<td>Post</td>
-		<td>Unpublish a Form</td>
-		<td>
-			<ul>
-				  <li>Vendor</li>
-				  <li>Client</li>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/helpdesk/forms/{formId}/parameter-groups</td>
-		<td>Get</td>
-		<td>List parameter groups in a form</td>
-		<td>
-			<ul>
-				  <li>Vendor</li>
-				  <li>Client</li>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/helpdesk/forms/{formId}/parameter-groups</td>
-		<td>Post</td>
-		<td>Add parameter group to a form</td>
-		<td>
-			<ul>
-				  <li>Vendor</li>
-				  <li>Client</li>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/helpdesk/forms/{formId}/parameter-groups/{id}</td>
-		<td>Get</td>
-		<td>Retrieve a parameter group within a form by ID</td>
-		<td>
-			<ul>
-				  <li>Vendor</li>
-				  <li>Client</li>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/helpdesk/forms/{formId}/parameter-groups/{id}</td>
-		<td>Put</td>
-		<td>Update parameter group display order within a form</td>
-		<td>
-			<ul>
-				  <li>Vendor</li>
-				  <li>Client</li>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/helpdesk/forms/{formId}/parameter-groups/{id}</td>
-		<td>Delete</td>
-		<td>Remove parameter group from a form</td>
-		<td>
-			<ul>
-				  <li>Vendor</li>
-				  <li>Client</li>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-<tbody>
-</table>
-
-
-
-### ParameterGroups
-
-<table>
-<thead>
-<tr>
- <td>Operation</td>
- <td>Method</td>
- <td>Description</td>
- <td>Access</td>
-</tr>
-</thead>
-<tbody>
-	<tr>
-		<td>/public/v1/helpdesk/parameter-groups/{groupId}/parameters</td>
-		<td>Get</td>
-		<td>List parameters in a parameter group</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/helpdesk/parameter-groups/{groupId}/parameters</td>
-		<td>Post</td>
-		<td>Add parameter to a parameter group</td>
-		<td>
-			<ul>
-				  <li>Vendor</li>
-				  <li>Client</li>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/helpdesk/parameter-groups/{groupId}/parameters/{id}</td>
-		<td>Get</td>
-		<td>Retrieve a parameter within parameter group by ID</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/helpdesk/parameter-groups/{groupId}/parameters/{id}</td>
-		<td>Put</td>
-		<td>Update parameter display order within a group</td>
-		<td>
-			<ul>
-				  <li>Vendor</li>
-				  <li>Client</li>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/helpdesk/parameter-groups/{groupId}/parameters/{id}</td>
-		<td>Delete</td>
-		<td>Remove parameter from a parameter group</td>
-		<td>
-			<ul>
-				  <li>Vendor</li>
-				  <li>Client</li>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/helpdesk/parameter-groups</td>
-		<td>Post</td>
-		<td>Create a new parameter group</td>
-		<td>
-			<ul>
-				  <li>Vendor</li>
-				  <li>Client</li>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/helpdesk/parameter-groups</td>
-		<td>Get</td>
-		<td></td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/helpdesk/parameter-groups/{id}</td>
-		<td>Put</td>
-		<td>Update an existing parameter group</td>
-		<td>
-			<ul>
-				  <li>Vendor</li>
-				  <li>Client</li>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/helpdesk/parameter-groups/{id}</td>
-		<td>Delete</td>
-		<td>Delete an existing parameter group</td>
-		<td>
-			<ul>
-				  <li>Vendor</li>
-				  <li>Client</li>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/helpdesk/parameter-groups/{id}</td>
-		<td>Get</td>
-		<td></td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/helpdesk/parameter-groups/{parameterGroupId}/forms</td>
-		<td>Get</td>
-		<td>List forms linked to a parameter group</td>
-		<td>
-			<ul>
-				  <li>Vendor</li>
-				  <li>Client</li>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/helpdesk/parameter-groups/{parameterGroupId}/forms/{id}</td>
-		<td>Get</td>
-		<td>Retrieve a form linked to a parameter group by ID</td>
-		<td>
-			<ul>
-				  <li>Vendor</li>
-				  <li>Client</li>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-<tbody>
-</table>
-
-
-
-### Parameters
-
-<table>
-<thead>
-<tr>
- <td>Operation</td>
- <td>Method</td>
- <td>Description</td>
- <td>Access</td>
-</tr>
-</thead>
-<tbody>
-	<tr>
-		<td>/public/v1/helpdesk/parameters</td>
-		<td>Post</td>
-		<td>Create a new parameter definition.</td>
-		<td>
-			<ul>
-				  <li>Vendor</li>
-				  <li>Client</li>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/helpdesk/parameters</td>
-		<td>Get</td>
-		<td></td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/helpdesk/parameters/{id}</td>
-		<td>Put</td>
-		<td>Updates existing parameter definition.</td>
-		<td>
-			<ul>
-				  <li>Vendor</li>
-				  <li>Client</li>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/helpdesk/parameters/{id}</td>
-		<td>Delete</td>
-		<td>Deletes existing parameter definition.</td>
-		<td>
-			<ul>
-				  <li>Vendor</li>
-				  <li>Client</li>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/helpdesk/parameters/{id}</td>
-		<td>Get</td>
-		<td></td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-<tbody>
-</table>
-
-
-
-### Queues
+### Queue
 
 <table>
 <thead>
@@ -1247,18 +979,6 @@ See the following sections to determine which roles are authorized to perform sp
 		</td>
 	</tr>
 	<tr>
-		<td>/public/v1/helpdesk/queues</td>
-		<td>Post</td>
-		<td>Create a new queue</td>
-		<td>
-			<ul>
-				  <li>Vendor</li>
-				  <li>Client</li>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
 		<td>/public/v1/helpdesk/queues/{id}</td>
 		<td>Get</td>
 		<td>Retrieve a queue by ID</td>
@@ -1271,21 +991,9 @@ See the following sections to determine which roles are authorized to perform sp
 		</td>
 	</tr>
 	<tr>
-		<td>/public/v1/helpdesk/queues/{id}</td>
-		<td>Put</td>
-		<td>Update an existing queue</td>
-		<td>
-			<ul>
-				  <li>Vendor</li>
-				  <li>Client</li>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/helpdesk/queues/{id}</td>
-		<td>Delete</td>
-		<td>Delete an existing queue</td>
+		<td>/public/v1/helpdesk/queues</td>
+		<td>Post</td>
+		<td>Create a new queue</td>
 		<td>
 			<ul>
 				  <li>Vendor</li>
@@ -1319,57 +1027,9 @@ See the following sections to determine which roles are authorized to perform sp
 		</td>
 	</tr>
 	<tr>
-		<td>/public/v1/helpdesk/queues/{id}/icon</td>
-		<td>Get</td>
-		<td>Get a queue icon</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/helpdesk/queues/{queueId}/parameters</td>
-		<td>Get</td>
-		<td>Get all parameters of a queue</td>
-		<td>
-			<ul>
-				  <li>Vendor</li>
-				  <li>Client</li>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/helpdesk/queues/{queueId}/parameters</td>
-		<td>Post</td>
-		<td>Add a parameter to a queue</td>
-		<td>
-			<ul>
-				  <li>Vendor</li>
-				  <li>Client</li>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/helpdesk/queues/{queueId}/parameters/{parameterId}</td>
-		<td>Get</td>
-		<td>Get a single queue parameter</td>
-		<td>
-			<ul>
-				  <li>Vendor</li>
-				  <li>Client</li>
-				  <li>Operations</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/helpdesk/queues/{queueId}/parameters/{parameterId}</td>
+		<td>/public/v1/helpdesk/queues/{id}</td>
 		<td>Put</td>
-		<td>Update a queue parameter</td>
+		<td>Update an existing queue</td>
 		<td>
 			<ul>
 				  <li>Vendor</li>
@@ -1379,9 +1039,9 @@ See the following sections to determine which roles are authorized to perform sp
 		</td>
 	</tr>
 	<tr>
-		<td>/public/v1/helpdesk/queues/{queueId}/parameters/{parameterId}</td>
+		<td>/public/v1/helpdesk/queues/{id}</td>
 		<td>Delete</td>
-		<td>Remove a parameter from a queue</td>
+		<td>Delete an existing queue</td>
 		<td>
 			<ul>
 				  <li>Vendor</li>
@@ -1395,7 +1055,7 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Cases
+### Supportcase
 
 <table>
 <thead>
@@ -1409,8 +1069,20 @@ See the following sections to determine which roles are authorized to perform sp
 <tbody>
 	<tr>
 		<td>/public/v1/helpdesk/cases</td>
-		<td>Post</td>
-		<td>Creates a new support case.</td>
+		<td>Get</td>
+		<td></td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/helpdesk/cases/{id}</td>
+		<td>Get</td>
+		<td></td>
 		<td>
 			<ul>
 				  <li>Operations</li>
@@ -1421,32 +1093,8 @@ See the following sections to determine which roles are authorized to perform sp
 	</tr>
 	<tr>
 		<td>/public/v1/helpdesk/cases</td>
-		<td>Get</td>
-		<td></td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/helpdesk/cases/{id}</td>
-		<td>Put</td>
-		<td>Update an existing support case</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
-	</tr>
-	<tr>
-		<td>/public/v1/helpdesk/cases/{id}</td>
-		<td>Get</td>
-		<td></td>
+		<td>Post</td>
+		<td>Creates a new support case.</td>
 		<td>
 			<ul>
 				  <li>Operations</li>
@@ -1483,6 +1131,18 @@ See the following sections to determine which roles are authorized to perform sp
 		<td>/public/v1/helpdesk/cases/{id}/complete</td>
 		<td>Post</td>
 		<td>Sets a support case to Mpt.Helpdesk.Models.Cases.SupportCaseStatus.Completed status.</td>
+		<td>
+			<ul>
+				  <li>Operations</li>
+				  <li>Client</li>
+				  <li>Vendor</li>
+			</ul>		
+		</td>
+	</tr>
+	<tr>
+		<td>/public/v1/helpdesk/cases/{id}</td>
+		<td>Put</td>
+		<td>Update an existing support case</td>
 		<td>
 			<ul>
 				  <li>Operations</li>
