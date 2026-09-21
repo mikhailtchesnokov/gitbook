@@ -45,7 +45,7 @@
 <!-- AUTO-GENERATED:START -->
 * [REST API](developer-resources/rest-api/README.md)
 	* [Accounts API](developer-resources/rest-api/accounts-api/README.md)
-		* [Accounts](developer-resources/rest-api/accounts-api/accounts/README.md)
+		* [Accounts123](developer-resources/rest-api/accounts-api/accounts/README.md)
 			* [State diagram](developer-resources/rest-api/accounts-api/accounts/state-diagram.md)
 			* [List accounts](developer-resources/rest-api/accounts-api/accounts/list-accounts.md)
 			* [Create account](developer-resources/rest-api/accounts-api/accounts/create-account.md)
