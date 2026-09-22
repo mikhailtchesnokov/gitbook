@@ -51,37 +51,19 @@ See the following sections to determine which roles are authorized to perform sp
 		<td>/public/v1/audit/event-types</td>
 		<td>GET</td>
 		<td>Gets a list of audit event types.</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
+		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
 		<td>/public/v1/audit/event-types/{id}</td>
 		<td>GET</td>
 		<td>Retrieves an audit event type by ID.</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
+		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
 		<td>/public/v1/audit/event-types/{id}</td>
 		<td>PUT</td>
 		<td>Updates an event type.</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
+		<td>ops,client,vendor</td>
 	</tr>
 <tbody>
 </table>
@@ -104,36 +86,19 @@ See the following sections to determine which roles are authorized to perform sp
 		<td>/public/v1/audit/records</td>
 		<td>GET</td>
 		<td>Gets a list of audit records.</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
+		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
 		<td>/public/v1/audit/records/{id}</td>
 		<td>GET</td>
 		<td>Retrieves an audit record by ID.</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
+		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
 		<td>/public/v1/audit/records</td>
 		<td>POST</td>
 		<td>Creates a new audit record.</td>
-		<td>
-			<ul>
-				  <li>Vendor</li>
-				  <li>Operations</li>
-			</ul>		
-		</td>
+		<td>vendor,ops</td>
 	</tr>
 <tbody>
 </table>

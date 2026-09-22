@@ -67,142 +67,73 @@ See the following sections to determine which roles are authorized to perform sp
 		<td>/public/v1/system/tasks</td>
 		<td>GET</td>
 		<td>Get a list of tasks</td>
-		<td>
-			<ul>
-				  <li>Vendor</li>
-				  <li>Operations</li>
-			</ul>		
-		</td>
+		<td>vendor,ops</td>
 	</tr>
 	<tr>
 		<td>/public/v1/system/tasks/{id}</td>
 		<td>GET</td>
 		<td>Retrieve a task by ID</td>
-		<td>
-			<ul>
-				  <li>Vendor</li>
-				  <li>Operations</li>
-			</ul>		
-		</td>
+		<td>vendor,ops</td>
 	</tr>
 	<tr>
 		<td>/public/v1/system/tasks/{id}/result</td>
 		<td>GET</td>
 		<td>Get a task result</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
+		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
 		<td>/public/v1/system/tasks/{id}/logs</td>
 		<td>GET</td>
 		<td>Get task logs</td>
-		<td>
-			<ul>
-				  <li>Vendor</li>
-				  <li>Operations</li>
-			</ul>		
-		</td>
+		<td>vendor,ops</td>
 	</tr>
 	<tr>
 		<td>/public/v1/system/tasks</td>
 		<td>POST</td>
 		<td>Create a task</td>
-		<td>
-			<ul>
-				  <li>Vendor</li>
-				  <li>Client</li>
-				  <li>Operations</li>
-			</ul>		
-		</td>
+		<td>vendor,client,ops</td>
 	</tr>
 	<tr>
 		<td>/public/v1/system/tasks/{id}/logs</td>
 		<td>POST</td>
 		<td>Create a task log</td>
-		<td>
-			<ul>
-				  <li>Vendor</li>
-				  <li>Client</li>
-				  <li>Operations</li>
-			</ul>		
-		</td>
+		<td>vendor,client,ops</td>
 	</tr>
 	<tr>
 		<td>/public/v1/system/tasks/{id}/execute</td>
 		<td>POST</td>
 		<td>Transition a task to Processing</td>
-		<td>
-			<ul>
-				  <li>Vendor</li>
-				  <li>Client</li>
-				  <li>Operations</li>
-			</ul>		
-		</td>
+		<td>vendor,client,ops</td>
 	</tr>
 	<tr>
 		<td>/public/v1/system/tasks/{id}/reschedule</td>
 		<td>POST</td>
 		<td>Transition a task to Rescheduled</td>
-		<td>
-			<ul>
-				  <li>Vendor</li>
-				  <li>Client</li>
-				  <li>Operations</li>
-			</ul>		
-		</td>
+		<td>vendor,client,ops</td>
 	</tr>
 	<tr>
 		<td>/public/v1/system/tasks/{id}/queue</td>
 		<td>POST</td>
 		<td>Transition a task to Queued</td>
-		<td>
-			<ul>
-				  <li>Vendor</li>
-				  <li>Client</li>
-				  <li>Operations</li>
-			</ul>		
-		</td>
+		<td>vendor,client,ops</td>
 	</tr>
 	<tr>
 		<td>/public/v1/system/tasks/{id}/complete</td>
 		<td>POST</td>
 		<td>Transition a task to Completed</td>
-		<td>
-			<ul>
-				  <li>Vendor</li>
-				  <li>Client</li>
-				  <li>Operations</li>
-			</ul>		
-		</td>
+		<td>vendor,client,ops</td>
 	</tr>
 	<tr>
 		<td>/public/v1/system/tasks/{id}/fail</td>
 		<td>POST</td>
 		<td>Transition a task to Failed</td>
-		<td>
-			<ul>
-				  <li>Vendor</li>
-				  <li>Client</li>
-				  <li>Operations</li>
-			</ul>		
-		</td>
+		<td>vendor,client,ops</td>
 	</tr>
 	<tr>
 		<td>/public/v1/system/tasks/{id}</td>
 		<td>PUT</td>
 		<td>Update a task</td>
-		<td>
-			<ul>
-				  <li>Vendor</li>
-				  <li>Client</li>
-				  <li>Operations</li>
-			</ul>		
-		</td>
+		<td>vendor,client,ops</td>
 	</tr>
 <tbody>
 </table>

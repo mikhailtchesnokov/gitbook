@@ -53,37 +53,19 @@ See the following sections to determine which roles are authorized to perform sp
 		<td>/public/v1/spotlight/objects</td>
 		<td>GET</td>
 		<td>Get spotlight objects for the current account and buyer group</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
+		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
 		<td>/public/v1/spotlight/objects/-/refresh</td>
 		<td>POST</td>
 		<td>Refresh spotlight cache for the current account and buyer group</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
+		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
 		<td>/public/v1/spotlight/objects/{id}/refresh</td>
 		<td>POST</td>
 		<td>Refresh spotlight cache for a specific object in the current context</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
+		<td>ops,client,vendor</td>
 	</tr>
 <tbody>
 </table>
@@ -106,37 +88,19 @@ See the following sections to determine which roles are authorized to perform sp
 		<td>/public/v1/spotlight/queries</td>
 		<td>GET</td>
 		<td>Get a list of spotlight queries</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
+		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
 		<td>/public/v1/spotlight/queries/{id}</td>
 		<td>GET</td>
 		<td>Retrieve a spotlight query by ID</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
+		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
 		<td>/public/v1/spotlight/queries/{id}</td>
 		<td>PUT</td>
 		<td>Update a spotlight query</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
+		<td>ops,client,vendor</td>
 	</tr>
 <tbody>
 </table>

@@ -217,25 +217,13 @@ See the following sections to determine which roles are authorized to perform sp
 		<td>/public/v1/accounts/accounts/{accountId}/settings/notifications</td>
 		<td>GET</td>
 		<td>Gets account notification settings.</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
+		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
 		<td>/public/v1/accounts/accounts/{accountId}/settings/notifications</td>
 		<td>PUT</td>
 		<td>Updates account notification settings.</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
+		<td>ops,client,vendor</td>
 	</tr>
 <tbody>
 </table>
@@ -258,121 +246,61 @@ See the following sections to determine which roles are authorized to perform sp
 		<td>/public/v1/accounts/accounts</td>
 		<td>GET</td>
 		<td>List accounts</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
+		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
 		<td>/public/v1/accounts/accounts/{id}</td>
 		<td>GET</td>
 		<td>Get account by ID</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
+		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
 		<td>/public/v1/accounts/accounts/{id}/icon</td>
 		<td>GET</td>
 		<td>Get account icon</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
+		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
 		<td>/public/v1/accounts/accounts</td>
 		<td>POST</td>
 		<td>Create account</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
+		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
 		<td>/public/v1/accounts/accounts/{id}/enable</td>
 		<td>POST</td>
 		<td>Enable account</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
+		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
 		<td>/public/v1/accounts/accounts/{id}/disable</td>
 		<td>POST</td>
 		<td>Disable account</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
+		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
 		<td>/public/v1/accounts/accounts/{id}/activate</td>
 		<td>POST</td>
 		<td>Activate account</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
+		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
 		<td>/public/v1/accounts/accounts/{id}/deactivate</td>
 		<td>POST</td>
 		<td>Deactivate account</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
+		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
 		<td>/public/v1/accounts/accounts/{id}/validate</td>
 		<td>POST</td>
 		<td>Validate account</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
+		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
 		<td>/public/v1/accounts/accounts/{id}</td>
 		<td>PUT</td>
 		<td>Update account</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
+		<td>ops,client,vendor</td>
 	</tr>
 <tbody>
 </table>
@@ -395,133 +323,67 @@ See the following sections to determine which roles are authorized to perform sp
 		<td>/public/v1/accounts/accounts/{accountId}/users</td>
 		<td>GET</td>
 		<td>List account users</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
+		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
 		<td>/public/v1/accounts/accounts/{accountId}/users/{userId}</td>
 		<td>GET</td>
 		<td>Get account user by ID</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
+		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
 		<td>/public/v1/accounts/accounts/{accountId}/users</td>
 		<td>POST</td>
 		<td>Create user (invite or add) inviting him into the account</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
+		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
 		<td>/public/v1/accounts/accounts/{accountId}/users/{userId}/groups</td>
 		<td>POST</td>
 		<td>Add account user to group</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
+		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
 		<td>/public/v1/accounts/accounts/{accountId}/users/{userId}/resend-invite</td>
 		<td>POST</td>
 		<td>Resend invite</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
+		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
 		<td>/public/v1/accounts/accounts/{accountId}/users/{userId}/send-new-invite</td>
 		<td>POST</td>
 		<td>Send new invite</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
+		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
 		<td>/public/v1/accounts/accounts/{accountId}/users/{userId}/accept-invite</td>
 		<td>POST</td>
 		<td>Accept invite</td>
-		<td>
-			<ul>
-				  <li>Vendor</li>
-				  <li>Client</li>
-				  <li>Operations</li>
-			</ul>		
-		</td>
+		<td>vendor,client,ops</td>
 	</tr>
 	<tr>
 		<td>/public/v1/accounts/accounts/{accountId}/users/{userId}</td>
 		<td>PUT</td>
 		<td>Update user in account</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
+		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
 		<td>/public/v1/accounts/accounts/{accountId}/users/{userId}/groups</td>
 		<td>PUT</td>
 		<td>Change account user groups</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
+		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
 		<td>/public/v1/accounts/accounts/{accountId}/users/{userId}</td>
 		<td>DELETE</td>
 		<td>Delete user from account</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
+		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
 		<td>/public/v1/accounts/accounts/{accountId}/users/{userId}/groups/{userGroupId}</td>
 		<td>DELETE</td>
 		<td>Remove account user from group</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
+		<td>ops,client,vendor</td>
 	</tr>
 <tbody>
 </table>
@@ -544,85 +406,43 @@ See the following sections to determine which roles are authorized to perform sp
 		<td>/public/v1/accounts/api-tokens</td>
 		<td>GET</td>
 		<td>List API tokens</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
+		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
 		<td>/public/v1/accounts/api-tokens/{id}</td>
 		<td>GET</td>
 		<td>Get API token by ID</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
+		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
 		<td>/public/v1/accounts/api-tokens</td>
 		<td>POST</td>
 		<td>Create API token</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
+		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
 		<td>/public/v1/accounts/api-tokens/{id}/enable</td>
 		<td>POST</td>
 		<td>Enable API token</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
+		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
 		<td>/public/v1/accounts/api-tokens/{id}/disable</td>
 		<td>POST</td>
 		<td>Disable API token</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
+		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
 		<td>/public/v1/accounts/api-tokens/{id}</td>
 		<td>PUT</td>
 		<td>Update API token</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
+		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
 		<td>/public/v1/accounts/api-tokens/{id}</td>
 		<td>DELETE</td>
 		<td>Delete API token</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
+		<td>ops,client,vendor</td>
 	</tr>
 <tbody>
 </table>
@@ -645,169 +465,85 @@ See the following sections to determine which roles are authorized to perform sp
 		<td>/public/v1/accounts/buyers</td>
 		<td>GET</td>
 		<td></td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
+		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
 		<td>/public/v1/accounts/buyers/{id}</td>
 		<td>GET</td>
 		<td></td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
+		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
 		<td>/public/v1/accounts/buyers/{id}/transfer</td>
 		<td>GET</td>
 		<td></td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
+		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
 		<td>/public/v1/accounts/buyers/{id}/icon</td>
 		<td>GET</td>
 		<td></td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
+		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
 		<td>/public/v1/accounts/buyers</td>
 		<td>POST</td>
 		<td></td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
+		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
 		<td>/public/v1/accounts/buyers/{id}/enable</td>
 		<td>POST</td>
 		<td></td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
+		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
 		<td>/public/v1/accounts/buyers/{id}/disable</td>
 		<td>POST</td>
 		<td></td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
+		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
 		<td>/public/v1/accounts/buyers/{id}/activate</td>
 		<td>POST</td>
 		<td></td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
+		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
 		<td>/public/v1/accounts/buyers/{id}/deactivate</td>
 		<td>POST</td>
 		<td></td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
+		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
 		<td>/public/v1/accounts/buyers/{id}/transfer</td>
 		<td>POST</td>
 		<td></td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
+		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
 		<td>/public/v1/accounts/buyers/{id}/validate</td>
 		<td>POST</td>
 		<td></td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
+		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
 		<td>/public/v1/accounts/buyers/{id}/synchronize</td>
 		<td>POST</td>
 		<td></td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
+		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
 		<td>/public/v1/accounts/buyers/{id}</td>
 		<td>PUT</td>
 		<td></td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
+		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
 		<td>/public/v1/accounts/buyers/{id}</td>
 		<td>DELETE</td>
 		<td></td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
+		<td>ops,client,vendor</td>
 	</tr>
 <tbody>
 </table>
@@ -830,61 +566,31 @@ See the following sections to determine which roles are authorized to perform sp
 		<td>/public/v1/accounts/cloud-tenants</td>
 		<td>GET</td>
 		<td>List cloud tenants</td>
-		<td>
-			<ul>
-				  <li>Vendor</li>
-				  <li>Client</li>
-				  <li>Operations</li>
-			</ul>		
-		</td>
+		<td>vendor,client,ops</td>
 	</tr>
 	<tr>
 		<td>/public/v1/accounts/cloud-tenants/{id}</td>
 		<td>GET</td>
 		<td>Get cloud tenant by ID</td>
-		<td>
-			<ul>
-				  <li>Vendor</li>
-				  <li>Client</li>
-				  <li>Operations</li>
-			</ul>		
-		</td>
+		<td>vendor,client,ops</td>
 	</tr>
 	<tr>
 		<td>/public/v1/accounts/cloud-tenants</td>
 		<td>POST</td>
 		<td>Create cloud tenant</td>
-		<td>
-			<ul>
-				  <li>Vendor</li>
-				  <li>Client</li>
-				  <li>Operations</li>
-			</ul>		
-		</td>
+		<td>vendor,client,ops</td>
 	</tr>
 	<tr>
 		<td>/public/v1/accounts/cloud-tenants/{id}</td>
 		<td>PUT</td>
 		<td>Update cloud tenant</td>
-		<td>
-			<ul>
-				  <li>Vendor</li>
-				  <li>Client</li>
-				  <li>Operations</li>
-			</ul>		
-		</td>
+		<td>vendor,client,ops</td>
 	</tr>
 	<tr>
 		<td>/public/v1/accounts/cloud-tenants/{id}</td>
 		<td>DELETE</td>
 		<td>Delete cloud tenant</td>
-		<td>
-			<ul>
-				  <li>Vendor</li>
-				  <li>Client</li>
-				  <li>Operations</li>
-			</ul>		
-		</td>
+		<td>vendor,client,ops</td>
 	</tr>
 <tbody>
 </table>
@@ -907,61 +613,31 @@ See the following sections to determine which roles are authorized to perform sp
 		<td>/public/v1/accounts/erp-links</td>
 		<td>GET</td>
 		<td>List ERP links</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
+		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
 		<td>/public/v1/accounts/erp-links/{id}</td>
 		<td>GET</td>
 		<td>Get ERP link by ID</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
+		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
 		<td>/public/v1/accounts/erp-links/{id}/block</td>
 		<td>POST</td>
 		<td>Block ERP link</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
+		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
 		<td>/public/v1/accounts/erp-links/{id}/unblock</td>
 		<td>POST</td>
 		<td>Unblock ERP link</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
+		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
 		<td>/public/v1/accounts/erp-links/{id}</td>
 		<td>PUT</td>
 		<td>Update ERP link</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
+		<td>ops,client,vendor</td>
 	</tr>
 <tbody>
 </table>
@@ -984,97 +660,49 @@ See the following sections to determine which roles are authorized to perform sp
 		<td>/public/v1/accounts/licensees</td>
 		<td>GET</td>
 		<td>List licensees</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
+		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
 		<td>/public/v1/accounts/licensees/{id}</td>
 		<td>GET</td>
 		<td>Get licensee by ID</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
+		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
 		<td>/public/v1/accounts/licensees/{id}/icon</td>
 		<td>GET</td>
 		<td>Get licensee icon</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
+		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
 		<td>/public/v1/accounts/licensees</td>
 		<td>POST</td>
 		<td>Create licensee</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
+		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
 		<td>/public/v1/accounts/licensees/{id}/enable</td>
 		<td>POST</td>
 		<td>Enable licensee</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
+		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
 		<td>/public/v1/accounts/licensees/{id}/disable</td>
 		<td>POST</td>
 		<td>Disable licensee</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
+		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
 		<td>/public/v1/accounts/licensees/{id}</td>
 		<td>PUT</td>
 		<td>Update licensee</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
+		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
 		<td>/public/v1/accounts/licensees/{id}</td>
 		<td>DELETE</td>
 		<td>Delete licensee</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
+		<td>ops,client,vendor</td>
 	</tr>
 <tbody>
 </table>
@@ -1097,25 +725,13 @@ See the following sections to determine which roles are authorized to perform sp
 		<td>/public/v1/accounts/modules</td>
 		<td>GET</td>
 		<td>List modules</td>
-		<td>
-			<ul>
-				  <li>Vendor</li>
-				  <li>Client</li>
-				  <li>Operations</li>
-			</ul>		
-		</td>
+		<td>vendor,client,ops</td>
 	</tr>
 	<tr>
 		<td>/public/v1/accounts/modules/{id}</td>
 		<td>GET</td>
 		<td>Get module by ID</td>
-		<td>
-			<ul>
-				  <li>Vendor</li>
-				  <li>Client</li>
-				  <li>Operations</li>
-			</ul>		
-		</td>
+		<td>vendor,client,ops</td>
 	</tr>
 <tbody>
 </table>
@@ -1138,109 +754,55 @@ See the following sections to determine which roles are authorized to perform sp
 		<td>/public/v1/accounts/sellers</td>
 		<td>GET</td>
 		<td>List sellers</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
+		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
 		<td>/public/v1/accounts/sellers/{id}</td>
 		<td>GET</td>
 		<td>Get seller by ID</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
+		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
 		<td>/public/v1/accounts/sellers/{id}/icon</td>
 		<td>GET</td>
 		<td>Get seller icon</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
+		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
 		<td>/public/v1/accounts/sellers</td>
 		<td>POST</td>
 		<td>Create seller</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
+		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
 		<td>/public/v1/accounts/sellers/{id}/activate</td>
 		<td>POST</td>
 		<td>Activate seller</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
+		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
 		<td>/public/v1/accounts/sellers/{id}/deactivate</td>
 		<td>POST</td>
 		<td>Deactivate seller</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
+		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
 		<td>/public/v1/accounts/sellers/{id}/disable</td>
 		<td>POST</td>
 		<td>Disable seller</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
+		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
 		<td>/public/v1/accounts/sellers/{id}</td>
 		<td>PUT</td>
 		<td>Update seller</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
+		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
 		<td>/public/v1/accounts/sellers/{id}</td>
 		<td>DELETE</td>
 		<td>Delete seller</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
+		<td>ops,client,vendor</td>
 	</tr>
 <tbody>
 </table>
@@ -1263,25 +825,13 @@ See the following sections to determine which roles are authorized to perform sp
 		<td>/public/v1/accounts/services</td>
 		<td>GET</td>
 		<td>List service identities</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
+		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
 		<td>/public/v1/accounts/services/{id}</td>
 		<td>GET</td>
 		<td>Get service identity by ID</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
+		<td>ops,client,vendor</td>
 	</tr>
 <tbody>
 </table>
@@ -1304,61 +854,31 @@ See the following sections to determine which roles are authorized to perform sp
 		<td>/public/v1/accounts/user-groups</td>
 		<td>GET</td>
 		<td>List user groups</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
+		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
 		<td>/public/v1/accounts/user-groups/{id}</td>
 		<td>GET</td>
 		<td>Get user group by ID</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
+		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
 		<td>/public/v1/accounts/user-groups</td>
 		<td>POST</td>
 		<td>Create user group</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
+		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
 		<td>/public/v1/accounts/user-groups/{id}</td>
 		<td>PUT</td>
 		<td>Update user group</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
+		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
 		<td>/public/v1/accounts/user-groups/{id}</td>
 		<td>DELETE</td>
 		<td>Delete user group</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
+		<td>ops,client,vendor</td>
 	</tr>
 <tbody>
 </table>
@@ -1381,133 +901,67 @@ See the following sections to determine which roles are authorized to perform sp
 		<td>/public/v1/accounts/users</td>
 		<td>GET</td>
 		<td>List users</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
+		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
 		<td>/public/v1/accounts/users/{uniqueFilter}</td>
 		<td>GET</td>
 		<td>Get user by ID or unique filter</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
+		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
 		<td>/public/v1/accounts/users/{uniqueFilter}/sso</td>
 		<td>GET</td>
 		<td>Check SSO status</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
+		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
 		<td>/public/v1/accounts/users/{uniqueFilter}/icon</td>
 		<td>GET</td>
 		<td>Get user icon</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
+		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
 		<td>/public/v1/accounts/users/{uniqueFilter}/accounts</td>
 		<td>GET</td>
 		<td>List accounts associated with the user</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
+		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
 		<td>/public/v1/accounts/users/{uniqueFilter}/set-password</td>
 		<td>POST</td>
 		<td>Set user password</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
+		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
 		<td>/public/v1/accounts/users/{uniqueFilter}/unblock</td>
 		<td>POST</td>
 		<td>Unblock user</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
+		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
 		<td>/public/v1/accounts/users/{uniqueFilter}/block</td>
 		<td>POST</td>
 		<td>Block user</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
+		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
 		<td>/public/v1/accounts/users/{uniqueFilter}</td>
 		<td>PUT</td>
 		<td>Update user (multipart form)</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
+		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
 		<td>/public/v1/accounts/users/{uniqueFilter}/accounts/{accountId}</td>
 		<td>PUT</td>
 		<td>Update user's account settings</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
+		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
 		<td>/public/v1/accounts/users/{uniqueFilter}</td>
 		<td>DELETE</td>
 		<td>Delete user</td>
-		<td>
-			<ul>
-				  <li>Operations</li>
-				  <li>Client</li>
-				  <li>Vendor</li>
-			</ul>		
-		</td>
+		<td>ops,client,vendor</td>
 	</tr>
 <tbody>
 </table>
