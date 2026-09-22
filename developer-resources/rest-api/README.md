@@ -51,4 +51,4 @@ Using the wrong content type may result in unexpected behavior or errors.
 
 ### Browse APIs
 
-{% include "README-FOOTER.md" %}
+{% include "README.GENERATED.md" %}
