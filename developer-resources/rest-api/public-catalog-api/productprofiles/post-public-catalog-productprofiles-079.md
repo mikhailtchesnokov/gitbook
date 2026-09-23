@@ -1,0 +1,6 @@
+# Creates a new product-profile record in the public catalog.
+Accepts a request with necessary details to create the product profiles
+
+{% openapi-operation spec="marketplace-exchange-v5" path="/public/v1/public-catalog/productprofiles" method="get" %}
+[OpenAPI marketplace-exchange-v5](https://api.s1.show/public/v1/exchange/openapi.json)
+{% endopenapi-operation %}
