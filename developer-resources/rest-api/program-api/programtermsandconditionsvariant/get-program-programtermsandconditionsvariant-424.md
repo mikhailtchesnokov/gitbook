@@ -1,5 +1,5 @@
 # GET program programs programId terms programTermsAndConditionsId variants id
 
-{% openapi-operation spec="marketplace-exchange-v5" path="/public/v1/program/programtermsandconditionsvariant" method="get" %}
+{% openapi-operation spec="marketplace-exchange-v5" path="/public/v1/program/programs/{programId}/terms/{programTermsAndConditionsId}/variants/{id}" method="get" %}
 [OpenAPI marketplace-exchange-v5](https://api.s1.show/public/v1/exchange/openapi.json)
 {% endopenapi-operation %}

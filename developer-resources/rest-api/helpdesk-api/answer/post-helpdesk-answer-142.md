@@ -1,5 +1,5 @@
 # Submit an answer for review
 
-{% openapi-operation spec="marketplace-exchange-v5" path="/public/v1/helpdesk/answer" method="get" %}
+{% openapi-operation spec="marketplace-exchange-v5" path="/public/v1/helpdesk/chats/{chatId}/answers/{id}/submit" method="post" %}
 [OpenAPI marketplace-exchange-v5](https://api.s1.show/public/v1/exchange/openapi.json)
 {% endopenapi-operation %}

@@ -1,5 +1,5 @@
 # Places an order and sets its status to processing
 
-{% openapi-operation spec="marketplace-exchange-v5" path="/public/v1/commerce/orders" method="get" %}
+{% openapi-operation spec="marketplace-exchange-v5" path="/public/v1/commerce/orders/{id}/process" method="post" %}
 [OpenAPI marketplace-exchange-v5](https://api.s1.show/public/v1/exchange/openapi.json)
 {% endopenapi-operation %}

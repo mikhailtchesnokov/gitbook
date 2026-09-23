@@ -1,5 +1,5 @@
 # Deletes an order subscription
 
-{% openapi-operation spec="marketplace-exchange-v5" path="/public/v1/commerce/ordersubscriptions" method="get" %}
+{% openapi-operation spec="marketplace-exchange-v5" path="/public/v1/commerce/orders/{orderId}/subscriptions/{id}" method="delete" %}
 [OpenAPI marketplace-exchange-v5](https://api.s1.show/public/v1/exchange/openapi.json)
 {% endopenapi-operation %}

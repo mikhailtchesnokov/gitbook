@@ -1,5 +1,5 @@
 # Deletes rates from bulk data
 
-{% openapi-operation spec="marketplace-exchange-v5" path="/public/v1/exchange/rates" method="get" %}
+{% openapi-operation spec="marketplace-exchange-v5" path="/public/v1/exchange/rates" method="delete" %}
 [OpenAPI marketplace-exchange-v5](https://api.s1.show/public/v1/exchange/openapi.json)
 {% endopenapi-operation %}
