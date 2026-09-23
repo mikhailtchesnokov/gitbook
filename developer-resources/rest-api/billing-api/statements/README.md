@@ -39,12 +39,12 @@ Represents a billing statement in the system, containing details about transacti
         </tr>
         <tr>
             <td><code>ledger</code></td>
-            <td>object</td>
+            <td>LedgerRef</td>
             <td></td>
         </tr>
         <tr>
             <td><code>customLedger</code></td>
-            <td>object</td>
+            <td>CustomLedgerRef</td>
             <td></td>
         </tr>
         <tr>
@@ -64,37 +64,37 @@ Represents a billing statement in the system, containing details about transacti
         </tr>
         <tr>
             <td><code>client</code></td>
-            <td>object</td>
+            <td>AccountRef</td>
             <td></td>
         </tr>
         <tr>
             <td><code>buyer</code></td>
-            <td>object</td>
+            <td>BuyerRef</td>
             <td></td>
         </tr>
         <tr>
             <td><code>vendor</code></td>
-            <td>object</td>
+            <td>AccountRef</td>
             <td></td>
         </tr>
         <tr>
             <td><code>seller</code></td>
-            <td>object</td>
+            <td>SellerRef</td>
             <td></td>
         </tr>
         <tr>
             <td><code>product</code></td>
-            <td>object</td>
+            <td>ProductRef</td>
             <td></td>
         </tr>
         <tr>
             <td><code>agreement</code></td>
-            <td>object</td>
+            <td>AgreementRef</td>
             <td></td>
         </tr>
         <tr>
             <td><code>licensee</code></td>
-            <td>object</td>
+            <td>LicenseeRef</td>
             <td></td>
         </tr>
         <tr>
@@ -119,12 +119,12 @@ Represents a billing statement in the system, containing details about transacti
         </tr>
         <tr>
             <td><code>creditMemo</code></td>
-            <td>object</td>
+            <td>CreditMemoRef</td>
             <td></td>
         </tr>
         <tr>
             <td><code>invoice</code></td>
-            <td>object</td>
+            <td>InvoiceRef</td>
             <td></td>
         </tr>
         <tr>
@@ -134,7 +134,7 @@ Represents a billing statement in the system, containing details about transacti
         </tr>
         <tr>
             <td><code>parent</code></td>
-            <td>object</td>
+            <td>StatementRef</td>
             <td></td>
         </tr>
         <tr>
@@ -582,7 +582,7 @@ Represents a ledger in the billing system.
         </tr>
         <tr>
             <td><code>by</code></td>
-            <td>object</td>
+            <td>PlatformIdentityRef</td>
             <td></td>
         </tr>
     </tbody>

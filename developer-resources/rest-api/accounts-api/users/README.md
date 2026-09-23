@@ -84,7 +84,7 @@
         </tr>
         <tr>
             <td><code>currentAccount</code></td>
-            <td>object</td>
+            <td>AccountRef</td>
             <td></td>
         </tr></tbody>
 </table>
@@ -264,7 +264,7 @@
         </tr>
         <tr>
             <td><code>by</code></td>
-            <td>object</td>
+            <td>PlatformIdentityRef</td>
             <td></td>
         </tr>
     </tbody>

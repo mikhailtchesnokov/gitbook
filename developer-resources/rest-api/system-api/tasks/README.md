@@ -69,7 +69,7 @@ The Task represents the state of an asynchronous, usually long running operation
         </tr>
         <tr>
             <td><code>parent</code></td>
-            <td>object</td>
+            <td>TaskRef</td>
             <td></td>
         </tr>
         <tr>
@@ -99,7 +99,7 @@ The Task represents the state of an asynchronous, usually long running operation
         </tr>
         <tr>
             <td><code>owner</code></td>
-            <td>object</td>
+            <td>PlatformIdentityRef</td>
             <td></td>
         </tr>
         <tr>
@@ -154,7 +154,7 @@ The Task represents the state of an asynchronous, usually long running operation
         </tr>
         <tr>
             <td><code>task</code></td>
-            <td>object</td>
+            <td>TaskRef</td>
             <td></td>
         </tr>
         <tr>
@@ -312,7 +312,7 @@ The Task represents the state of an asynchronous, usually long running operation
         </tr>
         <tr>
             <td><code>by</code></td>
-            <td>object</td>
+            <td>PlatformIdentityRef</td>
             <td></td>
         </tr>
     </tbody>
@@ -549,7 +549,7 @@ The Task represents the state of an asynchronous, usually long running operation
         </tr>
         <tr>
             <td><code>by</code></td>
-            <td>object</td>
+            <td>PlatformIdentityRef</td>
             <td></td>
         </tr>
     </tbody>

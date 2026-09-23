@@ -209,7 +209,7 @@
         </tr>
         <tr>
             <td><code>by</code></td>
-            <td>object</td>
+            <td>PlatformIdentityRef</td>
             <td></td>
         </tr>
     </tbody>
@@ -230,7 +230,7 @@
     <tbody>
         <tr>
             <td><code>buyer</code></td>
-            <td>object</td>
+            <td>BuyerRef</td>
             <td></td>
         </tr>
         <tr>

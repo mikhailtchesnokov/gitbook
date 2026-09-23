@@ -44,12 +44,12 @@ Represents a custom ledger in the billing system.
         </tr>
         <tr>
             <td><code>seller</code></td>
-            <td>object</td>
+            <td>SellerRef</td>
             <td></td>
         </tr>
         <tr>
             <td><code>vendor</code></td>
-            <td>object</td>
+            <td>AccountRef</td>
             <td></td>
         </tr>
         <tr>
@@ -74,7 +74,7 @@ Represents a custom ledger in the billing system.
         </tr>
         <tr>
             <td><code>assignee</code></td>
-            <td>object</td>
+            <td>PlatformIdentityRef</td>
             <td></td>
         </tr>
         <tr>
@@ -427,7 +427,7 @@ Represents a detailed summary of pricing for a custom ledger, including currency
         </tr>
         <tr>
             <td><code>by</code></td>
-            <td>object</td>
+            <td>PlatformIdentityRef</td>
             <td></td>
         </tr>
     </tbody>

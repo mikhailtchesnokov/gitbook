@@ -144,12 +144,12 @@
         </tr>
         <tr>
             <td><code>priceList</code></td>
-            <td>object</td>
+            <td>PriceListRef</td>
             <td></td>
         </tr>
         <tr>
             <td><code>item</code></td>
-            <td>object</td>
+            <td>ProductItemRef</td>
             <td></td>
         </tr></tbody>
 </table>
@@ -231,7 +231,7 @@
         </tr>
         <tr>
             <td><code>by</code></td>
-            <td>object</td>
+            <td>PlatformIdentityRef</td>
             <td></td>
         </tr>
     </tbody>

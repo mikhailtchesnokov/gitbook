@@ -64,7 +64,7 @@ Represents a product profile attachment entity.
         </tr>
         <tr>
             <td><code>productProfile</code></td>
-            <td>object</td>
+            <td>ProductProfileRef</td>
             <td></td>
         </tr></tbody>
 </table>
@@ -407,7 +407,7 @@ Represents a product profile attachment entity.
         </tr>
         <tr>
             <td><code>by</code></td>
-            <td>object</td>
+            <td>PlatformIdentityRef</td>
             <td></td>
         </tr>
     </tbody>

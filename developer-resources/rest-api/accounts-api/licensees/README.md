@@ -69,17 +69,17 @@
         </tr>
         <tr>
             <td><code>account</code></td>
-            <td>object</td>
+            <td>AccountRef</td>
             <td></td>
         </tr>
         <tr>
             <td><code>buyer</code></td>
-            <td>object</td>
+            <td>BuyerRef</td>
             <td></td>
         </tr>
         <tr>
             <td><code>seller</code></td>
-            <td>object</td>
+            <td>SellerRef</td>
             <td></td>
         </tr>
         <tr>
@@ -351,7 +351,7 @@
         </tr>
         <tr>
             <td><code>by</code></td>
-            <td>object</td>
+            <td>PlatformIdentityRef</td>
             <td></td>
         </tr>
     </tbody>

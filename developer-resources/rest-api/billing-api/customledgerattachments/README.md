@@ -69,7 +69,7 @@ Represents an attachment associated with a custom ledger in the billing system.
         </tr>
         <tr>
             <td><code>customLedger</code></td>
-            <td>object</td>
+            <td>CustomLedgerRef</td>
             <td></td>
         </tr></tbody>
 </table>
@@ -208,7 +208,7 @@ Represents a custom ledger in the billing system.
         </tr>
         <tr>
             <td><code>by</code></td>
-            <td>object</td>
+            <td>PlatformIdentityRef</td>
             <td></td>
         </tr>
     </tbody>

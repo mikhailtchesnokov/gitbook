@@ -69,7 +69,7 @@ Represents an attachment associated with a ledger in the billing system.
         </tr>
         <tr>
             <td><code>ledger</code></td>
-            <td>object</td>
+            <td>LedgerRef</td>
             <td></td>
         </tr></tbody>
 </table>
@@ -203,7 +203,7 @@ Represents a ledger in the billing system.
         </tr>
         <tr>
             <td><code>by</code></td>
-            <td>object</td>
+            <td>PlatformIdentityRef</td>
             <td></td>
         </tr>
     </tbody>

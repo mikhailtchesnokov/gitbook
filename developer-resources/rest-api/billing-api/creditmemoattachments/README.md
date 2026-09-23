@@ -69,7 +69,7 @@ Represents an attachment associated with a credit memo in the billing system.
         </tr>
         <tr>
             <td><code>creditMemo</code></td>
-            <td>object</td>
+            <td>CreditMemoRef</td>
             <td></td>
         </tr>
         <tr>
@@ -208,7 +208,7 @@ Represents a credit memo in the billing system.
         </tr>
         <tr>
             <td><code>by</code></td>
-            <td>object</td>
+            <td>PlatformIdentityRef</td>
             <td></td>
         </tr>
     </tbody>

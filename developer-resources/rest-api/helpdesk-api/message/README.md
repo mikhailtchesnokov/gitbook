@@ -34,12 +34,12 @@
         </tr>
         <tr>
             <td><code>chat</code></td>
-            <td>object</td>
+            <td>ChatRef</td>
             <td></td>
         </tr>
         <tr>
             <td><code>sender</code></td>
-            <td>object</td>
+            <td>ChatParticipantRef</td>
             <td></td>
         </tr>
         <tr>
@@ -64,12 +64,12 @@
         </tr>
         <tr>
             <td><code>identity</code></td>
-            <td>object</td>
+            <td>PlatformIdentityRef</td>
             <td></td>
         </tr>
         <tr>
             <td><code>replyTo</code></td>
-            <td>object</td>
+            <td>ChatMessageRef</td>
             <td></td>
         </tr></tbody>
 </table>
@@ -361,7 +361,7 @@
         </tr>
         <tr>
             <td><code>by</code></td>
-            <td>object</td>
+            <td>PlatformIdentityRef</td>
             <td></td>
         </tr>
     </tbody>

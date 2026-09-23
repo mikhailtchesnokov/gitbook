@@ -54,7 +54,7 @@
         </tr>
         <tr>
             <td><code>template</code></td>
-            <td>object</td>
+            <td>TemplateRef</td>
             <td></td>
         </tr>
         <tr>
@@ -69,27 +69,27 @@
         </tr>
         <tr>
             <td><code>agreement</code></td>
-            <td>object</td>
+            <td>AgreementRef</td>
             <td></td>
         </tr>
         <tr>
             <td><code>product</code></td>
-            <td>object</td>
+            <td>ProductRef</td>
             <td></td>
         </tr>
         <tr>
             <td><code>priceList</code></td>
-            <td>object</td>
+            <td>PriceListRef</td>
             <td></td>
         </tr>
         <tr>
             <td><code>listing</code></td>
-            <td>object</td>
+            <td>ListingRef</td>
             <td></td>
         </tr>
         <tr>
             <td><code>licensee</code></td>
-            <td>object</td>
+            <td>LicenseeRef</td>
             <td></td>
         </tr>
         <tr>
@@ -368,22 +368,22 @@
         </tr>
         <tr>
             <td><code>listing</code></td>
-            <td>object</td>
+            <td>ListingRef</td>
             <td></td>
         </tr>
         <tr>
             <td><code>authorization</code></td>
-            <td>object</td>
+            <td>AuthorizationRef</td>
             <td></td>
         </tr>
         <tr>
             <td><code>vendor</code></td>
-            <td>object</td>
+            <td>AccountRef</td>
             <td></td>
         </tr>
         <tr>
             <td><code>client</code></td>
-            <td>object</td>
+            <td>AccountRef</td>
             <td></td>
         </tr>
         <tr>
@@ -403,7 +403,7 @@
         </tr>
         <tr>
             <td><code>template</code></td>
-            <td>object</td>
+            <td>TemplateRef</td>
             <td></td>
         </tr>
         <tr>
@@ -433,22 +433,22 @@
         </tr>
         <tr>
             <td><code>licensee</code></td>
-            <td>object</td>
+            <td>LicenseeRef</td>
             <td></td>
         </tr>
         <tr>
             <td><code>buyer</code></td>
-            <td>object</td>
+            <td>BuyerRef</td>
             <td></td>
         </tr>
         <tr>
             <td><code>seller</code></td>
-            <td>object</td>
+            <td>SellerRef</td>
             <td></td>
         </tr>
         <tr>
             <td><code>product</code></td>
-            <td>object</td>
+            <td>ProductRef</td>
             <td></td>
         </tr>
         <tr>
@@ -458,7 +458,7 @@
         </tr>
         <tr>
             <td><code>split</code></td>
-            <td>object</td>
+            <td>SplitBillingAgreementRef</td>
             <td></td>
         </tr>
         <tr>
@@ -1115,7 +1115,7 @@
         </tr>
         <tr>
             <td><code>account</code></td>
-            <td>object</td>
+            <td>AccountRef</td>
             <td></td>
         </tr>
         <tr>
@@ -1782,27 +1782,27 @@
         </tr>
         <tr>
             <td><code>template</code></td>
-            <td>object</td>
+            <td>TemplateRef</td>
             <td></td>
         </tr>
         <tr>
             <td><code>listing</code></td>
-            <td>object</td>
+            <td>ListingRef</td>
             <td></td>
         </tr>
         <tr>
             <td><code>authorization</code></td>
-            <td>object</td>
+            <td>AuthorizationRef</td>
             <td></td>
         </tr>
         <tr>
             <td><code>agreement</code></td>
-            <td>object</td>
+            <td>AgreementRef</td>
             <td></td>
         </tr>
         <tr>
             <td><code>assignee</code></td>
-            <td>object</td>
+            <td>PlatformIdentityRef</td>
             <td></td>
         </tr>
         <tr>
@@ -1842,42 +1842,42 @@
         </tr>
         <tr>
             <td><code>product</code></td>
-            <td>object</td>
+            <td>ProductRef</td>
             <td></td>
         </tr>
         <tr>
             <td><code>client</code></td>
-            <td>object</td>
+            <td>AccountRef</td>
             <td></td>
         </tr>
         <tr>
             <td><code>licensee</code></td>
-            <td>object</td>
+            <td>LicenseeRef</td>
             <td></td>
         </tr>
         <tr>
             <td><code>buyer</code></td>
-            <td>object</td>
+            <td>BuyerRef</td>
             <td></td>
         </tr>
         <tr>
             <td><code>seller</code></td>
-            <td>object</td>
+            <td>SellerRef</td>
             <td></td>
         </tr>
         <tr>
             <td><code>vendor</code></td>
-            <td>object</td>
+            <td>AccountRef</td>
             <td></td>
         </tr>
         <tr>
             <td><code>billTo</code></td>
-            <td>object</td>
+            <td>BuyerRef</td>
             <td></td>
         </tr>
         <tr>
             <td><code>pricingPolicy</code></td>
-            <td>object</td>
+            <td>PricingPolicyRef</td>
             <td></td>
         </tr>
         <tr>
@@ -1953,7 +1953,7 @@
         </tr>
         <tr>
             <td><code>template</code></td>
-            <td>object</td>
+            <td>TemplateRef</td>
             <td></td>
         </tr>
         <tr>
@@ -2349,7 +2349,7 @@
         </tr>
         <tr>
             <td><code>product</code></td>
-            <td>object</td>
+            <td>ProductRef</td>
             <td></td>
         </tr>
         <tr>
@@ -2369,7 +2369,7 @@
         </tr>
         <tr>
             <td><code>agreement</code></td>
-            <td>object</td>
+            <td>AgreementRef</td>
             <td></td>
         </tr>
         <tr>
@@ -2384,7 +2384,7 @@
         </tr>
         <tr>
             <td><code>template</code></td>
-            <td>object</td>
+            <td>TemplateRef</td>
             <td></td>
         </tr>
         <tr>
@@ -2805,7 +2805,7 @@
         </tr>
         <tr>
             <td><code>by</code></td>
-            <td>object</td>
+            <td>PlatformIdentityRef</td>
             <td></td>
         </tr>
     </tbody>
@@ -3051,7 +3051,7 @@
         </tr>
         <tr>
             <td><code>vendor</code></td>
-            <td>object</td>
+            <td>AccountRef</td>
             <td></td>
         </tr>
         <tr>
@@ -3184,12 +3184,12 @@
         </tr>
         <tr>
             <td><code>group</code></td>
-            <td>object</td>
+            <td>ItemGroupRef</td>
             <td></td>
         </tr>
         <tr>
             <td><code>unit</code></td>
-            <td>object</td>
+            <td>UnitOfMeasureRef</td>
             <td></td>
         </tr>
         <tr>
@@ -3209,7 +3209,7 @@
         </tr>
         <tr>
             <td><code>product</code></td>
-            <td>object</td>
+            <td>ProductRef</td>
             <td></td>
         </tr>
         <tr>
@@ -3547,7 +3547,7 @@
         </tr>
         <tr>
             <td><code>erpLink</code></td>
-            <td>object</td>
+            <td>ErpLinkRef</td>
             <td></td>
         </tr>
         <tr>
@@ -3763,7 +3763,7 @@
         </tr>
         <tr>
             <td><code>product</code></td>
-            <td>object</td>
+            <td>ProductRef</td>
             <td></td>
         </tr>
         <tr>
@@ -3793,27 +3793,27 @@
         </tr>
         <tr>
             <td><code>agreement</code></td>
-            <td>object</td>
+            <td>AgreementRef</td>
             <td></td>
         </tr>
         <tr>
             <td><code>buyer</code></td>
-            <td>object</td>
+            <td>BuyerRef</td>
             <td></td>
         </tr>
         <tr>
             <td><code>licensee</code></td>
-            <td>object</td>
+            <td>LicenseeRef</td>
             <td></td>
         </tr>
         <tr>
             <td><code>seller</code></td>
-            <td>object</td>
+            <td>SellerRef</td>
             <td></td>
         </tr>
         <tr>
             <td><code>split</code></td>
-            <td>object</td>
+            <td>SplitBillingSubscriptionRef</td>
             <td></td>
         </tr>
         <tr>
@@ -3828,7 +3828,7 @@
         </tr>
         <tr>
             <td><code>template</code></td>
-            <td>object</td>
+            <td>TemplateRef</td>
             <td></td>
         </tr>
     </tbody>

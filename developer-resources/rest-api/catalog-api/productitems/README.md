@@ -49,12 +49,12 @@
         </tr>
         <tr>
             <td><code>group</code></td>
-            <td>object</td>
+            <td>ItemGroupRef</td>
             <td></td>
         </tr>
         <tr>
             <td><code>unit</code></td>
-            <td>object</td>
+            <td>UnitOfMeasureRef</td>
             <td></td>
         </tr>
         <tr>
@@ -74,7 +74,7 @@
         </tr>
         <tr>
             <td><code>product</code></td>
-            <td>object</td>
+            <td>ProductRef</td>
             <td></td>
         </tr>
         <tr>
@@ -243,7 +243,7 @@
         </tr>
         <tr>
             <td><code>by</code></td>
-            <td>object</td>
+            <td>PlatformIdentityRef</td>
             <td></td>
         </tr>
     </tbody>

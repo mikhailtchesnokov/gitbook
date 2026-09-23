@@ -39,7 +39,7 @@ Represents a reusable template that can be used to generate messages.
         </tr>
         <tr>
             <td><code>category</code></td>
-            <td>object</td>
+            <td>CategoryRef</td>
             <td></td>
         </tr>
         <tr>
@@ -49,7 +49,7 @@ Represents a reusable template that can be used to generate messages.
         </tr>
         <tr>
             <td><code>defaultVariant</code></td>
-            <td>object</td>
+            <td>TemplateVariantRef</td>
             <td></td>
         </tr>
         <tr>
@@ -64,7 +64,7 @@ Represents a reusable template that can be used to generate messages.
         </tr>
         <tr>
             <td><code>owner</code></td>
-            <td>object</td>
+            <td>AccountRef</td>
             <td></td>
         </tr>
         <tr>
@@ -377,7 +377,7 @@ Represents the recipients criteria for automatically triggering a template based
         </tr>
         <tr>
             <td><code>by</code></td>
-            <td>object</td>
+            <td>PlatformIdentityRef</td>
             <td></td>
         </tr>
     </tbody>

@@ -69,7 +69,7 @@ Represents an attachment associated with an invoice in the billing system.
         </tr>
         <tr>
             <td><code>invoice</code></td>
-            <td>object</td>
+            <td>InvoiceRef</td>
             <td></td>
         </tr>
         <tr>
@@ -208,7 +208,7 @@ Represents an invoice entity in the billing system.
         </tr>
         <tr>
             <td><code>by</code></td>
-            <td>object</td>
+            <td>PlatformIdentityRef</td>
             <td></td>
         </tr>
     </tbody>

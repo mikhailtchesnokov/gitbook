@@ -79,7 +79,7 @@
         </tr>
         <tr>
             <td><code>term</code></td>
-            <td>object</td>
+            <td>TermRef</td>
             <td></td>
         </tr>
         <tr>
@@ -166,7 +166,7 @@
         </tr>
         <tr>
             <td><code>by</code></td>
-            <td>object</td>
+            <td>PlatformIdentityRef</td>
             <td></td>
         </tr>
     </tbody>

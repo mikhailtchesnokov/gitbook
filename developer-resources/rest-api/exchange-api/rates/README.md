@@ -39,7 +39,7 @@ Record of rate for specific day
         </tr>
         <tr>
             <td><code>pair</code></td>
-            <td>object</td>
+            <td>PairRef</td>
             <td></td>
         </tr>
         <tr>
@@ -64,7 +64,7 @@ Record of rate for specific day
         </tr>
         <tr>
             <td><code>reverseRate</code></td>
-            <td>object</td>
+            <td>RateRef</td>
             <td></td>
         </tr></tbody>
 </table>
@@ -228,7 +228,7 @@ Represents a pair of currencies in exchange module.
         </tr>
         <tr>
             <td><code>by</code></td>
-            <td>object</td>
+            <td>PlatformIdentityRef</td>
             <td></td>
         </tr>
     </tbody>

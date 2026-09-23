@@ -44,7 +44,7 @@
         </tr>
         <tr>
             <td><code>user</code></td>
-            <td>object</td>
+            <td>UserRef</td>
             <td></td>
         </tr>
         <tr>
@@ -94,7 +94,7 @@
         </tr>
         <tr>
             <td><code>account</code></td>
-            <td>object</td>
+            <td>AccountRef</td>
             <td></td>
         </tr>
         <tr>
@@ -562,7 +562,7 @@
         </tr>
         <tr>
             <td><code>by</code></td>
-            <td>object</td>
+            <td>PlatformIdentityRef</td>
             <td></td>
         </tr>
     </tbody>

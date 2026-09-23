@@ -54,17 +54,17 @@
         </tr>
         <tr>
             <td><code>buyer</code></td>
-            <td>object</td>
+            <td>BuyerRef</td>
             <td></td>
         </tr>
         <tr>
             <td><code>client</code></td>
-            <td>object</td>
+            <td>AccountRef</td>
             <td></td>
         </tr>
         <tr>
             <td><code>seller</code></td>
-            <td>object</td>
+            <td>SellerRef</td>
             <td></td>
         </tr>
         <tr>
@@ -89,7 +89,7 @@
         </tr>
         <tr>
             <td><code>salesQuote</code></td>
-            <td>object</td>
+            <td>SalesQuoteRef</td>
             <td></td>
         </tr>
         <tr>
@@ -695,7 +695,7 @@ Represents the period during which a charge is applicable.
         </tr>
         <tr>
             <td><code>by</code></td>
-            <td>object</td>
+            <td>PlatformIdentityRef</td>
             <td></td>
         </tr>
     </tbody>
@@ -915,12 +915,12 @@ Represents the period during which a charge is applicable.
         </tr>
         <tr>
             <td><code>erpItem</code></td>
-            <td>object</td>
+            <td>ErpItemRef</td>
             <td></td>
         </tr>
         <tr>
             <td><code>salesOrder</code></td>
-            <td>object</td>
+            <td>SalesOrderRef</td>
             <td></td>
         </tr>
     </tbody>

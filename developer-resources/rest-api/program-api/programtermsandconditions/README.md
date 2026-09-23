@@ -54,7 +54,7 @@
         </tr>
         <tr>
             <td><code>program</code></td>
-            <td>object</td>
+            <td>ProgramRef</td>
             <td></td>
         </tr></tbody>
 </table>
@@ -182,7 +182,7 @@
         </tr>
         <tr>
             <td><code>by</code></td>
-            <td>object</td>
+            <td>PlatformIdentityRef</td>
             <td></td>
         </tr>
     </tbody>
@@ -299,7 +299,7 @@
         </tr>
         <tr>
             <td><code>vendor</code></td>
-            <td>object</td>
+            <td>AccountRef</td>
             <td></td>
         </tr>
         <tr>

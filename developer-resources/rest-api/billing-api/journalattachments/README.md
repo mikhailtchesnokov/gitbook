@@ -69,12 +69,12 @@ Represents an attachment associated with a journal in the billing system.
         </tr>
         <tr>
             <td><code>journal</code></td>
-            <td>object</td>
+            <td>JournalRef</td>
             <td></td>
         </tr>
         <tr>
             <td><code>vendor</code></td>
-            <td>object</td>
+            <td>AccountRef</td>
             <td></td>
         </tr></tbody>
 </table>
@@ -264,7 +264,7 @@ Represents a journal entry in the billing system.
         </tr>
         <tr>
             <td><code>by</code></td>
-            <td>object</td>
+            <td>PlatformIdentityRef</td>
             <td></td>
         </tr>
     </tbody>

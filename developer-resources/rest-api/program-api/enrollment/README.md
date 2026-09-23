@@ -39,17 +39,17 @@
         </tr>
         <tr>
             <td><code>certificate</code></td>
-            <td>object</td>
+            <td>CertificateRef</td>
             <td></td>
         </tr>
         <tr>
             <td><code>program</code></td>
-            <td>object</td>
+            <td>ProgramRef</td>
             <td></td>
         </tr>
         <tr>
             <td><code>vendor</code></td>
-            <td>object</td>
+            <td>AccountRef</td>
             <td></td>
         </tr>
         <tr>
@@ -64,12 +64,12 @@
         </tr>
         <tr>
             <td><code>buyer</code></td>
-            <td>object</td>
+            <td>BuyerRef</td>
             <td></td>
         </tr>
         <tr>
             <td><code>licensee</code></td>
-            <td>object</td>
+            <td>LicenseeRef</td>
             <td></td>
         </tr>
         <tr>
@@ -94,7 +94,7 @@
         </tr>
         <tr>
             <td><code>assignee</code></td>
-            <td>object</td>
+            <td>UserRef</td>
             <td></td>
         </tr>
         <tr>
@@ -109,7 +109,7 @@
         </tr>
         <tr>
             <td><code>template</code></td>
-            <td>object</td>
+            <td>ProgramTemplateRef</td>
             <td></td>
         </tr></tbody>
 </table>
@@ -484,7 +484,7 @@
         </tr>
         <tr>
             <td><code>by</code></td>
-            <td>object</td>
+            <td>PlatformIdentityRef</td>
             <td></td>
         </tr>
     </tbody>
@@ -601,7 +601,7 @@
         </tr>
         <tr>
             <td><code>vendor</code></td>
-            <td>object</td>
+            <td>AccountRef</td>
             <td></td>
         </tr>
         <tr>

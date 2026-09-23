@@ -167,7 +167,7 @@ Represents audit information for a Mpt.Notifications.Models.Footers.Footer.
         </tr>
         <tr>
             <td><code>by</code></td>
-            <td>object</td>
+            <td>PlatformIdentityRef</td>
             <td></td>
         </tr>
     </tbody>

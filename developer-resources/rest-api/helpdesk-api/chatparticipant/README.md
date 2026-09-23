@@ -34,22 +34,22 @@
         </tr>
         <tr>
             <td><code>chat</code></td>
-            <td>object</td>
+            <td>ChatRef</td>
             <td></td>
         </tr>
         <tr>
             <td><code>contact</code></td>
-            <td>object</td>
+            <td>ContactRef</td>
             <td></td>
         </tr>
         <tr>
             <td><code>identity</code></td>
-            <td>object</td>
+            <td>PlatformIdentityRef</td>
             <td></td>
         </tr>
         <tr>
             <td><code>account</code></td>
-            <td>object</td>
+            <td>AccountRef</td>
             <td></td>
         </tr>
         <tr>
@@ -64,7 +64,7 @@
         </tr>
         <tr>
             <td><code>lastReadMessage</code></td>
-            <td>object</td>
+            <td>ChatMessageRef</td>
             <td></td>
         </tr>
         <tr>
@@ -485,7 +485,7 @@ Represents a notification contact who can receive email notifications.
         </tr>
         <tr>
             <td><code>by</code></td>
-            <td>object</td>
+            <td>PlatformIdentityRef</td>
             <td></td>
         </tr>
     </tbody>
@@ -576,7 +576,7 @@ Represents a notification contact who can receive email notifications.
         </tr>
         <tr>
             <td><code>currentAccount</code></td>
-            <td>object</td>
+            <td>AccountRef</td>
             <td></td>
         </tr>
     </tbody>

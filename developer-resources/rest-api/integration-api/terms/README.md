@@ -54,7 +54,7 @@
         </tr>
         <tr>
             <td><code>extension</code></td>
-            <td>object</td>
+            <td>ExtensionRef</td>
             <td></td>
         </tr></tbody>
 </table>
@@ -172,7 +172,7 @@
         </tr>
         <tr>
             <td><code>by</code></td>
-            <td>object</td>
+            <td>PlatformIdentityRef</td>
             <td></td>
         </tr>
     </tbody>

@@ -420,7 +420,7 @@
         </tr>
         <tr>
             <td><code>lastMessage</code></td>
-            <td>object</td>
+            <td>ChatMessageRef</td>
             <td></td>
         </tr>
         <tr>
@@ -1083,7 +1083,7 @@ Constraints specific to helpdesk parameters
         </tr>
         <tr>
             <td><code>by</code></td>
-            <td>object</td>
+            <td>PlatformIdentityRef</td>
             <td></td>
         </tr>
     </tbody>
@@ -1442,7 +1442,7 @@ This is a core property for RQL queries.</td>
         </tr>
         <tr>
             <td><code>currentAccount</code></td>
-            <td>object</td>
+            <td>AccountRef</td>
             <td></td>
         </tr>
     </tbody>

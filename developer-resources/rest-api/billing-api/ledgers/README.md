@@ -34,7 +34,7 @@ Represents a ledger in the billing system.
         </tr>
         <tr>
             <td><code>journal</code></td>
-            <td>object</td>
+            <td>JournalRef</td>
             <td></td>
         </tr>
         <tr>
@@ -44,27 +44,27 @@ Represents a ledger in the billing system.
         </tr>
         <tr>
             <td><code>authorization</code></td>
-            <td>object</td>
+            <td>AuthorizationRef</td>
             <td></td>
         </tr>
         <tr>
             <td><code>owner</code></td>
-            <td>object</td>
+            <td>SellerRef</td>
             <td></td>
         </tr>
         <tr>
             <td><code>seller</code></td>
-            <td>object</td>
+            <td>SellerRef</td>
             <td></td>
         </tr>
         <tr>
             <td><code>product</code></td>
-            <td>object</td>
+            <td>ProductRef</td>
             <td></td>
         </tr>
         <tr>
             <td><code>assignee</code></td>
-            <td>object</td>
+            <td>PlatformIdentityRef</td>
             <td></td>
         </tr>
         <tr>
@@ -402,7 +402,7 @@ Represents a detailed summary of pricing for a ledger.
         </tr>
         <tr>
             <td><code>by</code></td>
-            <td>object</td>
+            <td>PlatformIdentityRef</td>
             <td></td>
         </tr>
     </tbody>

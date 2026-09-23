@@ -79,7 +79,7 @@
         </tr>
         <tr>
             <td><code>programTermsAndConditions</code></td>
-            <td>object</td>
+            <td>ProgramTermsAndConditionsRef</td>
             <td></td>
         </tr>
         <tr>
@@ -192,7 +192,7 @@
         </tr>
         <tr>
             <td><code>by</code></td>
-            <td>object</td>
+            <td>PlatformIdentityRef</td>
             <td></td>
         </tr>
     </tbody>

@@ -39,27 +39,27 @@
         </tr>
         <tr>
             <td><code>authorization</code></td>
-            <td>object</td>
+            <td>AuthorizationRef</td>
             <td></td>
         </tr>
         <tr>
             <td><code>product</code></td>
-            <td>object</td>
+            <td>ProductRef</td>
             <td></td>
         </tr>
         <tr>
             <td><code>vendor</code></td>
-            <td>object</td>
+            <td>AccountRef</td>
             <td></td>
         </tr>
         <tr>
             <td><code>seller</code></td>
-            <td>object</td>
+            <td>SellerRef</td>
             <td></td>
         </tr>
         <tr>
             <td><code>priceList</code></td>
-            <td>object</td>
+            <td>PriceListRef</td>
             <td></td>
         </tr>
         <tr>
@@ -321,7 +321,7 @@
         </tr>
         <tr>
             <td><code>by</code></td>
-            <td>object</td>
+            <td>PlatformIdentityRef</td>
             <td></td>
         </tr>
     </tbody>

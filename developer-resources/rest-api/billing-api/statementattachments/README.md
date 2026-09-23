@@ -69,7 +69,7 @@ Represents an attachment associated with a billing statement in the system.
         </tr>
         <tr>
             <td><code>statement</code></td>
-            <td>object</td>
+            <td>StatementRef</td>
             <td></td>
         </tr></tbody>
 </table>
@@ -177,7 +177,7 @@ Represents an attachment associated with a billing statement in the system.
         </tr>
         <tr>
             <td><code>by</code></td>
-            <td>object</td>
+            <td>PlatformIdentityRef</td>
             <td></td>
         </tr>
     </tbody>
