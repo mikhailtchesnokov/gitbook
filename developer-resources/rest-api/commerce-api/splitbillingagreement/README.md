@@ -1,5 +1,5 @@
 
-#SplitBillingAgreement
+# SplitBillingAgreement
 
 
 
@@ -68,25 +68,21 @@
             <td>string</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>name</code></td>
             <td>string</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>icon</code></td>
             <td>string</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
             <td></td>
         </tr>
-    
     </tbody>
 </table>
 
@@ -109,19 +105,16 @@
             <td>string</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>operations</code></td>
             <td>string</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>vendor</code></td>
             <td>string</td>
             <td></td>
         </tr>
-    
     </tbody>
 </table>
 
@@ -144,25 +137,21 @@
             <td>string</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>name</code></td>
             <td>string</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>icon</code></td>
             <td>string</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
             <td></td>
         </tr>
-    
     </tbody>
 </table>
 
@@ -185,7 +174,6 @@
             <td>array</td>
             <td></td>
         </tr>
-    
     </tbody>
 </table>
 
@@ -208,13 +196,11 @@
             <td>PlatformObjectEvent</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>updated</code></td>
             <td>PlatformObjectEvent</td>
             <td></td>
         </tr>
-    
     </tbody>
 </table>
 
@@ -237,13 +223,11 @@
             <td>string</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>by</code></td>
             <td>object</td>
             <td></td>
         </tr>
-    
     </tbody>
 </table>
 
@@ -266,37 +250,31 @@
             <td>object</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>percentage</code></td>
             <td>number</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>price</code></td>
             <td>SplitBillingAllocationPrice</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>audit</code></td>
             <td>PlatformObjectAudit</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>statistics</code></td>
             <td>SplitBillingAllocationStatistics</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>externalIds</code></td>
             <td>ExternalIds</td>
             <td></td>
         </tr>
-    
     </tbody>
 </table>
 
@@ -319,31 +297,26 @@
             <td>string</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>SPxY</code></td>
             <td>number</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>SPxM</code></td>
             <td>number</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>PPxY</code></td>
             <td>number</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>PPxM</code></td>
             <td>number</td>
             <td></td>
         </tr>
-    
     </tbody>
 </table>
 
@@ -366,6 +339,5 @@
             <td>integer</td>
             <td></td>
         </tr>
-    
     </tbody>
 </table>

@@ -1,5 +1,5 @@
 
-#InvoiceAttachment
+# InvoiceAttachment
 
 Represents an attachment associated with an invoice in the billing system.
 
@@ -123,13 +123,11 @@ Represents an invoice entity in the billing system.
             <td>integer</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>id</code></td>
             <td>string</td>
             <td>The unique identifier of the invoice.</td>
         </tr>
-    
     </tbody>
 </table>
 
@@ -152,25 +150,21 @@ Represents an invoice entity in the billing system.
             <td>string</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>name</code></td>
             <td>string</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>icon</code></td>
             <td>string</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
             <td></td>
         </tr>
-    
     </tbody>
 </table>
 
@@ -193,7 +187,6 @@ Represents an invoice entity in the billing system.
             <td>array</td>
             <td></td>
         </tr>
-    
     </tbody>
 </table>
 
@@ -216,13 +209,11 @@ Represents an invoice entity in the billing system.
             <td>PlatformObjectEvent</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>updated</code></td>
             <td>PlatformObjectEvent</td>
             <td></td>
         </tr>
-    
     </tbody>
 </table>
 
@@ -245,12 +236,10 @@ Represents an invoice entity in the billing system.
             <td>string</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>by</code></td>
             <td>object</td>
             <td></td>
         </tr>
-    
     </tbody>
 </table>

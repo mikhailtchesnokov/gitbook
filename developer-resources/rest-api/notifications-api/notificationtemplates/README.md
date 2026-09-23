@@ -1,5 +1,5 @@
 
-#NotificationTemplate
+# NotificationTemplate
 
 Represents a reusable template that can be used to generate messages.
 
@@ -128,37 +128,31 @@ Represents a reusable template that can be used to generate messages.
             <td>string</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>name</code></td>
             <td>string</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>icon</code></td>
             <td>string</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>type</code></td>
             <td>AccountType</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>status</code></td>
             <td>AccountStatus</td>
             <td></td>
         </tr>
-    
     </tbody>
 </table>
 
@@ -181,25 +175,21 @@ Represents a reusable template that can be used to generate messages.
             <td>string</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>name</code></td>
             <td>string</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>status</code></td>
             <td>string</td>
             <td></td>
         </tr>
-    
     </tbody>
 </table>
 
@@ -222,19 +212,16 @@ Represents message statistics aggregated over different time periods.
             <td>integer</td>
             <td>Gets or sets the number of messages sent in the current month.</td>
         </tr>
-    
         <tr>
             <td><code>today</code></td>
             <td>integer</td>
             <td>Gets or sets the number of messages sent today.</td>
         </tr>
-    
         <tr>
             <td><code>week</code></td>
             <td>integer</td>
             <td>Gets or sets the number of messages sent in the current week.</td>
         </tr>
-    
     </tbody>
 </table>
 
@@ -257,31 +244,26 @@ Represents audit information for a Mpt.Notifications.Models.NotificationTemplate
             <td>PlatformObjectEvent</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>updated</code></td>
             <td>PlatformObjectEvent</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>activated</code></td>
             <td>PlatformObjectEvent</td>
             <td>Gets or sets the event information for when the template was activated.</td>
         </tr>
-    
         <tr>
             <td><code>deleted</code></td>
             <td>PlatformObjectEvent</td>
             <td>Gets or sets the event information for when the template was deleted.</td>
         </tr>
-    
         <tr>
             <td><code>disabled</code></td>
             <td>PlatformObjectEvent</td>
             <td>Gets or sets the event information for when the template was disabled.</td>
         </tr>
-    
     </tbody>
 </table>
 
@@ -304,25 +286,21 @@ Represents the criteria for automatically triggering a template based on platfor
             <td>array</td>
             <td>Gets or sets the list of account types for which this template should trigger.</td>
         </tr>
-    
         <tr>
             <td><code>filterCondition</code></td>
             <td>string</td>
             <td>Gets or sets the RQL filter condition that must be satisfied for the template to trigger.</td>
         </tr>
-    
         <tr>
             <td><code>objectType</code></td>
             <td>string</td>
             <td>Gets or sets the platform object type this template monitors.</td>
         </tr>
-    
         <tr>
             <td><code>recipients</code></td>
             <td>NotificationTemplateCriteriaRecipients</td>
             <td>Gets or sets the custom Recipients condition. If specified, this RQL condition determines the recipients of the notification.</td>
         </tr>
-    
     </tbody>
 </table>
 
@@ -345,7 +323,6 @@ Represents the recipients criteria for automatically triggering a template based
             <td>string</td>
             <td>Gets or sets the RQL filter condition that must be satisfied for the template to trigger.</td>
         </tr>
-    
     </tbody>
 </table>
 
@@ -368,25 +345,21 @@ Represents the recipients criteria for automatically triggering a template based
             <td>string</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>name</code></td>
             <td>string</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>icon</code></td>
             <td>string</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
             <td></td>
         </tr>
-    
     </tbody>
 </table>
 
@@ -409,7 +382,6 @@ Represents the recipients criteria for automatically triggering a template based
             <td>array</td>
             <td></td>
         </tr>
-    
     </tbody>
 </table>
 
@@ -432,13 +404,11 @@ Represents the recipients criteria for automatically triggering a template based
             <td>string</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>by</code></td>
             <td>object</td>
             <td></td>
         </tr>
-    
     </tbody>
 </table>
 
@@ -461,30 +431,25 @@ Represents a language-specific variant of a template.
             <td>string</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>default</code></td>
             <td>boolean</td>
             <td>Gets or sets a value indicating whether this is the default variant for the parent template.</td>
         </tr>
-    
         <tr>
             <td><code>languageCode</code></td>
             <td>string</td>
             <td>Gets or sets the language code for this variant.</td>
         </tr>
-    
         <tr>
             <td><code>status</code></td>
             <td>string</td>
             <td>Gets or sets the current status of the variant.</td>
         </tr>
-    
     </tbody>
 </table>

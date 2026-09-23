@@ -1,5 +1,5 @@
 
-#Form
+# Form
 
 
 
@@ -116,37 +116,31 @@
             <td>string</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>name</code></td>
             <td>string</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>icon</code></td>
             <td>string</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>type</code></td>
             <td>AccountType</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>status</code></td>
             <td>AccountStatus</td>
             <td></td>
         </tr>
-    
     </tbody>
 </table>
 
@@ -169,31 +163,26 @@
             <td>PlatformObjectEvent</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>updated</code></td>
             <td>PlatformObjectEvent</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>deleted</code></td>
             <td>PlatformObjectEvent</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>published</code></td>
             <td>PlatformObjectEvent</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>unpublished</code></td>
             <td>PlatformObjectEvent</td>
             <td></td>
         </tr>
-    
     </tbody>
 </table>
 
@@ -216,13 +205,11 @@ Represents usage statistics for a form.
             <td>integer</td>
             <td>The number of parameter groups assigned to this form.</td>
         </tr>
-    
         <tr>
             <td><code>parameters</code></td>
             <td>integer</td>
             <td>The total number of parameter definitions across all groups in this form.</td>
         </tr>
-    
     </tbody>
 </table>
 
@@ -245,25 +232,21 @@ Represents usage statistics for a form.
             <td>string</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>name</code></td>
             <td>string</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>icon</code></td>
             <td>string</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
             <td></td>
         </tr>
-    
     </tbody>
 </table>
 
@@ -286,7 +269,6 @@ Represents usage statistics for a form.
             <td>array</td>
             <td></td>
         </tr>
-    
     </tbody>
 </table>
 
@@ -309,12 +291,10 @@ Represents usage statistics for a form.
             <td>string</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>by</code></td>
             <td>object</td>
             <td></td>
         </tr>
-    
     </tbody>
 </table>

@@ -1,5 +1,5 @@
 
-#Ledger
+# Ledger
 
 Represents a ledger in the billing system.
 
@@ -139,25 +139,21 @@ Represents a ledger in the billing system.
             <td>string</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>name</code></td>
             <td>string</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>currency</code></td>
             <td>string</td>
             <td></td>
         </tr>
-    
     </tbody>
 </table>
 
@@ -180,13 +176,11 @@ Represents the details of a backup operation, including its status and date.
             <td>BackupStatus</td>
             <td>Status of the backup.</td>
         </tr>
-    
         <tr>
             <td><code>date</code></td>
             <td>string</td>
             <td>Date and time of the backup action, if available.</td>
         </tr>
-    
     </tbody>
 </table>
 
@@ -209,25 +203,21 @@ Represents an error related to a billing entity.
             <td>string</td>
             <td>Represents the error code associated with the billing entity.</td>
         </tr>
-    
         <tr>
             <td><code>errorMessage</code></td>
             <td>string</td>
             <td>Represents the error message providing details about the issue.</td>
         </tr>
-    
         <tr>
             <td><code>id</code></td>
             <td>string</td>
             <td>Represents the unique identifier for the error, if applicable.</td>
         </tr>
-    
         <tr>
             <td><code>message</code></td>
             <td>string</td>
             <td>Represents the detailed message associated with the error, if applicable.</td>
         </tr>
-    
     </tbody>
 </table>
 
@@ -250,25 +240,21 @@ Represents a journal entry in the billing system.
             <td>integer</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>id</code></td>
             <td>string</td>
             <td>The unique identifier of the journal entry.</td>
         </tr>
-    
         <tr>
             <td><code>name</code></td>
             <td>string</td>
             <td>Name of the journal.</td>
         </tr>
-    
         <tr>
             <td><code>dueDate</code></td>
             <td>string</td>
             <td>The due date for the journal entry.</td>
         </tr>
-    
     </tbody>
 </table>
 
@@ -291,55 +277,46 @@ Represents a container for audit-related events for a ledger
             <td>PlatformObjectEvent</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>updated</code></td>
             <td>PlatformObjectEvent</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>rating</code></td>
             <td>PlatformObjectEvent</td>
             <td>Contains details about the most recent event when the ledger reached the "Rating" status.</td>
         </tr>
-    
         <tr>
             <td><code>error</code></td>
             <td>PlatformObjectEvent</td>
             <td>Contains details about the most recent event when the ledger reached the "Error" status.</td>
         </tr>
-    
         <tr>
             <td><code>review</code></td>
             <td>PlatformObjectEvent</td>
             <td>Contains details about the most recent event when the ledger reached the "Review" status.</td>
         </tr>
-    
         <tr>
             <td><code>generating</code></td>
             <td>PlatformObjectEvent</td>
             <td>Contains details about the most recent event when the ledger reached the "Generating" status.</td>
         </tr>
-    
         <tr>
             <td><code>generated</code></td>
             <td>PlatformObjectEvent</td>
             <td>Contains details about the most recent event when the ledger reached the "Generated" status.</td>
         </tr>
-    
         <tr>
             <td><code>queued</code></td>
             <td>PlatformObjectEvent</td>
             <td>Contains details about the most recent event when the ledger reached the "Queued" status.</td>
         </tr>
-    
         <tr>
             <td><code>completed</code></td>
             <td>PlatformObjectEvent</td>
             <td>Contains details about the most recent event when the ledger reached the "Completed" status.</td>
         </tr>
-    
     </tbody>
 </table>
 
@@ -362,31 +339,26 @@ Represents a detailed summary of pricing for a ledger.
             <td>number</td>
             <td>Represents the markup value applied to the pricing.</td>
         </tr>
-    
         <tr>
             <td><code>margin</code></td>
             <td>number</td>
             <td>Represents the margin value calculated for the pricing.</td>
         </tr>
-    
         <tr>
             <td><code>totalPP</code></td>
             <td>number</td>
             <td>Represents the total purchase price.</td>
         </tr>
-    
         <tr>
             <td><code>totalBSP</code></td>
             <td>number</td>
             <td>Represents the total sale price in buyer currency.</td>
         </tr>
-    
         <tr>
             <td><code>currency</code></td>
             <td>string</td>
             <td>Specifies the currency for the pricing.</td>
         </tr>
-    
     </tbody>
 </table>
 
@@ -409,25 +381,21 @@ Represents a detailed summary of pricing for a ledger.
             <td>string</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>name</code></td>
             <td>string</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>icon</code></td>
             <td>string</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
             <td></td>
         </tr>
-    
     </tbody>
 </table>
 
@@ -450,7 +418,6 @@ Represents a detailed summary of pricing for a ledger.
             <td>array</td>
             <td></td>
         </tr>
-    
     </tbody>
 </table>
 
@@ -473,13 +440,11 @@ Represents a detailed summary of pricing for a ledger.
             <td>string</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>by</code></td>
             <td>object</td>
             <td></td>
         </tr>
-    
     </tbody>
 </table>
 
@@ -502,37 +467,31 @@ Represents a summary of the processing status for various billing operations.
             <td>integer</td>
             <td>Indicates the total number of items involved in the processing.</td>
         </tr>
-    
         <tr>
             <td><code>ready</code></td>
             <td>integer</td>
             <td>Indicates the number of items that are ready for further processing.</td>
         </tr>
-    
         <tr>
             <td><code>error</code></td>
             <td>integer</td>
             <td>Indicates the number of items that encountered errors during processing.</td>
         </tr>
-    
         <tr>
             <td><code>split</code></td>
             <td>integer</td>
             <td>Indicates the number of items that were split into multiple parts during processing.</td>
         </tr>
-    
         <tr>
             <td><code>skipped</code></td>
             <td>integer</td>
             <td>Indicates the number of items that were skipped during processing.</td>
         </tr>
-    
         <tr>
             <td><code>ignored</code></td>
             <td>integer</td>
             <td>Indicates the number of items that were manually ignored.</td>
         </tr>
-    
     </tbody>
 </table>
 
@@ -555,13 +514,11 @@ Represents a summary of the processing status for various billing operations.
             <td>string</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>defaultErpItem</code></td>
             <td>string</td>
             <td></td>
         </tr>
-    
     </tbody>
 </table>
 
@@ -584,37 +541,31 @@ Represents a summary of the processing status for various billing operations.
             <td>string</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>name</code></td>
             <td>string</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>icon</code></td>
             <td>string</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>externalIds</code></td>
             <td>ProductExternalIdBag</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>status</code></td>
             <td>string</td>
             <td></td>
         </tr>
-    
     </tbody>
 </table>
 
@@ -637,30 +588,25 @@ Represents a summary of the processing status for various billing operations.
             <td>string</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>name</code></td>
             <td>string</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>icon</code></td>
             <td>string</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>externalId</code></td>
             <td>string</td>
             <td></td>
         </tr>
-    
     </tbody>
 </table>

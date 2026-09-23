@@ -1,5 +1,5 @@
 
-#ChatAttachment
+# ChatAttachment
 
 
 
@@ -104,19 +104,16 @@
             <td>PlatformObjectEvent</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>updated</code></td>
             <td>PlatformObjectEvent</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>deleted</code></td>
             <td>PlatformObjectEvent</td>
             <td></td>
         </tr>
-    
     </tbody>
 </table>
 
@@ -139,31 +136,26 @@
             <td>string</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>name</code></td>
             <td>string</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>icon</code></td>
             <td>string</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>type</code></td>
             <td>ChatType</td>
             <td>Represents the type of chat, indicating whether it is a direct message, group chat, channel, or support case.</td>
         </tr>
-    
     </tbody>
 </table>
 
@@ -186,61 +178,51 @@ Represents a file in the helpdesk module
             <td>string</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>audit</code></td>
             <td>PlatformObjectAudit</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>$meta</code></td>
             <td>PlatformMetadata</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>name</code></td>
             <td>string</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>icon</code></td>
             <td>string</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>type</code></td>
             <td>FileType</td>
             <td>Specifies the type of the file, such as attachment or icon</td>
         </tr>
-    
         <tr>
             <td><code>filename</code></td>
             <td>string</td>
             <td>Represents the name of the file associated with the attachment.</td>
         </tr>
-    
         <tr>
             <td><code>size</code></td>
             <td>integer</td>
             <td>Indicates the size of the file in bytes.</td>
         </tr>
-    
         <tr>
             <td><code>contentType</code></td>
             <td>string</td>
             <td>Represents the MIME type of the file content.</td>
         </tr>
-    
     </tbody>
 </table>
 
@@ -263,25 +245,21 @@ Represents a file in the helpdesk module
             <td>string</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>name</code></td>
             <td>string</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>icon</code></td>
             <td>string</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
             <td></td>
         </tr>
-    
     </tbody>
 </table>
 
@@ -304,7 +282,6 @@ Represents a file in the helpdesk module
             <td>array</td>
             <td></td>
         </tr>
-    
     </tbody>
 </table>
 
@@ -327,13 +304,11 @@ Represents a file in the helpdesk module
             <td>PlatformObjectEvent</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>updated</code></td>
             <td>PlatformObjectEvent</td>
             <td></td>
         </tr>
-    
     </tbody>
 </table>
 
@@ -356,12 +331,10 @@ Represents a file in the helpdesk module
             <td>string</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>by</code></td>
             <td>object</td>
             <td></td>
         </tr>
-    
     </tbody>
 </table>

@@ -1,5 +1,5 @@
 
-#CommerceAgreementAttachment
+# CommerceAgreementAttachment
 
 
 
@@ -116,31 +116,26 @@
             <td>string</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>name</code></td>
             <td>string</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>icon</code></td>
             <td>string</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>status</code></td>
             <td>AgreementStatus</td>
             <td></td>
         </tr>
-    
     </tbody>
 </table>
 
@@ -163,25 +158,21 @@
             <td>string</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>name</code></td>
             <td>string</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>icon</code></td>
             <td>string</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
             <td></td>
         </tr>
-    
     </tbody>
 </table>
 
@@ -204,7 +195,6 @@
             <td>array</td>
             <td></td>
         </tr>
-    
     </tbody>
 </table>
 
@@ -227,13 +217,11 @@
             <td>PlatformObjectEvent</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>updated</code></td>
             <td>PlatformObjectEvent</td>
             <td></td>
         </tr>
-    
     </tbody>
 </table>
 
@@ -256,12 +244,10 @@
             <td>string</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>by</code></td>
             <td>object</td>
             <td></td>
         </tr>
-    
     </tbody>
 </table>

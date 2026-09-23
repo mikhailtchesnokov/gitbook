@@ -1,5 +1,5 @@
 
-#StatementAttachment
+# StatementAttachment
 
 Represents an attachment associated with a billing statement in the system.
 
@@ -117,25 +117,21 @@ Represents an attachment associated with a billing statement in the system.
             <td>string</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>name</code></td>
             <td>string</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>icon</code></td>
             <td>string</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
             <td></td>
         </tr>
-    
     </tbody>
 </table>
 
@@ -158,7 +154,6 @@ Represents an attachment associated with a billing statement in the system.
             <td>array</td>
             <td></td>
         </tr>
-    
     </tbody>
 </table>
 
@@ -181,13 +176,11 @@ Represents an attachment associated with a billing statement in the system.
             <td>PlatformObjectEvent</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>updated</code></td>
             <td>PlatformObjectEvent</td>
             <td></td>
         </tr>
-    
     </tbody>
 </table>
 
@@ -210,13 +203,11 @@ Represents an attachment associated with a billing statement in the system.
             <td>string</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>by</code></td>
             <td>object</td>
             <td></td>
         </tr>
-    
     </tbody>
 </table>
 
@@ -239,12 +230,10 @@ Represents a billing statement in the system, containing details about transacti
             <td>integer</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>id</code></td>
             <td>string</td>
             <td>The unique identifier of the statement.</td>
         </tr>
-    
     </tbody>
 </table>

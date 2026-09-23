@@ -1,5 +1,5 @@
 
-#Task
+# Task
 
 The Task represents the state of an asynchronous, usually long running operation.
 
@@ -138,7 +138,7 @@ The Task represents the state of an asynchronous, usually long running operation
 </table>
 
 
-#TaskLog
+# TaskLog
 
 
 
@@ -264,37 +264,31 @@ The Task represents the state of an asynchronous, usually long running operation
             <td>string</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>name</code></td>
             <td>string</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>icon</code></td>
             <td>string</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>type</code></td>
             <td>AccountType</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>status</code></td>
             <td>AccountStatus</td>
             <td></td>
         </tr>
-    
     </tbody>
 </table>
 
@@ -317,25 +311,21 @@ The Task represents the state of an asynchronous, usually long running operation
             <td>string</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>name</code></td>
             <td>string</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>icon</code></td>
             <td>string</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
             <td></td>
         </tr>
-    
     </tbody>
 </table>
 
@@ -358,7 +348,6 @@ The Task represents the state of an asynchronous, usually long running operation
             <td>array</td>
             <td></td>
         </tr>
-    
     </tbody>
 </table>
 
@@ -381,13 +370,11 @@ The Task represents the state of an asynchronous, usually long running operation
             <td>string</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>by</code></td>
             <td>object</td>
             <td></td>
         </tr>
-    
     </tbody>
 </table>
 
@@ -410,43 +397,36 @@ The Task represents the state of an asynchronous, usually long running operation
             <td>PlatformObjectEvent</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>updated</code></td>
             <td>PlatformObjectEvent</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>started</code></td>
             <td>PlatformObjectEvent</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>completed</code></td>
             <td>PlatformObjectEvent</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>failed</code></td>
             <td>PlatformObjectEvent</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>rescheduled</code></td>
             <td>PlatformObjectEvent</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>queued</code></td>
             <td>PlatformObjectEvent</td>
             <td></td>
         </tr>
-    
     </tbody>
 </table>
 
@@ -469,19 +449,16 @@ The Task represents the state of an asynchronous, usually long running operation
             <td>string</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>name</code></td>
             <td>string</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>icon</code></td>
             <td>string</td>
             <td></td>
         </tr>
-    
     </tbody>
 </table>
 
@@ -504,37 +481,31 @@ The Task represents the state of an asynchronous, usually long running operation
             <td>string</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>name</code></td>
             <td>string</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>icon</code></td>
             <td>string</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>status</code></td>
             <td>TaskStatus</td>
             <td>Task status: a new task is created in the Queued (default) or Blocked status.</td>
         </tr>
-    
         <tr>
             <td><code>code</code></td>
             <td>string</td>
             <td>Task code for the workflow, prefixed with the service namespace.</td>
         </tr>
-    
     </tbody>
 </table>
 
@@ -557,25 +528,21 @@ The Task represents the state of an asynchronous, usually long running operation
             <td>string</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>name</code></td>
             <td>string</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>icon</code></td>
             <td>string</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
             <td></td>
         </tr>
-    
     </tbody>
 </table>
 
@@ -598,7 +565,6 @@ The Task represents the state of an asynchronous, usually long running operation
             <td>array</td>
             <td></td>
         </tr>
-    
     </tbody>
 </table>
 
@@ -621,13 +587,11 @@ The Task represents the state of an asynchronous, usually long running operation
             <td>PlatformObjectEvent</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>updated</code></td>
             <td>PlatformObjectEvent</td>
             <td></td>
         </tr>
-    
     </tbody>
 </table>
 
@@ -650,13 +614,11 @@ The Task represents the state of an asynchronous, usually long running operation
             <td>string</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>by</code></td>
             <td>object</td>
             <td></td>
         </tr>
-    
     </tbody>
 </table>
 
@@ -679,36 +641,30 @@ The Task represents the state of an asynchronous, usually long running operation
             <td>string</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>name</code></td>
             <td>string</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>icon</code></td>
             <td>string</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>status</code></td>
             <td>TaskStatus</td>
             <td>Task status: a new task is created in the Queued (default) or Blocked status.</td>
         </tr>
-    
         <tr>
             <td><code>code</code></td>
             <td>string</td>
             <td>Task code for the workflow, prefixed with the service namespace.</td>
         </tr>
-    
     </tbody>
 </table>

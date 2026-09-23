@@ -1,5 +1,5 @@
 
-#Footer
+# Footer
 
 Represents a localized footer template that can be appended to notification messages.
 
@@ -86,25 +86,21 @@ Represents audit information for a Mpt.Notifications.Models.Footers.Footer.
             <td>PlatformObjectEvent</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>updated</code></td>
             <td>PlatformObjectEvent</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>activated</code></td>
             <td>PlatformObjectEvent</td>
             <td>Gets or sets the event information for when the footer was activated.</td>
         </tr>
-    
         <tr>
             <td><code>deleted</code></td>
             <td>PlatformObjectEvent</td>
             <td>Gets or sets the event information for when the footer was deleted.</td>
         </tr>
-    
     </tbody>
 </table>
 
@@ -127,25 +123,21 @@ Represents audit information for a Mpt.Notifications.Models.Footers.Footer.
             <td>string</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>name</code></td>
             <td>string</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>icon</code></td>
             <td>string</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
             <td></td>
         </tr>
-    
     </tbody>
 </table>
 
@@ -168,7 +160,6 @@ Represents audit information for a Mpt.Notifications.Models.Footers.Footer.
             <td>array</td>
             <td></td>
         </tr>
-    
     </tbody>
 </table>
 
@@ -191,12 +182,10 @@ Represents audit information for a Mpt.Notifications.Models.Footers.Footer.
             <td>string</td>
             <td></td>
         </tr>
-    
         <tr>
             <td><code>by</code></td>
             <td>object</td>
             <td></td>
         </tr>
-    
     </tbody>
 </table>
