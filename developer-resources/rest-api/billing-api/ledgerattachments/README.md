@@ -1,5 +1,5 @@
 
-# LedgerAttachment
+## LedgerAttachment
 
 Represents an attachment associated with a ledger in the billing system.
 
@@ -74,12 +74,6 @@ Represents an attachment associated with a ledger in the billing system.
         </tr></tbody>
 </table>
 
-
-
-
-
-
-
 ## LedgerRef
 
 Represents a ledger in the billing system.
@@ -105,7 +99,6 @@ Represents a ledger in the billing system.
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformIdentityRef
 
@@ -143,7 +136,6 @@ Represents a ledger in the billing system.
     </tbody>
 </table>
 
-
 ## PlatformMetadata
 
 
@@ -164,7 +156,6 @@ Represents a ledger in the billing system.
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformObjectAudit
 
@@ -191,7 +182,6 @@ Represents a ledger in the billing system.
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformObjectEvent
 

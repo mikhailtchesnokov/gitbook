@@ -1,5 +1,5 @@
 
-# CreditMemoAttachment
+## CreditMemoAttachment
 
 Represents an attachment associated with a credit memo in the billing system.
 
@@ -79,12 +79,6 @@ Represents an attachment associated with a credit memo in the billing system.
         </tr></tbody>
 </table>
 
-
-
-
-
-
-
 ## CreditMemoRef
 
 Represents a credit memo in the billing system.
@@ -110,7 +104,6 @@ Represents a credit memo in the billing system.
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformIdentityRef
 
@@ -148,7 +141,6 @@ Represents a credit memo in the billing system.
     </tbody>
 </table>
 
-
 ## PlatformMetadata
 
 
@@ -169,7 +161,6 @@ Represents a credit memo in the billing system.
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformObjectAudit
 
@@ -196,7 +187,6 @@ Represents a credit memo in the billing system.
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformObjectEvent
 

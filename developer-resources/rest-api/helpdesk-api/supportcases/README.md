@@ -1,5 +1,5 @@
 
-# SupportCase
+## SupportCase
 
 
 
@@ -78,12 +78,6 @@
             <td></td>
         </tr></tbody>
 </table>
-
-
-
-
-
-
 
 ## Account
 
@@ -191,7 +185,6 @@
     </tbody>
 </table>
 
-
 ## AccountExternalIds
 
 
@@ -212,7 +205,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## AccountRef
 
@@ -260,7 +252,6 @@
     </tbody>
 </table>
 
-
 ## Address
 
 
@@ -307,7 +298,6 @@
     </tbody>
 </table>
 
-
 ## CapacitySettings
 
 
@@ -333,7 +323,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## CategoryRef
 
@@ -370,7 +359,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## Chat
 
@@ -443,7 +431,6 @@
     </tbody>
 </table>
 
-
 ## ChatAttachmentRef
 
 
@@ -484,7 +471,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## ChatMessageRef
 
@@ -527,7 +513,6 @@
     </tbody>
 </table>
 
-
 ## ChatParticipantRef
 
 
@@ -563,7 +548,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## Contact
 
@@ -646,7 +630,6 @@ Represents a notification contact who can receive email notifications.
     </tbody>
 </table>
 
-
 ## ContactAudit
 
 Represents audit information for a Mpt.Notifications.Models.Contacts.Contact.
@@ -688,7 +671,6 @@ Represents audit information for a Mpt.Notifications.Models.Contacts.Contact.
     </tbody>
 </table>
 
-
 ## DirectoryRef
 
 
@@ -715,7 +697,6 @@ Represents audit information for a Mpt.Notifications.Models.Contacts.Contact.
     </tbody>
 </table>
 
-
 ## Eligibility
 
 
@@ -741,7 +722,6 @@ Represents audit information for a Mpt.Notifications.Models.Contacts.Contact.
         </tr>
     </tbody>
 </table>
-
 
 ## File
 
@@ -809,7 +789,6 @@ Represents a file in the helpdesk module
     </tbody>
 </table>
 
-
 ## HelpdeskConstraints
 
 Constraints specific to helpdesk parameters
@@ -851,7 +830,6 @@ Constraints specific to helpdesk parameters
     </tbody>
 </table>
 
-
 ## JsonNode
 
 
@@ -883,7 +861,6 @@ Constraints specific to helpdesk parameters
     </tbody>
 </table>
 
-
 ## JsonNodeOptions
 
 
@@ -904,7 +881,6 @@ Constraints specific to helpdesk parameters
         </tr>
     </tbody>
 </table>
-
 
 ## NumberFormat
 
@@ -932,7 +908,6 @@ Constraints specific to helpdesk parameters
     </tbody>
 </table>
 
-
 ## PhoneNumber
 
 
@@ -958,7 +933,6 @@ Constraints specific to helpdesk parameters
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformIdentity
 
@@ -1006,7 +980,6 @@ Constraints specific to helpdesk parameters
     </tbody>
 </table>
 
-
 ## PlatformIdentityRef
 
 
@@ -1043,7 +1016,6 @@ Constraints specific to helpdesk parameters
     </tbody>
 </table>
 
-
 ## PlatformMetadata
 
 
@@ -1064,7 +1036,6 @@ Constraints specific to helpdesk parameters
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformObjectAudit
 
@@ -1092,7 +1063,6 @@ Constraints specific to helpdesk parameters
     </tbody>
 </table>
 
-
 ## PlatformObjectEvent
 
 
@@ -1118,7 +1088,6 @@ Constraints specific to helpdesk parameters
         </tr>
     </tbody>
 </table>
-
 
 ## Queue
 
@@ -1211,7 +1180,6 @@ Constraints specific to helpdesk parameters
     </tbody>
 </table>
 
-
 ## QueueAudit
 
 
@@ -1253,7 +1221,6 @@ Constraints specific to helpdesk parameters
     </tbody>
 </table>
 
-
 ## QueueStatistics
 
 
@@ -1279,7 +1246,6 @@ Constraints specific to helpdesk parameters
         </tr>
     </tbody>
 </table>
-
 
 ## SupportCaseAudit
 
@@ -1326,7 +1292,6 @@ Constraints specific to helpdesk parameters
         </tr>
     </tbody>
 </table>
-
 
 ## SupportCaseParameter
 
@@ -1391,7 +1356,6 @@ This is a core property for RQL queries.</td>
         </tr>
     </tbody>
 </table>
-
 
 ## User
 
@@ -1484,7 +1448,6 @@ This is a core property for RQL queries.</td>
     </tbody>
 </table>
 
-
 ## UserAudit
 
 
@@ -1515,7 +1478,6 @@ This is a core property for RQL queries.</td>
         </tr>
     </tbody>
 </table>
-
 
 ## UserGroupRef
 
@@ -1562,7 +1524,6 @@ This is a core property for RQL queries.</td>
         </tr>
     </tbody>
 </table>
-
 
 ## UserSettings
 
@@ -1614,7 +1575,6 @@ This is a core property for RQL queries.</td>
         </tr>
     </tbody>
 </table>
-
 
 ## UserSettingsOptOuts
 

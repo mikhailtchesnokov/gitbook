@@ -1,5 +1,5 @@
 
-# ErpItem
+## ErpItem
 
 
 
@@ -78,12 +78,6 @@
             <td></td>
         </tr></tbody>
 </table>
-
-
-
-
-
-
 
 ## Account
 
@@ -191,7 +185,6 @@
     </tbody>
 </table>
 
-
 ## AccountExternalIds
 
 
@@ -212,7 +205,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## Address
 
@@ -260,7 +252,6 @@
     </tbody>
 </table>
 
-
 ## CategoryRef
 
 
@@ -297,7 +288,6 @@
     </tbody>
 </table>
 
-
 ## Eligibility
 
 
@@ -324,7 +314,6 @@
     </tbody>
 </table>
 
-
 ## ErpAttributes
 
 
@@ -345,7 +334,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## ErpAuditBag
 
@@ -378,7 +366,6 @@
     </tbody>
 </table>
 
-
 ## ErpItemExternalIds
 
 
@@ -404,7 +391,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformIdentityRef
 
@@ -442,7 +428,6 @@
     </tbody>
 </table>
 
-
 ## PlatformMetadata
 
 
@@ -463,7 +448,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformObjectAudit
 
@@ -491,7 +475,6 @@
     </tbody>
 </table>
 
-
 ## PlatformObjectEvent
 
 
@@ -517,7 +500,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## ProductProfileRef
 
@@ -565,7 +547,6 @@
     </tbody>
 </table>
 
-
 ## UserGroupRef
 
 
@@ -611,7 +592,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## VendorProfile
 
@@ -714,7 +694,6 @@
     </tbody>
 </table>
 
-
 ## VendorProfileAudit
 
 
@@ -750,7 +729,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## VendorProfileRef
 

@@ -1,5 +1,5 @@
 
-# UserGroup
+## UserGroup
 
 
 
@@ -79,12 +79,6 @@
         </tr></tbody>
 </table>
 
-
-
-
-
-
-
 ## AccountRef
 
 
@@ -131,7 +125,6 @@
     </tbody>
 </table>
 
-
 ## BuyerRef
 
 
@@ -168,7 +161,6 @@
     </tbody>
 </table>
 
-
 ## Filters
 
 
@@ -189,7 +181,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## ModuleRef
 
@@ -236,7 +227,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## ModuleSettings
 
@@ -289,7 +279,6 @@
     </tbody>
 </table>
 
-
 ## ModuleSettingsEligibility
 
 
@@ -315,7 +304,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformIdentityRef
 
@@ -353,7 +341,6 @@
     </tbody>
 </table>
 
-
 ## PlatformMetadata
 
 
@@ -374,7 +361,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformObjectAudit
 
@@ -401,7 +387,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformObjectAuditPlatformExtension
 
@@ -454,7 +439,6 @@
     </tbody>
 </table>
 
-
 ## PlatformObjectEvent
 
 
@@ -480,7 +464,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## UserRef
 

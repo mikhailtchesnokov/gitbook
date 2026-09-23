@@ -1,5 +1,5 @@
 
-# ProductProfile
+## ProductProfile
 
 
 
@@ -114,12 +114,6 @@
         </tr></tbody>
 </table>
 
-
-
-
-
-
-
 ## Account
 
 
@@ -226,7 +220,6 @@
     </tbody>
 </table>
 
-
 ## AccountExternalIds
 
 
@@ -247,7 +240,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## Address
 
@@ -295,7 +287,6 @@
     </tbody>
 </table>
 
-
 ## CategoryRef
 
 
@@ -332,7 +323,6 @@
     </tbody>
 </table>
 
-
 ## Eligibility
 
 
@@ -358,7 +348,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## IndustryRef
 
@@ -396,7 +385,6 @@
     </tbody>
 </table>
 
-
 ## PlatformIdentityRef
 
 
@@ -433,7 +421,6 @@
     </tbody>
 </table>
 
-
 ## PlatformMetadata
 
 
@@ -454,7 +441,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformObjectAudit
 
@@ -482,7 +468,6 @@
     </tbody>
 </table>
 
-
 ## PlatformObjectEvent
 
 
@@ -509,7 +494,6 @@
     </tbody>
 </table>
 
-
 ## ProductExternalIdBag
 
 
@@ -535,7 +519,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## ProductProfileAudit
 
@@ -572,7 +555,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## ProductProfileRef
 
@@ -620,7 +602,6 @@
     </tbody>
 </table>
 
-
 ## ProductRef
 
 
@@ -667,7 +648,6 @@
     </tbody>
 </table>
 
-
 ## SegmentRef
 
 
@@ -703,7 +683,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## UserGroupRef
 
@@ -750,7 +729,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## VendorProfile
 
@@ -852,7 +830,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## VendorProfileAudit
 

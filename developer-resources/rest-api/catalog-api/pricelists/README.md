@@ -1,5 +1,5 @@
 
-# PriceList
+## PriceList
 
 
 
@@ -79,12 +79,6 @@
         </tr></tbody>
 </table>
 
-
-
-
-
-
-
 ## AccountRef
 
 
@@ -131,7 +125,6 @@
     </tbody>
 </table>
 
-
 ## PlatformIdentityRef
 
 
@@ -168,7 +161,6 @@
     </tbody>
 </table>
 
-
 ## PlatformMetadata
 
 
@@ -189,7 +181,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformObjectAudit
 
@@ -217,7 +208,6 @@
     </tbody>
 </table>
 
-
 ## PlatformObjectEvent
 
 
@@ -244,7 +234,6 @@
     </tbody>
 </table>
 
-
 ## PriceListExternalIdBag
 
 
@@ -265,7 +254,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## PriceListStatistics
 
@@ -328,7 +316,6 @@
     </tbody>
 </table>
 
-
 ## ProductExternalIdBag
 
 
@@ -354,7 +341,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## ProductRef
 

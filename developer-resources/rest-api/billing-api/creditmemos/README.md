@@ -1,5 +1,5 @@
 
-# CreditMemo
+## CreditMemo
 
 Represents a credit memo in the billing system.
 
@@ -129,12 +129,6 @@ Represents a credit memo in the billing system.
         </tr></tbody>
 </table>
 
-
-
-
-
-
-
 ## AccountRef
 
 
@@ -181,7 +175,6 @@ Represents a credit memo in the billing system.
     </tbody>
 </table>
 
-
 ## AgreementRef
 
 
@@ -223,7 +216,6 @@ Represents a credit memo in the billing system.
     </tbody>
 </table>
 
-
 ## AnalyticsInfo
 
 Analytics insofmation.
@@ -244,7 +236,6 @@ Analytics insofmation.
         </tr>
     </tbody>
 </table>
-
 
 ## BillingErpAttributes
 
@@ -287,7 +278,6 @@ Attributes related to ERP systems for an invoice or credit memo.
     </tbody>
 </table>
 
-
 ## BuyerRef
 
 
@@ -324,7 +314,6 @@ Attributes related to ERP systems for an invoice or credit memo.
     </tbody>
 </table>
 
-
 ## CreditMemoAuditBag
 
 Represents a container for audit-related events for a credit memo
@@ -355,7 +344,6 @@ Represents a container for audit-related events for a credit memo
         </tr>
     </tbody>
 </table>
-
 
 ## CreditMemoErpData
 
@@ -458,7 +446,6 @@ Represents ERP-specific data related to a credit memo.
     </tbody>
 </table>
 
-
 ## CreditMemoLine
 
 Represents a line item in a credit memo, containing details such as amounts, descriptions, and identifiers.
@@ -524,7 +511,6 @@ Represents a line item in a credit memo, containing details such as amounts, des
         </tr>
     </tbody>
 </table>
-
 
 ## CreditMemoLineErpData
 
@@ -616,7 +602,6 @@ Represents ERP-specific data related to a credit memo line.
         </tr>
     </tbody>
 </table>
-
 
 ## CreditMemoLinePrice
 
@@ -724,7 +709,6 @@ Represents the price details of a credit memo line.
     </tbody>
 </table>
 
-
 ## CreditMemoPriceSummary
 
 Represents a summary of price details for a credit memo.
@@ -786,7 +770,6 @@ Represents a summary of price details for a credit memo.
     </tbody>
 </table>
 
-
 ## DatePeriod
 
 Represents the period during which a charge is applicable.
@@ -812,7 +795,6 @@ Represents the period during which a charge is applicable.
         </tr>
     </tbody>
 </table>
-
 
 ## ErpAddress
 
@@ -910,7 +892,6 @@ Represents an address with various details such as name, address lines, city, po
     </tbody>
 </table>
 
-
 ## ErpAddressList
 
 Represents a list of addresses for billing purposes.
@@ -947,7 +928,6 @@ Represents a list of addresses for billing purposes.
     </tbody>
 </table>
 
-
 ## ErpCode
 
 Represents ERP-specific data related to a credit memo line or invoice line.
@@ -979,7 +959,6 @@ Represents ERP-specific data related to a credit memo line or invoice line.
     </tbody>
 </table>
 
-
 ## ErpExternalIds
 
 Represents invoice references .
@@ -1010,7 +989,6 @@ Represents invoice references .
         </tr>
     </tbody>
 </table>
-
 
 ## LicenseeRef
 
@@ -1053,7 +1031,6 @@ Represents invoice references .
     </tbody>
 </table>
 
-
 ## PlatformIdentityRef
 
 
@@ -1090,7 +1067,6 @@ Represents invoice references .
     </tbody>
 </table>
 
-
 ## PlatformMetadata
 
 
@@ -1111,7 +1087,6 @@ Represents invoice references .
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformObjectEvent
 
@@ -1139,7 +1114,6 @@ Represents invoice references .
     </tbody>
 </table>
 
-
 ## ProductExternalIdBag
 
 
@@ -1165,7 +1139,6 @@ Represents invoice references .
         </tr>
     </tbody>
 </table>
-
 
 ## ProductRef
 
@@ -1213,7 +1186,6 @@ Represents invoice references .
     </tbody>
 </table>
 
-
 ## SellerRef
 
 
@@ -1254,7 +1226,6 @@ Represents invoice references .
         </tr>
     </tbody>
 </table>
-
 
 ## StatementRef
 

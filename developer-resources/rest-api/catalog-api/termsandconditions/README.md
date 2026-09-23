@@ -1,5 +1,5 @@
 
-# TermsAndConditions
+## TermsAndConditions
 
 
 
@@ -59,12 +59,6 @@
         </tr></tbody>
 </table>
 
-
-
-
-
-
-
 ## PlatformIdentityRef
 
 
@@ -101,7 +95,6 @@
     </tbody>
 </table>
 
-
 ## PlatformMetadata
 
 
@@ -122,7 +115,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformObjectEvent
 
@@ -150,7 +142,6 @@
     </tbody>
 </table>
 
-
 ## ProductExternalIdBag
 
 
@@ -176,7 +167,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## ProductRef
 
@@ -223,7 +213,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## TermsAndConditionsAudit
 

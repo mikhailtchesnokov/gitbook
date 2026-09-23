@@ -1,5 +1,5 @@
 
-# UnitOfMeasure
+## UnitOfMeasure
 
 
 
@@ -49,12 +49,6 @@
         </tr></tbody>
 </table>
 
-
-
-
-
-
-
 ## PlatformIdentityRef
 
 
@@ -91,7 +85,6 @@
     </tbody>
 </table>
 
-
 ## PlatformMetadata
 
 
@@ -112,7 +105,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformObjectAudit
 
@@ -140,7 +132,6 @@
     </tbody>
 </table>
 
-
 ## PlatformObjectEvent
 
 
@@ -166,7 +157,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## UnitOfMeasureStatistics
 

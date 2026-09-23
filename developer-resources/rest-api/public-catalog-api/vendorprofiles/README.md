@@ -1,5 +1,5 @@
 
-# VendorProfile
+## VendorProfile
 
 
 
@@ -98,12 +98,6 @@
             <td></td>
         </tr></tbody>
 </table>
-
-
-
-
-
-
 
 ## Account
 
@@ -211,7 +205,6 @@
     </tbody>
 </table>
 
-
 ## AccountExternalIds
 
 
@@ -232,7 +225,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## Address
 
@@ -280,7 +272,6 @@
     </tbody>
 </table>
 
-
 ## CategoryRef
 
 
@@ -317,7 +308,6 @@
     </tbody>
 </table>
 
-
 ## Eligibility
 
 
@@ -343,7 +333,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformIdentityRef
 
@@ -381,7 +370,6 @@
     </tbody>
 </table>
 
-
 ## PlatformMetadata
 
 
@@ -402,7 +390,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformObjectAudit
 
@@ -430,7 +417,6 @@
     </tbody>
 </table>
 
-
 ## PlatformObjectEvent
 
 
@@ -456,7 +442,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## ProductProfileRef
 
@@ -504,7 +489,6 @@
     </tbody>
 </table>
 
-
 ## UserGroupRef
 
 
@@ -550,7 +534,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## VendorProfileAudit
 

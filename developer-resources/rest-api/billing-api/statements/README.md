@@ -1,5 +1,5 @@
 
-# Statement
+## Statement
 
 Represents a billing statement in the system, containing details about transactions, pricing, and associated entities.
 
@@ -144,12 +144,6 @@ Represents a billing statement in the system, containing details about transacti
         </tr></tbody>
 </table>
 
-
-
-
-
-
-
 ## AccountRef
 
 
@@ -196,7 +190,6 @@ Represents a billing statement in the system, containing details about transacti
     </tbody>
 </table>
 
-
 ## AgreementRef
 
 
@@ -238,7 +231,6 @@ Represents a billing statement in the system, containing details about transacti
     </tbody>
 </table>
 
-
 ## BackupDetails
 
 Represents the details of a backup operation, including its status and date.
@@ -264,7 +256,6 @@ Represents the details of a backup operation, including its status and date.
         </tr>
     </tbody>
 </table>
-
 
 ## BillingError
 
@@ -302,7 +293,6 @@ Represents an error related to a billing entity.
     </tbody>
 </table>
 
-
 ## BillingParametrisedMessage
 
 Represents a message with associated parameters for use in parameterized communication or formatting scenarios.
@@ -328,7 +318,6 @@ Represents a message with associated parameters for use in parameterized communi
         </tr>
     </tbody>
 </table>
-
 
 ## BuyerRef
 
@@ -366,7 +355,6 @@ Represents a message with associated parameters for use in parameterized communi
     </tbody>
 </table>
 
-
 ## CreditMemoRef
 
 Represents a credit memo in the billing system.
@@ -392,7 +380,6 @@ Represents a credit memo in the billing system.
         </tr>
     </tbody>
 </table>
-
 
 ## CustomLedgerRef
 
@@ -425,7 +412,6 @@ Represents a custom ledger in the billing system.
     </tbody>
 </table>
 
-
 ## InvoiceRef
 
 Represents an invoice entity in the billing system.
@@ -452,7 +438,6 @@ Represents an invoice entity in the billing system.
     </tbody>
 </table>
 
-
 ## LedgerRef
 
 Represents a ledger in the billing system.
@@ -478,7 +463,6 @@ Represents a ledger in the billing system.
         </tr>
     </tbody>
 </table>
-
 
 ## LicenseeRef
 
@@ -521,7 +505,6 @@ Represents a ledger in the billing system.
     </tbody>
 </table>
 
-
 ## PlatformIdentityRef
 
 
@@ -558,7 +541,6 @@ Represents a ledger in the billing system.
     </tbody>
 </table>
 
-
 ## PlatformMetadata
 
 
@@ -579,7 +561,6 @@ Represents a ledger in the billing system.
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformObjectEvent
 
@@ -606,7 +587,6 @@ Represents a ledger in the billing system.
         </tr>
     </tbody>
 </table>
-
 
 ## PriceCurrency
 
@@ -638,7 +618,6 @@ Represents the currency details for pricing, including purchase and sale values.
         </tr>
     </tbody>
 </table>
-
 
 ## ProcessingSummary
 
@@ -686,7 +665,6 @@ Represents a summary of the processing status for various billing operations.
     </tbody>
 </table>
 
-
 ## ProductExternalIdBag
 
 
@@ -712,7 +690,6 @@ Represents a summary of the processing status for various billing operations.
         </tr>
     </tbody>
 </table>
-
 
 ## ProductRef
 
@@ -760,7 +737,6 @@ Represents a summary of the processing status for various billing operations.
     </tbody>
 </table>
 
-
 ## SellerRef
 
 
@@ -801,7 +777,6 @@ Represents a summary of the processing status for various billing operations.
         </tr>
     </tbody>
 </table>
-
 
 ## StatementAuditBag
 
@@ -874,7 +849,6 @@ Represents a container for audit-related events for a statement
     </tbody>
 </table>
 
-
 ## StatementExternalIds
 
 Represents external identifiers associated with a billing statement.
@@ -910,7 +884,6 @@ Represents external identifiers associated with a billing statement.
         </tr>
     </tbody>
 </table>
-
 
 ## StatementPriceSummary
 
@@ -958,7 +931,6 @@ Represents a detailed summary of pricing for a billing statement, including curr
     </tbody>
 </table>
 
-
 ## StatementRef
 
 Represents a billing statement in the system, containing details about transactions, pricing, and associated entities.
@@ -984,7 +956,6 @@ Represents a billing statement in the system, containing details about transacti
         </tr>
     </tbody>
 </table>
-
 
 ## StatementStatistics
 

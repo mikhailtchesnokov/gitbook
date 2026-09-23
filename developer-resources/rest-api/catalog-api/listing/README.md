@@ -1,5 +1,5 @@
 
-# Listing
+## Listing
 
 
 
@@ -84,12 +84,6 @@
         </tr></tbody>
 </table>
 
-
-
-
-
-
-
 ## AccountRef
 
 
@@ -136,7 +130,6 @@
     </tbody>
 </table>
 
-
 ## AuthorizationRef
 
 
@@ -173,7 +166,6 @@
     </tbody>
 </table>
 
-
 ## ListingEligibility
 
 
@@ -200,7 +192,6 @@
     </tbody>
 </table>
 
-
 ## ListingStatistics
 
 
@@ -226,7 +217,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformIdentityRef
 
@@ -264,7 +254,6 @@
     </tbody>
 </table>
 
-
 ## PlatformMetadata
 
 
@@ -285,7 +274,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformObjectAudit
 
@@ -313,7 +301,6 @@
     </tbody>
 </table>
 
-
 ## PlatformObjectEvent
 
 
@@ -339,7 +326,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## PriceListRef
 
@@ -372,7 +358,6 @@
     </tbody>
 </table>
 
-
 ## ProductExternalIdBag
 
 
@@ -398,7 +383,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## ProductRef
 
@@ -445,7 +429,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## SellerRef
 

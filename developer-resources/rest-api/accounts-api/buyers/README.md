@@ -1,5 +1,5 @@
 
-# Buyer
+## Buyer
 
 
 
@@ -79,12 +79,6 @@
         </tr></tbody>
 </table>
 
-
-
-
-
-
-
 ## AccountRef
 
 
@@ -130,7 +124,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## Address
 
@@ -178,7 +171,6 @@
     </tbody>
 </table>
 
-
 ## BuyerAudit
 
 
@@ -220,7 +212,6 @@
     </tbody>
 </table>
 
-
 ## BuyerExternalIds
 
 
@@ -252,7 +243,6 @@
     </tbody>
 </table>
 
-
 ## ParametrisedMessage
 
 
@@ -283,7 +273,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformIdentityRef
 
@@ -321,7 +310,6 @@
     </tbody>
 </table>
 
-
 ## PlatformMetadata
 
 
@@ -342,7 +330,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformObjectEvent
 
@@ -369,7 +356,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## SellerRef
 

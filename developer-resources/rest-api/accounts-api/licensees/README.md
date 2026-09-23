@@ -1,5 +1,5 @@
 
-# Licensee
+## Licensee
 
 
 
@@ -89,12 +89,6 @@
         </tr></tbody>
 </table>
 
-
-
-
-
-
-
 ## AccountRef
 
 
@@ -140,7 +134,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## Address
 
@@ -188,7 +181,6 @@
     </tbody>
 </table>
 
-
 ## BuyerRef
 
 
@@ -225,7 +217,6 @@
     </tbody>
 </table>
 
-
 ## Eligibility
 
 
@@ -251,7 +242,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## LicenseeAudit
 
@@ -283,7 +273,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformIdentityRef
 
@@ -321,7 +310,6 @@
     </tbody>
 </table>
 
-
 ## PlatformMetadata
 
 
@@ -342,7 +330,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformObjectEvent
 
@@ -369,7 +356,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## SellerRef
 

@@ -1,5 +1,5 @@
 
-# Rate
+## Rate
 
 Record of rate for specific day
 
@@ -69,12 +69,6 @@ Record of rate for specific day
         </tr></tbody>
 </table>
 
-
-
-
-
-
-
 ## ExchangeAudit
 
 Exchange Entity Audit properties bag
@@ -105,7 +99,6 @@ Exchange Entity Audit properties bag
         </tr>
     </tbody>
 </table>
-
 
 ## PairRef
 
@@ -158,7 +151,6 @@ Represents a pair of currencies in exchange module.
     </tbody>
 </table>
 
-
 ## PlatformIdentityRef
 
 
@@ -195,7 +187,6 @@ Represents a pair of currencies in exchange module.
     </tbody>
 </table>
 
-
 ## PlatformMetadata
 
 
@@ -216,7 +207,6 @@ Represents a pair of currencies in exchange module.
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformObjectEvent
 
@@ -243,7 +233,6 @@ Represents a pair of currencies in exchange module.
         </tr>
     </tbody>
 </table>
-
 
 ## RateRef
 

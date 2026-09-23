@@ -1,5 +1,5 @@
 
-# Asset
+## Asset
 
 
 
@@ -98,12 +98,6 @@
             <td></td>
         </tr></tbody>
 </table>
-
-
-
-
-
-
 
 ## Account
 
@@ -211,7 +205,6 @@
     </tbody>
 </table>
 
-
 ## AccountExternalIds
 
 
@@ -232,7 +225,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## AccountRef
 
@@ -280,7 +272,6 @@
     </tbody>
 </table>
 
-
 ## Address
 
 
@@ -326,7 +317,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## Agreement
 
@@ -484,7 +474,6 @@
     </tbody>
 </table>
 
-
 ## AgreementAudit
 
 
@@ -525,7 +514,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## AgreementLine
 
@@ -628,7 +616,6 @@
     </tbody>
 </table>
 
-
 ## AgreementLineAudit
 
 
@@ -664,7 +651,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## AgreementLinePrice
 
@@ -747,7 +733,6 @@
     </tbody>
 </table>
 
-
 ## AgreementRef
 
 
@@ -788,7 +773,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## AgreementSummaryPrice
 
@@ -871,7 +855,6 @@
     </tbody>
 </table>
 
-
 ## AssetAudit
 
 
@@ -913,7 +896,6 @@
     </tbody>
 </table>
 
-
 ## AssetParameterBag
 
 
@@ -934,7 +916,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## AssetRef
 
@@ -971,7 +952,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## AssetSummaryPrice
 
@@ -1034,7 +1014,6 @@
     </tbody>
 </table>
 
-
 ## AuthorizationRef
 
 
@@ -1070,7 +1049,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## Buyer
 
@@ -1153,7 +1131,6 @@
     </tbody>
 </table>
 
-
 ## BuyerAudit
 
 
@@ -1195,7 +1172,6 @@
     </tbody>
 </table>
 
-
 ## BuyerExternalIds
 
 
@@ -1226,7 +1202,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## BuyerRef
 
@@ -1264,7 +1239,6 @@
     </tbody>
 </table>
 
-
 ## CapacitySettings
 
 
@@ -1290,7 +1264,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## CertificateRef
 
@@ -1322,7 +1295,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## CommerceParameter
 
@@ -1395,7 +1367,6 @@
     </tbody>
 </table>
 
-
 ## CommerceTermsAndConditionsRef
 
 
@@ -1437,7 +1408,6 @@
     </tbody>
 </table>
 
-
 ## Eligibility
 
 
@@ -1463,7 +1433,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## ErpLinkRef
 
@@ -1510,7 +1479,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## ExtendedIdentity
 
@@ -1568,7 +1536,6 @@
     </tbody>
 </table>
 
-
 ## ExternalIds
 
 
@@ -1600,7 +1567,6 @@
     </tbody>
 </table>
 
-
 ## ItemGroupRef
 
 
@@ -1631,7 +1597,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## LicenseeRef
 
@@ -1674,7 +1639,6 @@
     </tbody>
 </table>
 
-
 ## ListingRef
 
 
@@ -1706,7 +1670,6 @@
     </tbody>
 </table>
 
-
 ## MarkupSourcePrice
 
 
@@ -1733,7 +1696,6 @@
     </tbody>
 </table>
 
-
 ## MarkupSourceRefPrice
 
 
@@ -1759,7 +1721,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## Order
 
@@ -1937,7 +1898,6 @@
     </tbody>
 </table>
 
-
 ## OrderAsset
 
 
@@ -2014,7 +1974,6 @@
     </tbody>
 </table>
 
-
 ## OrderAssetAudit
 
 
@@ -2056,7 +2015,6 @@
     </tbody>
 </table>
 
-
 ## OrderAssetRef
 
 
@@ -2092,7 +2050,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## OrderAudit
 
@@ -2149,7 +2106,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## OrderLine
 
@@ -2252,7 +2208,6 @@
     </tbody>
 </table>
 
-
 ## OrderLinePrice
 
 
@@ -2333,7 +2288,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## OrderSubscription
 
@@ -2441,7 +2395,6 @@
     </tbody>
 </table>
 
-
 ## OrderSubscriptionAudit
 
 
@@ -2488,7 +2441,6 @@
     </tbody>
 </table>
 
-
 ## OrderSubscriptionRef
 
 
@@ -2529,7 +2481,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## OrderSummaryPrice
 
@@ -2607,7 +2558,6 @@
     </tbody>
 </table>
 
-
 ## ParameterBag
 
 
@@ -2633,7 +2583,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## ParameterConstraints
 
@@ -2670,7 +2619,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## ParameterValue
 
@@ -2723,7 +2671,6 @@
     </tbody>
 </table>
 
-
 ## ParametrisedMessage
 
 
@@ -2754,7 +2701,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformIdentityRef
 
@@ -2792,7 +2738,6 @@
     </tbody>
 </table>
 
-
 ## PlatformMetadata
 
 
@@ -2813,7 +2758,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformObjectAudit
 
@@ -2841,7 +2785,6 @@
     </tbody>
 </table>
 
-
 ## PlatformObjectEvent
 
 
@@ -2867,7 +2810,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## PreValidationSettings
 
@@ -2910,7 +2852,6 @@
     </tbody>
 </table>
 
-
 ## PriceInfo
 
 
@@ -2936,7 +2877,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## PriceListRef
 
@@ -2969,7 +2909,6 @@
     </tbody>
 </table>
 
-
 ## PricingPolicyEligibility
 
 
@@ -2995,7 +2934,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## PricingPolicyRef
 
@@ -3042,7 +2980,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## Product
 
@@ -3130,7 +3067,6 @@
     </tbody>
 </table>
 
-
 ## ProductAudit
 
 
@@ -3172,7 +3108,6 @@
     </tbody>
 </table>
 
-
 ## ProductExternalIdBag
 
 
@@ -3198,7 +3133,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## ProductItem
 
@@ -3286,7 +3220,6 @@
     </tbody>
 </table>
 
-
 ## ProductItemAudit
 
 
@@ -3328,7 +3261,6 @@
     </tbody>
 </table>
 
-
 ## ProductItemExternalIdBag
 
 
@@ -3354,7 +3286,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## ProductRef
 
@@ -3402,7 +3333,6 @@
     </tbody>
 </table>
 
-
 ## ProductRequestsSetting
 
 
@@ -3433,7 +3363,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## ProductSettings
 
@@ -3491,7 +3420,6 @@
     </tbody>
 </table>
 
-
 ## ProductSplitBillingRequestsSetting
 
 
@@ -3517,7 +3445,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## ProductStatistics
 
@@ -3554,7 +3481,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## Seller
 
@@ -3632,7 +3558,6 @@
     </tbody>
 </table>
 
-
 ## SellerAttributes
 
 
@@ -3653,7 +3578,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## SellerCurrency
 
@@ -3685,7 +3609,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## SellerRef
 
@@ -3728,7 +3651,6 @@
     </tbody>
 </table>
 
-
 ## SplitBillingAgreementRef
 
 
@@ -3755,7 +3677,6 @@
     </tbody>
 </table>
 
-
 ## SplitBillingSubscriptionRef
 
 
@@ -3781,7 +3702,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## Subscription
 
@@ -3914,7 +3834,6 @@
     </tbody>
 </table>
 
-
 ## SubscriptionAudit
 
 
@@ -3971,7 +3890,6 @@
     </tbody>
 </table>
 
-
 ## SubscriptionCessationSetting
 
 
@@ -3998,7 +3916,6 @@
     </tbody>
 </table>
 
-
 ## SubscriptionParameterBag
 
 
@@ -4019,7 +3936,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## SubscriptionRef
 
@@ -4051,7 +3967,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## SubscriptionSummaryPrice
 
@@ -4124,7 +4039,6 @@
     </tbody>
 </table>
 
-
 ## TemplateRef
 
 
@@ -4156,7 +4070,6 @@
     </tbody>
 </table>
 
-
 ## Terms
 
 
@@ -4187,7 +4100,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## UnitOfMeasureRef
 
@@ -4224,7 +4136,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## UserGroupRef
 

@@ -1,5 +1,5 @@
 
-# Answer
+## Answer
 
 A form submission within a chat, containing parameter values filled by participants
 
@@ -69,12 +69,6 @@ A form submission within a chat, containing parameter values filled by participa
         </tr></tbody>
 </table>
 
-
-
-
-
-
-
 ## AccountRef
 
 
@@ -121,7 +115,6 @@ A form submission within a chat, containing parameter values filled by participa
     </tbody>
 </table>
 
-
 ## AnswerAudit
 
 Audit information for answer lifecycle events
@@ -167,7 +160,6 @@ Audit information for answer lifecycle events
         </tr>
     </tbody>
 </table>
-
 
 ## AnswerParameter
 
@@ -242,7 +234,6 @@ system error.</td>
     </tbody>
 </table>
 
-
 ## CapacitySettings
 
 
@@ -268,7 +259,6 @@ system error.</td>
         </tr>
     </tbody>
 </table>
-
 
 ## Chat
 
@@ -341,7 +331,6 @@ system error.</td>
     </tbody>
 </table>
 
-
 ## ChatAttachmentRef
 
 
@@ -382,7 +371,6 @@ system error.</td>
         </tr>
     </tbody>
 </table>
-
 
 ## ChatMessageRef
 
@@ -425,7 +413,6 @@ system error.</td>
     </tbody>
 </table>
 
-
 ## ChatParticipantRef
 
 
@@ -462,7 +449,6 @@ system error.</td>
     </tbody>
 </table>
 
-
 ## ErrorDetails
 
 Structured error details for an answer parameter
@@ -488,7 +474,6 @@ Structured error details for an answer parameter
         </tr>
     </tbody>
 </table>
-
 
 ## File
 
@@ -555,7 +540,6 @@ Represents a file in the helpdesk module
         </tr>
     </tbody>
 </table>
-
 
 ## Form
 
@@ -633,7 +617,6 @@ Represents a file in the helpdesk module
     </tbody>
 </table>
 
-
 ## FormAudit
 
 
@@ -675,7 +658,6 @@ Represents a file in the helpdesk module
     </tbody>
 </table>
 
-
 ## FormStatistics
 
 Represents usage statistics for a form.
@@ -701,7 +683,6 @@ Represents usage statistics for a form.
         </tr>
     </tbody>
 </table>
-
 
 ## HelpdeskConstraints
 
@@ -744,7 +725,6 @@ Constraints specific to helpdesk parameters
     </tbody>
 </table>
 
-
 ## JsonNode
 
 
@@ -776,7 +756,6 @@ Constraints specific to helpdesk parameters
     </tbody>
 </table>
 
-
 ## JsonNodeOptions
 
 
@@ -797,7 +776,6 @@ Constraints specific to helpdesk parameters
         </tr>
     </tbody>
 </table>
-
 
 ## OrderedParameterGroupRef
 
@@ -845,7 +823,6 @@ Ordered parameter group within a form
     </tbody>
 </table>
 
-
 ## PlatformIdentityRef
 
 
@@ -882,7 +859,6 @@ Ordered parameter group within a form
     </tbody>
 </table>
 
-
 ## PlatformMetadata
 
 
@@ -903,7 +879,6 @@ Ordered parameter group within a form
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformObjectAudit
 
@@ -930,7 +905,6 @@ Ordered parameter group within a form
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformObjectEvent
 

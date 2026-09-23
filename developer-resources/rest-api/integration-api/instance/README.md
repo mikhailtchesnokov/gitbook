@@ -1,5 +1,5 @@
 
-# Instance
+## Instance
 
 
 
@@ -64,12 +64,6 @@
         </tr></tbody>
 </table>
 
-
-
-
-
-
-
 ## Channel
 
 
@@ -90,7 +84,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## ExtensionMetaRef
 
@@ -128,7 +121,6 @@
     </tbody>
 </table>
 
-
 ## ExtensionRef
 
 
@@ -164,7 +156,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## InstanceAudit
 
@@ -207,7 +198,6 @@
     </tbody>
 </table>
 
-
 ## PlatformIdentityRef
 
 
@@ -244,7 +234,6 @@
     </tbody>
 </table>
 
-
 ## PlatformMetadata
 
 
@@ -265,7 +254,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformObjectEvent
 

@@ -1,5 +1,5 @@
 
-# JournalAttachment
+## JournalAttachment
 
 Represents an attachment associated with a journal in the billing system.
 
@@ -79,12 +79,6 @@ Represents an attachment associated with a journal in the billing system.
         </tr></tbody>
 </table>
 
-
-
-
-
-
-
 ## AccountRef
 
 
@@ -131,7 +125,6 @@ Represents an attachment associated with a journal in the billing system.
     </tbody>
 </table>
 
-
 ## JournalRef
 
 Represents a journal entry in the billing system.
@@ -167,7 +160,6 @@ Represents a journal entry in the billing system.
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformIdentityRef
 
@@ -205,7 +197,6 @@ Represents a journal entry in the billing system.
     </tbody>
 </table>
 
-
 ## PlatformMetadata
 
 
@@ -226,7 +217,6 @@ Represents a journal entry in the billing system.
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformObjectAudit
 
@@ -253,7 +243,6 @@ Represents a journal entry in the billing system.
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformObjectEvent
 

@@ -1,5 +1,5 @@
 
-# Directory
+## Directory
 
 
 
@@ -54,12 +54,6 @@
         </tr></tbody>
 </table>
 
-
-
-
-
-
-
 ## AccountRef
 
 
@@ -105,7 +99,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## ContactRef
 
@@ -153,7 +146,6 @@ Represents a notification contact who can receive email notifications.
     </tbody>
 </table>
 
-
 ## NumberFormat
 
 
@@ -180,7 +172,6 @@ Represents a notification contact who can receive email notifications.
     </tbody>
 </table>
 
-
 ## PhoneNumber
 
 
@@ -206,7 +197,6 @@ Represents a notification contact who can receive email notifications.
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformIdentity
 
@@ -254,7 +244,6 @@ Represents a notification contact who can receive email notifications.
     </tbody>
 </table>
 
-
 ## PlatformIdentityRef
 
 
@@ -291,7 +280,6 @@ Represents a notification contact who can receive email notifications.
     </tbody>
 </table>
 
-
 ## PlatformMetadata
 
 
@@ -312,7 +300,6 @@ Represents a notification contact who can receive email notifications.
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformObjectAudit
 
@@ -340,7 +327,6 @@ Represents a notification contact who can receive email notifications.
     </tbody>
 </table>
 
-
 ## PlatformObjectEvent
 
 
@@ -366,7 +352,6 @@ Represents a notification contact who can receive email notifications.
         </tr>
     </tbody>
 </table>
-
 
 ## User
 
@@ -459,7 +444,6 @@ Represents a notification contact who can receive email notifications.
     </tbody>
 </table>
 
-
 ## UserAudit
 
 
@@ -490,7 +474,6 @@ Represents a notification contact who can receive email notifications.
         </tr>
     </tbody>
 </table>
-
 
 ## UserSettings
 
@@ -542,7 +525,6 @@ Represents a notification contact who can receive email notifications.
         </tr>
     </tbody>
 </table>
-
 
 ## UserSettingsOptOuts
 

@@ -1,5 +1,5 @@
 
-# Authorization
+## Authorization
 
 
 
@@ -89,12 +89,6 @@
         </tr></tbody>
 </table>
 
-
-
-
-
-
-
 ## AccountRef
 
 
@@ -141,7 +135,6 @@
     </tbody>
 </table>
 
-
 ## AuthorizationEligibility
 
 
@@ -168,7 +161,6 @@
     </tbody>
 </table>
 
-
 ## AuthorizationExternalIdBag
 
 
@@ -189,7 +181,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## AuthorizationJournal
 
@@ -216,7 +207,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## AuthorizationStatistics
 
@@ -254,7 +244,6 @@
     </tbody>
 </table>
 
-
 ## PlatformIdentityRef
 
 
@@ -291,7 +280,6 @@
     </tbody>
 </table>
 
-
 ## PlatformMetadata
 
 
@@ -312,7 +300,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformObjectAudit
 
@@ -340,7 +327,6 @@
     </tbody>
 </table>
 
-
 ## PlatformObjectEvent
 
 
@@ -367,7 +353,6 @@
     </tbody>
 </table>
 
-
 ## ProductExternalIdBag
 
 
@@ -393,7 +378,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## ProductRef
 
@@ -440,7 +424,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## SellerRef
 

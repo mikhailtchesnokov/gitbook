@@ -1,5 +1,5 @@
 
-# Queue
+## Queue
 
 
 
@@ -88,12 +88,6 @@
             <td>Indicates whether the queue has been marked as deleted.</td>
         </tr></tbody>
 </table>
-
-
-
-
-
-
 
 ## Account
 
@@ -201,7 +195,6 @@
     </tbody>
 </table>
 
-
 ## AccountExternalIds
 
 
@@ -222,7 +215,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## Address
 
@@ -270,7 +262,6 @@
     </tbody>
 </table>
 
-
 ## Eligibility
 
 
@@ -296,7 +287,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformIdentityRef
 
@@ -334,7 +324,6 @@
     </tbody>
 </table>
 
-
 ## PlatformMetadata
 
 
@@ -355,7 +344,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformObjectAudit
 
@@ -383,7 +371,6 @@
     </tbody>
 </table>
 
-
 ## PlatformObjectEvent
 
 
@@ -409,7 +396,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## QueueAudit
 
@@ -452,7 +438,6 @@
     </tbody>
 </table>
 
-
 ## QueueStatistics
 
 
@@ -478,7 +463,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## UserGroupRef
 

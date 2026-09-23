@@ -1,5 +1,5 @@
 
-# Journal
+## Journal
 
 Represents a journal entry in the billing system.
 
@@ -114,12 +114,6 @@ Represents a journal entry in the billing system.
         </tr></tbody>
 </table>
 
-
-
-
-
-
-
 ## AccountRef
 
 
@@ -166,7 +160,6 @@ Represents a journal entry in the billing system.
     </tbody>
 </table>
 
-
 ## AuthorizationRef
 
 
@@ -203,7 +196,6 @@ Represents a journal entry in the billing system.
     </tbody>
 </table>
 
-
 ## BackupDetails
 
 Represents the details of a backup operation, including its status and date.
@@ -229,7 +221,6 @@ Represents the details of a backup operation, including its status and date.
         </tr>
     </tbody>
 </table>
-
 
 ## BillingError
 
@@ -267,7 +258,6 @@ Represents an error related to a billing entity.
     </tbody>
 </table>
 
-
 ## BillingExternalIds
 
 Represents external identifiers associated with billing entities.
@@ -293,7 +283,6 @@ Represents external identifiers associated with billing entities.
         </tr>
     </tbody>
 </table>
-
 
 ## JournalAuditBag
 
@@ -376,7 +365,6 @@ Represents a container for audit-related events for a journal
     </tbody>
 </table>
 
-
 ## JournalPriceSummary
 
 Represents a detailed summary of pricing.
@@ -418,7 +406,6 @@ Represents a detailed summary of pricing.
     </tbody>
 </table>
 
-
 ## JournalUploadSummary
 
 Represents a summary of the upload status for a journal entry.
@@ -454,7 +441,6 @@ Represents a summary of the upload status for a journal entry.
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformIdentityRef
 
@@ -492,7 +478,6 @@ Represents a summary of the upload status for a journal entry.
     </tbody>
 </table>
 
-
 ## PlatformMetadata
 
 
@@ -513,7 +498,6 @@ Represents a summary of the upload status for a journal entry.
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformObjectEvent
 
@@ -540,7 +524,6 @@ Represents a summary of the upload status for a journal entry.
         </tr>
     </tbody>
 </table>
-
 
 ## ProcessingSummary
 
@@ -588,7 +571,6 @@ Represents a summary of the processing status for various billing operations.
     </tbody>
 </table>
 
-
 ## ProductExternalIdBag
 
 
@@ -614,7 +596,6 @@ Represents a summary of the processing status for various billing operations.
         </tr>
     </tbody>
 </table>
-
 
 ## ProductRef
 
@@ -661,7 +642,6 @@ Represents a summary of the processing status for various billing operations.
         </tr>
     </tbody>
 </table>
-
 
 ## SellerRef
 

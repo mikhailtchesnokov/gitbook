@@ -1,5 +1,5 @@
 
-# ParameterGroup
+## ParameterGroup
 
 
 
@@ -69,12 +69,6 @@
         </tr></tbody>
 </table>
 
-
-
-
-
-
-
 ## PlatformIdentityRef
 
 
@@ -111,7 +105,6 @@
     </tbody>
 </table>
 
-
 ## PlatformMetadata
 
 
@@ -132,7 +125,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformObjectAudit
 
@@ -160,7 +152,6 @@
     </tbody>
 </table>
 
-
 ## PlatformObjectEvent
 
 
@@ -187,7 +178,6 @@
     </tbody>
 </table>
 
-
 ## ProductExternalIdBag
 
 
@@ -213,7 +203,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## ProductRef
 

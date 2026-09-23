@@ -1,5 +1,5 @@
 
-# FeedbackAttachment
+## FeedbackAttachment
 
 
 
@@ -64,12 +64,6 @@
         </tr></tbody>
 </table>
 
-
-
-
-
-
-
 ## AccountRef
 
 
@@ -115,7 +109,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## Feedback
 
@@ -213,7 +206,6 @@
     </tbody>
 </table>
 
-
 ## FeedbackAttachmentAudit
 
 
@@ -244,7 +236,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## FeedbackAttachmentRef
 
@@ -296,7 +287,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## File
 
@@ -364,7 +354,6 @@ Represents a file in the helpdesk module
     </tbody>
 </table>
 
-
 ## PlatformIdentityRef
 
 
@@ -401,7 +390,6 @@ Represents a file in the helpdesk module
     </tbody>
 </table>
 
-
 ## PlatformMetadata
 
 
@@ -422,7 +410,6 @@ Represents a file in the helpdesk module
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformObjectAudit
 
@@ -449,7 +436,6 @@ Represents a file in the helpdesk module
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformObjectEvent
 

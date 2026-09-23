@@ -1,5 +1,5 @@
 
-# Installation
+## Installation
 
 
 
@@ -74,12 +74,6 @@
         </tr></tbody>
 </table>
 
-
-
-
-
-
-
 ## AccountRef
 
 
@@ -126,7 +120,6 @@
     </tbody>
 </table>
 
-
 ## ExtensionRef
 
 
@@ -163,7 +156,6 @@
     </tbody>
 </table>
 
-
 ## Filters
 
 
@@ -184,7 +176,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## InstallationAudit
 
@@ -232,7 +223,6 @@
     </tbody>
 </table>
 
-
 ## InstallationTermRef
 
 
@@ -274,7 +264,6 @@
     </tbody>
 </table>
 
-
 ## Invitation
 
 
@@ -315,7 +304,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## ModuleRef
 
@@ -362,7 +350,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## ModuleSettings
 
@@ -415,7 +402,6 @@
     </tbody>
 </table>
 
-
 ## ModuleSettingsEligibility
 
 
@@ -441,7 +427,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformIdentity
 
@@ -489,7 +474,6 @@
     </tbody>
 </table>
 
-
 ## PlatformIdentityRef
 
 
@@ -526,7 +510,6 @@
     </tbody>
 </table>
 
-
 ## PlatformMetadata
 
 
@@ -547,7 +530,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformObjectAudit
 
@@ -574,7 +556,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformObjectEvent
 

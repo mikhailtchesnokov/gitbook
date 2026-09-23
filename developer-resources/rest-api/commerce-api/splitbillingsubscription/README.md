@@ -1,5 +1,5 @@
 
-# SplitBillingSubscription
+## SplitBillingSubscription
 
 
 
@@ -44,12 +44,6 @@
         </tr></tbody>
 </table>
 
-
-
-
-
-
-
 ## BuyerRef
 
 
@@ -85,7 +79,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformIdentityRef
 
@@ -123,7 +116,6 @@
     </tbody>
 </table>
 
-
 ## PlatformMetadata
 
 
@@ -144,7 +136,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformObjectAudit
 
@@ -172,7 +163,6 @@
     </tbody>
 </table>
 
-
 ## PlatformObjectEvent
 
 
@@ -198,7 +188,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## SplitBillingAllocationPrice
 
@@ -241,7 +230,6 @@
     </tbody>
 </table>
 
-
 ## SplitBillingSubscriptionAllocation
 
 
@@ -277,7 +265,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## SubscriptionRef
 

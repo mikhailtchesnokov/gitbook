@@ -1,5 +1,5 @@
 
-# SplitBillingAgreement
+## SplitBillingAgreement
 
 
 
@@ -39,12 +39,6 @@
         </tr></tbody>
 </table>
 
-
-
-
-
-
-
 ## BuyerRef
 
 
@@ -81,7 +75,6 @@
     </tbody>
 </table>
 
-
 ## ExternalIds
 
 
@@ -112,7 +105,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformIdentityRef
 
@@ -150,7 +142,6 @@
     </tbody>
 </table>
 
-
 ## PlatformMetadata
 
 
@@ -171,7 +162,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformObjectAudit
 
@@ -199,7 +189,6 @@
     </tbody>
 </table>
 
-
 ## PlatformObjectEvent
 
 
@@ -225,7 +214,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## SplitBillingAgreementAllocation
 
@@ -273,7 +261,6 @@
     </tbody>
 </table>
 
-
 ## SplitBillingAllocationPrice
 
 
@@ -314,7 +301,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## SplitBillingAllocationStatistics
 

@@ -1,5 +1,5 @@
 
-# Seller
+## Seller
 
 
 
@@ -74,12 +74,6 @@
         </tr></tbody>
 </table>
 
-
-
-
-
-
-
 ## Address
 
 
@@ -125,7 +119,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## ErpLinkRef
 
@@ -173,7 +166,6 @@
     </tbody>
 </table>
 
-
 ## PlatformIdentityRef
 
 
@@ -210,7 +202,6 @@
     </tbody>
 </table>
 
-
 ## PlatformMetadata
 
 
@@ -231,7 +222,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformObjectAudit
 
@@ -259,7 +249,6 @@
     </tbody>
 </table>
 
-
 ## PlatformObjectEvent
 
 
@@ -286,7 +275,6 @@
     </tbody>
 </table>
 
-
 ## SellerAttributes
 
 
@@ -307,7 +295,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## SellerCurrency
 

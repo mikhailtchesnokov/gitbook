@@ -1,5 +1,5 @@
 
-# ProductDocument
+## ProductDocument
 
 
 
@@ -84,8 +84,7 @@
         </tr></tbody>
 </table>
 
-
-# Document
+## Document
 
 
 
@@ -170,12 +169,6 @@
         </tr></tbody>
 </table>
 
-
-
-
-
-
-
 ## PlatformIdentityRef
 
 
@@ -212,7 +205,6 @@
     </tbody>
 </table>
 
-
 ## PlatformMetadata
 
 
@@ -233,7 +225,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformObjectAudit
 
@@ -261,7 +252,6 @@
     </tbody>
 </table>
 
-
 ## PlatformObjectEvent
 
 
@@ -288,7 +278,6 @@
     </tbody>
 </table>
 
-
 ## ProductExternalIdBag
 
 
@@ -314,7 +303,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## ProductRef
 
@@ -362,7 +350,6 @@
     </tbody>
 </table>
 
-
 ## DocumentAudit
 
 
@@ -398,7 +385,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## ExtensionRef
 
@@ -436,7 +422,6 @@
     </tbody>
 </table>
 
-
 ## PlatformIdentityRef
 
 
@@ -473,7 +458,6 @@
     </tbody>
 </table>
 
-
 ## PlatformMetadata
 
 
@@ -494,7 +478,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformObjectEvent
 

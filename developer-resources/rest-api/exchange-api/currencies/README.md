@@ -1,5 +1,5 @@
 
-# Currency
+## Currency
 
 Represents currency in exchange module.
 
@@ -64,12 +64,6 @@ Represents currency in exchange module.
         </tr></tbody>
 </table>
 
-
-
-
-
-
-
 ## CurrencyStatistics
 
 Currency usage statistics
@@ -95,7 +89,6 @@ Currency usage statistics
         </tr>
     </tbody>
 </table>
-
 
 ## ExchangeAudit
 
@@ -127,7 +120,6 @@ Exchange Entity Audit properties bag
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformIdentityRef
 
@@ -165,7 +157,6 @@ Exchange Entity Audit properties bag
     </tbody>
 </table>
 
-
 ## PlatformMetadata
 
 
@@ -186,7 +177,6 @@ Exchange Entity Audit properties bag
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformObjectEvent
 

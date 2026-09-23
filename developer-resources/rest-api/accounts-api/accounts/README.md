@@ -1,5 +1,5 @@
 
-# Account
+## Account
 
 
 
@@ -104,12 +104,6 @@
         </tr></tbody>
 </table>
 
-
-
-
-
-
-
 ## AccountExternalIds
 
 
@@ -130,7 +124,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## Address
 
@@ -178,7 +171,6 @@
     </tbody>
 </table>
 
-
 ## Eligibility
 
 
@@ -204,7 +196,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformIdentityRef
 
@@ -242,7 +233,6 @@
     </tbody>
 </table>
 
-
 ## PlatformMetadata
 
 
@@ -263,7 +253,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformObjectAudit
 
@@ -291,7 +280,6 @@
     </tbody>
 </table>
 
-
 ## PlatformObjectEvent
 
 
@@ -317,7 +305,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## UserGroupRef
 

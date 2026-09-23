@@ -1,5 +1,5 @@
 
-# Document
+## Document
 
 
 
@@ -84,12 +84,6 @@
         </tr></tbody>
 </table>
 
-
-
-
-
-
-
 ## DocumentAudit
 
 
@@ -125,7 +119,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## ExtensionRef
 
@@ -163,7 +156,6 @@
     </tbody>
 </table>
 
-
 ## PlatformIdentityRef
 
 
@@ -200,7 +192,6 @@
     </tbody>
 </table>
 
-
 ## PlatformMetadata
 
 
@@ -221,7 +212,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformObjectEvent
 

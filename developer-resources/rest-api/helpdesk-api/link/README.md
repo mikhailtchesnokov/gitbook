@@ -1,5 +1,5 @@
 
-# ChatLink
+## ChatLink
 
 
 
@@ -64,12 +64,6 @@
         </tr></tbody>
 </table>
 
-
-
-
-
-
-
 ## ChatLinkAudit
 
 
@@ -100,7 +94,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## ChatLinkRef
 
@@ -152,7 +145,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## ChatMessage
 
@@ -230,7 +222,6 @@
     </tbody>
 </table>
 
-
 ## ChatMessageAudit
 
 
@@ -271,7 +262,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## ChatMessageRef
 
@@ -314,7 +304,6 @@
     </tbody>
 </table>
 
-
 ## ChatParticipantRef
 
 
@@ -350,7 +339,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## ChatRef
 
@@ -393,7 +381,6 @@
     </tbody>
 </table>
 
-
 ## PlatformIdentityRef
 
 
@@ -430,7 +417,6 @@
     </tbody>
 </table>
 
-
 ## PlatformMetadata
 
 
@@ -451,7 +437,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformObjectEvent
 

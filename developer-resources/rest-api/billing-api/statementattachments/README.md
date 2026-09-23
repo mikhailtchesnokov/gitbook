@@ -1,5 +1,5 @@
 
-# StatementAttachment
+## StatementAttachment
 
 Represents an attachment associated with a billing statement in the system.
 
@@ -74,12 +74,6 @@ Represents an attachment associated with a billing statement in the system.
         </tr></tbody>
 </table>
 
-
-
-
-
-
-
 ## PlatformIdentityRef
 
 
@@ -116,7 +110,6 @@ Represents an attachment associated with a billing statement in the system.
     </tbody>
 </table>
 
-
 ## PlatformMetadata
 
 
@@ -137,7 +130,6 @@ Represents an attachment associated with a billing statement in the system.
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformObjectAudit
 
@@ -165,7 +157,6 @@ Represents an attachment associated with a billing statement in the system.
     </tbody>
 </table>
 
-
 ## PlatformObjectEvent
 
 
@@ -191,7 +182,6 @@ Represents an attachment associated with a billing statement in the system.
         </tr>
     </tbody>
 </table>
-
 
 ## StatementRef
 

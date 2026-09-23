@@ -1,5 +1,5 @@
 
-# Ledger
+## Ledger
 
 Represents a ledger in the billing system.
 
@@ -89,12 +89,6 @@ Represents a ledger in the billing system.
         </tr></tbody>
 </table>
 
-
-
-
-
-
-
 ## AuthorizationRef
 
 
@@ -131,7 +125,6 @@ Represents a ledger in the billing system.
     </tbody>
 </table>
 
-
 ## BackupDetails
 
 Represents the details of a backup operation, including its status and date.
@@ -157,7 +150,6 @@ Represents the details of a backup operation, including its status and date.
         </tr>
     </tbody>
 </table>
-
 
 ## BillingError
 
@@ -195,7 +187,6 @@ Represents an error related to a billing entity.
     </tbody>
 </table>
 
-
 ## JournalRef
 
 Represents a journal entry in the billing system.
@@ -231,7 +222,6 @@ Represents a journal entry in the billing system.
         </tr>
     </tbody>
 </table>
-
 
 ## LedgerAuditBag
 
@@ -294,7 +284,6 @@ Represents a container for audit-related events for a ledger
     </tbody>
 </table>
 
-
 ## LedgerPriceSummary
 
 Represents a detailed summary of pricing for a ledger.
@@ -336,7 +325,6 @@ Represents a detailed summary of pricing for a ledger.
     </tbody>
 </table>
 
-
 ## PlatformIdentityRef
 
 
@@ -373,7 +361,6 @@ Represents a detailed summary of pricing for a ledger.
     </tbody>
 </table>
 
-
 ## PlatformMetadata
 
 
@@ -394,7 +381,6 @@ Represents a detailed summary of pricing for a ledger.
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformObjectEvent
 
@@ -421,7 +407,6 @@ Represents a detailed summary of pricing for a ledger.
         </tr>
     </tbody>
 </table>
-
 
 ## ProcessingSummary
 
@@ -469,7 +454,6 @@ Represents a summary of the processing status for various billing operations.
     </tbody>
 </table>
 
-
 ## ProductExternalIdBag
 
 
@@ -495,7 +479,6 @@ Represents a summary of the processing status for various billing operations.
         </tr>
     </tbody>
 </table>
-
 
 ## ProductRef
 
@@ -542,7 +525,6 @@ Represents a summary of the processing status for various billing operations.
         </tr>
     </tbody>
 </table>
-
 
 ## SellerRef
 

@@ -1,5 +1,5 @@
 
-# ExtensionCategory
+## ExtensionCategory
 
 
 
@@ -49,12 +49,6 @@
         </tr></tbody>
 </table>
 
-
-
-
-
-
-
 ## ExtensionCategoryAudit
 
 
@@ -90,7 +84,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformIdentityRef
 
@@ -128,7 +121,6 @@
     </tbody>
 </table>
 
-
 ## PlatformMetadata
 
 
@@ -149,7 +141,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformObjectEvent
 

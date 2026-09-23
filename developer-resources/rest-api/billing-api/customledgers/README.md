@@ -1,5 +1,5 @@
 
-# CustomLedger
+## CustomLedger
 
 Represents a custom ledger in the billing system.
 
@@ -99,12 +99,6 @@ Represents a custom ledger in the billing system.
         </tr></tbody>
 </table>
 
-
-
-
-
-
-
 ## AccountRef
 
 
@@ -151,7 +145,6 @@ Represents a custom ledger in the billing system.
     </tbody>
 </table>
 
-
 ## BackupDetails
 
 Represents the details of a backup operation, including its status and date.
@@ -177,7 +170,6 @@ Represents the details of a backup operation, including its status and date.
         </tr>
     </tbody>
 </table>
-
 
 ## BillingError
 
@@ -215,7 +207,6 @@ Represents an error related to a billing entity.
     </tbody>
 </table>
 
-
 ## BillingExternalIds
 
 Represents external identifiers associated with billing entities.
@@ -241,7 +232,6 @@ Represents external identifiers associated with billing entities.
         </tr>
     </tbody>
 </table>
-
 
 ## CustomLedgerAuditBag
 
@@ -314,7 +304,6 @@ Represents a container for audit-related events for a custom ledger
     </tbody>
 </table>
 
-
 ## CustomLedgerPriceSummary
 
 Represents a detailed summary of pricing for a custom ledger, including currency and totals.
@@ -361,7 +350,6 @@ Represents a detailed summary of pricing for a custom ledger, including currency
     </tbody>
 </table>
 
-
 ## PlatformIdentityRef
 
 
@@ -398,7 +386,6 @@ Represents a detailed summary of pricing for a custom ledger, including currency
     </tbody>
 </table>
 
-
 ## PlatformMetadata
 
 
@@ -419,7 +406,6 @@ Represents a detailed summary of pricing for a custom ledger, including currency
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformObjectEvent
 
@@ -446,7 +432,6 @@ Represents a detailed summary of pricing for a custom ledger, including currency
         </tr>
     </tbody>
 </table>
-
 
 ## PriceCurrency
 
@@ -478,7 +463,6 @@ Represents the currency details for pricing, including purchase and sale values.
         </tr>
     </tbody>
 </table>
-
 
 ## ProcessingSummary
 
@@ -525,7 +509,6 @@ Represents a summary of the processing status for various billing operations.
         </tr>
     </tbody>
 </table>
-
 
 ## SellerRef
 

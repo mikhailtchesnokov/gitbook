@@ -1,5 +1,5 @@
 
-# Product
+## Product
 
 
 
@@ -84,12 +84,6 @@
         </tr></tbody>
 </table>
 
-
-
-
-
-
-
 ## AccountRef
 
 
@@ -136,7 +130,6 @@
     </tbody>
 </table>
 
-
 ## PlatformIdentityRef
 
 
@@ -173,7 +166,6 @@
     </tbody>
 </table>
 
-
 ## PlatformMetadata
 
 
@@ -194,7 +186,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformObjectEvent
 
@@ -221,7 +212,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## PreValidationSettings
 
@@ -264,7 +254,6 @@
     </tbody>
 </table>
 
-
 ## ProductAudit
 
 
@@ -306,7 +295,6 @@
     </tbody>
 </table>
 
-
 ## ProductExternalIdBag
 
 
@@ -332,7 +320,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## ProductRequestsSetting
 
@@ -364,7 +351,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## ProductSettings
 
@@ -422,7 +408,6 @@
     </tbody>
 </table>
 
-
 ## ProductSplitBillingRequestsSetting
 
 
@@ -448,7 +433,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## ProductStatistics
 
@@ -485,7 +469,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## SubscriptionCessationSetting
 

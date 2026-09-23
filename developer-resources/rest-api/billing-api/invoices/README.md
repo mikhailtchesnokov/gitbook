@@ -1,5 +1,5 @@
 
-# Invoice
+## Invoice
 
 Represents an invoice entity in the billing system.
 
@@ -139,12 +139,6 @@ Represents an invoice entity in the billing system.
         </tr></tbody>
 </table>
 
-
-
-
-
-
-
 ## AccountRef
 
 
@@ -191,7 +185,6 @@ Represents an invoice entity in the billing system.
     </tbody>
 </table>
 
-
 ## AgreementRef
 
 
@@ -233,7 +226,6 @@ Represents an invoice entity in the billing system.
     </tbody>
 </table>
 
-
 ## AnalyticsInfo
 
 Analytics insofmation.
@@ -254,7 +246,6 @@ Analytics insofmation.
         </tr>
     </tbody>
 </table>
-
 
 ## BuyerRef
 
@@ -292,7 +283,6 @@ Analytics insofmation.
     </tbody>
 </table>
 
-
 ## DatePeriod
 
 Represents the period during which a charge is applicable.
@@ -318,7 +308,6 @@ Represents the period during which a charge is applicable.
         </tr>
     </tbody>
 </table>
-
 
 ## ErpAddress
 
@@ -416,7 +405,6 @@ Represents an address with various details such as name, address lines, city, po
     </tbody>
 </table>
 
-
 ## ErpAddressList
 
 Represents a list of addresses for billing purposes.
@@ -453,7 +441,6 @@ Represents a list of addresses for billing purposes.
     </tbody>
 </table>
 
-
 ## ErpCode
 
 Represents ERP-specific data related to a credit memo line or invoice line.
@@ -484,7 +471,6 @@ Represents ERP-specific data related to a credit memo line or invoice line.
         </tr>
     </tbody>
 </table>
-
 
 ## ErpExternalIds
 
@@ -517,7 +503,6 @@ Represents invoice references .
     </tbody>
 </table>
 
-
 ## ErpPayment
 
 Represents payment data for ERP systems.
@@ -543,7 +528,6 @@ Represents payment data for ERP systems.
         </tr>
     </tbody>
 </table>
-
 
 ## ErpReferenceNumber
 
@@ -580,7 +564,6 @@ Represents reference numbers associated with an ERP system.
         </tr>
     </tbody>
 </table>
-
 
 ## InvoiceAuditBag
 
@@ -622,7 +605,6 @@ Represents a container for audit-related events for an invoice
         </tr>
     </tbody>
 </table>
-
 
 ## InvoiceErpAttributes
 
@@ -679,7 +661,6 @@ Attributes related to ERP systems for an invoice.
         </tr>
     </tbody>
 </table>
-
 
 ## InvoiceErpData
 
@@ -777,7 +758,6 @@ Represents ERP-specific data related to an invoice.
     </tbody>
 </table>
 
-
 ## InvoiceLine
 
 Represents a line item in an invoice.
@@ -843,7 +823,6 @@ Represents a line item in an invoice.
         </tr>
     </tbody>
 </table>
-
 
 ## InvoiceLineErpData
 
@@ -966,7 +945,6 @@ Represents ERP-specific data related to a invoice line.
     </tbody>
 </table>
 
-
 ## InvoiceLinePrice
 
 Represents the price details of an invoice line.
@@ -1068,7 +1046,6 @@ Represents the price details of an invoice line.
     </tbody>
 </table>
 
-
 ## InvoicePrice
 
 Represents the pricing details of an invoice.
@@ -1130,7 +1107,6 @@ Represents the pricing details of an invoice.
     </tbody>
 </table>
 
-
 ## LicenseeRef
 
 
@@ -1172,7 +1148,6 @@ Represents the pricing details of an invoice.
     </tbody>
 </table>
 
-
 ## PlatformIdentityRef
 
 
@@ -1209,7 +1184,6 @@ Represents the pricing details of an invoice.
     </tbody>
 </table>
 
-
 ## PlatformMetadata
 
 
@@ -1230,7 +1204,6 @@ Represents the pricing details of an invoice.
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformObjectEvent
 
@@ -1258,7 +1231,6 @@ Represents the pricing details of an invoice.
     </tbody>
 </table>
 
-
 ## ProductExternalIdBag
 
 
@@ -1284,7 +1256,6 @@ Represents the pricing details of an invoice.
         </tr>
     </tbody>
 </table>
-
 
 ## ProductRef
 
@@ -1332,7 +1303,6 @@ Represents the pricing details of an invoice.
     </tbody>
 </table>
 
-
 ## SellerRef
 
 
@@ -1373,7 +1343,6 @@ Represents the pricing details of an invoice.
         </tr>
     </tbody>
 </table>
-
 
 ## StatementRef
 

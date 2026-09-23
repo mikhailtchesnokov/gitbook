@@ -1,5 +1,5 @@
 
-# Contact
+## Contact
 
 Represents a notification contact who can receive email notifications.
 
@@ -79,12 +79,6 @@ Represents a notification contact who can receive email notifications.
         </tr></tbody>
 </table>
 
-
-
-
-
-
-
 ## AccountRef
 
 
@@ -131,7 +125,6 @@ Represents a notification contact who can receive email notifications.
     </tbody>
 </table>
 
-
 ## CategoryRef
 
 
@@ -167,7 +160,6 @@ Represents a notification contact who can receive email notifications.
         </tr>
     </tbody>
 </table>
-
 
 ## ContactAudit
 
@@ -210,7 +202,6 @@ Represents audit information for a Mpt.Notifications.Models.Contacts.Contact.
     </tbody>
 </table>
 
-
 ## DirectoryRef
 
 
@@ -236,7 +227,6 @@ Represents audit information for a Mpt.Notifications.Models.Contacts.Contact.
         </tr>
     </tbody>
 </table>
-
 
 ## NumberFormat
 
@@ -264,7 +254,6 @@ Represents audit information for a Mpt.Notifications.Models.Contacts.Contact.
     </tbody>
 </table>
 
-
 ## PhoneNumber
 
 
@@ -290,7 +279,6 @@ Represents audit information for a Mpt.Notifications.Models.Contacts.Contact.
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformIdentity
 
@@ -338,7 +326,6 @@ Represents audit information for a Mpt.Notifications.Models.Contacts.Contact.
     </tbody>
 </table>
 
-
 ## PlatformIdentityRef
 
 
@@ -375,7 +362,6 @@ Represents audit information for a Mpt.Notifications.Models.Contacts.Contact.
     </tbody>
 </table>
 
-
 ## PlatformMetadata
 
 
@@ -396,7 +382,6 @@ Represents audit information for a Mpt.Notifications.Models.Contacts.Contact.
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformObjectAudit
 
@@ -424,7 +409,6 @@ Represents audit information for a Mpt.Notifications.Models.Contacts.Contact.
     </tbody>
 </table>
 
-
 ## PlatformObjectEvent
 
 
@@ -450,7 +434,6 @@ Represents audit information for a Mpt.Notifications.Models.Contacts.Contact.
         </tr>
     </tbody>
 </table>
-
 
 ## User
 
@@ -543,7 +526,6 @@ Represents audit information for a Mpt.Notifications.Models.Contacts.Contact.
     </tbody>
 </table>
 
-
 ## UserAudit
 
 
@@ -574,7 +556,6 @@ Represents audit information for a Mpt.Notifications.Models.Contacts.Contact.
         </tr>
     </tbody>
 </table>
-
 
 ## UserSettings
 
@@ -626,7 +607,6 @@ Represents audit information for a Mpt.Notifications.Models.Contacts.Contact.
         </tr>
     </tbody>
 </table>
-
 
 ## UserSettingsOptOuts
 

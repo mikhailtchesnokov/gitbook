@@ -1,5 +1,5 @@
 
-# Term
+## Term
 
 
 
@@ -59,12 +59,6 @@
         </tr></tbody>
 </table>
 
-
-
-
-
-
-
 ## ExtensionRef
 
 
@@ -100,7 +94,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformIdentityRef
 
@@ -138,7 +131,6 @@
     </tbody>
 </table>
 
-
 ## PlatformMetadata
 
 
@@ -159,7 +151,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformObjectEvent
 
@@ -186,7 +177,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## TermAudit
 

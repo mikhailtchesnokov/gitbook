@@ -1,5 +1,5 @@
 
-# SalesOrder
+## SalesOrder
 
 
 
@@ -98,12 +98,6 @@
             <td></td>
         </tr></tbody>
 </table>
-
-
-
-
-
-
 
 ## Account
 
@@ -211,7 +205,6 @@
     </tbody>
 </table>
 
-
 ## AccountExternalIds
 
 
@@ -232,7 +225,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## AccountRef
 
@@ -280,7 +272,6 @@
     </tbody>
 </table>
 
-
 ## Address
 
 
@@ -327,7 +318,6 @@
     </tbody>
 </table>
 
-
 ## BuyerRef
 
 
@@ -363,7 +353,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## CategoryRef
 
@@ -401,7 +390,6 @@
     </tbody>
 </table>
 
-
 ## DatePeriod
 
 Represents the period during which a charge is applicable.
@@ -427,7 +415,6 @@ Represents the period during which a charge is applicable.
         </tr>
     </tbody>
 </table>
-
 
 ## Eligibility
 
@@ -455,7 +442,6 @@ Represents the period during which a charge is applicable.
     </tbody>
 </table>
 
-
 ## ErpAttributes
 
 
@@ -476,7 +462,6 @@ Represents the period during which a charge is applicable.
         </tr>
     </tbody>
 </table>
-
 
 ## ErpAuditBag
 
@@ -509,7 +494,6 @@ Represents the period during which a charge is applicable.
     </tbody>
 </table>
 
-
 ## ErpItemExternalIds
 
 
@@ -535,7 +519,6 @@ Represents the period during which a charge is applicable.
         </tr>
     </tbody>
 </table>
-
 
 ## ErpItemRef
 
@@ -578,7 +561,6 @@ Represents the period during which a charge is applicable.
     </tbody>
 </table>
 
-
 ## ParametrisedMessage
 
 
@@ -609,7 +591,6 @@ Represents the period during which a charge is applicable.
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformIdentityRef
 
@@ -647,7 +628,6 @@ Represents the period during which a charge is applicable.
     </tbody>
 </table>
 
-
 ## PlatformMetadata
 
 
@@ -668,7 +648,6 @@ Represents the period during which a charge is applicable.
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformObjectAudit
 
@@ -696,7 +675,6 @@ Represents the period during which a charge is applicable.
     </tbody>
 </table>
 
-
 ## PlatformObjectEvent
 
 
@@ -722,7 +700,6 @@ Represents the period during which a charge is applicable.
         </tr>
     </tbody>
 </table>
-
 
 ## ProductProfileRef
 
@@ -770,7 +747,6 @@ Represents the period during which a charge is applicable.
     </tbody>
 </table>
 
-
 ## SalesDocumentExternalIds
 
 
@@ -791,7 +767,6 @@ Represents the period during which a charge is applicable.
         </tr>
     </tbody>
 </table>
-
 
 ## SalesDocumentLinePrice
 
@@ -844,7 +819,6 @@ Represents the period during which a charge is applicable.
     </tbody>
 </table>
 
-
 ## SalesDocumentPrice
 
 
@@ -885,7 +859,6 @@ Represents the period during which a charge is applicable.
         </tr>
     </tbody>
 </table>
-
 
 ## SalesOrderLine
 
@@ -953,7 +926,6 @@ Represents the period during which a charge is applicable.
     </tbody>
 </table>
 
-
 ## SalesOrderRef
 
 
@@ -990,7 +962,6 @@ Represents the period during which a charge is applicable.
     </tbody>
 </table>
 
-
 ## SalesQuoteRef
 
 
@@ -1026,7 +997,6 @@ Represents the period during which a charge is applicable.
         </tr>
     </tbody>
 </table>
-
 
 ## SellerRef
 
@@ -1068,7 +1038,6 @@ Represents the period during which a charge is applicable.
         </tr>
     </tbody>
 </table>
-
 
 ## UserGroupRef
 
@@ -1115,7 +1084,6 @@ Represents the period during which a charge is applicable.
         </tr>
     </tbody>
 </table>
-
 
 ## VendorProfile
 
@@ -1218,7 +1186,6 @@ Represents the period during which a charge is applicable.
     </tbody>
 </table>
 
-
 ## VendorProfileAudit
 
 
@@ -1254,7 +1221,6 @@ Represents the period during which a charge is applicable.
         </tr>
     </tbody>
 </table>
-
 
 ## VendorProfileRef
 

@@ -1,5 +1,5 @@
 
-# Module
+## Module
 
 
 
@@ -64,12 +64,6 @@
         </tr></tbody>
 </table>
 
-
-
-
-
-
-
 ## Filters
 
 
@@ -90,7 +84,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## ModuleSettings
 
@@ -143,7 +136,6 @@
     </tbody>
 </table>
 
-
 ## ModuleSettingsEligibility
 
 
@@ -169,7 +161,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformIdentityRef
 
@@ -207,7 +198,6 @@
     </tbody>
 </table>
 
-
 ## PlatformMetadata
 
 
@@ -228,7 +218,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformObjectAudit
 
@@ -255,7 +244,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformObjectEvent
 

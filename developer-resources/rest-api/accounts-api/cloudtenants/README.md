@@ -1,5 +1,5 @@
 
-# CloudTenant
+## CloudTenant
 
 
 
@@ -59,12 +59,6 @@
         </tr></tbody>
 </table>
 
-
-
-
-
-
-
 ## AccountRef
 
 
@@ -111,7 +105,6 @@
     </tbody>
 </table>
 
-
 ## CloudTenantExternalIds
 
 
@@ -142,7 +135,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformIdentityRef
 
@@ -180,7 +172,6 @@
     </tbody>
 </table>
 
-
 ## PlatformMetadata
 
 
@@ -201,7 +192,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformObjectAudit
 
@@ -228,7 +218,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformObjectEvent
 

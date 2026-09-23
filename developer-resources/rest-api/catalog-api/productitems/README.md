@@ -1,5 +1,5 @@
 
-# ProductItem
+## ProductItem
 
 
 
@@ -84,12 +84,6 @@
         </tr></tbody>
 </table>
 
-
-
-
-
-
-
 ## ItemGroupRef
 
 
@@ -120,7 +114,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## ParameterValue
 
@@ -173,7 +166,6 @@
     </tbody>
 </table>
 
-
 ## PlatformIdentityRef
 
 
@@ -210,7 +202,6 @@
     </tbody>
 </table>
 
-
 ## PlatformMetadata
 
 
@@ -231,7 +222,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformObjectEvent
 
@@ -259,7 +249,6 @@
     </tbody>
 </table>
 
-
 ## ProductExternalIdBag
 
 
@@ -285,7 +274,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## ProductItemAudit
 
@@ -328,7 +316,6 @@
     </tbody>
 </table>
 
-
 ## ProductItemExternalIdBag
 
 
@@ -354,7 +341,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## ProductRef
 
@@ -402,7 +388,6 @@
     </tbody>
 </table>
 
-
 ## Terms
 
 
@@ -433,7 +418,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## UnitOfMeasureRef
 

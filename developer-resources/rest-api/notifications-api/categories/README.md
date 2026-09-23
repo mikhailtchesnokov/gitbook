@@ -1,5 +1,5 @@
 
-# Category
+## Category
 
 Represents a notification category that can be used to organize and filter notifications.
 
@@ -79,12 +79,6 @@ Represents a notification category that can be used to organize and filter notif
         </tr></tbody>
 </table>
 
-
-
-
-
-
-
 ## MessageStatistics
 
 Represents message statistics aggregated over different time periods.
@@ -115,7 +109,6 @@ Represents message statistics aggregated over different time periods.
         </tr>
     </tbody>
 </table>
-
 
 ## NotificationCategoryAudit
 
@@ -158,7 +151,6 @@ Represents audit information for a Mpt.Notifications.Models.Categories.Category.
     </tbody>
 </table>
 
-
 ## PlatformIdentityRef
 
 
@@ -195,7 +187,6 @@ Represents audit information for a Mpt.Notifications.Models.Categories.Category.
     </tbody>
 </table>
 
-
 ## PlatformMetadata
 
 
@@ -216,7 +207,6 @@ Represents audit information for a Mpt.Notifications.Models.Categories.Category.
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformObjectEvent
 

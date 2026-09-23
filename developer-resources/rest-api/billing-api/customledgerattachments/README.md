@@ -1,5 +1,5 @@
 
-# CustomLedgerAttachment
+## CustomLedgerAttachment
 
 Represents an attachment associated with a custom ledger in the billing system.
 
@@ -74,12 +74,6 @@ Represents an attachment associated with a custom ledger in the billing system.
         </tr></tbody>
 </table>
 
-
-
-
-
-
-
 ## CustomLedgerRef
 
 Represents a custom ledger in the billing system.
@@ -110,7 +104,6 @@ Represents a custom ledger in the billing system.
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformIdentityRef
 
@@ -148,7 +141,6 @@ Represents a custom ledger in the billing system.
     </tbody>
 </table>
 
-
 ## PlatformMetadata
 
 
@@ -169,7 +161,6 @@ Represents a custom ledger in the billing system.
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformObjectAudit
 
@@ -196,7 +187,6 @@ Represents a custom ledger in the billing system.
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformObjectEvent
 

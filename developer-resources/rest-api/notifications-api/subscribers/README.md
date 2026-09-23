@@ -1,5 +1,5 @@
 
-# Subscriber
+## Subscriber
 
 Represents a subscription that defines which users or user groups should automatically receive notifications for a specific category.
 
@@ -63,12 +63,6 @@ Represents a subscription that defines which users or user groups should automat
             <td>Gets or initializes the category this subscriber monitors for automatic notifications.</td>
         </tr></tbody>
 </table>
-
-
-
-
-
-
 
 ## Account
 
@@ -176,7 +170,6 @@ Represents a subscription that defines which users or user groups should automat
     </tbody>
 </table>
 
-
 ## AccountExternalIds
 
 
@@ -197,7 +190,6 @@ Represents a subscription that defines which users or user groups should automat
         </tr>
     </tbody>
 </table>
-
 
 ## AccountRef
 
@@ -245,7 +237,6 @@ Represents a subscription that defines which users or user groups should automat
     </tbody>
 </table>
 
-
 ## Address
 
 
@@ -292,7 +283,6 @@ Represents a subscription that defines which users or user groups should automat
     </tbody>
 </table>
 
-
 ## BuyerRef
 
 
@@ -328,7 +318,6 @@ Represents a subscription that defines which users or user groups should automat
         </tr>
     </tbody>
 </table>
-
 
 ## Category
 
@@ -411,7 +400,6 @@ Represents a notification category that can be used to organize and filter notif
     </tbody>
 </table>
 
-
 ## Eligibility
 
 
@@ -438,7 +426,6 @@ Represents a notification category that can be used to organize and filter notif
     </tbody>
 </table>
 
-
 ## Filters
 
 
@@ -459,7 +446,6 @@ Represents a notification category that can be used to organize and filter notif
         </tr>
     </tbody>
 </table>
-
 
 ## MessageStatistics
 
@@ -491,7 +477,6 @@ Represents message statistics aggregated over different time periods.
         </tr>
     </tbody>
 </table>
-
 
 ## ModuleRef
 
@@ -538,7 +523,6 @@ Represents message statistics aggregated over different time periods.
         </tr>
     </tbody>
 </table>
-
 
 ## ModuleSettings
 
@@ -591,7 +575,6 @@ Represents message statistics aggregated over different time periods.
     </tbody>
 </table>
 
-
 ## ModuleSettingsEligibility
 
 
@@ -617,7 +600,6 @@ Represents message statistics aggregated over different time periods.
         </tr>
     </tbody>
 </table>
-
 
 ## NotificationCategoryAudit
 
@@ -660,7 +642,6 @@ Represents audit information for a Mpt.Notifications.Models.Categories.Category.
     </tbody>
 </table>
 
-
 ## NumberFormat
 
 
@@ -687,7 +668,6 @@ Represents audit information for a Mpt.Notifications.Models.Categories.Category.
     </tbody>
 </table>
 
-
 ## PhoneNumber
 
 
@@ -713,7 +693,6 @@ Represents audit information for a Mpt.Notifications.Models.Categories.Category.
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformIdentityRef
 
@@ -751,7 +730,6 @@ Represents audit information for a Mpt.Notifications.Models.Categories.Category.
     </tbody>
 </table>
 
-
 ## PlatformMetadata
 
 
@@ -772,7 +750,6 @@ Represents audit information for a Mpt.Notifications.Models.Categories.Category.
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformObjectAudit
 
@@ -799,7 +776,6 @@ Represents audit information for a Mpt.Notifications.Models.Categories.Category.
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformObjectAuditPlatformExtension
 
@@ -852,7 +828,6 @@ Represents audit information for a Mpt.Notifications.Models.Categories.Category.
     </tbody>
 </table>
 
-
 ## PlatformObjectEvent
 
 
@@ -879,7 +854,6 @@ Represents audit information for a Mpt.Notifications.Models.Categories.Category.
     </tbody>
 </table>
 
-
 ## Recipients
 
 Represents the recipients of a subscriber.
@@ -905,7 +879,6 @@ Represents the recipients of a subscriber.
         </tr>
     </tbody>
 </table>
-
 
 ## SubscriberAudit
 
@@ -947,7 +920,6 @@ Represents audit information for a Mpt.Notifications.Models.Subscribers.Subscrib
         </tr>
     </tbody>
 </table>
-
 
 ## User
 
@@ -1040,7 +1012,6 @@ Represents audit information for a Mpt.Notifications.Models.Subscribers.Subscrib
     </tbody>
 </table>
 
-
 ## UserAudit
 
 
@@ -1071,7 +1042,6 @@ Represents audit information for a Mpt.Notifications.Models.Subscribers.Subscrib
         </tr>
     </tbody>
 </table>
-
 
 ## UserGroup
 
@@ -1154,7 +1124,6 @@ Represents audit information for a Mpt.Notifications.Models.Subscribers.Subscrib
     </tbody>
 </table>
 
-
 ## UserGroupRef
 
 
@@ -1201,7 +1170,6 @@ Represents audit information for a Mpt.Notifications.Models.Subscribers.Subscrib
     </tbody>
 </table>
 
-
 ## UserRef
 
 
@@ -1237,7 +1205,6 @@ Represents audit information for a Mpt.Notifications.Models.Subscribers.Subscrib
         </tr>
     </tbody>
 </table>
-
 
 ## UserSettings
 
@@ -1289,7 +1256,6 @@ Represents audit information for a Mpt.Notifications.Models.Subscribers.Subscrib
         </tr>
     </tbody>
 </table>
-
 
 ## UserSettingsOptOuts
 

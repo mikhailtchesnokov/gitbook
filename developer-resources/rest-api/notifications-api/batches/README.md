@@ -1,5 +1,5 @@
 
-# Batch
+## Batch
 
 Represents a batch of notification messages that share common properties.
 
@@ -98,12 +98,6 @@ Represents a batch of notification messages that share common properties.
             <td></td>
         </tr></tbody>
 </table>
-
-
-
-
-
-
 
 ## Account
 
@@ -211,7 +205,6 @@ Represents a batch of notification messages that share common properties.
     </tbody>
 </table>
 
-
 ## AccountExternalIds
 
 
@@ -232,7 +225,6 @@ Represents a batch of notification messages that share common properties.
         </tr>
     </tbody>
 </table>
-
 
 ## AccountRef
 
@@ -280,7 +272,6 @@ Represents a batch of notification messages that share common properties.
     </tbody>
 </table>
 
-
 ## Address
 
 
@@ -326,7 +317,6 @@ Represents a batch of notification messages that share common properties.
         </tr>
     </tbody>
 </table>
-
 
 ## Attachment
 
@@ -374,7 +364,6 @@ Represents a file attachment associated with a notification message or batch.
     </tbody>
 </table>
 
-
 ## BatchAudit
 
 Represents audit information for a Mpt.Notifications.Models.Messages.Batch.
@@ -410,7 +399,6 @@ Represents audit information for a Mpt.Notifications.Models.Messages.Batch.
         </tr>
     </tbody>
 </table>
-
 
 ## BatchStatistics
 
@@ -462,7 +450,6 @@ Represents statistics for a notification batch, tracking the count of messages i
         </tr>
     </tbody>
 </table>
-
 
 ## Category
 
@@ -545,7 +532,6 @@ Represents a notification category that can be used to organize and filter notif
     </tbody>
 </table>
 
-
 ## CategoryRef
 
 
@@ -582,7 +568,6 @@ Represents a notification category that can be used to organize and filter notif
     </tbody>
 </table>
 
-
 ## Eligibility
 
 
@@ -608,7 +593,6 @@ Represents a notification category that can be used to organize and filter notif
         </tr>
     </tbody>
 </table>
-
 
 ## MessageStatistics
 
@@ -640,7 +624,6 @@ Represents message statistics aggregated over different time periods.
         </tr>
     </tbody>
 </table>
-
 
 ## NotificationCategoryAudit
 
@@ -682,7 +665,6 @@ Represents audit information for a Mpt.Notifications.Models.Categories.Category.
         </tr>
     </tbody>
 </table>
-
 
 ## NotificationTemplate
 
@@ -775,7 +757,6 @@ Represents a reusable template that can be used to generate messages.
     </tbody>
 </table>
 
-
 ## NotificationTemplateAudit
 
 Represents audit information for a Mpt.Notifications.Models.NotificationTemplates.NotificationTemplate.
@@ -817,7 +798,6 @@ Represents audit information for a Mpt.Notifications.Models.NotificationTemplate
     </tbody>
 </table>
 
-
 ## NotificationTemplateCriteria
 
 Represents the criteria for automatically triggering a template based on platform events.
@@ -854,7 +834,6 @@ Represents the criteria for automatically triggering a template based on platfor
     </tbody>
 </table>
 
-
 ## NotificationTemplateCriteriaRecipients
 
 Represents the recipients criteria for automatically triggering a template based on platform events.
@@ -875,7 +854,6 @@ Represents the recipients criteria for automatically triggering a template based
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformIdentityRef
 
@@ -913,7 +891,6 @@ Represents the recipients criteria for automatically triggering a template based
     </tbody>
 </table>
 
-
 ## PlatformMetadata
 
 
@@ -934,7 +911,6 @@ Represents the recipients criteria for automatically triggering a template based
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformObjectAudit
 
@@ -962,7 +938,6 @@ Represents the recipients criteria for automatically triggering a template based
     </tbody>
 </table>
 
-
 ## PlatformObjectEvent
 
 
@@ -988,7 +963,6 @@ Represents the recipients criteria for automatically triggering a template based
         </tr>
     </tbody>
 </table>
-
 
 ## TemplateVariantRef
 
@@ -1030,7 +1004,6 @@ Represents a language-specific variant of a template.
         </tr>
     </tbody>
 </table>
-
 
 ## UserGroupRef
 

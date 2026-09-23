@@ -1,5 +1,5 @@
 
-# TermVariant
+## TermVariant
 
 
 
@@ -89,12 +89,6 @@
         </tr></tbody>
 </table>
 
-
-
-
-
-
-
 ## PlatformIdentityRef
 
 
@@ -131,7 +125,6 @@
     </tbody>
 </table>
 
-
 ## PlatformMetadata
 
 
@@ -152,7 +145,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformObjectEvent
 
@@ -179,7 +171,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## TermRef
 
@@ -216,7 +207,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## TermVariantAudit
 

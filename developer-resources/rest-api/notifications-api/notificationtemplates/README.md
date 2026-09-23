@@ -1,5 +1,5 @@
 
-# NotificationTemplate
+## NotificationTemplate
 
 Represents a reusable template that can be used to generate messages.
 
@@ -89,12 +89,6 @@ Represents a reusable template that can be used to generate messages.
         </tr></tbody>
 </table>
 
-
-
-
-
-
-
 ## AccountRef
 
 
@@ -141,7 +135,6 @@ Represents a reusable template that can be used to generate messages.
     </tbody>
 </table>
 
-
 ## CategoryRef
 
 
@@ -178,7 +171,6 @@ Represents a reusable template that can be used to generate messages.
     </tbody>
 </table>
 
-
 ## MessageStatistics
 
 Represents message statistics aggregated over different time periods.
@@ -209,7 +201,6 @@ Represents message statistics aggregated over different time periods.
         </tr>
     </tbody>
 </table>
-
 
 ## NotificationTemplateAudit
 
@@ -252,7 +243,6 @@ Represents audit information for a Mpt.Notifications.Models.NotificationTemplate
     </tbody>
 </table>
 
-
 ## NotificationTemplateCriteria
 
 Represents the criteria for automatically triggering a template based on platform events.
@@ -289,7 +279,6 @@ Represents the criteria for automatically triggering a template based on platfor
     </tbody>
 </table>
 
-
 ## NotificationTemplateCriteriaRecipients
 
 Represents the recipients criteria for automatically triggering a template based on platform events.
@@ -310,7 +299,6 @@ Represents the recipients criteria for automatically triggering a template based
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformIdentityRef
 
@@ -348,7 +336,6 @@ Represents the recipients criteria for automatically triggering a template based
     </tbody>
 </table>
 
-
 ## PlatformMetadata
 
 
@@ -369,7 +356,6 @@ Represents the recipients criteria for automatically triggering a template based
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformObjectEvent
 
@@ -396,7 +382,6 @@ Represents the recipients criteria for automatically triggering a template based
         </tr>
     </tbody>
 </table>
-
 
 ## TemplateVariantRef
 

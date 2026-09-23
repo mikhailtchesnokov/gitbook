@@ -1,5 +1,5 @@
 
-# ProductProfileAttachment
+## ProductProfileAttachment
 
 Represents a product profile attachment entity.
 
@@ -68,12 +68,6 @@ Represents a product profile attachment entity.
             <td></td>
         </tr></tbody>
 </table>
-
-
-
-
-
-
 
 ## Account
 
@@ -181,7 +175,6 @@ Represents a product profile attachment entity.
     </tbody>
 </table>
 
-
 ## AccountExternalIds
 
 
@@ -202,7 +195,6 @@ Represents a product profile attachment entity.
         </tr>
     </tbody>
 </table>
-
 
 ## Address
 
@@ -250,7 +242,6 @@ Represents a product profile attachment entity.
     </tbody>
 </table>
 
-
 ## CategoryRef
 
 
@@ -287,7 +278,6 @@ Represents a product profile attachment entity.
     </tbody>
 </table>
 
-
 ## Eligibility
 
 
@@ -313,7 +303,6 @@ Represents a product profile attachment entity.
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformIdentityRef
 
@@ -351,7 +340,6 @@ Represents a product profile attachment entity.
     </tbody>
 </table>
 
-
 ## PlatformMetadata
 
 
@@ -372,7 +360,6 @@ Represents a product profile attachment entity.
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformObjectAudit
 
@@ -400,7 +387,6 @@ Represents a product profile attachment entity.
     </tbody>
 </table>
 
-
 ## PlatformObjectEvent
 
 
@@ -426,7 +412,6 @@ Represents a product profile attachment entity.
         </tr>
     </tbody>
 </table>
-
 
 ## ProductProfileAttachmentAudit
 
@@ -463,7 +448,6 @@ Represents ProductProfileAttachmentAudit.
         </tr>
     </tbody>
 </table>
-
 
 ## ProductProfileRef
 
@@ -511,7 +495,6 @@ Represents ProductProfileAttachmentAudit.
     </tbody>
 </table>
 
-
 ## UserGroupRef
 
 
@@ -557,7 +540,6 @@ Represents ProductProfileAttachmentAudit.
         </tr>
     </tbody>
 </table>
-
 
 ## VendorProfile
 
@@ -659,7 +641,6 @@ Represents ProductProfileAttachmentAudit.
         </tr>
     </tbody>
 </table>
-
 
 ## VendorProfileAudit
 

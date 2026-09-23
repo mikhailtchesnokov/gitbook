@@ -1,5 +1,5 @@
 
-# ErpLink
+## ErpLink
 
 
 
@@ -89,12 +89,6 @@
         </tr></tbody>
 </table>
 
-
-
-
-
-
-
 ## Address
 
 
@@ -141,7 +135,6 @@
     </tbody>
 </table>
 
-
 ## BuyerExternalIds
 
 
@@ -172,7 +165,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## BuyerRef
 
@@ -209,7 +201,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## ErpLinkAddress
 
@@ -267,7 +258,6 @@
     </tbody>
 </table>
 
-
 ## ErpLinkAudit
 
 
@@ -309,7 +299,6 @@
     </tbody>
 </table>
 
-
 ## PlatformIdentityRef
 
 
@@ -346,7 +335,6 @@
     </tbody>
 </table>
 
-
 ## PlatformMetadata
 
 
@@ -367,7 +355,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformObjectEvent
 
@@ -394,7 +381,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## SellerRef
 

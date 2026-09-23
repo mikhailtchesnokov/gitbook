@@ -1,5 +1,5 @@
 
-# Service
+## Service
 
 
 
@@ -54,12 +54,6 @@
         </tr></tbody>
 </table>
 
-
-
-
-
-
-
 ## PlatformIdentityRef
 
 
@@ -96,7 +90,6 @@
     </tbody>
 </table>
 
-
 ## PlatformMetadata
 
 
@@ -117,7 +110,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformObjectAudit
 
@@ -144,7 +136,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformObjectEvent
 

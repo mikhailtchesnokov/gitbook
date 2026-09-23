@@ -1,5 +1,5 @@
 
-# User
+## User
 
 
 
@@ -89,12 +89,6 @@
         </tr></tbody>
 </table>
 
-
-
-
-
-
-
 ## AccountRef
 
 
@@ -141,7 +135,6 @@
     </tbody>
 </table>
 
-
 ## NumberFormat
 
 
@@ -168,7 +161,6 @@
     </tbody>
 </table>
 
-
 ## PhoneNumber
 
 
@@ -194,7 +186,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformIdentityRef
 
@@ -232,7 +223,6 @@
     </tbody>
 </table>
 
-
 ## PlatformMetadata
 
 
@@ -253,7 +243,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformObjectEvent
 
@@ -280,7 +269,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## UserAudit
 
@@ -312,7 +300,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## UserSettings
 
@@ -364,7 +351,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## UserSettingsOptOuts
 

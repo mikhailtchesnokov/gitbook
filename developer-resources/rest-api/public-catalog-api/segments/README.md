@@ -1,5 +1,5 @@
 
-# Segment
+## Segment
 
 
 
@@ -49,12 +49,6 @@
         </tr></tbody>
 </table>
 
-
-
-
-
-
-
 ## PlatformIdentityRef
 
 
@@ -91,7 +85,6 @@
     </tbody>
 </table>
 
-
 ## PlatformMetadata
 
 
@@ -112,7 +105,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformObjectEvent
 
@@ -139,7 +131,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## SegmentAudit
 

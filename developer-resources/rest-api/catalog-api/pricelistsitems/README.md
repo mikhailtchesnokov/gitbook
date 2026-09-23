@@ -1,5 +1,5 @@
 
-# PriceListItem
+## PriceListItem
 
 
 
@@ -154,12 +154,6 @@
         </tr></tbody>
 </table>
 
-
-
-
-
-
-
 ## PlatformIdentityRef
 
 
@@ -196,7 +190,6 @@
     </tbody>
 </table>
 
-
 ## PlatformMetadata
 
 
@@ -217,7 +210,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformObjectEvent
 
@@ -245,7 +237,6 @@
     </tbody>
 </table>
 
-
 ## PriceInfo
 
 
@@ -271,7 +262,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## PriceListItemAudit
 
@@ -309,7 +299,6 @@
     </tbody>
 </table>
 
-
 ## PriceListRef
 
 
@@ -341,7 +330,6 @@
     </tbody>
 </table>
 
-
 ## ProductItemExternalIdBag
 
 
@@ -367,7 +355,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## ProductItemRef
 

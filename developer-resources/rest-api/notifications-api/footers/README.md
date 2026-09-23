@@ -1,5 +1,5 @@
 
-# Footer
+## Footer
 
 Represents a localized footer template that can be appended to notification messages.
 
@@ -54,12 +54,6 @@ Represents a localized footer template that can be appended to notification mess
         </tr></tbody>
 </table>
 
-
-
-
-
-
-
 ## FooterAudit
 
 Represents audit information for a Mpt.Notifications.Models.Footers.Footer.
@@ -95,7 +89,6 @@ Represents audit information for a Mpt.Notifications.Models.Footers.Footer.
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformIdentityRef
 
@@ -133,7 +126,6 @@ Represents audit information for a Mpt.Notifications.Models.Footers.Footer.
     </tbody>
 </table>
 
-
 ## PlatformMetadata
 
 
@@ -154,7 +146,6 @@ Represents audit information for a Mpt.Notifications.Models.Footers.Footer.
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformObjectEvent
 

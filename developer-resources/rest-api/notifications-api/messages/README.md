@@ -1,5 +1,5 @@
 
-# Message
+## Message
 
 Represents an individual notification message sent to a specific contact.
 
@@ -88,12 +88,6 @@ Represents an individual notification message sent to a specific contact.
             <td>Gets or sets the subject of the message.</td>
         </tr></tbody>
 </table>
-
-
-
-
-
-
 
 ## Account
 
@@ -201,7 +195,6 @@ Represents an individual notification message sent to a specific contact.
     </tbody>
 </table>
 
-
 ## AccountExternalIds
 
 
@@ -222,7 +215,6 @@ Represents an individual notification message sent to a specific contact.
         </tr>
     </tbody>
 </table>
-
 
 ## AccountRef
 
@@ -270,7 +262,6 @@ Represents an individual notification message sent to a specific contact.
     </tbody>
 </table>
 
-
 ## Address
 
 
@@ -317,7 +308,6 @@ Represents an individual notification message sent to a specific contact.
     </tbody>
 </table>
 
-
 ## Attachment
 
 Represents a file attachment associated with a notification message or batch.
@@ -363,7 +353,6 @@ Represents a file attachment associated with a notification message or batch.
         </tr>
     </tbody>
 </table>
-
 
 ## BatchRef
 
@@ -415,7 +404,6 @@ Represents a batch of notification messages that share common properties.
         </tr>
     </tbody>
 </table>
-
 
 ## Category
 
@@ -498,7 +486,6 @@ Represents a notification category that can be used to organize and filter notif
     </tbody>
 </table>
 
-
 ## CategoryRef
 
 
@@ -534,7 +521,6 @@ Represents a notification category that can be used to organize and filter notif
         </tr>
     </tbody>
 </table>
-
 
 ## Contact
 
@@ -617,7 +603,6 @@ Represents a notification contact who can receive email notifications.
     </tbody>
 </table>
 
-
 ## ContactAudit
 
 Represents audit information for a Mpt.Notifications.Models.Contacts.Contact.
@@ -659,7 +644,6 @@ Represents audit information for a Mpt.Notifications.Models.Contacts.Contact.
     </tbody>
 </table>
 
-
 ## DirectoryRef
 
 
@@ -686,7 +670,6 @@ Represents audit information for a Mpt.Notifications.Models.Contacts.Contact.
     </tbody>
 </table>
 
-
 ## Eligibility
 
 
@@ -712,7 +695,6 @@ Represents audit information for a Mpt.Notifications.Models.Contacts.Contact.
         </tr>
     </tbody>
 </table>
-
 
 ## MessageAudit
 
@@ -770,7 +752,6 @@ Represents audit information for a Mpt.Notifications.Models.Messages.Message.
     </tbody>
 </table>
 
-
 ## MessageStatistics
 
 Represents message statistics aggregated over different time periods.
@@ -801,7 +782,6 @@ Represents message statistics aggregated over different time periods.
         </tr>
     </tbody>
 </table>
-
 
 ## NotificationCategoryAudit
 
@@ -843,7 +823,6 @@ Represents audit information for a Mpt.Notifications.Models.Categories.Category.
         </tr>
     </tbody>
 </table>
-
 
 ## NotificationTemplate
 
@@ -936,7 +915,6 @@ Represents a reusable template that can be used to generate messages.
     </tbody>
 </table>
 
-
 ## NotificationTemplateAudit
 
 Represents audit information for a Mpt.Notifications.Models.NotificationTemplates.NotificationTemplate.
@@ -978,7 +956,6 @@ Represents audit information for a Mpt.Notifications.Models.NotificationTemplate
     </tbody>
 </table>
 
-
 ## NotificationTemplateCriteria
 
 Represents the criteria for automatically triggering a template based on platform events.
@@ -1015,7 +992,6 @@ Represents the criteria for automatically triggering a template based on platfor
     </tbody>
 </table>
 
-
 ## NotificationTemplateCriteriaRecipients
 
 Represents the recipients criteria for automatically triggering a template based on platform events.
@@ -1036,7 +1012,6 @@ Represents the recipients criteria for automatically triggering a template based
         </tr>
     </tbody>
 </table>
-
 
 ## NotificationTemplateRef
 
@@ -1079,7 +1054,6 @@ Represents a reusable template that can be used to generate messages.
     </tbody>
 </table>
 
-
 ## NumberFormat
 
 
@@ -1106,7 +1080,6 @@ Represents a reusable template that can be used to generate messages.
     </tbody>
 </table>
 
-
 ## PhoneNumber
 
 
@@ -1132,7 +1105,6 @@ Represents a reusable template that can be used to generate messages.
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformIdentity
 
@@ -1180,7 +1152,6 @@ Represents a reusable template that can be used to generate messages.
     </tbody>
 </table>
 
-
 ## PlatformIdentityRef
 
 
@@ -1217,7 +1188,6 @@ Represents a reusable template that can be used to generate messages.
     </tbody>
 </table>
 
-
 ## PlatformMetadata
 
 
@@ -1238,7 +1208,6 @@ Represents a reusable template that can be used to generate messages.
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformObjectAudit
 
@@ -1266,7 +1235,6 @@ Represents a reusable template that can be used to generate messages.
     </tbody>
 </table>
 
-
 ## PlatformObjectEvent
 
 
@@ -1292,7 +1260,6 @@ Represents a reusable template that can be used to generate messages.
         </tr>
     </tbody>
 </table>
-
 
 ## TemplateVariantRef
 
@@ -1334,7 +1301,6 @@ Represents a language-specific variant of a template.
         </tr>
     </tbody>
 </table>
-
 
 ## User
 
@@ -1427,7 +1393,6 @@ Represents a language-specific variant of a template.
     </tbody>
 </table>
 
-
 ## UserAudit
 
 
@@ -1458,7 +1423,6 @@ Represents a language-specific variant of a template.
         </tr>
     </tbody>
 </table>
-
 
 ## UserGroupRef
 
@@ -1505,7 +1469,6 @@ Represents a language-specific variant of a template.
         </tr>
     </tbody>
 </table>
-
 
 ## UserSettings
 
@@ -1557,7 +1520,6 @@ Represents a language-specific variant of a template.
         </tr>
     </tbody>
 </table>
-
 
 ## UserSettingsOptOuts
 

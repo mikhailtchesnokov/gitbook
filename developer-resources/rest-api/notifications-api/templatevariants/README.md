@@ -1,5 +1,5 @@
 
-# TemplateVariant
+## TemplateVariant
 
 Represents a language-specific variant of a template.
 
@@ -64,12 +64,6 @@ Represents a language-specific variant of a template.
         </tr></tbody>
 </table>
 
-
-
-
-
-
-
 ## NotificationTemplateRef
 
 Represents a reusable template that can be used to generate messages.
@@ -111,7 +105,6 @@ Represents a reusable template that can be used to generate messages.
     </tbody>
 </table>
 
-
 ## PlatformIdentityRef
 
 
@@ -148,7 +141,6 @@ Represents a reusable template that can be used to generate messages.
     </tbody>
 </table>
 
-
 ## PlatformMetadata
 
 
@@ -169,7 +161,6 @@ Represents a reusable template that can be used to generate messages.
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformObjectEvent
 
@@ -196,7 +187,6 @@ Represents a reusable template that can be used to generate messages.
         </tr>
     </tbody>
 </table>
-
 
 ## TemplateVariantAudit
 

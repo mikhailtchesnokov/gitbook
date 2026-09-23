@@ -1,5 +1,5 @@
 
-# Webhook
+## Webhook
 
 
 
@@ -104,12 +104,6 @@
         </tr></tbody>
 </table>
 
-
-
-
-
-
-
 ## AccountRef
 
 
@@ -156,7 +150,6 @@
     </tbody>
 </table>
 
-
 ## PlatformIdentityRef
 
 
@@ -193,7 +186,6 @@
     </tbody>
 </table>
 
-
 ## PlatformMetadata
 
 
@@ -214,7 +206,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformObjectAudit
 
@@ -242,7 +233,6 @@
     </tbody>
 </table>
 
-
 ## PlatformObjectEvent
 
 
@@ -268,7 +258,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## WebhookCall
 
@@ -326,7 +315,6 @@
     </tbody>
 </table>
 
-
 ## WebhookCriteria
 
 
@@ -352,7 +340,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## WebhookObjectRef
 
@@ -384,7 +371,6 @@
         </tr>
     </tbody>
 </table>
-
 
 ## WebhookStatistics
 

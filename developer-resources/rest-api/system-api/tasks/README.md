@@ -1,5 +1,5 @@
 
-# Task
+## Task
 
 The Task represents the state of an asynchronous, usually long running operation.
 
@@ -109,8 +109,7 @@ The Task represents the state of an asynchronous, usually long running operation
         </tr></tbody>
 </table>
 
-
-# TaskLog
+## TaskLog
 
 
 
@@ -190,12 +189,6 @@ The Task represents the state of an asynchronous, usually long running operation
         </tr></tbody>
 </table>
 
-
-
-
-
-
-
 ## PlatformAccountRef
 
 
@@ -242,7 +235,6 @@ The Task represents the state of an asynchronous, usually long running operation
     </tbody>
 </table>
 
-
 ## PlatformIdentityRef
 
 
@@ -279,7 +271,6 @@ The Task represents the state of an asynchronous, usually long running operation
     </tbody>
 </table>
 
-
 ## PlatformMetadata
 
 
@@ -300,7 +291,6 @@ The Task represents the state of an asynchronous, usually long running operation
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformObjectEvent
 
@@ -327,7 +317,6 @@ The Task represents the state of an asynchronous, usually long running operation
         </tr>
     </tbody>
 </table>
-
 
 ## TaskAuditBag
 
@@ -380,7 +369,6 @@ The Task represents the state of an asynchronous, usually long running operation
     </tbody>
 </table>
 
-
 ## TaskPlatform
 
 
@@ -411,7 +399,6 @@ The Task represents the state of an asynchronous, usually long running operation
         </tr>
     </tbody>
 </table>
-
 
 ## TaskRef
 
@@ -459,7 +446,6 @@ The Task represents the state of an asynchronous, usually long running operation
     </tbody>
 </table>
 
-
 ## PlatformIdentityRef
 
 
@@ -496,7 +482,6 @@ The Task represents the state of an asynchronous, usually long running operation
     </tbody>
 </table>
 
-
 ## PlatformMetadata
 
 
@@ -517,7 +502,6 @@ The Task represents the state of an asynchronous, usually long running operation
         </tr>
     </tbody>
 </table>
-
 
 ## PlatformObjectAudit
 
@@ -545,7 +529,6 @@ The Task represents the state of an asynchronous, usually long running operation
     </tbody>
 </table>
 
-
 ## PlatformObjectEvent
 
 
@@ -571,7 +554,6 @@ The Task represents the state of an asynchronous, usually long running operation
         </tr>
     </tbody>
 </table>
-
 
 ## TaskRef
 
