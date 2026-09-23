@@ -15,99 +15,77 @@
         <tr>
             <td><code>id</code></td>
             <td>string</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>audit</code></td>
             <td>ErpLinkAudit</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>$meta</code></td>
             <td>PlatformMetadata</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
             <td>string</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
             <td>string</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>buyer</code></td>
             <td>object</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>seller</code></td>
             <td>object</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>companyName</code></td>
             <td>string</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>ErpLinkStatus</td>
-            <td>            
-            Allowed values:
-            <ul>
-                <li><code>Active</code></li>
-                                <li><code>Blocked</code></li>
-                                <li><code>Disabled</code></li>
-                                
-            </ul>
-            </td>
+            <td>Allowed values: Active,Blocked,Disabled</td>
         </tr>
         <tr>
             <td><code>note</code></td>
             <td>string</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>externalIds</code></td>
             <td>BuyerExternalIds</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>address</code></td>
             <td>Address</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>shipTo</code></td>
             <td>array</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>billTo</code></td>
             <td>array</td>
-            <td>
-            </td>
+            <td></td>
         </tr></tbody>
 </table>
 

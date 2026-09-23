@@ -15,92 +15,77 @@
         <tr>
             <td><code>id</code></td>
             <td>string</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>audit</code></td>
             <td>TermVariantAudit</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>$meta</code></td>
             <td>PlatformMetadata</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
             <td>string</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>type</code></td>
             <td>string</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>assetUrl</code></td>
             <td>string</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>languageCode</code></td>
             <td>string</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>description</code></td>
             <td>string</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>string</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>filename</code></td>
             <td>string</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>size</code></td>
             <td>integer</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>contentType</code></td>
             <td>string</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>term</code></td>
             <td>object</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>fileId</code></td>
             <td>string</td>
-            <td>
-            </td>
+            <td></td>
         </tr></tbody>
 </table>
 

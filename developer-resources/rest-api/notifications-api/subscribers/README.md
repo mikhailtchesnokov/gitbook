@@ -15,62 +15,52 @@ Represents a subscription that defines which users or user groups should automat
         <tr>
             <td><code>id</code></td>
             <td>string</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>audit</code></td>
             <td>SubscriberAudit</td>
-            <td>Represents audit information for a Mpt.Notifications.Models.Subscribers.Subscriber.
-            </td>
+            <td>Represents audit information for a Mpt.Notifications.Models.Subscribers.Subscriber.</td>
         </tr>
         <tr>
             <td><code>$meta</code></td>
             <td>PlatformMetadata</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
             <td>string</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>string</td>
-            <td>Gets or initializes the current status of the subscriber.
-            </td>
+            <td>Gets or initializes the current status of the subscriber.</td>
         </tr>
         <tr>
             <td><code>note</code></td>
             <td>string</td>
-            <td>Gets or initializes an optional note about this subscriber.
-            </td>
+            <td>Gets or initializes an optional note about this subscriber.</td>
         </tr>
         <tr>
             <td><code>recipients</code></td>
             <td>Recipients</td>
-            <td>Gets or initializes the list of recipients who will receive notifications.
-            </td>
+            <td>Gets or initializes the list of recipients who will receive notifications.</td>
         </tr>
         <tr>
             <td><code>account</code></td>
             <td>Account</td>
-            <td>Gets or initializes the account to which this subscriber is associated.
-            </td>
+            <td>Gets or initializes the account to which this subscriber is associated.</td>
         </tr>
         <tr>
             <td><code>category</code></td>
             <td>Category</td>
-            <td>Gets or initializes the category this subscriber monitors for automatic notifications.
-            </td>
+            <td>Gets or initializes the category this subscriber monitors for automatic notifications.</td>
         </tr></tbody>
 </table>
 
@@ -126,12 +116,12 @@ Represents a subscription that defines which users or user groups should automat
         <tr>
             <td><code>type</code></td>
             <td>AccountType</td>
-            <td></td>
+            <td>Allowed values: Client,Vendor,Operations</td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>AccountStatus</td>
-            <td></td>
+            <td>Allowed values: Active,Enabled,Disabled</td>
         </tr>
         <tr>
             <td><code>externalIds</code></td>
@@ -245,12 +235,12 @@ Represents a subscription that defines which users or user groups should automat
         <tr>
             <td><code>type</code></td>
             <td>AccountType</td>
-            <td></td>
+            <td>Allowed values: Client,Vendor,Operations</td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>AccountStatus</td>
-            <td></td>
+            <td>Allowed values: Active,Enabled,Disabled</td>
         </tr>
     </tbody>
 </table>

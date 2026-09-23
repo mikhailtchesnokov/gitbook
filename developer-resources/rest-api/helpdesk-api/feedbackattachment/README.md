@@ -15,68 +15,52 @@
         <tr>
             <td><code>id</code></td>
             <td>string</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>audit</code></td>
             <td>FeedbackAttachmentAudit</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>$meta</code></td>
             <td>PlatformMetadata</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
             <td>string</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>feedback</code></td>
             <td>Feedback</td>
-            <td>Represents the feedback this attachment belongs to.
-            </td>
+            <td>Represents the feedback this attachment belongs to.</td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>FileStatus</td>
-            <td>            
-            Allowed values:
-            <ul>
-                <li><code>Active</code></li>
-                                <li><code>Deleted</code></li>
-                                
-            </ul>
-            </td>
+            <td>Allowed values: Active,Deleted</td>
         </tr>
         <tr>
             <td><code>file</code></td>
             <td>File</td>
-            <td>Represents the file this attachment belongs to.
-            </td>
+            <td>Represents the file this attachment belongs to.</td>
         </tr>
         <tr>
             <td><code>name</code></td>
             <td>string</td>
-            <td>Represents the name this attachment.
-            </td>
+            <td>Represents the name this attachment.</td>
         </tr>
         <tr>
             <td><code>description</code></td>
             <td>string</td>
-            <td>Represents the description this attachment.
-            </td>
+            <td>Represents the description this attachment.</td>
         </tr></tbody>
 </table>
 
@@ -122,12 +106,12 @@
         <tr>
             <td><code>type</code></td>
             <td>AccountType</td>
-            <td></td>
+            <td>Allowed values: Client,Vendor,Operations</td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>AccountStatus</td>
-            <td></td>
+            <td>Allowed values: Active,Enabled,Disabled</td>
         </tr>
     </tbody>
 </table>
@@ -194,7 +178,7 @@
         <tr>
             <td><code>status</code></td>
             <td>FeedbackStatus</td>
-            <td>Gets or sets the status associated with the feedback.</td>
+            <td>Gets or sets the status associated with the feedback.Allowed values: Submitted,Reviewed,Deleted</td>
         </tr>
         <tr>
             <td><code>rating</code></td>
@@ -360,7 +344,7 @@ Represents a file in the helpdesk module
         <tr>
             <td><code>type</code></td>
             <td>FileType</td>
-            <td>Specifies the type of the file, such as attachment or icon</td>
+            <td>Specifies the type of the file, such as attachment or iconAllowed values: Attachment,Icon,Image,Video</td>
         </tr>
         <tr>
             <td><code>filename</code></td>

@@ -15,91 +15,67 @@
         <tr>
             <td><code>id</code></td>
             <td>string</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>audit</code></td>
             <td>BuyerAudit</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>$meta</code></td>
             <td>PlatformMetadata</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
             <td>string</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
             <td>string</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>externalIds</code></td>
             <td>BuyerExternalIds</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>BuyerStatus</td>
-            <td>            
-            Allowed values:
-            <ul>
-                <li><code>Active</code></li>
-                                <li><code>Enabled</code></li>
-                                <li><code>Disabled</code></li>
-                                <li><code>Deleted</code></li>
-                                <li><code>Unassigned</code></li>
-                                <li><code>Conflict</code></li>
-                                <li><code>Mismatch</code></li>
-                                
-            </ul>
-            </td>
+            <td>Allowed values: Active,Enabled,Disabled,Deleted,Unassigned,Conflict,Mismatch</td>
         </tr>
         <tr>
             <td><code>address</code></td>
             <td>Address</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>taxId</code></td>
             <td>string</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>account</code></td>
             <td>object</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>errors</code></td>
             <td>array</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>sellers</code></td>
             <td>array</td>
-            <td>
-            </td>
+            <td></td>
         </tr></tbody>
 </table>
 
@@ -145,12 +121,12 @@
         <tr>
             <td><code>type</code></td>
             <td>AccountType</td>
-            <td></td>
+            <td>Allowed values: Client,Vendor,Operations</td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>AccountStatus</td>
-            <td></td>
+            <td>Allowed values: Active,Enabled,Disabled</td>
         </tr>
     </tbody>
 </table>

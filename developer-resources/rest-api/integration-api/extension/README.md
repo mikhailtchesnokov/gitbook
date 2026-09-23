@@ -15,104 +15,87 @@
         <tr>
             <td><code>id</code></td>
             <td>string</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>audit</code></td>
             <td>ExtensionAudit</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>$meta</code></td>
             <td>PlatformMetadata</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
             <td>string</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
             <td>string</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>vendor</code></td>
             <td>object</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>shortDescription</code></td>
             <td>string</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>longDescription</code></td>
             <td>string</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>website</code></td>
             <td>string</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>string</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>categories</code></td>
             <td>array</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>modules</code></td>
             <td>array</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>statistics</code></td>
             <td>ExtensionStatistics</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>configuration</code></td>
             <td>object</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>meta</code></td>
             <td>object</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>service</code></td>
             <td>ExtensionServiceDetails</td>
-            <td>
-            </td>
+            <td></td>
         </tr></tbody>
 </table>
 
@@ -133,74 +116,62 @@
         <tr>
             <td><code>id</code></td>
             <td>string</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>audit</code></td>
             <td>InstallationAudit</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>$meta</code></td>
             <td>PlatformMetadata</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
             <td>string</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>account</code></td>
             <td>object</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>extension</code></td>
             <td>object</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>string</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>configuration</code></td>
             <td>object</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>invitation</code></td>
             <td>Invitation</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>modules</code></td>
             <td>array</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>terms</code></td>
             <td>array</td>
-            <td>
-            </td>
+            <td></td>
         </tr></tbody>
 </table>
 
@@ -246,12 +217,12 @@
         <tr>
             <td><code>type</code></td>
             <td>AccountType</td>
-            <td></td>
+            <td>Allowed values: Client,Vendor,Operations</td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>AccountStatus</td>
-            <td></td>
+            <td>Allowed values: Active,Enabled,Disabled</td>
         </tr>
     </tbody>
 </table>
@@ -687,12 +658,12 @@
         <tr>
             <td><code>type</code></td>
             <td>AccountType</td>
-            <td></td>
+            <td>Allowed values: Client,Vendor,Operations</td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>AccountStatus</td>
-            <td></td>
+            <td>Allowed values: Active,Enabled,Disabled</td>
         </tr>
     </tbody>
 </table>

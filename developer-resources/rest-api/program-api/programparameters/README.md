@@ -15,104 +15,87 @@
         <tr>
             <td><code>id</code></td>
             <td>string</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>audit</code></td>
             <td>PlatformObjectAudit</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>$meta</code></td>
             <td>PlatformMetadata</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
             <td>string</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>description</code></td>
             <td>string</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>multiple</code></td>
             <td>boolean</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>externalId</code></td>
             <td>string</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>displayOrder</code></td>
             <td>integer</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>constraints</code></td>
             <td>Constraints</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>options</code></td>
             <td>object</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>type</code></td>
             <td>string</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>string</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>group</code></td>
             <td>object</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>scope</code></td>
             <td>string</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>phase</code></td>
             <td>string</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>program</code></td>
             <td>object</td>
-            <td>
-            </td>
+            <td></td>
         </tr></tbody>
 </table>
 
@@ -158,12 +141,12 @@
         <tr>
             <td><code>type</code></td>
             <td>AccountType</td>
-            <td></td>
+            <td>Allowed values: Client,Vendor,Operations</td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>AccountStatus</td>
-            <td></td>
+            <td>Allowed values: Active,Enabled,Disabled</td>
         </tr>
     </tbody>
 </table>
@@ -760,12 +743,12 @@
         <tr>
             <td><code>status</code></td>
             <td>ProgramStatus</td>
-            <td></td>
+            <td>Allowed values: None,Draft,Published,Unpublished,Deleted</td>
         </tr>
         <tr>
             <td><code>applicableTo</code></td>
             <td>ProgramApplicableTo</td>
-            <td></td>
+            <td>Allowed values: Buyer,Licensee</td>
         </tr>
         <tr>
             <td><code>products</code></td>

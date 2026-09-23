@@ -15,117 +15,87 @@ Represents a custom ledger in the billing system.
         <tr>
             <td><code>audit</code></td>
             <td>CustomLedgerAuditBag</td>
-            <td>Represents a container for audit-related events for a custom ledger
-            </td>
+            <td>Represents a container for audit-related events for a custom ledger</td>
         </tr>
         <tr>
             <td><code>$meta</code></td>
             <td>PlatformMetadata</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>id</code></td>
             <td>string</td>
-            <td>The unique identifier of the custom ledger.
-            </td>
+            <td>The unique identifier of the custom ledger.</td>
         </tr>
         <tr>
             <td><code>name</code></td>
             <td>string</td>
-            <td>Name of the custom ledger.
-            </td>
+            <td>Name of the custom ledger.</td>
         </tr>
         <tr>
             <td><code>externalIds</code></td>
             <td>BillingExternalIds</td>
-            <td>External identifiers associated with the custom ledger.
-            </td>
+            <td>External identifiers associated with the custom ledger.</td>
         </tr>
         <tr>
             <td><code>seller</code></td>
             <td>object</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>vendor</code></td>
             <td>object</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>billingStartDate</code></td>
             <td>string</td>
-            <td>The start date of the billing period for the custom ledger.
-            </td>
+            <td>The start date of the billing period for the custom ledger.</td>
         </tr>
         <tr>
             <td><code>billingEndDate</code></td>
             <td>string</td>
-            <td>The end date of the billing period for the custom ledger.
-            </td>
+            <td>The end date of the billing period for the custom ledger.</td>
         </tr>
         <tr>
             <td><code>notes</code></td>
             <td>string</td>
-            <td>Additional notes or comments about the custom ledger.
-            </td>
+            <td>Additional notes or comments about the custom ledger.</td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>CustomLedgerStatus</td>
-            <td>The current status of the custom ledger.            
-            Allowed values:
-            <ul>
-                <li><code>Draft</code></li>
-                                <li><code>Deleted</code></li>
-                                <li><code>Validating</code></li>
-                                <li><code>Validated</code></li>
-                                <li><code>Error</code></li>
-                                <li><code>Generating</code></li>
-                                <li><code>Generated</code></li>
-                                <li><code>Queued</code></li>
-                                <li><code>Completed</code></li>
-                                
-            </ul>
-            </td>
+            <td>The current status of the custom ledger.Allowed values: Draft,Deleted,Validating,Validated,Error,Generating,Generated,Queued,Completed</td>
         </tr>
         <tr>
             <td><code>assignee</code></td>
             <td>object</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>price</code></td>
             <td>CustomLedgerPriceSummary</td>
-            <td>Pricing details associated with the custom ledger.
-            </td>
+            <td>Pricing details associated with the custom ledger.</td>
         </tr>
         <tr>
             <td><code>processing</code></td>
             <td>ProcessingSummary</td>
-            <td>Processing status and related details for the custom ledger, visible to operations.
-            </td>
+            <td>Processing status and related details for the custom ledger, visible to operations.</td>
         </tr>
         <tr>
             <td><code>error</code></td>
             <td>BillingError</td>
-            <td>Error details associated with the custom ledger, if any.
-            </td>
+            <td>Error details associated with the custom ledger, if any.</td>
         </tr>
         <tr>
             <td><code>backup</code></td>
             <td>BackupDetails</td>
-            <td>Backup details for the custom ledger.
-            </td>
+            <td>Backup details for the custom ledger.</td>
         </tr></tbody>
 </table>
 
@@ -171,12 +141,12 @@ Represents a custom ledger in the billing system.
         <tr>
             <td><code>type</code></td>
             <td>AccountType</td>
-            <td></td>
+            <td>Allowed values: Client,Vendor,Operations</td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>AccountStatus</td>
-            <td></td>
+            <td>Allowed values: Active,Enabled,Disabled</td>
         </tr>
     </tbody>
 </table>
@@ -198,7 +168,7 @@ Represents the details of a backup operation, including its status and date.
         <tr>
             <td><code>status</code></td>
             <td>BackupStatus</td>
-            <td>Status of the backup.</td>
+            <td>Status of the backup.Allowed values: Pending,Exporting,Exported,Verifying,Completed,Failed,Skipped</td>
         </tr>
         <tr>
             <td><code>date</code></td>

@@ -15,115 +15,87 @@
         <tr>
             <td><code>id</code></td>
             <td>string</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>audit</code></td>
             <td>ErpAuditBag</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>$meta</code></td>
             <td>PlatformMetadata</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>attributes</code></td>
             <td>ErpAttributes</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>source</code></td>
             <td>string</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>price</code></td>
             <td>SalesDocumentPrice</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>error</code></td>
             <td>ParametrisedMessage</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>buyer</code></td>
             <td>object</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>client</code></td>
             <td>object</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>seller</code></td>
             <td>object</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>vendors</code></td>
             <td>array</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>products</code></td>
             <td>array</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>SalesOrderStatus</td>
-            <td>            
-            Allowed values:
-            <ul>
-                <li><code>Draft</code></li>
-                                <li><code>Finalizing</code></li>
-                                <li><code>Pending</code></li>
-                                <li><code>Ready</code></li>
-                                <li><code>Completed</code></li>
-                                <li><code>Deleted</code></li>
-                                <li><code>Error</code></li>
-                                
-            </ul>
-            </td>
+            <td>Allowed values: Draft,Finalizing,Pending,Ready,Completed,Deleted,Error</td>
         </tr>
         <tr>
             <td><code>externalIds</code></td>
             <td>SalesDocumentExternalIds</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>salesQuote</code></td>
             <td>object</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>lines</code></td>
             <td>array</td>
-            <td>
-            </td>
+            <td></td>
         </tr></tbody>
 </table>
 
@@ -179,12 +151,12 @@
         <tr>
             <td><code>type</code></td>
             <td>AccountType</td>
-            <td></td>
+            <td>Allowed values: Client,Vendor,Operations</td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>AccountStatus</td>
-            <td></td>
+            <td>Allowed values: Active,Enabled,Disabled</td>
         </tr>
         <tr>
             <td><code>externalIds</code></td>
@@ -298,12 +270,12 @@
         <tr>
             <td><code>type</code></td>
             <td>AccountType</td>
-            <td></td>
+            <td>Allowed values: Client,Vendor,Operations</td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>AccountStatus</td>
-            <td></td>
+            <td>Allowed values: Active,Enabled,Disabled</td>
         </tr>
     </tbody>
 </table>
@@ -596,7 +568,7 @@ Represents the period during which a charge is applicable.
         <tr>
             <td><code>status</code></td>
             <td>ErpItemStatus</td>
-            <td></td>
+            <td>Allowed values: Active,Deleted,Blocked</td>
         </tr>
         <tr>
             <td><code>externalIds</code></td>
@@ -1008,7 +980,7 @@ Represents the period during which a charge is applicable.
         <tr>
             <td><code>status</code></td>
             <td>SalesOrderStatus</td>
-            <td></td>
+            <td>Allowed values: Draft,Finalizing,Pending,Ready,Completed,Deleted,Error</td>
         </tr>
         <tr>
             <td><code>externalIds</code></td>
@@ -1045,7 +1017,7 @@ Represents the period during which a charge is applicable.
         <tr>
             <td><code>status</code></td>
             <td>SalesQuoteStatus</td>
-            <td></td>
+            <td>Allowed values: Draft,Finalizing,Pending,Accepting,Accepted,Rejected,Expired,Deleted,Error,AwaitingAcceptance</td>
         </tr>
         <tr>
             <td><code>externalIds</code></td>

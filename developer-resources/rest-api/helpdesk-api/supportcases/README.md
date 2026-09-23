@@ -15,87 +15,67 @@
         <tr>
             <td><code>id</code></td>
             <td>string</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>audit</code></td>
             <td>SupportCaseAudit</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>$meta</code></td>
             <td>PlatformMetadata</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>chat</code></td>
             <td>Chat</td>
-            <td>Represents the chat this support case is coupled with.
-            </td>
+            <td>Represents the chat this support case is coupled with.</td>
         </tr>
         <tr>
             <td><code>reporter</code></td>
             <td>Contact</td>
-            <td>Represents the Mpt.Helpdesk.Models.Notifications.Contact who is reporting this issue.
-            </td>
+            <td>Represents the Mpt.Helpdesk.Models.Notifications.Contact who is reporting this issue.</td>
         </tr>
         <tr>
             <td><code>assignee</code></td>
             <td>Contact</td>
-            <td>Represents the Mpt.Helpdesk.Models.Notifications.Contact to whom this case is currently assigned. It can be null if the case is unassigned.
-            </td>
+            <td>Represents the Mpt.Helpdesk.Models.Notifications.Contact to whom this case is currently assigned. It can be null if the case is unassigned.</td>
         </tr>
         <tr>
             <td><code>account</code></td>
             <td>Account</td>
-            <td>Represents the account context of the Mpt.Helpdesk.Models.Cases.SupportCase.Reporter.
-            </td>
+            <td>Represents the account context of the Mpt.Helpdesk.Models.Cases.SupportCase.Reporter.</td>
         </tr>
         <tr>
             <td><code>queue</code></td>
             <td>Queue</td>
-            <td>Queue to which this case is currently assigned.
-            </td>
+            <td>Queue to which this case is currently assigned.</td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>SupportCaseStatus</td>
-            <td>The status of the support case.            
-            Allowed values:
-            <ul>
-                <li><code>Processing</code></li>
-                                <li><code>Querying</code></li>
-                                <li><code>Completed</code></li>
-                                
-            </ul>
-            </td>
+            <td>The status of the support case.Allowed values: Processing,Querying,Completed</td>
         </tr>
         <tr>
             <td><code>queryPrompt</code></td>
             <td>string</td>
-            <td>The prompt that is set along with setting the Mpt.Helpdesk.Models.Cases.SupportCase.Status to Mpt.Helpdesk.Models.Cases.SupportCaseStatus.Querying
-            </td>
+            <td>The prompt that is set along with setting the Mpt.Helpdesk.Models.Cases.SupportCase.Status to Mpt.Helpdesk.Models.Cases.SupportCaseStatus.Querying</td>
         </tr>
         <tr>
             <td><code>parameters</code></td>
             <td>array</td>
-            <td>Represents the parameter values in the case.
-            </td>
+            <td>Represents the parameter values in the case.</td>
         </tr>
         <tr>
             <td><code>sensitiveParameters</code></td>
             <td>array</td>
-            <td>
-            </td>
+            <td></td>
         </tr></tbody>
 </table>
 
@@ -151,12 +131,12 @@
         <tr>
             <td><code>type</code></td>
             <td>AccountType</td>
-            <td></td>
+            <td>Allowed values: Client,Vendor,Operations</td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>AccountStatus</td>
-            <td></td>
+            <td>Allowed values: Active,Enabled,Disabled</td>
         </tr>
         <tr>
             <td><code>externalIds</code></td>
@@ -270,12 +250,12 @@
         <tr>
             <td><code>type</code></td>
             <td>AccountType</td>
-            <td></td>
+            <td>Allowed values: Client,Vendor,Operations</td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>AccountStatus</td>
-            <td></td>
+            <td>Allowed values: Active,Enabled,Disabled</td>
         </tr>
     </tbody>
 </table>
@@ -443,7 +423,7 @@
         <tr>
             <td><code>type</code></td>
             <td>ChatType</td>
-            <td>Represents the type of chat, indicating whether it is a direct message, group chat, channel, or support case.</td>
+            <td>Represents the type of chat, indicating whether it is a direct message, group chat, channel, or support case.Allowed values: Direct,Group,Channel,Case</td>
         </tr>
         <tr>
             <td><code>participants</code></td>
@@ -537,7 +517,7 @@
         <tr>
             <td><code>visibility</code></td>
             <td>MessageVisibility</td>
-            <td>Visibility of the chat message, indicating whether it is public or private.</td>
+            <td>Visibility of the chat message, indicating whether it is public or private.Allowed values: Public,Private</td>
         </tr>
         <tr>
             <td><code>isDeleted</code></td>
@@ -579,7 +559,7 @@
         <tr>
             <td><code>status</code></td>
             <td>ParticipantStatus</td>
-            <td>Represents the status of the chat participant, indicating whether they are active, suspended, or exited.</td>
+            <td>Represents the status of the chat participant, indicating whether they are active, suspended, or exited.Allowed values: Active,Exited,Deactivated</td>
         </tr>
     </tbody>
 </table>
@@ -809,7 +789,7 @@ Represents a file in the helpdesk module
         <tr>
             <td><code>type</code></td>
             <td>FileType</td>
-            <td>Specifies the type of the file, such as attachment or icon</td>
+            <td>Specifies the type of the file, such as attachment or iconAllowed values: Attachment,Icon,Image,Video</td>
         </tr>
         <tr>
             <td><code>filename</code></td>
@@ -866,7 +846,7 @@ Constraints specific to helpdesk parameters
         <tr>
             <td><code>visibility</code></td>
             <td>VisibilityMode</td>
-            <td>The visibility mode controlling who can see the parameter</td>
+            <td>The visibility mode controlling who can see the parameterAllowed values: All,OnlyMyAccount</td>
         </tr>
     </tbody>
 </table>
@@ -1201,7 +1181,7 @@ Constraints specific to helpdesk parameters
         <tr>
             <td><code>status</code></td>
             <td>QueueStatus</td>
-            <td>Gets or sets the status of the queue.</td>
+            <td>Gets or sets the status of the queue.Allowed values: Disabled,Active</td>
         </tr>
         <tr>
             <td><code>default</code></td>
@@ -1379,7 +1359,7 @@ Represents a parameter associated with a support case in the helpdesk system.
         <tr>
             <td><code>type</code></td>
             <td>ParameterType</td>
-            <td>Gets or sets the type of the parameter.</td>
+            <td>Gets or sets the type of the parameter.Allowed values: SingleLineText,MultiLineText,Address,Contact,Checkbox,Choice,Subdomain,Heading,DropDown,Email,DataObject,Date,DateAndTime,Collection</td>
         </tr>
         <tr>
             <td><code>multiple</code></td>

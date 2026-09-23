@@ -15,124 +15,92 @@
         <tr>
             <td><code>id</code></td>
             <td>string</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>audit</code></td>
             <td>PlatformObjectAudit</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>$meta</code></td>
             <td>PlatformMetadata</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
             <td>string</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
             <td>string</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>type</code></td>
             <td>AccountType</td>
-            <td>            
-            Allowed values:
-            <ul>
-                <li><code>Client</code></li>
-                                <li><code>Vendor</code></li>
-                                <li><code>Operations</code></li>
-                                
-            </ul>
-            </td>
+            <td>Allowed values: Client,Vendor,Operations</td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>AccountStatus</td>
-            <td>            
-            Allowed values:
-            <ul>
-                <li><code>Active</code></li>
-                                <li><code>Enabled</code></li>
-                                <li><code>Disabled</code></li>
-                                
-            </ul>
-            </td>
+            <td>Allowed values: Active,Enabled,Disabled</td>
         </tr>
         <tr>
             <td><code>externalIds</code></td>
             <td>AccountExternalIds</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>externalId</code></td>
             <td>string</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>externalName</code></td>
             <td>string</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>address</code></td>
             <td>Address</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>technicalSupportEmail</code></td>
             <td>string</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>website</code></td>
             <td>string</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>description</code></td>
             <td>string</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>groups</code></td>
             <td>array</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>eligibility</code></td>
             <td>Eligibility</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>defaultLanguageCode</code></td>
             <td>string</td>
-            <td>
-            </td>
+            <td></td>
         </tr></tbody>
 </table>
 

@@ -15,76 +15,57 @@ A form submission within a chat, containing parameter values filled by participa
         <tr>
             <td><code>id</code></td>
             <td>string</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>audit</code></td>
             <td>AnswerAudit</td>
-            <td>Audit information for answer lifecycle events
-            </td>
+            <td>Audit information for answer lifecycle events</td>
         </tr>
         <tr>
             <td><code>$meta</code></td>
             <td>PlatformMetadata</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
             <td>string</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
             <td>string</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>form</code></td>
             <td>Form</td>
-            <td>The parent form that defines the structure of this answer
-            </td>
+            <td>The parent form that defines the structure of this answer</td>
         </tr>
         <tr>
             <td><code>chat</code></td>
             <td>Chat</td>
-            <td>The chat this answer belongs to
-            </td>
+            <td>The chat this answer belongs to</td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>AnswerStatus</td>
-            <td>The current lifecycle status of the answer            
-            Allowed values:
-            <ul>
-                <li><code>Draft</code></li>
-                                <li><code>Submitted</code></li>
-                                <li><code>Querying</code></li>
-                                <li><code>Accepted</code></li>
-                                
-            </ul>
-            </td>
+            <td>The current lifecycle status of the answerAllowed values: Draft,Submitted,Querying,Accepted</td>
         </tr>
         <tr>
             <td><code>parameters</code></td>
             <td>array</td>
-            <td>Flat list of parameter values for this answer, each referencing a ParameterDefinition and optionally belonging to one or more groups
-            </td>
+            <td>Flat list of parameter values for this answer, each referencing a ParameterDefinition and optionally belonging to one or more groups</td>
         </tr>
         <tr>
             <td><code>isDeleted</code></td>
             <td>boolean</td>
-            <td>Indicates whether the answer has been soft-deleted
-            </td>
+            <td>Indicates whether the answer has been soft-deleted</td>
         </tr></tbody>
 </table>
 
@@ -130,12 +111,12 @@ A form submission within a chat, containing parameter values filled by participa
         <tr>
             <td><code>type</code></td>
             <td>AccountType</td>
-            <td></td>
+            <td>Allowed values: Client,Vendor,Operations</td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>AccountStatus</td>
-            <td></td>
+            <td>Allowed values: Active,Enabled,Disabled</td>
         </tr>
     </tbody>
 </table>
@@ -219,7 +200,7 @@ A parameter value within an answer, identified by its ParameterDefinition ID
         <tr>
             <td><code>type</code></td>
             <td>ParameterType</td>
-            <td>Gets or sets the type of the parameter.</td>
+            <td>Gets or sets the type of the parameter.Allowed values: SingleLineText,MultiLineText,Address,Contact,Checkbox,Choice,Subdomain,Heading,DropDown,Email,DataObject,Date,DateAndTime,Collection</td>
         </tr>
         <tr>
             <td><code>value</code></td>
@@ -340,7 +321,7 @@ system error.</td>
         <tr>
             <td><code>type</code></td>
             <td>ChatType</td>
-            <td>Represents the type of chat, indicating whether it is a direct message, group chat, channel, or support case.</td>
+            <td>Represents the type of chat, indicating whether it is a direct message, group chat, channel, or support case.Allowed values: Direct,Group,Channel,Case</td>
         </tr>
         <tr>
             <td><code>participants</code></td>
@@ -434,7 +415,7 @@ system error.</td>
         <tr>
             <td><code>visibility</code></td>
             <td>MessageVisibility</td>
-            <td>Visibility of the chat message, indicating whether it is public or private.</td>
+            <td>Visibility of the chat message, indicating whether it is public or private.Allowed values: Public,Private</td>
         </tr>
         <tr>
             <td><code>isDeleted</code></td>
@@ -476,7 +457,7 @@ system error.</td>
         <tr>
             <td><code>status</code></td>
             <td>ParticipantStatus</td>
-            <td>Represents the status of the chat participant, indicating whether they are active, suspended, or exited.</td>
+            <td>Represents the status of the chat participant, indicating whether they are active, suspended, or exited.Allowed values: Active,Exited,Deactivated</td>
         </tr>
     </tbody>
 </table>
@@ -555,7 +536,7 @@ Represents a file in the helpdesk module
         <tr>
             <td><code>type</code></td>
             <td>FileType</td>
-            <td>Specifies the type of the file, such as attachment or icon</td>
+            <td>Specifies the type of the file, such as attachment or iconAllowed values: Attachment,Icon,Image,Video</td>
         </tr>
         <tr>
             <td><code>filename</code></td>
@@ -627,7 +608,7 @@ Represents a file in the helpdesk module
         <tr>
             <td><code>status</code></td>
             <td>FormStatus</td>
-            <td>Gets or sets the status of the Form.</td>
+            <td>Gets or sets the status of the Form.Allowed values: Unpublished,Published</td>
         </tr>
         <tr>
             <td><code>externalId</code></td>
@@ -758,7 +739,7 @@ Constraints specific to helpdesk parameters
         <tr>
             <td><code>visibility</code></td>
             <td>VisibilityMode</td>
-            <td>The visibility mode controlling who can see the parameter</td>
+            <td>The visibility mode controlling who can see the parameterAllowed values: All,OnlyMyAccount</td>
         </tr>
     </tbody>
 </table>

@@ -15,144 +15,102 @@
         <tr>
             <td><code>id</code></td>
             <td>string</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>audit</code></td>
             <td>EnrollmentAudit</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>$meta</code></td>
             <td>PlatformMetadata</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
             <td>string</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>certificate</code></td>
             <td>object</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>program</code></td>
             <td>object</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>vendor</code></td>
             <td>object</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>applicableTo</code></td>
             <td>ProgramApplicableTo</td>
-            <td>            
-            Allowed values:
-            <ul>
-                <li><code>Buyer</code></li>
-                                <li><code>Licensee</code></li>
-                                
-            </ul>
-            </td>
+            <td>Allowed values: Buyer,Licensee</td>
         </tr>
         <tr>
             <td><code>type</code></td>
             <td>EnrollmentType</td>
-            <td>            
-            Allowed values:
-            <ul>
-                <li><code>Change</code></li>
-                                <li><code>New</code></li>
-                                
-            </ul>
-            </td>
+            <td>Allowed values: Change,New</td>
         </tr>
         <tr>
             <td><code>buyer</code></td>
             <td>object</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>licensee</code></td>
             <td>object</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>eligibility</code></td>
             <td>ProgramEligibility</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>EnrollmentStatus</td>
-            <td>            
-            Allowed values:
-            <ul>
-                <li><code>Draft</code></li>
-                                <li><code>Processing</code></li>
-                                <li><code>Querying</code></li>
-                                <li><code>Completed</code></li>
-                                <li><code>Failed</code></li>
-                                <li><code>Deleted</code></li>
-                                
-            </ul>
-            </td>
+            <td>Allowed values: Draft,Processing,Querying,Completed,Failed,Deleted</td>
         </tr>
         <tr>
             <td><code>notes</code></td>
             <td>string</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>statusNotes</code></td>
             <td>ParametrisedMessage</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>assignee</code></td>
             <td>object</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>parameters</code></td>
             <td>ProgramParameterBag</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>error</code></td>
             <td>ParametrisedMessage</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>template</code></td>
             <td>object</td>
-            <td>
-            </td>
+            <td></td>
         </tr></tbody>
 </table>
 
@@ -198,12 +156,12 @@
         <tr>
             <td><code>type</code></td>
             <td>AccountType</td>
-            <td></td>
+            <td>Allowed values: Client,Vendor,Operations</td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>AccountStatus</td>
-            <td></td>
+            <td>Allowed values: Active,Enabled,Disabled</td>
         </tr>
     </tbody>
 </table>
@@ -958,12 +916,12 @@
         <tr>
             <td><code>type</code></td>
             <td>ParameterType</td>
-            <td></td>
+            <td>Allowed values: SingleLineText,MultiLineText,Address,Contact,Checkbox,Choice,Subdomain,Heading,DropDown,Email,DataObject,Date,DateAndTime,Collection</td>
         </tr>
         <tr>
             <td><code>phase</code></td>
             <td>ProgramParameterPhase</td>
-            <td></td>
+            <td>Allowed values: Order,Fulfillment</td>
         </tr>
         <tr>
             <td><code>multiple</code></td>
@@ -1052,12 +1010,12 @@
         <tr>
             <td><code>status</code></td>
             <td>ProgramStatus</td>
-            <td></td>
+            <td>Allowed values: None,Draft,Published,Unpublished,Deleted</td>
         </tr>
         <tr>
             <td><code>applicableTo</code></td>
             <td>ProgramApplicableTo</td>
-            <td></td>
+            <td>Allowed values: Buyer,Licensee</td>
         </tr>
         <tr>
             <td><code>products</code></td>
@@ -1099,7 +1057,7 @@
         <tr>
             <td><code>type</code></td>
             <td>ProgramTemplateType</td>
-            <td></td>
+            <td>Allowed values: EnrollmentProcessing,EnrollmentQuerying,EnrollmentCompleted</td>
         </tr>
     </tbody>
 </table>

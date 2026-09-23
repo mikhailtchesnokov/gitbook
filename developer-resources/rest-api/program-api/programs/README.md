@@ -15,113 +15,82 @@
         <tr>
             <td><code>id</code></td>
             <td>string</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>audit</code></td>
             <td>ProgramAudit</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>$meta</code></td>
             <td>PlatformMetadata</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
             <td>string</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>shortDescription</code></td>
             <td>string</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>longDescription</code></td>
             <td>string</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>website</code></td>
             <td>string</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
             <td>string</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>ProgramStatus</td>
-            <td>            
-            Allowed values:
-            <ul>
-                <li><code>None</code></li>
-                                <li><code>Draft</code></li>
-                                <li><code>Published</code></li>
-                                <li><code>Unpublished</code></li>
-                                <li><code>Deleted</code></li>
-                                
-            </ul>
-            </td>
+            <td>Allowed values: None,Draft,Published,Unpublished,Deleted</td>
         </tr>
         <tr>
             <td><code>eligibility</code></td>
             <td>ProgramEligibility</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>applicableTo</code></td>
             <td>ProgramApplicableTo</td>
-            <td>            
-            Allowed values:
-            <ul>
-                <li><code>Buyer</code></li>
-                                <li><code>Licensee</code></li>
-                                
-            </ul>
-            </td>
+            <td>Allowed values: Buyer,Licensee</td>
         </tr>
         <tr>
             <td><code>products</code></td>
             <td>array</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>vendor</code></td>
             <td>object</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>settings</code></td>
             <td>ProgramSettings</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>statistics</code></td>
             <td>ProgramStatistics</td>
-            <td>
-            </td>
+            <td></td>
         </tr></tbody>
 </table>
 
@@ -167,12 +136,12 @@
         <tr>
             <td><code>type</code></td>
             <td>AccountType</td>
-            <td></td>
+            <td>Allowed values: Client,Vendor,Operations</td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>AccountStatus</td>
-            <td></td>
+            <td>Allowed values: Active,Enabled,Disabled</td>
         </tr>
     </tbody>
 </table>

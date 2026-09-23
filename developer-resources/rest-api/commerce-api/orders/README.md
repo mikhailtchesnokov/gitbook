@@ -15,222 +15,162 @@
         <tr>
             <td><code>id</code></td>
             <td>string</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>audit</code></td>
             <td>OrderAudit</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>$meta</code></td>
             <td>PlatformMetadata</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>type</code></td>
             <td>OrderType</td>
-            <td>            
-            Allowed values:
-            <ul>
-                <li><code>Purchase</code></li>
-                                <li><code>Change</code></li>
-                                <li><code>Termination</code></li>
-                                <li><code>Configuration</code></li>
-                                
-            </ul>
-            </td>
+            <td>Allowed values: Purchase,Change,Termination,Configuration</td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>OrderStatus</td>
-            <td>            
-            Allowed values:
-            <ul>
-                <li><code>New</code></li>
-                                <li><code>Draft</code></li>
-                                <li><code>Deleted</code></li>
-                                <li><code>Processing</code></li>
-                                <li><code>Querying</code></li>
-                                <li><code>Failed</code></li>
-                                <li><code>Completed</code></li>
-                                <li><code>Quoted</code></li>
-                                
-            </ul>
-            </td>
+            <td>Allowed values: New,Draft,Deleted,Processing,Querying,Failed,Completed,Quoted</td>
         </tr>
         <tr>
             <td><code>notes</code></td>
             <td>string</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>comments</code></td>
             <td>string</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>statusNotes</code></td>
             <td>ParametrisedMessage</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>template</code></td>
             <td>object</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>listing</code></td>
             <td>object</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>authorization</code></td>
             <td>object</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>agreement</code></td>
             <td>object</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>assignee</code></td>
             <td>object</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>externalIds</code></td>
             <td>ExternalIds</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>price</code></td>
             <td>OrderSummaryPrice</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>lines</code></td>
             <td>array</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>subscriptions</code></td>
             <td>array</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>assets</code></td>
             <td>array</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>parameters</code></td>
             <td>ParameterBag</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>error</code></td>
             <td>ParametrisedMessage</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>product</code></td>
             <td>object</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>client</code></td>
             <td>object</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>licensee</code></td>
             <td>object</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>buyer</code></td>
             <td>object</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>seller</code></td>
             <td>object</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>vendor</code></td>
             <td>object</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>billTo</code></td>
             <td>object</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>pricingPolicy</code></td>
             <td>object</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>termsAndConditions</code></td>
             <td>array</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>certificates</code></td>
             <td>array</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>defaultMarkupSource</code></td>
             <td>MarkupSource</td>
-            <td>            
-            Allowed values:
-            <ul>
-                <li><code>Unknown</code></li>
-                                <li><code>PriceList</code></li>
-                                <li><code>PricingPolicy</code></li>
-                                <li><code>Manual</code></li>
-                                
-            </ul>
-            </td>
+            <td>Allowed values: Unknown,PriceList,PricingPolicy,Manual</td>
         </tr></tbody>
 </table>
 
@@ -286,12 +226,12 @@
         <tr>
             <td><code>type</code></td>
             <td>AccountType</td>
-            <td></td>
+            <td>Allowed values: Client,Vendor,Operations</td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>AccountStatus</td>
-            <td></td>
+            <td>Allowed values: Active,Enabled,Disabled</td>
         </tr>
         <tr>
             <td><code>externalIds</code></td>
@@ -405,12 +345,12 @@
         <tr>
             <td><code>type</code></td>
             <td>AccountType</td>
-            <td></td>
+            <td>Allowed values: Client,Vendor,Operations</td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>AccountStatus</td>
-            <td></td>
+            <td>Allowed values: Active,Enabled,Disabled</td>
         </tr>
     </tbody>
 </table>
@@ -509,7 +449,7 @@
         <tr>
             <td><code>status</code></td>
             <td>AgreementStatus</td>
-            <td></td>
+            <td>Allowed values: New,Draft,Provisioning,Updating,Active,Terminated,Failed,Deleted</td>
         </tr>
         <tr>
             <td><code>listing</code></td>
@@ -708,7 +648,7 @@
         <tr>
             <td><code>status</code></td>
             <td>AgreementLineStatus</td>
-            <td></td>
+            <td>Allowed values: Active,Terminated,Deleted,Expired</td>
         </tr>
         <tr>
             <td><code>subscription</code></td>
@@ -919,7 +859,7 @@
         <tr>
             <td><code>status</code></td>
             <td>AgreementStatus</td>
-            <td></td>
+            <td>Allowed values: New,Draft,Provisioning,Updating,Active,Terminated,Failed,Deleted</td>
         </tr>
     </tbody>
 </table>
@@ -1053,7 +993,7 @@
         <tr>
             <td><code>status</code></td>
             <td>AssetStatus</td>
-            <td></td>
+            <td>Allowed values: New,Draft,Active,Terminated</td>
         </tr>
         <tr>
             <td><code>price</code></td>
@@ -1204,7 +1144,7 @@
         <tr>
             <td><code>status</code></td>
             <td>AssetStatus</td>
-            <td></td>
+            <td>Allowed values: New,Draft,Active,Terminated</td>
         </tr>
     </tbody>
 </table>
@@ -1360,7 +1300,7 @@
         <tr>
             <td><code>status</code></td>
             <td>BuyerStatus</td>
-            <td></td>
+            <td>Allowed values: Active,Enabled,Disabled,Deleted,Unassigned,Conflict,Mismatch</td>
         </tr>
         <tr>
             <td><code>address</code></td>
@@ -1592,17 +1532,17 @@
         <tr>
             <td><code>type</code></td>
             <td>ParameterType</td>
-            <td></td>
+            <td>Allowed values: SingleLineText,MultiLineText,Address,Contact,Checkbox,Choice,Subdomain,Heading,DropDown,Email,DataObject,Date,DateAndTime,Collection</td>
         </tr>
         <tr>
             <td><code>phase</code></td>
             <td>ParameterPhase</td>
-            <td></td>
+            <td>Allowed values: Configuration,Order,Fulfillment</td>
         </tr>
         <tr>
             <td><code>scope</code></td>
             <td>ParameterScope</td>
-            <td></td>
+            <td>Allowed values: Agreement,Item,Subscription,Order,Asset</td>
         </tr>
         <tr>
             <td><code>multiple</code></td>
@@ -1743,7 +1683,7 @@
         <tr>
             <td><code>status</code></td>
             <td>ErpLinkStatus</td>
-            <td></td>
+            <td>Allowed values: Active,Blocked,Disabled</td>
         </tr>
     </tbody>
 </table>
@@ -2044,7 +1984,7 @@
         <tr>
             <td><code>status</code></td>
             <td>AssetStatus</td>
-            <td></td>
+            <td>Allowed values: New,Draft,Active,Terminated</td>
         </tr>
         <tr>
             <td><code>price</code></td>
@@ -2148,7 +2088,7 @@
         <tr>
             <td><code>status</code></td>
             <td>AssetStatus</td>
-            <td></td>
+            <td>Allowed values: New,Draft,Active,Terminated</td>
         </tr>
     </tbody>
 </table>
@@ -2461,7 +2401,7 @@
         <tr>
             <td><code>status</code></td>
             <td>OrderSubscriptionStatus</td>
-            <td></td>
+            <td>Allowed values: Draft,Active,Deleted,Updating,Terminating,Terminated</td>
         </tr>
         <tr>
             <td><code>commitmentDate</code></td>
@@ -2580,7 +2520,7 @@
         <tr>
             <td><code>status</code></td>
             <td>OrderSubscriptionStatus</td>
-            <td></td>
+            <td>Allowed values: Draft,Active,Deleted,Updating,Terminating,Terminated</td>
         </tr>
         <tr>
             <td><code>autoRenew</code></td>
@@ -3667,7 +3607,7 @@
         <tr>
             <td><code>status</code></td>
             <td>SellerStatus</td>
-            <td></td>
+            <td>Allowed values: Active,Disabled,Offline,Deleted</td>
         </tr>
         <tr>
             <td><code>currencies</code></td>
@@ -3914,7 +3854,7 @@
         <tr>
             <td><code>status</code></td>
             <td>SubscriptionStatus</td>
-            <td></td>
+            <td>Allowed values: Active,Updating,Terminating,Terminated,Expired</td>
         </tr>
         <tr>
             <td><code>commitmentDate</code></td>
@@ -3959,7 +3899,7 @@
         <tr>
             <td><code>splitStatus</code></td>
             <td>SplitStatus</td>
-            <td></td>
+            <td>Allowed values: Disabled,Active,Review</td>
         </tr>
         <tr>
             <td><code>lines</code></td>

@@ -15,133 +15,97 @@
         <tr>
             <td><code>id</code></td>
             <td>string</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>audit</code></td>
             <td>CertificateAudit</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>$meta</code></td>
             <td>PlatformMetadata</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
             <td>string</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>program</code></td>
             <td>object</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>vendor</code></td>
             <td>object</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>externalIds</code></td>
             <td>CertificateExternalIds</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>client</code></td>
             <td>object</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>applicableTo</code></td>
             <td>ProgramApplicableTo</td>
-            <td>            
-            Allowed values:
-            <ul>
-                <li><code>Buyer</code></li>
-                                <li><code>Licensee</code></li>
-                                
-            </ul>
-            </td>
+            <td>Allowed values: Buyer,Licensee</td>
         </tr>
         <tr>
             <td><code>buyer</code></td>
             <td>object</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>licensee</code></td>
             <td>object</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>eligibility</code></td>
             <td>ProgramEligibility</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>CertificateStatus</td>
-            <td>            
-            Allowed values:
-            <ul>
-                <li><code>Draft</code></li>
-                                <li><code>Pending</code></li>
-                                <li><code>Updating</code></li>
-                                <li><code>Active</code></li>
-                                <li><code>Terminated</code></li>
-                                <li><code>Expired</code></li>
-                                <li><code>Deleted</code></li>
-                                
-            </ul>
-            </td>
+            <td>Allowed values: Draft,Pending,Updating,Active,Terminated,Expired,Deleted</td>
         </tr>
         <tr>
             <td><code>statusNotes</code></td>
             <td>string</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>expirationDate</code></td>
             <td>string</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>template</code></td>
             <td>object</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>parameters</code></td>
             <td>ProgramParameterBag</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>terms</code></td>
             <td>array</td>
-            <td>
-            </td>
+            <td></td>
         </tr></tbody>
 </table>
 
@@ -187,12 +151,12 @@
         <tr>
             <td><code>type</code></td>
             <td>AccountType</td>
-            <td></td>
+            <td>Allowed values: Client,Vendor,Operations</td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>AccountStatus</td>
-            <td></td>
+            <td>Allowed values: Active,Enabled,Disabled</td>
         </tr>
     </tbody>
 </table>
@@ -1041,12 +1005,12 @@
         <tr>
             <td><code>type</code></td>
             <td>ParameterType</td>
-            <td></td>
+            <td>Allowed values: SingleLineText,MultiLineText,Address,Contact,Checkbox,Choice,Subdomain,Heading,DropDown,Email,DataObject,Date,DateAndTime,Collection</td>
         </tr>
         <tr>
             <td><code>phase</code></td>
             <td>ProgramParameterPhase</td>
-            <td></td>
+            <td>Allowed values: Order,Fulfillment</td>
         </tr>
         <tr>
             <td><code>multiple</code></td>
@@ -1135,12 +1099,12 @@
         <tr>
             <td><code>status</code></td>
             <td>ProgramStatus</td>
-            <td></td>
+            <td>Allowed values: None,Draft,Published,Unpublished,Deleted</td>
         </tr>
         <tr>
             <td><code>applicableTo</code></td>
             <td>ProgramApplicableTo</td>
-            <td></td>
+            <td>Allowed values: Buyer,Licensee</td>
         </tr>
         <tr>
             <td><code>products</code></td>
@@ -1182,7 +1146,7 @@
         <tr>
             <td><code>type</code></td>
             <td>ProgramTemplateType</td>
-            <td></td>
+            <td>Allowed values: EnrollmentProcessing,EnrollmentQuerying,EnrollmentCompleted</td>
         </tr>
     </tbody>
 </table>

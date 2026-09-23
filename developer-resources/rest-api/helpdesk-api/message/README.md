@@ -15,80 +15,62 @@
         <tr>
             <td><code>id</code></td>
             <td>string</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>audit</code></td>
             <td>ChatMessageAudit</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>$meta</code></td>
             <td>PlatformMetadata</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>chat</code></td>
             <td>object</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>sender</code></td>
             <td>object</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>content</code></td>
             <td>string</td>
-            <td>Content of the chat message.
-            </td>
+            <td>Content of the chat message.</td>
         </tr>
         <tr>
             <td><code>visibility</code></td>
             <td>MessageVisibility</td>
-            <td>Visibility of the chat message, indicating whether it is public or private.            
-            Allowed values:
-            <ul>
-                <li><code>Public</code></li>
-                                <li><code>Private</code></li>
-                                
-            </ul>
-            </td>
+            <td>Visibility of the chat message, indicating whether it is public or private.Allowed values: Public,Private</td>
         </tr>
         <tr>
             <td><code>isDeleted</code></td>
             <td>boolean</td>
-            <td>Set to true when the message should be considered deleted
-            </td>
+            <td>Set to true when the message should be considered deleted</td>
         </tr>
         <tr>
             <td><code>links</code></td>
             <td>array</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>identity</code></td>
             <td>object</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>replyTo</code></td>
             <td>object</td>
-            <td>
-            </td>
+            <td></td>
         </tr></tbody>
 </table>
 
@@ -223,7 +205,7 @@
         <tr>
             <td><code>visibility</code></td>
             <td>MessageVisibility</td>
-            <td>Visibility of the chat message, indicating whether it is public or private.</td>
+            <td>Visibility of the chat message, indicating whether it is public or private.Allowed values: Public,Private</td>
         </tr>
         <tr>
             <td><code>isDeleted</code></td>
@@ -265,7 +247,7 @@
         <tr>
             <td><code>status</code></td>
             <td>ParticipantStatus</td>
-            <td>Represents the status of the chat participant, indicating whether they are active, suspended, or exited.</td>
+            <td>Represents the status of the chat participant, indicating whether they are active, suspended, or exited.Allowed values: Active,Exited,Deactivated</td>
         </tr>
     </tbody>
 </table>
@@ -307,7 +289,7 @@
         <tr>
             <td><code>type</code></td>
             <td>ChatType</td>
-            <td>Represents the type of chat, indicating whether it is a direct message, group chat, channel, or support case.</td>
+            <td>Represents the type of chat, indicating whether it is a direct message, group chat, channel, or support case.Allowed values: Direct,Group,Channel,Case</td>
         </tr>
     </tbody>
 </table>

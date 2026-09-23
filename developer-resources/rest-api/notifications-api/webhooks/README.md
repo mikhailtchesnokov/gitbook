@@ -15,140 +15,92 @@
         <tr>
             <td><code>id</code></td>
             <td>string</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>audit</code></td>
             <td>PlatformObjectAudit</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>$meta</code></td>
             <td>PlatformMetadata</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
             <td>string</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>url</code></td>
             <td>string</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>description</code></td>
             <td>string</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>WebhookStatus</td>
-            <td>            
-            Allowed values:
-            <ul>
-                <li><code>Enabled</code></li>
-                                <li><code>Disabled</code></li>
-                                
-            </ul>
-            </td>
+            <td>Allowed values: Enabled,Disabled</td>
         </tr>
         <tr>
             <td><code>type</code></td>
             <td>WebhookType</td>
-            <td>            
-            Allowed values:
-            <ul>
-                <li><code>ValidatePurchaseOrderDraft</code></li>
-                                <li><code>ValidatePurchaseOrderQuerying</code></li>
-                                <li><code>ValidateChangeOrderDraft</code></li>
-                                <li><code>ValidateTerminateOrder</code></li>
-                                <li><code>SelectOrderLines</code></li>
-                                <li><code>ValidateEnrollmentDraft</code></li>
-                                <li><code>ValidateEnrollmentQuerying</code></li>
-                                <li><code>ValidateReEnrollment</code></li>
-                                <li><code>ValidateReEnrollmentQuerying</code></li>
-                                <li><code>ValidateConfigurationOrderDraft</code></li>
-                                <li><code>ValidateAnswer</code></li>
-                                
-            </ul>
-            </td>
+            <td>Allowed values: ValidatePurchaseOrderDraft,ValidatePurchaseOrderQuerying,ValidateChangeOrderDraft,ValidateTerminateOrder,SelectOrderLines,ValidateEnrollmentDraft,ValidateEnrollmentQuerying,ValidateReEnrollment,ValidateReEnrollmentQuerying,ValidateConfigurationOrderDraft,ValidateAnswer</td>
         </tr>
         <tr>
             <td><code>secret</code></td>
             <td>string</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>statistics</code></td>
             <td>WebhookStatistics</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>objectType</code></td>
             <td>WebhookObjectType</td>
-            <td>            
-            Allowed values:
-            <ul>
-                <li><code>Order</code></li>
-                                <li><code>Request</code></li>
-                                <li><code>Account</code></li>
-                                <li><code>Enrollment</code></li>
-                                <li><code>Answer</code></li>
-                                
-            </ul>
-            </td>
+            <td>Allowed values: Order,Request,Account,Enrollment,Answer</td>
         </tr>
         <tr>
             <td><code>account</code></td>
             <td>object</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>object</code></td>
             <td>WebhookObjectRef</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>criteria</code></td>
             <td>array</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>lastSuccess</code></td>
             <td>WebhookCall</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>lastFailure</code></td>
             <td>WebhookCall</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>lastCall</code></td>
             <td>WebhookCall</td>
-            <td>
-            </td>
+            <td></td>
         </tr></tbody>
 </table>
 
@@ -194,12 +146,12 @@
         <tr>
             <td><code>type</code></td>
             <td>AccountType</td>
-            <td></td>
+            <td>Allowed values: Client,Vendor,Operations</td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>AccountStatus</td>
-            <td></td>
+            <td>Allowed values: Active,Enabled,Disabled</td>
         </tr>
     </tbody>
 </table>
@@ -369,7 +321,7 @@
         <tr>
             <td><code>httpStatusCode</code></td>
             <td>HttpStatusCode</td>
-            <td></td>
+            <td>Allowed values: Continue,SwitchingProtocols,Processing,EarlyHints,OK,Created,Accepted,NonAuthoritativeInformation,NoContent,ResetContent,PartialContent,MultiStatus,AlreadyReported,IMUsed,MultipleChoices,MovedPermanently,Found,SeeOther,NotModified,UseProxy,Unused,TemporaryRedirect,PermanentRedirect,BadRequest,Unauthorized,PaymentRequired,Forbidden,NotFound,MethodNotAllowed,NotAcceptable,ProxyAuthenticationRequired,RequestTimeout,Conflict,Gone,LengthRequired,PreconditionFailed,RequestEntityTooLarge,RequestUriTooLong,UnsupportedMediaType,RequestedRangeNotSatisfiable,ExpectationFailed,MisdirectedRequest,UnprocessableEntity,Locked,FailedDependency,UpgradeRequired,PreconditionRequired,TooManyRequests,RequestHeaderFieldsTooLarge,UnavailableForLegalReasons,InternalServerError,NotImplemented,BadGateway,ServiceUnavailable,GatewayTimeout,HttpVersionNotSupported,VariantAlsoNegotiates,InsufficientStorage,LoopDetected,NotExtended,NetworkAuthenticationRequired</td>
         </tr>
     </tbody>
 </table>

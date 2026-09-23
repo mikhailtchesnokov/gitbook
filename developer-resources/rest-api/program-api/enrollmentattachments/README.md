@@ -15,68 +15,57 @@
         <tr>
             <td><code>id</code></td>
             <td>string</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>audit</code></td>
             <td>PlatformObjectAudit</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>$meta</code></td>
             <td>PlatformMetadata</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
             <td>string</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>description</code></td>
             <td>string</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>type</code></td>
             <td>string</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>filename</code></td>
             <td>string</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>size</code></td>
             <td>integer</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>contentType</code></td>
             <td>string</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>enrollment</code></td>
             <td>object</td>
-            <td>
-            </td>
+            <td></td>
         </tr></tbody>
 </table>
 
@@ -117,12 +106,12 @@
         <tr>
             <td><code>applicableTo</code></td>
             <td>ProgramApplicableTo</td>
-            <td></td>
+            <td>Allowed values: Buyer,Licensee</td>
         </tr>
         <tr>
             <td><code>type</code></td>
             <td>EnrollmentType</td>
-            <td></td>
+            <td>Allowed values: Change,New</td>
         </tr>
         <tr>
             <td><code>eligibility</code></td>
@@ -132,7 +121,7 @@
         <tr>
             <td><code>status</code></td>
             <td>EnrollmentStatus</td>
-            <td></td>
+            <td>Allowed values: Draft,Processing,Querying,Completed,Failed,Deleted</td>
         </tr>
     </tbody>
 </table>

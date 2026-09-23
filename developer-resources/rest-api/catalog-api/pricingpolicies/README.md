@@ -15,94 +15,72 @@
         <tr>
             <td><code>id</code></td>
             <td>string</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>audit</code></td>
             <td>PricingPolicyAudit</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>$meta</code></td>
             <td>PlatformMetadata</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
             <td>string</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>externalIds</code></td>
             <td>PricingPolicyExternalIdBag</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>client</code></td>
             <td>Account</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>eligibility</code></td>
             <td>PricingPolicyEligibility</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>markup</code></td>
             <td>number</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>margin</code></td>
             <td>number</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>notes</code></td>
             <td>string</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>products</code></td>
             <td>array</td>
-            <td>
-            </td>
+            <td></td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>PricingPolicyStatus</td>
-            <td>            
-            Allowed values:
-            <ul>
-                <li><code>None</code></li>
-                                <li><code>Active</code></li>
-                                <li><code>Inactive</code></li>
-                                <li><code>Deleted</code></li>
-                                
-            </ul>
-            </td>
+            <td>Allowed values: None,Active,Inactive,Deleted</td>
         </tr>
         <tr>
             <td><code>statistics</code></td>
             <td>PricingPolicyStatistics</td>
-            <td>
-            </td>
+            <td></td>
         </tr></tbody>
 </table>
 
@@ -158,12 +136,12 @@
         <tr>
             <td><code>type</code></td>
             <td>AccountType</td>
-            <td></td>
+            <td>Allowed values: Client,Vendor,Operations</td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>AccountStatus</td>
-            <td></td>
+            <td>Allowed values: Active,Enabled,Disabled</td>
         </tr>
         <tr>
             <td><code>externalIds</code></td>
@@ -277,12 +255,12 @@
         <tr>
             <td><code>type</code></td>
             <td>AccountType</td>
-            <td></td>
+            <td>Allowed values: Client,Vendor,Operations</td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>AccountStatus</td>
-            <td></td>
+            <td>Allowed values: Active,Enabled,Disabled</td>
         </tr>
     </tbody>
 </table>
