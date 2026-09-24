@@ -72,31 +72,31 @@ See the following sections to determine which roles are authorized to perform sp
 </thead>
 <tbody>
 	<tr>
-		<td>/public/v1/catalog/pricing-policies/{pricingPolicyId}/attachments</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/pricing-policies/{pricingPolicyId}/attachments</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops</td>
 	</tr>
 	<tr>
-		<td>/public/v1/catalog/pricing-policies/{pricingPolicyId}/attachments/{id}</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/pricing-policies/{pricingPolicyId}/attachments/{id}</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops</td>
 	</tr>
 	<tr>
-		<td>/public/v1/catalog/pricing-policies/{pricingPolicyId}/attachments</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/pricing-policies/{pricingPolicyId}/attachments</a></td>
 		<td>POST</td>
 		<td></td>
 		<td>ops</td>
 	</tr>
 	<tr>
-		<td>/public/v1/catalog/pricing-policies/{pricingPolicyId}/attachments/{id}</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/pricing-policies/{pricingPolicyId}/attachments/{id}</a></td>
 		<td>PUT</td>
 		<td></td>
 		<td>ops</td>
 	</tr>
 	<tr>
-		<td>/public/v1/catalog/pricing-policies/{pricingPolicyId}/attachments/{id}</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/pricing-policies/{pricingPolicyId}/attachments/{id}</a></td>
 		<td>DELETE</td>
 		<td></td>
 		<td>ops</td>
@@ -119,31 +119,31 @@ See the following sections to determine which roles are authorized to perform sp
 </thead>
 <tbody>
 	<tr>
-		<td>/public/v1/catalog/authorizations</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/authorizations</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/catalog/authorizations/{id}</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/authorizations/{id}</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/catalog/authorizations</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/authorizations</a></td>
 		<td>POST</td>
 		<td></td>
 		<td>ops</td>
 	</tr>
 	<tr>
-		<td>/public/v1/catalog/authorizations/{id}</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/authorizations/{id}</a></td>
 		<td>PUT</td>
 		<td></td>
 		<td>vendor,ops</td>
 	</tr>
 	<tr>
-		<td>/public/v1/catalog/authorizations/{id}</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/authorizations/{id}</a></td>
 		<td>DELETE</td>
 		<td></td>
 		<td>ops</td>
@@ -166,49 +166,49 @@ See the following sections to determine which roles are authorized to perform sp
 </thead>
 <tbody>
 	<tr>
-		<td>/public/v1/catalog/products/{productId}/documents/{id}</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/products/{productId}/documents/{id}</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/catalog/products/{productId}/documents</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/products/{productId}/documents</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/catalog/products/{productId}/documents</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/products/{productId}/documents</a></td>
 		<td>POST</td>
 		<td></td>
 		<td>vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/catalog/products/{productId}/documents/{id}/review</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/products/{productId}/documents/{id}/review</a></td>
 		<td>POST</td>
 		<td></td>
 		<td>vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/catalog/products/{productId}/documents/{id}/publish</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/products/{productId}/documents/{id}/publish</a></td>
 		<td>POST</td>
 		<td></td>
 		<td>ops</td>
 	</tr>
 	<tr>
-		<td>/public/v1/catalog/products/{productId}/documents/{id}/unpublish</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/products/{productId}/documents/{id}/unpublish</a></td>
 		<td>POST</td>
 		<td></td>
 		<td>vendor,ops</td>
 	</tr>
 	<tr>
-		<td>/public/v1/catalog/products/{productId}/documents/{id}</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/products/{productId}/documents/{id}</a></td>
 		<td>PUT</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/catalog/products/{productId}/documents/{id}</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/products/{productId}/documents/{id}</a></td>
 		<td>DELETE</td>
 		<td></td>
 		<td>vendor,ops</td>
@@ -231,31 +231,31 @@ See the following sections to determine which roles are authorized to perform sp
 </thead>
 <tbody>
 	<tr>
-		<td>/public/v1/catalog/products/{productId}/item-groups</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/products/{productId}/item-groups</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/catalog/products/{productId}/item-groups/{id}</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/products/{productId}/item-groups/{id}</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/catalog/products/{productId}/item-groups</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/products/{productId}/item-groups</a></td>
 		<td>POST</td>
 		<td></td>
 		<td>vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/catalog/products/{productId}/item-groups/{id}</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/products/{productId}/item-groups/{id}</a></td>
 		<td>PUT</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/catalog/products/{productId}/item-groups/{id}</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/products/{productId}/item-groups/{id}</a></td>
 		<td>DELETE</td>
 		<td></td>
 		<td>ops,client,vendor</td>
@@ -278,31 +278,31 @@ See the following sections to determine which roles are authorized to perform sp
 </thead>
 <tbody>
 	<tr>
-		<td>/public/v1/catalog/listings</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/listings</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/catalog/listings/{id}</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/listings/{id}</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/catalog/listings</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/listings</a></td>
 		<td>POST</td>
 		<td></td>
 		<td>ops</td>
 	</tr>
 	<tr>
-		<td>/public/v1/catalog/listings/{id}</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/listings/{id}</a></td>
 		<td>PUT</td>
 		<td></td>
 		<td>ops</td>
 	</tr>
 	<tr>
-		<td>/public/v1/catalog/listings/{id}</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/listings/{id}</a></td>
 		<td>DELETE</td>
 		<td></td>
 		<td>ops</td>
@@ -325,31 +325,31 @@ See the following sections to determine which roles are authorized to perform sp
 </thead>
 <tbody>
 	<tr>
-		<td>/public/v1/catalog/products/{productId}/parameter-groups</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/products/{productId}/parameter-groups</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/catalog/products/{productId}/parameter-groups/{id}</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/products/{productId}/parameter-groups/{id}</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/catalog/products/{productId}/parameter-groups</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/products/{productId}/parameter-groups</a></td>
 		<td>POST</td>
 		<td></td>
 		<td>vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/catalog/products/{productId}/parameter-groups/{id}</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/products/{productId}/parameter-groups/{id}</a></td>
 		<td>PUT</td>
 		<td></td>
 		<td>vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/catalog/products/{productId}/parameter-groups/{id}</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/products/{productId}/parameter-groups/{id}</a></td>
 		<td>DELETE</td>
 		<td></td>
 		<td>vendor</td>
@@ -372,31 +372,31 @@ See the following sections to determine which roles are authorized to perform sp
 </thead>
 <tbody>
 	<tr>
-		<td>/public/v1/catalog/products/{productId}/parameters</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/products/{productId}/parameters</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/catalog/products/{productId}/parameters/{id}</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/products/{productId}/parameters/{id}</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/catalog/products/{productId}/parameters</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/products/{productId}/parameters</a></td>
 		<td>POST</td>
 		<td></td>
 		<td>vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/catalog/products/{productId}/parameters/{id}</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/products/{productId}/parameters/{id}</a></td>
 		<td>PUT</td>
 		<td></td>
 		<td>vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/catalog/products/{productId}/parameters/{id}</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/products/{productId}/parameters/{id}</a></td>
 		<td>DELETE</td>
 		<td></td>
 		<td>vendor</td>
@@ -419,31 +419,31 @@ See the following sections to determine which roles are authorized to perform sp
 </thead>
 <tbody>
 	<tr>
-		<td>/public/v1/catalog/price-lists</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/price-lists</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/catalog/price-lists/{id}</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/price-lists/{id}</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/catalog/price-lists</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/price-lists</a></td>
 		<td>POST</td>
 		<td></td>
 		<td>vendor,ops</td>
 	</tr>
 	<tr>
-		<td>/public/v1/catalog/price-lists/{id}</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/price-lists/{id}</a></td>
 		<td>PUT</td>
 		<td></td>
 		<td>vendor,ops</td>
 	</tr>
 	<tr>
-		<td>/public/v1/catalog/price-lists/{id}</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/price-lists/{id}</a></td>
 		<td>DELETE</td>
 		<td></td>
 		<td>vendor,ops</td>
@@ -466,19 +466,19 @@ See the following sections to determine which roles are authorized to perform sp
 </thead>
 <tbody>
 	<tr>
-		<td>/public/v1/catalog/price-lists/{priceListId}/items/{id}</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/price-lists/{priceListId}/items/{id}</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/catalog/price-lists/{priceListId}/items</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/price-lists/{priceListId}/items</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/catalog/price-lists/{priceListId}/items/{id}</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/price-lists/{priceListId}/items/{id}</a></td>
 		<td>PUT</td>
 		<td></td>
 		<td>vendor,ops</td>
@@ -501,43 +501,43 @@ See the following sections to determine which roles are authorized to perform sp
 </thead>
 <tbody>
 	<tr>
-		<td>/public/v1/catalog/pricing-policies</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/pricing-policies</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>client,ops</td>
 	</tr>
 	<tr>
-		<td>/public/v1/catalog/pricing-policies/{id}</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/pricing-policies/{id}</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>client,ops</td>
 	</tr>
 	<tr>
-		<td>/public/v1/catalog/pricing-policies</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/pricing-policies</a></td>
 		<td>POST</td>
 		<td></td>
 		<td>ops</td>
 	</tr>
 	<tr>
-		<td>/public/v1/catalog/pricing-policies/{id}/activate</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/pricing-policies/{id}/activate</a></td>
 		<td>POST</td>
 		<td></td>
 		<td>ops</td>
 	</tr>
 	<tr>
-		<td>/public/v1/catalog/pricing-policies/{id}/disable</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/pricing-policies/{id}/disable</a></td>
 		<td>POST</td>
 		<td></td>
 		<td>ops</td>
 	</tr>
 	<tr>
-		<td>/public/v1/catalog/pricing-policies/{id}</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/pricing-policies/{id}</a></td>
 		<td>PUT</td>
 		<td></td>
 		<td>ops</td>
 	</tr>
 	<tr>
-		<td>/public/v1/catalog/pricing-policies/{id}</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/pricing-policies/{id}</a></td>
 		<td>DELETE</td>
 		<td></td>
 		<td>ops</td>
@@ -560,61 +560,61 @@ See the following sections to determine which roles are authorized to perform sp
 </thead>
 <tbody>
 	<tr>
-		<td>/public/v1/catalog/items</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/items</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/catalog/items/{id}</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/items/{id}</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/catalog/products/{productId}/items</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/products/{productId}/items</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/catalog/products/{productId}/items/{id}</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/products/{productId}/items/{id}</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/catalog/items</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/items</a></td>
 		<td>POST</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/catalog/items/{id}/review</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/items/{id}/review</a></td>
 		<td>POST</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/catalog/items/{id}/publish</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/items/{id}/publish</a></td>
 		<td>POST</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/catalog/items/{id}/unpublish</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/items/{id}/unpublish</a></td>
 		<td>POST</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/catalog/items/{id}</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/items/{id}</a></td>
 		<td>PUT</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/catalog/items/{id}</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/items/{id}</a></td>
 		<td>DELETE</td>
 		<td></td>
 		<td>ops,client,vendor</td>
@@ -637,55 +637,55 @@ See the following sections to determine which roles are authorized to perform sp
 </thead>
 <tbody>
 	<tr>
-		<td>/public/v1/catalog/products/{productId}/media/{id}</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/products/{productId}/media/{id}</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/catalog/products/{productId}/media</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/products/{productId}/media</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/catalog/products/{productId}/media/{id}/image</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/products/{productId}/media/{id}/image</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/catalog/products/{productId}/media</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/products/{productId}/media</a></td>
 		<td>POST</td>
 		<td></td>
 		<td>vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/catalog/products/{productId}/media/{id}/review</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/products/{productId}/media/{id}/review</a></td>
 		<td>POST</td>
 		<td></td>
 		<td>vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/catalog/products/{productId}/media/{id}/publish</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/products/{productId}/media/{id}/publish</a></td>
 		<td>POST</td>
 		<td></td>
 		<td>ops</td>
 	</tr>
 	<tr>
-		<td>/public/v1/catalog/products/{productId}/media/{id}/unpublish</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/products/{productId}/media/{id}/unpublish</a></td>
 		<td>POST</td>
 		<td></td>
 		<td>vendor,ops</td>
 	</tr>
 	<tr>
-		<td>/public/v1/catalog/products/{productId}/media/{id}</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/products/{productId}/media/{id}</a></td>
 		<td>PUT</td>
 		<td></td>
 		<td>vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/catalog/products/{productId}/media/{id}</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/products/{productId}/media/{id}</a></td>
 		<td>DELETE</td>
 		<td></td>
 		<td>vendor,ops</td>
@@ -708,61 +708,61 @@ See the following sections to determine which roles are authorized to perform sp
 </thead>
 <tbody>
 	<tr>
-		<td>/public/v1/catalog/products</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/products</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/catalog/products/{id}</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/products/{id}</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/catalog/products/{id}/icon</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/products/{id}/icon</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/catalog/products</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/products</a></td>
 		<td>POST</td>
 		<td></td>
 		<td>vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/catalog/products/{id}/review</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/products/{id}/review</a></td>
 		<td>POST</td>
 		<td></td>
 		<td>vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/catalog/products/{id}/publish</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/products/{id}/publish</a></td>
 		<td>POST</td>
 		<td></td>
 		<td>ops</td>
 	</tr>
 	<tr>
-		<td>/public/v1/catalog/products/{id}/unpublish</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/products/{id}/unpublish</a></td>
 		<td>POST</td>
 		<td></td>
 		<td>vendor,ops</td>
 	</tr>
 	<tr>
-		<td>/public/v1/catalog/products/{id}</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/products/{id}</a></td>
 		<td>PUT</td>
 		<td></td>
 		<td>vendor,ops</td>
 	</tr>
 	<tr>
-		<td>/public/v1/catalog/products/{id}/settings</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/products/{id}/settings</a></td>
 		<td>PUT</td>
 		<td></td>
 		<td>vendor,ops</td>
 	</tr>
 	<tr>
-		<td>/public/v1/catalog/products/{id}</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/products/{id}</a></td>
 		<td>DELETE</td>
 		<td></td>
 		<td>vendor</td>
@@ -785,31 +785,31 @@ See the following sections to determine which roles are authorized to perform sp
 </thead>
 <tbody>
 	<tr>
-		<td>/public/v1/catalog/products/{productId}/templates</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/products/{productId}/templates</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/catalog/products/{productId}/templates/{id}</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/products/{productId}/templates/{id}</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/catalog/products/{productId}/templates</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/products/{productId}/templates</a></td>
 		<td>POST</td>
 		<td></td>
 		<td>vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/catalog/products/{productId}/templates/{id}</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/products/{productId}/templates/{id}</a></td>
 		<td>PUT</td>
 		<td></td>
 		<td>vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/catalog/products/{productId}/templates/{id}</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/products/{productId}/templates/{id}</a></td>
 		<td>DELETE</td>
 		<td></td>
 		<td>vendor</td>
@@ -832,49 +832,49 @@ See the following sections to determine which roles are authorized to perform sp
 </thead>
 <tbody>
 	<tr>
-		<td>/public/v1/catalog/products/{productId}/terms</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/products/{productId}/terms</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/catalog/products/{productId}/terms/{id}</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/products/{productId}/terms/{id}</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/catalog/products/{productId}/terms</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/products/{productId}/terms</a></td>
 		<td>POST</td>
 		<td></td>
 		<td>vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/catalog/products/{productId}/terms/{id}/review</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/products/{productId}/terms/{id}/review</a></td>
 		<td>POST</td>
 		<td></td>
 		<td>vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/catalog/products/{productId}/terms/{id}/publish</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/products/{productId}/terms/{id}/publish</a></td>
 		<td>POST</td>
 		<td></td>
 		<td>ops</td>
 	</tr>
 	<tr>
-		<td>/public/v1/catalog/products/{productId}/terms/{id}/unpublish</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/products/{productId}/terms/{id}/unpublish</a></td>
 		<td>POST</td>
 		<td></td>
 		<td>vendor,ops</td>
 	</tr>
 	<tr>
-		<td>/public/v1/catalog/products/{productId}/terms/{id}</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/products/{productId}/terms/{id}</a></td>
 		<td>PUT</td>
 		<td></td>
 		<td>vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/catalog/products/{productId}/terms/{id}</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/products/{productId}/terms/{id}</a></td>
 		<td>DELETE</td>
 		<td></td>
 		<td>vendor</td>
@@ -897,49 +897,49 @@ See the following sections to determine which roles are authorized to perform sp
 </thead>
 <tbody>
 	<tr>
-		<td>/public/v1/catalog/products/{productId}/terms/{termsAndConditionsId}/variants</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/products/{productId}/terms/{termsAndConditionsId}/variants</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/catalog/products/{productId}/terms/{termsAndConditionsId}/variants/{id}</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/products/{productId}/terms/{termsAndConditionsId}/variants/{id}</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/catalog/products/{productId}/terms/{termsAndConditionsId}/variants</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/products/{productId}/terms/{termsAndConditionsId}/variants</a></td>
 		<td>POST</td>
 		<td></td>
 		<td>vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/catalog/products/{productId}/terms/{termsAndConditionsId}/variants/{id}/review</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/products/{productId}/terms/{termsAndConditionsId}/variants/{id}/review</a></td>
 		<td>POST</td>
 		<td></td>
 		<td>vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/catalog/products/{productId}/terms/{termsAndConditionsId}/variants/{id}/publish</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/products/{productId}/terms/{termsAndConditionsId}/variants/{id}/publish</a></td>
 		<td>POST</td>
 		<td></td>
 		<td>ops</td>
 	</tr>
 	<tr>
-		<td>/public/v1/catalog/products/{productId}/terms/{termsAndConditionsId}/variants/{id}/unpublish</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/products/{productId}/terms/{termsAndConditionsId}/variants/{id}/unpublish</a></td>
 		<td>POST</td>
 		<td></td>
 		<td>vendor,ops</td>
 	</tr>
 	<tr>
-		<td>/public/v1/catalog/products/{productId}/terms/{termsAndConditionsId}/variants/{id}</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/products/{productId}/terms/{termsAndConditionsId}/variants/{id}</a></td>
 		<td>PUT</td>
 		<td></td>
 		<td>vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/catalog/products/{productId}/terms/{termsAndConditionsId}/variants/{id}</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/products/{productId}/terms/{termsAndConditionsId}/variants/{id}</a></td>
 		<td>DELETE</td>
 		<td></td>
 		<td>vendor</td>
@@ -962,25 +962,25 @@ See the following sections to determine which roles are authorized to perform sp
 </thead>
 <tbody>
 	<tr>
-		<td>/public/v1/catalog/units-of-measure</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/units-of-measure</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/catalog/units-of-measure/{id}</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/units-of-measure/{id}</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/catalog/units-of-measure</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/units-of-measure</a></td>
 		<td>POST</td>
 		<td></td>
 		<td>ops</td>
 	</tr>
 	<tr>
-		<td>/public/v1/catalog/units-of-measure/{id}</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/catalog/units-of-measure/{id}</a></td>
 		<td>PUT</td>
 		<td></td>
 		<td>ops</td>

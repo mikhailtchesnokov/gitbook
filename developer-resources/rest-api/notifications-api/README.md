@@ -148,25 +148,25 @@ See the following sections to determine which roles are authorized to perform sp
 </thead>
 <tbody>
 	<tr>
-		<td>/public/v1/notifications/batches</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/notifications/batches</a></td>
 		<td>GET</td>
 		<td>Gets a list of resources</td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/notifications/batches/{batchId}/attachments/{attachmentId}</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/notifications/batches/{batchId}/attachments/{attachmentId}</a></td>
 		<td>GET</td>
 		<td>Gets a batch attachment</td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/notifications/batches/{id}</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/notifications/batches/{id}</a></td>
 		<td>GET</td>
 		<td>Gets a resource by ID</td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/notifications/batches</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/notifications/batches</a></td>
 		<td>POST</td>
 		<td>Creates a new message batch with attachments</td>
 		<td>ops,client,vendor</td>
@@ -189,43 +189,43 @@ See the following sections to determine which roles are authorized to perform sp
 </thead>
 <tbody>
 	<tr>
-		<td>/public/v1/notifications/categories</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/notifications/categories</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/notifications/categories/{id}</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/notifications/categories/{id}</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/notifications/categories</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/notifications/categories</a></td>
 		<td>POST</td>
 		<td>Creates a new category</td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/notifications/categories/{id}/unpublish</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/notifications/categories/{id}/unpublish</a></td>
 		<td>POST</td>
 		<td>Unpublishes a category</td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/notifications/categories/{id}/publish</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/notifications/categories/{id}/publish</a></td>
 		<td>POST</td>
 		<td>Publishes a category</td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/notifications/categories/{id}</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/notifications/categories/{id}</a></td>
 		<td>PUT</td>
 		<td>Updates a category</td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/notifications/categories/{id}</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/notifications/categories/{id}</a></td>
 		<td>DELETE</td>
 		<td>Deletes a category</td>
 		<td>ops,client,vendor</td>
@@ -248,49 +248,49 @@ See the following sections to determine which roles are authorized to perform sp
 </thead>
 <tbody>
 	<tr>
-		<td>/public/v1/notifications/contacts</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/notifications/contacts</a></td>
 		<td>GET</td>
 		<td>Gets a list of resources</td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/notifications/contacts/{id}</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/notifications/contacts/{id}</a></td>
 		<td>GET</td>
 		<td>Gets a resource by ID</td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/notifications/accounts/{accountId}/categories/{categoryId}/contacts</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/notifications/accounts/{accountId}/categories/{categoryId}/contacts</a></td>
 		<td>GET</td>
 		<td>Gets contacts for a category and account</td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/notifications/contacts/{id}/block</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/notifications/contacts/{id}/block</a></td>
 		<td>POST</td>
 		<td>Blocks a contact</td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/notifications/contacts</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/notifications/contacts</a></td>
 		<td>POST</td>
 		<td>Creates a new contact</td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/notifications/contacts/{id}/unblock</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/notifications/contacts/{id}/unblock</a></td>
 		<td>POST</td>
 		<td>Unblocks a contact</td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/notifications/contacts/{id}</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/notifications/contacts/{id}</a></td>
 		<td>PUT</td>
 		<td>Updates an existing contact</td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/notifications/contacts/{id}</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/notifications/contacts/{id}</a></td>
 		<td>DELETE</td>
 		<td>Deletes a contact</td>
 		<td>ops,client,vendor</td>
@@ -313,13 +313,13 @@ See the following sections to determine which roles are authorized to perform sp
 </thead>
 <tbody>
 	<tr>
-		<td>/public/v1/notifications/directories</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/notifications/directories</a></td>
 		<td>GET</td>
 		<td>Gets a list of resources</td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/notifications/directories/{id}</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/notifications/directories/{id}</a></td>
 		<td>GET</td>
 		<td>Gets a resource by ID</td>
 		<td>ops,client,vendor</td>
@@ -342,31 +342,31 @@ See the following sections to determine which roles are authorized to perform sp
 </thead>
 <tbody>
 	<tr>
-		<td>/public/v1/notifications/footers</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/notifications/footers</a></td>
 		<td>GET</td>
 		<td>Gets a list of resources</td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/notifications/footers/{id}</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/notifications/footers/{id}</a></td>
 		<td>GET</td>
 		<td>Gets a resource by ID</td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/notifications/footers</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/notifications/footers</a></td>
 		<td>POST</td>
 		<td>Creates a new footer</td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/notifications/footers/{id}</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/notifications/footers/{id}</a></td>
 		<td>PUT</td>
 		<td>Updates a footer</td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/notifications/footers/{id}</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/notifications/footers/{id}</a></td>
 		<td>DELETE</td>
 		<td>Deletes a footer</td>
 		<td>ops,client,vendor</td>
@@ -389,13 +389,13 @@ See the following sections to determine which roles are authorized to perform sp
 </thead>
 <tbody>
 	<tr>
-		<td>/public/v1/notifications/messages</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/notifications/messages</a></td>
 		<td>GET</td>
 		<td>Gets a list of resources</td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/notifications/messages/{id}</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/notifications/messages/{id}</a></td>
 		<td>GET</td>
 		<td>Gets a resource by ID</td>
 		<td>ops,client,vendor</td>
@@ -418,43 +418,43 @@ See the following sections to determine which roles are authorized to perform sp
 </thead>
 <tbody>
 	<tr>
-		<td>/public/v1/notifications/templates</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/notifications/templates</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/notifications/templates/{id}</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/notifications/templates/{id}</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/notifications/templates/{id}/activate</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/notifications/templates/{id}/activate</a></td>
 		<td>POST</td>
 		<td>Activates a notification template</td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/notifications/templates</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/notifications/templates</a></td>
 		<td>POST</td>
 		<td>Creates a notification template</td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/notifications/templates/{id}/disable</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/notifications/templates/{id}/disable</a></td>
 		<td>POST</td>
 		<td>Disables a notification template</td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/notifications/templates/{id}</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/notifications/templates/{id}</a></td>
 		<td>PUT</td>
 		<td>Updates a notification template</td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/notifications/templates/{id}</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/notifications/templates/{id}</a></td>
 		<td>DELETE</td>
 		<td>Deletes a notification template</td>
 		<td>ops,client,vendor</td>
@@ -477,31 +477,31 @@ See the following sections to determine which roles are authorized to perform sp
 </thead>
 <tbody>
 	<tr>
-		<td>/public/v1/notifications/subscribers/{id}</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/notifications/subscribers/{id}</a></td>
 		<td>GET</td>
 		<td>Gets a resource by ID</td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/notifications/subscribers</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/notifications/subscribers</a></td>
 		<td>GET</td>
 		<td>Gets a list of resources</td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/notifications/subscribers/{id}/enable</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/notifications/subscribers/{id}/enable</a></td>
 		<td>POST</td>
 		<td>Enables a subscriber</td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/notifications/subscribers/{id}/disable</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/notifications/subscribers/{id}/disable</a></td>
 		<td>POST</td>
 		<td>Disables a subscriber</td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/notifications/subscribers/{id}</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/notifications/subscribers/{id}</a></td>
 		<td>PUT</td>
 		<td>Updates subscriber recipients</td>
 		<td>ops,client,vendor</td>
@@ -524,43 +524,43 @@ See the following sections to determine which roles are authorized to perform sp
 </thead>
 <tbody>
 	<tr>
-		<td>/public/v1/notifications/templates/{templateId}/variants</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/notifications/templates/{templateId}/variants</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/notifications/templates/{templateId}/variants/{id}</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/notifications/templates/{templateId}/variants/{id}</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/notifications/templates/{templateId}/variants/{id}/activate</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/notifications/templates/{templateId}/variants/{id}/activate</a></td>
 		<td>POST</td>
 		<td>Activates a template variant</td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/notifications/templates/{templateId}/variants</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/notifications/templates/{templateId}/variants</a></td>
 		<td>POST</td>
 		<td>Creates a template variant</td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/notifications/templates/{templateId}/variants/{id}/disable</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/notifications/templates/{templateId}/variants/{id}/disable</a></td>
 		<td>POST</td>
 		<td>Disables a template variant</td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/notifications/templates/{templateId}/variants/{id}</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/notifications/templates/{templateId}/variants/{id}</a></td>
 		<td>PUT</td>
 		<td>Updates a template variant</td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/notifications/templates/{templateId}/variants/{id}</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/notifications/templates/{templateId}/variants/{id}</a></td>
 		<td>DELETE</td>
 		<td>Deletes a template variant</td>
 		<td>ops,client,vendor</td>
@@ -583,43 +583,43 @@ See the following sections to determine which roles are authorized to perform sp
 </thead>
 <tbody>
 	<tr>
-		<td>/public/v1/notifications/webhooks</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/notifications/webhooks</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/notifications/webhooks/{id}</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/notifications/webhooks/{id}</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/notifications/webhooks</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/notifications/webhooks</a></td>
 		<td>POST</td>
 		<td>Upsert webhooks</td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/notifications/webhooks/{id}/enable</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/notifications/webhooks/{id}/enable</a></td>
 		<td>POST</td>
 		<td>Enables webhook</td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/notifications/webhooks/{id}/disable</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/notifications/webhooks/{id}/disable</a></td>
 		<td>POST</td>
 		<td>Disables webhook</td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/notifications/webhooks/{id}</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/notifications/webhooks/{id}</a></td>
 		<td>PUT</td>
 		<td>Updates webhook</td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/notifications/webhooks/{id}</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/notifications/webhooks/{id}</a></td>
 		<td>DELETE</td>
 		<td>Deletes webhook</td>
 		<td>ops,client,vendor</td>

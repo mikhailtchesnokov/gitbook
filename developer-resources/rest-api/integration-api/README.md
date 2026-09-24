@@ -52,37 +52,37 @@ See the following sections to determine which roles are authorized to perform sp
 </thead>
 <tbody>
 	<tr>
-		<td>/public/v1/integration/categories</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/integration/categories</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/integration/categories/{id}</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/integration/categories/{id}</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/integration/categories</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/integration/categories</a></td>
 		<td>POST</td>
 		<td></td>
 		<td>ops</td>
 	</tr>
 	<tr>
-		<td>/public/v1/integration/categories/{id}/activate</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/integration/categories/{id}/activate</a></td>
 		<td>POST</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/integration/categories/{id}/deactivate</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/integration/categories/{id}/deactivate</a></td>
 		<td>POST</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/integration/categories/{id}</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/integration/categories/{id}</a></td>
 		<td>PUT</td>
 		<td></td>
 		<td>ops</td>
@@ -105,43 +105,43 @@ See the following sections to determine which roles are authorized to perform sp
 </thead>
 <tbody>
 	<tr>
-		<td>/public/v1/integration/extensions/{extensionId}/documents</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/integration/extensions/{extensionId}/documents</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/integration/extensions/{extensionId}/documents/{id}</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/integration/extensions/{extensionId}/documents/{id}</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/integration/extensions/{extensionId}/documents</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/integration/extensions/{extensionId}/documents</a></td>
 		<td>POST</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/integration/extensions/{extensionId}/documents/{id}/publish</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/integration/extensions/{extensionId}/documents/{id}/publish</a></td>
 		<td>POST</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/integration/extensions/{extensionId}/documents/{id}/unpublish</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/integration/extensions/{extensionId}/documents/{id}/unpublish</a></td>
 		<td>POST</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/integration/extensions/{extensionId}/documents/{id}</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/integration/extensions/{extensionId}/documents/{id}</a></td>
 		<td>PUT</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/integration/extensions/{extensionId}/documents/{id}</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/integration/extensions/{extensionId}/documents/{id}</a></td>
 		<td>DELETE</td>
 		<td></td>
 		<td>ops,client,vendor</td>
@@ -164,73 +164,73 @@ See the following sections to determine which roles are authorized to perform sp
 </thead>
 <tbody>
 	<tr>
-		<td>/public/v1/integration/extensions</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/integration/extensions</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/integration/extensions/{id}</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/integration/extensions/{id}</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/integration/extensions/{id}/icon</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/integration/extensions/{id}/icon</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/integration/extensions/{id}/installations</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/integration/extensions/{id}/installations</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/integration/extensions/{id}/installations/{installationId}</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/integration/extensions/{id}/installations/{installationId}</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/integration/extensions</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/integration/extensions</a></td>
 		<td>POST</td>
 		<td></td>
 		<td>vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/integration/extensions/{id}/publish</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/integration/extensions/{id}/publish</a></td>
 		<td>POST</td>
 		<td></td>
 		<td>ops</td>
 	</tr>
 	<tr>
-		<td>/public/v1/integration/extensions/{id}/unpublish</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/integration/extensions/{id}/unpublish</a></td>
 		<td>POST</td>
 		<td></td>
 		<td>vendor,ops</td>
 	</tr>
 	<tr>
-		<td>/public/v1/integration/extensions/{id}/regenerate</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/integration/extensions/{id}/regenerate</a></td>
 		<td>POST</td>
 		<td></td>
 		<td>vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/integration/extensions/{id}/token</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/integration/extensions/{id}/token</a></td>
 		<td>POST</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/integration/extensions/{id}</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/integration/extensions/{id}</a></td>
 		<td>PUT</td>
 		<td></td>
 		<td>vendor,ops</td>
 	</tr>
 	<tr>
-		<td>/public/v1/integration/extensions/{id}</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/integration/extensions/{id}</a></td>
 		<td>DELETE</td>
 		<td></td>
 		<td>vendor</td>
@@ -253,55 +253,55 @@ See the following sections to determine which roles are authorized to perform sp
 </thead>
 <tbody>
 	<tr>
-		<td>/public/v1/integration/installations</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/integration/installations</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/integration/installations/{id}</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/integration/installations/{id}</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/integration/installations</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/integration/installations</a></td>
 		<td>POST</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/integration/installations/{id}/redeem</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/integration/installations/{id}/redeem</a></td>
 		<td>POST</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/integration/installations/{id}/renew</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/integration/installations/{id}/renew</a></td>
 		<td>POST</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/integration/installations/{id}/token</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/integration/installations/{id}/token</a></td>
 		<td>POST</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/integration/installations/-/token</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/integration/installations/-/token</a></td>
 		<td>POST</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/integration/installations/{id}</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/integration/installations/{id}</a></td>
 		<td>PUT</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/integration/installations/{id}</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/integration/installations/{id}</a></td>
 		<td>DELETE</td>
 		<td></td>
 		<td>ops,client,vendor</td>
@@ -324,19 +324,19 @@ See the following sections to determine which roles are authorized to perform sp
 </thead>
 <tbody>
 	<tr>
-		<td>/public/v1/integration/extensions/{extensionId}/instances</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/integration/extensions/{extensionId}/instances</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/integration/extensions/{extensionId}/instances/{id}</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/integration/extensions/{extensionId}/instances/{id}</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/integration/extensions/{extensionId}/instances</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/integration/extensions/{extensionId}/instances</a></td>
 		<td>POST</td>
 		<td></td>
 		<td>ops,client,vendor</td>
@@ -359,49 +359,49 @@ See the following sections to determine which roles are authorized to perform sp
 </thead>
 <tbody>
 	<tr>
-		<td>/public/v1/integration/extensions/{extensionId}/media</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/integration/extensions/{extensionId}/media</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/integration/extensions/{extensionId}/media/{id}</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/integration/extensions/{extensionId}/media/{id}</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/integration/extensions/{extensionId}/media/{id}/image</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/integration/extensions/{extensionId}/media/{id}/image</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/integration/extensions/{extensionId}/media</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/integration/extensions/{extensionId}/media</a></td>
 		<td>POST</td>
 		<td></td>
 		<td>vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/integration/extensions/{extensionId}/media/{id}/publish</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/integration/extensions/{extensionId}/media/{id}/publish</a></td>
 		<td>POST</td>
 		<td></td>
 		<td>vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/integration/extensions/{extensionId}/media/{id}/unpublish</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/integration/extensions/{extensionId}/media/{id}/unpublish</a></td>
 		<td>POST</td>
 		<td></td>
 		<td>vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/integration/extensions/{extensionId}/media/{id}</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/integration/extensions/{extensionId}/media/{id}</a></td>
 		<td>PUT</td>
 		<td></td>
 		<td>vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/integration/extensions/{extensionId}/media/{id}</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/integration/extensions/{extensionId}/media/{id}</a></td>
 		<td>DELETE</td>
 		<td></td>
 		<td>vendor</td>
@@ -424,43 +424,43 @@ See the following sections to determine which roles are authorized to perform sp
 </thead>
 <tbody>
 	<tr>
-		<td>/public/v1/integration/extensions/{extensionId}/terms</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/integration/extensions/{extensionId}/terms</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/integration/extensions/{extensionId}/terms/{id}</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/integration/extensions/{extensionId}/terms/{id}</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/integration/extensions/{extensionId}/terms</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/integration/extensions/{extensionId}/terms</a></td>
 		<td>POST</td>
 		<td></td>
 		<td>vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/integration/extensions/{extensionId}/terms/{id}/publish</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/integration/extensions/{extensionId}/terms/{id}/publish</a></td>
 		<td>POST</td>
 		<td></td>
 		<td>vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/integration/extensions/{extensionId}/terms/{id}/unpublish</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/integration/extensions/{extensionId}/terms/{id}/unpublish</a></td>
 		<td>POST</td>
 		<td></td>
 		<td>vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/integration/extensions/{extensionId}/terms/{id}</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/integration/extensions/{extensionId}/terms/{id}</a></td>
 		<td>PUT</td>
 		<td></td>
 		<td>vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/integration/extensions/{extensionId}/terms/{id}</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/integration/extensions/{extensionId}/terms/{id}</a></td>
 		<td>DELETE</td>
 		<td></td>
 		<td>vendor</td>
@@ -483,43 +483,43 @@ See the following sections to determine which roles are authorized to perform sp
 </thead>
 <tbody>
 	<tr>
-		<td>/public/v1/integration/extensions/{extensionId}/terms/{termId}/variants</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/integration/extensions/{extensionId}/terms/{termId}/variants</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/integration/extensions/{extensionId}/terms/{termId}/variants/{id}</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/integration/extensions/{extensionId}/terms/{termId}/variants/{id}</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/integration/extensions/{extensionId}/terms/{termId}/variants</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/integration/extensions/{extensionId}/terms/{termId}/variants</a></td>
 		<td>POST</td>
 		<td></td>
 		<td>vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/integration/extensions/{extensionId}/terms/{termId}/variants/{id}/publish</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/integration/extensions/{extensionId}/terms/{termId}/variants/{id}/publish</a></td>
 		<td>POST</td>
 		<td></td>
 		<td>vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/integration/extensions/{extensionId}/terms/{termId}/variants/{id}/unpublish</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/integration/extensions/{extensionId}/terms/{termId}/variants/{id}/unpublish</a></td>
 		<td>POST</td>
 		<td></td>
 		<td>vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/integration/extensions/{extensionId}/terms/{termId}/variants/{id}</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/integration/extensions/{extensionId}/terms/{termId}/variants/{id}</a></td>
 		<td>PUT</td>
 		<td></td>
 		<td>vendor</td>
 	</tr>
 	<tr>
-		<td>/public/v1/integration/extensions/{extensionId}/terms/{termId}/variants/{id}</td>
+		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/integration/extensions/{extensionId}/terms/{termId}/variants/{id}</a></td>
 		<td>DELETE</td>
 		<td></td>
 		<td>vendor</td>
