@@ -65,7 +65,7 @@
         <tr>
             <td><code>scope</code></td>
             <td>Scope</td>
-            <td>Allowed values: None,Client,Vendor,Operations,All</td>
+            <td>. Allowed values: None,Client,Vendor,Operations,All</td>
         </tr>
         <tr>
             <td><code>objectType</code></td>

@@ -100,7 +100,7 @@ Represents a credit memo in the billing system.
         <tr>
             <td><code>status</code></td>
             <td>CreditMemoStatus</td>
-            <td>The current status of the credit memoAllowed values: Issued</td>
+            <td>The current status of the credit memo. Allowed values: Issued</td>
         </tr>
         <tr>
             <td><code>vendor</code></td>
@@ -165,12 +165,12 @@ Represents a credit memo in the billing system.
         <tr>
             <td><code>type</code></td>
             <td>AccountType</td>
-            <td>Allowed values: Client,Vendor,Operations</td>
+            <td>. Allowed values: Client,Vendor,Operations</td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>AccountStatus</td>
-            <td>Allowed values: Active,Enabled,Disabled</td>
+            <td>. Allowed values: Active,Enabled,Disabled</td>
         </tr>
     </tbody>
 </table>
@@ -211,7 +211,7 @@ Represents a credit memo in the billing system.
         <tr>
             <td><code>status</code></td>
             <td>AgreementStatus</td>
-            <td>Allowed values: New,Draft,Provisioning,Updating,Active,Terminated,Failed,Deleted</td>
+            <td>. Allowed values: New,Draft,Provisioning,Updating,Active,Terminated,Failed,Deleted</td>
         </tr>
     </tbody>
 </table>
@@ -232,7 +232,7 @@ Analytics insofmation.
         <tr>
             <td><code>status</code></td>
             <td>AnalyticsStatus</td>
-            <td>The current status of the analytics operationAllowed values: Pending,Running,Ready,Failed</td>
+            <td>The current status of the analytics operation. Allowed values: Pending,Running,Ready,Failed</td>
         </tr>
     </tbody>
 </table>

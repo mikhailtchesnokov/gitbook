@@ -80,7 +80,7 @@
         <tr>
             <td><code>status</code></td>
             <td>SalesOrderStatus</td>
-            <td>Allowed values: Draft,Finalizing,Pending,Ready,Completed,Deleted,Error</td>
+            <td>. Allowed values: Draft,Finalizing,Pending,Ready,Completed,Deleted,Error</td>
         </tr>
         <tr>
             <td><code>externalIds</code></td>
@@ -145,12 +145,12 @@
         <tr>
             <td><code>type</code></td>
             <td>AccountType</td>
-            <td>Allowed values: Client,Vendor,Operations</td>
+            <td>. Allowed values: Client,Vendor,Operations</td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>AccountStatus</td>
-            <td>Allowed values: Active,Enabled,Disabled</td>
+            <td>. Allowed values: Active,Enabled,Disabled</td>
         </tr>
         <tr>
             <td><code>externalIds</code></td>
@@ -262,12 +262,12 @@
         <tr>
             <td><code>type</code></td>
             <td>AccountType</td>
-            <td>Allowed values: Client,Vendor,Operations</td>
+            <td>. Allowed values: Client,Vendor,Operations</td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>AccountStatus</td>
-            <td>Allowed values: Active,Enabled,Disabled</td>
+            <td>. Allowed values: Active,Enabled,Disabled</td>
         </tr>
     </tbody>
 </table>
@@ -551,7 +551,7 @@ Represents the period during which a charge is applicable.
         <tr>
             <td><code>status</code></td>
             <td>ErpItemStatus</td>
-            <td>Allowed values: Active,Deleted,Blocked</td>
+            <td>. Allowed values: Active,Deleted,Blocked</td>
         </tr>
         <tr>
             <td><code>externalIds</code></td>
@@ -952,7 +952,7 @@ Represents the period during which a charge is applicable.
         <tr>
             <td><code>status</code></td>
             <td>SalesOrderStatus</td>
-            <td>Allowed values: Draft,Finalizing,Pending,Ready,Completed,Deleted,Error</td>
+            <td>. Allowed values: Draft,Finalizing,Pending,Ready,Completed,Deleted,Error</td>
         </tr>
         <tr>
             <td><code>externalIds</code></td>
@@ -988,7 +988,7 @@ Represents the period during which a charge is applicable.
         <tr>
             <td><code>status</code></td>
             <td>SalesQuoteStatus</td>
-            <td>Allowed values: Draft,Finalizing,Pending,Accepting,Accepted,Rejected,Expired,Deleted,Error,AwaitingAcceptance</td>
+            <td>. Allowed values: Draft,Finalizing,Pending,Accepting,Accepted,Rejected,Expired,Deleted,Error,AwaitingAcceptance</td>
         </tr>
         <tr>
             <td><code>externalIds</code></td>

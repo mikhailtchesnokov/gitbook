@@ -75,7 +75,7 @@
         <tr>
             <td><code>status</code></td>
             <td>PricingPolicyStatus</td>
-            <td>Allowed values: None,Active,Inactive,Deleted</td>
+            <td>. Allowed values: None,Active,Inactive,Deleted</td>
         </tr>
         <tr>
             <td><code>statistics</code></td>
@@ -130,12 +130,12 @@
         <tr>
             <td><code>type</code></td>
             <td>AccountType</td>
-            <td>Allowed values: Client,Vendor,Operations</td>
+            <td>. Allowed values: Client,Vendor,Operations</td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>AccountStatus</td>
-            <td>Allowed values: Active,Enabled,Disabled</td>
+            <td>. Allowed values: Active,Enabled,Disabled</td>
         </tr>
         <tr>
             <td><code>externalIds</code></td>
@@ -247,12 +247,12 @@
         <tr>
             <td><code>type</code></td>
             <td>AccountType</td>
-            <td>Allowed values: Client,Vendor,Operations</td>
+            <td>. Allowed values: Client,Vendor,Operations</td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>AccountStatus</td>
-            <td>Allowed values: Active,Enabled,Disabled</td>
+            <td>. Allowed values: Active,Enabled,Disabled</td>
         </tr>
     </tbody>
 </table>

@@ -60,7 +60,7 @@
         <tr>
             <td><code>status</code></td>
             <td>ParticipantStatus</td>
-            <td>Represents the status of the chat participant, indicating whether they are active, suspended, or exitedAllowed values: Active,Exited,Deactivated</td>
+            <td>Represents the status of the chat participant, indicating whether they are active, suspended, or exited. Allowed values: Active,Exited,Deactivated</td>
         </tr>
         <tr>
             <td><code>lastReadMessage</code></td>
@@ -110,12 +110,12 @@
         <tr>
             <td><code>type</code></td>
             <td>AccountType</td>
-            <td>Allowed values: Client,Vendor,Operations</td>
+            <td>. Allowed values: Client,Vendor,Operations</td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>AccountStatus</td>
-            <td>Allowed values: Active,Enabled,Disabled</td>
+            <td>. Allowed values: Active,Enabled,Disabled</td>
         </tr>
     </tbody>
 </table>
@@ -151,7 +151,7 @@
         <tr>
             <td><code>visibility</code></td>
             <td>MessageVisibility</td>
-            <td>Visibility of the chat message, indicating whether it is public or privateAllowed values: Public,Private</td>
+            <td>Visibility of the chat message, indicating whether it is public or private. Allowed values: Public,Private</td>
         </tr>
         <tr>
             <td><code>isDeleted</code></td>
@@ -233,7 +233,7 @@
         <tr>
             <td><code>type</code></td>
             <td>ChatType</td>
-            <td>Represents the type of chat, indicating whether it is a direct message, group chat, channel, or support caseAllowed values: Direct,Group,Channel,Case</td>
+            <td>Represents the type of chat, indicating whether it is a direct message, group chat, channel, or support case. Allowed values: Direct,Group,Channel,Case</td>
         </tr>
     </tbody>
 </table>

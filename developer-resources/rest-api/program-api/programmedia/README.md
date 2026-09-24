@@ -50,7 +50,7 @@
         <tr>
             <td><code>status</code></td>
             <td>ProgramMediaStatus</td>
-            <td>Allowed values: Draft,Published,Unpublished</td>
+            <td>. Allowed values: Draft,Published,Unpublished</td>
         </tr>
         <tr>
             <td><code>filename</code></td>
@@ -120,12 +120,12 @@
         <tr>
             <td><code>type</code></td>
             <td>AccountType</td>
-            <td>Allowed values: Client,Vendor,Operations</td>
+            <td>. Allowed values: Client,Vendor,Operations</td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>AccountStatus</td>
-            <td>Allowed values: Active,Enabled,Disabled</td>
+            <td>. Allowed values: Active,Enabled,Disabled</td>
         </tr>
     </tbody>
 </table>
@@ -613,12 +613,12 @@
         <tr>
             <td><code>status</code></td>
             <td>ProgramStatus</td>
-            <td>Allowed values: None,Draft,Published,Unpublished,Deleted</td>
+            <td>. Allowed values: None,Draft,Published,Unpublished,Deleted</td>
         </tr>
         <tr>
             <td><code>applicableTo</code></td>
             <td>ProgramApplicableTo</td>
-            <td>Allowed values: Buyer,Licensee</td>
+            <td>. Allowed values: Buyer,Licensee</td>
         </tr>
         <tr>
             <td><code>products</code></td>

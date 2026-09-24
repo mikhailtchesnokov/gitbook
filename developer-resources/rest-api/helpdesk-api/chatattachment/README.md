@@ -55,7 +55,7 @@
         <tr>
             <td><code>status</code></td>
             <td>FileStatus</td>
-            <td>Allowed values: Active,Deleted</td>
+            <td>. Allowed values: Active,Deleted</td>
         </tr>
         <tr>
             <td><code>file</code></td>
@@ -131,7 +131,7 @@
         <tr>
             <td><code>type</code></td>
             <td>ChatType</td>
-            <td>Represents the type of chat, indicating whether it is a direct message, group chat, channel, or support caseAllowed values: Direct,Group,Channel,Case</td>
+            <td>Represents the type of chat, indicating whether it is a direct message, group chat, channel, or support case. Allowed values: Direct,Group,Channel,Case</td>
         </tr>
     </tbody>
 </table>
@@ -182,7 +182,7 @@ Represents a file in the helpdesk module
         <tr>
             <td><code>type</code></td>
             <td>FileType</td>
-            <td>Specifies the type of the file, such as attachment or iconAllowed values: Attachment,Icon,Image,Video</td>
+            <td>Specifies the type of the file, such as attachment or icon. Allowed values: Attachment,Icon,Image,Video</td>
         </tr>
         <tr>
             <td><code>filename</code></td>

@@ -50,12 +50,12 @@
         <tr>
             <td><code>status</code></td>
             <td>WebhookStatus</td>
-            <td>Allowed values: Enabled,Disabled</td>
+            <td>. Allowed values: Enabled,Disabled</td>
         </tr>
         <tr>
             <td><code>type</code></td>
             <td>WebhookType</td>
-            <td>Allowed values: ValidatePurchaseOrderDraft,ValidatePurchaseOrderQuerying,ValidateChangeOrderDraft,ValidateTerminateOrder,SelectOrderLines,ValidateEnrollmentDraft,ValidateEnrollmentQuerying,ValidateReEnrollment,ValidateReEnrollmentQuerying,ValidateConfigurationOrderDraft,ValidateAnswer</td>
+            <td>. Allowed values: ValidatePurchaseOrderDraft,ValidatePurchaseOrderQuerying,ValidateChangeOrderDraft,ValidateTerminateOrder,SelectOrderLines,ValidateEnrollmentDraft,ValidateEnrollmentQuerying,ValidateReEnrollment,ValidateReEnrollmentQuerying,ValidateConfigurationOrderDraft,ValidateAnswer</td>
         </tr>
         <tr>
             <td><code>secret</code></td>
@@ -70,7 +70,7 @@
         <tr>
             <td><code>objectType</code></td>
             <td>WebhookObjectType</td>
-            <td>Allowed values: Order,Request,Account,Enrollment,Answer</td>
+            <td>. Allowed values: Order,Request,Account,Enrollment,Answer</td>
         </tr>
         <tr>
             <td><code>account</code></td>
@@ -140,12 +140,12 @@
         <tr>
             <td><code>type</code></td>
             <td>AccountType</td>
-            <td>Allowed values: Client,Vendor,Operations</td>
+            <td>. Allowed values: Client,Vendor,Operations</td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>AccountStatus</td>
-            <td>Allowed values: Active,Enabled,Disabled</td>
+            <td>. Allowed values: Active,Enabled,Disabled</td>
         </tr>
     </tbody>
 </table>
@@ -310,7 +310,7 @@
         <tr>
             <td><code>httpStatusCode</code></td>
             <td>HttpStatusCode</td>
-            <td>Allowed values: Continue,SwitchingProtocols,Processing,EarlyHints,OK,Created,Accepted,NonAuthoritativeInformation,NoContent,ResetContent,PartialContent,MultiStatus,AlreadyReported,IMUsed,MultipleChoices,MovedPermanently,Found,SeeOther,NotModified,UseProxy,Unused,TemporaryRedirect,PermanentRedirect,BadRequest,Unauthorized,PaymentRequired,Forbidden,NotFound,MethodNotAllowed,NotAcceptable,ProxyAuthenticationRequired,RequestTimeout,Conflict,Gone,LengthRequired,PreconditionFailed,RequestEntityTooLarge,RequestUriTooLong,UnsupportedMediaType,RequestedRangeNotSatisfiable,ExpectationFailed,MisdirectedRequest,UnprocessableEntity,Locked,FailedDependency,UpgradeRequired,PreconditionRequired,TooManyRequests,RequestHeaderFieldsTooLarge,UnavailableForLegalReasons,InternalServerError,NotImplemented,BadGateway,ServiceUnavailable,GatewayTimeout,HttpVersionNotSupported,VariantAlsoNegotiates,InsufficientStorage,LoopDetected,NotExtended,NetworkAuthenticationRequired</td>
+            <td>. Allowed values: Continue,SwitchingProtocols,Processing,EarlyHints,OK,Created,Accepted,NonAuthoritativeInformation,NoContent,ResetContent,PartialContent,MultiStatus,AlreadyReported,IMUsed,MultipleChoices,MovedPermanently,Found,SeeOther,NotModified,UseProxy,Unused,TemporaryRedirect,PermanentRedirect,BadRequest,Unauthorized,PaymentRequired,Forbidden,NotFound,MethodNotAllowed,NotAcceptable,ProxyAuthenticationRequired,RequestTimeout,Conflict,Gone,LengthRequired,PreconditionFailed,RequestEntityTooLarge,RequestUriTooLong,UnsupportedMediaType,RequestedRangeNotSatisfiable,ExpectationFailed,MisdirectedRequest,UnprocessableEntity,Locked,FailedDependency,UpgradeRequired,PreconditionRequired,TooManyRequests,RequestHeaderFieldsTooLarge,UnavailableForLegalReasons,InternalServerError,NotImplemented,BadGateway,ServiceUnavailable,GatewayTimeout,HttpVersionNotSupported,VariantAlsoNegotiates,InsufficientStorage,LoopDetected,NotExtended,NetworkAuthenticationRequired</td>
         </tr>
     </tbody>
 </table>

@@ -60,7 +60,7 @@
         <tr>
             <td><code>status</code></td>
             <td>ErpLinkStatus</td>
-            <td>Allowed values: Active,Blocked,Disabled</td>
+            <td>. Allowed values: Active,Blocked,Disabled</td>
         </tr>
         <tr>
             <td><code>note</code></td>

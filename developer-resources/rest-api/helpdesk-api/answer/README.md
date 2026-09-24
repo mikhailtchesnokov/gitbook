@@ -55,7 +55,7 @@ A form submission within a chat, containing parameter values filled by participa
         <tr>
             <td><code>status</code></td>
             <td>AnswerStatus</td>
-            <td>The current lifecycle status of the answerAllowed values: Draft,Submitted,Querying,Accepted</td>
+            <td>The current lifecycle status of the answer. Allowed values: Draft,Submitted,Querying,Accepted</td>
         </tr>
         <tr>
             <td><code>parameters</code></td>
@@ -105,12 +105,12 @@ A form submission within a chat, containing parameter values filled by participa
         <tr>
             <td><code>type</code></td>
             <td>AccountType</td>
-            <td>Allowed values: Client,Vendor,Operations</td>
+            <td>. Allowed values: Client,Vendor,Operations</td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>AccountStatus</td>
-            <td>Allowed values: Active,Enabled,Disabled</td>
+            <td>. Allowed values: Active,Enabled,Disabled</td>
         </tr>
     </tbody>
 </table>
@@ -192,7 +192,7 @@ A parameter value within an answer, identified by its ParameterDefinition ID
         <tr>
             <td><code>type</code></td>
             <td>ParameterType</td>
-            <td>Gets or sets the type of the parameterAllowed values: SingleLineText,MultiLineText,Address,Contact,Checkbox,Choice,Subdomain,Heading,DropDown,Email,DataObject,Date,DateAndTime,Collection</td>
+            <td>Gets or sets the type of the parameter. Allowed values: SingleLineText,MultiLineText,Address,Contact,Checkbox,Choice,Subdomain,Heading,DropDown,Email,DataObject,Date,DateAndTime,Collection</td>
         </tr>
         <tr>
             <td><code>value</code></td>
@@ -311,7 +311,7 @@ system error</td>
         <tr>
             <td><code>type</code></td>
             <td>ChatType</td>
-            <td>Represents the type of chat, indicating whether it is a direct message, group chat, channel, or support caseAllowed values: Direct,Group,Channel,Case</td>
+            <td>Represents the type of chat, indicating whether it is a direct message, group chat, channel, or support case. Allowed values: Direct,Group,Channel,Case</td>
         </tr>
         <tr>
             <td><code>participants</code></td>
@@ -403,7 +403,7 @@ system error</td>
         <tr>
             <td><code>visibility</code></td>
             <td>MessageVisibility</td>
-            <td>Visibility of the chat message, indicating whether it is public or privateAllowed values: Public,Private</td>
+            <td>Visibility of the chat message, indicating whether it is public or private. Allowed values: Public,Private</td>
         </tr>
         <tr>
             <td><code>isDeleted</code></td>
@@ -444,7 +444,7 @@ system error</td>
         <tr>
             <td><code>status</code></td>
             <td>ParticipantStatus</td>
-            <td>Represents the status of the chat participant, indicating whether they are active, suspended, or exitedAllowed values: Active,Exited,Deactivated</td>
+            <td>Represents the status of the chat participant, indicating whether they are active, suspended, or exited. Allowed values: Active,Exited,Deactivated</td>
         </tr>
     </tbody>
 </table>
@@ -521,7 +521,7 @@ Represents a file in the helpdesk module
         <tr>
             <td><code>type</code></td>
             <td>FileType</td>
-            <td>Specifies the type of the file, such as attachment or iconAllowed values: Attachment,Icon,Image,Video</td>
+            <td>Specifies the type of the file, such as attachment or icon. Allowed values: Attachment,Icon,Image,Video</td>
         </tr>
         <tr>
             <td><code>filename</code></td>
@@ -592,7 +592,7 @@ Represents a file in the helpdesk module
         <tr>
             <td><code>status</code></td>
             <td>FormStatus</td>
-            <td>Gets or sets the status of the FormAllowed values: Unpublished,Published</td>
+            <td>Gets or sets the status of the Form. Allowed values: Unpublished,Published</td>
         </tr>
         <tr>
             <td><code>externalId</code></td>
@@ -720,7 +720,7 @@ Constraints specific to helpdesk parameters
         <tr>
             <td><code>visibility</code></td>
             <td>VisibilityMode</td>
-            <td>The visibility mode controlling who can see the parameterAllowed values: All,OnlyMyAccount</td>
+            <td>The visibility mode controlling who can see the parameter. Allowed values: All,OnlyMyAccount</td>
         </tr>
     </tbody>
 </table>

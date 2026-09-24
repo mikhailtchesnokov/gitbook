@@ -45,7 +45,7 @@
         <tr>
             <td><code>status</code></td>
             <td>FileStatus</td>
-            <td>Allowed values: Active,Deleted</td>
+            <td>. Allowed values: Active,Deleted</td>
         </tr>
         <tr>
             <td><code>file</code></td>
@@ -100,12 +100,12 @@
         <tr>
             <td><code>type</code></td>
             <td>AccountType</td>
-            <td>Allowed values: Client,Vendor,Operations</td>
+            <td>. Allowed values: Client,Vendor,Operations</td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>AccountStatus</td>
-            <td>Allowed values: Active,Enabled,Disabled</td>
+            <td>. Allowed values: Active,Enabled,Disabled</td>
         </tr>
     </tbody>
 </table>
@@ -171,7 +171,7 @@
         <tr>
             <td><code>status</code></td>
             <td>FeedbackStatus</td>
-            <td>Gets or sets the status associated with the feedbackAllowed values: Submitted,Reviewed,Deleted</td>
+            <td>Gets or sets the status associated with the feedback. Allowed values: Submitted,Reviewed,Deleted</td>
         </tr>
         <tr>
             <td><code>rating</code></td>
@@ -334,7 +334,7 @@ Represents a file in the helpdesk module
         <tr>
             <td><code>type</code></td>
             <td>FileType</td>
-            <td>Specifies the type of the file, such as attachment or iconAllowed values: Attachment,Icon,Image,Video</td>
+            <td>Specifies the type of the file, such as attachment or icon. Allowed values: Attachment,Icon,Image,Video</td>
         </tr>
         <tr>
             <td><code>filename</code></td>

@@ -60,7 +60,7 @@
         <tr>
             <td><code>status</code></td>
             <td>ProgramTermsAndConditionsVariantStatus</td>
-            <td>Allowed values: Draft,Published,Unpublished,Deleted</td>
+            <td>. Allowed values: Draft,Published,Unpublished,Deleted</td>
         </tr>
         <tr>
             <td><code>filename</code></td>

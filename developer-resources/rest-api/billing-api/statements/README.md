@@ -50,17 +50,17 @@ Represents a billing statement in the system, containing details about transacti
         <tr>
             <td><code>type</code></td>
             <td>StatementType</td>
-            <td>Specifies the type of the statementAllowed values: Debit,Credit</td>
+            <td>Specifies the type of the statement. Allowed values: Debit,Credit</td>
         </tr>
         <tr>
             <td><code>billingType</code></td>
             <td>BillingType</td>
-            <td>Specifies the billing type of the statementAllowed values: Automated,Manual,Consolidated</td>
+            <td>Specifies the billing type of the statement. Allowed values: Automated,Manual,Consolidated</td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>StatementStatus</td>
-            <td>Indicates the current status of the statementAllowed values: Generated,Queued,Error,Cancelled,Pending,Issued,Generating,Consolidating,Consolidated</td>
+            <td>Indicates the current status of the statement. Allowed values: Generated,Queued,Error,Cancelled,Pending,Issued,Generating,Consolidating,Consolidated</td>
         </tr>
         <tr>
             <td><code>client</code></td>
@@ -180,12 +180,12 @@ Represents a billing statement in the system, containing details about transacti
         <tr>
             <td><code>type</code></td>
             <td>AccountType</td>
-            <td>Allowed values: Client,Vendor,Operations</td>
+            <td>. Allowed values: Client,Vendor,Operations</td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>AccountStatus</td>
-            <td>Allowed values: Active,Enabled,Disabled</td>
+            <td>. Allowed values: Active,Enabled,Disabled</td>
         </tr>
     </tbody>
 </table>
@@ -226,7 +226,7 @@ Represents a billing statement in the system, containing details about transacti
         <tr>
             <td><code>status</code></td>
             <td>AgreementStatus</td>
-            <td>Allowed values: New,Draft,Provisioning,Updating,Active,Terminated,Failed,Deleted</td>
+            <td>. Allowed values: New,Draft,Provisioning,Updating,Active,Terminated,Failed,Deleted</td>
         </tr>
     </tbody>
 </table>
@@ -247,7 +247,7 @@ Represents the details of a backup operation, including its status and date.
         <tr>
             <td><code>status</code></td>
             <td>BackupStatus</td>
-            <td>Status of the backupAllowed values: Pending,Exporting,Exported,Verifying,Completed,Failed,Skipped</td>
+            <td>Status of the backup. Allowed values: Pending,Exporting,Exported,Verifying,Completed,Failed,Skipped</td>
         </tr>
         <tr>
             <td><code>date</code></td>

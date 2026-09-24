@@ -45,7 +45,7 @@ The Task represents the state of an asynchronous, usually long running operation
         <tr>
             <td><code>status</code></td>
             <td>TaskStatus</td>
-            <td>Task status: a new task is created in the Queued (default) or Blocked statusAllowed values: Queued,Processing,Completed,Failed,Rescheduled</td>
+            <td>Task status: a new task is created in the Queued (default) or Blocked status. Allowed values: Queued,Processing,Completed,Failed,Rescheduled</td>
         </tr>
         <tr>
             <td><code>code</code></td>
@@ -160,7 +160,7 @@ The Task represents the state of an asynchronous, usually long running operation
         <tr>
             <td><code>severity</code></td>
             <td>TaskLogSeverity</td>
-            <td>Allowed values: Debug,Info,Warning,Error,Failure</td>
+            <td>. Allowed values: Debug,Info,Warning,Error,Failure</td>
         </tr>
         <tr>
             <td><code>message</code></td>
@@ -225,12 +225,12 @@ The Task represents the state of an asynchronous, usually long running operation
         <tr>
             <td><code>type</code></td>
             <td>AccountType</td>
-            <td>Allowed values: Client,Vendor,Operations</td>
+            <td>. Allowed values: Client,Vendor,Operations</td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>AccountStatus</td>
-            <td>Allowed values: Active,Enabled,Disabled</td>
+            <td>. Allowed values: Active,Enabled,Disabled</td>
         </tr>
     </tbody>
 </table>
@@ -436,7 +436,7 @@ The Task represents the state of an asynchronous, usually long running operation
         <tr>
             <td><code>status</code></td>
             <td>TaskStatus</td>
-            <td>Task status: a new task is created in the Queued (default) or Blocked statusAllowed values: Queued,Processing,Completed,Failed,Rescheduled</td>
+            <td>Task status: a new task is created in the Queued (default) or Blocked status. Allowed values: Queued,Processing,Completed,Failed,Rescheduled</td>
         </tr>
         <tr>
             <td><code>code</code></td>
@@ -591,7 +591,7 @@ The Task represents the state of an asynchronous, usually long running operation
         <tr>
             <td><code>status</code></td>
             <td>TaskStatus</td>
-            <td>Task status: a new task is created in the Queued (default) or Blocked statusAllowed values: Queued,Processing,Completed,Failed,Rescheduled</td>
+            <td>Task status: a new task is created in the Queued (default) or Blocked status. Allowed values: Queued,Processing,Completed,Failed,Rescheduled</td>
         </tr>
         <tr>
             <td><code>code</code></td>

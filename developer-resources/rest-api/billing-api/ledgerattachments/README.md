@@ -35,7 +35,7 @@ Represents an attachment associated with a ledger in the billing system.
         <tr>
             <td><code>type</code></td>
             <td>BillingAttachmentType</td>
-            <td>Specifies the type of the attachment, such as input, output, or general attachmentAllowed values: Attachment,Input,Output</td>
+            <td>Specifies the type of the attachment, such as input, output, or general attachment. Allowed values: Attachment,Input,Output</td>
         </tr>
         <tr>
             <td><code>filename</code></td>

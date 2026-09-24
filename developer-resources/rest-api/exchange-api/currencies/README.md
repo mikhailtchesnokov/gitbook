@@ -60,7 +60,7 @@ Represents currency in exchange module.
         <tr>
             <td><code>status</code></td>
             <td>CurrencyStatus</td>
-            <td>The current status of the currencyAllowed values: Active,Deleted</td>
+            <td>The current status of the currency. Allowed values: Active,Deleted</td>
         </tr></tbody>
 </table>
 

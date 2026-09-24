@@ -115,7 +115,7 @@
         <tr>
             <td><code>status</code></td>
             <td>AgreementStatus</td>
-            <td>Allowed values: New,Draft,Provisioning,Updating,Active,Terminated,Failed,Deleted</td>
+            <td>. Allowed values: New,Draft,Provisioning,Updating,Active,Terminated,Failed,Deleted</td>
         </tr>
     </tbody>
 </table>

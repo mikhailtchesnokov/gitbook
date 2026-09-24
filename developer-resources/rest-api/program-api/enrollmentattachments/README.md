@@ -100,12 +100,12 @@
         <tr>
             <td><code>applicableTo</code></td>
             <td>ProgramApplicableTo</td>
-            <td>Allowed values: Buyer,Licensee</td>
+            <td>. Allowed values: Buyer,Licensee</td>
         </tr>
         <tr>
             <td><code>type</code></td>
             <td>EnrollmentType</td>
-            <td>Allowed values: Change,New</td>
+            <td>. Allowed values: Change,New</td>
         </tr>
         <tr>
             <td><code>eligibility</code></td>
@@ -115,7 +115,7 @@
         <tr>
             <td><code>status</code></td>
             <td>EnrollmentStatus</td>
-            <td>Allowed values: Draft,Processing,Querying,Completed,Failed,Deleted</td>
+            <td>. Allowed values: Draft,Processing,Querying,Completed,Failed,Deleted</td>
         </tr>
     </tbody>
 </table>

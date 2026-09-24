@@ -50,7 +50,7 @@
         <tr>
             <td><code>status</code></td>
             <td>SellerStatus</td>
-            <td>Allowed values: Active,Disabled,Offline,Deleted</td>
+            <td>. Allowed values: Active,Disabled,Offline,Deleted</td>
         </tr>
         <tr>
             <td><code>currencies</code></td>
@@ -161,7 +161,7 @@
         <tr>
             <td><code>status</code></td>
             <td>ErpLinkStatus</td>
-            <td>Allowed values: Active,Blocked,Disabled</td>
+            <td>. Allowed values: Active,Blocked,Disabled</td>
         </tr>
     </tbody>
 </table>

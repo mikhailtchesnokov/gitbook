@@ -40,7 +40,7 @@ Represents a ledger in the billing system.
         <tr>
             <td><code>status</code></td>
             <td>LedgerStatus</td>
-            <td>The current status of the ledgerAllowed values: Rating,Error,Review,Generating,Generated,Queued,Completed</td>
+            <td>The current status of the ledger. Allowed values: Rating,Error,Review,Generating,Generated,Queued,Completed</td>
         </tr>
         <tr>
             <td><code>authorization</code></td>
@@ -141,7 +141,7 @@ Represents the details of a backup operation, including its status and date.
         <tr>
             <td><code>status</code></td>
             <td>BackupStatus</td>
-            <td>Status of the backupAllowed values: Pending,Exporting,Exported,Verifying,Completed,Failed,Skipped</td>
+            <td>Status of the backup. Allowed values: Pending,Exporting,Exported,Verifying,Completed,Failed,Skipped</td>
         </tr>
         <tr>
             <td><code>date</code></td>

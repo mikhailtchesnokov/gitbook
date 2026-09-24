@@ -70,7 +70,7 @@ Represents a custom ledger in the billing system.
         <tr>
             <td><code>status</code></td>
             <td>CustomLedgerStatus</td>
-            <td>The current status of the custom ledgerAllowed values: Draft,Deleted,Validating,Validated,Error,Generating,Generated,Queued,Completed</td>
+            <td>The current status of the custom ledger. Allowed values: Draft,Deleted,Validating,Validated,Error,Generating,Generated,Queued,Completed</td>
         </tr>
         <tr>
             <td><code>assignee</code></td>
@@ -135,12 +135,12 @@ Represents a custom ledger in the billing system.
         <tr>
             <td><code>type</code></td>
             <td>AccountType</td>
-            <td>Allowed values: Client,Vendor,Operations</td>
+            <td>. Allowed values: Client,Vendor,Operations</td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>AccountStatus</td>
-            <td>Allowed values: Active,Enabled,Disabled</td>
+            <td>. Allowed values: Active,Enabled,Disabled</td>
         </tr>
     </tbody>
 </table>
@@ -161,7 +161,7 @@ Represents the details of a backup operation, including its status and date.
         <tr>
             <td><code>status</code></td>
             <td>BackupStatus</td>
-            <td>Status of the backupAllowed values: Pending,Exporting,Exported,Verifying,Completed,Failed,Skipped</td>
+            <td>Status of the backup. Allowed values: Pending,Exporting,Exported,Verifying,Completed,Failed,Skipped</td>
         </tr>
         <tr>
             <td><code>date</code></td>

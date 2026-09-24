@@ -65,7 +65,7 @@ Represents an invoice entity in the billing system.
         <tr>
             <td><code>status</code></td>
             <td>InvoiceStatus</td>
-            <td>The current status of the invoiceAllowed values: Issued,Paid,Overdue</td>
+            <td>The current status of the invoice. Allowed values: Issued,Paid,Overdue</td>
         </tr>
         <tr>
             <td><code>statement</code></td>
@@ -80,7 +80,7 @@ Represents an invoice entity in the billing system.
         <tr>
             <td><code>billingType</code></td>
             <td>BillingType</td>
-            <td>The billing type associated with the invoiceAllowed values: Automated,Manual,Consolidated</td>
+            <td>The billing type associated with the invoice. Allowed values: Automated,Manual,Consolidated</td>
         </tr>
         <tr>
             <td><code>client</code></td>
@@ -175,12 +175,12 @@ Represents an invoice entity in the billing system.
         <tr>
             <td><code>type</code></td>
             <td>AccountType</td>
-            <td>Allowed values: Client,Vendor,Operations</td>
+            <td>. Allowed values: Client,Vendor,Operations</td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>AccountStatus</td>
-            <td>Allowed values: Active,Enabled,Disabled</td>
+            <td>. Allowed values: Active,Enabled,Disabled</td>
         </tr>
     </tbody>
 </table>
@@ -221,7 +221,7 @@ Represents an invoice entity in the billing system.
         <tr>
             <td><code>status</code></td>
             <td>AgreementStatus</td>
-            <td>Allowed values: New,Draft,Provisioning,Updating,Active,Terminated,Failed,Deleted</td>
+            <td>. Allowed values: New,Draft,Provisioning,Updating,Active,Terminated,Failed,Deleted</td>
         </tr>
     </tbody>
 </table>
@@ -242,7 +242,7 @@ Analytics insofmation.
         <tr>
             <td><code>status</code></td>
             <td>AnalyticsStatus</td>
-            <td>The current status of the analytics operationAllowed values: Pending,Running,Ready,Failed</td>
+            <td>The current status of the analytics operation. Allowed values: Pending,Running,Ready,Failed</td>
         </tr>
     </tbody>
 </table>

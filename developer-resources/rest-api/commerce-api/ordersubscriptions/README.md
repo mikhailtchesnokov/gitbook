@@ -70,7 +70,7 @@
         <tr>
             <td><code>status</code></td>
             <td>SubscriptionStatus</td>
-            <td>Allowed values: Active,Updating,Terminating,Terminated,Expired</td>
+            <td>. Allowed values: Active,Updating,Terminating,Terminated,Expired</td>
         </tr>
         <tr>
             <td><code>commitmentDate</code></td>
@@ -115,7 +115,7 @@
         <tr>
             <td><code>splitStatus</code></td>
             <td>SplitStatus</td>
-            <td>Allowed values: Disabled,Active,Review</td>
+            <td>. Allowed values: Disabled,Active,Review</td>
         </tr>
         <tr>
             <td><code>lines</code></td>
@@ -175,12 +175,12 @@
         <tr>
             <td><code>type</code></td>
             <td>AccountType</td>
-            <td>Allowed values: Client,Vendor,Operations</td>
+            <td>. Allowed values: Client,Vendor,Operations</td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>AccountStatus</td>
-            <td>Allowed values: Active,Enabled,Disabled</td>
+            <td>. Allowed values: Active,Enabled,Disabled</td>
         </tr>
         <tr>
             <td><code>externalIds</code></td>
@@ -292,12 +292,12 @@
         <tr>
             <td><code>type</code></td>
             <td>AccountType</td>
-            <td>Allowed values: Client,Vendor,Operations</td>
+            <td>. Allowed values: Client,Vendor,Operations</td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>AccountStatus</td>
-            <td>Allowed values: Active,Enabled,Disabled</td>
+            <td>. Allowed values: Active,Enabled,Disabled</td>
         </tr>
     </tbody>
 </table>
@@ -394,7 +394,7 @@
         <tr>
             <td><code>status</code></td>
             <td>AgreementStatus</td>
-            <td>Allowed values: New,Draft,Provisioning,Updating,Active,Terminated,Failed,Deleted</td>
+            <td>. Allowed values: New,Draft,Provisioning,Updating,Active,Terminated,Failed,Deleted</td>
         </tr>
         <tr>
             <td><code>listing</code></td>
@@ -591,7 +591,7 @@
         <tr>
             <td><code>status</code></td>
             <td>AgreementLineStatus</td>
-            <td>Allowed values: Active,Terminated,Deleted,Expired</td>
+            <td>. Allowed values: Active,Terminated,Deleted,Expired</td>
         </tr>
         <tr>
             <td><code>subscription</code></td>
@@ -799,7 +799,7 @@
         <tr>
             <td><code>status</code></td>
             <td>AgreementStatus</td>
-            <td>Allowed values: New,Draft,Provisioning,Updating,Active,Terminated,Failed,Deleted</td>
+            <td>. Allowed values: New,Draft,Provisioning,Updating,Active,Terminated,Failed,Deleted</td>
         </tr>
     </tbody>
 </table>
@@ -931,7 +931,7 @@
         <tr>
             <td><code>status</code></td>
             <td>AssetStatus</td>
-            <td>Allowed values: New,Draft,Active,Terminated</td>
+            <td>. Allowed values: New,Draft,Active,Terminated</td>
         </tr>
         <tr>
             <td><code>price</code></td>
@@ -1079,7 +1079,7 @@
         <tr>
             <td><code>status</code></td>
             <td>AssetStatus</td>
-            <td>Allowed values: New,Draft,Active,Terminated</td>
+            <td>. Allowed values: New,Draft,Active,Terminated</td>
         </tr>
     </tbody>
 </table>
@@ -1232,7 +1232,7 @@
         <tr>
             <td><code>status</code></td>
             <td>BuyerStatus</td>
-            <td>Allowed values: Active,Enabled,Disabled,Deleted,Unassigned,Conflict,Mismatch</td>
+            <td>. Allowed values: Active,Enabled,Disabled,Deleted,Unassigned,Conflict,Mismatch</td>
         </tr>
         <tr>
             <td><code>address</code></td>
@@ -1458,17 +1458,17 @@
         <tr>
             <td><code>type</code></td>
             <td>ParameterType</td>
-            <td>Allowed values: SingleLineText,MultiLineText,Address,Contact,Checkbox,Choice,Subdomain,Heading,DropDown,Email,DataObject,Date,DateAndTime,Collection</td>
+            <td>. Allowed values: SingleLineText,MultiLineText,Address,Contact,Checkbox,Choice,Subdomain,Heading,DropDown,Email,DataObject,Date,DateAndTime,Collection</td>
         </tr>
         <tr>
             <td><code>phase</code></td>
             <td>ParameterPhase</td>
-            <td>Allowed values: Configuration,Order,Fulfillment</td>
+            <td>. Allowed values: Configuration,Order,Fulfillment</td>
         </tr>
         <tr>
             <td><code>scope</code></td>
             <td>ParameterScope</td>
-            <td>Allowed values: Agreement,Item,Subscription,Order,Asset</td>
+            <td>. Allowed values: Agreement,Item,Subscription,Order,Asset</td>
         </tr>
         <tr>
             <td><code>multiple</code></td>
@@ -1606,7 +1606,7 @@
         <tr>
             <td><code>status</code></td>
             <td>ErpLinkStatus</td>
-            <td>Allowed values: Active,Blocked,Disabled</td>
+            <td>. Allowed values: Active,Blocked,Disabled</td>
         </tr>
     </tbody>
 </table>
@@ -1889,12 +1889,12 @@
         <tr>
             <td><code>type</code></td>
             <td>OrderType</td>
-            <td>Allowed values: Purchase,Change,Termination,Configuration</td>
+            <td>. Allowed values: Purchase,Change,Termination,Configuration</td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>OrderStatus</td>
-            <td>Allowed values: New,Draft,Deleted,Processing,Querying,Failed,Completed,Quoted</td>
+            <td>. Allowed values: New,Draft,Deleted,Processing,Querying,Failed,Completed,Quoted</td>
         </tr>
         <tr>
             <td><code>notes</code></td>
@@ -2024,7 +2024,7 @@
         <tr>
             <td><code>defaultMarkupSource</code></td>
             <td>MarkupSource</td>
-            <td>Allowed values: Unknown,PriceList,PricingPolicy,Manual</td>
+            <td>. Allowed values: Unknown,PriceList,PricingPolicy,Manual</td>
         </tr>
     </tbody>
 </table>
@@ -2075,7 +2075,7 @@
         <tr>
             <td><code>status</code></td>
             <td>AssetStatus</td>
-            <td>Allowed values: New,Draft,Active,Terminated</td>
+            <td>. Allowed values: New,Draft,Active,Terminated</td>
         </tr>
         <tr>
             <td><code>price</code></td>
@@ -2177,7 +2177,7 @@
         <tr>
             <td><code>status</code></td>
             <td>AssetStatus</td>
-            <td>Allowed values: New,Draft,Active,Terminated</td>
+            <td>. Allowed values: New,Draft,Active,Terminated</td>
         </tr>
     </tbody>
 </table>
@@ -2486,7 +2486,7 @@
         <tr>
             <td><code>status</code></td>
             <td>OrderSubscriptionStatus</td>
-            <td>Allowed values: Draft,Active,Deleted,Updating,Terminating,Terminated</td>
+            <td>. Allowed values: Draft,Active,Deleted,Updating,Terminating,Terminated</td>
         </tr>
         <tr>
             <td><code>commitmentDate</code></td>
@@ -2603,7 +2603,7 @@
         <tr>
             <td><code>status</code></td>
             <td>OrderSubscriptionStatus</td>
-            <td>Allowed values: Draft,Active,Deleted,Updating,Terminating,Terminated</td>
+            <td>. Allowed values: Draft,Active,Deleted,Updating,Terminating,Terminated</td>
         </tr>
         <tr>
             <td><code>autoRenew</code></td>
@@ -3664,7 +3664,7 @@
         <tr>
             <td><code>status</code></td>
             <td>SellerStatus</td>
-            <td>Allowed values: Active,Disabled,Offline,Deleted</td>
+            <td>. Allowed values: Active,Disabled,Offline,Deleted</td>
         </tr>
         <tr>
             <td><code>currencies</code></td>

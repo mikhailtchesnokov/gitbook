@@ -60,7 +60,7 @@ Record of rate for specific day
         <tr>
             <td><code>status</code></td>
             <td>RateStatus</td>
-            <td>Record statusAllowed values: Active,Deleted</td>
+            <td>Record status. Allowed values: Active,Deleted</td>
         </tr>
         <tr>
             <td><code>reverseRate</code></td>

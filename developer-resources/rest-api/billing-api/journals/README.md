@@ -55,7 +55,7 @@ Represents a journal entry in the billing system.
         <tr>
             <td><code>status</code></td>
             <td>JournalStatus</td>
-            <td>The current status of the journal entryAllowed values: Draft,Deleted,Error,Validating,Validated,Review,Reconciling,Enquiring,Generating,Generated,Accepted,Queued,Completed,Resetting</td>
+            <td>The current status of the journal entry. Allowed values: Draft,Deleted,Error,Validating,Validated,Review,Reconciling,Enquiring,Generating,Generated,Accepted,Queued,Completed,Resetting</td>
         </tr>
         <tr>
             <td><code>vendor</code></td>
@@ -150,12 +150,12 @@ Represents a journal entry in the billing system.
         <tr>
             <td><code>type</code></td>
             <td>AccountType</td>
-            <td>Allowed values: Client,Vendor,Operations</td>
+            <td>. Allowed values: Client,Vendor,Operations</td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>AccountStatus</td>
-            <td>Allowed values: Active,Enabled,Disabled</td>
+            <td>. Allowed values: Active,Enabled,Disabled</td>
         </tr>
     </tbody>
 </table>
@@ -212,7 +212,7 @@ Represents the details of a backup operation, including its status and date.
         <tr>
             <td><code>status</code></td>
             <td>BackupStatus</td>
-            <td>Status of the backupAllowed values: Pending,Exporting,Exported,Verifying,Completed,Failed,Skipped</td>
+            <td>Status of the backup. Allowed values: Pending,Exporting,Exported,Verifying,Completed,Failed,Skipped</td>
         </tr>
         <tr>
             <td><code>date</code></td>

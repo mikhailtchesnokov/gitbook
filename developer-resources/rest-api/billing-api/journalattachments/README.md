@@ -35,7 +35,7 @@ Represents an attachment associated with a journal in the billing system.
         <tr>
             <td><code>type</code></td>
             <td>BillingAttachmentType</td>
-            <td>Specifies the type of the attachment, such as input, output, or general attachmentAllowed values: Attachment,Input,Output</td>
+            <td>Specifies the type of the attachment, such as input, output, or general attachment. Allowed values: Attachment,Input,Output</td>
         </tr>
         <tr>
             <td><code>filename</code></td>
@@ -115,12 +115,12 @@ Represents an attachment associated with a journal in the billing system.
         <tr>
             <td><code>type</code></td>
             <td>AccountType</td>
-            <td>Allowed values: Client,Vendor,Operations</td>
+            <td>. Allowed values: Client,Vendor,Operations</td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>AccountStatus</td>
-            <td>Allowed values: Active,Enabled,Disabled</td>
+            <td>. Allowed values: Active,Enabled,Disabled</td>
         </tr>
     </tbody>
 </table>

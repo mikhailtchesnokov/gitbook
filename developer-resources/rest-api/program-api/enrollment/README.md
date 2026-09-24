@@ -55,12 +55,12 @@
         <tr>
             <td><code>applicableTo</code></td>
             <td>ProgramApplicableTo</td>
-            <td>Allowed values: Buyer,Licensee</td>
+            <td>. Allowed values: Buyer,Licensee</td>
         </tr>
         <tr>
             <td><code>type</code></td>
             <td>EnrollmentType</td>
-            <td>Allowed values: Change,New</td>
+            <td>. Allowed values: Change,New</td>
         </tr>
         <tr>
             <td><code>buyer</code></td>
@@ -80,7 +80,7 @@
         <tr>
             <td><code>status</code></td>
             <td>EnrollmentStatus</td>
-            <td>Allowed values: Draft,Processing,Querying,Completed,Failed,Deleted</td>
+            <td>. Allowed values: Draft,Processing,Querying,Completed,Failed,Deleted</td>
         </tr>
         <tr>
             <td><code>notes</code></td>
@@ -150,12 +150,12 @@
         <tr>
             <td><code>type</code></td>
             <td>AccountType</td>
-            <td>Allowed values: Client,Vendor,Operations</td>
+            <td>. Allowed values: Client,Vendor,Operations</td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>AccountStatus</td>
-            <td>Allowed values: Active,Enabled,Disabled</td>
+            <td>. Allowed values: Active,Enabled,Disabled</td>
         </tr>
     </tbody>
 </table>
@@ -890,12 +890,12 @@
         <tr>
             <td><code>type</code></td>
             <td>ParameterType</td>
-            <td>Allowed values: SingleLineText,MultiLineText,Address,Contact,Checkbox,Choice,Subdomain,Heading,DropDown,Email,DataObject,Date,DateAndTime,Collection</td>
+            <td>. Allowed values: SingleLineText,MultiLineText,Address,Contact,Checkbox,Choice,Subdomain,Heading,DropDown,Email,DataObject,Date,DateAndTime,Collection</td>
         </tr>
         <tr>
             <td><code>phase</code></td>
             <td>ProgramParameterPhase</td>
-            <td>Allowed values: Order,Fulfillment</td>
+            <td>. Allowed values: Order,Fulfillment</td>
         </tr>
         <tr>
             <td><code>multiple</code></td>
@@ -982,12 +982,12 @@
         <tr>
             <td><code>status</code></td>
             <td>ProgramStatus</td>
-            <td>Allowed values: None,Draft,Published,Unpublished,Deleted</td>
+            <td>. Allowed values: None,Draft,Published,Unpublished,Deleted</td>
         </tr>
         <tr>
             <td><code>applicableTo</code></td>
             <td>ProgramApplicableTo</td>
-            <td>Allowed values: Buyer,Licensee</td>
+            <td>. Allowed values: Buyer,Licensee</td>
         </tr>
         <tr>
             <td><code>products</code></td>
@@ -1028,7 +1028,7 @@
         <tr>
             <td><code>type</code></td>
             <td>ProgramTemplateType</td>
-            <td>Allowed values: EnrollmentProcessing,EnrollmentQuerying,EnrollmentCompleted</td>
+            <td>. Allowed values: EnrollmentProcessing,EnrollmentQuerying,EnrollmentCompleted</td>
         </tr>
     </tbody>
 </table>
