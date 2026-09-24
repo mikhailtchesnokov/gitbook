@@ -152,37 +152,37 @@ See the following sections to determine which roles are authorized to perform sp
 </thead>
 <tbody>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/commerce/agreements</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/commerce/agreements</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/commerce/agreements/{id}</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/commerce/agreements/{id}</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/commerce/agreements/{id}/template</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/commerce/agreements/{id}/template</a></td>
 		<td>GET</td>
 		<td>Renders an agreement template</td>
 		<td>vendor,client,ops</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/commerce/agreements/{id}/render</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/commerce/agreements/{id}/render</a></td>
 		<td>GET</td>
 		<td>Renders an agreement template</td>
 		<td>vendor,client,ops</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/commerce/agreements</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/commerce/agreements</a></td>
 		<td>POST</td>
 		<td>Creates a new agreement</td>
 		<td>ops</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/commerce/agreements/{id}</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/commerce/agreements/{id}</a></td>
 		<td>PUT</td>
 		<td>Updates an existing agreement</td>
 		<td>vendor,client,ops</td>
@@ -205,31 +205,31 @@ See the following sections to determine which roles are authorized to perform sp
 </thead>
 <tbody>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/commerce/agreements/{agreementId}/attachments</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/commerce/agreements/{agreementId}/attachments</a></td>
 		<td>GET</td>
 		<td>Lists attachments for the specified agreement</td>
 		<td>vendor,client,ops</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/commerce/agreements/{agreementId}/attachments/{id}</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/commerce/agreements/{agreementId}/attachments/{id}</a></td>
 		<td>GET</td>
 		<td>Gets an attachment by id or redirects to its download</td>
 		<td>vendor,client,ops</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/commerce/agreements/{agreementId}/attachments</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/commerce/agreements/{agreementId}/attachments</a></td>
 		<td>POST</td>
 		<td>Creates a new attachment for an agreement</td>
 		<td>vendor,client,ops</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/commerce/agreements/{agreementId}/attachments/{id}</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/commerce/agreements/{agreementId}/attachments/{id}</a></td>
 		<td>PUT</td>
 		<td>Updates an existing agreement attachment</td>
 		<td>vendor,client,ops</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/commerce/agreements/{agreementId}/attachments/{id}</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/commerce/agreements/{agreementId}/attachments/{id}</a></td>
 		<td>DELETE</td>
 		<td>Deletes an agreement attachment</td>
 		<td>vendor,client,ops</td>
@@ -252,37 +252,37 @@ See the following sections to determine which roles are authorized to perform sp
 </thead>
 <tbody>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/commerce/assets</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/commerce/assets</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/commerce/assets/{id}</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/commerce/assets/{id}</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/commerce/assets/{id}/render</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/commerce/assets/{id}/render</a></td>
 		<td>GET</td>
 		<td>Renders an asset template</td>
 		<td>vendor,client,ops</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/commerce/assets</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/commerce/assets</a></td>
 		<td>POST</td>
 		<td>Creates a new asset</td>
 		<td>vendor</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/commerce/assets/{id}/terminate</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/commerce/assets/{id}/terminate</a></td>
 		<td>POST</td>
 		<td>Terminates an existing asset</td>
 		<td>vendor</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/commerce/assets/{id}</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/commerce/assets/{id}</a></td>
 		<td>PUT</td>
 		<td>Updates an existing asset</td>
 		<td>vendor,client,ops</td>
@@ -305,31 +305,31 @@ See the following sections to determine which roles are authorized to perform sp
 </thead>
 <tbody>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/commerce/lines</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/commerce/lines</a></td>
 		<td>GET</td>
 		<td>Lists all agreement lines across the marketplace</td>
 		<td>vendor,client,ops</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/commerce/agreements/{agreementId}/lines</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/commerce/agreements/{agreementId}/lines</a></td>
 		<td>GET</td>
 		<td>Lists agreement lines for the specified agreement</td>
 		<td>vendor,client,ops</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/commerce/subscriptions/{subscriptionId}/lines</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/commerce/subscriptions/{subscriptionId}/lines</a></td>
 		<td>GET</td>
 		<td>Lists agreement lines for the specified subscription</td>
 		<td>vendor,client,ops</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/commerce/orders/{orderId}/lines</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/commerce/orders/{orderId}/lines</a></td>
 		<td>GET</td>
 		<td>Lists order lines for the specified order</td>
 		<td>vendor,client,ops</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/commerce/assets/{assetId}/lines</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/commerce/assets/{assetId}/lines</a></td>
 		<td>GET</td>
 		<td>Lists agreement lines for the specified asset</td>
 		<td>vendor,client,ops</td>
@@ -352,37 +352,37 @@ See the following sections to determine which roles are authorized to perform sp
 </thead>
 <tbody>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/commerce/orders/{orderId}/assets</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/commerce/orders/{orderId}/assets</a></td>
 		<td>GET</td>
 		<td>Lists assets for the specified order</td>
 		<td>vendor,client,ops</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/commerce/orders/{orderId}/assets/{id}</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/commerce/orders/{orderId}/assets/{id}</a></td>
 		<td>GET</td>
 		<td>Gets an order asset by id</td>
 		<td>vendor,client,ops</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/commerce/orders/{orderId}/assets/{id}/render</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/commerce/orders/{orderId}/assets/{id}/render</a></td>
 		<td>GET</td>
 		<td>Renders an order asset template</td>
 		<td>vendor,client,ops</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/commerce/orders/{orderId}/assets</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/commerce/orders/{orderId}/assets</a></td>
 		<td>POST</td>
 		<td>Creates a new asset for the order</td>
 		<td>vendor,client,ops</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/commerce/orders/{orderId}/assets/{id}</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/commerce/orders/{orderId}/assets/{id}</a></td>
 		<td>PUT</td>
 		<td>Updates an existing order asset</td>
 		<td>vendor,client,ops</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/commerce/orders/{orderId}/assets/{id}</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/commerce/orders/{orderId}/assets/{id}</a></td>
 		<td>DELETE</td>
 		<td>Deletes an existing order asset</td>
 		<td>vendor,client,ops</td>
@@ -405,85 +405,85 @@ See the following sections to determine which roles are authorized to perform sp
 </thead>
 <tbody>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/commerce/orders</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/commerce/orders</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/commerce/orders/{id}</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/commerce/orders/{id}</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/commerce/orders/{id}/template</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/commerce/orders/{id}/template</a></td>
 		<td>GET</td>
 		<td>Renders an order template</td>
 		<td>vendor,client,ops</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/commerce/orders/{id}/render</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/commerce/orders/{id}/render</a></td>
 		<td>GET</td>
 		<td>Renders an order template</td>
 		<td>vendor,client,ops</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/commerce/orders</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/commerce/orders</a></td>
 		<td>POST</td>
 		<td>Creates a new order for an agreement or creates a purchase order with a new agreement</td>
 		<td>vendor,client,ops</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/commerce/orders/{id}/process</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/commerce/orders/{id}/process</a></td>
 		<td>POST</td>
 		<td>Places an order and sets its status to processing</td>
 		<td>vendor,client,ops</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/commerce/orders/{id}/query</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/commerce/orders/{id}/query</a></td>
 		<td>POST</td>
 		<td>Query's an order, returning it to the client for updates</td>
 		<td>vendor,client,ops</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/commerce/orders/{id}/complete</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/commerce/orders/{id}/complete</a></td>
 		<td>POST</td>
 		<td>Completes an order and updates the related agreement</td>
 		<td>vendor,client,ops</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/commerce/orders/{id}/quote</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/commerce/orders/{id}/quote</a></td>
 		<td>POST</td>
 		<td>Quotes an order</td>
 		<td>vendor,client,ops</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/commerce/orders/{id}/fail</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/commerce/orders/{id}/fail</a></td>
 		<td>POST</td>
 		<td>Fails an order and sets its status to failed</td>
 		<td>vendor,client,ops</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/commerce/orders/{id}/validate</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/commerce/orders/{id}/validate</a></td>
 		<td>POST</td>
 		<td>Validates an order by invoking the vendor connector validation workflow</td>
 		<td>vendor,client,ops</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/commerce/orders/{id}/notify</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/commerce/orders/{id}/notify</a></td>
 		<td>POST</td>
 		<td>Sends an order notification to a user</td>
 		<td>client,ops</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/commerce/orders/{id}</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/commerce/orders/{id}</a></td>
 		<td>PUT</td>
 		<td>Updates an order. Immutable fields such as state and agreement assignment cannot be changed</td>
 		<td>vendor,client,ops</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/commerce/orders/{id}</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/commerce/orders/{id}</a></td>
 		<td>DELETE</td>
 		<td>Deletes an order. Only draft orders can be deleted</td>
 		<td>vendor,client,ops</td>
@@ -506,37 +506,37 @@ See the following sections to determine which roles are authorized to perform sp
 </thead>
 <tbody>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/commerce/orders/{orderId}/subscriptions</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/commerce/orders/{orderId}/subscriptions</a></td>
 		<td>GET</td>
 		<td>Lists subscriptions for the specified order</td>
 		<td>vendor,client,ops</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/commerce/orders/{orderId}/subscriptions/{id}</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/commerce/orders/{orderId}/subscriptions/{id}</a></td>
 		<td>GET</td>
 		<td>Gets an order subscription by id</td>
 		<td>vendor,client,ops</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/commerce/orders/{orderId}/subscriptions/{id}/render</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/commerce/orders/{orderId}/subscriptions/{id}/render</a></td>
 		<td>GET</td>
 		<td>Renders an order subscription template</td>
 		<td>vendor,client,ops</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/commerce/orders/{orderId}/subscriptions</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/commerce/orders/{orderId}/subscriptions</a></td>
 		<td>POST</td>
 		<td>Creates a new subscription for the order</td>
 		<td>vendor,client,ops</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/commerce/orders/{orderId}/subscriptions/{id}</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/commerce/orders/{orderId}/subscriptions/{id}</a></td>
 		<td>PUT</td>
 		<td>Updates an existing order subscription</td>
 		<td>vendor,client,ops</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/commerce/orders/{orderId}/subscriptions/{id}</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/commerce/orders/{orderId}/subscriptions/{id}</a></td>
 		<td>DELETE</td>
 		<td>Deletes an order subscription</td>
 		<td>vendor,client,ops</td>
@@ -559,19 +559,19 @@ See the following sections to determine which roles are authorized to perform sp
 </thead>
 <tbody>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/commerce/agreements/{agreementId}/split</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/commerce/agreements/{agreementId}/split</a></td>
 		<td>GET</td>
 		<td>Gets split billing allocations for an agreement</td>
 		<td>client,ops</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/commerce/agreements/{agreementId}/split</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/commerce/agreements/{agreementId}/split</a></td>
 		<td>POST</td>
 		<td>Activates split billing for an agreement</td>
 		<td>client,ops</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/commerce/agreements/{agreementId}/split</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/commerce/agreements/{agreementId}/split</a></td>
 		<td>PUT</td>
 		<td>Updates split billing allocations for an agreement</td>
 		<td>client,ops</td>
@@ -594,13 +594,13 @@ See the following sections to determine which roles are authorized to perform sp
 </thead>
 <tbody>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/commerce/subscriptions/{subscriptionId}/split</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/commerce/subscriptions/{subscriptionId}/split</a></td>
 		<td>GET</td>
 		<td>Gets split billing allocations for a subscription</td>
 		<td>client,ops</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/commerce/subscriptions/{subscriptionId}/split</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/commerce/subscriptions/{subscriptionId}/split</a></td>
 		<td>PUT</td>
 		<td>Updates split billing allocations for a subscription</td>
 		<td>client,ops</td>
@@ -623,37 +623,37 @@ See the following sections to determine which roles are authorized to perform sp
 </thead>
 <tbody>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/commerce/subscriptions</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/commerce/subscriptions</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/commerce/subscriptions/{id}</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/commerce/subscriptions/{id}</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/commerce/subscriptions/{id}/render</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/commerce/subscriptions/{id}/render</a></td>
 		<td>GET</td>
 		<td>Renders a subscription template</td>
 		<td>vendor,client,ops</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/commerce/subscriptions</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/commerce/subscriptions</a></td>
 		<td>POST</td>
 		<td>Creates a new subscription</td>
 		<td>vendor</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/commerce/subscriptions/{id}/terminate</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/commerce/subscriptions/{id}/terminate</a></td>
 		<td>POST</td>
 		<td>Terminates an existing subscription</td>
 		<td>vendor</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/commerce/subscriptions/{id}</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/commerce/subscriptions/{id}</a></td>
 		<td>PUT</td>
 		<td>Updates an existing subscription</td>
 		<td>vendor,client,ops</td>

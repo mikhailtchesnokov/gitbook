@@ -62,37 +62,37 @@ See the following sections to determine which roles are authorized to perform sp
 </thead>
 <tbody>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/program/certificates</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/program/certificates</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/program/certificates/{id}</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/program/certificates/{id}</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/program/certificates/{id}/render</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/program/certificates/{id}/render</a></td>
 		<td>GET</td>
 		<td>Renders certificate template</td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/program/certificates</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/program/certificates</a></td>
 		<td>POST</td>
 		<td></td>
 		<td>ops</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/program/certificates/{id}/terminate</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/program/certificates/{id}/terminate</a></td>
 		<td>POST</td>
 		<td></td>
 		<td>vendor</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/program/certificates/{id}</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/program/certificates/{id}</a></td>
 		<td>PUT</td>
 		<td></td>
 		<td>ops,client,vendor</td>
@@ -115,73 +115,73 @@ See the following sections to determine which roles are authorized to perform sp
 </thead>
 <tbody>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/program/enrollments</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/program/enrollments</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/program/enrollments/{id}</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/program/enrollments/{id}</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/program/enrollments/{id}/render</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/program/enrollments/{id}/render</a></td>
 		<td>GET</td>
 		<td>Renders enrollment template</td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/program/enrollments</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/program/enrollments</a></td>
 		<td>POST</td>
 		<td></td>
 		<td>client,ops</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/program/enrollments/{id}/validate</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/program/enrollments/{id}/validate</a></td>
 		<td>POST</td>
 		<td></td>
 		<td>client,vendor</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/program/enrollments/{id}/query</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/program/enrollments/{id}/query</a></td>
 		<td>POST</td>
 		<td></td>
 		<td>vendor</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/program/enrollments/{id}/process</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/program/enrollments/{id}/process</a></td>
 		<td>POST</td>
 		<td></td>
 		<td>client,vendor</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/program/enrollments/{id}/complete</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/program/enrollments/{id}/complete</a></td>
 		<td>POST</td>
 		<td></td>
 		<td>vendor</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/program/enrollments/{id}/submit</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/program/enrollments/{id}/submit</a></td>
 		<td>POST</td>
 		<td></td>
 		<td>client,ops</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/program/enrollments/{id}/fail</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/program/enrollments/{id}/fail</a></td>
 		<td>POST</td>
 		<td></td>
 		<td>vendor</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/program/enrollments/{id}</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/program/enrollments/{id}</a></td>
 		<td>PUT</td>
 		<td></td>
 		<td>client,vendor</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/program/enrollments/{id}</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/program/enrollments/{id}</a></td>
 		<td>DELETE</td>
 		<td></td>
 		<td>client,ops</td>
@@ -204,31 +204,31 @@ See the following sections to determine which roles are authorized to perform sp
 </thead>
 <tbody>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/program/enrollments/{enrollmentId}/attachments/{id}</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/program/enrollments/{enrollmentId}/attachments/{id}</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/program/enrollments/{enrollmentId}/attachments</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/program/enrollments/{enrollmentId}/attachments</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/program/enrollments/{enrollmentId}/attachments</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/program/enrollments/{enrollmentId}/attachments</a></td>
 		<td>POST</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/program/enrollments/{enrollmentId}/attachments/{id}</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/program/enrollments/{enrollmentId}/attachments/{id}</a></td>
 		<td>PUT</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/program/enrollments/{enrollmentId}/attachments/{id}</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/program/enrollments/{enrollmentId}/attachments/{id}</a></td>
 		<td>DELETE</td>
 		<td></td>
 		<td>ops,client,vendor</td>
@@ -251,43 +251,43 @@ See the following sections to determine which roles are authorized to perform sp
 </thead>
 <tbody>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{programId}/documents/{id}</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{programId}/documents/{id}</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{programId}/documents</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{programId}/documents</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{programId}/documents</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{programId}/documents</a></td>
 		<td>POST</td>
 		<td></td>
 		<td>vendor</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{programId}/documents/{id}/publish</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{programId}/documents/{id}/publish</a></td>
 		<td>POST</td>
 		<td></td>
 		<td>vendor</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{programId}/documents/{id}/unpublish</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{programId}/documents/{id}/unpublish</a></td>
 		<td>POST</td>
 		<td></td>
 		<td>vendor</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{programId}/documents/{id}</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{programId}/documents/{id}</a></td>
 		<td>PUT</td>
 		<td></td>
 		<td>vendor</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{programId}/documents/{id}</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{programId}/documents/{id}</a></td>
 		<td>DELETE</td>
 		<td></td>
 		<td>vendor</td>
@@ -310,49 +310,49 @@ See the following sections to determine which roles are authorized to perform sp
 </thead>
 <tbody>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{programId}/media/{id}</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{programId}/media/{id}</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{programId}/media</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{programId}/media</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{programId}/media/{id}/image</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{programId}/media/{id}/image</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{programId}/media</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{programId}/media</a></td>
 		<td>POST</td>
 		<td></td>
 		<td>vendor</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{programId}/media/{id}/publish</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{programId}/media/{id}/publish</a></td>
 		<td>POST</td>
 		<td></td>
 		<td>vendor</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{programId}/media/{id}/unpublish</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{programId}/media/{id}/unpublish</a></td>
 		<td>POST</td>
 		<td></td>
 		<td>vendor</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{programId}/media/{id}</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{programId}/media/{id}</a></td>
 		<td>PUT</td>
 		<td></td>
 		<td>vendor</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{programId}/media/{id}</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{programId}/media/{id}</a></td>
 		<td>DELETE</td>
 		<td></td>
 		<td>vendor</td>
@@ -375,31 +375,31 @@ See the following sections to determine which roles are authorized to perform sp
 </thead>
 <tbody>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{programId}/parameter-groups</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{programId}/parameter-groups</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{programId}/parameter-groups/{id}</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{programId}/parameter-groups/{id}</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{programId}/parameter-groups</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{programId}/parameter-groups</a></td>
 		<td>POST</td>
 		<td></td>
 		<td>vendor</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{programId}/parameter-groups/{id}</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{programId}/parameter-groups/{id}</a></td>
 		<td>PUT</td>
 		<td></td>
 		<td>vendor</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{programId}/parameter-groups/{id}</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{programId}/parameter-groups/{id}</a></td>
 		<td>DELETE</td>
 		<td></td>
 		<td>vendor</td>
@@ -422,31 +422,31 @@ See the following sections to determine which roles are authorized to perform sp
 </thead>
 <tbody>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{programId}/parameters</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{programId}/parameters</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{programId}/parameters/{id}</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{programId}/parameters/{id}</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{programId}/parameters</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{programId}/parameters</a></td>
 		<td>POST</td>
 		<td></td>
 		<td>vendor</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{programId}/parameters/{id}</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{programId}/parameters/{id}</a></td>
 		<td>PUT</td>
 		<td></td>
 		<td>vendor</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{programId}/parameters/{id}</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{programId}/parameters/{id}</a></td>
 		<td>DELETE</td>
 		<td></td>
 		<td>vendor</td>
@@ -469,55 +469,55 @@ See the following sections to determine which roles are authorized to perform sp
 </thead>
 <tbody>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/program/programs</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/program/programs</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{id}</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{id}</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{id}/icon</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{id}/icon</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/program/programs</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/program/programs</a></td>
 		<td>POST</td>
 		<td></td>
 		<td>vendor</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{id}/publish</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{id}/publish</a></td>
 		<td>POST</td>
 		<td></td>
 		<td>vendor</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{id}/unpublish</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{id}/unpublish</a></td>
 		<td>POST</td>
 		<td></td>
 		<td>vendor</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{id}</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{id}</a></td>
 		<td>PUT</td>
 		<td></td>
 		<td>vendor</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{id}/settings</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{id}/settings</a></td>
 		<td>PUT</td>
 		<td></td>
 		<td>vendor</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{id}</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{id}</a></td>
 		<td>DELETE</td>
 		<td></td>
 		<td>vendor</td>
@@ -540,31 +540,31 @@ See the following sections to determine which roles are authorized to perform sp
 </thead>
 <tbody>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{programId}/templates</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{programId}/templates</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{programId}/templates/{id}</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{programId}/templates/{id}</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{programId}/templates</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{programId}/templates</a></td>
 		<td>POST</td>
 		<td></td>
 		<td>vendor</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{programId}/templates/{id}</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{programId}/templates/{id}</a></td>
 		<td>PUT</td>
 		<td></td>
 		<td>vendor</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{programId}/templates/{id}</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{programId}/templates/{id}</a></td>
 		<td>DELETE</td>
 		<td></td>
 		<td>vendor</td>
@@ -587,43 +587,43 @@ See the following sections to determine which roles are authorized to perform sp
 </thead>
 <tbody>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{programId}/terms</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{programId}/terms</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{programId}/terms/{id}</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{programId}/terms/{id}</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{programId}/terms</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{programId}/terms</a></td>
 		<td>POST</td>
 		<td></td>
 		<td>vendor</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{programId}/terms/{id}/publish</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{programId}/terms/{id}/publish</a></td>
 		<td>POST</td>
 		<td></td>
 		<td>vendor</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{programId}/terms/{id}/unpublish</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{programId}/terms/{id}/unpublish</a></td>
 		<td>POST</td>
 		<td></td>
 		<td>vendor</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{programId}/terms/{id}</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{programId}/terms/{id}</a></td>
 		<td>PUT</td>
 		<td></td>
 		<td>vendor</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{programId}/terms/{id}</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{programId}/terms/{id}</a></td>
 		<td>DELETE</td>
 		<td></td>
 		<td>vendor</td>
@@ -646,43 +646,43 @@ See the following sections to determine which roles are authorized to perform sp
 </thead>
 <tbody>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{programId}/terms/{programTermsAndConditionsId}/variants</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{programId}/terms/{programTermsAndConditionsId}/variants</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{programId}/terms/{programTermsAndConditionsId}/variants/{id}</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{programId}/terms/{programTermsAndConditionsId}/variants/{id}</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{programId}/terms/{programTermsAndConditionsId}/variants</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{programId}/terms/{programTermsAndConditionsId}/variants</a></td>
 		<td>POST</td>
 		<td></td>
 		<td>vendor</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{programId}/terms/{programTermsAndConditionsId}/variants/{id}/publish</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{programId}/terms/{programTermsAndConditionsId}/variants/{id}/publish</a></td>
 		<td>POST</td>
 		<td></td>
 		<td>vendor</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{programId}/terms/{programTermsAndConditionsId}/variants/{id}/unpublish</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{programId}/terms/{programTermsAndConditionsId}/variants/{id}/unpublish</a></td>
 		<td>POST</td>
 		<td></td>
 		<td>vendor</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{programId}/terms/{programTermsAndConditionsId}/variants/{id}</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{programId}/terms/{programTermsAndConditionsId}/variants/{id}</a></td>
 		<td>PUT</td>
 		<td></td>
 		<td>vendor</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{programId}/terms/{programTermsAndConditionsId}/variants/{id}</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/program/programs/{programId}/terms/{programTermsAndConditionsId}/variants/{id}</a></td>
 		<td>DELETE</td>
 		<td></td>
 		<td>vendor</td>

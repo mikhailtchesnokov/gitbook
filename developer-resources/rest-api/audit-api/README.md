@@ -48,19 +48,19 @@ See the following sections to determine which roles are authorized to perform sp
 </thead>
 <tbody>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/audit/event-types</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/audit/event-types</a></td>
 		<td>GET</td>
 		<td>Gets a list of audit event types</td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/audit/event-types/{id}</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/audit/event-types/{id}</a></td>
 		<td>GET</td>
 		<td>Retrieves an audit event type by ID</td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/audit/event-types/{id}</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/audit/event-types/{id}</a></td>
 		<td>PUT</td>
 		<td>Updates an event type</td>
 		<td>ops,client,vendor</td>
@@ -83,19 +83,19 @@ See the following sections to determine which roles are authorized to perform sp
 </thead>
 <tbody>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/audit/records</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/audit/records</a></td>
 		<td>GET</td>
 		<td>Gets a list of audit records</td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/audit/records/{id}</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/audit/records/{id}</a></td>
 		<td>GET</td>
 		<td>Retrieves an audit record by ID</td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td><a href="../currencies/get-exchange-currencies-092.md">/public/v1/audit/records</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/audit/records</a></td>
 		<td>POST</td>
 		<td>Creates a new audit record</td>
 		<td>vendor,ops</td>
