@@ -423,7 +423,7 @@ See the following sections to determine which roles are authorized to perform sp
 	<tr>
 		<td>/public/v1/helpdesk/chats/{chatId}/participants/{id}</td>
 		<td>PUT</td>
-		<td>Update an existing participant.</td>
+		<td>Update an existing participant</td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
@@ -840,19 +840,19 @@ See the following sections to determine which roles are authorized to perform sp
 	<tr>
 		<td>/public/v1/helpdesk/parameters</td>
 		<td>POST</td>
-		<td>Create a new parameter definition.</td>
+		<td>Create a new parameter definition</td>
 		<td>vendor,client,ops</td>
 	</tr>
 	<tr>
 		<td>/public/v1/helpdesk/parameters/{id}</td>
 		<td>PUT</td>
-		<td>Updates existing parameter definition.</td>
+		<td>Updates existing parameter definition</td>
 		<td>vendor,client,ops</td>
 	</tr>
 	<tr>
 		<td>/public/v1/helpdesk/parameters/{id}</td>
 		<td>DELETE</td>
-		<td>Deletes existing parameter definition.</td>
+		<td>Deletes existing parameter definition</td>
 		<td>vendor,client,ops</td>
 	</tr>
 <tbody>
@@ -1075,25 +1075,25 @@ See the following sections to determine which roles are authorized to perform sp
 	<tr>
 		<td>/public/v1/helpdesk/cases</td>
 		<td>POST</td>
-		<td>Creates a new support case.</td>
+		<td>Creates a new support case</td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
 		<td>/public/v1/helpdesk/cases/{id}/query</td>
 		<td>POST</td>
-		<td>Sets a support case to Mpt.Helpdesk.Models.Cases.SupportCaseStatus.Querying status.</td>
+		<td>Sets a support case to Mpt.Helpdesk.Models.Cases.SupportCaseStatus.Querying status</td>
 		<td>vendor,client,ops</td>
 	</tr>
 	<tr>
 		<td>/public/v1/helpdesk/cases/{id}/process</td>
 		<td>POST</td>
-		<td>Sets a support case to Mpt.Helpdesk.Models.Cases.SupportCaseStatus.Processing status.</td>
+		<td>Sets a support case to Mpt.Helpdesk.Models.Cases.SupportCaseStatus.Processing status</td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
 		<td>/public/v1/helpdesk/cases/{id}/complete</td>
 		<td>POST</td>
-		<td>Sets a support case to Mpt.Helpdesk.Models.Cases.SupportCaseStatus.Completed status.</td>
+		<td>Sets a support case to Mpt.Helpdesk.Models.Cases.SupportCaseStatus.Completed status</td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>

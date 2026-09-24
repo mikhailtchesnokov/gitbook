@@ -216,13 +216,13 @@ See the following sections to determine which roles are authorized to perform sp
 	<tr>
 		<td>/public/v1/accounts/accounts/{accountId}/settings/notifications</td>
 		<td>GET</td>
-		<td>Gets account notification settings.</td>
+		<td>Gets account notification settings</td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
 		<td>/public/v1/accounts/accounts/{accountId}/settings/notifications</td>
 		<td>PUT</td>
-		<td>Updates account notification settings.</td>
+		<td>Updates account notification settings</td>
 		<td>ops,client,vendor</td>
 	</tr>
 <tbody>

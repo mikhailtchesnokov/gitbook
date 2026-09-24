@@ -165,7 +165,7 @@ See the following sections to determine which roles are authorized to perform sp
 	<tr>
 		<td>/public/v1/procurement/sales-orders/{id}/retry</td>
 		<td>POST</td>
-		<td>Retry a sales order will try to finalize order again if the order is in an error status.</td>
+		<td>Retry a sales order will try to finalize order again if the order is in an error status</td>
 		<td>ops</td>
 	</tr>
 	<tr>
@@ -236,7 +236,7 @@ See the following sections to determine which roles are authorized to perform sp
 	<tr>
 		<td>/public/v1/procurement/sales-quotes/{id}/retry</td>
 		<td>POST</td>
-		<td>Retry a sales quote will try to finalize or accept the quote again if the quote is in an error status.</td>
+		<td>Retry a sales quote will try to finalize or accept the quote again if the quote is in an error status</td>
 		<td>client,ops</td>
 	</tr>
 	<tr>
