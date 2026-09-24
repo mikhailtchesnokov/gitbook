@@ -9,6 +9,7 @@
             <th>Field</th>
             <th>Type</th>
 	        <th>Core</th>
+	        <th>Access</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -17,11 +18,13 @@
             <td><code>id</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>audit</code></td>
             <td>PlatformObjectAudit</td>
+	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
@@ -29,71 +32,83 @@
             <td><code>$meta</code></td>
             <td>PlatformMetadata</td>
 	        <td></td>
+	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>type</code></td>
             <td>string</td>
 	        <td></td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>description</code></td>
             <td>string</td>
 	        <td></td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>string</td>
 	        <td></td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>filename</code></td>
             <td>string</td>
 	        <td></td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>size</code></td>
             <td>integer</td>
 	        <td></td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>contentType</code></td>
             <td>string</td>
 	        <td></td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>displayOrder</code></td>
             <td>integer</td>
 	        <td></td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>url</code></td>
             <td>string</td>
 	        <td></td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>product</code></td>
             <td>ProductRef</td>
+	        <td></td>
 	        <td></td>
             <td></td>
         </tr></tbody>
@@ -109,6 +124,7 @@
             <th>Field</th>
             <th>Type</th>
 	        <th>Core</th>
+	        <th>Access</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -117,24 +133,28 @@
             <td><code>id</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
     </tbody>
@@ -150,6 +170,7 @@
             <th>Field</th>
             <th>Type</th>
 	        <th>Core</th>
+	        <th>Access</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -157,6 +178,7 @@
         <tr>
             <td><code>omitted</code></td>
             <td>array</td>
+	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
@@ -173,6 +195,7 @@
             <th>Field</th>
             <th>Type</th>
 	        <th>Core</th>
+	        <th>Access</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -181,11 +204,13 @@
             <td><code>created</code></td>
             <td>PlatformObjectEvent</td>
 	        <td></td>
+	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>updated</code></td>
             <td>PlatformObjectEvent</td>
+	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
@@ -202,6 +227,7 @@
             <th>Field</th>
             <th>Type</th>
 	        <th>Core</th>
+	        <th>Access</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -210,11 +236,13 @@
             <td><code>at</code></td>
             <td>string</td>
 	        <td></td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>by</code></td>
             <td>PlatformIdentityRef</td>
+	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
@@ -231,6 +259,7 @@
             <th>Field</th>
             <th>Type</th>
 	        <th>Core</th>
+	        <th>Access</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -239,12 +268,14 @@
             <td><code>operations</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>defaultErpItem</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
     </tbody>
@@ -260,6 +291,7 @@
             <th>Field</th>
             <th>Type</th>
 	        <th>Core</th>
+	        <th>Access</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -268,29 +300,34 @@
             <td><code>id</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>externalIds</code></td>
             <td>ProductExternalIdBag</td>
+	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
@@ -298,6 +335,7 @@
             <td><code>status</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
     </tbody>

@@ -9,6 +9,7 @@
             <th>Field</th>
             <th>Type</th>
 	        <th>Core</th>
+	        <th>Access</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -17,11 +18,13 @@
             <td><code>id</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>audit</code></td>
             <td>PlatformObjectAudit</td>
+	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
@@ -29,35 +32,41 @@
             <td><code>$meta</code></td>
             <td>PlatformMetadata</td>
 	        <td></td>
+	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>description</code></td>
             <td>string</td>
 	        <td></td>
+	        <td>client,vendor,ops</td>
             <td>Gets or sets the description associated with the chat</td>
         </tr>
         <tr>
             <td><code>type</code></td>
             <td>ChatType</td>
+	        <td></td>
 	        <td></td>
             <td>Represents the type of chat, indicating whether it is a direct message, group chat, channel, or support case. Allowed values: Direct,Group,Channel,Case</td>
         </tr>
@@ -65,11 +74,13 @@
             <td><code>participants</code></td>
             <td>array</td>
 	        <td></td>
+	        <td>client,vendor,ops</td>
             <td>Represents the participants in the chat</td>
         </tr>
         <tr>
             <td><code>lastMessage</code></td>
             <td>ChatMessageRef</td>
+	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
@@ -77,6 +88,7 @@
             <td><code>attachments</code></td>
             <td>array</td>
 	        <td></td>
+	        <td>client,vendor,ops</td>
             <td>Represents the attachments associated with the chat</td>
         </tr></tbody>
 </table>
@@ -91,6 +103,7 @@
             <th>Field</th>
             <th>Type</th>
 	        <th>Core</th>
+	        <th>Access</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -99,29 +112,34 @@
             <td><code>id</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>file</code></td>
             <td>File</td>
+	        <td></td>
 	        <td></td>
             <td>Represents the file this attachment belongs to</td>
         </tr>
@@ -138,6 +156,7 @@
             <th>Field</th>
             <th>Type</th>
 	        <th>Core</th>
+	        <th>Access</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -146,23 +165,27 @@
             <td><code>id</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>content</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td>Content of the chat message</td>
         </tr>
         <tr>
             <td><code>visibility</code></td>
             <td>MessageVisibility</td>
+	        <td></td>
 	        <td></td>
             <td>Visibility of the chat message, indicating whether it is public or private. Allowed values: Public,Private</td>
         </tr>
@@ -170,6 +193,7 @@
             <td><code>isDeleted</code></td>
             <td>boolean</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td>Set to true when the message should be considered deleted</td>
         </tr>
     </tbody>
@@ -185,6 +209,7 @@
             <th>Field</th>
             <th>Type</th>
 	        <th>Core</th>
+	        <th>Access</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -193,23 +218,27 @@
             <td><code>id</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>muted</code></td>
             <td>boolean</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td>Flag indicates whether participant should be notified of new messages in the chat</td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>ParticipantStatus</td>
+	        <td></td>
 	        <td></td>
             <td>Represents the status of the chat participant, indicating whether they are active, suspended, or exited. Allowed values: Active,Exited,Deactivated</td>
         </tr>
@@ -226,6 +255,7 @@ Represents a file in the helpdesk module
             <th>Field</th>
             <th>Type</th>
 	        <th>Core</th>
+	        <th>Access</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -234,11 +264,13 @@ Represents a file in the helpdesk module
             <td><code>id</code></td>
             <td>string</td>
 	        <td></td>
+	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>audit</code></td>
             <td>PlatformObjectAudit</td>
+	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
@@ -246,11 +278,13 @@ Represents a file in the helpdesk module
             <td><code>$meta</code></td>
             <td>PlatformMetadata</td>
 	        <td></td>
+	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
             <td>string</td>
+	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
@@ -258,11 +292,13 @@ Represents a file in the helpdesk module
             <td><code>icon</code></td>
             <td>string</td>
 	        <td></td>
+	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
+	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
@@ -270,11 +306,13 @@ Represents a file in the helpdesk module
             <td><code>type</code></td>
             <td>FileType</td>
 	        <td></td>
+	        <td></td>
             <td>Specifies the type of the file, such as attachment or icon. Allowed values: Attachment,Icon,Image,Video</td>
         </tr>
         <tr>
             <td><code>filename</code></td>
             <td>string</td>
+	        <td></td>
 	        <td></td>
             <td>Represents the name of the file associated with the attachment</td>
         </tr>
@@ -282,11 +320,13 @@ Represents a file in the helpdesk module
             <td><code>size</code></td>
             <td>integer</td>
 	        <td></td>
+	        <td></td>
             <td>Indicates the size of the file in bytes</td>
         </tr>
         <tr>
             <td><code>contentType</code></td>
             <td>string</td>
+	        <td></td>
 	        <td></td>
             <td>Represents the MIME type of the file content</td>
         </tr>
@@ -303,6 +343,7 @@ Represents a file in the helpdesk module
             <th>Field</th>
             <th>Type</th>
 	        <th>Core</th>
+	        <th>Access</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -311,24 +352,28 @@ Represents a file in the helpdesk module
             <td><code>id</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
     </tbody>
@@ -344,6 +389,7 @@ Represents a file in the helpdesk module
             <th>Field</th>
             <th>Type</th>
 	        <th>Core</th>
+	        <th>Access</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -351,6 +397,7 @@ Represents a file in the helpdesk module
         <tr>
             <td><code>omitted</code></td>
             <td>array</td>
+	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
@@ -367,6 +414,7 @@ Represents a file in the helpdesk module
             <th>Field</th>
             <th>Type</th>
 	        <th>Core</th>
+	        <th>Access</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -375,11 +423,13 @@ Represents a file in the helpdesk module
             <td><code>created</code></td>
             <td>PlatformObjectEvent</td>
 	        <td></td>
+	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>updated</code></td>
             <td>PlatformObjectEvent</td>
+	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
@@ -396,6 +446,7 @@ Represents a file in the helpdesk module
             <th>Field</th>
             <th>Type</th>
 	        <th>Core</th>
+	        <th>Access</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -404,11 +455,13 @@ Represents a file in the helpdesk module
             <td><code>at</code></td>
             <td>string</td>
 	        <td></td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>by</code></td>
             <td>PlatformIdentityRef</td>
+	        <td></td>
 	        <td></td>
             <td></td>
         </tr>

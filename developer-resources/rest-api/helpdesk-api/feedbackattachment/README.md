@@ -9,6 +9,7 @@
             <th>Field</th>
             <th>Type</th>
 	        <th>Core</th>
+	        <th>Access</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -17,11 +18,13 @@
             <td><code>id</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>audit</code></td>
             <td>FeedbackAttachmentAudit</td>
+	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
@@ -29,23 +32,27 @@
             <td><code>$meta</code></td>
             <td>PlatformMetadata</td>
 	        <td></td>
+	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>feedback</code></td>
             <td>Feedback</td>
+	        <td></td>
 	        <td></td>
             <td>Represents the feedback this attachment belongs to</td>
         </tr>
@@ -53,11 +60,13 @@
             <td><code>status</code></td>
             <td>FileStatus</td>
 	        <td></td>
+	        <td></td>
             <td>. Allowed values: Active,Deleted</td>
         </tr>
         <tr>
             <td><code>file</code></td>
             <td>File</td>
+	        <td></td>
 	        <td></td>
             <td>Represents the file this attachment belongs to</td>
         </tr>
@@ -65,12 +74,14 @@
             <td><code>name</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td>Represents the name this attachment</td>
         </tr>
         <tr>
             <td><code>description</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td>Represents the description this attachment</td>
         </tr></tbody>
 </table>
@@ -85,6 +96,7 @@
             <th>Field</th>
             <th>Type</th>
 	        <th>Core</th>
+	        <th>Access</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -93,35 +105,41 @@
             <td><code>id</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>type</code></td>
             <td>AccountType</td>
 	        <td></td>
+	        <td></td>
             <td>. Allowed values: Client,Vendor,Operations</td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>AccountStatus</td>
+	        <td></td>
 	        <td></td>
             <td>. Allowed values: Active,Enabled,Disabled</td>
         </tr>
@@ -138,6 +156,7 @@
             <th>Field</th>
             <th>Type</th>
 	        <th>Core</th>
+	        <th>Access</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -146,11 +165,13 @@
             <td><code>id</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>audit</code></td>
             <td>PlatformObjectAudit</td>
+	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
@@ -158,35 +179,41 @@
             <td><code>$meta</code></td>
             <td>PlatformMetadata</td>
 	        <td></td>
+	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>description</code></td>
             <td>string</td>
 	        <td></td>
+	        <td>client,vendor,ops</td>
             <td>Gets or sets the description associated with the feedback</td>
         </tr>
         <tr>
             <td><code>requester</code></td>
             <td>PlatformIdentityRef</td>
+	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
@@ -194,11 +221,13 @@
             <td><code>account</code></td>
             <td>AccountRef</td>
 	        <td></td>
+	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>FeedbackStatus</td>
+	        <td></td>
 	        <td></td>
             <td>Gets or sets the status associated with the feedback. Allowed values: Submitted,Reviewed,Deleted</td>
         </tr>
@@ -206,29 +235,34 @@
             <td><code>rating</code></td>
             <td>integer</td>
 	        <td></td>
+	        <td>client,vendor,ops</td>
             <td>Gets or sets the rating associated with the feedback</td>
         </tr>
         <tr>
             <td><code>notes</code></td>
             <td>string</td>
 	        <td></td>
+	        <td>client,vendor,ops</td>
             <td>Gets or sets the notes associated with the feedback</td>
         </tr>
         <tr>
             <td><code>internalNotes</code></td>
             <td>string</td>
 	        <td></td>
+	        <td>ops</td>
             <td>Gets or sets the internal notes associated with the feedback</td>
         </tr>
         <tr>
             <td><code>externalId</code></td>
             <td>string</td>
 	        <td></td>
+	        <td>ops</td>
             <td>Gets or sets the externalId associated with the feedback</td>
         </tr>
         <tr>
             <td><code>metaData</code></td>
             <td>object</td>
+	        <td></td>
 	        <td></td>
             <td>Gets the metadata as a JSON document (read-only)</td>
         </tr>
@@ -236,6 +270,7 @@
             <td><code>attachments</code></td>
             <td>array</td>
 	        <td></td>
+	        <td>client,vendor,ops</td>
             <td>Represents the attachments associated with the feedback</td>
         </tr>
     </tbody>
@@ -251,6 +286,7 @@
             <th>Field</th>
             <th>Type</th>
 	        <th>Core</th>
+	        <th>Access</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -259,17 +295,20 @@
             <td><code>created</code></td>
             <td>PlatformObjectEvent</td>
 	        <td></td>
+	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>updated</code></td>
             <td>PlatformObjectEvent</td>
 	        <td></td>
+	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>deleted</code></td>
             <td>PlatformObjectEvent</td>
+	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
@@ -286,6 +325,7 @@
             <th>Field</th>
             <th>Type</th>
 	        <th>Core</th>
+	        <th>Access</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -294,23 +334,27 @@
             <td><code>id</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>feedback</code></td>
             <td>Feedback</td>
+	        <td></td>
 	        <td></td>
             <td>Represents the feedback this attachment belongs to</td>
         </tr>
@@ -318,18 +362,21 @@
             <td><code>file</code></td>
             <td>File</td>
 	        <td></td>
+	        <td></td>
             <td>Represents the file this attachment belongs to</td>
         </tr>
         <tr>
             <td><code>name</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td>Represents the name this attachment</td>
         </tr>
         <tr>
             <td><code>description</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td>Represents the description this attachment</td>
         </tr>
     </tbody>
@@ -345,6 +392,7 @@ Represents a file in the helpdesk module
             <th>Field</th>
             <th>Type</th>
 	        <th>Core</th>
+	        <th>Access</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -353,11 +401,13 @@ Represents a file in the helpdesk module
             <td><code>id</code></td>
             <td>string</td>
 	        <td></td>
+	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>audit</code></td>
             <td>PlatformObjectAudit</td>
+	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
@@ -365,11 +415,13 @@ Represents a file in the helpdesk module
             <td><code>$meta</code></td>
             <td>PlatformMetadata</td>
 	        <td></td>
+	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
             <td>string</td>
+	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
@@ -377,11 +429,13 @@ Represents a file in the helpdesk module
             <td><code>icon</code></td>
             <td>string</td>
 	        <td></td>
+	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
+	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
@@ -389,11 +443,13 @@ Represents a file in the helpdesk module
             <td><code>type</code></td>
             <td>FileType</td>
 	        <td></td>
+	        <td></td>
             <td>Specifies the type of the file, such as attachment or icon. Allowed values: Attachment,Icon,Image,Video</td>
         </tr>
         <tr>
             <td><code>filename</code></td>
             <td>string</td>
+	        <td></td>
 	        <td></td>
             <td>Represents the name of the file associated with the attachment</td>
         </tr>
@@ -401,11 +457,13 @@ Represents a file in the helpdesk module
             <td><code>size</code></td>
             <td>integer</td>
 	        <td></td>
+	        <td></td>
             <td>Indicates the size of the file in bytes</td>
         </tr>
         <tr>
             <td><code>contentType</code></td>
             <td>string</td>
+	        <td></td>
 	        <td></td>
             <td>Represents the MIME type of the file content</td>
         </tr>
@@ -422,6 +480,7 @@ Represents a file in the helpdesk module
             <th>Field</th>
             <th>Type</th>
 	        <th>Core</th>
+	        <th>Access</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -430,24 +489,28 @@ Represents a file in the helpdesk module
             <td><code>id</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
     </tbody>
@@ -463,6 +526,7 @@ Represents a file in the helpdesk module
             <th>Field</th>
             <th>Type</th>
 	        <th>Core</th>
+	        <th>Access</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -470,6 +534,7 @@ Represents a file in the helpdesk module
         <tr>
             <td><code>omitted</code></td>
             <td>array</td>
+	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
@@ -486,6 +551,7 @@ Represents a file in the helpdesk module
             <th>Field</th>
             <th>Type</th>
 	        <th>Core</th>
+	        <th>Access</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -494,11 +560,13 @@ Represents a file in the helpdesk module
             <td><code>created</code></td>
             <td>PlatformObjectEvent</td>
 	        <td></td>
+	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>updated</code></td>
             <td>PlatformObjectEvent</td>
+	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
@@ -515,6 +583,7 @@ Represents a file in the helpdesk module
             <th>Field</th>
             <th>Type</th>
 	        <th>Core</th>
+	        <th>Access</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -523,11 +592,13 @@ Represents a file in the helpdesk module
             <td><code>at</code></td>
             <td>string</td>
 	        <td></td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>by</code></td>
             <td>PlatformIdentityRef</td>
+	        <td></td>
 	        <td></td>
             <td></td>
         </tr>

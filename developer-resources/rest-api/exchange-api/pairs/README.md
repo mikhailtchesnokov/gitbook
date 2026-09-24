@@ -9,6 +9,7 @@ Represents a pair of currencies in exchange module.
             <th>Field</th>
             <th>Type</th>
 	        <th>Core</th>
+	        <th>Access</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -17,11 +18,13 @@ Represents a pair of currencies in exchange module.
             <td><code>audit</code></td>
             <td>ExchangeAudit</td>
 	        <td></td>
+	        <td></td>
             <td>Exchange Entity Audit properties bag</td>
         </tr>
         <tr>
             <td><code>$meta</code></td>
             <td>PlatformMetadata</td>
+	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
@@ -29,41 +32,48 @@ Represents a pair of currencies in exchange module.
             <td><code>revision</code></td>
             <td>integer</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>id</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td>The unique identifier of the pair</td>
         </tr>
         <tr>
             <td><code>name</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td>The name of the pair</td>
         </tr>
         <tr>
             <td><code>externalId</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td>The external id of the pair</td>
         </tr>
         <tr>
             <td><code>notes</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td>Notes for the pair</td>
         </tr>
         <tr>
             <td><code>primary</code></td>
             <td>boolean</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td>If the pair is primary</td>
         </tr>
         <tr>
             <td><code>reverse</code></td>
             <td>PairRef</td>
+	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
@@ -71,11 +81,13 @@ Represents a pair of currencies in exchange module.
             <td><code>sourceCurrency</code></td>
             <td>CurrencyRef</td>
 	        <td></td>
+	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>destinationCurrency</code></td>
             <td>CurrencyRef</td>
+	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
@@ -83,23 +95,27 @@ Represents a pair of currencies in exchange module.
             <td><code>latestRate</code></td>
             <td>Rate</td>
 	        <td></td>
+	        <td></td>
             <td>Latest pair rate</td>
         </tr>
         <tr>
             <td><code>agreements</code></td>
             <td>integer</td>
 	        <td></td>
+	        <td>client,vendor,ops</td>
             <td>Number of agreements</td>
         </tr>
         <tr>
             <td><code>rates</code></td>
             <td>integer</td>
 	        <td></td>
+	        <td>client,vendor,ops</td>
             <td>Number of rates</td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>PairStatus</td>
+	        <td></td>
 	        <td></td>
             <td>The current status of the pair. Allowed values: Active,Deleted</td>
         </tr></tbody>
@@ -115,6 +131,7 @@ Represents currency in exchange module.
             <th>Field</th>
             <th>Type</th>
 	        <th>Core</th>
+	        <th>Access</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -123,36 +140,42 @@ Represents currency in exchange module.
             <td><code>icon</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>id</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td>The unique identifier of the currency</td>
         </tr>
         <tr>
             <td><code>name</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td>The name of the currency</td>
         </tr>
         <tr>
             <td><code>code</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td>The ISO code of currency</td>
         </tr>
         <tr>
             <td><code>precision</code></td>
             <td>integer</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td>Precision of the currency</td>
         </tr>
     </tbody>
@@ -168,6 +191,7 @@ Exchange Entity Audit properties bag
             <th>Field</th>
             <th>Type</th>
 	        <th>Core</th>
+	        <th>Access</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -176,17 +200,20 @@ Exchange Entity Audit properties bag
             <td><code>created</code></td>
             <td>PlatformObjectEvent</td>
 	        <td></td>
+	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>updated</code></td>
             <td>PlatformObjectEvent</td>
 	        <td></td>
+	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>deleted</code></td>
             <td>PlatformObjectEvent</td>
+	        <td></td>
 	        <td></td>
             <td>Delete event details</td>
         </tr>
@@ -203,6 +230,7 @@ Represents a pair of currencies in exchange module.
             <th>Field</th>
             <th>Type</th>
 	        <th>Core</th>
+	        <th>Access</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -211,41 +239,48 @@ Represents a pair of currencies in exchange module.
             <td><code>revision</code></td>
             <td>integer</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>id</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td>The unique identifier of the pair</td>
         </tr>
         <tr>
             <td><code>name</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td>The name of the pair</td>
         </tr>
         <tr>
             <td><code>externalId</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td>The external id of the pair</td>
         </tr>
         <tr>
             <td><code>notes</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td>Notes for the pair</td>
         </tr>
         <tr>
             <td><code>primary</code></td>
             <td>boolean</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td>If the pair is primary</td>
         </tr>
         <tr>
             <td><code>latestRate</code></td>
             <td>Rate</td>
+	        <td></td>
 	        <td></td>
             <td>Latest pair rate</td>
         </tr>
@@ -262,6 +297,7 @@ Represents a pair of currencies in exchange module.
             <th>Field</th>
             <th>Type</th>
 	        <th>Core</th>
+	        <th>Access</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -270,24 +306,28 @@ Represents a pair of currencies in exchange module.
             <td><code>id</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
     </tbody>
@@ -303,6 +343,7 @@ Represents a pair of currencies in exchange module.
             <th>Field</th>
             <th>Type</th>
 	        <th>Core</th>
+	        <th>Access</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -310,6 +351,7 @@ Represents a pair of currencies in exchange module.
         <tr>
             <td><code>omitted</code></td>
             <td>array</td>
+	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
@@ -326,6 +368,7 @@ Represents a pair of currencies in exchange module.
             <th>Field</th>
             <th>Type</th>
 	        <th>Core</th>
+	        <th>Access</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -334,11 +377,13 @@ Represents a pair of currencies in exchange module.
             <td><code>at</code></td>
             <td>string</td>
 	        <td></td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>by</code></td>
             <td>PlatformIdentityRef</td>
+	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
@@ -355,6 +400,7 @@ Record of rate for specific day
             <th>Field</th>
             <th>Type</th>
 	        <th>Core</th>
+	        <th>Access</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -363,11 +409,13 @@ Record of rate for specific day
             <td><code>id</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>audit</code></td>
             <td>ExchangeAudit</td>
+	        <td></td>
 	        <td></td>
             <td>Exchange Entity Audit properties bag</td>
         </tr>
@@ -375,23 +423,27 @@ Record of rate for specific day
             <td><code>$meta</code></td>
             <td>PlatformMetadata</td>
 	        <td></td>
+	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>pair</code></td>
             <td>PairRef</td>
+	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
@@ -399,29 +451,34 @@ Record of rate for specific day
             <td><code>recordDate</code></td>
             <td>string</td>
 	        <td></td>
+	        <td>client,vendor,ops</td>
             <td>Date and time of rate</td>
         </tr>
         <tr>
             <td><code>value</code></td>
             <td>number</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td>Rate from source to destination currency</td>
         </tr>
         <tr>
             <td><code>externalId</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td>External id of rate</td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>RateStatus</td>
 	        <td></td>
+	        <td></td>
             <td>Record status. Allowed values: Active,Deleted</td>
         </tr>
         <tr>
             <td><code>reverseRate</code></td>
             <td>RateRef</td>
+	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
@@ -438,6 +495,7 @@ Record of rate for specific day
             <th>Field</th>
             <th>Type</th>
 	        <th>Core</th>
+	        <th>Access</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -446,30 +504,35 @@ Record of rate for specific day
             <td><code>id</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>value</code></td>
             <td>number</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td>Rate from source to destination currency</td>
         </tr>
         <tr>
             <td><code>externalId</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td>External id of rate</td>
         </tr>
     </tbody>

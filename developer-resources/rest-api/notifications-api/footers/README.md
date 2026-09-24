@@ -9,6 +9,7 @@ Represents a localized footer template that can be appended to notification mess
             <th>Field</th>
             <th>Type</th>
 	        <th>Core</th>
+	        <th>Access</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -17,11 +18,13 @@ Represents a localized footer template that can be appended to notification mess
             <td><code>id</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>audit</code></td>
             <td>FooterAudit</td>
+	        <td></td>
 	        <td></td>
             <td>Represents audit information for a Mpt.Notifications.Models.Footers.Footer</td>
         </tr>
@@ -29,36 +32,42 @@ Represents a localized footer template that can be appended to notification mess
             <td><code>$meta</code></td>
             <td>PlatformMetadata</td>
 	        <td></td>
+	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>languageCode</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td>Gets or sets the language code for this footer</td>
         </tr>
         <tr>
             <td><code>content</code></td>
             <td>string</td>
 	        <td></td>
+	        <td>client,vendor,ops</td>
             <td>Gets or sets the content of the footer</td>
         </tr>
         <tr>
             <td><code>isDefault</code></td>
             <td>boolean</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td>Gets or sets a value indicating whether this is the default footer</td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td>Gets or sets the current status of the footer</td>
         </tr></tbody>
 </table>
@@ -73,6 +82,7 @@ Represents audit information for a Mpt.Notifications.Models.Footers.Footer.
             <th>Field</th>
             <th>Type</th>
 	        <th>Core</th>
+	        <th>Access</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -81,11 +91,13 @@ Represents audit information for a Mpt.Notifications.Models.Footers.Footer.
             <td><code>created</code></td>
             <td>PlatformObjectEvent</td>
 	        <td></td>
+	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>updated</code></td>
             <td>PlatformObjectEvent</td>
+	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
@@ -93,11 +105,13 @@ Represents audit information for a Mpt.Notifications.Models.Footers.Footer.
             <td><code>activated</code></td>
             <td>PlatformObjectEvent</td>
 	        <td></td>
+	        <td></td>
             <td>Gets or sets the event information for when the footer was activated</td>
         </tr>
         <tr>
             <td><code>deleted</code></td>
             <td>PlatformObjectEvent</td>
+	        <td></td>
 	        <td></td>
             <td>Gets or sets the event information for when the footer was deleted</td>
         </tr>
@@ -114,6 +128,7 @@ Represents audit information for a Mpt.Notifications.Models.Footers.Footer.
             <th>Field</th>
             <th>Type</th>
 	        <th>Core</th>
+	        <th>Access</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -122,24 +137,28 @@ Represents audit information for a Mpt.Notifications.Models.Footers.Footer.
             <td><code>id</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
     </tbody>
@@ -155,6 +174,7 @@ Represents audit information for a Mpt.Notifications.Models.Footers.Footer.
             <th>Field</th>
             <th>Type</th>
 	        <th>Core</th>
+	        <th>Access</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -162,6 +182,7 @@ Represents audit information for a Mpt.Notifications.Models.Footers.Footer.
         <tr>
             <td><code>omitted</code></td>
             <td>array</td>
+	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
@@ -178,6 +199,7 @@ Represents audit information for a Mpt.Notifications.Models.Footers.Footer.
             <th>Field</th>
             <th>Type</th>
 	        <th>Core</th>
+	        <th>Access</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -186,11 +208,13 @@ Represents audit information for a Mpt.Notifications.Models.Footers.Footer.
             <td><code>at</code></td>
             <td>string</td>
 	        <td></td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>by</code></td>
             <td>PlatformIdentityRef</td>
+	        <td></td>
 	        <td></td>
             <td></td>
         </tr>

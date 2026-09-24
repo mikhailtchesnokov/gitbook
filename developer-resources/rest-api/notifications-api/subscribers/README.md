@@ -9,6 +9,7 @@ Represents a subscription that defines which users or user groups should automat
             <th>Field</th>
             <th>Type</th>
 	        <th>Core</th>
+	        <th>Access</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -17,11 +18,13 @@ Represents a subscription that defines which users or user groups should automat
             <td><code>id</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>audit</code></td>
             <td>SubscriberAudit</td>
+	        <td></td>
 	        <td></td>
             <td>Represents audit information for a Mpt.Notifications.Models.Subscribers.Subscriber</td>
         </tr>
@@ -29,35 +32,41 @@ Represents a subscription that defines which users or user groups should automat
             <td><code>$meta</code></td>
             <td>PlatformMetadata</td>
 	        <td></td>
+	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td>Gets or initializes the current status of the subscriber</td>
         </tr>
         <tr>
             <td><code>note</code></td>
             <td>string</td>
 	        <td></td>
+	        <td>client,vendor,ops</td>
             <td>Gets or initializes an optional note about this subscriber</td>
         </tr>
         <tr>
             <td><code>recipients</code></td>
             <td>Recipients</td>
+	        <td></td>
 	        <td></td>
             <td>Gets or initializes the list of recipients who will receive notifications</td>
         </tr>
@@ -65,11 +74,13 @@ Represents a subscription that defines which users or user groups should automat
             <td><code>account</code></td>
             <td>Account</td>
 	        <td></td>
+	        <td></td>
             <td>Gets or initializes the account to which this subscriber is associated</td>
         </tr>
         <tr>
             <td><code>category</code></td>
             <td>Category</td>
+	        <td></td>
 	        <td></td>
             <td>Gets or initializes the category this subscriber monitors for automatic notifications</td>
         </tr></tbody>
@@ -85,6 +96,7 @@ Represents a subscription that defines which users or user groups should automat
             <th>Field</th>
             <th>Type</th>
 	        <th>Core</th>
+	        <th>Access</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -93,11 +105,13 @@ Represents a subscription that defines which users or user groups should automat
             <td><code>id</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>audit</code></td>
             <td>PlatformObjectAudit</td>
+	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
@@ -105,29 +119,34 @@ Represents a subscription that defines which users or user groups should automat
             <td><code>$meta</code></td>
             <td>PlatformMetadata</td>
 	        <td></td>
+	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>type</code></td>
             <td>AccountType</td>
+	        <td></td>
 	        <td></td>
             <td>. Allowed values: Client,Vendor,Operations</td>
         </tr>
@@ -135,11 +154,13 @@ Represents a subscription that defines which users or user groups should automat
             <td><code>status</code></td>
             <td>AccountStatus</td>
 	        <td></td>
+	        <td></td>
             <td>. Allowed values: Active,Enabled,Disabled</td>
         </tr>
         <tr>
             <td><code>externalIds</code></td>
             <td>AccountExternalIds</td>
+	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
@@ -147,17 +168,20 @@ Represents a subscription that defines which users or user groups should automat
             <td><code>externalId</code></td>
             <td>string</td>
 	        <td></td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>externalName</code></td>
             <td>string</td>
 	        <td></td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>address</code></td>
             <td>Address</td>
+	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
@@ -165,29 +189,34 @@ Represents a subscription that defines which users or user groups should automat
             <td><code>technicalSupportEmail</code></td>
             <td>string</td>
 	        <td></td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>website</code></td>
             <td>string</td>
 	        <td></td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>description</code></td>
             <td>string</td>
 	        <td></td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>groups</code></td>
             <td>array</td>
 	        <td></td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>eligibility</code></td>
             <td>Eligibility</td>
+	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
@@ -195,6 +224,7 @@ Represents a subscription that defines which users or user groups should automat
             <td><code>defaultLanguageCode</code></td>
             <td>string</td>
 	        <td></td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
     </tbody>
@@ -210,6 +240,7 @@ Represents a subscription that defines which users or user groups should automat
             <th>Field</th>
             <th>Type</th>
 	        <th>Core</th>
+	        <th>Access</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -218,6 +249,7 @@ Represents a subscription that defines which users or user groups should automat
             <td><code>pyraTenantId</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
     </tbody>
@@ -233,6 +265,7 @@ Represents a subscription that defines which users or user groups should automat
             <th>Field</th>
             <th>Type</th>
 	        <th>Core</th>
+	        <th>Access</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -241,35 +274,41 @@ Represents a subscription that defines which users or user groups should automat
             <td><code>id</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>type</code></td>
             <td>AccountType</td>
 	        <td></td>
+	        <td></td>
             <td>. Allowed values: Client,Vendor,Operations</td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>AccountStatus</td>
+	        <td></td>
 	        <td></td>
             <td>. Allowed values: Active,Enabled,Disabled</td>
         </tr>
@@ -286,6 +325,7 @@ Represents a subscription that defines which users or user groups should automat
             <th>Field</th>
             <th>Type</th>
 	        <th>Core</th>
+	        <th>Access</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -294,36 +334,42 @@ Represents a subscription that defines which users or user groups should automat
             <td><code>addressLine1</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>addressLine2</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>postCode</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>city</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>state</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>country</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
     </tbody>
@@ -339,6 +385,7 @@ Represents a subscription that defines which users or user groups should automat
             <th>Field</th>
             <th>Type</th>
 	        <th>Core</th>
+	        <th>Access</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -347,24 +394,28 @@ Represents a subscription that defines which users or user groups should automat
             <td><code>id</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
     </tbody>
@@ -380,6 +431,7 @@ Represents a notification category that can be used to organize and filter notif
             <th>Field</th>
             <th>Type</th>
 	        <th>Core</th>
+	        <th>Access</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -388,11 +440,13 @@ Represents a notification category that can be used to organize and filter notif
             <td><code>id</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>audit</code></td>
             <td>NotificationCategoryAudit</td>
+	        <td></td>
 	        <td></td>
             <td>Represents audit information for a Mpt.Notifications.Models.Categories.Category</td>
         </tr>
@@ -400,53 +454,62 @@ Represents a notification category that can be used to organize and filter notif
             <td><code>$meta</code></td>
             <td>PlatformMetadata</td>
 	        <td></td>
+	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>description</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td>Gets or sets the description of the category</td>
         </tr>
         <tr>
             <td><code>optOutAllowed</code></td>
             <td>boolean</td>
 	        <td></td>
+	        <td>client,vendor,ops</td>
             <td>Gets or sets a value indicating whether recipients can opt out of notifications in this category</td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>string</td>
 	        <td></td>
+	        <td>vendor,ops</td>
             <td>Gets or sets the current status of the category</td>
         </tr>
         <tr>
             <td><code>note</code></td>
             <td>string</td>
 	        <td></td>
+	        <td>ops</td>
             <td>Gets or sets an optional note about the category</td>
         </tr>
         <tr>
             <td><code>deleteAllowed</code></td>
             <td>boolean</td>
 	        <td></td>
+	        <td>ops</td>
             <td>Gets or sets a value indicating whether this category can be deleted</td>
         </tr>
         <tr>
             <td><code>statistics</code></td>
             <td>MessageStatistics</td>
+	        <td></td>
 	        <td></td>
             <td>Gets or sets the message statistics for this category</td>
         </tr>
@@ -454,12 +517,14 @@ Represents a notification category that can be used to organize and filter notif
             <td><code>lastUsed</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td>Gets or sets the timestamp of when this category was last used to send a notification</td>
         </tr>
         <tr>
             <td><code>enabledByDefault</code></td>
             <td>boolean</td>
 	        <td></td>
+	        <td>ops</td>
             <td>Gets or sets a value indicating whether this category is enabled by default for new recipients</td>
         </tr>
     </tbody>
@@ -475,6 +540,7 @@ Represents a notification category that can be used to organize and filter notif
             <th>Field</th>
             <th>Type</th>
 	        <th>Core</th>
+	        <th>Access</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -483,12 +549,14 @@ Represents a notification category that can be used to organize and filter notif
             <td><code>client</code></td>
             <td>boolean</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>partner</code></td>
             <td>boolean</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
     </tbody>
@@ -504,6 +572,7 @@ Represents a notification category that can be used to organize and filter notif
             <th>Field</th>
             <th>Type</th>
 	        <th>Core</th>
+	        <th>Access</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -511,6 +580,7 @@ Represents a notification category that can be used to organize and filter notif
         <tr>
             <td><code>group.buyers</code></td>
             <td>array</td>
+	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
@@ -527,6 +597,7 @@ Represents message statistics aggregated over different time periods.
             <th>Field</th>
             <th>Type</th>
 	        <th>Core</th>
+	        <th>Access</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -535,18 +606,21 @@ Represents message statistics aggregated over different time periods.
             <td><code>month</code></td>
             <td>integer</td>
 	        <td></td>
+	        <td>client,ops</td>
             <td>Gets or sets the number of messages sent in the current month</td>
         </tr>
         <tr>
             <td><code>today</code></td>
             <td>integer</td>
 	        <td></td>
+	        <td>client,ops</td>
             <td>Gets or sets the number of messages sent today</td>
         </tr>
         <tr>
             <td><code>week</code></td>
             <td>integer</td>
 	        <td></td>
+	        <td>client,ops</td>
             <td>Gets or sets the number of messages sent in the current week</td>
         </tr>
     </tbody>
@@ -562,6 +636,7 @@ Represents message statistics aggregated over different time periods.
             <th>Field</th>
             <th>Type</th>
 	        <th>Core</th>
+	        <th>Access</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -570,35 +645,41 @@ Represents message statistics aggregated over different time periods.
             <td><code>id</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>description</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>filters</code></td>
             <td>Filters</td>
 	        <td></td>
+	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>settings</code></td>
             <td>ModuleSettings</td>
+	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
@@ -615,6 +696,7 @@ Represents message statistics aggregated over different time periods.
             <th>Field</th>
             <th>Type</th>
 	        <th>Core</th>
+	        <th>Access</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -623,11 +705,13 @@ Represents message statistics aggregated over different time periods.
             <td><code>sharedAccount</code></td>
             <td>boolean</td>
 	        <td></td>
+	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>configurable</code></td>
             <td>boolean</td>
+	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
@@ -635,11 +719,13 @@ Represents message statistics aggregated over different time periods.
             <td><code>default</code></td>
             <td>boolean</td>
 	        <td></td>
+	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>paid</code></td>
             <td>boolean</td>
+	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
@@ -647,17 +733,20 @@ Represents message statistics aggregated over different time periods.
             <td><code>type</code></td>
             <td>array</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>obsolete</code></td>
             <td>boolean</td>
 	        <td></td>
+	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>eligibility</code></td>
             <td>ModuleSettingsEligibility</td>
+	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
@@ -674,6 +763,7 @@ Represents message statistics aggregated over different time periods.
             <th>Field</th>
             <th>Type</th>
 	        <th>Core</th>
+	        <th>Access</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -682,11 +772,13 @@ Represents message statistics aggregated over different time periods.
             <td><code>multi</code></td>
             <td>boolean</td>
 	        <td></td>
+	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>single</code></td>
             <td>boolean</td>
+	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
@@ -703,6 +795,7 @@ Represents audit information for a Mpt.Notifications.Models.Categories.Category.
             <th>Field</th>
             <th>Type</th>
 	        <th>Core</th>
+	        <th>Access</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -711,11 +804,13 @@ Represents audit information for a Mpt.Notifications.Models.Categories.Category.
             <td><code>created</code></td>
             <td>PlatformObjectEvent</td>
 	        <td></td>
+	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>updated</code></td>
             <td>PlatformObjectEvent</td>
+	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
@@ -723,17 +818,20 @@ Represents audit information for a Mpt.Notifications.Models.Categories.Category.
             <td><code>published</code></td>
             <td>PlatformObjectEvent</td>
 	        <td></td>
+	        <td></td>
             <td>Gets or sets the event information for when the category was published</td>
         </tr>
         <tr>
             <td><code>unpublished</code></td>
             <td>PlatformObjectEvent</td>
 	        <td></td>
+	        <td></td>
             <td>Gets or sets the event information for when the category was unpublished</td>
         </tr>
         <tr>
             <td><code>deleted</code></td>
             <td>PlatformObjectEvent</td>
+	        <td></td>
 	        <td></td>
             <td>Gets or sets the event information for when the category was deleted</td>
         </tr>
@@ -750,6 +848,7 @@ Represents audit information for a Mpt.Notifications.Models.Categories.Category.
             <th>Field</th>
             <th>Type</th>
 	        <th>Core</th>
+	        <th>Access</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -758,12 +857,14 @@ Represents audit information for a Mpt.Notifications.Models.Categories.Category.
             <td><code>decimalSeparator</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>groupSeparator</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
     </tbody>
@@ -779,6 +880,7 @@ Represents audit information for a Mpt.Notifications.Models.Categories.Category.
             <th>Field</th>
             <th>Type</th>
 	        <th>Core</th>
+	        <th>Access</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -787,12 +889,14 @@ Represents audit information for a Mpt.Notifications.Models.Categories.Category.
             <td><code>prefix</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>number</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
     </tbody>
@@ -808,6 +912,7 @@ Represents audit information for a Mpt.Notifications.Models.Categories.Category.
             <th>Field</th>
             <th>Type</th>
 	        <th>Core</th>
+	        <th>Access</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -816,24 +921,28 @@ Represents audit information for a Mpt.Notifications.Models.Categories.Category.
             <td><code>id</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
     </tbody>
@@ -849,6 +958,7 @@ Represents audit information for a Mpt.Notifications.Models.Categories.Category.
             <th>Field</th>
             <th>Type</th>
 	        <th>Core</th>
+	        <th>Access</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -856,6 +966,7 @@ Represents audit information for a Mpt.Notifications.Models.Categories.Category.
         <tr>
             <td><code>omitted</code></td>
             <td>array</td>
+	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
@@ -872,6 +983,7 @@ Represents audit information for a Mpt.Notifications.Models.Categories.Category.
             <th>Field</th>
             <th>Type</th>
 	        <th>Core</th>
+	        <th>Access</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -880,11 +992,13 @@ Represents audit information for a Mpt.Notifications.Models.Categories.Category.
             <td><code>created</code></td>
             <td>PlatformObjectEvent</td>
 	        <td></td>
+	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>updated</code></td>
             <td>PlatformObjectEvent</td>
+	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
@@ -901,6 +1015,7 @@ Represents audit information for a Mpt.Notifications.Models.Categories.Category.
             <th>Field</th>
             <th>Type</th>
 	        <th>Core</th>
+	        <th>Access</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -909,11 +1024,13 @@ Represents audit information for a Mpt.Notifications.Models.Categories.Category.
             <td><code>id</code></td>
             <td>string</td>
 	        <td></td>
+	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>audit</code></td>
             <td>PlatformObjectAudit</td>
+	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
@@ -921,11 +1038,13 @@ Represents audit information for a Mpt.Notifications.Models.Categories.Category.
             <td><code>$meta</code></td>
             <td>PlatformMetadata</td>
 	        <td></td>
+	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
             <td>string</td>
+	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
@@ -933,17 +1052,20 @@ Represents audit information for a Mpt.Notifications.Models.Categories.Category.
             <td><code>icon</code></td>
             <td>string</td>
 	        <td></td>
+	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
 	        <td></td>
+	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>string</td>
+	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
@@ -960,6 +1082,7 @@ Represents audit information for a Mpt.Notifications.Models.Categories.Category.
             <th>Field</th>
             <th>Type</th>
 	        <th>Core</th>
+	        <th>Access</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -968,11 +1091,13 @@ Represents audit information for a Mpt.Notifications.Models.Categories.Category.
             <td><code>at</code></td>
             <td>string</td>
 	        <td></td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>by</code></td>
             <td>PlatformIdentityRef</td>
+	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
@@ -989,6 +1114,7 @@ Represents the recipients of a subscriber.
             <th>Field</th>
             <th>Type</th>
 	        <th>Core</th>
+	        <th>Access</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -997,12 +1123,14 @@ Represents the recipients of a subscriber.
             <td><code>users</code></td>
             <td>array</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td>Gets or initializes the list of individual users who will receive notifications</td>
         </tr>
         <tr>
             <td><code>userGroups</code></td>
             <td>array</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td>Gets or initializes the list of user groups whose members will receive notifications</td>
         </tr>
     </tbody>
@@ -1018,6 +1146,7 @@ Represents audit information for a Mpt.Notifications.Models.Subscribers.Subscrib
             <th>Field</th>
             <th>Type</th>
 	        <th>Core</th>
+	        <th>Access</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -1026,11 +1155,13 @@ Represents audit information for a Mpt.Notifications.Models.Subscribers.Subscrib
             <td><code>created</code></td>
             <td>PlatformObjectEvent</td>
 	        <td></td>
+	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>updated</code></td>
             <td>PlatformObjectEvent</td>
+	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
@@ -1038,17 +1169,20 @@ Represents audit information for a Mpt.Notifications.Models.Subscribers.Subscrib
             <td><code>activated</code></td>
             <td>PlatformObjectEvent</td>
 	        <td></td>
+	        <td></td>
             <td>Gets or sets the event information for when the subscriber was activated</td>
         </tr>
         <tr>
             <td><code>disabled</code></td>
             <td>PlatformObjectEvent</td>
 	        <td></td>
+	        <td></td>
             <td>Gets or sets the event information for when the subscriber was disabled</td>
         </tr>
         <tr>
             <td><code>deleted</code></td>
             <td>PlatformObjectEvent</td>
+	        <td></td>
 	        <td></td>
             <td>Gets or sets the event information for when the subscriber was deleted</td>
         </tr>
@@ -1065,6 +1199,7 @@ Represents audit information for a Mpt.Notifications.Models.Subscribers.Subscrib
             <th>Field</th>
             <th>Type</th>
 	        <th>Core</th>
+	        <th>Access</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -1073,11 +1208,13 @@ Represents audit information for a Mpt.Notifications.Models.Subscribers.Subscrib
             <td><code>id</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>audit</code></td>
             <td>UserAudit</td>
+	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
@@ -1085,41 +1222,48 @@ Represents audit information for a Mpt.Notifications.Models.Subscribers.Subscrib
             <td><code>$meta</code></td>
             <td>PlatformMetadata</td>
 	        <td></td>
+	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>email</code></td>
             <td>string</td>
 	        <td></td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>string</td>
 	        <td></td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>phone</code></td>
             <td>PhoneNumber</td>
+	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
@@ -1127,23 +1271,27 @@ Represents audit information for a Mpt.Notifications.Models.Subscribers.Subscrib
             <td><code>firstName</code></td>
             <td>string</td>
 	        <td></td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>lastName</code></td>
             <td>string</td>
 	        <td></td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>lastLoginAt</code></td>
             <td>string</td>
 	        <td></td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>settings</code></td>
             <td>UserSettings</td>
+	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
@@ -1151,11 +1299,13 @@ Represents audit information for a Mpt.Notifications.Models.Subscribers.Subscrib
             <td><code>accounts</code></td>
             <td>array</td>
 	        <td></td>
+	        <td>ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>currentAccount</code></td>
             <td>AccountRef</td>
+	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
@@ -1172,6 +1322,7 @@ Represents audit information for a Mpt.Notifications.Models.Subscribers.Subscrib
             <th>Field</th>
             <th>Type</th>
 	        <th>Core</th>
+	        <th>Access</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -1180,11 +1331,13 @@ Represents audit information for a Mpt.Notifications.Models.Subscribers.Subscrib
             <td><code>created</code></td>
             <td>PlatformObjectEvent</td>
 	        <td></td>
+	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>updated</code></td>
             <td>PlatformObjectEvent</td>
+	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
@@ -1192,6 +1345,7 @@ Represents audit information for a Mpt.Notifications.Models.Subscribers.Subscrib
             <td><code>invitationAcceptedAt</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
     </tbody>
@@ -1207,6 +1361,7 @@ Represents audit information for a Mpt.Notifications.Models.Subscribers.Subscrib
             <th>Field</th>
             <th>Type</th>
 	        <th>Core</th>
+	        <th>Access</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -1215,11 +1370,13 @@ Represents audit information for a Mpt.Notifications.Models.Subscribers.Subscrib
             <td><code>id</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>audit</code></td>
             <td>PlatformObjectAudit</td>
+	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
@@ -1227,29 +1384,34 @@ Represents audit information for a Mpt.Notifications.Models.Subscribers.Subscrib
             <td><code>$meta</code></td>
             <td>PlatformMetadata</td>
 	        <td></td>
+	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>description</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>account</code></td>
             <td>AccountRef</td>
+	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
@@ -1257,36 +1419,42 @@ Represents audit information for a Mpt.Notifications.Models.Subscribers.Subscrib
             <td><code>modules</code></td>
             <td>array</td>
 	        <td></td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>logo</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>isDefault</code></td>
             <td>boolean</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>users</code></td>
             <td>array</td>
 	        <td></td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>extensions</code></td>
             <td>array</td>
 	        <td></td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>buyers</code></td>
             <td>array</td>
 	        <td></td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
     </tbody>
@@ -1302,6 +1470,7 @@ Represents audit information for a Mpt.Notifications.Models.Subscribers.Subscrib
             <th>Field</th>
             <th>Type</th>
 	        <th>Core</th>
+	        <th>Access</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -1310,36 +1479,42 @@ Represents audit information for a Mpt.Notifications.Models.Subscribers.Subscrib
             <td><code>id</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>description</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>logo</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>isDefault</code></td>
             <td>boolean</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
     </tbody>
@@ -1355,6 +1530,7 @@ Represents audit information for a Mpt.Notifications.Models.Subscribers.Subscrib
             <th>Field</th>
             <th>Type</th>
 	        <th>Core</th>
+	        <th>Access</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -1363,24 +1539,28 @@ Represents audit information for a Mpt.Notifications.Models.Subscribers.Subscrib
             <td><code>id</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
     </tbody>
@@ -1396,6 +1576,7 @@ Represents audit information for a Mpt.Notifications.Models.Subscribers.Subscrib
             <th>Field</th>
             <th>Type</th>
 	        <th>Core</th>
+	        <th>Access</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -1404,23 +1585,27 @@ Represents audit information for a Mpt.Notifications.Models.Subscribers.Subscrib
             <td><code>cultureCode</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>dateFormat</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>languageCode</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>numberFormat</code></td>
             <td>NumberFormat</td>
+	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
@@ -1428,17 +1613,20 @@ Represents audit information for a Mpt.Notifications.Models.Subscribers.Subscrib
             <td><code>timeFormat</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>timeZone</code></td>
             <td>string</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>optOuts</code></td>
             <td>UserSettingsOptOuts</td>
+	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
@@ -1455,6 +1643,7 @@ Represents audit information for a Mpt.Notifications.Models.Subscribers.Subscrib
             <th>Field</th>
             <th>Type</th>
 	        <th>Core</th>
+	        <th>Access</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -1463,6 +1652,7 @@ Represents audit information for a Mpt.Notifications.Models.Subscribers.Subscrib
             <td><code>objectTypes</code></td>
             <td>array</td>
 	        <td>✔</td>
+	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
     </tbody>
