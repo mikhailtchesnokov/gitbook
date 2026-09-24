@@ -8,6 +8,7 @@
         <tr>
             <th>Field</th>
             <th>Type</th>
+	        <th>Core</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -15,51 +16,61 @@
         <tr>
             <td><code>id</code></td>
             <td>string</td>
+	        <td>✔</td>
             <td></td>
         </tr>
         <tr>
             <td><code>audit</code></td>
             <td>InstanceAudit</td>
+	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>$meta</code></td>
             <td>PlatformMetadata</td>
+	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
             <td>string</td>
+	        <td>✔</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
+	        <td>✔</td>
             <td></td>
         </tr>
         <tr>
             <td><code>extension</code></td>
             <td>ExtensionRef</td>
+	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>meta</code></td>
             <td>ExtensionMetaRef</td>
+	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>externalId</code></td>
             <td>string</td>
+	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>string</td>
+	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>channel</code></td>
             <td>Channel</td>
+	        <td></td>
             <td></td>
         </tr></tbody>
 </table>
@@ -73,6 +84,7 @@
         <tr>
             <th>Field</th>
             <th>Type</th>
+	        <th>Core</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -80,6 +92,7 @@
         <tr>
             <td><code>identity</code></td>
             <td>object</td>
+	        <td></td>
             <td></td>
         </tr>
     </tbody>
@@ -94,6 +107,7 @@
         <tr>
             <th>Field</th>
             <th>Type</th>
+	        <th>Core</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -101,21 +115,25 @@
         <tr>
             <td><code>id</code></td>
             <td>string</td>
+	        <td>✔</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
             <td>string</td>
+	        <td>✔</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
+	        <td>✔</td>
             <td></td>
         </tr>
         <tr>
             <td><code>version</code></td>
             <td>string</td>
+	        <td>✔</td>
             <td></td>
         </tr>
     </tbody>
@@ -130,6 +148,7 @@
         <tr>
             <th>Field</th>
             <th>Type</th>
+	        <th>Core</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -137,21 +156,25 @@
         <tr>
             <td><code>id</code></td>
             <td>string</td>
+	        <td>✔</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
             <td>string</td>
+	        <td>✔</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
             <td>string</td>
+	        <td>✔</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
+	        <td>✔</td>
             <td></td>
         </tr>
     </tbody>
@@ -166,6 +189,7 @@
         <tr>
             <th>Field</th>
             <th>Type</th>
+	        <th>Core</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -173,26 +197,31 @@
         <tr>
             <td><code>created</code></td>
             <td>PlatformObjectEvent</td>
+	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>updated</code></td>
             <td>PlatformObjectEvent</td>
+	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>connecting</code></td>
             <td>PlatformObjectEvent</td>
+	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>running</code></td>
             <td>PlatformObjectEvent</td>
+	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>disconnected</code></td>
             <td>PlatformObjectEvent</td>
+	        <td></td>
             <td></td>
         </tr>
     </tbody>
@@ -207,6 +236,7 @@
         <tr>
             <th>Field</th>
             <th>Type</th>
+	        <th>Core</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -214,21 +244,25 @@
         <tr>
             <td><code>id</code></td>
             <td>string</td>
+	        <td>✔</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
             <td>string</td>
+	        <td>✔</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
             <td>string</td>
+	        <td>✔</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
+	        <td>✔</td>
             <td></td>
         </tr>
     </tbody>
@@ -243,6 +277,7 @@
         <tr>
             <th>Field</th>
             <th>Type</th>
+	        <th>Core</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -250,6 +285,7 @@
         <tr>
             <td><code>omitted</code></td>
             <td>array</td>
+	        <td></td>
             <td></td>
         </tr>
     </tbody>
@@ -264,6 +300,7 @@
         <tr>
             <th>Field</th>
             <th>Type</th>
+	        <th>Core</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -271,11 +308,13 @@
         <tr>
             <td><code>at</code></td>
             <td>string</td>
+	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>by</code></td>
             <td>PlatformIdentityRef</td>
+	        <td></td>
             <td></td>
         </tr>
     </tbody>

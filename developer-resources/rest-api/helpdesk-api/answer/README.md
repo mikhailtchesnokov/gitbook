@@ -8,6 +8,7 @@ A form submission within a chat, containing parameter values filled by participa
         <tr>
             <th>Field</th>
             <th>Type</th>
+	        <th>Core</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -15,56 +16,67 @@ A form submission within a chat, containing parameter values filled by participa
         <tr>
             <td><code>id</code></td>
             <td>string</td>
+	        <td>✔</td>
             <td></td>
         </tr>
         <tr>
             <td><code>audit</code></td>
             <td>AnswerAudit</td>
+	        <td></td>
             <td>Audit information for answer lifecycle events</td>
         </tr>
         <tr>
             <td><code>$meta</code></td>
             <td>PlatformMetadata</td>
+	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
             <td>string</td>
+	        <td>✔</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
             <td>string</td>
+	        <td>✔</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
+	        <td>✔</td>
             <td></td>
         </tr>
         <tr>
             <td><code>form</code></td>
             <td>Form</td>
+	        <td></td>
             <td>The parent form that defines the structure of this answer</td>
         </tr>
         <tr>
             <td><code>chat</code></td>
             <td>Chat</td>
+	        <td></td>
             <td>The chat this answer belongs to</td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>AnswerStatus</td>
+	        <td></td>
             <td>The current lifecycle status of the answer. Allowed values: Draft,Submitted,Querying,Accepted</td>
         </tr>
         <tr>
             <td><code>parameters</code></td>
             <td>array</td>
+	        <td></td>
             <td>Flat list of parameter values for this answer, each referencing a ParameterDefinition and optionally belonging to one or more groups</td>
         </tr>
         <tr>
             <td><code>isDeleted</code></td>
             <td>boolean</td>
+	        <td>✔</td>
             <td>Indicates whether the answer has been soft-deleted</td>
         </tr></tbody>
 </table>
@@ -78,6 +90,7 @@ A form submission within a chat, containing parameter values filled by participa
         <tr>
             <th>Field</th>
             <th>Type</th>
+	        <th>Core</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -85,31 +98,37 @@ A form submission within a chat, containing parameter values filled by participa
         <tr>
             <td><code>id</code></td>
             <td>string</td>
+	        <td>✔</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
             <td>string</td>
+	        <td>✔</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
             <td>string</td>
+	        <td>✔</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
+	        <td>✔</td>
             <td></td>
         </tr>
         <tr>
             <td><code>type</code></td>
             <td>AccountType</td>
+	        <td></td>
             <td>. Allowed values: Client,Vendor,Operations</td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>AccountStatus</td>
+	        <td></td>
             <td>. Allowed values: Active,Enabled,Disabled</td>
         </tr>
     </tbody>
@@ -124,6 +143,7 @@ Audit information for answer lifecycle events
         <tr>
             <th>Field</th>
             <th>Type</th>
+	        <th>Core</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -131,31 +151,37 @@ Audit information for answer lifecycle events
         <tr>
             <td><code>created</code></td>
             <td>PlatformObjectEvent</td>
+	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>updated</code></td>
             <td>PlatformObjectEvent</td>
+	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>deleted</code></td>
             <td>PlatformObjectEvent</td>
+	        <td></td>
             <td>The soft-deletion event details</td>
         </tr>
         <tr>
             <td><code>submitted</code></td>
             <td>PlatformObjectEvent</td>
+	        <td></td>
             <td>The submission event details</td>
         </tr>
         <tr>
             <td><code>queried</code></td>
             <td>PlatformObjectEvent</td>
+	        <td></td>
             <td>The query (change request) event details</td>
         </tr>
         <tr>
             <td><code>accepted</code></td>
             <td>PlatformObjectEvent</td>
+	        <td></td>
             <td>The acceptance event details</td>
         </tr>
     </tbody>
@@ -170,6 +196,7 @@ A parameter value within an answer, identified by its ParameterDefinition ID
         <tr>
             <th>Field</th>
             <th>Type</th>
+	        <th>Core</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -177,41 +204,49 @@ A parameter value within an answer, identified by its ParameterDefinition ID
         <tr>
             <td><code>id</code></td>
             <td>string</td>
+	        <td></td>
             <td>Reference to the original ParameterDefinition ID</td>
         </tr>
         <tr>
             <td><code>name</code></td>
             <td>string</td>
+	        <td></td>
             <td>Snapshot of the parameter name from the ParameterDefinition at creation time</td>
         </tr>
         <tr>
             <td><code>externalId</code></td>
             <td>string</td>
+	        <td>✔</td>
             <td>The external identifier from the ParameterDefinition, used as alternate lookup key</td>
         </tr>
         <tr>
             <td><code>type</code></td>
             <td>ParameterType</td>
+	        <td></td>
             <td>Gets or sets the type of the parameter. Allowed values: SingleLineText,MultiLineText,Address,Contact,Checkbox,Choice,Subdomain,Heading,DropDown,Email,DataObject,Date,DateAndTime,Collection</td>
         </tr>
         <tr>
             <td><code>value</code></td>
             <td>JsonNode</td>
+	        <td></td>
             <td>The user-provided value, null when unfilled</td>
         </tr>
         <tr>
             <td><code>displayValue</code></td>
             <td>string</td>
+	        <td></td>
             <td>Gets or sets the human-readable display representation of Mpt.Helpdesk.Models.Answers.AnswerParameter.Value</td>
         </tr>
         <tr>
             <td><code>constraints</code></td>
             <td>HelpdeskConstraints</td>
+	        <td></td>
             <td>Constraints for this parameter instance, initially copied from definition and overridable by the assignee</td>
         </tr>
         <tr>
             <td><code>options</code></td>
             <td>object</td>
+	        <td></td>
             <td>Snapshot of the list options for this parameter instance, as a `{optionsList, defaultValue}` fragment.
 Populated only for Platform.Models.Core.Components.Parameters.ParameterType.Choice, Platform.Models.Core.Components.Parameters.ParameterType.Checkbox and
 Platform.Models.Core.Components.Parameters.ParameterType.DropDown; null for every other type. Initially copied from the
@@ -221,6 +256,7 @@ options this answer was offered rather than the definition's current list</td>
         <tr>
             <td><code>error</code></td>
             <td>ErrorDetails</td>
+	        <td></td>
             <td>Structured error on this parameter, set by the assignee (manual) or by automated validation
 (system errors E000001 required, E000002 capacity exceeded, E000003 capacity not met,
 E000004 value out of range). A manual error set by the assignee always takes precedence over a
@@ -229,6 +265,7 @@ system error</td>
         <tr>
             <td><code>groups</code></td>
             <td>array</td>
+	        <td></td>
             <td>The parameter groups this parameter belongs to, stored as IDs in the database and resolved to full objects at query time</td>
         </tr>
     </tbody>
@@ -243,6 +280,7 @@ system error</td>
         <tr>
             <th>Field</th>
             <th>Type</th>
+	        <th>Core</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -250,11 +288,13 @@ system error</td>
         <tr>
             <td><code>min</code></td>
             <td>integer</td>
+	        <td>✔</td>
             <td></td>
         </tr>
         <tr>
             <td><code>max</code></td>
             <td>integer</td>
+	        <td>✔</td>
             <td></td>
         </tr>
     </tbody>
@@ -269,6 +309,7 @@ system error</td>
         <tr>
             <th>Field</th>
             <th>Type</th>
+	        <th>Core</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -276,56 +317,67 @@ system error</td>
         <tr>
             <td><code>id</code></td>
             <td>string</td>
+	        <td>✔</td>
             <td></td>
         </tr>
         <tr>
             <td><code>audit</code></td>
             <td>PlatformObjectAudit</td>
+	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>$meta</code></td>
             <td>PlatformMetadata</td>
+	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
             <td>string</td>
+	        <td>✔</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
             <td>string</td>
+	        <td>✔</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
+	        <td>✔</td>
             <td></td>
         </tr>
         <tr>
             <td><code>description</code></td>
             <td>string</td>
+	        <td></td>
             <td>Gets or sets the description associated with the chat</td>
         </tr>
         <tr>
             <td><code>type</code></td>
             <td>ChatType</td>
+	        <td></td>
             <td>Represents the type of chat, indicating whether it is a direct message, group chat, channel, or support case. Allowed values: Direct,Group,Channel,Case</td>
         </tr>
         <tr>
             <td><code>participants</code></td>
             <td>array</td>
+	        <td></td>
             <td>Represents the participants in the chat</td>
         </tr>
         <tr>
             <td><code>lastMessage</code></td>
             <td>ChatMessageRef</td>
+	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>attachments</code></td>
             <td>array</td>
+	        <td></td>
             <td>Represents the attachments associated with the chat</td>
         </tr>
     </tbody>
@@ -340,6 +392,7 @@ system error</td>
         <tr>
             <th>Field</th>
             <th>Type</th>
+	        <th>Core</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -347,26 +400,31 @@ system error</td>
         <tr>
             <td><code>id</code></td>
             <td>string</td>
+	        <td>✔</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
             <td>string</td>
+	        <td>✔</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
             <td>string</td>
+	        <td>✔</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
+	        <td>✔</td>
             <td></td>
         </tr>
         <tr>
             <td><code>file</code></td>
             <td>File</td>
+	        <td></td>
             <td>Represents the file this attachment belongs to</td>
         </tr>
     </tbody>
@@ -381,6 +439,7 @@ system error</td>
         <tr>
             <th>Field</th>
             <th>Type</th>
+	        <th>Core</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -388,26 +447,31 @@ system error</td>
         <tr>
             <td><code>id</code></td>
             <td>string</td>
+	        <td>✔</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
+	        <td>✔</td>
             <td></td>
         </tr>
         <tr>
             <td><code>content</code></td>
             <td>string</td>
+	        <td>✔</td>
             <td>Content of the chat message</td>
         </tr>
         <tr>
             <td><code>visibility</code></td>
             <td>MessageVisibility</td>
+	        <td></td>
             <td>Visibility of the chat message, indicating whether it is public or private. Allowed values: Public,Private</td>
         </tr>
         <tr>
             <td><code>isDeleted</code></td>
             <td>boolean</td>
+	        <td>✔</td>
             <td>Set to true when the message should be considered deleted</td>
         </tr>
     </tbody>
@@ -422,6 +486,7 @@ system error</td>
         <tr>
             <th>Field</th>
             <th>Type</th>
+	        <th>Core</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -429,21 +494,25 @@ system error</td>
         <tr>
             <td><code>id</code></td>
             <td>string</td>
+	        <td>✔</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
+	        <td>✔</td>
             <td></td>
         </tr>
         <tr>
             <td><code>muted</code></td>
             <td>boolean</td>
+	        <td>✔</td>
             <td>Flag indicates whether participant should be notified of new messages in the chat</td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>ParticipantStatus</td>
+	        <td></td>
             <td>Represents the status of the chat participant, indicating whether they are active, suspended, or exited. Allowed values: Active,Exited,Deactivated</td>
         </tr>
     </tbody>
@@ -458,6 +527,7 @@ Structured error details for an answer parameter
         <tr>
             <th>Field</th>
             <th>Type</th>
+	        <th>Core</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -465,11 +535,13 @@ Structured error details for an answer parameter
         <tr>
             <td><code>id</code></td>
             <td>string</td>
+	        <td></td>
             <td>The error code identifying system-generated errors, null for manual errors set by the assignee</td>
         </tr>
         <tr>
             <td><code>message</code></td>
             <td>string</td>
+	        <td></td>
             <td>Human-readable error description</td>
         </tr>
     </tbody>
@@ -484,6 +556,7 @@ Represents a file in the helpdesk module
         <tr>
             <th>Field</th>
             <th>Type</th>
+	        <th>Core</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -491,51 +564,61 @@ Represents a file in the helpdesk module
         <tr>
             <td><code>id</code></td>
             <td>string</td>
+	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>audit</code></td>
             <td>PlatformObjectAudit</td>
+	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>$meta</code></td>
             <td>PlatformMetadata</td>
+	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
             <td>string</td>
+	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
             <td>string</td>
+	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
+	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>type</code></td>
             <td>FileType</td>
+	        <td></td>
             <td>Specifies the type of the file, such as attachment or icon. Allowed values: Attachment,Icon,Image,Video</td>
         </tr>
         <tr>
             <td><code>filename</code></td>
             <td>string</td>
+	        <td></td>
             <td>Represents the name of the file associated with the attachment</td>
         </tr>
         <tr>
             <td><code>size</code></td>
             <td>integer</td>
+	        <td></td>
             <td>Indicates the size of the file in bytes</td>
         </tr>
         <tr>
             <td><code>contentType</code></td>
             <td>string</td>
+	        <td></td>
             <td>Represents the MIME type of the file content</td>
         </tr>
     </tbody>
@@ -550,6 +633,7 @@ Represents a file in the helpdesk module
         <tr>
             <th>Field</th>
             <th>Type</th>
+	        <th>Core</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -557,61 +641,73 @@ Represents a file in the helpdesk module
         <tr>
             <td><code>id</code></td>
             <td>string</td>
+	        <td>✔</td>
             <td></td>
         </tr>
         <tr>
             <td><code>audit</code></td>
             <td>FormAudit</td>
+	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>$meta</code></td>
             <td>PlatformMetadata</td>
+	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
             <td>string</td>
+	        <td>✔</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
             <td>string</td>
+	        <td>✔</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
+	        <td>✔</td>
             <td></td>
         </tr>
         <tr>
             <td><code>description</code></td>
             <td>string</td>
+	        <td></td>
             <td>Gets or sets the description associated with the form</td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>FormStatus</td>
+	        <td></td>
             <td>Gets or sets the status of the Form. Allowed values: Unpublished,Published</td>
         </tr>
         <tr>
             <td><code>externalId</code></td>
             <td>string</td>
+	        <td>✔</td>
             <td>Gets or sets the optional external identifier associated with the form</td>
         </tr>
         <tr>
             <td><code>account</code></td>
             <td>AccountRef</td>
+	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>statistics</code></td>
             <td>FormStatistics</td>
+	        <td></td>
             <td>Gets or sets usage statistics for this form</td>
         </tr>
         <tr>
             <td><code>isDeleted</code></td>
             <td>boolean</td>
+	        <td>✔</td>
             <td>Indicates whether the queue has been marked as deleted</td>
         </tr>
     </tbody>
@@ -626,6 +722,7 @@ Represents a file in the helpdesk module
         <tr>
             <th>Field</th>
             <th>Type</th>
+	        <th>Core</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -633,26 +730,31 @@ Represents a file in the helpdesk module
         <tr>
             <td><code>created</code></td>
             <td>PlatformObjectEvent</td>
+	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>updated</code></td>
             <td>PlatformObjectEvent</td>
+	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>deleted</code></td>
             <td>PlatformObjectEvent</td>
+	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>published</code></td>
             <td>PlatformObjectEvent</td>
+	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>unpublished</code></td>
             <td>PlatformObjectEvent</td>
+	        <td></td>
             <td></td>
         </tr>
     </tbody>
@@ -667,6 +769,7 @@ Represents usage statistics for a form.
         <tr>
             <th>Field</th>
             <th>Type</th>
+	        <th>Core</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -674,11 +777,13 @@ Represents usage statistics for a form.
         <tr>
             <td><code>groups</code></td>
             <td>integer</td>
+	        <td>✔</td>
             <td>The number of parameter groups assigned to this form</td>
         </tr>
         <tr>
             <td><code>parameters</code></td>
             <td>integer</td>
+	        <td>✔</td>
             <td>The total number of parameter definitions across all groups in this form</td>
         </tr>
     </tbody>
@@ -693,6 +798,7 @@ Constraints specific to helpdesk parameters
         <tr>
             <th>Field</th>
             <th>Type</th>
+	        <th>Core</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -700,26 +806,31 @@ Constraints specific to helpdesk parameters
         <tr>
             <td><code>hidden</code></td>
             <td>boolean</td>
+	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>readonly</code></td>
             <td>boolean</td>
+	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>required</code></td>
             <td>boolean</td>
+	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>capacity</code></td>
             <td>CapacitySettings</td>
+	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>visibility</code></td>
             <td>VisibilityMode</td>
+	        <td></td>
             <td>The visibility mode controlling who can see the parameter. Allowed values: All,OnlyMyAccount</td>
         </tr>
     </tbody>
@@ -734,6 +845,7 @@ Constraints specific to helpdesk parameters
         <tr>
             <th>Field</th>
             <th>Type</th>
+	        <th>Core</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -741,16 +853,19 @@ Constraints specific to helpdesk parameters
         <tr>
             <td><code>options</code></td>
             <td>JsonNodeOptions</td>
+	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>parent</code></td>
             <td>JsonNode</td>
+	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>root</code></td>
             <td>JsonNode</td>
+	        <td></td>
             <td></td>
         </tr>
     </tbody>
@@ -765,6 +880,7 @@ Constraints specific to helpdesk parameters
         <tr>
             <th>Field</th>
             <th>Type</th>
+	        <th>Core</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -772,6 +888,7 @@ Constraints specific to helpdesk parameters
         <tr>
             <td><code>propertyNameCaseInsensitive</code></td>
             <td>boolean</td>
+	        <td></td>
             <td></td>
         </tr>
     </tbody>
@@ -786,6 +903,7 @@ Ordered parameter group within a form
         <tr>
             <th>Field</th>
             <th>Type</th>
+	        <th>Core</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -793,31 +911,37 @@ Ordered parameter group within a form
         <tr>
             <td><code>id</code></td>
             <td>string</td>
+	        <td>✔</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
             <td>string</td>
+	        <td>✔</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
             <td>string</td>
+	        <td>✔</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
+	        <td>✔</td>
             <td></td>
         </tr>
         <tr>
             <td><code>externalId</code></td>
             <td>string</td>
+	        <td>✔</td>
             <td>The optional external identifier associated with the parameter group</td>
         </tr>
         <tr>
             <td><code>displayOrder</code></td>
             <td>integer</td>
+	        <td>✔</td>
             <td>The display order of this parameter group within the form</td>
         </tr>
     </tbody>
@@ -832,6 +956,7 @@ Ordered parameter group within a form
         <tr>
             <th>Field</th>
             <th>Type</th>
+	        <th>Core</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -839,21 +964,25 @@ Ordered parameter group within a form
         <tr>
             <td><code>id</code></td>
             <td>string</td>
+	        <td>✔</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
             <td>string</td>
+	        <td>✔</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
             <td>string</td>
+	        <td>✔</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
+	        <td>✔</td>
             <td></td>
         </tr>
     </tbody>
@@ -868,6 +997,7 @@ Ordered parameter group within a form
         <tr>
             <th>Field</th>
             <th>Type</th>
+	        <th>Core</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -875,6 +1005,7 @@ Ordered parameter group within a form
         <tr>
             <td><code>omitted</code></td>
             <td>array</td>
+	        <td></td>
             <td></td>
         </tr>
     </tbody>
@@ -889,6 +1020,7 @@ Ordered parameter group within a form
         <tr>
             <th>Field</th>
             <th>Type</th>
+	        <th>Core</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -896,11 +1028,13 @@ Ordered parameter group within a form
         <tr>
             <td><code>created</code></td>
             <td>PlatformObjectEvent</td>
+	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>updated</code></td>
             <td>PlatformObjectEvent</td>
+	        <td></td>
             <td></td>
         </tr>
     </tbody>
@@ -915,6 +1049,7 @@ Ordered parameter group within a form
         <tr>
             <th>Field</th>
             <th>Type</th>
+	        <th>Core</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -922,11 +1057,13 @@ Ordered parameter group within a form
         <tr>
             <td><code>at</code></td>
             <td>string</td>
+	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>by</code></td>
             <td>PlatformIdentityRef</td>
+	        <td></td>
             <td></td>
         </tr>
     </tbody>
