@@ -50,19 +50,19 @@ See the following sections to determine which roles are authorized to perform sp
 </thead>
 <tbody>
 	<tr>
-		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/spotlight/objects</a></td>
+		<td><a href="spotlightobjects/get-spotlight-spotlightobjects-443.md">/public/v1/spotlight/objects</a></td>
 		<td>GET</td>
 		<td>Get spotlight objects for the current account and buyer group</td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/spotlight/objects/-/refresh</a></td>
+		<td><a href="spotlightobjects/post-spotlight-spotlightobjects-444.md">/public/v1/spotlight/objects/-/refresh</a></td>
 		<td>POST</td>
 		<td>Refresh spotlight cache for the current account and buyer group</td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/spotlight/objects/{id}/refresh</a></td>
+		<td><a href="spotlightobjects/post-spotlight-spotlightobjects-445.md">/public/v1/spotlight/objects/{id}/refresh</a></td>
 		<td>POST</td>
 		<td>Refresh spotlight cache for a specific object in the current context</td>
 		<td>ops,client,vendor</td>
@@ -85,19 +85,19 @@ See the following sections to determine which roles are authorized to perform sp
 </thead>
 <tbody>
 	<tr>
-		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/spotlight/queries</a></td>
+		<td><a href="spotlightqueries/get-spotlight-spotlightqueries-446.md">/public/v1/spotlight/queries</a></td>
 		<td>GET</td>
 		<td>Get a list of spotlight queries</td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/spotlight/queries/{id}</a></td>
+		<td><a href="spotlightqueries/get-spotlight-spotlightqueries-447.md">/public/v1/spotlight/queries/{id}</a></td>
 		<td>GET</td>
 		<td>Retrieve a spotlight query by ID</td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/spotlight/queries/{id}</a></td>
+		<td><a href="spotlightqueries/put-spotlight-spotlightqueries-447.md">/public/v1/spotlight/queries/{id}</a></td>
 		<td>PUT</td>
 		<td>Update a spotlight query</td>
 		<td>ops,client,vendor</td>

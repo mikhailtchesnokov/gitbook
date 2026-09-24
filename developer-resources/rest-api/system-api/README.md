@@ -64,73 +64,73 @@ See the following sections to determine which roles are authorized to perform sp
 </thead>
 <tbody>
 	<tr>
-		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/system/tasks</a></td>
+		<td><a href="tasks/get-system-tasks-448.md">/public/v1/system/tasks</a></td>
 		<td>GET</td>
 		<td>Get a list of tasks</td>
 		<td>vendor,ops</td>
 	</tr>
 	<tr>
-		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/system/tasks/{id}</a></td>
+		<td><a href="tasks/get-system-tasks-449.md">/public/v1/system/tasks/{id}</a></td>
 		<td>GET</td>
 		<td>Retrieve a task by ID</td>
 		<td>vendor,ops</td>
 	</tr>
 	<tr>
-		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/system/tasks/{id}/result</a></td>
+		<td><a href="tasks/get-system-tasks-450.md">/public/v1/system/tasks/{id}/result</a></td>
 		<td>GET</td>
 		<td>Get a task result</td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/system/tasks/{id}/logs</a></td>
+		<td><a href="tasks/get-system-tasks-451.md">/public/v1/system/tasks/{id}/logs</a></td>
 		<td>GET</td>
 		<td>Get task logs</td>
 		<td>vendor,ops</td>
 	</tr>
 	<tr>
-		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/system/tasks</a></td>
+		<td><a href="tasks/post-system-tasks-448.md">/public/v1/system/tasks</a></td>
 		<td>POST</td>
 		<td>Create a task</td>
 		<td>vendor,client,ops</td>
 	</tr>
 	<tr>
-		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/system/tasks/{id}/logs</a></td>
+		<td><a href="tasks/post-system-tasks-451.md">/public/v1/system/tasks/{id}/logs</a></td>
 		<td>POST</td>
 		<td>Create a task log</td>
 		<td>vendor,client,ops</td>
 	</tr>
 	<tr>
-		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/system/tasks/{id}/execute</a></td>
+		<td><a href="tasks/post-system-tasks-452.md">/public/v1/system/tasks/{id}/execute</a></td>
 		<td>POST</td>
 		<td>Transition a task to Processing</td>
 		<td>vendor,client,ops</td>
 	</tr>
 	<tr>
-		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/system/tasks/{id}/reschedule</a></td>
+		<td><a href="tasks/post-system-tasks-453.md">/public/v1/system/tasks/{id}/reschedule</a></td>
 		<td>POST</td>
 		<td>Transition a task to Rescheduled</td>
 		<td>vendor,client,ops</td>
 	</tr>
 	<tr>
-		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/system/tasks/{id}/queue</a></td>
+		<td><a href="tasks/post-system-tasks-454.md">/public/v1/system/tasks/{id}/queue</a></td>
 		<td>POST</td>
 		<td>Transition a task to Queued</td>
 		<td>vendor,client,ops</td>
 	</tr>
 	<tr>
-		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/system/tasks/{id}/complete</a></td>
+		<td><a href="tasks/post-system-tasks-455.md">/public/v1/system/tasks/{id}/complete</a></td>
 		<td>POST</td>
 		<td>Transition a task to Completed</td>
 		<td>vendor,client,ops</td>
 	</tr>
 	<tr>
-		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/system/tasks/{id}/fail</a></td>
+		<td><a href="tasks/post-system-tasks-456.md">/public/v1/system/tasks/{id}/fail</a></td>
 		<td>POST</td>
 		<td>Transition a task to Failed</td>
 		<td>vendor,client,ops</td>
 	</tr>
 	<tr>
-		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/system/tasks/{id}</a></td>
+		<td><a href="tasks/put-system-tasks-449.md">/public/v1/system/tasks/{id}</a></td>
 		<td>PUT</td>
 		<td>Update a task</td>
 		<td>vendor,client,ops</td>
