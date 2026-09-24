@@ -20,7 +20,7 @@ Represents a language-specific variant of a template.
         <tr>
             <td><code>audit</code></td>
             <td>TemplateVariantAudit</td>
-            <td>Represents audit information for a Mpt.Notifications.Models.NotificationTemplates.TemplateVariant.</td>
+            <td>Represents audit information for a Mpt.Notifications.Models.NotificationTemplates.TemplateVariant</td>
         </tr>
         <tr>
             <td><code>$meta</code></td>
@@ -35,17 +35,17 @@ Represents a language-specific variant of a template.
         <tr>
             <td><code>body</code></td>
             <td>string</td>
-            <td>Gets or sets the body content for this variant.</td>
+            <td>Gets or sets the body content for this variant</td>
         </tr>
         <tr>
             <td><code>default</code></td>
             <td>boolean</td>
-            <td>Gets or sets a value indicating whether this is the default variant for the parent template.</td>
+            <td>Gets or sets a value indicating whether this is the default variant for the parent template</td>
         </tr>
         <tr>
             <td><code>languageCode</code></td>
             <td>string</td>
-            <td>Gets or sets the language code for this variant.</td>
+            <td>Gets or sets the language code for this variant</td>
         </tr>
         <tr>
             <td><code>template</code></td>
@@ -55,12 +55,12 @@ Represents a language-specific variant of a template.
         <tr>
             <td><code>status</code></td>
             <td>string</td>
-            <td>Gets or sets the current status of the variant.</td>
+            <td>Gets or sets the current status of the variant</td>
         </tr>
         <tr>
             <td><code>subject</code></td>
             <td>string</td>
-            <td>Gets or sets the subject for messages created from this variant.</td>
+            <td>Gets or sets the subject for messages created from this variant</td>
         </tr></tbody>
 </table>
 
@@ -95,12 +95,12 @@ Represents a reusable template that can be used to generate messages.
         <tr>
             <td><code>lastUsed</code></td>
             <td>string</td>
-            <td>Gets or sets the timestamp of when this template was last used to send a notification.</td>
+            <td>Gets or sets the timestamp of when this template was last used to send a notification</td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>string</td>
-            <td>Gets or sets the current status of the template.</td>
+            <td>Gets or sets the current status of the template</td>
         </tr>
     </tbody>
 </table>
@@ -214,7 +214,7 @@ Represents audit information for a Mpt.Notifications.Models.NotificationTemplate
         <tr>
             <td><code>deleted</code></td>
             <td>PlatformObjectEvent</td>
-            <td>Gets or sets the event information for when the variant was deleted.</td>
+            <td>Gets or sets the event information for when the variant was deleted</td>
         </tr>
     </tbody>
 </table>

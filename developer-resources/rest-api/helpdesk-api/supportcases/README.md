@@ -35,32 +35,32 @@
         <tr>
             <td><code>chat</code></td>
             <td>Chat</td>
-            <td>Represents the chat this support case is coupled with.</td>
+            <td>Represents the chat this support case is coupled with</td>
         </tr>
         <tr>
             <td><code>reporter</code></td>
             <td>Contact</td>
-            <td>Represents the Mpt.Helpdesk.Models.Notifications.Contact who is reporting this issue.</td>
+            <td>Represents the Mpt.Helpdesk.Models.Notifications.Contact who is reporting this issue</td>
         </tr>
         <tr>
             <td><code>assignee</code></td>
             <td>Contact</td>
-            <td>Represents the Mpt.Helpdesk.Models.Notifications.Contact to whom this case is currently assigned. It can be null if the case is unassigned.</td>
+            <td>Represents the Mpt.Helpdesk.Models.Notifications.Contact to whom this case is currently assigned. It can be null if the case is unassigned</td>
         </tr>
         <tr>
             <td><code>account</code></td>
             <td>Account</td>
-            <td>Represents the account context of the Mpt.Helpdesk.Models.Cases.SupportCase.Reporter.</td>
+            <td>Represents the account context of the Mpt.Helpdesk.Models.Cases.SupportCase.Reporter</td>
         </tr>
         <tr>
             <td><code>queue</code></td>
             <td>Queue</td>
-            <td>Queue to which this case is currently assigned.</td>
+            <td>Queue to which this case is currently assigned</td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>SupportCaseStatus</td>
-            <td>The status of the support case.Allowed values: Processing,Querying,Completed</td>
+            <td>The status of the support caseAllowed values: Processing,Querying,Completed</td>
         </tr>
         <tr>
             <td><code>queryPrompt</code></td>
@@ -70,7 +70,7 @@
         <tr>
             <td><code>parameters</code></td>
             <td>array</td>
-            <td>Represents the parameter values in the case.</td>
+            <td>Represents the parameter values in the case</td>
         </tr>
         <tr>
             <td><code>sensitiveParameters</code></td>
@@ -406,17 +406,17 @@
         <tr>
             <td><code>description</code></td>
             <td>string</td>
-            <td>Gets or sets the description associated with the chat.</td>
+            <td>Gets or sets the description associated with the chat</td>
         </tr>
         <tr>
             <td><code>type</code></td>
             <td>ChatType</td>
-            <td>Represents the type of chat, indicating whether it is a direct message, group chat, channel, or support case.Allowed values: Direct,Group,Channel,Case</td>
+            <td>Represents the type of chat, indicating whether it is a direct message, group chat, channel, or support caseAllowed values: Direct,Group,Channel,Case</td>
         </tr>
         <tr>
             <td><code>participants</code></td>
             <td>array</td>
-            <td>Represents the participants in the chat.</td>
+            <td>Represents the participants in the chat</td>
         </tr>
         <tr>
             <td><code>lastMessage</code></td>
@@ -426,7 +426,7 @@
         <tr>
             <td><code>attachments</code></td>
             <td>array</td>
-            <td>Represents the attachments associated with the chat.</td>
+            <td>Represents the attachments associated with the chat</td>
         </tr>
     </tbody>
 </table>
@@ -467,7 +467,7 @@
         <tr>
             <td><code>file</code></td>
             <td>File</td>
-            <td>Represents the file this attachment belongs to.</td>
+            <td>Represents the file this attachment belongs to</td>
         </tr>
     </tbody>
 </table>
@@ -498,12 +498,12 @@
         <tr>
             <td><code>content</code></td>
             <td>string</td>
-            <td>Content of the chat message.</td>
+            <td>Content of the chat message</td>
         </tr>
         <tr>
             <td><code>visibility</code></td>
             <td>MessageVisibility</td>
-            <td>Visibility of the chat message, indicating whether it is public or private.Allowed values: Public,Private</td>
+            <td>Visibility of the chat message, indicating whether it is public or privateAllowed values: Public,Private</td>
         </tr>
         <tr>
             <td><code>isDeleted</code></td>
@@ -539,12 +539,12 @@
         <tr>
             <td><code>muted</code></td>
             <td>boolean</td>
-            <td>Flag indicates whether participant should be notified of new messages in the chat.</td>
+            <td>Flag indicates whether participant should be notified of new messages in the chat</td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>ParticipantStatus</td>
-            <td>Represents the status of the chat participant, indicating whether they are active, suspended, or exited.Allowed values: Active,Exited,Deactivated</td>
+            <td>Represents the status of the chat participant, indicating whether they are active, suspended, or exitedAllowed values: Active,Exited,Deactivated</td>
         </tr>
     </tbody>
 </table>
@@ -570,7 +570,7 @@ Represents a notification contact who can receive email notifications.
         <tr>
             <td><code>audit</code></td>
             <td>ContactAudit</td>
-            <td>Represents audit information for a Mpt.Notifications.Models.Contacts.Contact.</td>
+            <td>Represents audit information for a Mpt.Notifications.Models.Contacts.Contact</td>
         </tr>
         <tr>
             <td><code>$meta</code></td>
@@ -620,12 +620,12 @@ Represents a notification contact who can receive email notifications.
         <tr>
             <td><code>optOuts</code></td>
             <td>array</td>
-            <td>Gets or sets the list of categories for which this contact has opted out of receiving notifications.</td>
+            <td>Gets or sets the list of categories for which this contact has opted out of receiving notifications</td>
         </tr>
         <tr>
             <td><code>user</code></td>
             <td>User</td>
-            <td>Gets or sets the associated user information, if this contact is linked to a platform user.</td>
+            <td>Gets or sets the associated user information, if this contact is linked to a platform user</td>
         </tr>
     </tbody>
 </table>
@@ -656,17 +656,17 @@ Represents audit information for a Mpt.Notifications.Models.Contacts.Contact.
         <tr>
             <td><code>activated</code></td>
             <td>PlatformObjectEvent</td>
-            <td>Gets or sets the event information for when the contact was activated.</td>
+            <td>Gets or sets the event information for when the contact was activated</td>
         </tr>
         <tr>
             <td><code>blocked</code></td>
             <td>PlatformObjectEvent</td>
-            <td>Gets or sets the event information for when the contact was blocked.</td>
+            <td>Gets or sets the event information for when the contact was blocked</td>
         </tr>
         <tr>
             <td><code>deleted</code></td>
             <td>PlatformObjectEvent</td>
-            <td>Gets or sets the event information for when the contact was deleted.</td>
+            <td>Gets or sets the event information for when the contact was deleted</td>
         </tr>
     </tbody>
 </table>
@@ -774,17 +774,17 @@ Represents a file in the helpdesk module
         <tr>
             <td><code>filename</code></td>
             <td>string</td>
-            <td>Represents the name of the file associated with the attachment.</td>
+            <td>Represents the name of the file associated with the attachment</td>
         </tr>
         <tr>
             <td><code>size</code></td>
             <td>integer</td>
-            <td>Indicates the size of the file in bytes.</td>
+            <td>Indicates the size of the file in bytes</td>
         </tr>
         <tr>
             <td><code>contentType</code></td>
             <td>string</td>
-            <td>Represents the MIME type of the file content.</td>
+            <td>Represents the MIME type of the file content</td>
         </tr>
     </tbody>
 </table>
@@ -1135,47 +1135,47 @@ Constraints specific to helpdesk parameters
         <tr>
             <td><code>longDescription</code></td>
             <td>string</td>
-            <td>Gets or sets the long description associated with the queue.</td>
+            <td>Gets or sets the long description associated with the queue</td>
         </tr>
         <tr>
             <td><code>shortDescription</code></td>
             <td>string</td>
-            <td>Gets or sets the short description associated with the queue.</td>
+            <td>Gets or sets the short description associated with the queue</td>
         </tr>
         <tr>
             <td><code>externalId</code></td>
             <td>string</td>
-            <td>Gets or sets the optional external identifier associated with the queue.</td>
+            <td>Gets or sets the optional external identifier associated with the queue</td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>QueueStatus</td>
-            <td>Gets or sets the status of the queue.Allowed values: Disabled,Active</td>
+            <td>Gets or sets the status of the queueAllowed values: Disabled,Active</td>
         </tr>
         <tr>
             <td><code>default</code></td>
             <td>boolean</td>
-            <td>Indicates whether this queue is the default queue.</td>
+            <td>Indicates whether this queue is the default queue</td>
         </tr>
         <tr>
             <td><code>internal</code></td>
             <td>boolean</td>
-            <td>Indicates whether this queue is internal.</td>
+            <td>Indicates whether this queue is internal</td>
         </tr>
         <tr>
             <td><code>account</code></td>
             <td>Account</td>
-            <td>Gets or sets the account associated with the queue.</td>
+            <td>Gets or sets the account associated with the queue</td>
         </tr>
         <tr>
             <td><code>statistics</code></td>
             <td>QueueStatistics</td>
-            <td>Gets or sets helpful statistics about the use of the queue.</td>
+            <td>Gets or sets helpful statistics about the use of the queue</td>
         </tr>
         <tr>
             <td><code>isDeleted</code></td>
             <td>boolean</td>
-            <td>Indicates whether the queue has been marked as deleted.</td>
+            <td>Indicates whether the queue has been marked as deleted</td>
         </tr>
     </tbody>
 </table>
@@ -1309,50 +1309,50 @@ Represents a parameter associated with a support case in the helpdesk system.
         <tr>
             <td><code>id</code></td>
             <td>string</td>
-            <td>Gets or sets the unique identifier for the parameter.</td>
+            <td>Gets or sets the unique identifier for the parameter</td>
         </tr>
         <tr>
             <td><code>name</code></td>
             <td>string</td>
-            <td>Gets or sets the name of the parameter.</td>
+            <td>Gets or sets the name of the parameter</td>
         </tr>
         <tr>
             <td><code>externalId</code></td>
             <td>string</td>
-            <td>Gets or sets the external identifier for the parameter, if applicable.</td>
+            <td>Gets or sets the external identifier for the parameter, if applicable</td>
         </tr>
         <tr>
             <td><code>type</code></td>
             <td>ParameterType</td>
-            <td>Gets or sets the type of the parameter.Allowed values: SingleLineText,MultiLineText,Address,Contact,Checkbox,Choice,Subdomain,Heading,DropDown,Email,DataObject,Date,DateAndTime,Collection</td>
+            <td>Gets or sets the type of the parameterAllowed values: SingleLineText,MultiLineText,Address,Contact,Checkbox,Choice,Subdomain,Heading,DropDown,Email,DataObject,Date,DateAndTime,Collection</td>
         </tr>
         <tr>
             <td><code>multiple</code></td>
             <td>boolean</td>
             <td>Indicates whether this parameter accepts multiple values.
-When true, Mpt.Helpdesk.Models.Cases.SupportCaseParameter.Value is a JSON array.</td>
+When true, Mpt.Helpdesk.Models.Cases.SupportCaseParameter.Value is a JSON array</td>
         </tr>
         <tr>
             <td><code>constraints</code></td>
             <td>HelpdeskConstraints</td>
             <td>Gets or sets the helpdesk-specific constraints for the parameter.
-Treated as a primitive type for RQL queries.</td>
+Treated as a primitive type for RQL queries</td>
         </tr>
         <tr>
             <td><code>displayOrder</code></td>
             <td>integer</td>
-            <td>Gets or sets the formatted display order of the parameter for UI presentation.</td>
+            <td>Gets or sets the formatted display order of the parameter for UI presentation</td>
         </tr>
         <tr>
             <td><code>value</code></td>
             <td>JsonNode</td>
             <td>Gets or sets the actual value of the parameter as a JSON element.
-This is a core property for RQL queries.</td>
+This is a core property for RQL queries</td>
         </tr>
         <tr>
             <td><code>displayValue</code></td>
             <td>string</td>
-            <td>Gets or sets the human-readable display representation of Mpt.Helpdesk.Models.Cases.SupportCaseParameter.Value.</td>
+            <td>Gets or sets the human-readable display representation of Mpt.Helpdesk.Models.Cases.SupportCaseParameter.Value</td>
         </tr>
     </tbody>
 </table>

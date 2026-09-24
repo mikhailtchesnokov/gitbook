@@ -20,7 +20,7 @@ Represents a reusable template that can be used to generate messages.
         <tr>
             <td><code>audit</code></td>
             <td>NotificationTemplateAudit</td>
-            <td>Represents audit information for a Mpt.Notifications.Models.NotificationTemplates.NotificationTemplate.</td>
+            <td>Represents audit information for a Mpt.Notifications.Models.NotificationTemplates.NotificationTemplate</td>
         </tr>
         <tr>
             <td><code>$meta</code></td>
@@ -45,7 +45,7 @@ Represents a reusable template that can be used to generate messages.
         <tr>
             <td><code>criteria</code></td>
             <td>NotificationTemplateCriteria</td>
-            <td>Gets or sets the criteria for automatic triggering of this template based on events.</td>
+            <td>Gets or sets the criteria for automatic triggering of this template based on events</td>
         </tr>
         <tr>
             <td><code>defaultVariant</code></td>
@@ -55,12 +55,12 @@ Represents a reusable template that can be used to generate messages.
         <tr>
             <td><code>description</code></td>
             <td>string</td>
-            <td>Gets or sets the description of this template.</td>
+            <td>Gets or sets the description of this template</td>
         </tr>
         <tr>
             <td><code>lastUsed</code></td>
             <td>string</td>
-            <td>Gets or sets the timestamp of when this template was last used to send a notification.</td>
+            <td>Gets or sets the timestamp of when this template was last used to send a notification</td>
         </tr>
         <tr>
             <td><code>owner</code></td>
@@ -70,22 +70,22 @@ Represents a reusable template that can be used to generate messages.
         <tr>
             <td><code>statistics</code></td>
             <td>MessageStatistics</td>
-            <td>Gets or sets the usage statistics for this template.</td>
+            <td>Gets or sets the usage statistics for this template</td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>string</td>
-            <td>Gets or sets the current status of the template.</td>
+            <td>Gets or sets the current status of the template</td>
         </tr>
         <tr>
             <td><code>variants</code></td>
             <td>array</td>
-            <td>Gets or sets the list of language-specific variants for this template.</td>
+            <td>Gets or sets the list of language-specific variants for this template</td>
         </tr>
         <tr>
             <td><code>externalId</code></td>
             <td>string</td>
-            <td>Gets or sets an external identifier for integration with external systems.</td>
+            <td>Gets or sets an external identifier for integration with external systems</td>
         </tr></tbody>
 </table>
 
@@ -187,17 +187,17 @@ Represents message statistics aggregated over different time periods.
         <tr>
             <td><code>month</code></td>
             <td>integer</td>
-            <td>Gets or sets the number of messages sent in the current month.</td>
+            <td>Gets or sets the number of messages sent in the current month</td>
         </tr>
         <tr>
             <td><code>today</code></td>
             <td>integer</td>
-            <td>Gets or sets the number of messages sent today.</td>
+            <td>Gets or sets the number of messages sent today</td>
         </tr>
         <tr>
             <td><code>week</code></td>
             <td>integer</td>
-            <td>Gets or sets the number of messages sent in the current week.</td>
+            <td>Gets or sets the number of messages sent in the current week</td>
         </tr>
     </tbody>
 </table>
@@ -228,17 +228,17 @@ Represents audit information for a Mpt.Notifications.Models.NotificationTemplate
         <tr>
             <td><code>activated</code></td>
             <td>PlatformObjectEvent</td>
-            <td>Gets or sets the event information for when the template was activated.</td>
+            <td>Gets or sets the event information for when the template was activated</td>
         </tr>
         <tr>
             <td><code>deleted</code></td>
             <td>PlatformObjectEvent</td>
-            <td>Gets or sets the event information for when the template was deleted.</td>
+            <td>Gets or sets the event information for when the template was deleted</td>
         </tr>
         <tr>
             <td><code>disabled</code></td>
             <td>PlatformObjectEvent</td>
-            <td>Gets or sets the event information for when the template was disabled.</td>
+            <td>Gets or sets the event information for when the template was disabled</td>
         </tr>
     </tbody>
 </table>
@@ -259,22 +259,22 @@ Represents the criteria for automatically triggering a template based on platfor
         <tr>
             <td><code>accountTypes</code></td>
             <td>array</td>
-            <td>Gets or sets the list of account types for which this template should trigger.</td>
+            <td>Gets or sets the list of account types for which this template should trigger</td>
         </tr>
         <tr>
             <td><code>filterCondition</code></td>
             <td>string</td>
-            <td>Gets or sets the RQL filter condition that must be satisfied for the template to trigger.</td>
+            <td>Gets or sets the RQL filter condition that must be satisfied for the template to trigger</td>
         </tr>
         <tr>
             <td><code>objectType</code></td>
             <td>string</td>
-            <td>Gets or sets the platform object type this template monitors.</td>
+            <td>Gets or sets the platform object type this template monitors</td>
         </tr>
         <tr>
             <td><code>recipients</code></td>
             <td>NotificationTemplateCriteriaRecipients</td>
-            <td>Gets or sets the custom Recipients condition. If specified, this RQL condition determines the recipients of the notification.</td>
+            <td>Gets or sets the custom Recipients condition. If specified, this RQL condition determines the recipients of the notification</td>
         </tr>
     </tbody>
 </table>
@@ -295,7 +295,7 @@ Represents the recipients criteria for automatically triggering a template based
         <tr>
             <td><code>selector</code></td>
             <td>string</td>
-            <td>Gets or sets the RQL filter condition that must be satisfied for the template to trigger.</td>
+            <td>Gets or sets the RQL filter condition that must be satisfied for the template to trigger</td>
         </tr>
     </tbody>
 </table>
@@ -409,17 +409,17 @@ Represents a language-specific variant of a template.
         <tr>
             <td><code>default</code></td>
             <td>boolean</td>
-            <td>Gets or sets a value indicating whether this is the default variant for the parent template.</td>
+            <td>Gets or sets a value indicating whether this is the default variant for the parent template</td>
         </tr>
         <tr>
             <td><code>languageCode</code></td>
             <td>string</td>
-            <td>Gets or sets the language code for this variant.</td>
+            <td>Gets or sets the language code for this variant</td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>string</td>
-            <td>Gets or sets the current status of the variant.</td>
+            <td>Gets or sets the current status of the variant</td>
         </tr>
     </tbody>
 </table>

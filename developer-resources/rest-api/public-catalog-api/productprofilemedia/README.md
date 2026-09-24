@@ -40,42 +40,42 @@ Represents a product profile media entity.
         <tr>
             <td><code>type</code></td>
             <td>string</td>
-            <td>Represents media type.</td>
+            <td>Represents media type</td>
         </tr>
         <tr>
             <td><code>description</code></td>
             <td>string</td>
-            <td>Represents media description.</td>
+            <td>Represents media description</td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>string</td>
-            <td>Represents media status.</td>
+            <td>Represents media status</td>
         </tr>
         <tr>
             <td><code>filename</code></td>
             <td>string</td>
-            <td>Represents media filename.</td>
+            <td>Represents media filename</td>
         </tr>
         <tr>
             <td><code>size</code></td>
             <td>integer</td>
-            <td>Represents media size.</td>
+            <td>Represents media size</td>
         </tr>
         <tr>
             <td><code>contentType</code></td>
             <td>string</td>
-            <td>Represents content type.</td>
+            <td>Represents content type</td>
         </tr>
         <tr>
             <td><code>displayOrder</code></td>
             <td>integer</td>
-            <td>Represents display order.</td>
+            <td>Represents display order</td>
         </tr>
         <tr>
             <td><code>url</code></td>
             <td>string</td>
-            <td>Represents media url.</td>
+            <td>Represents media url</td>
         </tr>
         <tr>
             <td><code>productProfile</code></td>

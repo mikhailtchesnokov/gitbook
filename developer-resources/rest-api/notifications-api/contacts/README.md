@@ -20,7 +20,7 @@ Represents a notification contact who can receive email notifications.
         <tr>
             <td><code>audit</code></td>
             <td>ContactAudit</td>
-            <td>Represents audit information for a Mpt.Notifications.Models.Contacts.Contact.</td>
+            <td>Represents audit information for a Mpt.Notifications.Models.Contacts.Contact</td>
         </tr>
         <tr>
             <td><code>$meta</code></td>
@@ -70,12 +70,12 @@ Represents a notification contact who can receive email notifications.
         <tr>
             <td><code>optOuts</code></td>
             <td>array</td>
-            <td>Gets or sets the list of categories for which this contact has opted out of receiving notifications.</td>
+            <td>Gets or sets the list of categories for which this contact has opted out of receiving notifications</td>
         </tr>
         <tr>
             <td><code>user</code></td>
             <td>User</td>
-            <td>Gets or sets the associated user information, if this contact is linked to a platform user.</td>
+            <td>Gets or sets the associated user information, if this contact is linked to a platform user</td>
         </tr></tbody>
 </table>
 
@@ -187,17 +187,17 @@ Represents audit information for a Mpt.Notifications.Models.Contacts.Contact.
         <tr>
             <td><code>activated</code></td>
             <td>PlatformObjectEvent</td>
-            <td>Gets or sets the event information for when the contact was activated.</td>
+            <td>Gets or sets the event information for when the contact was activated</td>
         </tr>
         <tr>
             <td><code>blocked</code></td>
             <td>PlatformObjectEvent</td>
-            <td>Gets or sets the event information for when the contact was blocked.</td>
+            <td>Gets or sets the event information for when the contact was blocked</td>
         </tr>
         <tr>
             <td><code>deleted</code></td>
             <td>PlatformObjectEvent</td>
-            <td>Gets or sets the event information for when the contact was deleted.</td>
+            <td>Gets or sets the event information for when the contact was deleted</td>
         </tr>
     </tbody>
 </table>

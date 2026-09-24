@@ -20,7 +20,7 @@ Represents an individual notification message sent to a specific contact.
         <tr>
             <td><code>audit</code></td>
             <td>MessageAudit</td>
-            <td>Represents audit information for a Mpt.Notifications.Models.Messages.Message.</td>
+            <td>Represents audit information for a Mpt.Notifications.Models.Messages.Message</td>
         </tr>
         <tr>
             <td><code>$meta</code></td>
@@ -35,12 +35,12 @@ Represents an individual notification message sent to a specific contact.
         <tr>
             <td><code>account</code></td>
             <td>Account</td>
-            <td>Gets or sets the account associated with this message, if applicable.</td>
+            <td>Gets or sets the account associated with this message, if applicable</td>
         </tr>
         <tr>
             <td><code>attachments</code></td>
             <td>array</td>
-            <td>Gets or sets the list of file attachments included with this message.</td>
+            <td>Gets or sets the list of file attachments included with this message</td>
         </tr>
         <tr>
             <td><code>batch</code></td>
@@ -50,22 +50,22 @@ Represents an individual notification message sent to a specific contact.
         <tr>
             <td><code>body</code></td>
             <td>string</td>
-            <td>Gets or sets the body content of the message.</td>
+            <td>Gets or sets the body content of the message</td>
         </tr>
         <tr>
             <td><code>category</code></td>
             <td>Category</td>
-            <td>Gets or sets the category to which this message belongs.</td>
+            <td>Gets or sets the category to which this message belongs</td>
         </tr>
         <tr>
             <td><code>contact</code></td>
             <td>Contact</td>
-            <td>Gets or sets the recipient contact for this message.</td>
+            <td>Gets or sets the recipient contact for this message</td>
         </tr>
         <tr>
             <td><code>discardReason</code></td>
             <td>string</td>
-            <td>Gets or sets the reason the message was discarded, if applicable.</td>
+            <td>Gets or sets the reason the message was discarded, if applicable</td>
         </tr>
         <tr>
             <td><code>template</code></td>
@@ -75,17 +75,17 @@ Represents an individual notification message sent to a specific contact.
         <tr>
             <td><code>status</code></td>
             <td>string</td>
-            <td>Gets or sets the current status of the message.</td>
+            <td>Gets or sets the current status of the message</td>
         </tr>
         <tr>
             <td><code>statusReason</code></td>
             <td>string</td>
-            <td>Gets or sets the reason for the current status.</td>
+            <td>Gets or sets the reason for the current status</td>
         </tr>
         <tr>
             <td><code>subject</code></td>
             <td>string</td>
-            <td>Gets or sets the subject of the message.</td>
+            <td>Gets or sets the subject of the message</td>
         </tr></tbody>
 </table>
 
@@ -324,32 +324,32 @@ Represents a file attachment associated with a notification message or batch.
         <tr>
             <td><code>id</code></td>
             <td>string</td>
-            <td>Gets or sets the unique identifier for the attachment.</td>
+            <td>Gets or sets the unique identifier for the attachment</td>
         </tr>
         <tr>
             <td><code>href</code></td>
             <td>string</td>
-            <td>Gets the URL to download the attachment.</td>
+            <td>Gets the URL to download the attachment</td>
         </tr>
         <tr>
             <td><code>name</code></td>
             <td>string</td>
-            <td>Gets or sets the display name for the attachment.</td>
+            <td>Gets or sets the display name for the attachment</td>
         </tr>
         <tr>
             <td><code>fileName</code></td>
             <td>string</td>
-            <td>Gets or sets the file name of the attachment.</td>
+            <td>Gets or sets the file name of the attachment</td>
         </tr>
         <tr>
             <td><code>fileSize</code></td>
             <td>integer</td>
-            <td>Gets or sets the size of the attachment in bytes.</td>
+            <td>Gets or sets the size of the attachment in bytes</td>
         </tr>
         <tr>
             <td><code>contentType</code></td>
             <td>string</td>
-            <td>Gets or sets the content type of the attachment.</td>
+            <td>Gets or sets the content type of the attachment</td>
         </tr>
     </tbody>
 </table>
@@ -380,27 +380,27 @@ Represents a batch of notification messages that share common properties.
         <tr>
             <td><code>account</code></td>
             <td>Account</td>
-            <td>Gets or sets the account associated with this batch, if applicable.</td>
+            <td>Gets or sets the account associated with this batch, if applicable</td>
         </tr>
         <tr>
             <td><code>category</code></td>
             <td>Category</td>
-            <td>Gets or sets the category to which this batch belongs.</td>
+            <td>Gets or sets the category to which this batch belongs</td>
         </tr>
         <tr>
             <td><code>template</code></td>
             <td>NotificationTemplate</td>
-            <td>Gets or sets the template used to create this batch, if applicable.</td>
+            <td>Gets or sets the template used to create this batch, if applicable</td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>string</td>
-            <td>Gets or sets the current status of the batch.</td>
+            <td>Gets or sets the current status of the batch</td>
         </tr>
         <tr>
             <td><code>type</code></td>
             <td>string</td>
-            <td>Gets or sets the type of batch.</td>
+            <td>Gets or sets the type of batch</td>
         </tr>
     </tbody>
 </table>
@@ -426,7 +426,7 @@ Represents a notification category that can be used to organize and filter notif
         <tr>
             <td><code>audit</code></td>
             <td>NotificationCategoryAudit</td>
-            <td>Represents audit information for a Mpt.Notifications.Models.Categories.Category.</td>
+            <td>Represents audit information for a Mpt.Notifications.Models.Categories.Category</td>
         </tr>
         <tr>
             <td><code>$meta</code></td>
@@ -446,42 +446,42 @@ Represents a notification category that can be used to organize and filter notif
         <tr>
             <td><code>description</code></td>
             <td>string</td>
-            <td>Gets or sets the description of the category.</td>
+            <td>Gets or sets the description of the category</td>
         </tr>
         <tr>
             <td><code>optOutAllowed</code></td>
             <td>boolean</td>
-            <td>Gets or sets a value indicating whether recipients can opt out of notifications in this category.</td>
+            <td>Gets or sets a value indicating whether recipients can opt out of notifications in this category</td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>string</td>
-            <td>Gets or sets the current status of the category.</td>
+            <td>Gets or sets the current status of the category</td>
         </tr>
         <tr>
             <td><code>note</code></td>
             <td>string</td>
-            <td>Gets or sets an optional note about the category.</td>
+            <td>Gets or sets an optional note about the category</td>
         </tr>
         <tr>
             <td><code>deleteAllowed</code></td>
             <td>boolean</td>
-            <td>Gets or sets a value indicating whether this category can be deleted.</td>
+            <td>Gets or sets a value indicating whether this category can be deleted</td>
         </tr>
         <tr>
             <td><code>statistics</code></td>
             <td>MessageStatistics</td>
-            <td>Gets or sets the message statistics for this category.</td>
+            <td>Gets or sets the message statistics for this category</td>
         </tr>
         <tr>
             <td><code>lastUsed</code></td>
             <td>string</td>
-            <td>Gets or sets the timestamp of when this category was last used to send a notification.</td>
+            <td>Gets or sets the timestamp of when this category was last used to send a notification</td>
         </tr>
         <tr>
             <td><code>enabledByDefault</code></td>
             <td>boolean</td>
-            <td>Gets or sets a value indicating whether this category is enabled by default for new recipients.</td>
+            <td>Gets or sets a value indicating whether this category is enabled by default for new recipients</td>
         </tr>
     </tbody>
 </table>
@@ -543,7 +543,7 @@ Represents a notification contact who can receive email notifications.
         <tr>
             <td><code>audit</code></td>
             <td>ContactAudit</td>
-            <td>Represents audit information for a Mpt.Notifications.Models.Contacts.Contact.</td>
+            <td>Represents audit information for a Mpt.Notifications.Models.Contacts.Contact</td>
         </tr>
         <tr>
             <td><code>$meta</code></td>
@@ -593,12 +593,12 @@ Represents a notification contact who can receive email notifications.
         <tr>
             <td><code>optOuts</code></td>
             <td>array</td>
-            <td>Gets or sets the list of categories for which this contact has opted out of receiving notifications.</td>
+            <td>Gets or sets the list of categories for which this contact has opted out of receiving notifications</td>
         </tr>
         <tr>
             <td><code>user</code></td>
             <td>User</td>
-            <td>Gets or sets the associated user information, if this contact is linked to a platform user.</td>
+            <td>Gets or sets the associated user information, if this contact is linked to a platform user</td>
         </tr>
     </tbody>
 </table>
@@ -629,17 +629,17 @@ Represents audit information for a Mpt.Notifications.Models.Contacts.Contact.
         <tr>
             <td><code>activated</code></td>
             <td>PlatformObjectEvent</td>
-            <td>Gets or sets the event information for when the contact was activated.</td>
+            <td>Gets or sets the event information for when the contact was activated</td>
         </tr>
         <tr>
             <td><code>blocked</code></td>
             <td>PlatformObjectEvent</td>
-            <td>Gets or sets the event information for when the contact was blocked.</td>
+            <td>Gets or sets the event information for when the contact was blocked</td>
         </tr>
         <tr>
             <td><code>deleted</code></td>
             <td>PlatformObjectEvent</td>
-            <td>Gets or sets the event information for when the contact was deleted.</td>
+            <td>Gets or sets the event information for when the contact was deleted</td>
         </tr>
     </tbody>
 </table>
@@ -722,32 +722,32 @@ Represents audit information for a Mpt.Notifications.Models.Messages.Message.
         <tr>
             <td><code>queued</code></td>
             <td>PlatformObjectEvent</td>
-            <td>Gets or sets the event information for when the message was queued for sending.</td>
+            <td>Gets or sets the event information for when the message was queued for sending</td>
         </tr>
         <tr>
             <td><code>discarded</code></td>
             <td>PlatformObjectEvent</td>
-            <td>Gets or sets the event information for when the message was discarded.</td>
+            <td>Gets or sets the event information for when the message was discarded</td>
         </tr>
         <tr>
             <td><code>sent</code></td>
             <td>PlatformObjectEvent</td>
-            <td>Gets or sets the event information for when the message was successfully sent.</td>
+            <td>Gets or sets the event information for when the message was successfully sent</td>
         </tr>
         <tr>
             <td><code>bounced</code></td>
             <td>PlatformObjectEvent</td>
-            <td>Gets or sets the event information for when the message bounced.</td>
+            <td>Gets or sets the event information for when the message bounced</td>
         </tr>
         <tr>
             <td><code>complained</code></td>
             <td>PlatformObjectEvent</td>
-            <td>Gets or sets the event information for when a complaint was received about the message.</td>
+            <td>Gets or sets the event information for when a complaint was received about the message</td>
         </tr>
         <tr>
             <td><code>failed</code></td>
             <td>PlatformObjectEvent</td>
-            <td>Gets or sets the event information for when the message failed to send.</td>
+            <td>Gets or sets the event information for when the message failed to send</td>
         </tr>
     </tbody>
 </table>
@@ -768,17 +768,17 @@ Represents message statistics aggregated over different time periods.
         <tr>
             <td><code>month</code></td>
             <td>integer</td>
-            <td>Gets or sets the number of messages sent in the current month.</td>
+            <td>Gets or sets the number of messages sent in the current month</td>
         </tr>
         <tr>
             <td><code>today</code></td>
             <td>integer</td>
-            <td>Gets or sets the number of messages sent today.</td>
+            <td>Gets or sets the number of messages sent today</td>
         </tr>
         <tr>
             <td><code>week</code></td>
             <td>integer</td>
-            <td>Gets or sets the number of messages sent in the current week.</td>
+            <td>Gets or sets the number of messages sent in the current week</td>
         </tr>
     </tbody>
 </table>
@@ -809,17 +809,17 @@ Represents audit information for a Mpt.Notifications.Models.Categories.Category.
         <tr>
             <td><code>published</code></td>
             <td>PlatformObjectEvent</td>
-            <td>Gets or sets the event information for when the category was published.</td>
+            <td>Gets or sets the event information for when the category was published</td>
         </tr>
         <tr>
             <td><code>unpublished</code></td>
             <td>PlatformObjectEvent</td>
-            <td>Gets or sets the event information for when the category was unpublished.</td>
+            <td>Gets or sets the event information for when the category was unpublished</td>
         </tr>
         <tr>
             <td><code>deleted</code></td>
             <td>PlatformObjectEvent</td>
-            <td>Gets or sets the event information for when the category was deleted.</td>
+            <td>Gets or sets the event information for when the category was deleted</td>
         </tr>
     </tbody>
 </table>
@@ -845,7 +845,7 @@ Represents a reusable template that can be used to generate messages.
         <tr>
             <td><code>audit</code></td>
             <td>NotificationTemplateAudit</td>
-            <td>Represents audit information for a Mpt.Notifications.Models.NotificationTemplates.NotificationTemplate.</td>
+            <td>Represents audit information for a Mpt.Notifications.Models.NotificationTemplates.NotificationTemplate</td>
         </tr>
         <tr>
             <td><code>$meta</code></td>
@@ -870,7 +870,7 @@ Represents a reusable template that can be used to generate messages.
         <tr>
             <td><code>criteria</code></td>
             <td>NotificationTemplateCriteria</td>
-            <td>Gets or sets the criteria for automatic triggering of this template based on events.</td>
+            <td>Gets or sets the criteria for automatic triggering of this template based on events</td>
         </tr>
         <tr>
             <td><code>defaultVariant</code></td>
@@ -880,12 +880,12 @@ Represents a reusable template that can be used to generate messages.
         <tr>
             <td><code>description</code></td>
             <td>string</td>
-            <td>Gets or sets the description of this template.</td>
+            <td>Gets or sets the description of this template</td>
         </tr>
         <tr>
             <td><code>lastUsed</code></td>
             <td>string</td>
-            <td>Gets or sets the timestamp of when this template was last used to send a notification.</td>
+            <td>Gets or sets the timestamp of when this template was last used to send a notification</td>
         </tr>
         <tr>
             <td><code>owner</code></td>
@@ -895,22 +895,22 @@ Represents a reusable template that can be used to generate messages.
         <tr>
             <td><code>statistics</code></td>
             <td>MessageStatistics</td>
-            <td>Gets or sets the usage statistics for this template.</td>
+            <td>Gets or sets the usage statistics for this template</td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>string</td>
-            <td>Gets or sets the current status of the template.</td>
+            <td>Gets or sets the current status of the template</td>
         </tr>
         <tr>
             <td><code>variants</code></td>
             <td>array</td>
-            <td>Gets or sets the list of language-specific variants for this template.</td>
+            <td>Gets or sets the list of language-specific variants for this template</td>
         </tr>
         <tr>
             <td><code>externalId</code></td>
             <td>string</td>
-            <td>Gets or sets an external identifier for integration with external systems.</td>
+            <td>Gets or sets an external identifier for integration with external systems</td>
         </tr>
     </tbody>
 </table>
@@ -941,17 +941,17 @@ Represents audit information for a Mpt.Notifications.Models.NotificationTemplate
         <tr>
             <td><code>activated</code></td>
             <td>PlatformObjectEvent</td>
-            <td>Gets or sets the event information for when the template was activated.</td>
+            <td>Gets or sets the event information for when the template was activated</td>
         </tr>
         <tr>
             <td><code>deleted</code></td>
             <td>PlatformObjectEvent</td>
-            <td>Gets or sets the event information for when the template was deleted.</td>
+            <td>Gets or sets the event information for when the template was deleted</td>
         </tr>
         <tr>
             <td><code>disabled</code></td>
             <td>PlatformObjectEvent</td>
-            <td>Gets or sets the event information for when the template was disabled.</td>
+            <td>Gets or sets the event information for when the template was disabled</td>
         </tr>
     </tbody>
 </table>
@@ -972,22 +972,22 @@ Represents the criteria for automatically triggering a template based on platfor
         <tr>
             <td><code>accountTypes</code></td>
             <td>array</td>
-            <td>Gets or sets the list of account types for which this template should trigger.</td>
+            <td>Gets or sets the list of account types for which this template should trigger</td>
         </tr>
         <tr>
             <td><code>filterCondition</code></td>
             <td>string</td>
-            <td>Gets or sets the RQL filter condition that must be satisfied for the template to trigger.</td>
+            <td>Gets or sets the RQL filter condition that must be satisfied for the template to trigger</td>
         </tr>
         <tr>
             <td><code>objectType</code></td>
             <td>string</td>
-            <td>Gets or sets the platform object type this template monitors.</td>
+            <td>Gets or sets the platform object type this template monitors</td>
         </tr>
         <tr>
             <td><code>recipients</code></td>
             <td>NotificationTemplateCriteriaRecipients</td>
-            <td>Gets or sets the custom Recipients condition. If specified, this RQL condition determines the recipients of the notification.</td>
+            <td>Gets or sets the custom Recipients condition. If specified, this RQL condition determines the recipients of the notification</td>
         </tr>
     </tbody>
 </table>
@@ -1008,7 +1008,7 @@ Represents the recipients criteria for automatically triggering a template based
         <tr>
             <td><code>selector</code></td>
             <td>string</td>
-            <td>Gets or sets the RQL filter condition that must be satisfied for the template to trigger.</td>
+            <td>Gets or sets the RQL filter condition that must be satisfied for the template to trigger</td>
         </tr>
     </tbody>
 </table>
@@ -1044,12 +1044,12 @@ Represents a reusable template that can be used to generate messages.
         <tr>
             <td><code>lastUsed</code></td>
             <td>string</td>
-            <td>Gets or sets the timestamp of when this template was last used to send a notification.</td>
+            <td>Gets or sets the timestamp of when this template was last used to send a notification</td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>string</td>
-            <td>Gets or sets the current status of the template.</td>
+            <td>Gets or sets the current status of the template</td>
         </tr>
     </tbody>
 </table>
@@ -1287,17 +1287,17 @@ Represents a language-specific variant of a template.
         <tr>
             <td><code>default</code></td>
             <td>boolean</td>
-            <td>Gets or sets a value indicating whether this is the default variant for the parent template.</td>
+            <td>Gets or sets a value indicating whether this is the default variant for the parent template</td>
         </tr>
         <tr>
             <td><code>languageCode</code></td>
             <td>string</td>
-            <td>Gets or sets the language code for this variant.</td>
+            <td>Gets or sets the language code for this variant</td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>string</td>
-            <td>Gets or sets the current status of the variant.</td>
+            <td>Gets or sets the current status of the variant</td>
         </tr>
     </tbody>
 </table>

@@ -411,12 +411,12 @@ Represents the period during which a charge is applicable.
         <tr>
             <td><code>start</code></td>
             <td>string</td>
-            <td>The start date and time of the period.</td>
+            <td>The start date and time of the period</td>
         </tr>
         <tr>
             <td><code>end</code></td>
             <td>string</td>
-            <td>The end date and time of the period.</td>
+            <td>The end date and time of the period</td>
         </tr>
     </tbody>
 </table>

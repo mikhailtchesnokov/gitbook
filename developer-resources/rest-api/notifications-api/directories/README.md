@@ -141,7 +141,7 @@ Represents a notification contact who can receive email notifications.
         <tr>
             <td><code>user</code></td>
             <td>User</td>
-            <td>Gets or sets the associated user information, if this contact is linked to a platform user.</td>
+            <td>Gets or sets the associated user information, if this contact is linked to a platform user</td>
         </tr>
     </tbody>
 </table>

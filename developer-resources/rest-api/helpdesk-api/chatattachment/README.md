@@ -60,7 +60,7 @@
         <tr>
             <td><code>file</code></td>
             <td>File</td>
-            <td>Represents the file this attachment belongs to.</td>
+            <td>Represents the file this attachment belongs to</td>
         </tr></tbody>
 </table>
 
@@ -131,7 +131,7 @@
         <tr>
             <td><code>type</code></td>
             <td>ChatType</td>
-            <td>Represents the type of chat, indicating whether it is a direct message, group chat, channel, or support case.Allowed values: Direct,Group,Channel,Case</td>
+            <td>Represents the type of chat, indicating whether it is a direct message, group chat, channel, or support caseAllowed values: Direct,Group,Channel,Case</td>
         </tr>
     </tbody>
 </table>
@@ -187,17 +187,17 @@ Represents a file in the helpdesk module
         <tr>
             <td><code>filename</code></td>
             <td>string</td>
-            <td>Represents the name of the file associated with the attachment.</td>
+            <td>Represents the name of the file associated with the attachment</td>
         </tr>
         <tr>
             <td><code>size</code></td>
             <td>integer</td>
-            <td>Indicates the size of the file in bytes.</td>
+            <td>Indicates the size of the file in bytes</td>
         </tr>
         <tr>
             <td><code>contentType</code></td>
             <td>string</td>
-            <td>Represents the MIME type of the file content.</td>
+            <td>Represents the MIME type of the file content</td>
         </tr>
     </tbody>
 </table>

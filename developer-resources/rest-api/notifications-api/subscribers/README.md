@@ -20,7 +20,7 @@ Represents a subscription that defines which users or user groups should automat
         <tr>
             <td><code>audit</code></td>
             <td>SubscriberAudit</td>
-            <td>Represents audit information for a Mpt.Notifications.Models.Subscribers.Subscriber.</td>
+            <td>Represents audit information for a Mpt.Notifications.Models.Subscribers.Subscriber</td>
         </tr>
         <tr>
             <td><code>$meta</code></td>
@@ -40,27 +40,27 @@ Represents a subscription that defines which users or user groups should automat
         <tr>
             <td><code>status</code></td>
             <td>string</td>
-            <td>Gets or initializes the current status of the subscriber.</td>
+            <td>Gets or initializes the current status of the subscriber</td>
         </tr>
         <tr>
             <td><code>note</code></td>
             <td>string</td>
-            <td>Gets or initializes an optional note about this subscriber.</td>
+            <td>Gets or initializes an optional note about this subscriber</td>
         </tr>
         <tr>
             <td><code>recipients</code></td>
             <td>Recipients</td>
-            <td>Gets or initializes the list of recipients who will receive notifications.</td>
+            <td>Gets or initializes the list of recipients who will receive notifications</td>
         </tr>
         <tr>
             <td><code>account</code></td>
             <td>Account</td>
-            <td>Gets or initializes the account to which this subscriber is associated.</td>
+            <td>Gets or initializes the account to which this subscriber is associated</td>
         </tr>
         <tr>
             <td><code>category</code></td>
             <td>Category</td>
-            <td>Gets or initializes the category this subscriber monitors for automatic notifications.</td>
+            <td>Gets or initializes the category this subscriber monitors for automatic notifications</td>
         </tr></tbody>
 </table>
 
@@ -340,7 +340,7 @@ Represents a notification category that can be used to organize and filter notif
         <tr>
             <td><code>audit</code></td>
             <td>NotificationCategoryAudit</td>
-            <td>Represents audit information for a Mpt.Notifications.Models.Categories.Category.</td>
+            <td>Represents audit information for a Mpt.Notifications.Models.Categories.Category</td>
         </tr>
         <tr>
             <td><code>$meta</code></td>
@@ -360,42 +360,42 @@ Represents a notification category that can be used to organize and filter notif
         <tr>
             <td><code>description</code></td>
             <td>string</td>
-            <td>Gets or sets the description of the category.</td>
+            <td>Gets or sets the description of the category</td>
         </tr>
         <tr>
             <td><code>optOutAllowed</code></td>
             <td>boolean</td>
-            <td>Gets or sets a value indicating whether recipients can opt out of notifications in this category.</td>
+            <td>Gets or sets a value indicating whether recipients can opt out of notifications in this category</td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>string</td>
-            <td>Gets or sets the current status of the category.</td>
+            <td>Gets or sets the current status of the category</td>
         </tr>
         <tr>
             <td><code>note</code></td>
             <td>string</td>
-            <td>Gets or sets an optional note about the category.</td>
+            <td>Gets or sets an optional note about the category</td>
         </tr>
         <tr>
             <td><code>deleteAllowed</code></td>
             <td>boolean</td>
-            <td>Gets or sets a value indicating whether this category can be deleted.</td>
+            <td>Gets or sets a value indicating whether this category can be deleted</td>
         </tr>
         <tr>
             <td><code>statistics</code></td>
             <td>MessageStatistics</td>
-            <td>Gets or sets the message statistics for this category.</td>
+            <td>Gets or sets the message statistics for this category</td>
         </tr>
         <tr>
             <td><code>lastUsed</code></td>
             <td>string</td>
-            <td>Gets or sets the timestamp of when this category was last used to send a notification.</td>
+            <td>Gets or sets the timestamp of when this category was last used to send a notification</td>
         </tr>
         <tr>
             <td><code>enabledByDefault</code></td>
             <td>boolean</td>
-            <td>Gets or sets a value indicating whether this category is enabled by default for new recipients.</td>
+            <td>Gets or sets a value indicating whether this category is enabled by default for new recipients</td>
         </tr>
     </tbody>
 </table>
@@ -463,17 +463,17 @@ Represents message statistics aggregated over different time periods.
         <tr>
             <td><code>month</code></td>
             <td>integer</td>
-            <td>Gets or sets the number of messages sent in the current month.</td>
+            <td>Gets or sets the number of messages sent in the current month</td>
         </tr>
         <tr>
             <td><code>today</code></td>
             <td>integer</td>
-            <td>Gets or sets the number of messages sent today.</td>
+            <td>Gets or sets the number of messages sent today</td>
         </tr>
         <tr>
             <td><code>week</code></td>
             <td>integer</td>
-            <td>Gets or sets the number of messages sent in the current week.</td>
+            <td>Gets or sets the number of messages sent in the current week</td>
         </tr>
     </tbody>
 </table>
@@ -627,17 +627,17 @@ Represents audit information for a Mpt.Notifications.Models.Categories.Category.
         <tr>
             <td><code>published</code></td>
             <td>PlatformObjectEvent</td>
-            <td>Gets or sets the event information for when the category was published.</td>
+            <td>Gets or sets the event information for when the category was published</td>
         </tr>
         <tr>
             <td><code>unpublished</code></td>
             <td>PlatformObjectEvent</td>
-            <td>Gets or sets the event information for when the category was unpublished.</td>
+            <td>Gets or sets the event information for when the category was unpublished</td>
         </tr>
         <tr>
             <td><code>deleted</code></td>
             <td>PlatformObjectEvent</td>
-            <td>Gets or sets the event information for when the category was deleted.</td>
+            <td>Gets or sets the event information for when the category was deleted</td>
         </tr>
     </tbody>
 </table>
@@ -870,12 +870,12 @@ Represents the recipients of a subscriber.
         <tr>
             <td><code>users</code></td>
             <td>array</td>
-            <td>Gets or initializes the list of individual users who will receive notifications.</td>
+            <td>Gets or initializes the list of individual users who will receive notifications</td>
         </tr>
         <tr>
             <td><code>userGroups</code></td>
             <td>array</td>
-            <td>Gets or initializes the list of user groups whose members will receive notifications.</td>
+            <td>Gets or initializes the list of user groups whose members will receive notifications</td>
         </tr>
     </tbody>
 </table>
@@ -906,17 +906,17 @@ Represents audit information for a Mpt.Notifications.Models.Subscribers.Subscrib
         <tr>
             <td><code>activated</code></td>
             <td>PlatformObjectEvent</td>
-            <td>Gets or sets the event information for when the subscriber was activated.</td>
+            <td>Gets or sets the event information for when the subscriber was activated</td>
         </tr>
         <tr>
             <td><code>disabled</code></td>
             <td>PlatformObjectEvent</td>
-            <td>Gets or sets the event information for when the subscriber was disabled.</td>
+            <td>Gets or sets the event information for when the subscriber was disabled</td>
         </tr>
         <tr>
             <td><code>deleted</code></td>
             <td>PlatformObjectEvent</td>
-            <td>Gets or sets the event information for when the subscriber was deleted.</td>
+            <td>Gets or sets the event information for when the subscriber was deleted</td>
         </tr>
     </tbody>
 </table>

@@ -20,7 +20,7 @@ Represents a product profile attachment entity.
         <tr>
             <td><code>audit</code></td>
             <td>ProductProfileAttachmentAudit</td>
-            <td>Represents ProductProfileAttachmentAudit.</td>
+            <td>Represents ProductProfileAttachmentAudit</td>
         </tr>
         <tr>
             <td><code>$meta</code></td>
@@ -40,27 +40,27 @@ Represents a product profile attachment entity.
         <tr>
             <td><code>description</code></td>
             <td>string</td>
-            <td>Represents Description of file.</td>
+            <td>Represents Description of file</td>
         </tr>
         <tr>
             <td><code>filename</code></td>
             <td>string</td>
-            <td>Represents filename.</td>
+            <td>Represents filename</td>
         </tr>
         <tr>
             <td><code>size</code></td>
             <td>integer</td>
-            <td>Represents size of file.</td>
+            <td>Represents size of file</td>
         </tr>
         <tr>
             <td><code>contentType</code></td>
             <td>string</td>
-            <td>Represents Content type.</td>
+            <td>Represents Content type</td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>string</td>
-            <td>Represents attachment status.</td>
+            <td>Represents attachment status</td>
         </tr>
         <tr>
             <td><code>productProfile</code></td>
@@ -439,12 +439,12 @@ Represents ProductProfileAttachmentAudit.
         <tr>
             <td><code>published</code></td>
             <td>PlatformObjectEvent</td>
-            <td>Represents published event.</td>
+            <td>Represents published event</td>
         </tr>
         <tr>
             <td><code>unpublished</code></td>
             <td>PlatformObjectEvent</td>
-            <td>Represents unpublished event.</td>
+            <td>Represents unpublished event</td>
         </tr>
     </tbody>
 </table>

@@ -121,12 +121,12 @@ Represents a pair of currencies in exchange module.
         <tr>
             <td><code>id</code></td>
             <td>string</td>
-            <td>The unique identifier of the pair.</td>
+            <td>The unique identifier of the pair</td>
         </tr>
         <tr>
             <td><code>name</code></td>
             <td>string</td>
-            <td>The name of the pair.</td>
+            <td>The name of the pair</td>
         </tr>
         <tr>
             <td><code>externalId</code></td>

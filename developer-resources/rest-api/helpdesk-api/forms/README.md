@@ -45,17 +45,17 @@
         <tr>
             <td><code>description</code></td>
             <td>string</td>
-            <td>Gets or sets the description associated with the form.</td>
+            <td>Gets or sets the description associated with the form</td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>FormStatus</td>
-            <td>Gets or sets the status of the Form.Allowed values: Unpublished,Published</td>
+            <td>Gets or sets the status of the FormAllowed values: Unpublished,Published</td>
         </tr>
         <tr>
             <td><code>externalId</code></td>
             <td>string</td>
-            <td>Gets or sets the optional external identifier associated with the form.</td>
+            <td>Gets or sets the optional external identifier associated with the form</td>
         </tr>
         <tr>
             <td><code>account</code></td>
@@ -65,12 +65,12 @@
         <tr>
             <td><code>statistics</code></td>
             <td>FormStatistics</td>
-            <td>Gets or sets usage statistics for this form.</td>
+            <td>Gets or sets usage statistics for this form</td>
         </tr>
         <tr>
             <td><code>isDeleted</code></td>
             <td>boolean</td>
-            <td>Indicates whether the queue has been marked as deleted.</td>
+            <td>Indicates whether the queue has been marked as deleted</td>
         </tr></tbody>
 </table>
 
@@ -177,12 +177,12 @@ Represents usage statistics for a form.
         <tr>
             <td><code>groups</code></td>
             <td>integer</td>
-            <td>The number of parameter groups assigned to this form.</td>
+            <td>The number of parameter groups assigned to this form</td>
         </tr>
         <tr>
             <td><code>parameters</code></td>
             <td>integer</td>
-            <td>The total number of parameter definitions across all groups in this form.</td>
+            <td>The total number of parameter definitions across all groups in this form</td>
         </tr>
     </tbody>
 </table>

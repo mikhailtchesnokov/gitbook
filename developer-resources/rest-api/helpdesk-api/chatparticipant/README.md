@@ -55,12 +55,12 @@
         <tr>
             <td><code>muted</code></td>
             <td>boolean</td>
-            <td>Flag indicates whether participant should be notified of new messages in the chat.</td>
+            <td>Flag indicates whether participant should be notified of new messages in the chat</td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>ParticipantStatus</td>
-            <td>Represents the status of the chat participant, indicating whether they are active, suspended, or exited.Allowed values: Active,Exited,Deactivated</td>
+            <td>Represents the status of the chat participant, indicating whether they are active, suspended, or exitedAllowed values: Active,Exited,Deactivated</td>
         </tr>
         <tr>
             <td><code>lastReadMessage</code></td>
@@ -70,7 +70,7 @@
         <tr>
             <td><code>unreadMessageCount</code></td>
             <td>integer</td>
-            <td>The count of messages in the chat not read by this participant.</td>
+            <td>The count of messages in the chat not read by this participant</td>
         </tr></tbody>
 </table>
 
@@ -146,12 +146,12 @@
         <tr>
             <td><code>content</code></td>
             <td>string</td>
-            <td>Content of the chat message.</td>
+            <td>Content of the chat message</td>
         </tr>
         <tr>
             <td><code>visibility</code></td>
             <td>MessageVisibility</td>
-            <td>Visibility of the chat message, indicating whether it is public or private.Allowed values: Public,Private</td>
+            <td>Visibility of the chat message, indicating whether it is public or privateAllowed values: Public,Private</td>
         </tr>
         <tr>
             <td><code>isDeleted</code></td>
@@ -233,7 +233,7 @@
         <tr>
             <td><code>type</code></td>
             <td>ChatType</td>
-            <td>Represents the type of chat, indicating whether it is a direct message, group chat, channel, or support case.Allowed values: Direct,Group,Channel,Case</td>
+            <td>Represents the type of chat, indicating whether it is a direct message, group chat, channel, or support caseAllowed values: Direct,Group,Channel,Case</td>
         </tr>
     </tbody>
 </table>
@@ -279,7 +279,7 @@ Represents a notification contact who can receive email notifications.
         <tr>
             <td><code>user</code></td>
             <td>User</td>
-            <td>Gets or sets the associated user information, if this contact is linked to a platform user.</td>
+            <td>Gets or sets the associated user information, if this contact is linked to a platform user</td>
         </tr>
     </tbody>
 </table>

@@ -35,12 +35,12 @@ Represents currency in exchange module.
         <tr>
             <td><code>id</code></td>
             <td>string</td>
-            <td>The unique identifier of the currency.</td>
+            <td>The unique identifier of the currency</td>
         </tr>
         <tr>
             <td><code>name</code></td>
             <td>string</td>
-            <td>The name of the currency.</td>
+            <td>The name of the currency</td>
         </tr>
         <tr>
             <td><code>code</code></td>
@@ -60,7 +60,7 @@ Represents currency in exchange module.
         <tr>
             <td><code>status</code></td>
             <td>CurrencyStatus</td>
-            <td>The current status of the currency.Allowed values: Active,Deleted</td>
+            <td>The current status of the currencyAllowed values: Active,Deleted</td>
         </tr></tbody>
 </table>
 

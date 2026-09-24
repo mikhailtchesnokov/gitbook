@@ -30,12 +30,12 @@ Represents a pair of currencies in exchange module.
         <tr>
             <td><code>id</code></td>
             <td>string</td>
-            <td>The unique identifier of the pair.</td>
+            <td>The unique identifier of the pair</td>
         </tr>
         <tr>
             <td><code>name</code></td>
             <td>string</td>
-            <td>The name of the pair.</td>
+            <td>The name of the pair</td>
         </tr>
         <tr>
             <td><code>externalId</code></td>
@@ -85,7 +85,7 @@ Represents a pair of currencies in exchange module.
         <tr>
             <td><code>status</code></td>
             <td>PairStatus</td>
-            <td>The current status of the pair.Allowed values: Active,Deleted</td>
+            <td>The current status of the pairAllowed values: Active,Deleted</td>
         </tr></tbody>
 </table>
 
@@ -115,12 +115,12 @@ Represents currency in exchange module.
         <tr>
             <td><code>id</code></td>
             <td>string</td>
-            <td>The unique identifier of the currency.</td>
+            <td>The unique identifier of the currency</td>
         </tr>
         <tr>
             <td><code>name</code></td>
             <td>string</td>
-            <td>The name of the currency.</td>
+            <td>The name of the currency</td>
         </tr>
         <tr>
             <td><code>code</code></td>
@@ -187,12 +187,12 @@ Represents a pair of currencies in exchange module.
         <tr>
             <td><code>id</code></td>
             <td>string</td>
-            <td>The unique identifier of the pair.</td>
+            <td>The unique identifier of the pair</td>
         </tr>
         <tr>
             <td><code>name</code></td>
             <td>string</td>
-            <td>The name of the pair.</td>
+            <td>The name of the pair</td>
         </tr>
         <tr>
             <td><code>externalId</code></td>

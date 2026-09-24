@@ -192,7 +192,7 @@ A parameter value within an answer, identified by its ParameterDefinition ID
         <tr>
             <td><code>type</code></td>
             <td>ParameterType</td>
-            <td>Gets or sets the type of the parameter.Allowed values: SingleLineText,MultiLineText,Address,Contact,Checkbox,Choice,Subdomain,Heading,DropDown,Email,DataObject,Date,DateAndTime,Collection</td>
+            <td>Gets or sets the type of the parameterAllowed values: SingleLineText,MultiLineText,Address,Contact,Checkbox,Choice,Subdomain,Heading,DropDown,Email,DataObject,Date,DateAndTime,Collection</td>
         </tr>
         <tr>
             <td><code>value</code></td>
@@ -202,7 +202,7 @@ A parameter value within an answer, identified by its ParameterDefinition ID
         <tr>
             <td><code>displayValue</code></td>
             <td>string</td>
-            <td>Gets or sets the human-readable display representation of Mpt.Helpdesk.Models.Answers.AnswerParameter.Value.</td>
+            <td>Gets or sets the human-readable display representation of Mpt.Helpdesk.Models.Answers.AnswerParameter.Value</td>
         </tr>
         <tr>
             <td><code>constraints</code></td>
@@ -216,7 +216,7 @@ A parameter value within an answer, identified by its ParameterDefinition ID
 Populated only for Platform.Models.Core.Components.Parameters.ParameterType.Choice, Platform.Models.Core.Components.Parameters.ParameterType.Checkbox and
 Platform.Models.Core.Components.Parameters.ParameterType.DropDown; null for every other type. Initially copied from the
 ParameterDefinition and overridable by the validate webhook, so submitted values are checked against the
-options this answer was offered rather than the definition's current list.</td>
+options this answer was offered rather than the definition's current list</td>
         </tr>
         <tr>
             <td><code>error</code></td>
@@ -224,7 +224,7 @@ options this answer was offered rather than the definition's current list.</td>
             <td>Structured error on this parameter, set by the assignee (manual) or by automated validation
 (system errors E000001 required, E000002 capacity exceeded, E000003 capacity not met,
 E000004 value out of range). A manual error set by the assignee always takes precedence over a
-system error.</td>
+system error</td>
         </tr>
         <tr>
             <td><code>groups</code></td>
@@ -306,17 +306,17 @@ system error.</td>
         <tr>
             <td><code>description</code></td>
             <td>string</td>
-            <td>Gets or sets the description associated with the chat.</td>
+            <td>Gets or sets the description associated with the chat</td>
         </tr>
         <tr>
             <td><code>type</code></td>
             <td>ChatType</td>
-            <td>Represents the type of chat, indicating whether it is a direct message, group chat, channel, or support case.Allowed values: Direct,Group,Channel,Case</td>
+            <td>Represents the type of chat, indicating whether it is a direct message, group chat, channel, or support caseAllowed values: Direct,Group,Channel,Case</td>
         </tr>
         <tr>
             <td><code>participants</code></td>
             <td>array</td>
-            <td>Represents the participants in the chat.</td>
+            <td>Represents the participants in the chat</td>
         </tr>
         <tr>
             <td><code>lastMessage</code></td>
@@ -326,7 +326,7 @@ system error.</td>
         <tr>
             <td><code>attachments</code></td>
             <td>array</td>
-            <td>Represents the attachments associated with the chat.</td>
+            <td>Represents the attachments associated with the chat</td>
         </tr>
     </tbody>
 </table>
@@ -367,7 +367,7 @@ system error.</td>
         <tr>
             <td><code>file</code></td>
             <td>File</td>
-            <td>Represents the file this attachment belongs to.</td>
+            <td>Represents the file this attachment belongs to</td>
         </tr>
     </tbody>
 </table>
@@ -398,12 +398,12 @@ system error.</td>
         <tr>
             <td><code>content</code></td>
             <td>string</td>
-            <td>Content of the chat message.</td>
+            <td>Content of the chat message</td>
         </tr>
         <tr>
             <td><code>visibility</code></td>
             <td>MessageVisibility</td>
-            <td>Visibility of the chat message, indicating whether it is public or private.Allowed values: Public,Private</td>
+            <td>Visibility of the chat message, indicating whether it is public or privateAllowed values: Public,Private</td>
         </tr>
         <tr>
             <td><code>isDeleted</code></td>
@@ -439,12 +439,12 @@ system error.</td>
         <tr>
             <td><code>muted</code></td>
             <td>boolean</td>
-            <td>Flag indicates whether participant should be notified of new messages in the chat.</td>
+            <td>Flag indicates whether participant should be notified of new messages in the chat</td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>ParticipantStatus</td>
-            <td>Represents the status of the chat participant, indicating whether they are active, suspended, or exited.Allowed values: Active,Exited,Deactivated</td>
+            <td>Represents the status of the chat participant, indicating whether they are active, suspended, or exitedAllowed values: Active,Exited,Deactivated</td>
         </tr>
     </tbody>
 </table>
@@ -526,17 +526,17 @@ Represents a file in the helpdesk module
         <tr>
             <td><code>filename</code></td>
             <td>string</td>
-            <td>Represents the name of the file associated with the attachment.</td>
+            <td>Represents the name of the file associated with the attachment</td>
         </tr>
         <tr>
             <td><code>size</code></td>
             <td>integer</td>
-            <td>Indicates the size of the file in bytes.</td>
+            <td>Indicates the size of the file in bytes</td>
         </tr>
         <tr>
             <td><code>contentType</code></td>
             <td>string</td>
-            <td>Represents the MIME type of the file content.</td>
+            <td>Represents the MIME type of the file content</td>
         </tr>
     </tbody>
 </table>
@@ -587,17 +587,17 @@ Represents a file in the helpdesk module
         <tr>
             <td><code>description</code></td>
             <td>string</td>
-            <td>Gets or sets the description associated with the form.</td>
+            <td>Gets or sets the description associated with the form</td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>FormStatus</td>
-            <td>Gets or sets the status of the Form.Allowed values: Unpublished,Published</td>
+            <td>Gets or sets the status of the FormAllowed values: Unpublished,Published</td>
         </tr>
         <tr>
             <td><code>externalId</code></td>
             <td>string</td>
-            <td>Gets or sets the optional external identifier associated with the form.</td>
+            <td>Gets or sets the optional external identifier associated with the form</td>
         </tr>
         <tr>
             <td><code>account</code></td>
@@ -607,12 +607,12 @@ Represents a file in the helpdesk module
         <tr>
             <td><code>statistics</code></td>
             <td>FormStatistics</td>
-            <td>Gets or sets usage statistics for this form.</td>
+            <td>Gets or sets usage statistics for this form</td>
         </tr>
         <tr>
             <td><code>isDeleted</code></td>
             <td>boolean</td>
-            <td>Indicates whether the queue has been marked as deleted.</td>
+            <td>Indicates whether the queue has been marked as deleted</td>
         </tr>
     </tbody>
 </table>
@@ -674,12 +674,12 @@ Represents usage statistics for a form.
         <tr>
             <td><code>groups</code></td>
             <td>integer</td>
-            <td>The number of parameter groups assigned to this form.</td>
+            <td>The number of parameter groups assigned to this form</td>
         </tr>
         <tr>
             <td><code>parameters</code></td>
             <td>integer</td>
-            <td>The total number of parameter definitions across all groups in this form.</td>
+            <td>The total number of parameter definitions across all groups in this form</td>
         </tr>
     </tbody>
 </table>

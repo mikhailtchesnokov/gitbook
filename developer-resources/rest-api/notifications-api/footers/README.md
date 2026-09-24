@@ -20,7 +20,7 @@ Represents a localized footer template that can be appended to notification mess
         <tr>
             <td><code>audit</code></td>
             <td>FooterAudit</td>
-            <td>Represents audit information for a Mpt.Notifications.Models.Footers.Footer.</td>
+            <td>Represents audit information for a Mpt.Notifications.Models.Footers.Footer</td>
         </tr>
         <tr>
             <td><code>$meta</code></td>
@@ -35,22 +35,22 @@ Represents a localized footer template that can be appended to notification mess
         <tr>
             <td><code>languageCode</code></td>
             <td>string</td>
-            <td>Gets or sets the language code for this footer.</td>
+            <td>Gets or sets the language code for this footer</td>
         </tr>
         <tr>
             <td><code>content</code></td>
             <td>string</td>
-            <td>Gets or sets the content of the footer.</td>
+            <td>Gets or sets the content of the footer</td>
         </tr>
         <tr>
             <td><code>isDefault</code></td>
             <td>boolean</td>
-            <td>Gets or sets a value indicating whether this is the default footer.</td>
+            <td>Gets or sets a value indicating whether this is the default footer</td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>string</td>
-            <td>Gets or sets the current status of the footer.</td>
+            <td>Gets or sets the current status of the footer</td>
         </tr></tbody>
 </table>
 
@@ -80,12 +80,12 @@ Represents audit information for a Mpt.Notifications.Models.Footers.Footer.
         <tr>
             <td><code>activated</code></td>
             <td>PlatformObjectEvent</td>
-            <td>Gets or sets the event information for when the footer was activated.</td>
+            <td>Gets or sets the event information for when the footer was activated</td>
         </tr>
         <tr>
             <td><code>deleted</code></td>
             <td>PlatformObjectEvent</td>
-            <td>Gets or sets the event information for when the footer was deleted.</td>
+            <td>Gets or sets the event information for when the footer was deleted</td>
         </tr>
     </tbody>
 </table>
