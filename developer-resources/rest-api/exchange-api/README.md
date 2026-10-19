@@ -20,7 +20,7 @@ Review the shared API docs before you work with **exchange** resources.
 
 * [Authentication](../)
 * [URL structure](../../api-usage-and-reference/url-structure.md)
-* [Error handling](../../api-usage-and-reference/errors-handling.md)
+* [Error handling](./../../api-usage-and-reference/error-handling.md)
 
 ## Browse collections
 
