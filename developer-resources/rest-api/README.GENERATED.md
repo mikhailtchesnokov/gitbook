@@ -14,7 +14,7 @@
 		</tr>
 		<tr>
 			<td><a href="audit-api">Audit API</a></td>
-			<td>Manages  & more</td>
+			<td>Manages auditrecords, auditeventtypes & more</td>
 			<td><a href="audit-api">audit-api</a></td>
 		</tr>
 		<tr>
