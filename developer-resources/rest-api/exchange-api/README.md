@@ -41,13 +41,13 @@ See the following sections to determine which roles are authorized to perform sp
 </thead>
 <tbody>
 	<tr>
-		<td><a href="/currencies/get-exchange-currencies-092.md">/public/v1/exchange/currencies</a></td>
+		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/exchange/currencies</a></td>
 		<td>GET</td>
 		<td>Gets a list of currencies</td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td><a href="currencies/get-exchange-currencies-093.md">/public/v1/exchange/currencies/{id}</a></td>
+		<td><a href="currency/get-exchange-currencies-093.md">/public/v1/exchange/currencies/{id}</a></td>
 		<td>GET</td>
 		<td>Retrieves a currency by ID</td>
 		<td>ops,client,vendor</td>
