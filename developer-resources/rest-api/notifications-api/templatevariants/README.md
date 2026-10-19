@@ -3,6 +3,8 @@
 
 Represents a language-specific variant of a template.
 
+{% include "../../../../.gitbook/includes/api-table-header.md" %}
+
 <table data-search="false">
     <thead>
         <tr>

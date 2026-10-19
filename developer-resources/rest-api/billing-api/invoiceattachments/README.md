@@ -3,6 +3,8 @@
 
 Represents an attachment associated with an invoice in the billing system.
 
+{% include "../../../../.gitbook/includes/api-table-header.md" %}
+
 <table data-search="false">
     <thead>
         <tr>

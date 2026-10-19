@@ -3,6 +3,8 @@
 
 Represents a billing statement in the system, containing details about transactions, pricing, and associated entities.
 
+{% include "../../../../.gitbook/includes/api-table-header.md" %}
+
 <table data-search="false">
     <thead>
         <tr>

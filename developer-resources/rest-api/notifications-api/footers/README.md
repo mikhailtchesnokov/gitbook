@@ -3,6 +3,8 @@
 
 Represents a localized footer template that can be appended to notification messages.
 
+{% include "../../../../.gitbook/includes/api-table-header.md" %}
+
 <table data-search="false">
     <thead>
         <tr>

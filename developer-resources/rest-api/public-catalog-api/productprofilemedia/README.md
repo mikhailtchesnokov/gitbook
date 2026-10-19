@@ -3,6 +3,8 @@
 
 Represents a product profile media entity.
 
+{% include "../../../../.gitbook/includes/api-table-header.md" %}
+
 <table data-search="false">
     <thead>
         <tr>

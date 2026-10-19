@@ -3,6 +3,8 @@
 
 Record of rate for specific day
 
+{% include "../../../../.gitbook/includes/api-table-header.md" %}
+
 <table data-search="false">
     <thead>
         <tr>

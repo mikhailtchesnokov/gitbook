@@ -3,6 +3,8 @@
 
 Represents an individual notification message sent to a specific contact.
 
+{% include "../../../../.gitbook/includes/api-table-header.md" %}
+
 <table data-search="false">
     <thead>
         <tr>

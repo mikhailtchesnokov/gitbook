@@ -3,6 +3,8 @@
 
 Represents a pair of currencies in exchange module.
 
+{% include "../../../../.gitbook/includes/api-table-header.md" %}
+
 <table data-search="false">
     <thead>
         <tr>

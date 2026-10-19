@@ -3,6 +3,8 @@
 
 Represents a notification category that can be used to organize and filter notifications.
 
+{% include "../../../../.gitbook/includes/api-table-header.md" %}
+
 <table data-search="false">
     <thead>
         <tr>

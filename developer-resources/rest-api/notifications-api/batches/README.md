@@ -3,6 +3,8 @@
 
 Represents a batch of notification messages that share common properties.
 
+{% include "../../../../.gitbook/includes/api-table-header.md" %}
+
 <table data-search="false">
     <thead>
         <tr>
