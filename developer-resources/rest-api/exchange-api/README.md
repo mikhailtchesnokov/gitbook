@@ -10,52 +10,9 @@ The API supports the following business objects:
 
 *  **Rate**  - record of rate for specific day
 
-With this API, you can define currencies, create currency pairs (for example, EUR: USD), and define and manage exchange rates for those pairs. 
+Use the API to retrieve and manage these resources. Depending on the resource, available operations include creating, updating, and deleting records.
+The full list of available operations is provided below.
 
-You can also perform additional operations, including: 
-
-Updating the currency to modify fields like name, code, and precision (not status).
-
-Delete a currency (only if not used by a pair), currency pair, or rate.
-
-Modify the externalId and notes within a currency pair.
-
-Modify the currency rate, for example, to override a rate for hedging.
-
-
-You can also perform additional operations, including:
-
-*  Gets a list of currencies.
-
-*  Creates a new currency.
-
-*  Retrieves a currency by ID.
-
-*  Updates an existing currency.
-
-*  Deletes currency by ID.
-
-*  Gets a download redirect for a currency icon.
-
-*  Gets a list of currency pairs.
-
-*  Creates a new pair or pairs of currencies.
-
-*  Updates pairs from bulk data.
-
-*  Deletes multiple pairs from the body.
-
-*  Retrieves a currency pair by ID.
-
-*  Retrieves a rate by ID within a pair.
-
-*  Gets a list of rates for a pair.
-
-*  Updates rates for a pair.
-
-*  Creates a new rate.
-
-*  Deletes rates from bulk data.
 
 
 ## Before you start
@@ -65,18 +22,6 @@ Review the shared API docs before you work with currency resources.
 * [Authentication](../)
 * [URL structure](../../api-usage-and-reference/url-structure.md)
 * [Error handling](../../api-usage-and-reference/errors-handling.md)
-
-
-## Core concepts
-
-The Exchange API is built around the following core resources:
-
-*  **Currency**  - Represents currency in exchange module.
-
-*  **Pair**  - Represents a pair of currencies in exchange module.
-
-*  **Rate**  - Record of rate for specific day
-
 
 ## Browse collections
 
