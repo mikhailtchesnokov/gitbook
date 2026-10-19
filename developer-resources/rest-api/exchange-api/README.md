@@ -4,9 +4,9 @@ The **Exchange API** provides **REST** endpoints for managing resources within t
 
 The API supports the following business objects:
 
-*  **Currency**  - represents currency in exchange module.
+*  **Currency**  - represents currency in exchange module
 
-*  **Pair**  - represents a pair of currencies in exchange module.
+*  **Pair**  - represents a pair of currencies in exchange module
 
 *  **Rate**  - record of rate for specific day
 
