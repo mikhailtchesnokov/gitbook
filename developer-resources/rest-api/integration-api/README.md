@@ -4,11 +4,11 @@ The **Integration API** provides **REST** endpoints for managing resources withi
 
 The API supports the following business objects:
 
-*  **ExtensionCategory**  - 
-
 *  **Document**  - 
 
 *  **Extension**  - 
+
+*  **ExtensionCategory**  - 
 
 *  **Installation**  - 
 

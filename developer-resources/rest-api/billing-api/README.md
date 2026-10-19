@@ -4,29 +4,29 @@ The **Billing API** provides **REST** endpoints for managing resources within th
 
 The API supports the following business objects:
 
-*  **CreditMemoAttachment**  - represents an attachment associated with a credit memo in the billing system
-
 *  **CreditMemo**  - represents a credit memo in the billing system
 
-*  **CustomLedgerAttachment**  - represents an attachment associated with a custom ledger in the billing system
+*  **CreditMemoAttachment**  - represents an attachment associated with a credit memo in the billing system
 
 *  **CustomLedger**  - represents a custom ledger in the billing system
 
-*  **InvoiceAttachment**  - represents an attachment associated with an invoice in the billing system
+*  **CustomLedgerAttachment**  - represents an attachment associated with a custom ledger in the billing system
 
 *  **Invoice**  - represents an invoice entity in the billing system
 
-*  **JournalAttachment**  - represents an attachment associated with a journal in the billing system
+*  **InvoiceAttachment**  - represents an attachment associated with an invoice in the billing system
 
 *  **Journal**  - represents a journal entry in the billing system
 
-*  **LedgerAttachment**  - represents an attachment associated with a ledger in the billing system
+*  **JournalAttachment**  - represents an attachment associated with a journal in the billing system
 
 *  **Ledger**  - represents a ledger in the billing system
 
-*  **StatementAttachment**  - represents an attachment associated with a billing statement in the system
+*  **LedgerAttachment**  - represents an attachment associated with a ledger in the billing system
 
 *  **Statement**  - represents a billing statement in the system, containing details about transactions, pricing, and associated entities
+
+*  **StatementAttachment**  - represents an attachment associated with a billing statement in the system
 
 Use the API to retrieve and manage these resources. Depending on the resource, available operations include creating, updating, and deleting records.
 The full list of available operations is provided below.

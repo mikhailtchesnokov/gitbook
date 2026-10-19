@@ -6,17 +6,17 @@ The API supports the following business objects:
 
 *  **Agreement**  - 
 
-*  **CommerceAgreementAttachment**  - 
-
 *  **Asset**  - 
 
-*  **Order**  - 
+*  **CommerceAgreementAttachment**  - 
 
-*  **Subscription**  - 
+*  **Order**  - 
 
 *  **SplitBillingAgreement**  - 
 
 *  **SplitBillingSubscription**  - 
+
+*  **Subscription**  - 
 
 Use the API to retrieve and manage these resources. Depending on the resource, available operations include creating, updating, and deleting records.
 The full list of available operations is provided below.

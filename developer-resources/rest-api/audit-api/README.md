@@ -4,6 +4,10 @@ The **Audit API** provides **REST** endpoints for managing resources within the 
 
 The API supports the following business objects:
 
+*  **AuditEventType**  - 
+
+*  **AuditRecord**  - 
+
 Use the API to retrieve and manage these resources. Depending on the resource, available operations include creating, updating, and deleting records.
 The full list of available operations is provided below.
 

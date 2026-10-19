@@ -10,6 +10,10 @@ The API supports the following business objects:
 
 *  **ChatAttachment**  - 
 
+*  **ChatLink**  - 
+
+*  **ChatMessage**  - 
+
 *  **ChatParticipant**  - 
 
 *  **Feedback**  - 
@@ -17,10 +21,6 @@ The API supports the following business objects:
 *  **FeedbackAttachment**  - 
 
 *  **Form**  - 
-
-*  **ChatLink**  - 
-
-*  **ChatMessage**  - 
 
 *  **Queue**  - 
 

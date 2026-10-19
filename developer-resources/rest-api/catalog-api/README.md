@@ -4,11 +4,7 @@ The **Catalog API** provides **REST** endpoints for managing resources within th
 
 The API supports the following business objects:
 
-*  **PricingPolicyAttachment**  - 
-
 *  **Authorization**  - 
-
-*  **ProductDocument**  - 
 
 *  **Document**  - 
 
@@ -16,9 +12,9 @@ The API supports the following business objects:
 
 *  **Listing**  - 
 
-*  **ParameterGroup**  - 
-
 *  **ParameterDefinition**  - 
+
+*  **ParameterGroup**  - 
 
 *  **PriceList**  - 
 
@@ -26,11 +22,15 @@ The API supports the following business objects:
 
 *  **PricingPolicy**  - 
 
+*  **PricingPolicyAttachment**  - 
+
+*  **Product**  - 
+
+*  **ProductDocument**  - 
+
 *  **ProductItem**  - 
 
 *  **ProductMedia**  - 
-
-*  **Product**  - 
 
 *  **Template**  - 
 

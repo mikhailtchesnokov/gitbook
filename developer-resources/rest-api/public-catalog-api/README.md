@@ -8,11 +8,11 @@ The API supports the following business objects:
 
 *  **Industry**  - 
 
+*  **ProductProfile**  - 
+
 *  **ProductProfileAttachment**  - represents a product profile attachment entity
 
 *  **ProductProfileMedia**  - represents a product profile media entity
-
-*  **ProductProfile**  - 
 
 *  **Segment**  - 
 
