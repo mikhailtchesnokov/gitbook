@@ -1,8 +1,21 @@
 # Exchange API
 
+The **Exchange API** manages everything related to currencies and exchange rates in the SoftwareOne Marketplace. 
+
+With this API, you can define currencies, create currency pairs (for example, EUR: USD), and define and manage exchange rates for those pairs. You can also perform additional operations, including: 
+
+Updating the currency to modify fields like name, code, and precision (not status).
+
+Delete a currency (only if not used by a pair), currency pair, or rate.
+
+Modify the externalId and notes within a currency pair.
+
+Modify the currency rate, for example, to override a rate for hedging.
+
+
 You can also perform additional operations, including:
 
-*  Gets a list of `currencies`.
+*  Gets a list of currencies.
 
 *  Creates a new currency.
 
