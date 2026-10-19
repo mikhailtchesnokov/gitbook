@@ -1,33 +1,20 @@
 # Audit API
 
-You can also perform additional operations, including:
+The **Audit API** provides **REST** endpoints for managing resources within the **audit** business domain of the SoftwareOne Marketplace. 
 
-*  Gets a list of audit event types.
+The API supports the following business objects:
 
-*  Retrieves an audit event type by ID.
-
-*  Updates an event type.
-
-*  Creates a new audit record.
-
-*  Gets a list of audit records.
-
-*  Retrieves an audit record by ID.
+Use the API to retrieve and manage these resources. Depending on the resource, available operations include creating, updating, and deleting records.
+The full list of available operations is provided below.
 
 
 ## Before you start
 
-Review the shared API docs before you work with currency resources.
+Review the shared API docs before you work with **audit** resources.
 
 * [Authentication](../)
 * [URL structure](../../api-usage-and-reference/url-structure.md)
 * [Error handling](../../api-usage-and-reference/errors-handling.md)
-
-
-## Core concepts
-
-The Audit API is built around the following core resources:
-
 
 ## Browse collections
 

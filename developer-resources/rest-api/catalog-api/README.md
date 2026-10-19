@@ -1,20 +1,8 @@
 # Catalog API
 
-You can also perform additional operations, including:
+The **Catalog API** provides **REST** endpoints for managing resources within the **catalog** business domain of the SoftwareOne Marketplace. 
 
-
-## Before you start
-
-Review the shared API docs before you work with currency resources.
-
-* [Authentication](../)
-* [URL structure](../../api-usage-and-reference/url-structure.md)
-* [Error handling](../../api-usage-and-reference/errors-handling.md)
-
-
-## Core concepts
-
-The Catalog API is built around the following core resources:
+The API supports the following business objects:
 
 *  **PricingPolicyAttachment**  - 
 
@@ -52,6 +40,17 @@ The Catalog API is built around the following core resources:
 
 *  **UnitOfMeasure**  - 
 
+Use the API to retrieve and manage these resources. Depending on the resource, available operations include creating, updating, and deleting records.
+The full list of available operations is provided below.
+
+
+## Before you start
+
+Review the shared API docs before you work with **catalog** resources.
+
+* [Authentication](../)
+* [URL structure](../../api-usage-and-reference/url-structure.md)
+* [Error handling](../../api-usage-and-reference/errors-handling.md)
 
 ## Browse collections
 

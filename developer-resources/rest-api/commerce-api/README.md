@@ -1,122 +1,8 @@
 # Commerce API
 
-You can also perform additional operations, including:
+The **Commerce API** provides **REST** endpoints for managing resources within the **commerce** business domain of the SoftwareOne Marketplace. 
 
-*  Creates a new agreement.
-
-*  Updates an existing agreement.
-
-*  Renders an agreement template.
-
-*  Renders an agreement template.
-
-*  Lists attachments for the specified agreement.
-
-*  Creates a new attachment for an agreement.
-
-*  Gets an attachment by id or redirects to its download.
-
-*  Updates an existing agreement attachment.
-
-*  Deletes an agreement attachment.
-
-*  Creates a new asset.
-
-*  Updates an existing asset.
-
-*  Terminates an existing asset.
-
-*  Renders an asset template.
-
-*  Lists all agreement lines across the marketplace.
-
-*  Lists agreement lines for the specified agreement.
-
-*  Lists agreement lines for the specified subscription.
-
-*  Lists order lines for the specified order.
-
-*  Lists agreement lines for the specified asset.
-
-*  Lists assets for the specified order.
-
-*  Creates a new asset for the order.
-
-*  Gets an order asset by id.
-
-*  Updates an existing order asset.
-
-*  Deletes an existing order asset.
-
-*  Renders an order asset template.
-
-*  Creates a new order for an agreement or creates a purchase order with a new agreement.
-
-*  Updates an order. Immutable fields such as state and agreement assignment cannot be changed.
-
-*  Deletes an order. Only draft orders can be deleted.
-
-*  Places an order and sets its status to processing.
-
-*  Query's an order, returning it to the client for updates.
-
-*  Completes an order and updates the related agreement.
-
-*  Quotes an order.
-
-*  Fails an order and sets its status to failed.
-
-*  Validates an order by invoking the vendor connector validation workflow.
-
-*  Renders an order template.
-
-*  Renders an order template.
-
-*  Sends an order notification to a user.
-
-*  Lists subscriptions for the specified order.
-
-*  Creates a new subscription for the order.
-
-*  Gets an order subscription by id.
-
-*  Updates an existing order subscription.
-
-*  Deletes an order subscription.
-
-*  Renders an order subscription template.
-
-*  Gets split billing allocations for an agreement.
-
-*  Activates split billing for an agreement.
-
-*  Updates split billing allocations for an agreement.
-
-*  Gets split billing allocations for a subscription.
-
-*  Updates split billing allocations for a subscription.
-
-*  Creates a new subscription.
-
-*  Updates an existing subscription.
-
-*  Terminates an existing subscription.
-
-*  Renders a subscription template.
-
-
-## Before you start
-
-Review the shared API docs before you work with currency resources.
-
-* [Authentication](../)
-* [URL structure](../../api-usage-and-reference/url-structure.md)
-* [Error handling](../../api-usage-and-reference/errors-handling.md)
-
-
-## Core concepts
-
-The Commerce API is built around the following core resources:
+The API supports the following business objects:
 
 *  **Agreement**  - 
 
@@ -132,6 +18,17 @@ The Commerce API is built around the following core resources:
 
 *  **SplitBillingSubscription**  - 
 
+Use the API to retrieve and manage these resources. Depending on the resource, available operations include creating, updating, and deleting records.
+The full list of available operations is provided below.
+
+
+## Before you start
+
+Review the shared API docs before you work with **commerce** resources.
+
+* [Authentication](../)
+* [URL structure](../../api-usage-and-reference/url-structure.md)
+* [Error handling](../../api-usage-and-reference/errors-handling.md)
 
 ## Browse collections
 

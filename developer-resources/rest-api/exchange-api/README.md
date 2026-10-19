@@ -14,10 +14,9 @@ Use the API to retrieve and manage these resources. Depending on the resource, a
 The full list of available operations is provided below.
 
 
-
 ## Before you start
 
-Review the shared API docs before you work with currency resources.
+Review the shared API docs before you work with **exchange** resources.
 
 * [Authentication](../)
 * [URL structure](../../api-usage-and-reference/url-structure.md)

@@ -1,174 +1,8 @@
 # Accounts API
 
-You can also perform additional operations, including:
+The **Accounts API** provides **REST** endpoints for managing resources within the **accounts** business domain of the SoftwareOne Marketplace. 
 
-*  Gets account notification settings.
-
-*  Updates account notification settings.
-
-*  List accounts
-
-*  Create account
-
-*  Get account by ID
-
-*  Update account
-
-*  Enable account
-
-*  Disable account
-
-*  Activate account
-
-*  Deactivate account
-
-*  Validate account
-
-*  Get account icon
-
-*  List account users
-
-*  Create user (invite or add) inviting him into the account
-
-*  Get account user by ID
-
-*  Update user in account
-
-*  Delete user from account
-
-*  Add account user to group
-
-*  Change account user groups
-
-*  Remove account user from group
-
-*  Resend invite
-
-*  Send new invite
-
-*  Accept invite
-
-*  List API tokens
-
-*  Create API token
-
-*  Get API token by ID
-
-*  Update API token
-
-*  Delete API token
-
-*  Enable API token
-
-*  Disable API token
-
-*  List cloud tenants
-
-*  Create cloud tenant
-
-*  Get cloud tenant by ID
-
-*  Delete cloud tenant
-
-*  Update cloud tenant
-
-*  List ERP links
-
-*  Get ERP link by ID
-
-*  Update ERP link
-
-*  Block ERP link
-
-*  Unblock ERP link
-
-*  List licensees
-
-*  Create licensee
-
-*  Get licensee by ID
-
-*  Update licensee
-
-*  Delete licensee
-
-*  Enable licensee
-
-*  Disable licensee
-
-*  Get licensee icon
-
-*  List modules
-
-*  Get module by ID
-
-*  List sellers
-
-*  Create seller
-
-*  Get seller by ID
-
-*  Update seller
-
-*  Delete seller
-
-*  Activate seller
-
-*  Deactivate seller
-
-*  Disable seller
-
-*  Get seller icon
-
-*  List service identities
-
-*  Get service identity by ID
-
-*  List user groups
-
-*  Create user group
-
-*  Get user group by ID
-
-*  Update user group
-
-*  Delete user group
-
-*  List users
-
-*  Get user by ID or unique filter
-
-*  Update user (multipart form)
-
-*  Delete user
-
-*  Set user password
-
-*  Unblock user
-
-*  Block user
-
-*  Check SSO status
-
-*  Get user icon
-
-*  List accounts associated with the user
-
-*  Update user's account settings
-
-
-## Before you start
-
-Review the shared API docs before you work with currency resources.
-
-* [Authentication](../)
-* [URL structure](../../api-usage-and-reference/url-structure.md)
-* [Error handling](../../api-usage-and-reference/errors-handling.md)
-
-
-## Core concepts
-
-The Accounts API is built around the following core resources:
+The API supports the following business objects:
 
 *  **Account**  - 
 
@@ -194,6 +28,17 @@ The Accounts API is built around the following core resources:
 
 *  **User**  - 
 
+Use the API to retrieve and manage these resources. Depending on the resource, available operations include creating, updating, and deleting records.
+The full list of available operations is provided below.
+
+
+## Before you start
+
+Review the shared API docs before you work with **accounts** resources.
+
+* [Authentication](../)
+* [URL structure](../../api-usage-and-reference/url-structure.md)
+* [Error handling](../../api-usage-and-reference/errors-handling.md)
 
 ## Browse collections
 

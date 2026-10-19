@@ -1,201 +1,44 @@
 # Billing API
 
-You can also perform additional operations, including:
+The **Billing API** provides **REST** endpoints for managing resources within the **billing** business domain of the SoftwareOne Marketplace. 
 
-*  Retrieves aggregated billing analytics data.
+The API supports the following business objects:
 
-*  Retrieves a specific credit memo attachment by its ID.
+*  **CreditMemoAttachment**  - represents an attachment associated with a credit memo in the billing system
 
-*  Updates an existing credit memo attachment.
+*  **CreditMemo**  - represents a credit memo in the billing system
 
-*  Deletes an individual credit memo attachment.
+*  **CustomLedgerAttachment**  - represents an attachment associated with a custom ledger in the billing system
 
-*  Retrieves a list of credit memo attachments.
+*  **CustomLedger**  - represents a custom ledger in the billing system
 
-*  Creates a new credit memo attachment.
+*  **InvoiceAttachment**  - represents an attachment associated with an invoice in the billing system
 
-*  Creates new credit memos.
+*  **Invoice**  - represents an invoice entity in the billing system
 
-*  Retrieves a specific custom ledger attachment by its ID.
+*  **JournalAttachment**  - represents an attachment associated with a journal in the billing system
 
-*  Updates an existing custom ledger attachment.
+*  **Journal**  - represents a journal entry in the billing system
 
-*  Deletes a custom ledger attachment.
+*  **LedgerAttachment**  - represents an attachment associated with a ledger in the billing system
 
-*  Retrieves a list of custom ledger attachments.
+*  **Ledger**  - represents a ledger in the billing system
 
-*  Creates a new custom ledger attachment.
+*  **StatementAttachment**  - represents an attachment associated with a billing statement in the system
 
-*  Retrieves a specific charge by its ID.
+*  **Statement**  - represents a billing statement in the system, containing details about transactions, pricing, and associated entities
 
-*  Retrieves a list of charges for a specific custom ledger.
-
-*  Creates a new custom ledger.
-
-*  Updates an existing custom ledger.
-
-*  Deletes a custom ledger by ID.
-
-*  Uploads a file for a specific custom ledger.
-
-*  Accepts a custom ledger.
-
-*  Queues a custom ledger for ERP integration.
-
-*  Retrieves a specific invoice attachment by its ID.
-
-*  Updates an existing invoice attachment.
-
-*  Deletes an invoice attachment.
-
-*  Retrieves a list of invoice attachments.
-
-*  Creates a new invoice attachment.
-
-*  Creates new invoices.
-
-*  Retrieves a specific journal attachment by its ID.
-
-*  Updates an existing journal attachment.
-
-*  Deletes a journal attachment.
-
-*  Retrieves a list of journal attachments.
-
-*  Creates a new journal attachment.
-
-*  Retrieves a specific charge by its ID.
-
-*  Retrieves a list of charges for a specific journal.
-
-*  Matches a charge to a subscription.
-
-*  Ignores a charge.
-
-*  Resets a charge.
-
-*  Creates a new journal.
-
-*  Updates an existing journal.
-
-*  Deletes the specified journal.
-
-*  Uploads a journal file.
-
-*  Regenerates a journal.
-
-*  Submits a journal for processing.
-
-*  Enquires the journal.
-
-*  Accepts a journal.
-
-*  Resets a journal.
-
-*  Recalculates a journal.
-
-*  Retrieves a list of sellers for a specific journal.
-
-*  Retrieves a specific ledger attachment by its ID.
-
-*  Updates an existing ledger attachment.
-
-*  Deletes a ledger attachment.
-
-*  Retrieves a list of ledger attachments.
-
-*  Creates a new ledger attachment.
-
-*  Retrieves a specific charge by its ID.
-
-*  Retrieves a list of charges for a specific ledger.
-
-*  Updates a ledger.
-
-*  Recalculates a ledger.
-
-*  Accepts a ledger.
-
-*  Queues a ledger for ERP integration.
-
-*  Creates a new manual override.
-
-*  Updates an existing manual override.
-
-*  Retrieves a specific statement attachment by its ID.
-
-*  Updates an existing statement attachment.
-
-*  Deletes a statement attachment.
-
-*  Retrieves a list of statement attachments.
-
-*  Creates a new statement attachment.
-
-*  Retrieves a specific charge by its ID.
-
-*  Retrieves a list of charges for a specific statement.
-
-*  Creates a new statement.
-
-*  Updates an existing statement.
-
-*  Cancels a statement.
-
-*  Marks a statement as error.
-
-*  Issues a statement.
-
-*  Sets statement to pending.
-
-*  Queues a statement.
-
-*  Retries a failed statement.
-
-*  Recalculates a statement.
-
-*  Adds a child statement to a consolidated parent statement.
-
-*  Removes a child statement from a consolidated parent statement.
+Use the API to retrieve and manage these resources. Depending on the resource, available operations include creating, updating, and deleting records.
+The full list of available operations is provided below.
 
 
 ## Before you start
 
-Review the shared API docs before you work with currency resources.
+Review the shared API docs before you work with **billing** resources.
 
 * [Authentication](../)
 * [URL structure](../../api-usage-and-reference/url-structure.md)
 * [Error handling](../../api-usage-and-reference/errors-handling.md)
-
-
-## Core concepts
-
-The Billing API is built around the following core resources:
-
-*  **CreditMemoAttachment**  - Represents an attachment associated with a credit memo in the billing system.
-
-*  **CreditMemo**  - Represents a credit memo in the billing system.
-
-*  **CustomLedgerAttachment**  - Represents an attachment associated with a custom ledger in the billing system.
-
-*  **CustomLedger**  - Represents a custom ledger in the billing system.
-
-*  **InvoiceAttachment**  - Represents an attachment associated with an invoice in the billing system.
-
-*  **Invoice**  - Represents an invoice entity in the billing system.
-
-*  **JournalAttachment**  - Represents an attachment associated with a journal in the billing system.
-
-*  **Journal**  - Represents a journal entry in the billing system.
-
-*  **LedgerAttachment**  - Represents an attachment associated with a ledger in the billing system.
-
-*  **Ledger**  - Represents a ledger in the billing system.
-
-*  **StatementAttachment**  - Represents an attachment associated with a billing statement in the system.
-
-*  **Statement**  - Represents a billing statement in the system, containing details about transactions, pricing, and associated entities.
-
 
 ## Browse collections
 

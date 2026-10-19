@@ -1,64 +1,8 @@
 # Procurement API
 
-You can also perform additional operations, including:
+The **Procurement API** provides **REST** endpoints for managing resources within the **procurement** business domain of the SoftwareOne Marketplace. 
 
-*  Get a list of ERP items
-
-*  Upsert ERP items
-
-*  Delete ERP items
-
-*  Retrieve an ERP item by ID
-
-*  Get a list of sales orders
-
-*  Upsert sales orders
-
-*  Delete sales orders
-
-*  Retrieve a sales order by ID
-
-*  Finalize a sales order
-
-*  Retry a sales order will try to finalize order again if the order is in an error status.
-
-*  Get sales order attachments
-
-*  Download a sales order attachment
-
-*  Get a list of sales quotes
-
-*  Upsert sales quotes
-
-*  Delete sales quotes
-
-*  Retrieve a sales quote by ID
-
-*  Finalize a sales quote
-
-*  Reject a sales quote
-
-*  Retry a sales quote will try to finalize or accept the quote again if the quote is in an error status.
-
-*  Accept a sales quote
-
-*  Get sales quote attachments
-
-*  Download a sales quote attachment
-
-
-## Before you start
-
-Review the shared API docs before you work with currency resources.
-
-* [Authentication](../)
-* [URL structure](../../api-usage-and-reference/url-structure.md)
-* [Error handling](../../api-usage-and-reference/errors-handling.md)
-
-
-## Core concepts
-
-The Procurement API is built around the following core resources:
+The API supports the following business objects:
 
 *  **ErpItem**  - 
 
@@ -66,6 +10,17 @@ The Procurement API is built around the following core resources:
 
 *  **SalesQuote**  - 
 
+Use the API to retrieve and manage these resources. Depending on the resource, available operations include creating, updating, and deleting records.
+The full list of available operations is provided below.
+
+
+## Before you start
+
+Review the shared API docs before you work with **procurement** resources.
+
+* [Authentication](../)
+* [URL structure](../../api-usage-and-reference/url-structure.md)
+* [Error handling](../../api-usage-and-reference/errors-handling.md)
 
 ## Browse collections
 

@@ -1,49 +1,24 @@
 # System API
 
-You can also perform additional operations, including:
+The **System API** provides **REST** endpoints for managing resources within the **system** business domain of the SoftwareOne Marketplace. 
 
-*  Get a list of tasks
+The API supports the following business objects:
 
-*  Create a task
+*  **Task**  - the task represents the state of an asynchronous, usually long running operation
 
-*  Retrieve a task by ID
+*  **TaskLog**  - 
 
-*  Update a task
-
-*  Get a task result
-
-*  Get task logs
-
-*  Create a task log
-
-*  Transition a task to Processing
-
-*  Transition a task to Rescheduled
-
-*  Transition a task to Queued
-
-*  Transition a task to Completed
-
-*  Transition a task to Failed
+Use the API to retrieve and manage these resources. Depending on the resource, available operations include creating, updating, and deleting records.
+The full list of available operations is provided below.
 
 
 ## Before you start
 
-Review the shared API docs before you work with currency resources.
+Review the shared API docs before you work with **system** resources.
 
 * [Authentication](../)
 * [URL structure](../../api-usage-and-reference/url-structure.md)
 * [Error handling](../../api-usage-and-reference/errors-handling.md)
-
-
-## Core concepts
-
-The System API is built around the following core resources:
-
-*  **Task**  - The Task represents the state of an asynchronous, usually long running operation.
-
-*  **TaskLog**  - 
-
 
 ## Browse collections
 

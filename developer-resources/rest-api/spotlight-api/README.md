@@ -1,35 +1,22 @@
 # Spotlight API
 
-You can also perform additional operations, including:
+The **Spotlight API** provides **REST** endpoints for managing resources within the **spotlight** business domain of the SoftwareOne Marketplace. 
 
-*  Get spotlight objects for the current account and buyer group
+The API supports the following business objects:
 
-*  Refresh spotlight cache for the current account and buyer group
+*  **SpotlightQuery**  - 
 
-*  Refresh spotlight cache for a specific object in the current context
-
-*  Get a list of spotlight queries
-
-*  Retrieve a spotlight query by ID
-
-*  Update a spotlight query
+Use the API to retrieve and manage these resources. Depending on the resource, available operations include creating, updating, and deleting records.
+The full list of available operations is provided below.
 
 
 ## Before you start
 
-Review the shared API docs before you work with currency resources.
+Review the shared API docs before you work with **spotlight** resources.
 
 * [Authentication](../)
 * [URL structure](../../api-usage-and-reference/url-structure.md)
 * [Error handling](../../api-usage-and-reference/errors-handling.md)
-
-
-## Core concepts
-
-The Spotlight API is built around the following core resources:
-
-*  **SpotlightQuery**  - 
-
 
 ## Browse collections
 

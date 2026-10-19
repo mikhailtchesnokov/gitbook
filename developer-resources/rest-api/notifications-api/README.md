@@ -1,133 +1,40 @@
 # Notifications API
 
-You can also perform additional operations, including:
+The **Notifications API** provides **REST** endpoints for managing resources within the **notifications** business domain of the SoftwareOne Marketplace. 
 
-*  Creates a new message batch with attachments.
+The API supports the following business objects:
 
-*  Gets a list of resources.
+*  **Batch**  - represents a batch of notification messages that share common properties
 
-*  Gets a batch attachment.
+*  **Category**  - represents a notification category that can be used to organize and filter notifications
 
-*  Gets a resource by ID.
+*  **Contact**  - represents a notification contact who can receive email notifications
 
-*  Creates a new category.
+*  **Directory**  - 
 
-*  Updates a category.
+*  **Footer**  - represents a localized footer template that can be appended to notification messages
 
-*  Deletes a category.
+*  **Message**  - represents an individual notification message sent to a specific contact
 
-*  Unpublishes a category.
+*  **NotificationTemplate**  - represents a reusable template that can be used to generate messages
 
-*  Publishes a category.
+*  **Subscriber**  - represents a subscription that defines which users or user groups should automatically receive notifications for a specific category
 
-*  Blocks a contact.
+*  **TemplateVariant**  - represents a language-specific variant of a template
 
-*  Creates a new contact.
+*  **Webhook**  - 
 
-*  Gets a list of resources.
-
-*  Unblocks a contact.
-
-*  Updates an existing contact.
-
-*  Deletes a contact.
-
-*  Gets a resource by ID.
-
-*  Gets contacts for a category and account.
-
-*  Gets a list of resources.
-
-*  Gets a resource by ID.
-
-*  Creates a new footer.
-
-*  Gets a list of resources.
-
-*  Updates a footer.
-
-*  Deletes a footer.
-
-*  Gets a resource by ID.
-
-*  Gets a list of resources.
-
-*  Gets a resource by ID.
-
-*  Activates a notification template.
-
-*  Creates a notification template.
-
-*  Deletes a notification template.
-
-*  Updates a notification template.
-
-*  Disables a notification template.
-
-*  Updates subscriber recipients.
-
-*  Gets a resource by ID.
-
-*  Enables a subscriber.
-
-*  Disables a subscriber.
-
-*  Gets a list of resources.
-
-*  Activates a template variant.
-
-*  Creates a template variant.
-
-*  Deletes a template variant.
-
-*  Updates a template variant.
-
-*  Disables a template variant.
-
-*  Upsert webhooks
-
-*  Updates webhook.
-
-*  Deletes webhook.
-
-*  Enables webhook.
-
-*  Disables webhook.
+Use the API to retrieve and manage these resources. Depending on the resource, available operations include creating, updating, and deleting records.
+The full list of available operations is provided below.
 
 
 ## Before you start
 
-Review the shared API docs before you work with currency resources.
+Review the shared API docs before you work with **notifications** resources.
 
 * [Authentication](../)
 * [URL structure](../../api-usage-and-reference/url-structure.md)
 * [Error handling](../../api-usage-and-reference/errors-handling.md)
-
-
-## Core concepts
-
-The Notifications API is built around the following core resources:
-
-*  **Batch**  - Represents a batch of notification messages that share common properties.
-
-*  **Category**  - Represents a notification category that can be used to organize and filter notifications.
-
-*  **Contact**  - Represents a notification contact who can receive email notifications.
-
-*  **Directory**  - 
-
-*  **Footer**  - Represents a localized footer template that can be appended to notification messages.
-
-*  **Message**  - Represents an individual notification message sent to a specific contact.
-
-*  **NotificationTemplate**  - Represents a reusable template that can be used to generate messages.
-
-*  **Subscriber**  - Represents a subscription that defines which users or user groups should automatically receive notifications for a specific category.
-
-*  **TemplateVariant**  - Represents a language-specific variant of a template.
-
-*  **Webhook**  - 
-
 
 ## Browse collections
 
