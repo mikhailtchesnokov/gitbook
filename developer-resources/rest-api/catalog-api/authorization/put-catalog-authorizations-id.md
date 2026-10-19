@@ -1,0 +1,2 @@
+# PUT catalog authorizations id
+

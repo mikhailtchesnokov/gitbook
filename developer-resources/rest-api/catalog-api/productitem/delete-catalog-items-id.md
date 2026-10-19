@@ -1,0 +1,2 @@
+# DELETE catalog items id
+

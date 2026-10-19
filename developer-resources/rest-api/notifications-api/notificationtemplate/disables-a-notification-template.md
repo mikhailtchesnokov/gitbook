@@ -1,0 +1,2 @@
+# Disables a notification template
+

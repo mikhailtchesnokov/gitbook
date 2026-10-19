@@ -1,0 +1,2 @@
+# Deletes currency by ID
+

@@ -1,0 +1,2 @@
+# PUT integration categories id
+

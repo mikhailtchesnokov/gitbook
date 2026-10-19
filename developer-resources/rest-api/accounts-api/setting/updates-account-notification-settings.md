@@ -1,0 +1,2 @@
+# Updates account notification settings
+

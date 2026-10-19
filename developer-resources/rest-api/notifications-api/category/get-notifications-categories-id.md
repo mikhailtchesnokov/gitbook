@@ -1,0 +1,2 @@
+# GET notifications categories id
+

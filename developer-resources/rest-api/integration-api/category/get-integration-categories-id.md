@@ -1,0 +1,2 @@
+# GET integration categories id
+

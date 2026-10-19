@@ -1,0 +1,2 @@
+# GET catalog authorizations id
+

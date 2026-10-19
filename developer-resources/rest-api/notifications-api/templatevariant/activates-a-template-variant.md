@@ -1,0 +1,2 @@
+# Activates a template variant
+

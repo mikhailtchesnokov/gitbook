@@ -1,0 +1,2 @@
+# Get licensee icon
+

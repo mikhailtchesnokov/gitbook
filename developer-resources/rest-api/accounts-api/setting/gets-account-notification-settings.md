@@ -1,0 +1,2 @@
+# Gets account notification settings
+

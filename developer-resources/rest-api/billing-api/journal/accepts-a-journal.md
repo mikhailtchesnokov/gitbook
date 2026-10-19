@@ -1,0 +1,2 @@
+# Accepts a journal
+

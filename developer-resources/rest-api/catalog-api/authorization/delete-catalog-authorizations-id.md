@@ -1,0 +1,2 @@
+# DELETE catalog authorizations id
+

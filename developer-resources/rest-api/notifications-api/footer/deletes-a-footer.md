@@ -1,0 +1,2 @@
+# Deletes a footer
+

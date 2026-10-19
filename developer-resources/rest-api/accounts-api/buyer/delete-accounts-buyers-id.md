@@ -1,0 +1,2 @@
+# DELETE accounts buyers id
+

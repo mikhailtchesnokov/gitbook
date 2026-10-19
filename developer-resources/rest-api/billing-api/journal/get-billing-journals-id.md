@@ -1,0 +1,2 @@
+# GET billing journals id
+
