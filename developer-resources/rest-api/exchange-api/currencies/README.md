@@ -3,7 +3,7 @@
 
 Represents currency in exchange module.
 
-{% include "../../../../.gitbook/includes/api-table-header.md" %}
+{% include "../../../../../.gitbook/includes/api-table-header.md" %}
 
 <table data-search="false">
     <thead>
