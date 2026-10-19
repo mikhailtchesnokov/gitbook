@@ -1,6 +1,6 @@
 # Exchange API
 
-The **Exchange API** manages everything related to **exchange** business domain in the SoftwareOne Marketplace. 
+The **Exchange API** provides **REST** endpoints for managing resources within the **exchange** business domain of the SoftwareOne Marketplace. 
 
 This domain contains the following business objecs: `Pair`, `Rate`, `Currency`,
 
