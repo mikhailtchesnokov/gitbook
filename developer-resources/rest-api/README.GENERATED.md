@@ -9,7 +9,7 @@
 	<tbody>
 		<tr>
 			<td><a href="accounts-api">Accounts API</a></td>
-			<td>Manages Account, AccountUser, ApiToken, Buyer, CloudTenant, ErpLink, Licensee, Module, Seller, Service, UserGroup, User</td>
+			<td>Manages `Account`, AccountUser, ApiToken, Buyer, CloudTenant, ErpLink, Licensee, Module, Seller, Service, UserGroup, User</td>
 			<td><a href="accounts-api">accounts-api</a></td>
 		</tr>
 		<tr>
