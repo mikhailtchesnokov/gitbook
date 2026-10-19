@@ -2,7 +2,7 @@
 
 The **Exchange API** manages everything related to **exchange** business domain in the SoftwareOne Marketplace. 
 
-This domain comprises the following business objecs:`Pair`,`Rate`,`Currency`,
+This domain contains the following business objecs: `Pair`, `Rate`, `Currency`,
 
 With this API, you can define currencies, create currency pairs (for example, EUR: USD), and define and manage exchange rates for those pairs. You can also perform additional operations, including: 
 
