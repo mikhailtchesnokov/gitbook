@@ -1,2 +1,0 @@
-# Deletes an agreement attachment
-

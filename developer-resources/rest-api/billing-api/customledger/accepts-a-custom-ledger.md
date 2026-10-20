@@ -1,2 +1,0 @@
-# Accepts a custom ledger
-

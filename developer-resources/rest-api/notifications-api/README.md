@@ -4,6 +4,8 @@ The **Notifications API** provides **REST** endpoints for managing resources wit
 
 The API supports the following business objects:
 
+*  **Attachment**  - represents a file attachment associated with a notification message or batch
+
 *  **Batch**  - represents a batch of notification messages that share common properties
 
 *  **Category**  - represents a notification category that can be used to organize and filter notifications
@@ -42,7 +44,7 @@ The API is organized into collections, each containing a set of operations. Acce
 
 See the following sections to determine which roles are authorized to perform specific operations within each collection:
 
-### Batches
+### Attachment
 
 <table>
 <thead>
@@ -55,25 +57,36 @@ See the following sections to determine which roles are authorized to perform sp
 </thead>
 <tbody>
 	<tr>
-		<td><a href="batches/get-notifications-batches-190.md">/public/v1/notifications/batches</a></td>
-		<td>GET</td>
-		<td>Gets a list of resources</td>
-		<td>ops,client,vendor</td>
-	</tr>
-	<tr>
-		<td><a href="batches/get-notifications-batches-191.md">/public/v1/notifications/batches/{batchId}/attachments/{attachmentId}</a></td>
+		<td><a href="attachment/get-notifications-batches-171.md">/public/v1/notifications/batches/{batchId}/attachments/{attachmentId}</a></td>
 		<td>GET</td>
 		<td>Gets a batch attachment</td>
 		<td>ops,client,vendor</td>
 	</tr>
+<tbody>
+</table>
+
+
+
+### Batch
+
+<table>
+<thead>
+<tr>
+ <td>Operation</td>
+ <td>Method</td>
+ <td>Description</td>
+ <td>Access</td>
+</tr>
+</thead>
+<tbody>
 	<tr>
-		<td><a href="batches/get-notifications-batches-192.md">/public/v1/notifications/batches/{id}</a></td>
+		<td><a href="batch/get-notifications-batches-170.md">/public/v1/notifications/batches/{id}</a></td>
 		<td>GET</td>
 		<td>Gets a resource by ID</td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td><a href="batches/post-notifications-batches-190.md">/public/v1/notifications/batches</a></td>
+		<td><a href="batch/post-notifications-batches-169.md">/public/v1/notifications/batches</a></td>
 		<td>POST</td>
 		<td>Creates a new message batch with attachments</td>
 		<td>ops,client,vendor</td>
@@ -83,7 +96,7 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Categories
+### Category
 
 <table>
 <thead>
@@ -96,45 +109,33 @@ See the following sections to determine which roles are authorized to perform sp
 </thead>
 <tbody>
 	<tr>
-		<td><a href="categories/get-notifications-categories-193.md">/public/v1/notifications/categories</a></td>
+		<td><a href="category/get-notifications-categories-173.md">/public/v1/notifications/categories/{id}</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td><a href="categories/get-notifications-categories-194.md">/public/v1/notifications/categories/{id}</a></td>
-		<td>GET</td>
-		<td></td>
-		<td>ops,client,vendor</td>
-	</tr>
-	<tr>
-		<td><a href="categories/post-notifications-categories-193.md">/public/v1/notifications/categories</a></td>
+		<td><a href="category/post-notifications-categories-172.md">/public/v1/notifications/categories</a></td>
 		<td>POST</td>
 		<td>Creates a new category</td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td><a href="categories/post-notifications-categories-195.md">/public/v1/notifications/categories/{id}/unpublish</a></td>
+		<td><a href="category/post-notifications-categories-174.md">/public/v1/notifications/categories/{id}/unpublish</a></td>
 		<td>POST</td>
 		<td>Unpublishes a category</td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td><a href="categories/post-notifications-categories-196.md">/public/v1/notifications/categories/{id}/publish</a></td>
+		<td><a href="category/post-notifications-categories-175.md">/public/v1/notifications/categories/{id}/publish</a></td>
 		<td>POST</td>
 		<td>Publishes a category</td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td><a href="categories/put-notifications-categories-194.md">/public/v1/notifications/categories/{id}</a></td>
+		<td><a href="category/put-notifications-categories-173.md">/public/v1/notifications/categories/{id}</a></td>
 		<td>PUT</td>
 		<td>Updates a category</td>
-		<td>ops,client,vendor</td>
-	</tr>
-	<tr>
-		<td><a href="categories/delete-notifications-categories-194.md">/public/v1/notifications/categories/{id}</a></td>
-		<td>DELETE</td>
-		<td>Deletes a category</td>
 		<td>ops,client,vendor</td>
 	</tr>
 <tbody>
@@ -142,7 +143,7 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Contacts
+### Contact
 
 <table>
 <thead>
@@ -155,59 +156,41 @@ See the following sections to determine which roles are authorized to perform sp
 </thead>
 <tbody>
 	<tr>
-		<td><a href="contacts/get-notifications-contacts-198.md">/public/v1/notifications/contacts</a></td>
-		<td>GET</td>
-		<td>Gets a list of resources</td>
-		<td>ops,client,vendor</td>
-	</tr>
-	<tr>
-		<td><a href="contacts/get-notifications-contacts-200.md">/public/v1/notifications/contacts/{id}</a></td>
+		<td><a href="contact/get-notifications-contacts-179.md">/public/v1/notifications/contacts/{id}</a></td>
 		<td>GET</td>
 		<td>Gets a resource by ID</td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td><a href="contacts/get-notifications-contacts-201.md">/public/v1/notifications/accounts/{accountId}/categories/{categoryId}/contacts</a></td>
-		<td>GET</td>
-		<td>Gets contacts for a category and account</td>
-		<td>ops,client,vendor</td>
-	</tr>
-	<tr>
-		<td><a href="contacts/post-notifications-contacts-197.md">/public/v1/notifications/contacts/{id}/block</a></td>
+		<td><a href="contact/post-notifications-contacts-176.md">/public/v1/notifications/contacts/{id}/block</a></td>
 		<td>POST</td>
 		<td>Blocks a contact</td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td><a href="contacts/post-notifications-contacts-198.md">/public/v1/notifications/contacts</a></td>
+		<td><a href="contact/post-notifications-contacts-177.md">/public/v1/notifications/contacts</a></td>
 		<td>POST</td>
 		<td>Creates a new contact</td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td><a href="contacts/post-notifications-contacts-199.md">/public/v1/notifications/contacts/{id}/unblock</a></td>
+		<td><a href="contact/post-notifications-contacts-178.md">/public/v1/notifications/contacts/{id}/unblock</a></td>
 		<td>POST</td>
 		<td>Unblocks a contact</td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td><a href="contacts/put-notifications-contacts-200.md">/public/v1/notifications/contacts/{id}</a></td>
+		<td><a href="contact/put-notifications-contacts-179.md">/public/v1/notifications/contacts/{id}</a></td>
 		<td>PUT</td>
 		<td>Updates an existing contact</td>
 		<td>ops,client,vendor</td>
 	</tr>
-	<tr>
-		<td><a href="contacts/delete-notifications-contacts-200.md">/public/v1/notifications/contacts/{id}</a></td>
-		<td>DELETE</td>
-		<td>Deletes a contact</td>
-		<td>ops,client,vendor</td>
-	</tr>
 <tbody>
 </table>
 
 
 
-### Directories
+### Directory
 
 <table>
 <thead>
@@ -220,13 +203,7 @@ See the following sections to determine which roles are authorized to perform sp
 </thead>
 <tbody>
 	<tr>
-		<td><a href="directories/get-notifications-directories-202.md">/public/v1/notifications/directories</a></td>
-		<td>GET</td>
-		<td>Gets a list of resources</td>
-		<td>ops,client,vendor</td>
-	</tr>
-	<tr>
-		<td><a href="directories/get-notifications-directories-203.md">/public/v1/notifications/directories/{id}</a></td>
+		<td><a href="directory/get-notifications-directories-180.md">/public/v1/notifications/directories/{id}</a></td>
 		<td>GET</td>
 		<td>Gets a resource by ID</td>
 		<td>ops,client,vendor</td>
@@ -236,7 +213,7 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Footers
+### Footer
 
 <table>
 <thead>
@@ -249,33 +226,21 @@ See the following sections to determine which roles are authorized to perform sp
 </thead>
 <tbody>
 	<tr>
-		<td><a href="footers/get-notifications-footers-204.md">/public/v1/notifications/footers</a></td>
-		<td>GET</td>
-		<td>Gets a list of resources</td>
-		<td>ops,client,vendor</td>
-	</tr>
-	<tr>
-		<td><a href="footers/get-notifications-footers-205.md">/public/v1/notifications/footers/{id}</a></td>
+		<td><a href="footer/get-notifications-footers-182.md">/public/v1/notifications/footers/{id}</a></td>
 		<td>GET</td>
 		<td>Gets a resource by ID</td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td><a href="footers/post-notifications-footers-204.md">/public/v1/notifications/footers</a></td>
+		<td><a href="footer/post-notifications-footers-181.md">/public/v1/notifications/footers</a></td>
 		<td>POST</td>
 		<td>Creates a new footer</td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td><a href="footers/put-notifications-footers-205.md">/public/v1/notifications/footers/{id}</a></td>
+		<td><a href="footer/put-notifications-footers-182.md">/public/v1/notifications/footers/{id}</a></td>
 		<td>PUT</td>
 		<td>Updates a footer</td>
-		<td>ops,client,vendor</td>
-	</tr>
-	<tr>
-		<td><a href="footers/delete-notifications-footers-205.md">/public/v1/notifications/footers/{id}</a></td>
-		<td>DELETE</td>
-		<td>Deletes a footer</td>
 		<td>ops,client,vendor</td>
 	</tr>
 <tbody>
@@ -283,7 +248,7 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Messages
+### Message
 
 <table>
 <thead>
@@ -296,13 +261,7 @@ See the following sections to determine which roles are authorized to perform sp
 </thead>
 <tbody>
 	<tr>
-		<td><a href="messages/get-notifications-messages-206.md">/public/v1/notifications/messages</a></td>
-		<td>GET</td>
-		<td>Gets a list of resources</td>
-		<td>ops,client,vendor</td>
-	</tr>
-	<tr>
-		<td><a href="messages/get-notifications-messages-207.md">/public/v1/notifications/messages/{id}</a></td>
+		<td><a href="message/get-notifications-messages-183.md">/public/v1/notifications/messages/{id}</a></td>
 		<td>GET</td>
 		<td>Gets a resource by ID</td>
 		<td>ops,client,vendor</td>
@@ -312,7 +271,7 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Notificationtemplates
+### Notificationtemplate
 
 <table>
 <thead>
@@ -325,45 +284,33 @@ See the following sections to determine which roles are authorized to perform sp
 </thead>
 <tbody>
 	<tr>
-		<td><a href="notificationtemplates/get-notifications-notificationtemplates-209.md">/public/v1/notifications/templates</a></td>
+		<td><a href="notificationtemplate/get-notifications-notificationtemplates-186.md">/public/v1/notifications/templates/{id}</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td><a href="notificationtemplates/get-notifications-notificationtemplates-210.md">/public/v1/notifications/templates/{id}</a></td>
-		<td>GET</td>
-		<td></td>
-		<td>ops,client,vendor</td>
-	</tr>
-	<tr>
-		<td><a href="notificationtemplates/post-notifications-notificationtemplates-208.md">/public/v1/notifications/templates/{id}/activate</a></td>
+		<td><a href="notificationtemplate/post-notifications-notificationtemplates-184.md">/public/v1/notifications/templates/{id}/activate</a></td>
 		<td>POST</td>
 		<td>Activates a notification template</td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td><a href="notificationtemplates/post-notifications-notificationtemplates-209.md">/public/v1/notifications/templates</a></td>
+		<td><a href="notificationtemplate/post-notifications-notificationtemplates-185.md">/public/v1/notifications/templates</a></td>
 		<td>POST</td>
 		<td>Creates a notification template</td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td><a href="notificationtemplates/post-notifications-notificationtemplates-211.md">/public/v1/notifications/templates/{id}/disable</a></td>
+		<td><a href="notificationtemplate/post-notifications-notificationtemplates-187.md">/public/v1/notifications/templates/{id}/disable</a></td>
 		<td>POST</td>
 		<td>Disables a notification template</td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td><a href="notificationtemplates/put-notifications-notificationtemplates-210.md">/public/v1/notifications/templates/{id}</a></td>
+		<td><a href="notificationtemplate/put-notifications-notificationtemplates-186.md">/public/v1/notifications/templates/{id}</a></td>
 		<td>PUT</td>
 		<td>Updates a notification template</td>
-		<td>ops,client,vendor</td>
-	</tr>
-	<tr>
-		<td><a href="notificationtemplates/delete-notifications-notificationtemplates-210.md">/public/v1/notifications/templates/{id}</a></td>
-		<td>DELETE</td>
-		<td>Deletes a notification template</td>
 		<td>ops,client,vendor</td>
 	</tr>
 <tbody>
@@ -371,7 +318,7 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Subscribers
+### Subscriber
 
 <table>
 <thead>
@@ -384,31 +331,25 @@ See the following sections to determine which roles are authorized to perform sp
 </thead>
 <tbody>
 	<tr>
-		<td><a href="subscribers/get-notifications-subscribers-212.md">/public/v1/notifications/subscribers/{id}</a></td>
+		<td><a href="subscriber/get-notifications-subscribers-188.md">/public/v1/notifications/subscribers/{id}</a></td>
 		<td>GET</td>
 		<td>Gets a resource by ID</td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td><a href="subscribers/get-notifications-subscribers-215.md">/public/v1/notifications/subscribers</a></td>
-		<td>GET</td>
-		<td>Gets a list of resources</td>
-		<td>ops,client,vendor</td>
-	</tr>
-	<tr>
-		<td><a href="subscribers/post-notifications-subscribers-213.md">/public/v1/notifications/subscribers/{id}/enable</a></td>
+		<td><a href="subscriber/post-notifications-subscribers-189.md">/public/v1/notifications/subscribers/{id}/enable</a></td>
 		<td>POST</td>
 		<td>Enables a subscriber</td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td><a href="subscribers/post-notifications-subscribers-214.md">/public/v1/notifications/subscribers/{id}/disable</a></td>
+		<td><a href="subscriber/post-notifications-subscribers-190.md">/public/v1/notifications/subscribers/{id}/disable</a></td>
 		<td>POST</td>
 		<td>Disables a subscriber</td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td><a href="subscribers/put-notifications-subscribers-212.md">/public/v1/notifications/subscribers/{id}</a></td>
+		<td><a href="subscriber/put-notifications-subscribers-188.md">/public/v1/notifications/subscribers/{id}</a></td>
 		<td>PUT</td>
 		<td>Updates subscriber recipients</td>
 		<td>ops,client,vendor</td>
@@ -418,7 +359,7 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Templatevariants
+### Templatevariant
 
 <table>
 <thead>
@@ -431,45 +372,33 @@ See the following sections to determine which roles are authorized to perform sp
 </thead>
 <tbody>
 	<tr>
-		<td><a href="templatevariants/get-notifications-templatevariants-217.md">/public/v1/notifications/templates/{templateId}/variants</a></td>
+		<td><a href="templatevariant/get-notifications-templatevariants-193.md">/public/v1/notifications/templates/{templateId}/variants/{id}</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td><a href="templatevariants/get-notifications-templatevariants-218.md">/public/v1/notifications/templates/{templateId}/variants/{id}</a></td>
-		<td>GET</td>
-		<td></td>
-		<td>ops,client,vendor</td>
-	</tr>
-	<tr>
-		<td><a href="templatevariants/post-notifications-templatevariants-216.md">/public/v1/notifications/templates/{templateId}/variants/{id}/activate</a></td>
+		<td><a href="templatevariant/post-notifications-templatevariants-191.md">/public/v1/notifications/templates/{templateId}/variants/{id}/activate</a></td>
 		<td>POST</td>
 		<td>Activates a template variant</td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td><a href="templatevariants/post-notifications-templatevariants-217.md">/public/v1/notifications/templates/{templateId}/variants</a></td>
+		<td><a href="templatevariant/post-notifications-templatevariants-192.md">/public/v1/notifications/templates/{templateId}/variants</a></td>
 		<td>POST</td>
 		<td>Creates a template variant</td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td><a href="templatevariants/post-notifications-templatevariants-219.md">/public/v1/notifications/templates/{templateId}/variants/{id}/disable</a></td>
+		<td><a href="templatevariant/post-notifications-templatevariants-194.md">/public/v1/notifications/templates/{templateId}/variants/{id}/disable</a></td>
 		<td>POST</td>
 		<td>Disables a template variant</td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td><a href="templatevariants/put-notifications-templatevariants-218.md">/public/v1/notifications/templates/{templateId}/variants/{id}</a></td>
+		<td><a href="templatevariant/put-notifications-templatevariants-193.md">/public/v1/notifications/templates/{templateId}/variants/{id}</a></td>
 		<td>PUT</td>
 		<td>Updates a template variant</td>
-		<td>ops,client,vendor</td>
-	</tr>
-	<tr>
-		<td><a href="templatevariants/delete-notifications-templatevariants-218.md">/public/v1/notifications/templates/{templateId}/variants/{id}</a></td>
-		<td>DELETE</td>
-		<td>Deletes a template variant</td>
 		<td>ops,client,vendor</td>
 	</tr>
 <tbody>
@@ -477,7 +406,7 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Webhooks
+### Webhook
 
 <table>
 <thead>
@@ -490,45 +419,15 @@ See the following sections to determine which roles are authorized to perform sp
 </thead>
 <tbody>
 	<tr>
-		<td><a href="webhooks/get-notifications-webhooks-220.md">/public/v1/notifications/webhooks</a></td>
+		<td><a href="webhook/get-notifications-webhooks-195.md">/public/v1/notifications/webhooks/{id}</a></td>
 		<td>GET</td>
 		<td></td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td><a href="webhooks/get-notifications-webhooks-221.md">/public/v1/notifications/webhooks/{id}</a></td>
-		<td>GET</td>
-		<td></td>
-		<td>ops,client,vendor</td>
-	</tr>
-	<tr>
-		<td><a href="webhooks/post-notifications-webhooks-220.md">/public/v1/notifications/webhooks</a></td>
-		<td>POST</td>
-		<td>Upsert webhooks</td>
-		<td>ops,client,vendor</td>
-	</tr>
-	<tr>
-		<td><a href="webhooks/post-notifications-webhooks-222.md">/public/v1/notifications/webhooks/{id}/enable</a></td>
-		<td>POST</td>
-		<td>Enables webhook</td>
-		<td>ops,client,vendor</td>
-	</tr>
-	<tr>
-		<td><a href="webhooks/post-notifications-webhooks-223.md">/public/v1/notifications/webhooks/{id}/disable</a></td>
-		<td>POST</td>
-		<td>Disables webhook</td>
-		<td>ops,client,vendor</td>
-	</tr>
-	<tr>
-		<td><a href="webhooks/put-notifications-webhooks-221.md">/public/v1/notifications/webhooks/{id}</a></td>
+		<td><a href="webhook/put-notifications-webhooks-195.md">/public/v1/notifications/webhooks/{id}</a></td>
 		<td>PUT</td>
 		<td>Updates webhook</td>
-		<td>ops,client,vendor</td>
-	</tr>
-	<tr>
-		<td><a href="webhooks/delete-notifications-webhooks-221.md">/public/v1/notifications/webhooks/{id}</a></td>
-		<td>DELETE</td>
-		<td>Deletes webhook</td>
 		<td>ops,client,vendor</td>
 	</tr>
 <tbody>

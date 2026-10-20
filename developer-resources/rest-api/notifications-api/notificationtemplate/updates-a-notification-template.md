@@ -1,2 +1,0 @@
-# Updates a notification template
-

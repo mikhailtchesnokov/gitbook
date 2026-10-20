@@ -1,2 +1,0 @@
-# GET accounts buyers id
-

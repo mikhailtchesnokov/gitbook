@@ -1,2 +1,0 @@
-# Recalculates a ledger
-

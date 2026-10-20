@@ -1,2 +1,0 @@
-# Get account by ID
-

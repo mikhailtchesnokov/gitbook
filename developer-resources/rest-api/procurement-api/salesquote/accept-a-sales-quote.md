@@ -1,2 +1,0 @@
-# Accept a sales quote
-

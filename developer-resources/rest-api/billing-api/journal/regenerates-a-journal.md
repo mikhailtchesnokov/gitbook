@@ -1,2 +1,0 @@
-# Regenerates a journal
-

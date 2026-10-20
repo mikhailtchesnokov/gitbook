@@ -26,7 +26,7 @@ The API is organized into collections, each containing a set of operations. Acce
 
 See the following sections to determine which roles are authorized to perform specific operations within each collection:
 
-### Auditeventtypes
+### Auditeventtype
 
 <table>
 <thead>
@@ -39,19 +39,13 @@ See the following sections to determine which roles are authorized to perform sp
 </thead>
 <tbody>
 	<tr>
-		<td><a href="auditeventtypes/get-audit-auditeventtypes-000.md">/public/v1/audit/event-types</a></td>
-		<td>GET</td>
-		<td>Gets a list of audit event types</td>
-		<td>ops,client,vendor</td>
-	</tr>
-	<tr>
-		<td><a href="auditeventtypes/get-audit-auditeventtypes-001.md">/public/v1/audit/event-types/{id}</a></td>
+		<td><a href="auditeventtype/get-audit-auditeventtypes-000.md">/public/v1/audit/event-types/{id}</a></td>
 		<td>GET</td>
 		<td>Retrieves an audit event type by ID</td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td><a href="auditeventtypes/put-audit-auditeventtypes-001.md">/public/v1/audit/event-types/{id}</a></td>
+		<td><a href="auditeventtype/put-audit-auditeventtypes-000.md">/public/v1/audit/event-types/{id}</a></td>
 		<td>PUT</td>
 		<td>Updates an event type</td>
 		<td>ops,client,vendor</td>
@@ -61,7 +55,7 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Auditrecords
+### Auditrecord
 
 <table>
 <thead>
@@ -74,19 +68,13 @@ See the following sections to determine which roles are authorized to perform sp
 </thead>
 <tbody>
 	<tr>
-		<td><a href="auditrecords/get-audit-auditrecords-002.md">/public/v1/audit/records</a></td>
-		<td>GET</td>
-		<td>Gets a list of audit records</td>
-		<td>ops,client,vendor</td>
-	</tr>
-	<tr>
-		<td><a href="auditrecords/get-audit-auditrecords-003.md">/public/v1/audit/records/{id}</a></td>
+		<td><a href="auditrecord/get-audit-auditrecords-002.md">/public/v1/audit/records/{id}</a></td>
 		<td>GET</td>
 		<td>Retrieves an audit record by ID</td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td><a href="auditrecords/post-audit-auditrecords-002.md">/public/v1/audit/records</a></td>
+		<td><a href="auditrecord/post-audit-auditrecords-001.md">/public/v1/audit/records</a></td>
 		<td>POST</td>
 		<td>Creates a new audit record</td>
 		<td>vendor,ops</td>

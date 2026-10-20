@@ -1,2 +1,0 @@
-# Delete cloud tenant
-

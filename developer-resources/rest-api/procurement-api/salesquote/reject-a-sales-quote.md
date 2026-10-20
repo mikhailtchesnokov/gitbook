@@ -1,2 +1,0 @@
-# Reject a sales quote
-

@@ -1,2 +1,0 @@
-# Terminates an existing asset
-

@@ -1,2 +1,0 @@
-# Renders a subscription template
-

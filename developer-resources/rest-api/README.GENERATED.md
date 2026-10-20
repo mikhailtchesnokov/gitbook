@@ -19,7 +19,7 @@
 		</tr>
 		<tr>
 			<td><a href="billing-api">Billing API</a></td>
-			<td>Manages ledgers, invoices, journals & more</td>
+			<td>Manages charges, ledgers, invoices & more</td>
 			<td><a href="billing-api">billing-api</a></td>
 		</tr>
 		<tr>

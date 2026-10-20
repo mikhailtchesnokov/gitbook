@@ -1,2 +1,0 @@
-# Delete ERP items
-

@@ -1,2 +1,0 @@
-# Enquires the journal
-

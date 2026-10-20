@@ -1,2 +1,0 @@
-# PUT accounts buyers id
-

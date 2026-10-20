@@ -1,2 +1,0 @@
-# DELETE catalog products id
-

@@ -1,2 +1,0 @@
-# Renders an asset template
-

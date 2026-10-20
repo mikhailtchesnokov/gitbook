@@ -1,2 +1,0 @@
-# GET commerce subscriptions id
-

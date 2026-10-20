@@ -1,2 +1,0 @@
-# Update cloud tenant
-

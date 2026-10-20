@@ -1,2 +1,0 @@
-# Deletes an order subscription
-

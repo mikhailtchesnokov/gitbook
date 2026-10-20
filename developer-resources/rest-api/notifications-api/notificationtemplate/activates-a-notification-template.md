@@ -1,2 +1,0 @@
-# Activates a notification template
-

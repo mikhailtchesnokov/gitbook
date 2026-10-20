@@ -1,2 +1,0 @@
-# Finalize a sales quote
-

@@ -1,2 +1,0 @@
-# Cancels a statement
-

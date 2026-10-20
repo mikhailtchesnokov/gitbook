@@ -8,7 +8,11 @@ The API supports the following business objects:
 
 *  **Pair**  - represents a pair of currencies in exchange module
 
+*  **PairBulkData**  - bulk operation data model
+
 *  **Rate**  - record of rate for specific day
+
+*  **RateBulkData**  - bulk operation data model
 
 Use the API to retrieve and manage these resources. Depending on the resource, available operations include creating, updating, and deleting records.
 The full list of available operations is provided below.
@@ -20,7 +24,7 @@ Review the shared API docs before you work with **exchange** resources.
 
 * [Authentication](../)
 * [URL structure](../../api-usage-and-reference/url-structure.md)
-* [Error handling](./../../api-usage-and-reference/error-handling.md)
+* [Error handling](../../api-usage-and-reference/errors-handling.md)
 
 ## Browse collections
 
@@ -28,7 +32,7 @@ The API is organized into collections, each containing a set of operations. Acce
 
 See the following sections to determine which roles are authorized to perform specific operations within each collection:
 
-### Currencies
+### Currency
 
 <table>
 <thead>
@@ -41,39 +45,21 @@ See the following sections to determine which roles are authorized to perform sp
 </thead>
 <tbody>
 	<tr>
-		<td><a href="currencies/get-exchange-currencies-092.md">/public/v1/exchange/currencies</a></td>
-		<td>GET</td>
-		<td>Gets a list of currencies</td>
-		<td>ops,client,vendor</td>
-	</tr>
-	<tr>
-		<td><a href="currencies/get-exchange-currencies-093.md">/public/v1/exchange/currencies/{id}</a></td>
+		<td><a href="currency/get-exchange-currencies-081.md">/public/v1/exchange/currencies/{id}</a></td>
 		<td>GET</td>
 		<td>Retrieves a currency by ID</td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td><a href="currencies/get-exchange-currencies-094.md">/public/v1/exchange/currencies/{id}/icon</a></td>
-		<td>GET</td>
-		<td>Gets a download redirect for a currency icon</td>
-		<td>ops,client,vendor</td>
-	</tr>
-	<tr>
-		<td><a href="currencies/post-exchange-currencies-092.md">/public/v1/exchange/currencies</a></td>
+		<td><a href="currency/post-exchange-currencies-080.md">/public/v1/exchange/currencies</a></td>
 		<td>POST</td>
 		<td>Creates a new currency</td>
 		<td>ops</td>
 	</tr>
 	<tr>
-		<td><a href="currencies/put-exchange-currencies-093.md">/public/v1/exchange/currencies/{id}</a></td>
+		<td><a href="currency/put-exchange-currencies-081.md">/public/v1/exchange/currencies/{id}</a></td>
 		<td>PUT</td>
 		<td>Updates an existing currency</td>
-		<td>ops</td>
-	</tr>
-	<tr>
-		<td><a href="currencies/delete-exchange-currencies-093.md">/public/v1/exchange/currencies/{id}</a></td>
-		<td>DELETE</td>
-		<td>Deletes currency by ID</td>
 		<td>ops</td>
 	</tr>
 <tbody>
@@ -81,7 +67,7 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Pairs
+### Pair
 
 <table>
 <thead>
@@ -94,31 +80,42 @@ See the following sections to determine which roles are authorized to perform sp
 </thead>
 <tbody>
 	<tr>
-		<td><a href="pairs/get-exchange-pairs-095.md">/public/v1/exchange/pairs</a></td>
-		<td>GET</td>
-		<td>Gets a list of currency pairs</td>
-		<td>ops,client,vendor</td>
-	</tr>
-	<tr>
-		<td><a href="pairs/get-exchange-pairs-096.md">/public/v1/exchange/pairs/{id}</a></td>
+		<td><a href="pair/get-exchange-pairs-083.md">/public/v1/exchange/pairs/{id}</a></td>
 		<td>GET</td>
 		<td>Retrieves a currency pair by ID</td>
 		<td>ops,client,vendor</td>
 	</tr>
+<tbody>
+</table>
+
+
+
+### Pairbulkdata
+
+<table>
+<thead>
+<tr>
+ <td>Operation</td>
+ <td>Method</td>
+ <td>Description</td>
+ <td>Access</td>
+</tr>
+</thead>
+<tbody>
 	<tr>
-		<td><a href="pairs/post-exchange-pairs-095.md">/public/v1/exchange/pairs</a></td>
+		<td><a href="pairbulkdata/post-exchange-pairs-082.md">/public/v1/exchange/pairs</a></td>
 		<td>POST</td>
 		<td>Creates a new pair or pairs of currencies</td>
 		<td>ops</td>
 	</tr>
 	<tr>
-		<td><a href="pairs/put-exchange-pairs-095.md">/public/v1/exchange/pairs</a></td>
+		<td><a href="pairbulkdata/put-exchange-pairs-082.md">/public/v1/exchange/pairs</a></td>
 		<td>PUT</td>
 		<td>Updates pairs from bulk data</td>
 		<td>ops</td>
 	</tr>
 	<tr>
-		<td><a href="pairs/delete-exchange-pairs-095.md">/public/v1/exchange/pairs</a></td>
+		<td><a href="pairbulkdata/delete-exchange-pairs-082.md">/public/v1/exchange/pairs</a></td>
 		<td>DELETE</td>
 		<td>Deletes multiple pairs from the body</td>
 		<td>ops</td>
@@ -128,7 +125,7 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Rates
+### Rate
 
 <table>
 <thead>
@@ -141,31 +138,42 @@ See the following sections to determine which roles are authorized to perform sp
 </thead>
 <tbody>
 	<tr>
-		<td><a href="rates/get-exchange-rates-097.md">/public/v1/exchange/pairs/{pairId}/rates/{rateId}</a></td>
+		<td><a href="rate/get-exchange-rates-084.md">/public/v1/exchange/pairs/{pairId}/rates/{rateId}</a></td>
 		<td>GET</td>
 		<td>Retrieves a rate by ID within a pair</td>
 		<td>ops,client,vendor</td>
 	</tr>
+<tbody>
+</table>
+
+
+
+### Ratebulkdata
+
+<table>
+<thead>
+<tr>
+ <td>Operation</td>
+ <td>Method</td>
+ <td>Description</td>
+ <td>Access</td>
+</tr>
+</thead>
+<tbody>
 	<tr>
-		<td><a href="rates/get-exchange-rates-098.md">/public/v1/exchange/pairs/{pairId}/rates</a></td>
-		<td>GET</td>
-		<td>Gets a list of rates for a pair</td>
-		<td>ops,client,vendor</td>
-	</tr>
-	<tr>
-		<td><a href="rates/post-exchange-rates-099.md">/public/v1/exchange/pairs/-/rates</a></td>
+		<td><a href="ratebulkdata/post-exchange-rates-086.md">/public/v1/exchange/pairs/-/rates</a></td>
 		<td>POST</td>
 		<td>Creates a new rate</td>
 		<td>ops</td>
 	</tr>
 	<tr>
-		<td><a href="rates/put-exchange-rates-098.md">/public/v1/exchange/pairs/{pairId}/rates</a></td>
+		<td><a href="ratebulkdata/put-exchange-rates-085.md">/public/v1/exchange/pairs/{pairId}/rates</a></td>
 		<td>PUT</td>
 		<td>Updates rates for a pair</td>
 		<td>ops</td>
 	</tr>
 	<tr>
-		<td><a href="rates/delete-exchange-rates-100.md">/public/v1/exchange/rates</a></td>
+		<td><a href="ratebulkdata/delete-exchange-rates-087.md">/public/v1/exchange/rates</a></td>
 		<td>DELETE</td>
 		<td>Deletes rates from bulk data</td>
 		<td>ops</td>

@@ -1,2 +1,0 @@
-# Deletes a ledger attachment
-

@@ -1,2 +1,0 @@
-# Check SSO status
-

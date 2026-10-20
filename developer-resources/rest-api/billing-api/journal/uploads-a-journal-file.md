@@ -1,2 +1,0 @@
-# Uploads a journal file
-

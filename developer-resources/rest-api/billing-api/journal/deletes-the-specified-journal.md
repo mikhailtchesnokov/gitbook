@@ -1,2 +1,0 @@
-# Deletes the specified journal
-

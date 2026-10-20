@@ -1,2 +1,0 @@
-# Get licensee by ID
-

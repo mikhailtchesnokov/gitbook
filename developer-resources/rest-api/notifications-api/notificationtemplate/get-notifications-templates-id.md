@@ -1,2 +1,0 @@
-# GET notifications templates id
-

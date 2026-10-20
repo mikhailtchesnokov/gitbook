@@ -1,2 +1,0 @@
-# Publishes a category
-
