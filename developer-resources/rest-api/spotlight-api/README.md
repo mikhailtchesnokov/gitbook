@@ -4,6 +4,8 @@ The **Spotlight API** provides **REST** endpoints for managing resources within 
 
 The API supports the following business objects:
 
+*  **SpotlightObject**  - 
+
 *  **SpotlightQuery**  - 
 
 Use the API to retrieve and manage these resources. Depending on the resource, available operations include creating, updating, and deleting records.
@@ -24,6 +26,29 @@ The API is organized into collections, each containing a set of operations. Acce
 
 See the following sections to determine which roles are authorized to perform specific operations within each collection:
 
+### SpotlightObject
+
+<table>
+<thead>
+<tr>
+ <td>Operation</td>
+ <td>Method</td>
+ <td>Description</td>
+ <td>Access</td>
+</tr>
+</thead>
+<tbody>
+	<tr>
+		<td><a href="spotlightobject/get-spotlight-spotlightobjects-407.md">/public/v1/spotlight/objects</a></td>
+		<td>GET</td>
+		<td>Get spotlight objects for the current account and buyer group</td>
+		<td>ops,client,vendor</td>
+	</tr>
+<tbody>
+</table>
+
+
+
 ### SpotlightQuery
 
 <table>
@@ -37,13 +62,19 @@ See the following sections to determine which roles are authorized to perform sp
 </thead>
 <tbody>
 	<tr>
-		<td><a href="spotlightquery/get-spotlight-spotlightqueries-376.md">/public/v1/spotlight/queries/{id}</a></td>
+		<td><a href="spotlightquery/get-spotlight-spotlightqueries-408.md">/public/v1/spotlight/queries</a></td>
+		<td>GET</td>
+		<td>Get a list of spotlight queries</td>
+		<td>ops,client,vendor</td>
+	</tr>
+	<tr>
+		<td><a href="spotlightquery/get-spotlight-spotlightqueries-409.md">/public/v1/spotlight/queries/{id}</a></td>
 		<td>GET</td>
 		<td>Retrieve a spotlight query by ID</td>
 		<td>ops,client,vendor</td>
 	</tr>
 	<tr>
-		<td><a href="spotlightquery/put-spotlight-spotlightqueries-376.md">/public/v1/spotlight/queries/{id}</a></td>
+		<td><a href="spotlightquery/put-spotlight-spotlightqueries-409.md">/public/v1/spotlight/queries/{id}</a></td>
 		<td>PUT</td>
 		<td>Update a spotlight query</td>
 		<td>ops,client,vendor</td>

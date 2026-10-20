@@ -39,49 +39,55 @@ See the following sections to determine which roles are authorized to perform sp
 </thead>
 <tbody>
 	<tr>
-		<td><a href="task/get-system-tasks-378.md">/public/v1/system/tasks/{id}</a></td>
+		<td><a href="task/get-system-tasks-410.md">/public/v1/system/tasks</a></td>
+		<td>GET</td>
+		<td>Get a list of tasks</td>
+		<td>vendor,ops</td>
+	</tr>
+	<tr>
+		<td><a href="task/get-system-tasks-411.md">/public/v1/system/tasks/{id}</a></td>
 		<td>GET</td>
 		<td>Retrieve a task by ID</td>
 		<td>vendor,ops</td>
 	</tr>
 	<tr>
-		<td><a href="task/post-system-tasks-377.md">/public/v1/system/tasks</a></td>
+		<td><a href="task/post-system-tasks-410.md">/public/v1/system/tasks</a></td>
 		<td>POST</td>
 		<td>Create a task</td>
 		<td>vendor,client,ops</td>
 	</tr>
 	<tr>
-		<td><a href="task/post-system-tasks-379.md">/public/v1/system/tasks/{id}/execute</a></td>
+		<td><a href="task/post-system-tasks-412.md">/public/v1/system/tasks/{id}/execute</a></td>
 		<td>POST</td>
 		<td>Transition a task to Processing</td>
 		<td>vendor,client,ops</td>
 	</tr>
 	<tr>
-		<td><a href="task/post-system-tasks-380.md">/public/v1/system/tasks/{id}/reschedule</a></td>
+		<td><a href="task/post-system-tasks-413.md">/public/v1/system/tasks/{id}/reschedule</a></td>
 		<td>POST</td>
 		<td>Transition a task to Rescheduled</td>
 		<td>vendor,client,ops</td>
 	</tr>
 	<tr>
-		<td><a href="task/post-system-tasks-381.md">/public/v1/system/tasks/{id}/queue</a></td>
+		<td><a href="task/post-system-tasks-414.md">/public/v1/system/tasks/{id}/queue</a></td>
 		<td>POST</td>
 		<td>Transition a task to Queued</td>
 		<td>vendor,client,ops</td>
 	</tr>
 	<tr>
-		<td><a href="task/post-system-tasks-382.md">/public/v1/system/tasks/{id}/complete</a></td>
+		<td><a href="task/post-system-tasks-415.md">/public/v1/system/tasks/{id}/complete</a></td>
 		<td>POST</td>
 		<td>Transition a task to Completed</td>
 		<td>vendor,client,ops</td>
 	</tr>
 	<tr>
-		<td><a href="task/post-system-tasks-383.md">/public/v1/system/tasks/{id}/fail</a></td>
+		<td><a href="task/post-system-tasks-416.md">/public/v1/system/tasks/{id}/fail</a></td>
 		<td>POST</td>
 		<td>Transition a task to Failed</td>
 		<td>vendor,client,ops</td>
 	</tr>
 	<tr>
-		<td><a href="task/put-system-tasks-378.md">/public/v1/system/tasks/{id}</a></td>
+		<td><a href="task/put-system-tasks-411.md">/public/v1/system/tasks/{id}</a></td>
 		<td>PUT</td>
 		<td>Update a task</td>
 		<td>vendor,client,ops</td>
@@ -104,7 +110,13 @@ See the following sections to determine which roles are authorized to perform sp
 </thead>
 <tbody>
 	<tr>
-		<td><a href="tasklog/post-system-tasks-384.md">/public/v1/system/tasks/{id}/logs</a></td>
+		<td><a href="tasklog/get-system-tasks-417.md">/public/v1/system/tasks/{id}/logs</a></td>
+		<td>GET</td>
+		<td>Get task logs</td>
+		<td>vendor,ops</td>
+	</tr>
+	<tr>
+		<td><a href="tasklog/post-system-tasks-417.md">/public/v1/system/tasks/{id}/logs</a></td>
 		<td>POST</td>
 		<td>Create a task log</td>
 		<td>vendor,client,ops</td>

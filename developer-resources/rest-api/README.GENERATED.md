@@ -69,7 +69,7 @@
 		</tr>
 		<tr>
 			<td><a href="spotlight-api">Spotlight API</a></td>
-			<td>Manages spotlightqueries & more</td>
+			<td>Manages spotlightqueries, spotlightobjects & more</td>
 			<td><a href="spotlight-api">spotlight-api</a></td>
 		</tr>
 		<tr>
