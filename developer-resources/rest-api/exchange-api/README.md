@@ -90,7 +90,7 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Pairbulkdata
+### PairBulkData
 
 <table>
 <thead>
@@ -148,7 +148,7 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Ratebulkdata
+### RateBulkData
 
 <table>
 <thead>

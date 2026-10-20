@@ -116,7 +116,7 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Itemgroup
+### ItemGroup
 
 <table>
 <thead>
@@ -186,7 +186,7 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Parameterdefinition
+### ParameterDefinition
 
 <table>
 <thead>
@@ -221,7 +221,7 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Parametergroup
+### ParameterGroup
 
 <table>
 <thead>
@@ -256,7 +256,7 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Pricelist
+### PriceList
 
 <table>
 <thead>
@@ -291,7 +291,7 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Pricelistitem
+### PriceListItem
 
 <table>
 <thead>
@@ -320,7 +320,7 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Pricingpolicy
+### PricingPolicy
 
 <table>
 <thead>
@@ -361,7 +361,7 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Pricingpolicyattachment
+### PricingPolicyAttachment
 
 <table>
 <thead>
@@ -455,7 +455,7 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Productdocument
+### ProductDocument
 
 <table>
 <thead>
@@ -502,7 +502,7 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Productitem
+### ProductItem
 
 <table>
 <thead>
@@ -555,7 +555,7 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Productmedia
+### ProductMedia
 
 <table>
 <thead>
@@ -643,7 +643,7 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Termsandconditions
+### TermsAndConditions
 
 <table>
 <thead>
@@ -696,7 +696,7 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Termsandconditionsvariant
+### TermsAndConditionsVariant
 
 <table>
 <thead>
@@ -749,7 +749,7 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Unitofmeasure
+### UnitOfMeasure
 
 <table>
 <thead>

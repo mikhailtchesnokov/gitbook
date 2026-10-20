@@ -111,7 +111,7 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Creditmemo
+### CreditMemo
 
 <table>
 <thead>
@@ -140,7 +140,7 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Creditmemoattachment
+### CreditMemoAttachment
 
 <table>
 <thead>
@@ -175,7 +175,7 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Customledger
+### CustomLedger
 
 <table>
 <thead>
@@ -228,7 +228,7 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Customledgerattachment
+### CustomLedgerAttachment
 
 <table>
 <thead>
@@ -286,7 +286,7 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Invoiceattachment
+### InvoiceAttachment
 
 <table>
 <thead>
@@ -398,7 +398,7 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Journalattachment
+### JournalAttachment
 
 <table>
 <thead>
@@ -433,7 +433,7 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Journalcharge
+### JournalCharge
 
 <table>
 <thead>
@@ -515,7 +515,7 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Ledgerattachment
+### LedgerAttachment
 
 <table>
 <thead>
@@ -674,7 +674,7 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Statementattachment
+### StatementAttachment
 
 <table>
 <thead>

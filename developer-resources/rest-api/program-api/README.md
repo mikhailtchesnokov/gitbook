@@ -156,7 +156,7 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Enrollmentattachment
+### EnrollmentAttachment
 
 <table>
 <thead>
@@ -244,7 +244,7 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Programdocument
+### ProgramDocument
 
 <table>
 <thead>
@@ -291,7 +291,7 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Programmedia
+### ProgramMedia
 
 <table>
 <thead>
@@ -338,7 +338,7 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Programparameterdefinition
+### ProgramParameterDefinition
 
 <table>
 <thead>
@@ -373,7 +373,7 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Programparametergroup
+### ProgramParameterGroup
 
 <table>
 <thead>
@@ -408,7 +408,7 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Programtemplate
+### ProgramTemplate
 
 <table>
 <thead>
@@ -443,7 +443,7 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Programtermsandconditions
+### ProgramTermsAndConditions
 
 <table>
 <thead>
@@ -490,7 +490,7 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Programtermsandconditionsvariant
+### ProgramTermsAndConditionsVariant
 
 <table>
 <thead>

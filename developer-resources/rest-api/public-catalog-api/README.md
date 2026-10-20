@@ -134,7 +134,7 @@ sets the industry record to an unpublished state in the system</td>
 
 
 
-### Productprofile
+### ProductProfile
 
 <table>
 <thead>
@@ -183,7 +183,7 @@ sets the product profiles record to an unpublished state in the system</td>
 
 
 
-### Productprofileattachment
+### ProductProfileAttachment
 
 <table>
 <thead>
@@ -218,7 +218,7 @@ sets the product profiles record to an unpublished state in the system</td>
 
 
 
-### Productprofilemedia
+### ProductProfileMedia
 
 <table>
 <thead>
@@ -300,7 +300,7 @@ sets the product profiles record to an unpublished state in the system</td>
 
 
 
-### Vendorprofile
+### VendorProfile
 
 <table>
 <thead>

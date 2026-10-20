@@ -140,7 +140,7 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Extensioncategory
+### ExtensionCategory
 
 <table>
 <thead>
@@ -369,7 +369,7 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Termvariant
+### TermVariant
 
 <table>
 <thead>
@@ -416,7 +416,7 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Tokenresponse
+### TokenResponse
 
 <table>
 <thead>

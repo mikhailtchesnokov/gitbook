@@ -24,7 +24,7 @@ The API is organized into collections, each containing a set of operations. Acce
 
 See the following sections to determine which roles are authorized to perform specific operations within each collection:
 
-### Spotlightquery
+### SpotlightQuery
 
 <table>
 <thead>

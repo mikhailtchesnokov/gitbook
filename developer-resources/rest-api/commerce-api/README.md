@@ -118,7 +118,7 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Commerceagreementattachment
+### CommerceAgreementAttachment
 
 <table>
 <thead>
@@ -230,7 +230,7 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Orderasset
+### OrderAsset
 
 <table>
 <thead>
@@ -265,7 +265,7 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Ordernotificationrequest
+### OrderNotificationRequest
 
 <table>
 <thead>
@@ -288,7 +288,7 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Ordersubscription
+### OrderSubscription
 
 <table>
 <thead>
@@ -311,7 +311,7 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Splitbillingagreement
+### SplitBillingAgreement
 
 <table>
 <thead>
@@ -346,7 +346,7 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Splitbillingsubscription
+### SplitBillingSubscription
 
 <table>
 <thead>

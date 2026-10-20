@@ -123,7 +123,7 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Accountsettings
+### AccountSettings
 
 <table>
 <thead>
@@ -152,7 +152,7 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Accountsettingsdto
+### AccountSettingsDto
 
 <table>
 <thead>
@@ -175,7 +175,7 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Accountuser
+### AccountUser
 
 <table>
 <thead>
@@ -222,7 +222,7 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Accountuserquerylegacy
+### AccountUserQueryLegacy
 
 <table>
 <thead>
@@ -257,7 +257,7 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Apitoken
+### ApiToken
 
 <table>
 <thead>
@@ -375,7 +375,7 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Buyertransferdetails
+### BuyerTransferDetails
 
 <table>
 <thead>
@@ -398,7 +398,7 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Buyervalidate
+### BuyerValidate
 
 <table>
 <thead>
@@ -421,7 +421,7 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Cloudtenant
+### CloudTenant
 
 <table>
 <thead>
@@ -456,7 +456,7 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Erplink
+### ErpLink
 
 <table>
 <thead>
@@ -690,7 +690,7 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Userextendedaccount
+### UserExtendedAccount
 
 <table>
 <thead>
@@ -713,7 +713,7 @@ See the following sections to determine which roles are authorized to perform sp
 
 
 
-### Usergroup
+### UserGroup
 
 <table>
 <thead>
