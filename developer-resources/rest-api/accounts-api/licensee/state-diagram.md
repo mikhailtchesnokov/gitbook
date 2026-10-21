@@ -23,15 +23,70 @@ stateDiagram-v2
 
 
 
-| State | Description | Initial State? | Terminal State? |
-| --- | --- | --- | --- |
+<table>
+  <thead>
+    <tr>
 
-| Active | The Licensee is linked to an Active Buyer — one correctly linked to an ERP customer record. Only an Active Licensee may be used to place new Orders. | Yes* | No |
+      <th>State</th>
 
-| Enabled | The Licensee is linked to an Enabled Buyer — one enabled without ERP activation. It cannot be used to place new Orders. | Yes* | No |
+      <th>Description</th>
 
-| Disabled | Set explicitly by a Client or Operations action, or automatically when the related Buyer or Seller is disabled. Cannot be used for new Orders, but remains usable for change and termination Orders against existing Agreements. Retained for historical reference. | No | No |
+      <th>Initial State?</th>
 
-| Deleted | Soft-deleted. The record is retained but no longer usable, and is visible only to Operations. | No | Yes |
+      <th>Terminal State?</th>
 
+    </tr>
+  </thead>
+  <tbody>
+
+    <tr>
+
+      <td>Active</td>
+
+      <td>The Licensee is linked to an Active Buyer — one correctly linked to an ERP customer record. Only an Active Licensee may be used to place new Orders.</td>
+
+      <td>Yes*</td>
+
+      <td>No</td>
+
+    </tr>
+
+    <tr>
+
+      <td>Enabled</td>
+
+      <td>The Licensee is linked to an Enabled Buyer — one enabled without ERP activation. It cannot be used to place new Orders.</td>
+
+      <td>Yes*</td>
+
+      <td>No</td>
+
+    </tr>
+
+    <tr>
+
+      <td>Disabled</td>
+
+      <td>Set explicitly by a Client or Operations action, or automatically when the related Buyer or Seller is disabled. Cannot be used for new Orders, but remains usable for change and termination Orders against existing Agreements. Retained for historical reference.</td>
+
+      <td>No</td>
+
+      <td>No</td>
+
+    </tr>
+
+    <tr>
+
+      <td>Deleted</td>
+
+      <td>Soft-deleted. The record is retained but no longer usable, and is visible only to Operations.</td>
+
+      <td>No</td>
+
+      <td>Yes</td>
+
+    </tr>
+
+  </tbody>
+</table>
 

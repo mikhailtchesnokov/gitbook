@@ -39,21 +39,106 @@ stateDiagram-v2
 
 
 
-| State | Description | Initial State? | Terminal State? |
-| --- | --- | --- | --- |
+<table>
+  <thead>
+    <tr>
 
-| Unassigned | The Buyer is not linked to any [[Account]]. | Yes (when created without an Account) | No |
+      <th>State</th>
 
-| Enabled | The Buyer is linked to an [[Account]] but has no ERP identifiers of its own yet — it is not ERP-activated and cannot be synchronised with the ERP. | Yes (when created with an Account but no ERP IDs) | No |
+      <th>Description</th>
 
-| Active | The Buyer is linked to an [[Account]] and carries its ERP identifiers — fully reconciled and operational. | Yes (when created with an Account and ERP IDs) | No |
+      <th>Initial State?</th>
 
-| Disabled | The Buyer has been manually disabled from Active or Enabled. | No | No |
+      <th>Terminal State?</th>
 
-| Deleted | The Buyer has been soft-deleted. Remains retrievable to Operations; excluded from Vendor/Client row-scoped queries. | No | Yes |
+    </tr>
+  </thead>
+  <tbody>
 
-| Conflict | Overlay state: an Unassigned Buyer that also has reconciliation errors. Returns to Unassigned when the errors clear. | No | No |
+    <tr>
 
-| Mismatch | Overlay state: an Active or Disabled Buyer that also has reconciliation errors. Returns to its pre-error status when the errors clear. | No | No |
+      <td>Unassigned</td>
 
+      <td>The Buyer is not linked to any [[Account]].</td>
+
+      <td>Yes (when created without an Account)</td>
+
+      <td>No</td>
+
+    </tr>
+
+    <tr>
+
+      <td>Enabled</td>
+
+      <td>The Buyer is linked to an [[Account]] but has no ERP identifiers of its own yet — it is not ERP-activated and cannot be synchronised with the ERP.</td>
+
+      <td>Yes (when created with an Account but no ERP IDs)</td>
+
+      <td>No</td>
+
+    </tr>
+
+    <tr>
+
+      <td>Active</td>
+
+      <td>The Buyer is linked to an [[Account]] and carries its ERP identifiers — fully reconciled and operational.</td>
+
+      <td>Yes (when created with an Account and ERP IDs)</td>
+
+      <td>No</td>
+
+    </tr>
+
+    <tr>
+
+      <td>Disabled</td>
+
+      <td>The Buyer has been manually disabled from Active or Enabled.</td>
+
+      <td>No</td>
+
+      <td>No</td>
+
+    </tr>
+
+    <tr>
+
+      <td>Deleted</td>
+
+      <td>The Buyer has been soft-deleted. Remains retrievable to Operations; excluded from Vendor/Client row-scoped queries.</td>
+
+      <td>No</td>
+
+      <td>Yes</td>
+
+    </tr>
+
+    <tr>
+
+      <td>Conflict</td>
+
+      <td>Overlay state: an Unassigned Buyer that also has reconciliation errors. Returns to Unassigned when the errors clear.</td>
+
+      <td>No</td>
+
+      <td>No</td>
+
+    </tr>
+
+    <tr>
+
+      <td>Mismatch</td>
+
+      <td>Overlay state: an Active or Disabled Buyer that also has reconciliation errors. Returns to its pre-error status when the errors clear.</td>
+
+      <td>No</td>
+
+      <td>No</td>
+
+    </tr>
+
+  </tbody>
+</table>
 

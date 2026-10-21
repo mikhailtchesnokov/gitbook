@@ -12,13 +12,58 @@ stateDiagram-v2
 
 
 
-| State | Description | Initial State? | Terminal State? |
-| --- | --- | --- | --- |
+<table>
+  <thead>
+    <tr>
 
-| Active | The tenant is enabled for cloud-spend management. Mirrors the enabled state of the mapped consumption-management tenant. | Yes | No |
+      <th>State</th>
 
-| Disabled | The tenant is disabled for cloud-spend management. Mirrors the disabled state of the mapped consumption-management tenant. | Yes | No |
+      <th>Description</th>
 
-| Deleted | The tenant has been removed. It is no longer retrievable via the API (see BR-009 and Section 8). | No | Yes |
+      <th>Initial State?</th>
 
+      <th>Terminal State?</th>
+
+    </tr>
+  </thead>
+  <tbody>
+
+    <tr>
+
+      <td>Active</td>
+
+      <td>The tenant is enabled for cloud-spend management. Mirrors the enabled state of the mapped consumption-management tenant.</td>
+
+      <td>Yes</td>
+
+      <td>No</td>
+
+    </tr>
+
+    <tr>
+
+      <td>Disabled</td>
+
+      <td>The tenant is disabled for cloud-spend management. Mirrors the disabled state of the mapped consumption-management tenant.</td>
+
+      <td>Yes</td>
+
+      <td>No</td>
+
+    </tr>
+
+    <tr>
+
+      <td>Deleted</td>
+
+      <td>The tenant has been removed. It is no longer retrievable via the API (see BR-009 and Section 8).</td>
+
+      <td>No</td>
+
+      <td>Yes</td>
+
+    </tr>
+
+  </tbody>
+</table>
 

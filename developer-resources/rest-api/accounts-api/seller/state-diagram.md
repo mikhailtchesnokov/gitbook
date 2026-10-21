@@ -15,15 +15,70 @@ stateDiagram-v2
 
 
 
-| State | Description | Initial State? | Terminal State? |
-| --- | --- | --- | --- |
+<table>
+  <thead>
+    <tr>
 
-| Active | The Seller is operational. Available as the Owner on new Authorizations and as the transacting party on new Listings and Orders. | Yes (default) | No |
+      <th>State</th>
 
-| Disabled | The Seller is inactive. Observed on legacy entities — typically SoftwareOne legal entities that have been superseded following an acquisition or ERP consolidation. New Orders are blocked under any Listing referencing a Disabled Seller. | Yes (may be created directly into this status) | No |
+      <th>Description</th>
 
-| Offline | Reached only from `Active`, via the Deactivate action (e.g. for maintenance). Returns to `Active` via the Activate action. No downstream Buyer-synchronization effect is triggered by entering or leaving this state (unlike Disabled). | No | No |
+      <th>Initial State?</th>
 
-| Deleted | Reached only from `Active`, via the Delete action. A soft-delete: the Seller record is not removed and remains retrievable via the API — including in standard list responses — with `status: "Deleted"`. No transition out of this state exists. A Deleted Seller cannot be referenced when forming a new Buyer:Seller relationship. | No | Yes |
+      <th>Terminal State?</th>
 
+    </tr>
+  </thead>
+  <tbody>
+
+    <tr>
+
+      <td>Active</td>
+
+      <td>The Seller is operational. Available as the Owner on new Authorizations and as the transacting party on new Listings and Orders.</td>
+
+      <td>Yes (default)</td>
+
+      <td>No</td>
+
+    </tr>
+
+    <tr>
+
+      <td>Disabled</td>
+
+      <td>The Seller is inactive. Observed on legacy entities — typically SoftwareOne legal entities that have been superseded following an acquisition or ERP consolidation. New Orders are blocked under any Listing referencing a Disabled Seller.</td>
+
+      <td>Yes (may be created directly into this status)</td>
+
+      <td>No</td>
+
+    </tr>
+
+    <tr>
+
+      <td>Offline</td>
+
+      <td>Reached only from `Active`, via the Deactivate action (e.g. for maintenance). Returns to `Active` via the Activate action. No downstream Buyer-synchronization effect is triggered by entering or leaving this state (unlike Disabled).</td>
+
+      <td>No</td>
+
+      <td>No</td>
+
+    </tr>
+
+    <tr>
+
+      <td>Deleted</td>
+
+      <td>Reached only from `Active`, via the Delete action. A soft-delete: the Seller record is not removed and remains retrievable via the API — including in standard list responses — with `status: &quot;Deleted&quot;`. No transition out of this state exists. A Deleted Seller cannot be referenced when forming a new Buyer:Seller relationship.</td>
+
+      <td>No</td>
+
+      <td>Yes</td>
+
+    </tr>
+
+  </tbody>
+</table>
 
