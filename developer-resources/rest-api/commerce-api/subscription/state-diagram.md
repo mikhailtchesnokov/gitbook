@@ -3,6 +3,8 @@
 
 <figure><img src="" alt=""><figcaption><p>The state transition diagram of a client account.</p></figcaption></figure>
 
+
+
 ```mermaid
 stateDiagram-v2
     Active --> Updating : Change/Configuration Order placed : Platform
@@ -26,3 +28,4 @@ stateDiagram-v2
     Resuming --> Active : Resume Order completed : Platform
     Resuming --> Suspended : Resume Order failed : Platform
 ```
+

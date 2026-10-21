@@ -3,6 +3,8 @@
 
 <figure><img src="" alt=""><figcaption><p>The state transition diagram of a client account.</p></figcaption></figure>
 
+
+
 ```mermaid
 stateDiagram-v2
     Draft --> Provisioning : Purchase Order placed : Platform
@@ -13,3 +15,4 @@ stateDiagram-v2
     Updating --> Active : Order completed or failed : Platform
     Active --> Terminated : All Subscriptions terminated : Platform
 ```
+

@@ -3,6 +3,8 @@
 
 <figure><img src="" alt=""><figcaption><p>The state transition diagram of a client account.</p></figcaption></figure>
 
+
+
 ```mermaid
 stateDiagram-v2
     Draft --> Draft : Update Order : Client, Operations
@@ -18,3 +20,4 @@ stateDiagram-v2
     Querying --> Processing : Return to Processing : Client, Vendor, Operations
     Querying --> Failed : Fail Order : Operations
 ```
+

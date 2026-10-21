@@ -3,6 +3,8 @@
 
 <figure><img src="" alt=""><figcaption><p>The state transition diagram of a client account.</p></figcaption></figure>
 
+
+
 ```mermaid
 stateDiagram-v2
     Draft --> Pending : review : Vendor
@@ -12,3 +14,4 @@ stateDiagram-v2
     Unpublished --> Published : publish : Operations
     Unpublished --> Pending : review : Vendor
 ```
+

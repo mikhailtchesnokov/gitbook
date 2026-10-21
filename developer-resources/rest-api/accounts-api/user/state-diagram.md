@@ -3,6 +3,8 @@
 
 <figure><img src="" alt=""><figcaption><p>The state transition diagram of a client account.</p></figcaption></figure>
 
+
+
 ```mermaid
 stateDiagram-v2
     [*] --> New : Create identity
@@ -20,3 +22,4 @@ stateDiagram-v2
     Blocked --> InvitationExpired : Unblock: recalculated
     Blocked --> Disabled : Unblock: recalculated
 ```
+

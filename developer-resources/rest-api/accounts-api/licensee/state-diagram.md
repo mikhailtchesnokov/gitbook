@@ -3,6 +3,8 @@
 
 <figure><img src="" alt=""><figcaption><p>The state transition diagram of a client account.</p></figcaption></figure>
 
+
+
 ```mermaid
 stateDiagram-v2
     state "Active | Enabled | Disabled" as Active_Enabled_Disabled
@@ -17,3 +19,4 @@ stateDiagram-v2
     Active_Enabled_Disabled --> Deleted : delete : Client/Operations
     Deleted --> [*]
 ```
+
