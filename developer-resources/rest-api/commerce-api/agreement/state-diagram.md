@@ -1,4 +1,15 @@
 
 ## State diagram
 
-<figure><img src="https://www.figma.com/design/rHxTpbi2gpbZ4dmVlyeY2S/Object-Diagrams?node-id=44-272&t=dR2OVccKNCA0oWWg-1" alt=""><figcaption><p>The state transition diagram of a client account.</p></figcaption></figure>
+<figure><img src="" alt=""><figcaption><p>The state transition diagram of a client account.</p></figcaption></figure>
+
+```mermaid
+stateDiagram-v2
+    Draft --> Provisioning : Purchase Order placed : Platform
+    Draft --> Deleted : Purchase Order deleted : Platform
+    Provisioning --> Active : Purchase Order completed : Platform
+    Provisioning --> Failed : Purchase Order failed : Platform
+    Active --> Updating : Change/Configuration/Termination Order placed : Platform
+    Updating --> Active : Order completed or failed : Platform
+    Active --> Terminated : All Subscriptions terminated : Platform
+```

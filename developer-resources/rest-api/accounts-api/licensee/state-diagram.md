@@ -1,4 +1,19 @@
 
 ## State diagram
 
-<figure><img src="https://www.figma.com/design/rHxTpbi2gpbZ4dmVlyeY2S/Object-Diagrams?node-id=925-1311&t=4LfG65fU7z0tTeAP-11" alt=""><figcaption><p>The state transition diagram of a client account.</p></figcaption></figure>
+<figure><img src="" alt=""><figcaption><p>The state transition diagram of a client account.</p></figcaption></figure>
+
+```mermaid
+stateDiagram-v2
+    state "Active | Enabled | Disabled" as Active_Enabled_Disabled
+    [*] --> Active : create, Buyer Active : Client/Operations
+    [*] --> Enabled : create, Buyer Enabled : Client/Operations
+    Enabled --> Active : Buyer becomes Active : Platform
+    Active --> Enabled : Buyer becomes Enabled : Platform
+    Active --> Disabled : disable : Client/Operations/Platform
+    Enabled --> Disabled : disable : Client/Operations/Platform
+    Disabled --> Active : enable, Buyer Active : Client/Operations
+    Disabled --> Enabled : enable, Buyer Enabled : Client/Operations
+    Active_Enabled_Disabled --> Deleted : delete : Client/Operations
+    Deleted --> [*]
+```

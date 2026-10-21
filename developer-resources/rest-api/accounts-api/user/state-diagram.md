@@ -1,4 +1,22 @@
 
 ## State diagram
 
-<figure><img src="https://www.figma.com/design/rHxTpbi2gpbZ4dmVlyeY2S/Object-Diagrams?node-id=1283-659&p=f&t=k7JDuYOhLuBhAzih-0" alt=""><figcaption><p>The state transition diagram of a client account.</p></figcaption></figure>
+<figure><img src="" alt=""><figcaption><p>The state transition diagram of a client account.</p></figcaption></figure>
+
+```mermaid
+stateDiagram-v2
+    [*] --> New : Create identity
+    New --> Invited : invited
+    Invited --> Active : membership activated
+    InvitationExpired --> Disabled
+    Disabled --> Active : re-added
+    Disabled --> Invited : re-added
+    Invited --> Blocked : Block | (Delete, from Disabled only)
+    InvitationExpired --> Blocked : Block | (Delete, from Disabled only)
+    Active --> Blocked : Block | (Delete, from Disabled only)
+    Disabled --> Blocked : Block | (Delete, from Disabled only)
+    Blocked --> Active : Unblock: recalculated
+    Blocked --> Invited : Unblock: recalculated
+    Blocked --> InvitationExpired : Unblock: recalculated
+    Blocked --> Disabled : Unblock: recalculated
+```

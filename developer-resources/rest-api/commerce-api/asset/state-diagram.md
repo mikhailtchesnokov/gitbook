@@ -1,4 +1,9 @@
 
 ## State diagram
 
-<figure><img src="https://www.figma.com/design/rHxTpbi2gpbZ4dmVlyeY2S/Object-Diagrams?node-id=222-316" alt=""><figcaption><p>The state transition diagram of a client account.</p></figcaption></figure>
+<figure><img src="" alt=""><figcaption><p>The state transition diagram of a client account.</p></figcaption></figure>
+
+```mermaid
+stateDiagram-v2
+    Active --> Terminated : Vendor terminates directly : Vendor
+```
