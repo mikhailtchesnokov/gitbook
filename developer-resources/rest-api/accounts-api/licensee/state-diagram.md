@@ -1,8 +1,6 @@
 
 ## State diagram
 
-<figure><img src="" alt=""><figcaption><p>The state transition diagram of a client account.</p></figcaption></figure>
-
 
 
 ```mermaid
@@ -19,4 +17,21 @@ stateDiagram-v2
     Active_Enabled_Disabled --> Deleted : delete : Client/Operations
     Deleted --> [*]
 ```
+
+
+
+
+
+
+| State | Description | Initial State? | Terminal State? |
+| --- | --- | --- | --- |
+
+| Active | The Licensee is linked to an Active Buyer — one correctly linked to an ERP customer record. Only an Active Licensee may be used to place new Orders. | Yes* | No |
+
+| Enabled | The Licensee is linked to an Enabled Buyer — one enabled without ERP activation. It cannot be used to place new Orders. | Yes* | No |
+
+| Disabled | Set explicitly by a Client or Operations action, or automatically when the related Buyer or Seller is disabled. Cannot be used for new Orders, but remains usable for change and termination Orders against existing Agreements. Retained for historical reference. | No | No |
+
+| Deleted | Soft-deleted. The record is retained but no longer usable, and is visible only to Operations. | No | Yes |
+
 

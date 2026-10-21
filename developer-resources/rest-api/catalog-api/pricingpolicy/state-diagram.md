@@ -1,8 +1,6 @@
 
 ## State diagram
 
-<figure><img src="" alt=""><figcaption><p>The state transition diagram of a client account.</p></figcaption></figure>
-
 
 
 ```mermaid
@@ -13,4 +11,19 @@ stateDiagram-v2
     Inactive --> Active : Activate : Operations
     Active_Inactive --> Deleted : Delete : Operations
 ```
+
+
+
+
+
+
+| State | Description | Initial State? | Terminal State? |
+| --- | --- | --- | --- |
+
+| Active | Policy is active and its yield cap is observed during Order pricing. A Pricing Policy is created directly in this state. | Yes | No |
+
+| Inactive | Policy has been disabled. Yield cap is no longer observed on newly-priced Order lines. | No | No |
+
+| Deleted | Policy has been soft-deleted. Remains fully retrievable via the API including in standard list responses. | No | Yes |
+
 

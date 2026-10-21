@@ -1,8 +1,6 @@
 
 ## State diagram
 
-<figure><img src="" alt=""><figcaption><p>The state transition diagram of a client account.</p></figcaption></figure>
-
 
 
 ```mermaid
@@ -35,4 +33,27 @@ stateDiagram-v2
     Disabled --> Mismatch : errors
     Mismatch --> Disabled : errors cleared
 ```
+
+
+
+
+
+
+| State | Description | Initial State? | Terminal State? |
+| --- | --- | --- | --- |
+
+| Unassigned | The Buyer is not linked to any [[Account]]. | Yes (when created without an Account) | No |
+
+| Enabled | The Buyer is linked to an [[Account]] but has no ERP identifiers of its own yet — it is not ERP-activated and cannot be synchronised with the ERP. | Yes (when created with an Account but no ERP IDs) | No |
+
+| Active | The Buyer is linked to an [[Account]] and carries its ERP identifiers — fully reconciled and operational. | Yes (when created with an Account and ERP IDs) | No |
+
+| Disabled | The Buyer has been manually disabled from Active or Enabled. | No | No |
+
+| Deleted | The Buyer has been soft-deleted. Remains retrievable to Operations; excluded from Vendor/Client row-scoped queries. | No | Yes |
+
+| Conflict | Overlay state: an Unassigned Buyer that also has reconciliation errors. Returns to Unassigned when the errors clear. | No | No |
+
+| Mismatch | Overlay state: an Active or Disabled Buyer that also has reconciliation errors. Returns to its pre-error status when the errors clear. | No | No |
+
 

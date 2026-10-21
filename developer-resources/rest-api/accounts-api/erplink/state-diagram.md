@@ -1,8 +1,6 @@
 
 ## State diagram
 
-<figure><img src="" alt=""><figcaption><p>The state transition diagram of a client account.</p></figcaption></figure>
-
 
 
 ```mermaid
@@ -15,4 +13,19 @@ stateDiagram-v2
     Disabled --> Active : Seller no longer Disabled : Platform — restores prior status)
     Disabled --> Blocked : Seller no longer Disabled : Platform — restores prior status)
 ```
+
+
+
+
+
+
+| State | Description | Initial State? | Terminal State? |
+| --- | --- | --- | --- |
+
+| Active | The link is operational. | Yes | No |
+
+| Blocked | The link has been blocked — in practice because the customer is blocked in the ERP. Set via the Block action; reversible via Unblock. | No | No |
+
+| Disabled | System-controlled: set automatically when the linked [[Seller]] is Disabled, and reversed when the Seller is no longer Disabled. Cannot be changed by user actions while in this state. | No | No |
+
 
