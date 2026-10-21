@@ -32,118 +32,66 @@ stateDiagram-v2
 
 
 
+## States
+
 <table>
   <thead>
     <tr>
-
       <th>State</th>
-
       <th>Description</th>
-
       <th>Initial State?</th>
-
       <th>Terminal State?</th>
-
     </tr>
   </thead>
   <tbody>
-
     <tr>
-
       <td>Active</td>
-
       <td>The Subscription is live and fulfilling. It is evaluated daily by the platform&#39;s renewal service and may be renewed, expired, suspended, updated, or terminated.</td>
-
       <td>Yes</td>
-
       <td>No</td>
-
     </tr>
-
     <tr>
-
       <td>Updating</td>
-
       <td>A Change or Configuration Order affecting this Subscription is being processed. The Subscription returns to Active when the Order completes or fails.</td>
-
       <td>No</td>
-
       <td>No</td>
-
     </tr>
-
     <tr>
-
       <td>Terminating</td>
-
       <td>A Termination Order affecting this Subscription is being processed. The Subscription transitions to Terminated when the Order completes, or reverts when it fails.</td>
-
       <td>No</td>
-
       <td>No</td>
-
     </tr>
-
     <tr>
-
       <td>Suspending</td>
-
       <td>A Suspend Order affecting this Subscription is being processed. The Subscription transitions to Suspended when the Order completes, or reverts to Active when it fails.</td>
-
       <td>No</td>
-
       <td>No</td>
-
     </tr>
-
     <tr>
-
       <td>Suspended</td>
-
       <td>Fulfilment is paused. The Subscription can be resumed, terminated, or expired.</td>
-
       <td>No</td>
-
       <td>No</td>
-
     </tr>
-
     <tr>
-
       <td>Resuming</td>
-
       <td>A Resume Order affecting this Subscription is being processed. The Subscription transitions to Active when the Order completes, or reverts to Suspended when it fails.</td>
-
       <td>No</td>
-
       <td>No</td>
-
     </tr>
-
     <tr>
-
       <td>Terminated</td>
-
       <td>The Subscription has been permanently ended — by a completed Termination Order or by direct Vendor action. Terminal — no outbound transitions.</td>
-
       <td>No</td>
-
       <td>Yes</td>
-
     </tr>
-
     <tr>
-
       <td>Expired</td>
-
       <td>The Subscription&#39;s `commitmentDate` passed without renewal and the platform&#39;s daily service moved it to Expired. Terminal — no outbound transitions.</td>
-
       <td>No</td>
-
       <td>Yes</td>
-
     </tr>
-
   </tbody>
 </table>
 

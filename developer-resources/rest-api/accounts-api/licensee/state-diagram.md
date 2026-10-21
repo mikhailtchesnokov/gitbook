@@ -23,70 +23,42 @@ stateDiagram-v2
 
 
 
+## States
+
 <table>
   <thead>
     <tr>
-
       <th>State</th>
-
       <th>Description</th>
-
       <th>Initial State?</th>
-
       <th>Terminal State?</th>
-
     </tr>
   </thead>
   <tbody>
-
     <tr>
-
       <td>Active</td>
-
       <td>The Licensee is linked to an Active Buyer — one correctly linked to an ERP customer record. Only an Active Licensee may be used to place new Orders.</td>
-
       <td>Yes*</td>
-
       <td>No</td>
-
     </tr>
-
     <tr>
-
       <td>Enabled</td>
-
       <td>The Licensee is linked to an Enabled Buyer — one enabled without ERP activation. It cannot be used to place new Orders.</td>
-
       <td>Yes*</td>
-
       <td>No</td>
-
     </tr>
-
     <tr>
-
       <td>Disabled</td>
-
       <td>Set explicitly by a Client or Operations action, or automatically when the related Buyer or Seller is disabled. Cannot be used for new Orders, but remains usable for change and termination Orders against existing Agreements. Retained for historical reference.</td>
-
       <td>No</td>
-
       <td>No</td>
-
     </tr>
-
     <tr>
-
       <td>Deleted</td>
-
       <td>Soft-deleted. The record is retained but no longer usable, and is visible only to Operations.</td>
-
       <td>No</td>
-
       <td>Yes</td>
-
     </tr>
-
   </tbody>
 </table>
 
