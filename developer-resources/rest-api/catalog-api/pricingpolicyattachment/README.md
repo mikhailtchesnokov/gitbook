@@ -3,6 +3,8 @@
 
 
 
+
+
 {% include "../../../../.gitbook/includes/api-table-header.md" %}
 
 <table data-search="false">
@@ -102,6 +104,8 @@
         </tr></tbody>
 </table>
 
+
+Downstream models here
 ## Account
 
 
@@ -705,7 +709,7 @@
 
 ## Product
 
-
+A Product is the top-level unit of a Vendor's commercial offering on the SoftwareOne Marketplace. It is the container for everything that defines what can be sold and how — [[Item]]s (orderable SKUs), [[Parameter]]s (data fields), [[Template]]s (contextual communications), [[Terms]] (acceptance requirements), [[Media]] (visual assets), and pricing via [[Price List]]s. A Product must go through a publication review before it is available to Clients. Once published, it can be made available through one or more [[Listing]]s, each of which connects the Product to a SoftwareOne [[Seller]], a currency, and an eligible Client population.
 
 <table data-search="false">
     <thead>

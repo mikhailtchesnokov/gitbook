@@ -2,6 +2,14 @@
 ## Authorization
 
 
+### IdPrefix 
+AUT
+
+
+
+### Description
+An Authorization is the formal record of a commercial relationship between a SoftwareOne [[Seller]] and a Vendor, scoped to a specific [[Product]] and currency. It represents the contractual basis under which the Seller is permitted to transact that Product in that currency on behalf of SoftwareOne. An Authorization is a precondition for creating a [[Listing]] — no Listing can exist without an Authorization. It carries billing cadence, eligibility rules, and an optional schemaless settings blob for Vendor-specific configuration.
+
 
 {% include "../../../../.gitbook/includes/api-table-header.md" %}
 
@@ -123,6 +131,8 @@
         </tr></tbody>
 </table>
 
+
+Downstream models here
 ## AccountRef
 
 

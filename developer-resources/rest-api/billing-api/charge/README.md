@@ -1,7 +1,12 @@
 
 ## Charge
 
+
+
+
+### Description
 Represents a charge in the billing system.
+
 
 {% include "../../../../.gitbook/includes/api-table-header.md" %}
 
@@ -256,6 +261,8 @@ Represents a charge in the billing system.
         </tr></tbody>
 </table>
 
+
+Downstream models here
 ## Account
 
 

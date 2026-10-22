@@ -2,6 +2,14 @@
 ## ErpLink
 
 
+### IdPrefix 
+ERP
+
+
+
+### Description
+An ErpLink is the join record that relates one [[Buyer]] to one [[Seller]] — the per-Seller projection of a Buyer's ERP customer data. It represents how a given customer entity is integrated within the scope of a specific SoftwareOne selling entity, carrying that instance's ERP identifiers, address, and ship-to / bill-to detail. ErpLinks are created and removed by the automated ERP-sync integration as it reconciles a Buyer's set of Sellers; the platform exposes them for reading and for a narrow set of Operations actions (blocking, unblocking, and editing an internal note), but not for direct creation or deletion.
+
 
 {% include "../../../../.gitbook/includes/api-table-header.md" %}
 
@@ -123,6 +131,8 @@
         </tr></tbody>
 </table>
 
+
+Downstream models here
 ## Address
 
 

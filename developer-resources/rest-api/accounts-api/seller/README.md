@@ -2,6 +2,14 @@
 ## Seller
 
 
+### IdPrefix 
+SEL
+
+
+
+### Description
+A Seller is a SoftwareOne legal entity registered in the SoftwareOne Marketplace. Each Seller has a 1:1 relationship with an instance of SoftwareOne's ERP system. Sellers exist for every country or jurisdiction in which SoftwareOne conducts business, including entities acquired through mergers and acquisitions that continue to transact independently until ERP consolidation. A Seller acts as the owner of [[Authorization]]s and as the transacting party on [[Listing]]s — it is the named SoftwareOne entity on a commercial transaction with a Client.
+
 
 {% include "../../../../.gitbook/includes/api-table-header.md" %}
 
@@ -102,6 +110,8 @@
         </tr></tbody>
 </table>
 
+
+Downstream models here
 ## Address
 
 

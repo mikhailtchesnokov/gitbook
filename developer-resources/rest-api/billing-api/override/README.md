@@ -1,7 +1,12 @@
 
 ## Override
 
+
+
+
+### Description
 Represents a manual override in the billing system, allowing specific adjustments to billing processing.
+
 
 {% include "../../../../.gitbook/includes/api-table-header.md" %}
 
@@ -81,6 +86,8 @@ Represents a manual override in the billing system, allowing specific adjustment
         </tr></tbody>
 </table>
 
+
+Downstream models here
 ## Account
 
 

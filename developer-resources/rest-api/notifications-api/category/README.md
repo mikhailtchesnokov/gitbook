@@ -1,7 +1,12 @@
 
 ## Category
 
+
+
+
+### Description
 Represents a notification category that can be used to organize and filter notifications.
+
 
 {% include "../../../../.gitbook/includes/api-table-header.md" %}
 
@@ -109,6 +114,8 @@ Represents a notification category that can be used to organize and filter notif
         </tr></tbody>
 </table>
 
+
+Downstream models here
 ## MessageStatistics
 
 Represents message statistics aggregated over different time periods.

@@ -1,7 +1,12 @@
 
 ## QueueParameter
 
+
+
+
+### Description
 Represents a parameter definition associated with a queue, including its display order within the queue.
+
 
 {% include "../../../../.gitbook/includes/api-table-header.md" %}
 
@@ -144,6 +149,8 @@ Represents a parameter definition associated with a queue, including its display
         </tr></tbody>
 </table>
 
+
+Downstream models here
 ## AccountRef
 
 

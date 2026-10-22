@@ -1,7 +1,12 @@
 
 ## Footer
 
+
+
+
+### Description
 Represents a localized footer template that can be appended to notification messages.
+
 
 {% include "../../../../.gitbook/includes/api-table-header.md" %}
 
@@ -74,6 +79,8 @@ Represents a localized footer template that can be appended to notification mess
         </tr></tbody>
 </table>
 
+
+Downstream models here
 ## FooterAudit
 
 Represents audit information for a Mpt.Notifications.Models.Footers.Footer.

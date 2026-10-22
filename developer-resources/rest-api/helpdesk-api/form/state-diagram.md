@@ -8,6 +8,8 @@ The diagrams show different transitions depending on whether the account is a Cl
 
 
 
+## States
+
 This object has no states 
 
 

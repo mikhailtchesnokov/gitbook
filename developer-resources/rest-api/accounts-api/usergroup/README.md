@@ -2,6 +2,14 @@
 ## UserGroup
 
 
+### IdPrefix 
+UGR
+
+
+
+### Description
+A User Group is a named permission set within a single [[Account]] that grants its members access to a specific selection of platform [[Module]]s. It is the granular half of the platform's permission model described in preamble §2.1a — Account type sets the broad Actor profile, while the User Group determines which platform features (Marketplace, Access management, Billing, and so on) a member can use within that Account. Groups are created and maintained by an Actor with the appropriate access-management permission in the Account; members are assigned to groups from the [[Account User]] side. Every Account has one system-provisioned Default group (named "Administrators") that grants the account's full module set.
+
 
 {% include "../../../../.gitbook/includes/api-table-header.md" %}
 
@@ -109,6 +117,8 @@
         </tr></tbody>
 </table>
 
+
+Downstream models here
 ## AccountRef
 
 

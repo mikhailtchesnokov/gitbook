@@ -2,6 +2,14 @@
 ## User
 
 
+### IdPrefix 
+USR
+
+
+
+### Description
+A User is the platform's global identity for a single human being — one person, one User record, keyed by email address. It holds the person's name, contact details, locale/formatting preferences, authentication status, and the set of [[Account]]s they belong to. A User is not itself typed as Vendor, Operations, or Client; the Actor permissions that apply to any given call are derived from which Account the User is operating in and their Group memberships within it (preamble §2.1a). A User is created the first time a person is invited into any Account, and thereafter is reused — additional Account memberships attach to the same global identity rather than creating a second User.
+
 
 {% include "../../../../.gitbook/includes/api-table-header.md" %}
 
@@ -123,6 +131,8 @@
         </tr></tbody>
 </table>
 
+
+Downstream models here
 ## AccountRef
 
 

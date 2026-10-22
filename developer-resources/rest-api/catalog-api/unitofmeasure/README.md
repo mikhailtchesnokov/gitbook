@@ -2,6 +2,14 @@
 ## UnitOfMeasure
 
 
+### IdPrefix 
+UNT (confirmed via observed real object IDs, e.g. `UNT-1593`, `UNT-3691`).
+
+
+
+### Description
+A Unit of Measure is a platform-managed reference object that describes what is being counted or measured when an [[Item]] is ordered. Vendors select a Unit of Measure when creating a Product [[Item]] to communicate the commercial unit of the Item (e.g. User, Licenses, Gigabytes). The set of available Units of Measure is maintained exclusively by Operations. Units of Measure are not Product-scoped — the same unit is available to all Vendors across all Products.
+
 
 {% include "../../../../.gitbook/includes/api-table-header.md" %}
 
@@ -67,6 +75,8 @@
         </tr></tbody>
 </table>
 
+
+Downstream models here
 ## PlatformIdentityRef
 
 

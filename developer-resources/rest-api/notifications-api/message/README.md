@@ -1,7 +1,12 @@
 
 ## Message
 
+
+
+
+### Description
 Represents an individual notification message sent to a specific contact.
+
 
 {% include "../../../../.gitbook/includes/api-table-header.md" %}
 
@@ -123,6 +128,8 @@ Represents an individual notification message sent to a specific contact.
         </tr></tbody>
 </table>
 
+
+Downstream models here
 ## Account
 
 

@@ -1,7 +1,12 @@
 
 ## Currency
 
+
+
+
+### Description
 Represents currency in exchange module.
+
 
 {% include "../../../../.gitbook/includes/api-table-header.md" %}
 
@@ -88,6 +93,8 @@ Represents currency in exchange module.
         </tr></tbody>
 </table>
 
+
+Downstream models here
 ## CurrencyStatistics
 
 Currency usage statistics

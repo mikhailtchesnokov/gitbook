@@ -1,7 +1,12 @@
 
 ## StatementAttachment
 
+
+
+
+### Description
 Represents an attachment associated with a billing statement in the system.
+
 
 {% include "../../../../.gitbook/includes/api-table-header.md" %}
 
@@ -102,6 +107,8 @@ Represents an attachment associated with a billing statement in the system.
         </tr></tbody>
 </table>
 
+
+Downstream models here
 ## PlatformIdentityRef
 
 

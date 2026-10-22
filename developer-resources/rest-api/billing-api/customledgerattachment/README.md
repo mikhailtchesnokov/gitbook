@@ -1,7 +1,12 @@
 
 ## CustomLedgerAttachment
 
+
+
+
+### Description
 Represents an attachment associated with a custom ledger in the billing system.
+
 
 {% include "../../../../.gitbook/includes/api-table-header.md" %}
 
@@ -102,6 +107,8 @@ Represents an attachment associated with a custom ledger in the billing system.
         </tr></tbody>
 </table>
 
+
+Downstream models here
 ## CustomLedgerRef
 
 Represents a custom ledger in the billing system.

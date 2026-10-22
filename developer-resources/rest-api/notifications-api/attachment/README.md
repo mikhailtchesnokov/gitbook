@@ -1,7 +1,12 @@
 
 ## Attachment
 
+
+
+
+### Description
 Represents a file attachment associated with a notification message or batch.
+
 
 {% include "../../../../.gitbook/includes/api-table-header.md" %}
 
@@ -59,3 +64,6 @@ Represents a file attachment associated with a notification message or batch.
             <td>Gets or sets the content type of the attachment</td>
         </tr></tbody>
 </table>
+
+
+Downstream models here

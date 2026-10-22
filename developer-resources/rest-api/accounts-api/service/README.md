@@ -2,6 +2,14 @@
 ## Service
 
 
+### IdPrefix 
+SVC
+
+
+
+### Description
+A Service is the platform's identity for an internal, non-human component (for example, the billing or scheduler component). It sits alongside the human identity ([[User]]) and the programmatic identity ([[API Token]]) as one of the platform's identity types, so that actions performed autonomously by an internal component can be attributed to a named identity in the audit trail. Service identities are provisioned and maintained by the platform itself, not by any Actor; the public API exposes them as read-only reference data.
+
 
 {% include "../../../../.gitbook/includes/api-table-header.md" %}
 
@@ -74,6 +82,8 @@
         </tr></tbody>
 </table>
 
+
+Downstream models here
 ## PlatformIdentityRef
 
 

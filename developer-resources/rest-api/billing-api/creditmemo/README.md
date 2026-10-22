@@ -1,7 +1,12 @@
 
 ## CreditMemo
 
+
+
+
+### Description
 Represents a credit memo in the billing system.
+
 
 {% include "../../../../.gitbook/includes/api-table-header.md" %}
 
@@ -179,6 +184,8 @@ Represents a credit memo in the billing system.
         </tr></tbody>
 </table>
 
+
+Downstream models here
 ## AccountRef
 
 

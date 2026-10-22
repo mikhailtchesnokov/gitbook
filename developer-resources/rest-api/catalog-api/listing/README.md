@@ -2,6 +2,14 @@
 ## Listing
 
 
+### IdPrefix 
+LST
+
+
+
+### Description
+A Listing makes a [[Product]] available for purchase through a specific SoftwareOne [[Seller]] at the prices held in a specific [[Price List]], under a specific [[Authorization]]. It ties those four references together — [[Authorization]], [[Product]], [[Seller]], and [[Price List]] — and governs which Client types may transact against it through its eligibility flags. When an [[Order]] is placed without naming a Listing explicitly, the platform routes it to the primary Listing matching the ordering Client's [[Seller]], [[Product]], and eligibility. The [[Authorization]], [[Product]], [[Seller]], and [[Price List]] a Listing references are fixed at creation and cannot be changed afterward.
+
 
 {% include "../../../../.gitbook/includes/api-table-header.md" %}
 
@@ -116,6 +124,8 @@
         </tr></tbody>
 </table>
 
+
+Downstream models here
 ## AccountRef
 
 

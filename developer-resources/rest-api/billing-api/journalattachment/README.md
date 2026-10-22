@@ -1,7 +1,12 @@
 
 ## JournalAttachment
 
+
+
+
+### Description
 Represents an attachment associated with a journal in the billing system.
+
 
 {% include "../../../../.gitbook/includes/api-table-header.md" %}
 
@@ -109,6 +114,8 @@ Represents an attachment associated with a journal in the billing system.
         </tr></tbody>
 </table>
 
+
+Downstream models here
 ## AccountRef
 
 

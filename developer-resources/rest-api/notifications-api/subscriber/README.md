@@ -1,7 +1,12 @@
 
 ## Subscriber
 
+
+
+
+### Description
 Represents a subscription that defines which users or user groups should automatically receive notifications for a specific category.
+
 
 {% include "../../../../.gitbook/includes/api-table-header.md" %}
 
@@ -88,6 +93,8 @@ Represents a subscription that defines which users or user groups should automat
         </tr></tbody>
 </table>
 
+
+Downstream models here
 ## Account
 
 

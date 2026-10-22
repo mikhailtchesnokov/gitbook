@@ -1,7 +1,12 @@
 
 ## LedgerAttachment
 
+
+
+
+### Description
 Represents an attachment associated with a ledger in the billing system.
+
 
 {% include "../../../../.gitbook/includes/api-table-header.md" %}
 
@@ -102,6 +107,8 @@ Represents an attachment associated with a ledger in the billing system.
         </tr></tbody>
 </table>
 
+
+Downstream models here
 ## LedgerRef
 
 Represents a ledger in the billing system.

@@ -1,7 +1,12 @@
 
 ## CreditMemoAttachment
 
+
+
+
+### Description
 Represents an attachment associated with a credit memo in the billing system.
+
 
 {% include "../../../../.gitbook/includes/api-table-header.md" %}
 
@@ -109,6 +114,8 @@ Represents an attachment associated with a credit memo in the billing system.
         </tr></tbody>
 </table>
 
+
+Downstream models here
 ## CreditMemoRef
 
 Represents a credit memo in the billing system.

@@ -1,7 +1,12 @@
 
 ## Contact
 
+
+
+
+### Description
 Represents a notification contact who can receive email notifications.
+
 
 {% include "../../../../.gitbook/includes/api-table-header.md" %}
 
@@ -109,6 +114,8 @@ Represents a notification contact who can receive email notifications.
         </tr></tbody>
 </table>
 
+
+Downstream models here
 ## AccountRef
 
 

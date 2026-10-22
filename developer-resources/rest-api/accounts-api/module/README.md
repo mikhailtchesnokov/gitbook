@@ -2,6 +2,14 @@
 ## Module
 
 
+### IdPrefix 
+MOD
+
+
+
+### Description
+A Module is a platform-defined functional area of the Marketplace — for example the Marketplace storefront, Access Management, or Billing — that a permission set grants or withholds access to. Modules are the catalog of access scopes that [[User Group]]s and API Token permission sets reference when they are configured, and each Module declares which account types it applies to and how it may be enabled. Modules are reference data maintained by the platform itself: no Actor creates, edits, or deletes them through the API, and they are introduced or changed only through platform releases. A Module exists so that granular access within an [[Account]] can be described in terms of stable, named capabilities rather than ad-hoc permission flags.
+
 
 {% include "../../../../.gitbook/includes/api-table-header.md" %}
 
@@ -88,6 +96,8 @@
         </tr></tbody>
 </table>
 
+
+Downstream models here
 ## Filters
 
 

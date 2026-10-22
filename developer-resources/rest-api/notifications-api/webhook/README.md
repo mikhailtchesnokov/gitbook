@@ -2,6 +2,14 @@
 ## Webhook
 
 
+### IdPrefix 
+WBH (confirmed via `preamble/PLATFORM_CANON_PREAMBLE.md` §5.3 and observed real object IDs, e.g. `WBH-8684-4304`).
+
+
+
+### Description
+A Webhook is an [[Account]]-owned integration hook that causes the platform to call an external HTTP endpoint when a specific platform event occurs. For the event types currently confirmed (see BR-003), this is a **synchronous validation/mutation callout**, not a fire-and-forget notification — the platform waits for the endpoint's response and applies it as a mutation (`Delta`) back onto the triggering object (e.g. [[Order]], Enrollment). Webhooks belong to an Account, not to a specific [[Product]] or other object — the object reference in a Webhook is a scoping filter that determines which single object instance's events it listens for, not a parent relationship.
+
 
 {% include "../../../../.gitbook/includes/api-table-header.md" %}
 
@@ -144,6 +152,8 @@
         </tr></tbody>
 </table>
 
+
+Downstream models here
 ## AccountRef
 
 

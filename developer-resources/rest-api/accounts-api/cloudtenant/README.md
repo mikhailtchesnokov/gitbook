@@ -2,6 +2,14 @@
 ## CloudTenant
 
 
+### IdPrefix 
+CLT
+
+
+
+### Description
+A Cloud Tenant represents a single cloud environment used for cloud-spend management — an AWS, Microsoft Azure, or Microsoft 365 subscription (CSP or EA), or an SLM or Virtual tenant — mapped onto a client [[Account]]. It is the Marketplace-side representation of a tenant that lives in SoftwareOne's legacy consumption-management system; the Marketplace object exists so that cloud-spend data can be attributed to the correct client Account and so that [[User]] access to spend data can be scoped per tenant. A Cloud Tenant does not provision or create anything in the external consumption-management system — creating one registers (maps) an already-existing consumption tenant to an Account.
+
 
 {% include "../../../../.gitbook/includes/api-table-header.md" %}
 
@@ -81,6 +89,8 @@
         </tr></tbody>
 </table>
 
+
+Downstream models here
 ## AccountRef
 
 

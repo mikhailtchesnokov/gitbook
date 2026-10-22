@@ -1,7 +1,12 @@
 
 ## AccountSettings
 
+
+
+
+### Description
 Represents account-specific notification settings.
+
 
 {% include "../../../../.gitbook/includes/api-table-header.md" %}
 
@@ -67,6 +72,8 @@ Represents account-specific notification settings.
         </tr></tbody>
 </table>
 
+
+Downstream models here
 ## AccountRef
 
 

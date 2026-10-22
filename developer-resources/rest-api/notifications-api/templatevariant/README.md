@@ -1,7 +1,12 @@
 
 ## TemplateVariant
 
+
+
+
+### Description
 Represents a language-specific variant of a template.
+
 
 {% include "../../../../.gitbook/includes/api-table-header.md" %}
 
@@ -88,6 +93,8 @@ Represents a language-specific variant of a template.
         </tr></tbody>
 </table>
 
+
+Downstream models here
 ## NotificationTemplateRef
 
 Represents a reusable template that can be used to generate messages.

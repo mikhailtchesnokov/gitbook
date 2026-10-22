@@ -2,6 +2,14 @@
 ## PricingPolicy
 
 
+### IdPrefix 
+PRP
+
+
+
+### Description
+A Pricing Policy defines the maximum yield cap (markup or margin) that Operations permits to be applied to a specific Client when pricing their Orders. It is scoped to a specific Client and an eligibility type (client and/or partner), and may apply to all Products or be restricted to a specific set of Products. When a Pricing Policy is Active, the yield cap is observed during [[Order]] pricing — the platform caps the markup applied to matching lines at the policy's value. Pricing Policies are invisible to Clients and Vendors; their effect is felt during ordering but the policy itself is internal to Operations.
+
 
 {% include "../../../../.gitbook/includes/api-table-header.md" %}
 
@@ -116,6 +124,8 @@
         </tr></tbody>
 </table>
 
+
+Downstream models here
 ## Account
 
 
@@ -762,7 +772,7 @@
 
 ## Product
 
-
+A Product is the top-level unit of a Vendor's commercial offering on the SoftwareOne Marketplace. It is the container for everything that defines what can be sold and how — [[Item]]s (orderable SKUs), [[Parameter]]s (data fields), [[Template]]s (contextual communications), [[Terms]] (acceptance requirements), [[Media]] (visual assets), and pricing via [[Price List]]s. A Product must go through a publication review before it is available to Clients. Once published, it can be made available through one or more [[Listing]]s, each of which connects the Product to a SoftwareOne [[Seller]], a currency, and an eligible Client population.
 
 <table data-search="false">
     <thead>

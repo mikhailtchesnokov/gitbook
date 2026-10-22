@@ -1,7 +1,12 @@
 
 ## Pair
 
+
+
+
+### Description
 Represents a pair of currencies in exchange module.
+
 
 {% include "../../../../.gitbook/includes/api-table-header.md" %}
 
@@ -123,6 +128,8 @@ Represents a pair of currencies in exchange module.
         </tr></tbody>
 </table>
 
+
+Downstream models here
 ## CurrencyRef
 
 Represents currency in exchange module.

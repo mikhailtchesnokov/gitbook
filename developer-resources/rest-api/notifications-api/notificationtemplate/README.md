@@ -1,7 +1,12 @@
 
 ## NotificationTemplate
 
+
+
+
+### Description
 Represents a reusable template that can be used to generate messages.
+
 
 {% include "../../../../.gitbook/includes/api-table-header.md" %}
 
@@ -123,6 +128,8 @@ Represents a reusable template that can be used to generate messages.
         </tr></tbody>
 </table>
 
+
+Downstream models here
 ## AccountRef
 
 

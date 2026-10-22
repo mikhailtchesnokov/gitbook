@@ -1,7 +1,12 @@
 
 ## Task
 
+
+
+
+### Description
 The Task represents the state of an asynchronous, usually long running operation.
+
 
 {% include "../../../../.gitbook/includes/api-table-header.md" %}
 
@@ -151,6 +156,8 @@ The Task represents the state of an asynchronous, usually long running operation
         </tr></tbody>
 </table>
 
+
+Downstream models here
 ## PlatformAccountRef
 
 

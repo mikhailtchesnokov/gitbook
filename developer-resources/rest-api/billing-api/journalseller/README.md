@@ -1,7 +1,12 @@
 
 ## JournalSeller
 
+
+
+
+### Description
 Represents a seller associated with a journal entry in the billing system.
+
 
 {% include "../../../../.gitbook/includes/api-table-header.md" %}
 
@@ -81,6 +86,8 @@ Represents a seller associated with a journal entry in the billing system.
         </tr></tbody>
 </table>
 
+
+Downstream models here
 ## Address
 
 

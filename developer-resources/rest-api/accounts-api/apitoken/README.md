@@ -2,6 +2,14 @@
 ## ApiToken
 
 
+### IdPrefix 
+TKN
+
+
+
+### Description
+An API Token is a non-human authentication credential used to call the platform API on behalf of an [[Account]]. It is the mechanism by which Extensions, integrations, and automation authenticate — the machine equivalent of a [[User]]'s interactive session. Each API Token is scoped to exactly one [[Account]] and carries a permission set derived from that Account's type and the [[Module]]s assigned to the token, so a token can never act outside the Account it belongs to or beyond the permissions granted to it (preamble §2.1a and §67). A token is created by an administrator when an integration needs programmatic access, and its secret credential is used thereafter to authenticate every call the integration makes.
+
 
 {% include "../../../../.gitbook/includes/api-table-header.md" %}
 
@@ -109,6 +117,8 @@
         </tr></tbody>
 </table>
 
+
+Downstream models here
 ## AccountRef
 
 

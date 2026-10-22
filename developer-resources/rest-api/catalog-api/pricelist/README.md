@@ -2,6 +2,14 @@
 ## PriceList
 
 
+### IdPrefix 
+PRC
+
+
+
+### Description
+A Price List is a currency-scoped container that holds pricing for all Items in a [[Product]]. Each Price List is associated with exactly one [[Product]] and one currency. A [[Product]] may have multiple Price Lists — one per currency it trades in, and potentially multiple per currency for different market segments. When a Price List is created, a [[Price List Item]] is created for every reviewed Item currently in the [[Product]]. A Client can read a Price List only through an eligible [[Listing]] relationship; the Price List itself is never independently marketed to Clients.
+
 
 {% include "../../../../.gitbook/includes/api-table-header.md" %}
 
@@ -109,6 +117,8 @@
         </tr></tbody>
 </table>
 
+
+Downstream models here
 ## AccountRef
 
 

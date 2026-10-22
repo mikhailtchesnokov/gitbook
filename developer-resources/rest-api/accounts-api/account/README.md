@@ -2,6 +2,14 @@
 ## Account
 
 
+### IdPrefix 
+ACC
+
+
+
+### Description
+An Account is the platform identity record for an Actor — either a Vendor (a software manufacturer transacting through the SoftwareOne Marketplace), an Operations entity (SoftwareOne itself, acting as platform steward), or a Client (a customer organisation purchasing through the SoftwareOne Marketplace). Every Account has a `type` field that determines which Actor permission profile applies to its Users and API Tokens. In PROD, there is exactly one Operations Account, one Account per Vendor entity, and one Account per Client organisation. Client Accounts have a 1:1 relationship with a CDG (Customer Discount Group) in SoftwareOne's ERP.
+
 
 {% include "../../../../.gitbook/includes/api-table-header.md" %}
 
@@ -144,6 +152,8 @@
         </tr></tbody>
 </table>
 
+
+Downstream models here
 ## AccountExternalIds
 
 

@@ -1,7 +1,15 @@
 
 ## Statement
 
-Represents a billing statement in the system, containing details about transactions, pricing, and associated entities.
+
+### IdPrefix 
+SOM
+
+
+
+### Description
+A Statement is the client-facing billing document the platform's billing pipeline produces from a [[Ledger]] (or, for manually-uploaded billing, a Custom Ledger — not yet canonised), scoped to exactly one Commerce: [[Agreement]]. Its net total determines its type — Debit (zero or positive, becoming an ERP Sales Order and, once posted, an [[Invoice]]) or Credit (negative, becoming an ERP [[Credit Memo]]) — and its per-line detail is exposed as a separate child [[Charge]] collection rather than an embedded array. A Statement can also be a Consolidated grouping — an Operations-created shell that rolls several existing standalone Statements together into a single ERP posting. Clients read their own Statements; every action on a Statement, including its own creation, is restricted to the Operations Actor.
+
 
 {% include "../../../../.gitbook/includes/api-table-header.md" %}
 
@@ -200,6 +208,8 @@ Represents a billing statement in the system, containing details about transacti
         </tr></tbody>
 </table>
 
+
+Downstream models here
 ## AccountRef
 
 

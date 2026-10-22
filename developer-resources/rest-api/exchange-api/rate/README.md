@@ -1,7 +1,12 @@
 
 ## Rate
 
+
+
+
+### Description
 Record of rate for specific day
+
 
 {% include "../../../../.gitbook/includes/api-table-header.md" %}
 
@@ -95,6 +100,8 @@ Record of rate for specific day
         </tr></tbody>
 </table>
 
+
+Downstream models here
 ## ExchangeAudit
 
 Exchange Entity Audit properties bag

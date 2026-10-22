@@ -1,7 +1,12 @@
 
 ## ProductProfileAttachment
 
+
+
+
+### Description
 Represents a product profile attachment entity.
+
 
 {% include "../../../../.gitbook/includes/api-table-header.md" %}
 
@@ -95,6 +100,8 @@ Represents a product profile attachment entity.
         </tr></tbody>
 </table>
 
+
+Downstream models here
 ## Account
 
 

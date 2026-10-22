@@ -1,7 +1,12 @@
 
 ## ProductProfileMedia
 
+
+
+
+### Description
 Represents a product profile media entity.
+
 
 {% include "../../../../.gitbook/includes/api-table-header.md" %}
 
@@ -116,6 +121,8 @@ Represents a product profile media entity.
         </tr></tbody>
 </table>
 
+
+Downstream models here
 ## Account
 
 

@@ -1,7 +1,12 @@
 
 ## AnalyticsResult
 
+
+
+
+### Description
 Represents analytics result data with date-based buckets and aggregated values.
+
 
 {% include "../../../../.gitbook/includes/api-table-header.md" %}
 
@@ -32,6 +37,8 @@ Represents analytics result data with date-based buckets and aggregated values.
         </tr></tbody>
 </table>
 
+
+Downstream models here
 ## Bucket
 
 Represents a bucket for grouping analytics data.

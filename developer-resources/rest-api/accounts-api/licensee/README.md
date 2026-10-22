@@ -2,6 +2,14 @@
 ## Licensee
 
 
+### IdPrefix 
+LCE
+
+
+
+### Description
+A Licensee represents a specific pairing of a customer legal entity and a SoftwareOne selling entity — the [[Buyer]] as it transacts through one [[Seller]]. It is the party on whose behalf a Commerce: [[Agreement]] (and the resulting [[Subscription]]s and [[Asset]]s) is established, and so it is the customer-facing procurement identity used throughout ordering. A Licensee is created — by a Client for its own [[Account]], or by Operations — only once an [[ErpLink]] joins the chosen Buyer and Seller. In a Tier 2 reselling arrangement, the Licensee is the reseller's downstream customer.
+
 
 {% include "../../../../.gitbook/includes/api-table-header.md" %}
 
@@ -123,6 +131,8 @@
         </tr></tbody>
 </table>
 
+
+Downstream models here
 ## AccountRef
 
 

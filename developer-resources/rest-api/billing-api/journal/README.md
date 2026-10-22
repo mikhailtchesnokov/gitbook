@@ -1,7 +1,15 @@
 
 ## Journal
 
-Represents a journal entry in the billing system.
+
+### IdPrefix 
+BJO
+
+
+
+### Description
+A Journal is the entry point of the platform's billing pipeline: the normalized set of billing charges a Vendor submits for one [[Authorization]] and one billing period. A Vendor creates it in the scope of a single [[Authorization]], which fixes the Vendor [[Account]], the [[Product]], the owning [[Seller]], the currency, and the submission cadence; the Vendor then uploads charge data, which the platform validates and enriches with matched commercial identities. Once the Vendor submits the Journal to SoftwareOne, the Operations Actor reviews it and either returns it to the Vendor for clarification or accepts it. Accepting a Journal rates its charges into one [[Ledger]] per Seller, and the Journal completes automatically when all of its Ledgers complete.
+
 
 {% include "../../../../.gitbook/includes/api-table-header.md" %}
 
@@ -158,6 +166,8 @@ Represents a journal entry in the billing system.
         </tr></tbody>
 </table>
 
+
+Downstream models here
 ## AccountRef
 
 
