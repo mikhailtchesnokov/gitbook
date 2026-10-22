@@ -161,7 +161,7 @@ Represents a parameter definition associated with a queue, including its display
         <tr>
             <th>Field</th>
             <th>Type</th>
-	        <th>Core</th>
+	        <th>Rql</th>
 	        <th>Access</th>
             <th>Description</th>
         </tr>
@@ -170,28 +170,28 @@ Represents a parameter definition associated with a queue, including its display
         <tr>
             <td><code>id</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
-	        <td>✔</td>
+	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
@@ -221,7 +221,7 @@ Represents a parameter definition associated with a queue, including its display
         <tr>
             <th>Field</th>
             <th>Type</th>
-	        <th>Core</th>
+	        <th>Rql</th>
 	        <th>Access</th>
             <th>Description</th>
         </tr>
@@ -230,14 +230,14 @@ Represents a parameter definition associated with a queue, including its display
         <tr>
             <td><code>min</code></td>
             <td>integer</td>
-	        <td>✔</td>
+	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>max</code></td>
             <td>integer</td>
-	        <td>✔</td>
+	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
@@ -253,7 +253,7 @@ Constraints specific to helpdesk parameters
         <tr>
             <th>Field</th>
             <th>Type</th>
-	        <th>Core</th>
+	        <th>Rql</th>
 	        <th>Access</th>
             <th>Description</th>
         </tr>
@@ -306,7 +306,7 @@ Audit information for a parameter definition
         <tr>
             <th>Field</th>
             <th>Type</th>
-	        <th>Core</th>
+	        <th>Rql</th>
 	        <th>Access</th>
             <th>Description</th>
         </tr>
@@ -345,7 +345,7 @@ Usage statistics for a parameter definition
         <tr>
             <th>Field</th>
             <th>Type</th>
-	        <th>Core</th>
+	        <th>Rql</th>
 	        <th>Access</th>
             <th>Description</th>
         </tr>
@@ -354,21 +354,21 @@ Usage statistics for a parameter definition
         <tr>
             <td><code>cases</code></td>
             <td>integer</td>
-	        <td>✔</td>
+	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td>The number of cases using this parameter</td>
         </tr>
         <tr>
             <td><code>groups</code></td>
             <td>integer</td>
-	        <td>✔</td>
+	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td>The number of groups using this parameter</td>
         </tr>
         <tr>
             <td><code>forms</code></td>
             <td>integer</td>
-	        <td>✔</td>
+	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td>The number of forms using this parameter</td>
         </tr>
@@ -384,7 +384,7 @@ Usage statistics for a parameter definition
         <tr>
             <th>Field</th>
             <th>Type</th>
-	        <th>Core</th>
+	        <th>Rql</th>
 	        <th>Access</th>
             <th>Description</th>
         </tr>
@@ -393,28 +393,28 @@ Usage statistics for a parameter definition
         <tr>
             <td><code>id</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
-	        <td>✔</td>
+	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
@@ -430,7 +430,7 @@ Usage statistics for a parameter definition
         <tr>
             <th>Field</th>
             <th>Type</th>
-	        <th>Core</th>
+	        <th>Rql</th>
 	        <th>Access</th>
             <th>Description</th>
         </tr>
@@ -455,7 +455,7 @@ Usage statistics for a parameter definition
         <tr>
             <th>Field</th>
             <th>Type</th>
-	        <th>Core</th>
+	        <th>Rql</th>
 	        <th>Access</th>
             <th>Description</th>
         </tr>
