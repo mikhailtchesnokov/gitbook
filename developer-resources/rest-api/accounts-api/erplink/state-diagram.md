@@ -62,46 +62,62 @@ stateDiagram-v2
 <table>
   <thead>
     <tr>
-      <th>ID</th>
+      <th>From State</th>
       <th>To State</th>
+      <th>Action</th>
       <th>Endpoint / Verb</th>
+      <th>Actor</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>T1</td>
+      <td>—</td>
       <td>Active</td>
+      <td>Create (ERP-sync reconciliation)</td>
       <td>(no endpoint — created during [[Buyer]] synchronisation)</td>
+      <td>Platform</td>
     </tr>
     <tr>
-      <td>T2</td>
+      <td>Active</td>
       <td>Blocked</td>
+      <td>Block link</td>
       <td>`POST /v1/accounts/erp-links/{id}/block`</td>
+      <td>Operations</td>
     </tr>
     <tr>
-      <td>T3</td>
-      <td>Active</td>
-      <td>`POST /v1/accounts/erp-links/{id}/unblock`</td>
-    </tr>
-    <tr>
-      <td>T4a</td>
-      <td>Disabled</td>
-      <td>(no endpoint — system, at [[Buyer]] synchronisation)</td>
-    </tr>
-    <tr>
-      <td>T4b</td>
-      <td>Disabled</td>
-      <td>(no endpoint — system, at [[Buyer]] synchronisation)</td>
-    </tr>
-    <tr>
-      <td>T5a</td>
-      <td>Active</td>
-      <td>(no endpoint — system, at [[Buyer]] synchronisation)</td>
-    </tr>
-    <tr>
-      <td>T5b</td>
       <td>Blocked</td>
+      <td>Active</td>
+      <td>Unblock link</td>
+      <td>`POST /v1/accounts/erp-links/{id}/unblock`</td>
+      <td>Operations</td>
+    </tr>
+    <tr>
+      <td>Active</td>
+      <td>Disabled</td>
+      <td>Disable link (Seller Disabled)</td>
       <td>(no endpoint — system, at [[Buyer]] synchronisation)</td>
+      <td>Platform</td>
+    </tr>
+    <tr>
+      <td>Blocked</td>
+      <td>Disabled</td>
+      <td>Disable link (Seller Disabled)</td>
+      <td>(no endpoint — system, at [[Buyer]] synchronisation)</td>
+      <td>Platform</td>
+    </tr>
+    <tr>
+      <td>Disabled</td>
+      <td>Active</td>
+      <td>Enable link (Seller no longer Disabled)</td>
+      <td>(no endpoint — system, at [[Buyer]] synchronisation)</td>
+      <td>Platform</td>
+    </tr>
+    <tr>
+      <td>Disabled</td>
+      <td>Blocked</td>
+      <td>Enable link (Seller no longer Disabled)</td>
+      <td>(no endpoint — system, at [[Buyer]] synchronisation)</td>
+      <td>Platform</td>
     </tr>
   </tbody>
 </table>

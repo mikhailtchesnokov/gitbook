@@ -59,36 +59,48 @@ stateDiagram-v2
 <table>
   <thead>
     <tr>
-      <th>ID</th>
+      <th>From State</th>
       <th>To State</th>
+      <th>Action</th>
       <th>Endpoint / Verb</th>
+      <th>Actor</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>T1</td>
+      <td>—</td>
       <td>Enabled</td>
+      <td>Create Webhook</td>
       <td>`POST` (base collection endpoint)</td>
+      <td>Vendor, Operations</td>
     </tr>
     <tr>
-      <td>T2</td>
-      <td>Disabled</td>
-      <td>`disable` (`POST .../{id}/disable`)</td>
-    </tr>
-    <tr>
-      <td>T3</td>
       <td>Enabled</td>
+      <td>Disabled</td>
+      <td>Disable Webhook</td>
+      <td>`disable` (`POST .../{id}/disable`)</td>
+      <td>Vendor, Operations</td>
+    </tr>
+    <tr>
+      <td>Disabled</td>
+      <td>Enabled</td>
+      <td>Enable Webhook</td>
       <td>`enable` (`POST .../{id}/enable`)</td>
+      <td>Vendor, Operations</td>
     </tr>
     <tr>
-      <td>T4</td>
+      <td>Enabled</td>
       <td>Deleted</td>
+      <td>Delete Webhook</td>
       <td>`DELETE /{id}`</td>
+      <td>Vendor, Operations</td>
     </tr>
     <tr>
-      <td>T5</td>
+      <td>Disabled</td>
       <td>Deleted</td>
+      <td>Delete Webhook</td>
       <td>`DELETE /{id}`</td>
+      <td>Vendor, Operations</td>
     </tr>
   </tbody>
 </table>

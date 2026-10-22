@@ -129,156 +129,216 @@ stateDiagram-v2
 <table>
   <thead>
     <tr>
-      <th>ID</th>
+      <th>From State</th>
       <th>To State</th>
+      <th>Action</th>
       <th>Endpoint / Verb</th>
+      <th>Actor</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>T1</td>
+      <td>—</td>
       <td>Draft</td>
+      <td>Create</td>
       <td>`POST` (base collection endpoint)</td>
+      <td>Vendor</td>
     </tr>
     <tr>
-      <td>T2</td>
+      <td>Draft</td>
       <td>Validating</td>
+      <td>Upload charge data</td>
       <td>`upload`</td>
+      <td>Vendor / Operations</td>
     </tr>
     <tr>
-      <td>T3</td>
-      <td>Validating</td>
-      <td>`upload`</td>
-    </tr>
-    <tr>
-      <td>T4</td>
-      <td>Validating</td>
-      <td>`upload`</td>
-    </tr>
-    <tr>
-      <td>T5</td>
-      <td>Validating</td>
-      <td>`upload`</td>
-    </tr>
-    <tr>
-      <td>T6</td>
       <td>Validated</td>
-      <td>system (automatic)</td>
+      <td>Validating</td>
+      <td>Re-upload charge data</td>
+      <td>`upload`</td>
+      <td>Vendor / Operations</td>
     </tr>
     <tr>
-      <td>T7</td>
       <td>Error</td>
-      <td>system (automatic)</td>
+      <td>Validating</td>
+      <td>Re-upload charge data</td>
+      <td>`upload`</td>
+      <td>Vendor / Operations</td>
     </tr>
     <tr>
-      <td>T8</td>
-      <td>Review</td>
-      <td>system (automatic)</td>
-    </tr>
-    <tr>
-      <td>T9</td>
-      <td>Review</td>
-      <td>`submit`</td>
-    </tr>
-    <tr>
-      <td>T10</td>
-      <td>Review</td>
-      <td>`submit`</td>
-    </tr>
-    <tr>
-      <td>T11</td>
       <td>Enquiring</td>
+      <td>Validating</td>
+      <td>Re-upload charge data</td>
+      <td>`upload`</td>
+      <td>Vendor / Operations</td>
+    </tr>
+    <tr>
+      <td>Validating</td>
+      <td>Validated</td>
+      <td>Validation completed, no errors</td>
+      <td>system (automatic)</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td>Validating</td>
+      <td>Error</td>
+      <td>Validation completed with errors</td>
+      <td>system (automatic)</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td>Validating</td>
+      <td>Review</td>
+      <td>Re-processing completed</td>
+      <td>system (automatic)</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td>Validated</td>
+      <td>Review</td>
+      <td>Submit to SoftwareOne</td>
+      <td>`submit`</td>
+      <td>Vendor</td>
+    </tr>
+    <tr>
+      <td>Enquiring</td>
+      <td>Review</td>
+      <td>Submit to SoftwareOne</td>
+      <td>`submit`</td>
+      <td>Vendor</td>
+    </tr>
+    <tr>
+      <td>Review</td>
+      <td>Enquiring</td>
+      <td>Return to vendor</td>
       <td>`enquiry`</td>
+      <td>Operations</td>
     </tr>
     <tr>
-      <td>T12</td>
+      <td>Review</td>
       <td>Reconciling</td>
+      <td>Reconcile a charge</td>
       <td>charge match / ignore / reset action (no dedicated Journal endpoint)</td>
+      <td>Operations</td>
     </tr>
     <tr>
-      <td>T13</td>
+      <td>Reconciling</td>
       <td>Validating</td>
+      <td>Recalculate charges</td>
       <td>`recalculate`</td>
+      <td>Operations</td>
     </tr>
     <tr>
-      <td>T14</td>
+      <td>Review</td>
       <td>Validating</td>
+      <td>Regenerate charges</td>
       <td>`regenerate`</td>
+      <td>Operations</td>
     </tr>
     <tr>
-      <td>T15</td>
-      <td>Validating</td>
-      <td>`regenerate`</td>
-    </tr>
-    <tr>
-      <td>T16</td>
-      <td>Generating</td>
-      <td>`accept`</td>
-    </tr>
-    <tr>
-      <td>T17</td>
       <td>Generated</td>
-      <td>system (automatic)</td>
+      <td>Validating</td>
+      <td>Regenerate charges</td>
+      <td>`regenerate`</td>
+      <td>Operations</td>
     </tr>
     <tr>
-      <td>T18</td>
       <td>Review</td>
-      <td>system (automatic)</td>
+      <td>Generating</td>
+      <td>Accept</td>
+      <td>`accept`</td>
+      <td>Operations</td>
     </tr>
     <tr>
-      <td>T19</td>
+      <td>Generating</td>
+      <td>Generated</td>
+      <td>Ledger creation succeeded</td>
+      <td>system (automatic)</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td>Generating</td>
+      <td>Review</td>
+      <td>Ledger creation failed</td>
+      <td>system (automatic)</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td>Generated</td>
       <td>Accepted</td>
+      <td>All Ledgers generated</td>
       <td>system (automatic)</td>
+      <td>—</td>
     </tr>
     <tr>
-      <td>T20</td>
+      <td>Generated</td>
       <td>Queued</td>
+      <td>Ledgers queued</td>
       <td>system (automatic)</td>
+      <td>—</td>
     </tr>
     <tr>
-      <td>T21</td>
+      <td>Accepted</td>
       <td>Queued</td>
+      <td>Ledgers queued</td>
       <td>system (automatic)</td>
+      <td>—</td>
     </tr>
     <tr>
-      <td>T22</td>
+      <td>Queued</td>
       <td>Completed</td>
+      <td>All Ledgers completed</td>
       <td>system (automatic)</td>
+      <td>—</td>
     </tr>
     <tr>
-      <td>T23</td>
+      <td>Generated</td>
       <td>Resetting</td>
+      <td>Reset</td>
       <td>`reset`</td>
+      <td>Operations</td>
     </tr>
     <tr>
-      <td>T24</td>
+      <td>Accepted</td>
       <td>Resetting</td>
+      <td>Reset</td>
       <td>`reset`</td>
+      <td>Operations</td>
     </tr>
     <tr>
-      <td>T25</td>
+      <td>Resetting</td>
       <td>Review</td>
+      <td>Reset completed</td>
       <td>system (automatic)</td>
+      <td>—</td>
     </tr>
     <tr>
-      <td>T26</td>
+      <td>Draft</td>
       <td>Deleted</td>
+      <td>Delete</td>
       <td>`delete`</td>
+      <td>Vendor</td>
     </tr>
     <tr>
-      <td>T27</td>
+      <td>Validated</td>
       <td>Deleted</td>
+      <td>Delete</td>
       <td>`delete`</td>
+      <td>Vendor</td>
     </tr>
     <tr>
-      <td>T28</td>
+      <td>Error</td>
       <td>Deleted</td>
+      <td>Delete</td>
       <td>`delete`</td>
+      <td>Vendor</td>
     </tr>
     <tr>
-      <td>T29</td>
+      <td>Enquiring</td>
       <td>Deleted</td>
+      <td>Delete</td>
       <td>`delete`</td>
+      <td>Vendor</td>
     </tr>
   </tbody>
 </table>

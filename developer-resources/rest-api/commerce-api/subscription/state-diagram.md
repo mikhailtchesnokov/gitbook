@@ -105,116 +105,160 @@ stateDiagram-v2
 <table>
   <thead>
     <tr>
-      <th>ID</th>
+      <th>From State</th>
       <th>To State</th>
+      <th>Action</th>
       <th>Endpoint / Verb</th>
+      <th>Actor</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>T1</td>
+      <td>—</td>
       <td>Active</td>
+      <td>Order completed — promoted from the Order-scoped representation</td>
       <td>No dedicated endpoint — driven by Purchase/Change Order completion</td>
+      <td>Platform</td>
     </tr>
     <tr>
-      <td>T2</td>
+      <td>—</td>
       <td>Active</td>
+      <td>Vendor creates directly</td>
       <td>`POST` (base collection endpoint)</td>
+      <td>Vendor</td>
     </tr>
     <tr>
-      <td>T3</td>
+      <td>Active</td>
       <td>Updating</td>
+      <td>Change or Configuration Order placed</td>
       <td>No dedicated endpoint — driven by Order state</td>
+      <td>Platform</td>
     </tr>
     <tr>
-      <td>T4</td>
+      <td>Active</td>
       <td>Terminating</td>
+      <td>Termination Order placed</td>
       <td>No dedicated endpoint — driven by Order state</td>
+      <td>Platform</td>
     </tr>
     <tr>
-      <td>T5</td>
+      <td>Active</td>
       <td>Terminated</td>
+      <td>Vendor terminates directly</td>
       <td>`terminate`</td>
+      <td>Vendor</td>
     </tr>
     <tr>
-      <td>T6</td>
+      <td>Active</td>
       <td>Suspended</td>
+      <td>Vendor suspends directly</td>
       <td>`suspend`</td>
+      <td>Vendor</td>
     </tr>
     <tr>
-      <td>T7</td>
+      <td>Active</td>
       <td>Suspending</td>
+      <td>Suspend Order placed</td>
       <td>No dedicated endpoint — driven by Suspend Order state</td>
+      <td>Platform</td>
     </tr>
     <tr>
-      <td>T8</td>
+      <td>Active</td>
       <td>Expired</td>
+      <td>Renewal service — not renewed</td>
       <td>No dedicated endpoint — daily renewal service</td>
+      <td>Platform</td>
     </tr>
     <tr>
-      <td>T9</td>
       <td>Active</td>
+      <td>Active</td>
+      <td>Renewal service — renewed</td>
       <td>No dedicated endpoint — daily renewal service</td>
+      <td>Platform</td>
     </tr>
     <tr>
-      <td>T10</td>
+      <td>Updating</td>
       <td>Active</td>
+      <td>Change or Configuration Order completed or failed</td>
       <td>No dedicated endpoint — driven by Order state</td>
+      <td>Platform</td>
     </tr>
     <tr>
-      <td>T11</td>
-      <td>Terminated</td>
-      <td>No dedicated endpoint — driven by Order state</td>
-    </tr>
-    <tr>
-      <td>T12</td>
-      <td>Active</td>
-      <td>No dedicated endpoint — driven by Order state</td>
-    </tr>
-    <tr>
-      <td>T13</td>
-      <td>Suspended</td>
-      <td>No dedicated endpoint — driven by Suspend Order state</td>
-    </tr>
-    <tr>
-      <td>T14</td>
-      <td>Active</td>
-      <td>No dedicated endpoint — driven by Suspend Order state</td>
-    </tr>
-    <tr>
-      <td>T15</td>
-      <td>Active</td>
-      <td>`resume`</td>
-    </tr>
-    <tr>
-      <td>T16</td>
-      <td>Resuming</td>
-      <td>No dedicated endpoint — driven by Resume Order state</td>
-    </tr>
-    <tr>
-      <td>T17</td>
       <td>Terminating</td>
-      <td>No dedicated endpoint — driven by Order state</td>
-    </tr>
-    <tr>
-      <td>T18</td>
       <td>Terminated</td>
-      <td>`terminate`</td>
+      <td>Termination Order completed</td>
+      <td>No dedicated endpoint — driven by Order state</td>
+      <td>Platform</td>
     </tr>
     <tr>
-      <td>T19</td>
-      <td>Expired</td>
-      <td>No dedicated endpoint — daily renewal service</td>
-    </tr>
-    <tr>
-      <td>T20</td>
+      <td>Terminating</td>
       <td>Active</td>
-      <td>No dedicated endpoint — driven by Resume Order state</td>
+      <td>Termination Order failed</td>
+      <td>No dedicated endpoint — driven by Order state</td>
+      <td>Platform</td>
     </tr>
     <tr>
-      <td>T21</td>
+      <td>Suspending</td>
       <td>Suspended</td>
+      <td>Suspend Order completed</td>
+      <td>No dedicated endpoint — driven by Suspend Order state</td>
+      <td>Platform</td>
+    </tr>
+    <tr>
+      <td>Suspending</td>
+      <td>Active</td>
+      <td>Suspend Order failed</td>
+      <td>No dedicated endpoint — driven by Suspend Order state</td>
+      <td>Platform</td>
+    </tr>
+    <tr>
+      <td>Suspended</td>
+      <td>Active</td>
+      <td>Vendor resumes directly</td>
+      <td>`resume`</td>
+      <td>Vendor</td>
+    </tr>
+    <tr>
+      <td>Suspended</td>
+      <td>Resuming</td>
+      <td>Resume Order placed</td>
       <td>No dedicated endpoint — driven by Resume Order state</td>
+      <td>Platform</td>
+    </tr>
+    <tr>
+      <td>Suspended</td>
+      <td>Terminating</td>
+      <td>Termination Order placed</td>
+      <td>No dedicated endpoint — driven by Order state</td>
+      <td>Platform</td>
+    </tr>
+    <tr>
+      <td>Suspended</td>
+      <td>Terminated</td>
+      <td>Vendor terminates directly</td>
+      <td>`terminate`</td>
+      <td>Vendor</td>
+    </tr>
+    <tr>
+      <td>Suspended</td>
+      <td>Expired</td>
+      <td>Renewal service — not renewed</td>
+      <td>No dedicated endpoint — daily renewal service</td>
+      <td>Platform</td>
+    </tr>
+    <tr>
+      <td>Resuming</td>
+      <td>Active</td>
+      <td>Resume Order completed</td>
+      <td>No dedicated endpoint — driven by Resume Order state</td>
+      <td>Platform</td>
+    </tr>
+    <tr>
+      <td>Resuming</td>
+      <td>Suspended</td>
+      <td>Resume Order failed</td>
+      <td>No dedicated endpoint — driven by Resume Order state</td>
+      <td>Platform</td>
     </tr>
   </tbody>
 </table>

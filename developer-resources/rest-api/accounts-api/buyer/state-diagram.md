@@ -106,61 +106,83 @@ stateDiagram-v2
 <table>
   <thead>
     <tr>
-      <th>ID</th>
+      <th>From State</th>
       <th>To State</th>
+      <th>Action</th>
       <th>Endpoint / Verb</th>
+      <th>Actor</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>T1a</td>
+      <td>—</td>
       <td>Unassigned</td>
+      <td>Create Buyer</td>
       <td>`POST /v1/accounts/buyers`</td>
+      <td>Operations</td>
     </tr>
     <tr>
-      <td>T1b</td>
+      <td>—</td>
       <td>Enabled</td>
+      <td>Create Buyer</td>
       <td>`POST /v1/accounts/buyers`</td>
+      <td>Operations</td>
     </tr>
     <tr>
-      <td>T1c</td>
+      <td>—</td>
       <td>Active</td>
+      <td>Create Buyer</td>
       <td>`POST /v1/accounts/buyers`</td>
+      <td>Operations</td>
     </tr>
     <tr>
-      <td>T2a</td>
-      <td>Disabled</td>
-      <td>`POST /v1/accounts/buyers/{id}/disable`</td>
-    </tr>
-    <tr>
-      <td>T2b</td>
-      <td>Disabled</td>
-      <td>`POST /v1/accounts/buyers/{id}/disable`</td>
-    </tr>
-    <tr>
-      <td>T3</td>
       <td>Active</td>
+      <td>Disabled</td>
+      <td>Disable Buyer</td>
+      <td>`POST /v1/accounts/buyers/{id}/disable`</td>
+      <td>Operations, Client (own Account)</td>
+    </tr>
+    <tr>
+      <td>Enabled</td>
+      <td>Disabled</td>
+      <td>Disable Buyer</td>
+      <td>`POST /v1/accounts/buyers/{id}/disable`</td>
+      <td>Operations, Client (own Account)</td>
+    </tr>
+    <tr>
+      <td>Disabled</td>
+      <td>Active</td>
+      <td>Enable Buyer</td>
       <td>`POST /v1/accounts/buyers/{id}/enable`</td>
+      <td>Operations, Client (own Account)</td>
     </tr>
     <tr>
-      <td>T4</td>
+      <td>Enabled</td>
       <td>Active</td>
+      <td>Activate Buyer</td>
       <td>`POST /v1/accounts/buyers/{id}/activate`</td>
+      <td>Operations</td>
     </tr>
     <tr>
-      <td>T5</td>
-      <td>Active</td>
-      <td>`PUT /v1/accounts/buyers/{id}` (Account added)</td>
-    </tr>
-    <tr>
-      <td>T6</td>
       <td>Unassigned</td>
-      <td>`PUT /v1/accounts/buyers/{id}` (Account removed)</td>
+      <td>Active</td>
+      <td>Assign Account</td>
+      <td>`PUT /v1/accounts/buyers/{id}` (Account added)</td>
+      <td>Operations</td>
     </tr>
     <tr>
-      <td>T7</td>
+      <td>Active</td>
+      <td>Unassigned</td>
+      <td>Unassign Account</td>
+      <td>`PUT /v1/accounts/buyers/{id}` (Account removed)</td>
+      <td>Operations</td>
+    </tr>
+    <tr>
+      <td>Active</td>
       <td>Deleted</td>
+      <td>Delete Buyer</td>
       <td>`DELETE /v1/accounts/buyers/{id}`</td>
+      <td>Operations</td>
     </tr>
   </tbody>
 </table>

@@ -86,66 +86,90 @@ stateDiagram-v2
 <table>
   <thead>
     <tr>
-      <th>ID</th>
+      <th>From State</th>
       <th>To State</th>
+      <th>Action</th>
       <th>Endpoint / Verb</th>
+      <th>Actor</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>T1</td>
+      <td>—</td>
       <td>Draft</td>
+      <td>Co-created with Purchase Order</td>
       <td>(no dedicated Agreement endpoint — co-created when a Purchase Order is persisted via `POST /commerce/orders`)</td>
+      <td>Platform (Client token)</td>
     </tr>
     <tr>
-      <td>T2</td>
+      <td>—</td>
       <td>Provisioning</td>
+      <td>Co-created and placed in one call</td>
       <td>(no dedicated Agreement endpoint — Purchase Order created directly in Processing)</td>
+      <td>Platform (Client token)</td>
     </tr>
     <tr>
-      <td>T3</td>
+      <td>—</td>
       <td>Active</td>
+      <td>Operations direct create</td>
       <td>`POST /commerce/agreements`</td>
+      <td>Operations</td>
     </tr>
     <tr>
-      <td>T4</td>
+      <td>—</td>
       <td>Terminated</td>
+      <td>Operations direct create (terminated)</td>
       <td>`POST /commerce/agreements`</td>
+      <td>Operations</td>
     </tr>
     <tr>
-      <td>T5</td>
+      <td>Draft</td>
       <td>Provisioning</td>
+      <td>Purchase Order placed</td>
       <td>(no dedicated Agreement endpoint — Purchase Order → Processing)</td>
+      <td>Platform (Client token)</td>
     </tr>
     <tr>
-      <td>T6</td>
+      <td>Draft</td>
       <td>Deleted</td>
+      <td>Purchase Order deleted</td>
       <td>(no dedicated Agreement endpoint — Draft/Quoted Purchase Order deleted)</td>
+      <td>Platform (deleting Actor&#39;s token)</td>
     </tr>
     <tr>
-      <td>T7</td>
+      <td>Provisioning</td>
       <td>Active</td>
+      <td>Purchase Order completed</td>
       <td>(no dedicated Agreement endpoint — Purchase Order → Completed)</td>
+      <td>Platform (Vendor token)</td>
     </tr>
     <tr>
-      <td>T8</td>
+      <td>Provisioning</td>
       <td>Failed</td>
+      <td>Purchase Order failed</td>
       <td>(no dedicated Agreement endpoint — Purchase Order → Failed)</td>
+      <td>Platform (Vendor or Operations token)</td>
     </tr>
     <tr>
-      <td>T9</td>
-      <td>Updating</td>
-      <td>(no dedicated Agreement endpoint — non-Purchase Order → Processing)</td>
-    </tr>
-    <tr>
-      <td>T10</td>
       <td>Active</td>
-      <td>(no dedicated Agreement endpoint — Order → Completed/Failed)</td>
+      <td>Updating</td>
+      <td>Change, Configuration, Termination, Suspend, or Resume Order placed</td>
+      <td>(no dedicated Agreement endpoint — non-Purchase Order → Processing)</td>
+      <td>Platform (Client token)</td>
     </tr>
     <tr>
-      <td>T11</td>
+      <td>Updating</td>
+      <td>Active</td>
+      <td>Order completed, or non-Purchase Order failed</td>
+      <td>(no dedicated Agreement endpoint — Order → Completed/Failed)</td>
+      <td>Platform (Vendor or Operations token)</td>
+    </tr>
+    <tr>
+      <td>Active</td>
       <td>Terminated</td>
+      <td>Final Subscription terminated</td>
       <td>(no dedicated Agreement endpoint — driven by Subscription state / Termination Order completion)</td>
+      <td>Platform</td>
     </tr>
   </tbody>
 </table>

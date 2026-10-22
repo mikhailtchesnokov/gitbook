@@ -61,51 +61,69 @@ stateDiagram-v2
 <table>
   <thead>
     <tr>
-      <th>ID</th>
+      <th>From State</th>
       <th>To State</th>
+      <th>Action</th>
       <th>Endpoint / Verb</th>
+      <th>Actor</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>T1a</td>
+      <td>—</td>
       <td>Active</td>
+      <td>Create</td>
       <td>`POST /v1/accounts/accounts`</td>
+      <td>Operations</td>
     </tr>
     <tr>
-      <td>T1b</td>
+      <td>—</td>
       <td>Enabled</td>
+      <td>Create</td>
       <td>`POST /v1/accounts/accounts`</td>
+      <td>Operations</td>
     </tr>
     <tr>
-      <td>T2</td>
+      <td>Enabled</td>
       <td>Active</td>
+      <td>Activate Account</td>
       <td>`POST /v1/accounts/accounts/{id}/activate`</td>
+      <td>Operations</td>
     </tr>
     <tr>
-      <td>T3a</td>
-      <td>Disabled</td>
-      <td>`POST /v1/accounts/accounts/{id}/disable`</td>
-    </tr>
-    <tr>
-      <td>T3b</td>
-      <td>Disabled</td>
-      <td>`POST /v1/accounts/accounts/{id}/disable`</td>
-    </tr>
-    <tr>
-      <td>T4a</td>
       <td>Active</td>
-      <td>`POST /v1/accounts/accounts/{id}/enable`</td>
+      <td>Disabled</td>
+      <td>Disable Account</td>
+      <td>`POST /v1/accounts/accounts/{id}/disable`</td>
+      <td>Operations</td>
     </tr>
     <tr>
-      <td>T4b</td>
       <td>Enabled</td>
-      <td>`POST /v1/accounts/accounts/{id}/enable`</td>
+      <td>Disabled</td>
+      <td>Disable Account</td>
+      <td>`POST /v1/accounts/accounts/{id}/disable`</td>
+      <td>Operations</td>
     </tr>
     <tr>
-      <td>T5</td>
+      <td>Disabled</td>
+      <td>Active</td>
+      <td>Enable Account</td>
+      <td>`POST /v1/accounts/accounts/{id}/enable`</td>
+      <td>Operations</td>
+    </tr>
+    <tr>
+      <td>Disabled</td>
       <td>Enabled</td>
+      <td>Enable Account</td>
+      <td>`POST /v1/accounts/accounts/{id}/enable`</td>
+      <td>Operations</td>
+    </tr>
+    <tr>
+      <td>Active</td>
+      <td>Enabled</td>
+      <td>Deactivate Account</td>
       <td>`POST /v1/accounts/accounts/{id}/deactivate`</td>
+      <td>Operations</td>
     </tr>
   </tbody>
 </table>

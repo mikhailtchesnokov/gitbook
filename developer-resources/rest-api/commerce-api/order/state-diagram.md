@@ -91,81 +91,111 @@ stateDiagram-v2
 <table>
   <thead>
     <tr>
-      <th>ID</th>
+      <th>From State</th>
       <th>To State</th>
+      <th>Action</th>
       <th>Endpoint / Verb</th>
+      <th>Actor</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>T1</td>
+      <td>—</td>
       <td>Draft</td>
+      <td>Create Order</td>
       <td>`POST` (base collection endpoint)</td>
+      <td>Client</td>
     </tr>
     <tr>
-      <td>T2</td>
+      <td>—</td>
       <td>Quoted</td>
+      <td>Create Order as Quoted</td>
       <td>`POST` (base collection endpoint)</td>
+      <td>Client</td>
     </tr>
     <tr>
-      <td>T3</td>
+      <td>—</td>
       <td>Processing</td>
+      <td>Create and place Order</td>
       <td>`POST` (base collection endpoint)</td>
+      <td>Client</td>
     </tr>
     <tr>
-      <td>T4</td>
       <td>Draft</td>
+      <td>Draft</td>
+      <td>Update Order</td>
       <td>`PUT` (`/{id}`)</td>
+      <td>Client, Operations</td>
     </tr>
     <tr>
-      <td>T5</td>
+      <td>Draft</td>
       <td>Quoted</td>
+      <td>Quote Order (two mechanisms)</td>
       <td>`/quote` (`POST`, Client) or `PUT` `/{id}` (Operations)</td>
+      <td>Client, Operations</td>
     </tr>
     <tr>
-      <td>T6</td>
+      <td>Draft</td>
       <td>Processing</td>
+      <td>Place Order</td>
       <td>`/process` (`POST`)</td>
+      <td>Client</td>
     </tr>
     <tr>
-      <td>T7</td>
+      <td>Draft</td>
       <td>Deleted</td>
+      <td>Delete Order</td>
       <td>`DELETE` (`/{id}`)</td>
+      <td>Client, Vendor, Operations</td>
     </tr>
     <tr>
-      <td>T8</td>
+      <td>Quoted</td>
       <td>Processing</td>
+      <td>Place Order</td>
       <td>`/process` (`POST`)</td>
+      <td>Client</td>
     </tr>
     <tr>
-      <td>T9</td>
+      <td>Quoted</td>
       <td>Deleted</td>
+      <td>Delete Order</td>
       <td>`DELETE` (`/{id}`)</td>
+      <td>Client, Vendor, Operations</td>
     </tr>
     <tr>
-      <td>T10</td>
+      <td>Processing</td>
       <td>Completed</td>
+      <td>Complete Order</td>
       <td>`/complete` (`POST`)</td>
+      <td>Vendor</td>
     </tr>
     <tr>
-      <td>T11</td>
-      <td>Failed</td>
-      <td>`/fail` (`POST`)</td>
-    </tr>
-    <tr>
-      <td>T12</td>
-      <td>Querying</td>
-      <td>`/query` (`POST`)</td>
-    </tr>
-    <tr>
-      <td>T13</td>
       <td>Processing</td>
-      <td>`/process` (`POST`)</td>
+      <td>Failed</td>
+      <td>Fail Order</td>
+      <td>`/fail` (`POST`)</td>
+      <td>Vendor, Operations</td>
     </tr>
     <tr>
-      <td>T14</td>
+      <td>Processing</td>
+      <td>Querying</td>
+      <td>Move to Querying</td>
+      <td>`/query` (`POST`)</td>
+      <td>Vendor</td>
+    </tr>
+    <tr>
+      <td>Querying</td>
+      <td>Processing</td>
+      <td>Return to Processing</td>
+      <td>`/process` (`POST`)</td>
+      <td>Client, Vendor, Operations</td>
+    </tr>
+    <tr>
+      <td>Querying</td>
       <td>Failed</td>
+      <td>Fail Order</td>
       <td>`/fail` (`POST`)</td>
+      <td>Operations</td>
     </tr>
   </tbody>
 </table>

@@ -94,111 +94,153 @@ stateDiagram-v2
 <table>
   <thead>
     <tr>
-      <th>ID</th>
+      <th>From State</th>
       <th>To State</th>
+      <th>Action</th>
       <th>Endpoint / Verb</th>
+      <th>Actor</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>T1</td>
+      <td>—</td>
       <td>Generated</td>
+      <td>Create</td>
       <td>No dedicated endpoint — automatic on [[Ledger]] acceptance (Automated) or Custom Ledger acceptance (Manual); or `POST /statements` (Consolidated only)</td>
+      <td>System (Automated/Manual) or Operations (Consolidated)</td>
     </tr>
     <tr>
-      <td>T2</td>
+      <td>—</td>
       <td>Cancelled</td>
+      <td>Create (blocked)</td>
       <td>No dedicated endpoint — automatic on Ledger/Custom Ledger acceptance</td>
+      <td>System</td>
     </tr>
     <tr>
-      <td>T3</td>
-      <td>Queued</td>
-      <td>`POST /statements/{id}/queue`</td>
-    </tr>
-    <tr>
-      <td>T4</td>
-      <td>Queued</td>
-      <td>`POST .../queue`; `POST .../retry`; or `POST .../recalculate` (Manual only)</td>
-    </tr>
-    <tr>
-      <td>T5</td>
-      <td>Pending</td>
-      <td>`POST .../pending`</td>
-    </tr>
-    <tr>
-      <td>T6</td>
-      <td>Issued</td>
-      <td>`POST .../issue`</td>
-    </tr>
-    <tr>
-      <td>T7</td>
-      <td>Error</td>
-      <td>`POST .../error`</td>
-    </tr>
-    <tr>
-      <td>T8</td>
-      <td>Error</td>
-      <td>`POST .../error`</td>
-    </tr>
-    <tr>
-      <td>T9</td>
-      <td>Cancelled</td>
-      <td>`POST .../cancel`</td>
-    </tr>
-    <tr>
-      <td>T10</td>
-      <td>Cancelled</td>
-      <td>`POST .../cancel`</td>
-    </tr>
-    <tr>
-      <td>T11</td>
-      <td>Cancelled</td>
-      <td>`POST .../cancel`</td>
-    </tr>
-    <tr>
-      <td>T12</td>
-      <td>Cancelled</td>
-      <td>`POST .../cancel`</td>
-    </tr>
-    <tr>
-      <td>T13</td>
-      <td>Generating</td>
-      <td>`POST .../recalculate`</td>
-    </tr>
-    <tr>
-      <td>T14</td>
-      <td>Queued</td>
-      <td>System (automatic)</td>
-    </tr>
-    <tr>
-      <td>T15</td>
-      <td>Error</td>
-      <td>System (automatic)</td>
-    </tr>
-    <tr>
-      <td>T16</td>
-      <td>Consolidating</td>
-      <td>`POST /statements/{id}/children` (called on the Consolidated parent)</td>
-    </tr>
-    <tr>
-      <td>T17</td>
       <td>Generated</td>
-      <td>`DELETE /statements/{id}/children/{childId}` (called on the Consolidated parent)</td>
-    </tr>
-    <tr>
-      <td>T18</td>
-      <td>Consolidated</td>
+      <td>Queued</td>
+      <td>Queue</td>
       <td>`POST /statements/{id}/queue`</td>
+      <td>Operations</td>
     </tr>
     <tr>
-      <td>T19</td>
+      <td>Error</td>
       <td>Queued</td>
-      <td>`POST /statements/{id}/cancel`</td>
+      <td>Queue, Retry, or Recalculate (Manual billing type only)</td>
+      <td>`POST .../queue`; `POST .../retry`; or `POST .../recalculate` (Manual only)</td>
+      <td>Operations</td>
     </tr>
     <tr>
-      <td>T20</td>
       <td>Queued</td>
+      <td>Pending</td>
+      <td>Move to pending</td>
+      <td>`POST .../pending`</td>
+      <td>Operations</td>
+    </tr>
+    <tr>
+      <td>Pending</td>
+      <td>Issued</td>
+      <td>Issue</td>
+      <td>`POST .../issue`</td>
+      <td>Operations</td>
+    </tr>
+    <tr>
+      <td>Queued</td>
+      <td>Error</td>
+      <td>Mark error</td>
+      <td>`POST .../error`</td>
+      <td>Operations</td>
+    </tr>
+    <tr>
+      <td>Pending</td>
+      <td>Error</td>
+      <td>Mark error</td>
+      <td>`POST .../error`</td>
+      <td>Operations</td>
+    </tr>
+    <tr>
+      <td>Queued</td>
+      <td>Cancelled</td>
+      <td>Cancel</td>
+      <td>`POST .../cancel`</td>
+      <td>Operations</td>
+    </tr>
+    <tr>
+      <td>Pending</td>
+      <td>Cancelled</td>
+      <td>Cancel</td>
+      <td>`POST .../cancel`</td>
+      <td>Operations</td>
+    </tr>
+    <tr>
+      <td>Error</td>
+      <td>Cancelled</td>
+      <td>Cancel</td>
+      <td>`POST .../cancel`</td>
+      <td>Operations</td>
+    </tr>
+    <tr>
+      <td>Generated</td>
+      <td>Cancelled</td>
+      <td>Cancel</td>
+      <td>`POST .../cancel`</td>
+      <td>Operations</td>
+    </tr>
+    <tr>
+      <td>Error</td>
+      <td>Generating</td>
+      <td>Recalculate (Automated billing type only)</td>
+      <td>`POST .../recalculate`</td>
+      <td>Operations</td>
+    </tr>
+    <tr>
+      <td>Generating</td>
+      <td>Queued</td>
+      <td>Recalculation completed, no processing errors</td>
+      <td>System (automatic)</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td>Generating</td>
+      <td>Error</td>
+      <td>Recalculation completed with processing errors, or failed critically</td>
+      <td>System (automatic)</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td>Queued</td>
+      <td>Consolidating</td>
+      <td>Add child</td>
+      <td>`POST /statements/{id}/children` (called on the Consolidated parent)</td>
+      <td>Operations</td>
+    </tr>
+    <tr>
+      <td>Consolidating</td>
+      <td>Generated</td>
+      <td>Remove child</td>
+      <td>`DELETE /statements/{id}/children/{childId}` (called on the Consolidated parent)</td>
+      <td>Operations</td>
+    </tr>
+    <tr>
+      <td>Consolidating</td>
+      <td>Consolidated</td>
+      <td>Queue (called on the Consolidated parent)</td>
+      <td>`POST /statements/{id}/queue`</td>
+      <td>Operations</td>
+    </tr>
+    <tr>
+      <td>Consolidating</td>
+      <td>Queued</td>
+      <td>Cancel (called on the Consolidated parent)</td>
       <td>`POST /statements/{id}/cancel`</td>
+      <td>Operations</td>
+    </tr>
+    <tr>
+      <td>Consolidated</td>
+      <td>Queued</td>
+      <td>Cancel (called on the Consolidated parent)</td>
+      <td>`POST /statements/{id}/cancel`</td>
+      <td>Operations</td>
     </tr>
   </tbody>
 </table>

@@ -93,106 +93,146 @@ stateDiagram-v2
 <table>
   <thead>
     <tr>
-      <th>ID</th>
+      <th>From State</th>
       <th>To State</th>
+      <th>Action</th>
       <th>Endpoint / Verb</th>
+      <th>Actor</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>T1</td>
+      <td>—</td>
       <td>New</td>
+      <td>Create identity</td>
       <td>`POST /v1/accounts/{accountId}/users` (Account User invite — no dedicated global-User create endpoint)</td>
+      <td>Actor with administration permission in the Account</td>
     </tr>
     <tr>
-      <td>T2</td>
+      <td>New</td>
       <td>Invited</td>
+      <td>Invitation issued</td>
       <td>No dedicated User endpoint — recalculated from Account membership creation</td>
+      <td>Actor with administration permission in the Account</td>
     </tr>
     <tr>
-      <td>T3</td>
+      <td>Invited</td>
       <td>Active</td>
+      <td>Membership activated</td>
       <td>No dedicated User endpoint — recalculated from Account membership change</td>
+      <td>System (membership context)</td>
     </tr>
     <tr>
-      <td>T4</td>
-      <td>InvitationExpired</td>
-      <td>No dedicated User endpoint — recalculated from Account membership change</td>
-    </tr>
-    <tr>
-      <td>T5</td>
       <td>Invited</td>
-      <td>No dedicated User endpoint — recalculated from Account membership change</td>
-    </tr>
-    <tr>
-      <td>T6</td>
-      <td>Invited</td>
-      <td>No dedicated User endpoint — recalculated from Account membership change</td>
-    </tr>
-    <tr>
-      <td>T7</td>
       <td>InvitationExpired</td>
+      <td>Invitation expires</td>
       <td>No dedicated User endpoint — recalculated from Account membership change</td>
+      <td>System (membership context)</td>
     </tr>
     <tr>
-      <td>T8</td>
+      <td>InvitationExpired</td>
+      <td>Invited</td>
+      <td>Re-invited</td>
+      <td>No dedicated User endpoint — recalculated from Account membership change</td>
+      <td>Actor with administration permission in the Account</td>
+    </tr>
+    <tr>
+      <td>Active</td>
+      <td>Invited</td>
+      <td>Membership recalculated to invitation</td>
+      <td>No dedicated User endpoint — recalculated from Account membership change</td>
+      <td>System (membership context)</td>
+    </tr>
+    <tr>
+      <td>Active</td>
+      <td>InvitationExpired</td>
+      <td>Membership recalculated to expired invitation</td>
+      <td>No dedicated User endpoint — recalculated from Account membership change</td>
+      <td>System (membership context)</td>
+    </tr>
+    <tr>
+      <td>Active</td>
       <td>Disabled</td>
+      <td>Last active/pending membership removed</td>
       <td>No dedicated User endpoint — recalculated from Account membership change</td>
+      <td>Actor with administration permission in the Account</td>
     </tr>
     <tr>
-      <td>T9</td>
-      <td>Active</td>
-      <td>No dedicated User endpoint — recalculated from Account membership change</td>
-    </tr>
-    <tr>
-      <td>T10</td>
-      <td>Invited</td>
-      <td>No dedicated User endpoint — recalculated from Account membership change</td>
-    </tr>
-    <tr>
-      <td>T11</td>
-      <td>Blocked</td>
-      <td>`POST /v1/accounts/users/{uniqueFilter}/block`</td>
-    </tr>
-    <tr>
-      <td>T12</td>
-      <td>Blocked</td>
-      <td>`POST /v1/accounts/users/{uniqueFilter}/block`</td>
-    </tr>
-    <tr>
-      <td>T13</td>
-      <td>Blocked</td>
-      <td>`POST /v1/accounts/users/{uniqueFilter}/block`</td>
-    </tr>
-    <tr>
-      <td>T14</td>
-      <td>Blocked</td>
-      <td>`POST /v1/accounts/users/{uniqueFilter}/block`</td>
-    </tr>
-    <tr>
-      <td>T15</td>
-      <td>Active</td>
-      <td>`POST /v1/accounts/users/{uniqueFilter}/unblock`</td>
-    </tr>
-    <tr>
-      <td>T16</td>
-      <td>Invited</td>
-      <td>`POST /v1/accounts/users/{uniqueFilter}/unblock`</td>
-    </tr>
-    <tr>
-      <td>T17</td>
-      <td>InvitationExpired</td>
-      <td>`POST /v1/accounts/users/{uniqueFilter}/unblock`</td>
-    </tr>
-    <tr>
-      <td>T18</td>
       <td>Disabled</td>
-      <td>`POST /v1/accounts/users/{uniqueFilter}/unblock`</td>
+      <td>Active</td>
+      <td>Re-added to an Account</td>
+      <td>No dedicated User endpoint — recalculated from Account membership change</td>
+      <td>Actor with administration permission in the Account</td>
     </tr>
     <tr>
-      <td>T19</td>
+      <td>Disabled</td>
+      <td>Invited</td>
+      <td>Re-invited to an Account</td>
+      <td>No dedicated User endpoint — recalculated from Account membership change</td>
+      <td>Actor with administration permission in the Account</td>
+    </tr>
+    <tr>
+      <td>Invited</td>
+      <td>Blocked</td>
+      <td>Block</td>
+      <td>`POST /v1/accounts/users/{uniqueFilter}/block`</td>
+      <td>Actor with Platform Account Management permission</td>
+    </tr>
+    <tr>
+      <td>InvitationExpired</td>
+      <td>Blocked</td>
+      <td>Block</td>
+      <td>`POST /v1/accounts/users/{uniqueFilter}/block`</td>
+      <td>Actor with Platform Account Management permission</td>
+    </tr>
+    <tr>
+      <td>Active</td>
+      <td>Blocked</td>
+      <td>Block</td>
+      <td>`POST /v1/accounts/users/{uniqueFilter}/block`</td>
+      <td>Actor with Platform Account Management permission</td>
+    </tr>
+    <tr>
+      <td>Disabled</td>
+      <td>Blocked</td>
+      <td>Block</td>
+      <td>`POST /v1/accounts/users/{uniqueFilter}/block`</td>
+      <td>Actor with Platform Account Management permission</td>
+    </tr>
+    <tr>
+      <td>Blocked</td>
+      <td>Active</td>
+      <td>Unblock</td>
+      <td>`POST /v1/accounts/users/{uniqueFilter}/unblock`</td>
+      <td>Actor with Platform Account Management permission</td>
+    </tr>
+    <tr>
+      <td>Blocked</td>
+      <td>Invited</td>
+      <td>Unblock</td>
+      <td>`POST /v1/accounts/users/{uniqueFilter}/unblock`</td>
+      <td>Actor with Platform Account Management permission</td>
+    </tr>
+    <tr>
+      <td>Blocked</td>
+      <td>InvitationExpired</td>
+      <td>Unblock</td>
+      <td>`POST /v1/accounts/users/{uniqueFilter}/unblock`</td>
+      <td>Actor with Platform Account Management permission</td>
+    </tr>
+    <tr>
+      <td>Blocked</td>
+      <td>Disabled</td>
+      <td>Unblock</td>
+      <td>`POST /v1/accounts/users/{uniqueFilter}/unblock`</td>
+      <td>Actor with Platform Account Management permission</td>
+    </tr>
+    <tr>
+      <td>Disabled</td>
       <td>Deleted</td>
+      <td>Delete identity</td>
       <td>`DELETE /v1/accounts/users/{uniqueFilter}` (returns 204)</td>
+      <td>Actor with Platform Account Management permission</td>
     </tr>
   </tbody>
 </table>

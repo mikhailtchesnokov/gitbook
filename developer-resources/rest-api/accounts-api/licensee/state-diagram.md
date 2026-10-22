@@ -72,66 +72,90 @@ stateDiagram-v2
 <table>
   <thead>
     <tr>
-      <th>ID</th>
+      <th>From State</th>
       <th>To State</th>
+      <th>Action</th>
       <th>Endpoint / Verb</th>
+      <th>Actor</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>T1a</td>
+      <td>—</td>
       <td>Active</td>
+      <td>Create (Buyer Active)</td>
       <td>`POST /v1/accounts/licensees`</td>
+      <td>Client (own Account) or Operations</td>
     </tr>
     <tr>
-      <td>T1b</td>
+      <td>—</td>
       <td>Enabled</td>
+      <td>Create (Buyer Enabled)</td>
       <td>`POST /v1/accounts/licensees`</td>
+      <td>Client (own Account) or Operations</td>
     </tr>
     <tr>
-      <td>T2</td>
-      <td>Active</td>
-      <td>(no endpoint — propagated at Buyer synchronisation)</td>
-    </tr>
-    <tr>
-      <td>T3</td>
       <td>Enabled</td>
-      <td>(no endpoint — propagated at Buyer synchronisation)</td>
-    </tr>
-    <tr>
-      <td>T4a</td>
-      <td>Disabled</td>
-      <td>`POST /v1/accounts/licensees/{id}/disable`</td>
-    </tr>
-    <tr>
-      <td>T4b</td>
-      <td>Disabled</td>
-      <td>`POST /v1/accounts/licensees/{id}/disable`</td>
-    </tr>
-    <tr>
-      <td>T5a</td>
       <td>Active</td>
-      <td>`POST /v1/accounts/licensees/{id}/enable`</td>
+      <td>Activate (Buyer becomes Active)</td>
+      <td>(no endpoint — propagated at Buyer synchronisation)</td>
+      <td>Platform</td>
     </tr>
     <tr>
-      <td>T5b</td>
+      <td>Active</td>
       <td>Enabled</td>
+      <td>Downgrade (Buyer becomes Enabled)</td>
+      <td>(no endpoint — propagated at Buyer synchronisation)</td>
+      <td>Platform</td>
+    </tr>
+    <tr>
+      <td>Active</td>
+      <td>Disabled</td>
+      <td>Disable</td>
+      <td>`POST /v1/accounts/licensees/{id}/disable`</td>
+      <td>Client (own Account) or Operations</td>
+    </tr>
+    <tr>
+      <td>Enabled</td>
+      <td>Disabled</td>
+      <td>Disable</td>
+      <td>`POST /v1/accounts/licensees/{id}/disable`</td>
+      <td>Client (own Account) or Operations</td>
+    </tr>
+    <tr>
+      <td>Disabled</td>
+      <td>Active</td>
+      <td>Enable (Buyer Active)</td>
       <td>`POST /v1/accounts/licensees/{id}/enable`</td>
+      <td>Client (own Account) or Operations</td>
     </tr>
     <tr>
-      <td>T6a</td>
-      <td>Deleted</td>
-      <td>`DELETE /v1/accounts/licensees/{id}`</td>
+      <td>Disabled</td>
+      <td>Enabled</td>
+      <td>Enable (Buyer Enabled)</td>
+      <td>`POST /v1/accounts/licensees/{id}/enable`</td>
+      <td>Client (own Account) or Operations</td>
     </tr>
     <tr>
-      <td>T6b</td>
+      <td>Active</td>
       <td>Deleted</td>
+      <td>Delete</td>
       <td>`DELETE /v1/accounts/licensees/{id}`</td>
+      <td>Client (own Account) or Operations</td>
     </tr>
     <tr>
-      <td>T6c</td>
+      <td>Enabled</td>
       <td>Deleted</td>
+      <td>Delete</td>
       <td>`DELETE /v1/accounts/licensees/{id}`</td>
+      <td>Client (own Account) or Operations</td>
+    </tr>
+    <tr>
+      <td>Disabled</td>
+      <td>Deleted</td>
+      <td>Delete</td>
+      <td>`DELETE /v1/accounts/licensees/{id}`</td>
+      <td>Client (own Account) or Operations</td>
     </tr>
   </tbody>
 </table>

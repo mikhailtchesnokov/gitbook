@@ -64,46 +64,62 @@ stateDiagram-v2
 <table>
   <thead>
     <tr>
-      <th>ID</th>
+      <th>From State</th>
       <th>To State</th>
+      <th>Action</th>
       <th>Endpoint / Verb</th>
+      <th>Actor</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>T1a</td>
+      <td>—</td>
       <td>Active</td>
+      <td>Create</td>
       <td>`POST /v1/accounts/sellers`</td>
+      <td>Operations</td>
     </tr>
     <tr>
-      <td>T1b</td>
+      <td>—</td>
       <td>Disabled</td>
+      <td>Create</td>
       <td>`POST /v1/accounts/sellers`</td>
+      <td>Operations</td>
     </tr>
     <tr>
-      <td>T2</td>
+      <td>Active</td>
       <td>Disabled</td>
+      <td>Disable Seller</td>
       <td>`POST /v1/accounts/sellers/{id}/disable`</td>
+      <td>Operations</td>
     </tr>
     <tr>
-      <td>T3</td>
+      <td>Active</td>
       <td>Offline</td>
+      <td>Deactivate Seller</td>
       <td>`POST /v1/accounts/sellers/{id}/deactivate`</td>
+      <td>Operations</td>
     </tr>
     <tr>
-      <td>T4a</td>
+      <td>Disabled</td>
       <td>Active</td>
+      <td>Activate Seller</td>
       <td>`POST /v1/accounts/sellers/{id}/activate`</td>
+      <td>Operations</td>
     </tr>
     <tr>
-      <td>T4b</td>
+      <td>Offline</td>
       <td>Active</td>
+      <td>Activate Seller</td>
       <td>`POST /v1/accounts/sellers/{id}/activate`</td>
+      <td>Operations</td>
     </tr>
     <tr>
-      <td>T5</td>
+      <td>Active</td>
       <td>Deleted</td>
+      <td>Delete Seller</td>
       <td>`DELETE /v1/accounts/sellers/{id}` (returns 204)</td>
+      <td>Operations</td>
     </tr>
   </tbody>
 </table>

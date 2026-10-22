@@ -56,26 +56,34 @@ stateDiagram-v2
 <table>
   <thead>
     <tr>
-      <th>ID</th>
+      <th>From State</th>
       <th>To State</th>
+      <th>Action</th>
       <th>Endpoint / Verb</th>
+      <th>Actor</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>T1</td>
+      <td>—</td>
       <td>Active</td>
+      <td>Order completed — promoted from OrderAsset</td>
       <td>No dedicated Asset endpoint — a plain, platform-driven status write. The promotion happens automatically as part of the parent [[Order]]&#39;s own completion processing; there is no separate Asset-facing action to invoke it.</td>
+      <td>Platform</td>
     </tr>
     <tr>
-      <td>T2</td>
+      <td>—</td>
       <td>Active</td>
+      <td>Vendor creates directly</td>
       <td>`POST` `/commerce/assets` (Vendor-only)</td>
+      <td>Vendor</td>
     </tr>
     <tr>
-      <td>T3</td>
+      <td>Active</td>
       <td>Terminated</td>
+      <td>Terminate Asset</td>
       <td>`POST` `/commerce/assets/{id}/terminate` (Vendor-only)</td>
+      <td>Vendor</td>
     </tr>
   </tbody>
 </table>

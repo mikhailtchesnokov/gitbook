@@ -73,46 +73,62 @@ stateDiagram-v2
 <table>
   <thead>
     <tr>
-      <th>ID</th>
+      <th>From State</th>
       <th>To State</th>
+      <th>Action</th>
       <th>Endpoint / Verb</th>
+      <th>Actor</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>T1</td>
+      <td>—</td>
       <td>Draft</td>
+      <td>Create Product</td>
       <td>`POST` (base collection endpoint)</td>
+      <td>Vendor</td>
     </tr>
     <tr>
-      <td>T2</td>
+      <td>Draft</td>
       <td>Pending</td>
+      <td>Submit Product for Publication</td>
       <td>`review` (`POST .../{id}/review`)</td>
+      <td>Vendor</td>
     </tr>
     <tr>
-      <td>T3</td>
-      <td>Published</td>
-      <td>`publish` (`POST .../{id}/publish`)</td>
-    </tr>
-    <tr>
-      <td>T4</td>
-      <td>Unpublished</td>
-      <td>`unpublish` (`POST .../{id}/unpublish`)</td>
-    </tr>
-    <tr>
-      <td>T5</td>
-      <td>Published</td>
-      <td>`publish` (same route as T3)</td>
-    </tr>
-    <tr>
-      <td>T6</td>
       <td>Pending</td>
-      <td>`review` (same route as T2)</td>
+      <td>Published</td>
+      <td>Publish Product</td>
+      <td>`publish` (`POST .../{id}/publish`)</td>
+      <td>Operations</td>
     </tr>
     <tr>
-      <td>T7</td>
+      <td>Published</td>
+      <td>Unpublished</td>
+      <td>Unpublish Product</td>
+      <td>`unpublish` (`POST .../{id}/unpublish`)</td>
+      <td>Vendor, Operations</td>
+    </tr>
+    <tr>
+      <td>Unpublished</td>
+      <td>Published</td>
+      <td>Republish Product</td>
+      <td>`publish` (same route as T3)</td>
+      <td>Operations</td>
+    </tr>
+    <tr>
+      <td>Unpublished</td>
+      <td>Pending</td>
+      <td>Review Product</td>
+      <td>`review` (same route as T2)</td>
+      <td>Vendor</td>
+    </tr>
+    <tr>
+      <td>Draft</td>
       <td>Deleted</td>
+      <td>Delete Product</td>
       <td>`DELETE /{id}`</td>
+      <td>Vendor</td>
     </tr>
   </tbody>
 </table>

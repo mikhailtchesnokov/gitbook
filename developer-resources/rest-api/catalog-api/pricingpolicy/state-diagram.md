@@ -60,36 +60,48 @@ stateDiagram-v2
 <table>
   <thead>
     <tr>
-      <th>ID</th>
+      <th>From State</th>
       <th>To State</th>
+      <th>Action</th>
       <th>Endpoint / Verb</th>
+      <th>Actor</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>T1</td>
+      <td>—</td>
       <td>Active</td>
+      <td>Create Pricing Policy</td>
       <td>`POST` (base collection endpoint)</td>
+      <td>Operations</td>
     </tr>
     <tr>
-      <td>T2</td>
-      <td>Active</td>
-      <td>`activate` (`POST .../activate`)</td>
-    </tr>
-    <tr>
-      <td>T3</td>
       <td>Inactive</td>
+      <td>Active</td>
+      <td>Activate Pricing Policy</td>
+      <td>`activate` (`POST .../activate`)</td>
+      <td>Operations</td>
+    </tr>
+    <tr>
+      <td>Active</td>
+      <td>Inactive</td>
+      <td>Disable Pricing Policy</td>
       <td>`disable` (`POST .../disable`)</td>
+      <td>Operations</td>
     </tr>
     <tr>
-      <td>T4a</td>
+      <td>Active</td>
       <td>Deleted</td>
+      <td>Delete Pricing Policy</td>
       <td>`DELETE`</td>
+      <td>Operations</td>
     </tr>
     <tr>
-      <td>T4b</td>
+      <td>Inactive</td>
       <td>Deleted</td>
+      <td>Delete Pricing Policy</td>
       <td>`DELETE`</td>
+      <td>Operations</td>
     </tr>
   </tbody>
 </table>

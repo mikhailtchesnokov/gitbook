@@ -81,66 +81,90 @@ stateDiagram-v2
 <table>
   <thead>
     <tr>
-      <th>ID</th>
+      <th>From State</th>
       <th>To State</th>
+      <th>Action</th>
       <th>Endpoint / Verb</th>
+      <th>Actor</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>T1</td>
+      <td>—</td>
       <td>Review</td>
+      <td>Create (rated, no errors)</td>
       <td>system (via Journal `accept`)</td>
+      <td>Operations</td>
     </tr>
     <tr>
-      <td>T2</td>
+      <td>—</td>
       <td>Error</td>
+      <td>Create (rating errors)</td>
       <td>system (via Journal `accept`)</td>
+      <td>Operations</td>
     </tr>
     <tr>
-      <td>T3</td>
-      <td>Rating</td>
-      <td>`recalculate`</td>
-    </tr>
-    <tr>
-      <td>T4</td>
-      <td>Rating</td>
-      <td>`recalculate`</td>
-    </tr>
-    <tr>
-      <td>T5</td>
       <td>Review</td>
-      <td>system (automatic)</td>
+      <td>Rating</td>
+      <td>Recalculate</td>
+      <td>`recalculate`</td>
+      <td>Operations</td>
     </tr>
     <tr>
-      <td>T6</td>
       <td>Error</td>
-      <td>system (automatic)</td>
+      <td>Rating</td>
+      <td>Recalculate</td>
+      <td>`recalculate`</td>
+      <td>Operations</td>
     </tr>
     <tr>
-      <td>T7</td>
+      <td>Rating</td>
+      <td>Review</td>
+      <td>Rating completed, no errors</td>
+      <td>system (automatic)</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td>Rating</td>
+      <td>Error</td>
+      <td>Rating completed with errors</td>
+      <td>system (automatic)</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td>Review</td>
       <td>Generating</td>
+      <td>Accept</td>
       <td>`accept`</td>
+      <td>Operations</td>
     </tr>
     <tr>
-      <td>T8</td>
+      <td>Generating</td>
       <td>Generated</td>
+      <td>Statement creation succeeded</td>
       <td>system (automatic)</td>
+      <td>—</td>
     </tr>
     <tr>
-      <td>T9</td>
+      <td>Generating</td>
       <td>Review</td>
+      <td>Statement creation failed</td>
       <td>system (automatic)</td>
+      <td>—</td>
     </tr>
     <tr>
-      <td>T10</td>
+      <td>Generated</td>
       <td>Queued</td>
+      <td>Queue</td>
       <td>`queue`</td>
+      <td>Operations</td>
     </tr>
     <tr>
-      <td>T11</td>
+      <td>Queued</td>
       <td>Completed</td>
+      <td>All Statements completed</td>
       <td>system (automatic)</td>
+      <td>—</td>
     </tr>
   </tbody>
 </table>

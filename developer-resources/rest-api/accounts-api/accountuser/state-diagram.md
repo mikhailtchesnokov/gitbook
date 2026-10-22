@@ -61,56 +61,76 @@ stateDiagram-v2
 <table>
   <thead>
     <tr>
-      <th>ID</th>
+      <th>From State</th>
       <th>To State</th>
+      <th>Action</th>
       <th>Endpoint / Verb</th>
+      <th>Actor</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>T1</td>
+      <td>—</td>
       <td>Invited</td>
+      <td>Invite User to Account</td>
       <td>`POST /v1/accounts/accounts/{accountId}/users`</td>
+      <td>Vendor, Operations, Client (own Account)</td>
     </tr>
     <tr>
-      <td>T2</td>
+      <td>—</td>
       <td>Active</td>
+      <td>Add existing User to Account</td>
       <td>`POST /v1/accounts/accounts/{accountId}/users`</td>
+      <td>Operations</td>
     </tr>
     <tr>
-      <td>T3</td>
+      <td>Invited</td>
       <td>Active</td>
+      <td>Accept invitation</td>
       <td>`POST .../{userId}/accept-invite`</td>
+      <td>The invited User (self)</td>
     </tr>
     <tr>
-      <td>T4</td>
       <td>Invited</td>
+      <td>Invited</td>
+      <td>Resend invitation</td>
       <td>`POST .../{userId}/resend-invite`</td>
+      <td>Vendor, Operations, Client (own Account)</td>
     </tr>
     <tr>
-      <td>T5</td>
-      <td>InvitationExpired</td>
-      <td>No dedicated endpoint (system-initiated status write)</td>
-    </tr>
-    <tr>
-      <td>T6</td>
-      <td>Deleted</td>
-      <td>`DELETE .../{userId}`</td>
-    </tr>
-    <tr>
-      <td>T7</td>
       <td>Invited</td>
+      <td>InvitationExpired</td>
+      <td>Expire invitation</td>
+      <td>No dedicated endpoint (system-initiated status write)</td>
+      <td>System (Preamble Invariant 2)</td>
+    </tr>
+    <tr>
+      <td>Invited</td>
+      <td>Deleted</td>
+      <td>Delete membership</td>
+      <td>`DELETE .../{userId}`</td>
+      <td>Vendor, Operations, Client (own Account)</td>
+    </tr>
+    <tr>
+      <td>InvitationExpired</td>
+      <td>Invited</td>
+      <td>Send new invitation</td>
       <td>`POST .../{userId}/send-new-invite`</td>
+      <td>Vendor, Operations, Client (own Account)</td>
     </tr>
     <tr>
-      <td>T8</td>
+      <td>InvitationExpired</td>
       <td>Deleted</td>
+      <td>Delete membership</td>
       <td>`DELETE .../{userId}`</td>
+      <td>Vendor, Operations, Client (own Account)</td>
     </tr>
     <tr>
-      <td>T9</td>
+      <td>Active</td>
       <td>Deleted</td>
+      <td>Delete membership</td>
       <td>`DELETE .../{userId}`</td>
+      <td>Vendor, Operations, Client (own Account)</td>
     </tr>
   </tbody>
 </table>
