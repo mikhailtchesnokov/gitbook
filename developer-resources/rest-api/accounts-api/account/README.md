@@ -9,7 +9,7 @@ ACC
 An Account is the platform identity record for an Actor — either a Vendor (a software manufacturer transacting through the SoftwareOne Marketplace), an Operations entity (SoftwareOne itself, acting as platform steward), or a Client (a customer organisation purchasing through the SoftwareOne Marketplace). Every Account has a `type` field that determines which Actor permission profile applies to its Users and API Tokens. In PROD, there is exactly one Operations Account, one Account per Vendor entity, and one Account per Client organisation. Client Accounts have a 1:1 relationship with a CDG (Customer Discount Group) in SoftwareOne's ERP.
 
 
-## Ownership & Visibility
+### Ownership & Visibility
 
 <table>
   <thead>
@@ -71,16 +71,16 @@ An Account is the platform identity record for an Actor — either a Vendor (a s
         <tr>
             <td><code>id</code></td>
             <td>string</td>
-	        <td> ```core``` </td>
+	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
-            <td></td>
+            <td>Platform-assigned unique identifier. Format: `ACC-NNNN-NNNN`.Immutable. Assigned at creation</td>
         </tr>
         <tr>
             <td><code>audit</code></td>
             <td>PlatformObjectAudit</td>
 	        <td></td>
 	        <td></td>
-            <td></td>
+            <td>Standard platform audit block. Records `created` and `updated` timestamps and Actor references.Omitted from API responses by default. Request via `select=+audit`. The Operations Account's `audit.created.by` is absent — believed to be a system-bootstrapped account predating Actor attribution</td>
         </tr>
         <tr>
             <td><code>$meta</code></td>
@@ -92,37 +92,37 @@ An Account is the platform identity record for an Actor — either a Vendor (a s
         <tr>
             <td><code>name</code></td>
             <td>string</td>
-	        <td> ```core``` </td>
+	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
-            <td></td>
+            <td>Human-readable name of the Account.Required on creation and update. `minLength: 1`, `maxLength: 500`</td>
         </tr>
         <tr>
             <td><code>icon</code></td>
             <td>string</td>
-	        <td> ```core``` </td>
+	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
-            <td></td>
+            <td>URL path to the Account's icon. Defaults to a server-generated jdenticon; a custom icon may be uploaded to replace it.Nullable. Uploaded via `logo` binary field on PUT (`multipart/form-data`). See Preamble Section 9</td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
-	        <td> ```core``` </td>
+	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
-            <td></td>
+            <td>Increments on each update.Read-only</td>
         </tr>
         <tr>
             <td><code>type</code></td>
             <td>AccountType</td>
 	        <td></td>
 	        <td></td>
-            <td>. Allowed values: Client,Vendor,Operations</td>
+            <td>Actor type for this Account. One of: `Vendor`, `Operations`, `Client`.Required on creation. Immutable after creation. Determines the Actor permission profile for all associated Users and API Tokens. Creation with `type: Operations` is rejected — see BR-002. Allowed values: Client,Vendor,Operations</td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>AccountStatus</td>
 	        <td></td>
 	        <td></td>
-            <td>. Allowed values: Active,Enabled,Disabled</td>
+            <td>Operational status. One of: `Active`, `Enabled`, `Disabled`.`Active`: on Client Accounts, CDG is ERP-validated — can transact and be billed; on Vendor Accounts, default creation state with no ERP gate. `Enabled`: on Client Accounts, not Disabled but CDG not ERP-validated — cannot transact or be billed; on Operations Account, default creation state. `Disabled`: Vendor and Client Accounts only. See Section 3. Allowed values: Active,Enabled,Disabled</td>
         </tr>
         <tr>
             <td><code>externalIds</code></td>
@@ -136,63 +136,63 @@ An Account is the platform identity record for an Actor — either a Vendor (a s
             <td>string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
-            <td></td>
+            <td>Operations-managed ERP reference. Meaning varies by Account type: on Vendor Accounts, maps to the ERP manufacturer code; on Client Accounts, maps to the CDG (Customer Discount Group) — the global ERP identifier for a customer organisation; on the Operations Account, has no defined operational purpose. Always set and maintained exclusively by Operations regardless of Account type.`maxLength: 250`. Nullable. Absent from response when null</td>
         </tr>
         <tr>
             <td><code>externalName</code></td>
             <td>string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
-            <td></td>
+            <td>The ERP's own display name for the entity identified by `externalId`.See BR-016. Nullable. Absent from response when null</td>
         </tr>
         <tr>
             <td><code>address</code></td>
             <td>Address</td>
 	        <td></td>
 	        <td></td>
-            <td></td>
+            <td>Registered address of the Account. All sub-fields are nullable. An empty address object (`{}`) is valid.Sub-fields: `addressLine1`, `addressLine2`, `postCode`, `city`, `state`, `country` — all nullable strings</td>
         </tr>
         <tr>
             <td><code>technicalSupportEmail</code></td>
             <td>string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
-            <td></td>
+            <td>Technical support email address for the Account.Optional. `maxLength: 320`. Must be valid email format. Available on all Account types — see BR-011</td>
         </tr>
         <tr>
             <td><code>website</code></td>
             <td>string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
-            <td></td>
+            <td>Website URL for the Account.Optional. `maxLength: 2000`. Available on all Account types — see BR-012</td>
         </tr>
         <tr>
             <td><code>description</code></td>
             <td>string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
-            <td></td>
+            <td>Description of the Account.Optional. `maxLength: 2000`. Available on all Account types — see BR-012</td>
         </tr>
         <tr>
             <td><code>groups</code></td>
             <td>array</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
-            <td></td>
+            <td>User Groups associated with this Account.Omitted from API responses by default. Request via `select=+groups`. Every Account has exactly one Default User Group, permanently assigned — see BR-006</td>
         </tr>
         <tr>
             <td><code>eligibility</code></td>
             <td>Eligibility</td>
 	        <td></td>
 	        <td></td>
-            <td></td>
+            <td>Controls Client transacting eligibility. Sub-fields: `eligibility.client` (Boolean), `eligibility.partner` (Boolean).Present on Client Accounts only — rejected on other types, see BR-007. Absent from response when null</td>
         </tr>
         <tr>
             <td><code>defaultLanguageCode</code></td>
             <td>string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
-            <td></td>
+            <td>BCP 47 language tag representing the Account's preferred language.Optional. Observed as `"en-US"` on all three Account types in data sample</td>
         </tr></tbody>
 </table>
 

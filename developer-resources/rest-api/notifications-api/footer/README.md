@@ -25,7 +25,7 @@ Represents a localized footer template that can be appended to notification mess
         <tr>
             <td><code>id</code></td>
             <td>string</td>
-	        <td> ```core``` </td>
+	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
@@ -46,14 +46,14 @@ Represents a localized footer template that can be appended to notification mess
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
-	        <td> ```core``` </td>
+	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>languageCode</code></td>
             <td>string</td>
-	        <td> ```core``` </td>
+	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td>Gets or sets the language code for this footer</td>
         </tr>
@@ -67,14 +67,14 @@ Represents a localized footer template that can be appended to notification mess
         <tr>
             <td><code>isDefault</code></td>
             <td>boolean</td>
-	        <td> ```core``` </td>
+	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td>Gets or sets a value indicating whether this is the default footer</td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>string</td>
-	        <td> ```core``` </td>
+	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td>Gets or sets the current status of the footer</td>
         </tr></tbody>

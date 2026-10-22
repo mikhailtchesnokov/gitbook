@@ -22,7 +22,7 @@
         <tr>
             <td><code>id</code></td>
             <td>string</td>
-	        <td> ```core``` </td>
+	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
@@ -43,7 +43,7 @@
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
-	        <td> ```core``` </td>
+	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>

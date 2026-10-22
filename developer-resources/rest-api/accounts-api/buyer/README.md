@@ -9,7 +9,7 @@ BUY
 A Buyer is the platform's record of a customer entity as it exists in SoftwareOne's ERP — the reconciled, master-data view of a purchasing organisation, synchronised from the ERP rather than authored on the platform. A Buyer is linked to at most one Client [[Account]] (the platform-side identity a customer transacts under) and, through [[ErpLink]] join records, to one or more [[Seller]]s (the SoftwareOne selling entities it does business with). Its status reflects the health of that reconciliation — whether it is assigned to an Account, whether its ERP identifiers are present, and whether the ERP data is internally consistent. Buyers are created and maintained primarily by an automated ERP-sync integration; Operations can also manage them directly, and a Client has limited rights over its own Account's Buyers.
 
 
-## Ownership & Visibility
+### Ownership & Visibility
 
 <table>
   <thead>
@@ -71,7 +71,7 @@ A Buyer is the platform's record of a customer entity as it exists in SoftwareOn
         <tr>
             <td><code>id</code></td>
             <td>string</td>
-	        <td> ```core``` </td>
+	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
@@ -92,21 +92,21 @@ A Buyer is the platform's record of a customer entity as it exists in SoftwareOn
         <tr>
             <td><code>name</code></td>
             <td>string</td>
-	        <td> ```core``` </td>
+	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
             <td>string</td>
-	        <td> ```core``` </td>
+	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
-	        <td> ```core``` </td>
+	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>

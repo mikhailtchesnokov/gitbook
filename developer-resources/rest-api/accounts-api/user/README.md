@@ -9,7 +9,7 @@ USR
 A User is the platform's global identity for a single human being — one person, one User record, keyed by email address. It holds the person's name, contact details, locale/formatting preferences, authentication status, and the set of [[Account]]s they belong to. A User is not itself typed as Vendor, Operations, or Client; the Actor permissions that apply to any given call are derived from which Account the User is operating in and their Group memberships within it (preamble §2.1a). A User is created the first time a person is invited into any Account, and thereafter is reused — additional Account memberships attach to the same global identity rather than creating a second User.
 
 
-## Ownership & Visibility
+### Ownership & Visibility
 
 <table>
   <thead>
@@ -71,16 +71,16 @@ A User is the platform's global identity for a single human being — one person
         <tr>
             <td><code>id</code></td>
             <td>string</td>
-	        <td> ```core``` </td>
+	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
-            <td></td>
+            <td>Platform-assigned global identifier. Format: `USR-NNNN-NNNN`.Immutable. Also usable as the `{uniqueFilter}` path value</td>
         </tr>
         <tr>
             <td><code>audit</code></td>
             <td>UserAudit</td>
 	        <td></td>
 	        <td></td>
-            <td></td>
+            <td>Creation/update events plus `invitationAcceptedAt`.Omitted by default — request via `select=+audit`</td>
         </tr>
         <tr>
             <td><code>$meta</code></td>
@@ -92,21 +92,21 @@ A User is the platform's global identity for a single human being — one person
         <tr>
             <td><code>name</code></td>
             <td>string</td>
-	        <td> ```core``` </td>
+	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
-            <td></td>
+            <td>Display name, composed from first and last name.Read-only composite</td>
         </tr>
         <tr>
             <td><code>icon</code></td>
             <td>string</td>
-	        <td> ```core``` </td>
+	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
-            <td></td>
+            <td>URL of the User's icon (jdenticon default or uploaded custom).Jdenticon behaviour — see BR-011 and preamble §9. Nullable in schema; never null in practice</td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
-	        <td> ```core``` </td>
+	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
@@ -115,63 +115,63 @@ A User is the platform's global identity for a single human being — one person
             <td>string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
-            <td></td>
+            <td>The person's email address and the unique key for the global identity.Unique across all Users (BR-001). Editable only via SSO auto-update (BR-009)</td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
-            <td></td>
+            <td>Authentication/lifecycle status. One of: `New`, `Invited`, `InvitationExpired`, `Active`, `Blocked`, `Disabled`, `Deleted`.Derived from memberships except for `Blocked`/`Deleted`. See Section 3, BR-005</td>
         </tr>
         <tr>
             <td><code>phone</code></td>
             <td>PhoneNumber</td>
 	        <td></td>
 	        <td></td>
-            <td></td>
+            <td>Optional phone number (`prefix`, `number`).Nullable. Absent from response when null</td>
         </tr>
         <tr>
             <td><code>firstName</code></td>
             <td>string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
-            <td></td>
+            <td>The person's given name.Required</td>
         </tr>
         <tr>
             <td><code>lastName</code></td>
             <td>string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
-            <td></td>
+            <td>The person's family name.Required</td>
         </tr>
         <tr>
             <td><code>lastLoginAt</code></td>
             <td>string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
-            <td></td>
+            <td>Timestamp of the most recent sign-in.Nullable; absent from response when the User has never signed in</td>
         </tr>
         <tr>
             <td><code>settings</code></td>
             <td>UserSettings</td>
 	        <td></td>
 	        <td></td>
-            <td></td>
+            <td>Locale and formatting preferences: `cultureCode`, `languageCode`, and optional `dateFormat`, `timeFormat`, `timeZone`, `numberFormat`, notification `optOuts`.`cultureCode` and `languageCode` always present; other members absent when null</td>
         </tr>
         <tr>
             <td><code>accounts</code></td>
             <td>array</td>
 	        <td></td>
 	        <td>ops</td>
-            <td></td>
+            <td>The Accounts the User belongs to, each a reference with type and status.Operations-only (Actor-suppressed): omitted for Vendor and Client and not retrievable by them even via `select=+accounts`</td>
         </tr>
         <tr>
             <td><code>currentAccount</code></td>
             <td>AccountRef</td>
 	        <td></td>
 	        <td></td>
-            <td></td>
+            <td>The Account the User is currently operating in, as an Account reference.Not Actor-suppressed. Populated for Operations; for Vendor and Client it is nulled when the fetched User's current Account differs from the viewer's Account. Switch constrained by BR-010</td>
         </tr></tbody>
 </table>
 

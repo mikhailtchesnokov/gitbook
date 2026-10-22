@@ -25,7 +25,7 @@ Represents a reusable template that can be used to generate messages.
         <tr>
             <td><code>id</code></td>
             <td>string</td>
-	        <td> ```core``` </td>
+	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
@@ -46,14 +46,14 @@ Represents a reusable template that can be used to generate messages.
         <tr>
             <td><code>name</code></td>
             <td>string</td>
-	        <td> ```core``` </td>
+	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
-	        <td> ```core``` </td>
+	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
@@ -88,7 +88,7 @@ Represents a reusable template that can be used to generate messages.
         <tr>
             <td><code>lastUsed</code></td>
             <td>string</td>
-	        <td> ```core``` </td>
+	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td>Gets or sets the timestamp of when this template was last used to send a notification</td>
         </tr>
@@ -109,7 +109,7 @@ Represents a reusable template that can be used to generate messages.
         <tr>
             <td><code>status</code></td>
             <td>string</td>
-	        <td> ```core``` </td>
+	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td>Gets or sets the current status of the template</td>
         </tr>

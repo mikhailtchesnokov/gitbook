@@ -9,7 +9,7 @@ ERP
 An ErpLink is the join record that relates one [[Buyer]] to one [[Seller]] — the per-Seller projection of a Buyer's ERP customer data. It represents how a given customer entity is integrated within the scope of a specific SoftwareOne selling entity, carrying that instance's ERP identifiers, address, and ship-to / bill-to detail. ErpLinks are created and removed by the automated ERP-sync integration as it reconciles a Buyer's set of Sellers; the platform exposes them for reading and for a narrow set of Operations actions (blocking, unblocking, and editing an internal note), but not for direct creation or deletion.
 
 
-## Ownership & Visibility
+### Ownership & Visibility
 
 <table>
   <thead>
@@ -71,7 +71,7 @@ An ErpLink is the join record that relates one [[Buyer]] to one [[Seller]] — t
         <tr>
             <td><code>id</code></td>
             <td>string</td>
-	        <td> ```core``` </td>
+	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
@@ -92,21 +92,21 @@ An ErpLink is the join record that relates one [[Buyer]] to one [[Seller]] — t
         <tr>
             <td><code>name</code></td>
             <td>string</td>
-	        <td> ```core``` </td>
+	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
             <td>string</td>
-	        <td> ```core``` </td>
+	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
-	        <td> ```core``` </td>
+	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
@@ -127,7 +127,7 @@ An ErpLink is the join record that relates one [[Buyer]] to one [[Seller]] — t
         <tr>
             <td><code>companyName</code></td>
             <td>string</td>
-	        <td> ```core``` </td>
+	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>

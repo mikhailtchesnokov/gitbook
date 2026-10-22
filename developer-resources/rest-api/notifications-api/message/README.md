@@ -25,7 +25,7 @@ Represents an individual notification message sent to a specific contact.
         <tr>
             <td><code>id</code></td>
             <td>string</td>
-	        <td> ```core``` </td>
+	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
@@ -46,7 +46,7 @@ Represents an individual notification message sent to a specific contact.
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
-	        <td> ```core``` </td>
+	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
@@ -109,21 +109,21 @@ Represents an individual notification message sent to a specific contact.
         <tr>
             <td><code>status</code></td>
             <td>string</td>
-	        <td> ```core``` </td>
+	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td>Gets or sets the current status of the message</td>
         </tr>
         <tr>
             <td><code>statusReason</code></td>
             <td>string</td>
-	        <td> ```core``` </td>
+	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td>Gets or sets the reason for the current status</td>
         </tr>
         <tr>
             <td><code>subject</code></td>
             <td>string</td>
-	        <td> ```core``` </td>
+	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td>Gets or sets the subject of the message</td>
         </tr></tbody>

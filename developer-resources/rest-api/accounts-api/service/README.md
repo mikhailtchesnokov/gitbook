@@ -9,7 +9,7 @@ SVC
 A Service is the platform's identity for an internal, non-human component (for example, the billing or scheduler component). It sits alongside the human identity ([[User]]) and the programmatic identity ([[API Token]]) as one of the platform's identity types, so that actions performed autonomously by an internal component can be attributed to a named identity in the audit trail. Service identities are provisioned and maintained by the platform itself, not by any Actor; the public API exposes them as read-only reference data.
 
 
-## Ownership & Visibility
+### Ownership & Visibility
 
 <table>
   <thead>
@@ -71,16 +71,16 @@ A Service is the platform's identity for an internal, non-human component (for e
         <tr>
             <td><code>id</code></td>
             <td>string</td>
-	        <td> ```core``` </td>
+	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
-            <td></td>
+            <td>Unique identifier, prefixed `SVC-`.Read-only</td>
         </tr>
         <tr>
             <td><code>audit</code></td>
             <td>PlatformObjectAudit</td>
 	        <td></td>
 	        <td></td>
-            <td></td>
+            <td>Creation and last-modification events, each with a timestamp and the attributed identity.Omitted by default — request via `select=+audit`. Contains `created` and `updated`</td>
         </tr>
         <tr>
             <td><code>$meta</code></td>
@@ -92,37 +92,37 @@ A Service is the platform's identity for an internal, non-human component (for e
         <tr>
             <td><code>name</code></td>
             <td>string</td>
-	        <td> ```core``` </td>
+	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
-            <td></td>
+            <td>Human-readable name of the internal component (e.g. `platform`, `scheduler`, `Billing`).—</td>
         </tr>
         <tr>
             <td><code>icon</code></td>
             <td>string</td>
-	        <td> ```core``` </td>
+	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
-            <td></td>
+            <td>Reference to a visual identity image for the component (see preamble §9).Nullable; null in observed data. Absent from response when null</td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
-	        <td> ```core``` </td>
+	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
-            <td></td>
+            <td>Monotonic revision counter for the record.Increments on internal modification</td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
-            <td></td>
+            <td>Lifecycle status of the Service.Enum: `Active`, `Deleted`. No public transition — see Section 3</td>
         </tr>
         <tr>
             <td><code>description</code></td>
             <td>string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
-            <td></td>
+            <td>Free-text description of the component's purpose.Nullable. Absent from response when null</td>
         </tr></tbody>
 </table>
 

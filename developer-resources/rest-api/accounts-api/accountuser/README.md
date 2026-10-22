@@ -9,7 +9,7 @@ AUSR
 An Account User is the membership object that links one platform User identity to one [[Account]], carrying the User's Group assignments, Buyer visibility scope, and invitation state within that Account. It is the object that grants a User the ability to operate as an Actor in an Account: a User with no Account User memberships has no Actor permissions (Preamble Section 2.1a), and the effective permission set for any action is the intersection of the Account's type and the Groups held through this membership. Account Users are created when an existing User is added to an Account or a new User is invited to it, and are managed by Actors holding Access Management permission in that Account.
 
 
-## Ownership & Visibility
+### Ownership & Visibility
 
 <table>
   <thead>
@@ -71,7 +71,7 @@ An Account User is the membership object that links one platform User identity t
         <tr>
             <td><code>id</code></td>
             <td>string</td>
-	        <td> ```core``` </td>
+	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
@@ -92,21 +92,21 @@ An Account User is the membership object that links one platform User identity t
         <tr>
             <td><code>name</code></td>
             <td>string</td>
-	        <td> ```core``` </td>
+	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
             <td>string</td>
-	        <td> ```core``` </td>
+	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
-	        <td> ```core``` </td>
+	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>

@@ -25,7 +25,7 @@ Represents a language-specific variant of a template.
         <tr>
             <td><code>id</code></td>
             <td>string</td>
-	        <td> ```core``` </td>
+	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
@@ -46,7 +46,7 @@ Represents a language-specific variant of a template.
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
-	        <td> ```core``` </td>
+	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
@@ -60,14 +60,14 @@ Represents a language-specific variant of a template.
         <tr>
             <td><code>default</code></td>
             <td>boolean</td>
-	        <td> ```core``` </td>
+	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td>Gets or sets a value indicating whether this is the default variant for the parent template</td>
         </tr>
         <tr>
             <td><code>languageCode</code></td>
             <td>string</td>
-	        <td> ```core``` </td>
+	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td>Gets or sets the language code for this variant</td>
         </tr>
@@ -81,7 +81,7 @@ Represents a language-specific variant of a template.
         <tr>
             <td><code>status</code></td>
             <td>string</td>
-	        <td> ```core``` </td>
+	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td>Gets or sets the current status of the variant</td>
         </tr>

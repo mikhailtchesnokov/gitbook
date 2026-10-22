@@ -25,7 +25,7 @@ Represents a batch of notification messages that share common properties.
         <tr>
             <td><code>id</code></td>
             <td>string</td>
-	        <td> ```core``` </td>
+	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
@@ -46,7 +46,7 @@ Represents a batch of notification messages that share common properties.
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
-	        <td> ```core``` </td>
+	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
@@ -102,7 +102,7 @@ Represents a batch of notification messages that share common properties.
         <tr>
             <td><code>status</code></td>
             <td>string</td>
-	        <td> ```core``` </td>
+	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td>Gets or sets the current status of the batch</td>
         </tr>
@@ -116,7 +116,7 @@ Represents a batch of notification messages that share common properties.
         <tr>
             <td><code>type</code></td>
             <td>string</td>
-	        <td> ```core``` </td>
+	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td>Gets or sets the type of batch</td>
         </tr>

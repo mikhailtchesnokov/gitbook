@@ -9,7 +9,7 @@ UGR
 A User Group is a named permission set within a single [[Account]] that grants its members access to a specific selection of platform [[Module]]s. It is the granular half of the platform's permission model described in preamble §2.1a — Account type sets the broad Actor profile, while the User Group determines which platform features (Marketplace, Access management, Billing, and so on) a member can use within that Account. Groups are created and maintained by an Actor with the appropriate access-management permission in the Account; members are assigned to groups from the [[Account User]] side. Every Account has one system-provisioned Default group (named "Administrators") that grants the account's full module set.
 
 
-## Ownership & Visibility
+### Ownership & Visibility
 
 <table>
   <thead>
@@ -71,16 +71,16 @@ A User Group is a named permission set within a single [[Account]] that grants i
         <tr>
             <td><code>id</code></td>
             <td>string</td>
-	        <td> ```core``` </td>
+	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
-            <td></td>
+            <td>Platform identifier, `UGR-NNNN-NNNN`.—</td>
         </tr>
         <tr>
             <td><code>audit</code></td>
             <td>PlatformObjectAudit</td>
 	        <td></td>
 	        <td></td>
-            <td></td>
+            <td>Created/updated event metadata (at / by).Automated platform updates are attributed to a platform service context</td>
         </tr>
         <tr>
             <td><code>$meta</code></td>
@@ -92,72 +92,72 @@ A User Group is a named permission set within a single [[Account]] that grants i
         <tr>
             <td><code>name</code></td>
             <td>string</td>
-	        <td> ```core``` </td>
+	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
-            <td></td>
+            <td>Human-readable group name.Required; bounded maximum length</td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
-	        <td> ```core``` </td>
+	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
-            <td></td>
+            <td>Monotonic revision counter.Increments on each update</td>
         </tr>
         <tr>
             <td><code>description</code></td>
             <td>string</td>
-	        <td> ```core``` </td>
+	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
-            <td></td>
+            <td>Free-text description of the group's purpose.Optional; bounded maximum length. Absent from response when null</td>
         </tr>
         <tr>
             <td><code>account</code></td>
             <td>AccountRef</td>
 	        <td></td>
 	        <td></td>
-            <td></td>
+            <td>The owning Account.Summary reference (id, name, type, status). See BR-001</td>
         </tr>
         <tr>
             <td><code>modules</code></td>
             <td>array</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
-            <td></td>
+            <td>The Modules this group grants access to.Referenced summary collection. Constrained by BR-006/BR-007</td>
         </tr>
         <tr>
             <td><code>logo</code></td>
             <td>string</td>
-	        <td> ```core``` </td>
+	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
-            <td></td>
+            <td>URL of the group's display logo.Optional plain URL string (not the `/icon` upload pattern of preamble §9). Absent from response when null</td>
         </tr>
         <tr>
             <td><code>isDefault</code></td>
             <td>boolean</td>
-	        <td> ```core``` </td>
+	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
-            <td></td>
+            <td>Whether this is the Account's Default (Administrators) group.Set only by system provisioning; see BR-002/BR-004</td>
         </tr>
         <tr>
             <td><code>users</code></td>
             <td>array</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
-            <td></td>
+            <td>The members currently assigned to this group.Read-only reverse view; membership is changed from the Account User side, not by writing this field</td>
         </tr>
         <tr>
             <td><code>extensions</code></td>
             <td>array</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
-            <td></td>
+            <td>Extension scope (non-default groups only).Absent from response when null/all. See BR-009/BR-010</td>
         </tr>
         <tr>
             <td><code>buyers</code></td>
             <td>array</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
-            <td></td>
+            <td>Buyer-visibility scope for buyer-aware Modules.Absent from response when not applicable. See BR-011</td>
         </tr></tbody>
 </table>
 

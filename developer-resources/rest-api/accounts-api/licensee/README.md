@@ -9,7 +9,7 @@ LCE
 A Licensee represents a specific pairing of a customer legal entity and a SoftwareOne selling entity — the [[Buyer]] as it transacts through one [[Seller]]. It is the party on whose behalf a Commerce: [[Agreement]] (and the resulting [[Subscription]]s and [[Asset]]s) is established, and so it is the customer-facing procurement identity used throughout ordering. A Licensee is created — by a Client for its own [[Account]], or by Operations — only once an [[ErpLink]] joins the chosen Buyer and Seller. In a Tier 2 reselling arrangement, the Licensee is the reseller's downstream customer.
 
 
-## Ownership & Visibility
+### Ownership & Visibility
 
 <table>
   <thead>
@@ -71,7 +71,7 @@ A Licensee represents a specific pairing of a customer legal entity and a Softwa
         <tr>
             <td><code>id</code></td>
             <td>string</td>
-	        <td> ```core``` </td>
+	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
@@ -92,28 +92,28 @@ A Licensee represents a specific pairing of a customer legal entity and a Softwa
         <tr>
             <td><code>name</code></td>
             <td>string</td>
-	        <td> ```core``` </td>
+	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
             <td>string</td>
-	        <td> ```core``` </td>
+	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
-	        <td> ```core``` </td>
+	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>externalId</code></td>
             <td>string</td>
-	        <td> ```core``` </td>
+	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>

@@ -9,7 +9,7 @@ CLT
 A Cloud Tenant represents a single cloud environment used for cloud-spend management — an AWS, Microsoft Azure, or Microsoft 365 subscription (CSP or EA), or an SLM or Virtual tenant — mapped onto a client [[Account]]. It is the Marketplace-side representation of a tenant that lives in SoftwareOne's legacy consumption-management system; the Marketplace object exists so that cloud-spend data can be attributed to the correct client Account and so that [[User]] access to spend data can be scoped per tenant. A Cloud Tenant does not provision or create anything in the external consumption-management system — creating one registers (maps) an already-existing consumption tenant to an Account.
 
 
-## Ownership & Visibility
+### Ownership & Visibility
 
 <table>
   <thead>
@@ -71,16 +71,16 @@ A Cloud Tenant represents a single cloud environment used for cloud-spend manage
         <tr>
             <td><code>id</code></td>
             <td>string</td>
-	        <td> ```core``` </td>
+	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
-            <td></td>
+            <td>Platform identifier, `CLT-NNNN-NNNN`.—</td>
         </tr>
         <tr>
             <td><code>audit</code></td>
             <td>PlatformObjectAudit</td>
 	        <td></td>
 	        <td></td>
-            <td></td>
+            <td>Created/updated actor and timestamp metadata.Omitted by default — request via `select=+audit`</td>
         </tr>
         <tr>
             <td><code>$meta</code></td>
@@ -92,23 +92,23 @@ A Cloud Tenant represents a single cloud environment used for cloud-spend manage
         <tr>
             <td><code>name</code></td>
             <td>string</td>
-	        <td> ```core``` </td>
+	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
-            <td></td>
+            <td>Display name of the tenant; mirrors the consumption-management display name.Max 100 characters (BR-007)</td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
-	        <td> ```core``` </td>
+	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
-            <td></td>
+            <td>Monotonic revision counter.Increments on change</td>
         </tr>
         <tr>
             <td><code>account</code></td>
             <td>AccountRef</td>
 	        <td></td>
 	        <td></td>
-            <td></td>
+            <td>The mapped client Account, if any.Optional (BR-001); reassignable subject to BR-003/BR-004. Absent from response when null</td>
         </tr>
         <tr>
             <td><code>externalIds</code></td>
@@ -122,14 +122,14 @@ A Cloud Tenant represents a single cloud environment used for cloud-spend manage
             <td>string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
-            <td></td>
+            <td>Lifecycle state. One of `Active`, `Disabled`, `Deleted`.`Deleted` is not settable via update (BR-008). See Section 3</td>
         </tr>
         <tr>
             <td><code>type</code></td>
             <td>string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
-            <td></td>
+            <td>Cloud environment kind.`AwsDirect`, `AwsService`, `Csp365`, `CspAzure`, `Ea365`, `EaAzure`, `Slm`, `Virtual`. `Slm`/`Virtual` have a multi-account restriction (BR-004). Fixed after creation (BR-010)</td>
         </tr></tbody>
 </table>
 

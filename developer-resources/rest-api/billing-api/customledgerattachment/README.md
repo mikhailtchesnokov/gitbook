@@ -39,14 +39,14 @@ Represents an attachment associated with a custom ledger in the billing system.
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
-	        <td> ```core``` </td>
+	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
             <td>string</td>
-	        <td> ```core``` </td>
+	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td>Name of the attachment</td>
         </tr>
@@ -60,7 +60,7 @@ Represents an attachment associated with a custom ledger in the billing system.
         <tr>
             <td><code>filename</code></td>
             <td>string</td>
-	        <td> ```core``` </td>
+	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td>Represents the name of the file associated with the attachment</td>
         </tr>
@@ -81,7 +81,7 @@ Represents an attachment associated with a custom ledger in the billing system.
         <tr>
             <td><code>description</code></td>
             <td>string</td>
-	        <td> ```core``` </td>
+	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td>Provides a description of the attachment</td>
         </tr>
@@ -95,7 +95,7 @@ Represents an attachment associated with a custom ledger in the billing system.
         <tr>
             <td><code>id</code></td>
             <td>string</td>
-	        <td> ```core``` </td>
+	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td>The unique identifier of the attachment</td>
         </tr>

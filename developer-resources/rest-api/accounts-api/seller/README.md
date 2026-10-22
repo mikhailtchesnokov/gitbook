@@ -9,7 +9,7 @@ SEL
 A Seller is a SoftwareOne legal entity registered in the SoftwareOne Marketplace. Each Seller has a 1:1 relationship with an instance of SoftwareOne's ERP system. Sellers exist for every country or jurisdiction in which SoftwareOne conducts business, including entities acquired through mergers and acquisitions that continue to transact independently until ERP consolidation. A Seller acts as the owner of [[Authorization]]s and as the transacting party on [[Listing]]s — it is the named SoftwareOne entity on a commercial transaction with a Client.
 
 
-## Ownership & Visibility
+### Ownership & Visibility
 
 <table>
   <thead>
@@ -71,16 +71,16 @@ A Seller is a SoftwareOne legal entity registered in the SoftwareOne Marketplace
         <tr>
             <td><code>id</code></td>
             <td>string</td>
-	        <td> ```core``` </td>
+	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
-            <td></td>
+            <td>Platform-assigned unique identifier. Format: `SEL-NNNN-NNNN`.Immutable. Assigned at creation</td>
         </tr>
         <tr>
             <td><code>audit</code></td>
             <td>PlatformObjectAudit</td>
 	        <td></td>
 	        <td></td>
-            <td></td>
+            <td>Standard platform audit block. Records `created` and `updated` timestamps and Actor references.Returned by default on this object's responses in current observation (no `select=+audit` was needed to see it in this run's live sample) — this differs from the platform-wide default of omitting `audit` unless requested (preamble Section 6.2); treat as object-specific pending further confirmation</td>
         </tr>
         <tr>
             <td><code>$meta</code></td>
@@ -92,44 +92,44 @@ A Seller is a SoftwareOne legal entity registered in the SoftwareOne Marketplace
         <tr>
             <td><code>name</code></td>
             <td>string</td>
-	        <td> ```core``` </td>
+	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
-            <td></td>
+            <td>Human-readable label for the Seller. Freeform — no naming convention enforced by the platform.Required on creation. `minLength: 1`, `maxLength: 500`. See BR-004</td>
         </tr>
         <tr>
             <td><code>icon</code></td>
             <td>string</td>
-	        <td> ```core``` </td>
+	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
-            <td></td>
+            <td>URL path to the Seller's icon. Follows the jdenticon behaviour — defaults to a server-generated jdenticon; a custom icon may be uploaded to replace it.Returns jdenticon URL by default. Nullable in the spec. Uploaded via the `logo` binary field on the multipart `PUT` endpoint; removed automatically by any multipart `PUT` that omits a `logo` file. See BR-008. One entry in production data has no `icon` field — see SEL-004</td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
-	        <td> ```core``` </td>
+	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
-            <td></td>
+            <td>Increments on each update.Read-only</td>
         </tr>
         <tr>
             <td><code>externalId</code></td>
             <td>string</td>
-	        <td> ```core``` </td>
+	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
-            <td></td>
+            <td>The ERP-side identifier for this Seller. Represents the 1:1 relationship between a Seller and an ERP instance.Marked nullable in the API schema, but functionally required — a null/empty value is rejected on creation. Enforced unique across all Sellers (any status) at creation only. See BR-002</td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>SellerStatus</td>
 	        <td></td>
 	        <td></td>
-            <td>. Allowed values: Active,Disabled,Offline,Deleted</td>
+            <td>Operational status of the Seller. One of: `Active`, `Disabled`, `Offline`, `Deleted`.Managed via dedicated action endpoints (`/activate`, `/disable`, `/deactivate`) plus `DELETE` for the transition into `Deleted`. See Section 3. Allowed values: Active,Disabled,Offline,Deleted</td>
         </tr>
         <tr>
             <td><code>currencies</code></td>
             <td>array</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
-            <td></td>
+            <td>The set of currencies this Seller may transact in. Each entry: `value` (ISO 4217 code), `billingEnabled` (Boolean), `isDefault` (Boolean).1–1000 entries; exactly one `isDefault: true`; at least one `billingEnabled: true`. Update replaces the full set — see BR-003</td>
         </tr>
         <tr>
             <td><code>address</code></td>
@@ -143,7 +143,7 @@ A Seller is a SoftwareOne legal entity registered in the SoftwareOne Marketplace
             <td>ErpLinkRef</td>
 	        <td></td>
 	        <td></td>
-            <td></td>
+            <td>Present in the schema as a single reference, but not populated on the standalone Seller resource in practice (absent from live responses, and not listed in `$meta.omitted`).A Seller may in fact have many ErpLinks — one per linked Buyer, since an ErpLink pairs exactly one Buyer with one Seller (Accounts: ErpLink). The singular `erpLink` field does not represent this collection</td>
         </tr>
         <tr>
             <td><code>attributes</code></td>
