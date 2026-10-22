@@ -2,11 +2,12 @@
 ## JournalAttachment
 
 
-
-
 ### Description
 Represents an attachment associated with a journal in the billing system.
 
+
+
+### Attributes
 
 {% include "../../../../.gitbook/includes/api-table-header.md" %}
 
@@ -15,7 +16,7 @@ Represents an attachment associated with a journal in the billing system.
         <tr>
             <th>Field</th>
             <th>Type</th>
-	        <th>Core</th>
+	        <th>Rql</th>
 	        <th>Access</th>
             <th>Description</th>
         </tr>
@@ -38,14 +39,14 @@ Represents an attachment associated with a journal in the billing system.
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td>Name of the attachment</td>
         </tr>
@@ -59,7 +60,7 @@ Represents an attachment associated with a journal in the billing system.
         <tr>
             <td><code>filename</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td>Represents the name of the file associated with the attachment</td>
         </tr>
@@ -80,7 +81,7 @@ Represents an attachment associated with a journal in the billing system.
         <tr>
             <td><code>description</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td>Provides a description of the attachment</td>
         </tr>
@@ -94,7 +95,7 @@ Represents an attachment associated with a journal in the billing system.
         <tr>
             <td><code>id</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td>The unique identifier of the attachment</td>
         </tr>
@@ -115,8 +116,8 @@ Represents an attachment associated with a journal in the billing system.
 </table>
 
 
-Downstream models here
-## AccountRef
+## Downstream models
+### AccountRef
 
 
 
@@ -176,7 +177,7 @@ Downstream models here
     </tbody>
 </table>
 
-## JournalRef
+### JournalRef
 
 Represents a journal entry in the billing system.
 
@@ -222,7 +223,7 @@ Represents a journal entry in the billing system.
     </tbody>
 </table>
 
-## PlatformIdentityRef
+### PlatformIdentityRef
 
 
 
@@ -268,7 +269,7 @@ Represents a journal entry in the billing system.
     </tbody>
 </table>
 
-## PlatformMetadata
+### PlatformMetadata
 
 
 
@@ -293,7 +294,7 @@ Represents a journal entry in the billing system.
     </tbody>
 </table>
 
-## PlatformObjectAudit
+### PlatformObjectAudit
 
 
 
@@ -325,7 +326,7 @@ Represents a journal entry in the billing system.
     </tbody>
 </table>
 
-## PlatformObjectEvent
+### PlatformObjectEvent
 
 
 

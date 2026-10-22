@@ -4,6 +4,7 @@
 
 
 
+### Attributes
 
 {% include "../../../../.gitbook/includes/api-table-header.md" %}
 
@@ -12,7 +13,7 @@
         <tr>
             <th>Field</th>
             <th>Type</th>
-	        <th>Core</th>
+	        <th>Rql</th>
 	        <th>Access</th>
             <th>Description</th>
         </tr>
@@ -21,7 +22,7 @@
         <tr>
             <td><code>id</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
@@ -42,14 +43,14 @@
         <tr>
             <td><code>icon</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
@@ -77,22 +78,22 @@
         <tr>
             <td><code>name</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td>Represents the name this attachment</td>
         </tr>
         <tr>
             <td><code>description</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td>Represents the description this attachment</td>
         </tr></tbody>
 </table>
 
 
-Downstream models here
-## AccountRef
+## Downstream models
+### AccountRef
 
 
 
@@ -152,7 +153,7 @@ Downstream models here
     </tbody>
 </table>
 
-## Feedback
+### Feedback
 
 
 
@@ -282,7 +283,7 @@ Downstream models here
     </tbody>
 </table>
 
-## FeedbackAttachmentAudit
+### FeedbackAttachmentAudit
 
 
 
@@ -321,7 +322,7 @@ Downstream models here
     </tbody>
 </table>
 
-## FeedbackAttachmentRef
+### FeedbackAttachmentRef
 
 
 
@@ -388,7 +389,7 @@ Downstream models here
     </tbody>
 </table>
 
-## File
+### File
 
 Represents a file in the helpdesk module
 
@@ -476,7 +477,7 @@ Represents a file in the helpdesk module
     </tbody>
 </table>
 
-## PlatformIdentityRef
+### PlatformIdentityRef
 
 
 
@@ -522,7 +523,7 @@ Represents a file in the helpdesk module
     </tbody>
 </table>
 
-## PlatformMetadata
+### PlatformMetadata
 
 
 
@@ -547,7 +548,7 @@ Represents a file in the helpdesk module
     </tbody>
 </table>
 
-## PlatformObjectAudit
+### PlatformObjectAudit
 
 
 
@@ -579,7 +580,7 @@ Represents a file in the helpdesk module
     </tbody>
 </table>
 
-## PlatformObjectEvent
+### PlatformObjectEvent
 
 
 

@@ -4,6 +4,7 @@
 
 
 
+### Attributes
 
 {% include "../../../../.gitbook/includes/api-table-header.md" %}
 
@@ -12,7 +13,7 @@
         <tr>
             <th>Field</th>
             <th>Type</th>
-	        <th>Core</th>
+	        <th>Rql</th>
 	        <th>Access</th>
             <th>Description</th>
         </tr>
@@ -21,7 +22,7 @@
         <tr>
             <td><code>id</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
@@ -42,7 +43,7 @@
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
@@ -112,8 +113,8 @@
 </table>
 
 
-Downstream models here
-## Account
+## Downstream models
+### Account
 
 
 
@@ -257,7 +258,7 @@ Downstream models here
     </tbody>
 </table>
 
-## AccountExternalIds
+### AccountExternalIds
 
 
 
@@ -282,7 +283,7 @@ Downstream models here
     </tbody>
 </table>
 
-## AccountRef
+### AccountRef
 
 
 
@@ -342,7 +343,7 @@ Downstream models here
     </tbody>
 </table>
 
-## Address
+### Address
 
 
 
@@ -402,7 +403,7 @@ Downstream models here
     </tbody>
 </table>
 
-## CapacitySettings
+### CapacitySettings
 
 
 
@@ -434,7 +435,7 @@ Downstream models here
     </tbody>
 </table>
 
-## CategoryRef
+### CategoryRef
 
 
 
@@ -480,7 +481,7 @@ Downstream models here
     </tbody>
 </table>
 
-## Chat
+### Chat
 
 
 
@@ -575,7 +576,7 @@ Downstream models here
     </tbody>
 </table>
 
-## ChatAttachmentRef
+### ChatAttachmentRef
 
 
 
@@ -628,7 +629,7 @@ Downstream models here
     </tbody>
 </table>
 
-## ChatMessageRef
+### ChatMessageRef
 
 
 
@@ -681,7 +682,7 @@ Downstream models here
     </tbody>
 </table>
 
-## ChatParticipantRef
+### ChatParticipantRef
 
 
 
@@ -727,7 +728,7 @@ Downstream models here
     </tbody>
 </table>
 
-## Contact
+### Contact
 
 Represents a notification contact who can receive email notifications.
 
@@ -836,7 +837,7 @@ Represents a notification contact who can receive email notifications.
     </tbody>
 </table>
 
-## ContactAudit
+### ContactAudit
 
 Represents audit information for a Mpt.Notifications.Models.Contacts.Contact.
 
@@ -889,7 +890,7 @@ Represents audit information for a Mpt.Notifications.Models.Contacts.Contact.
     </tbody>
 </table>
 
-## DirectoryRef
+### DirectoryRef
 
 
 
@@ -921,7 +922,7 @@ Represents audit information for a Mpt.Notifications.Models.Contacts.Contact.
     </tbody>
 </table>
 
-## Eligibility
+### Eligibility
 
 
 
@@ -953,7 +954,7 @@ Represents audit information for a Mpt.Notifications.Models.Contacts.Contact.
     </tbody>
 </table>
 
-## File
+### File
 
 Represents a file in the helpdesk module
 
@@ -1041,7 +1042,7 @@ Represents a file in the helpdesk module
     </tbody>
 </table>
 
-## HelpdeskConstraints
+### HelpdeskConstraints
 
 Constraints specific to helpdesk parameters
 
@@ -1094,7 +1095,7 @@ Constraints specific to helpdesk parameters
     </tbody>
 </table>
 
-## JsonNode
+### JsonNode
 
 
 
@@ -1133,7 +1134,7 @@ Constraints specific to helpdesk parameters
     </tbody>
 </table>
 
-## JsonNodeOptions
+### JsonNodeOptions
 
 
 
@@ -1158,7 +1159,7 @@ Constraints specific to helpdesk parameters
     </tbody>
 </table>
 
-## NumberFormat
+### NumberFormat
 
 
 
@@ -1190,7 +1191,7 @@ Constraints specific to helpdesk parameters
     </tbody>
 </table>
 
-## PhoneNumber
+### PhoneNumber
 
 
 
@@ -1222,7 +1223,7 @@ Constraints specific to helpdesk parameters
     </tbody>
 </table>
 
-## PlatformIdentity
+### PlatformIdentity
 
 
 
@@ -1282,7 +1283,7 @@ Constraints specific to helpdesk parameters
     </tbody>
 </table>
 
-## PlatformIdentityRef
+### PlatformIdentityRef
 
 
 
@@ -1328,7 +1329,7 @@ Constraints specific to helpdesk parameters
     </tbody>
 </table>
 
-## PlatformMetadata
+### PlatformMetadata
 
 
 
@@ -1353,7 +1354,7 @@ Constraints specific to helpdesk parameters
     </tbody>
 </table>
 
-## PlatformObjectAudit
+### PlatformObjectAudit
 
 
 
@@ -1385,7 +1386,7 @@ Constraints specific to helpdesk parameters
     </tbody>
 </table>
 
-## PlatformObjectEvent
+### PlatformObjectEvent
 
 
 
@@ -1417,7 +1418,7 @@ Constraints specific to helpdesk parameters
     </tbody>
 </table>
 
-## Queue
+### Queue
 
 
 
@@ -1540,7 +1541,7 @@ Constraints specific to helpdesk parameters
     </tbody>
 </table>
 
-## QueueAudit
+### QueueAudit
 
 
 
@@ -1593,7 +1594,7 @@ Constraints specific to helpdesk parameters
     </tbody>
 </table>
 
-## QueueStatistics
+### QueueStatistics
 
 
 
@@ -1625,7 +1626,7 @@ Constraints specific to helpdesk parameters
     </tbody>
 </table>
 
-## SupportCaseAudit
+### SupportCaseAudit
 
 
 
@@ -1685,7 +1686,7 @@ Constraints specific to helpdesk parameters
     </tbody>
 </table>
 
-## SupportCaseParameter
+### SupportCaseParameter
 
 Represents a parameter associated with a support case in the helpdesk system.
 
@@ -1769,7 +1770,7 @@ This is a core property for RQL queries</td>
     </tbody>
 </table>
 
-## User
+### User
 
 
 
@@ -1892,7 +1893,7 @@ This is a core property for RQL queries</td>
     </tbody>
 </table>
 
-## UserAudit
+### UserAudit
 
 
 
@@ -1931,7 +1932,7 @@ This is a core property for RQL queries</td>
     </tbody>
 </table>
 
-## UserGroupRef
+### UserGroupRef
 
 
 
@@ -1991,7 +1992,7 @@ This is a core property for RQL queries</td>
     </tbody>
 </table>
 
-## UserSettings
+### UserSettings
 
 
 
@@ -2058,7 +2059,7 @@ This is a core property for RQL queries</td>
     </tbody>
 </table>
 
-## UserSettingsOptOuts
+### UserSettingsOptOuts
 
 
 

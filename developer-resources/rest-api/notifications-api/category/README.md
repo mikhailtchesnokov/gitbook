@@ -2,11 +2,12 @@
 ## Category
 
 
-
-
 ### Description
 Represents a notification category that can be used to organize and filter notifications.
 
+
+
+### Attributes
 
 {% include "../../../../.gitbook/includes/api-table-header.md" %}
 
@@ -15,7 +16,7 @@ Represents a notification category that can be used to organize and filter notif
         <tr>
             <th>Field</th>
             <th>Type</th>
-	        <th>Core</th>
+	        <th>Rql</th>
 	        <th>Access</th>
             <th>Description</th>
         </tr>
@@ -24,7 +25,7 @@ Represents a notification category that can be used to organize and filter notif
         <tr>
             <td><code>id</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
@@ -45,21 +46,21 @@ Represents a notification category that can be used to organize and filter notif
         <tr>
             <td><code>name</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>description</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td>Gets or sets the description of the category</td>
         </tr>
@@ -101,7 +102,7 @@ Represents a notification category that can be used to organize and filter notif
         <tr>
             <td><code>lastUsed</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td>Gets or sets the timestamp of when this category was last used to send a notification</td>
         </tr>
@@ -115,8 +116,8 @@ Represents a notification category that can be used to organize and filter notif
 </table>
 
 
-Downstream models here
-## MessageStatistics
+## Downstream models
+### MessageStatistics
 
 Represents message statistics aggregated over different time periods.
 
@@ -155,7 +156,7 @@ Represents message statistics aggregated over different time periods.
     </tbody>
 </table>
 
-## NotificationCategoryAudit
+### NotificationCategoryAudit
 
 Represents audit information for a Mpt.Notifications.Models.Categories.Category.
 
@@ -208,7 +209,7 @@ Represents audit information for a Mpt.Notifications.Models.Categories.Category.
     </tbody>
 </table>
 
-## PlatformIdentityRef
+### PlatformIdentityRef
 
 
 
@@ -254,7 +255,7 @@ Represents audit information for a Mpt.Notifications.Models.Categories.Category.
     </tbody>
 </table>
 
-## PlatformMetadata
+### PlatformMetadata
 
 
 
@@ -279,7 +280,7 @@ Represents audit information for a Mpt.Notifications.Models.Categories.Category.
     </tbody>
 </table>
 
-## PlatformObjectEvent
+### PlatformObjectEvent
 
 
 

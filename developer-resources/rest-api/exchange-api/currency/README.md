@@ -2,11 +2,12 @@
 ## Currency
 
 
-
-
 ### Description
 Represents currency in exchange module.
 
+
+
+### Attributes
 
 {% include "../../../../.gitbook/includes/api-table-header.md" %}
 
@@ -15,7 +16,7 @@ Represents currency in exchange module.
         <tr>
             <th>Field</th>
             <th>Type</th>
-	        <th>Core</th>
+	        <th>Rql</th>
 	        <th>Access</th>
             <th>Description</th>
         </tr>
@@ -38,42 +39,42 @@ Represents currency in exchange module.
         <tr>
             <td><code>icon</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>id</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td>The unique identifier of the currency</td>
         </tr>
         <tr>
             <td><code>name</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td>The name of the currency</td>
         </tr>
         <tr>
             <td><code>code</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td>The ISO code of currency</td>
         </tr>
         <tr>
             <td><code>precision</code></td>
             <td>integer</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td>Precision of the currency</td>
         </tr>
@@ -94,8 +95,8 @@ Represents currency in exchange module.
 </table>
 
 
-Downstream models here
-## CurrencyStatistics
+## Downstream models
+### CurrencyStatistics
 
 Currency usage statistics
 
@@ -127,7 +128,7 @@ Currency usage statistics
     </tbody>
 </table>
 
-## ExchangeAudit
+### ExchangeAudit
 
 Exchange Entity Audit properties bag
 
@@ -166,7 +167,7 @@ Exchange Entity Audit properties bag
     </tbody>
 </table>
 
-## PlatformIdentityRef
+### PlatformIdentityRef
 
 
 
@@ -212,7 +213,7 @@ Exchange Entity Audit properties bag
     </tbody>
 </table>
 
-## PlatformMetadata
+### PlatformMetadata
 
 
 
@@ -237,7 +238,7 @@ Exchange Entity Audit properties bag
     </tbody>
 </table>
 
-## PlatformObjectEvent
+### PlatformObjectEvent
 
 
 

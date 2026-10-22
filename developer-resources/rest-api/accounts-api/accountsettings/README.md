@@ -2,11 +2,12 @@
 ## AccountSettings
 
 
-
-
 ### Description
 Represents account-specific notification settings.
 
+
+
+### Attributes
 
 {% include "../../../../.gitbook/includes/api-table-header.md" %}
 
@@ -15,7 +16,7 @@ Represents account-specific notification settings.
         <tr>
             <th>Field</th>
             <th>Type</th>
-	        <th>Core</th>
+	        <th>Rql</th>
 	        <th>Access</th>
             <th>Description</th>
         </tr>
@@ -24,7 +25,7 @@ Represents account-specific notification settings.
         <tr>
             <td><code>id</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
@@ -45,7 +46,7 @@ Represents account-specific notification settings.
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
@@ -59,7 +60,7 @@ Represents account-specific notification settings.
         <tr>
             <td><code>footer</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td>Gets or sets the custom footer text to be included in notifications sent on behalf of this account</td>
         </tr>
@@ -73,8 +74,8 @@ Represents account-specific notification settings.
 </table>
 
 
-Downstream models here
-## AccountRef
+## Downstream models
+### AccountRef
 
 
 
@@ -134,7 +135,7 @@ Downstream models here
     </tbody>
 </table>
 
-## AccountSettingsSender
+### AccountSettingsSender
 
 Represents the sender information for account-specific notification settings.
 
@@ -159,7 +160,7 @@ Represents the sender information for account-specific notification settings.
     </tbody>
 </table>
 
-## PlatformIdentityRef
+### PlatformIdentityRef
 
 
 
@@ -205,7 +206,7 @@ Represents the sender information for account-specific notification settings.
     </tbody>
 </table>
 
-## PlatformMetadata
+### PlatformMetadata
 
 
 
@@ -230,7 +231,7 @@ Represents the sender information for account-specific notification settings.
     </tbody>
 </table>
 
-## PlatformObjectAudit
+### PlatformObjectAudit
 
 
 
@@ -262,7 +263,7 @@ Represents the sender information for account-specific notification settings.
     </tbody>
 </table>
 
-## PlatformObjectEvent
+### PlatformObjectEvent
 
 
 

@@ -4,6 +4,7 @@
 
 
 
+### Attributes
 
 {% include "../../../../.gitbook/includes/api-table-header.md" %}
 
@@ -12,7 +13,7 @@
         <tr>
             <th>Field</th>
             <th>Type</th>
-	        <th>Core</th>
+	        <th>Rql</th>
 	        <th>Access</th>
             <th>Description</th>
         </tr>
@@ -21,7 +22,7 @@
         <tr>
             <td><code>id</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
@@ -42,21 +43,21 @@
         <tr>
             <td><code>name</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
@@ -154,15 +155,15 @@
         <tr>
             <td><code>status</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr></tbody>
 </table>
 
 
-Downstream models here
-## Account
+## Downstream models
+### Account
 
 
 
@@ -306,7 +307,7 @@ Downstream models here
     </tbody>
 </table>
 
-## AccountExternalIds
+### AccountExternalIds
 
 
 
@@ -331,7 +332,7 @@ Downstream models here
     </tbody>
 </table>
 
-## Address
+### Address
 
 
 
@@ -391,7 +392,7 @@ Downstream models here
     </tbody>
 </table>
 
-## CategoryRef
+### CategoryRef
 
 
 
@@ -437,7 +438,7 @@ Downstream models here
     </tbody>
 </table>
 
-## Eligibility
+### Eligibility
 
 
 
@@ -469,7 +470,7 @@ Downstream models here
     </tbody>
 </table>
 
-## IndustryRef
+### IndustryRef
 
 
 
@@ -515,7 +516,7 @@ Downstream models here
     </tbody>
 </table>
 
-## PlatformIdentityRef
+### PlatformIdentityRef
 
 
 
@@ -561,7 +562,7 @@ Downstream models here
     </tbody>
 </table>
 
-## PlatformMetadata
+### PlatformMetadata
 
 
 
@@ -586,7 +587,7 @@ Downstream models here
     </tbody>
 </table>
 
-## PlatformObjectAudit
+### PlatformObjectAudit
 
 
 
@@ -618,7 +619,7 @@ Downstream models here
     </tbody>
 </table>
 
-## PlatformObjectEvent
+### PlatformObjectEvent
 
 
 
@@ -650,7 +651,7 @@ Downstream models here
     </tbody>
 </table>
 
-## ProductExternalIdBag
+### ProductExternalIdBag
 
 
 
@@ -682,7 +683,7 @@ Downstream models here
     </tbody>
 </table>
 
-## ProductProfileAudit
+### ProductProfileAudit
 
 
 
@@ -728,7 +729,7 @@ Downstream models here
     </tbody>
 </table>
 
-## ProductProfileRef
+### ProductProfileRef
 
 
 
@@ -788,7 +789,7 @@ Downstream models here
     </tbody>
 </table>
 
-## ProductRef
+### ProductRef
 
 
 
@@ -848,7 +849,7 @@ Downstream models here
     </tbody>
 </table>
 
-## SegmentRef
+### SegmentRef
 
 
 
@@ -894,7 +895,7 @@ Downstream models here
     </tbody>
 </table>
 
-## UserGroupRef
+### UserGroupRef
 
 
 
@@ -954,7 +955,7 @@ Downstream models here
     </tbody>
 </table>
 
-## VendorProfile
+### VendorProfile
 
 
 
@@ -1091,7 +1092,7 @@ Downstream models here
     </tbody>
 </table>
 
-## VendorProfileAudit
+### VendorProfileAudit
 
 
 

@@ -2,11 +2,12 @@
 ## Footer
 
 
-
-
 ### Description
 Represents a localized footer template that can be appended to notification messages.
 
+
+
+### Attributes
 
 {% include "../../../../.gitbook/includes/api-table-header.md" %}
 
@@ -15,7 +16,7 @@ Represents a localized footer template that can be appended to notification mess
         <tr>
             <th>Field</th>
             <th>Type</th>
-	        <th>Core</th>
+	        <th>Rql</th>
 	        <th>Access</th>
             <th>Description</th>
         </tr>
@@ -24,7 +25,7 @@ Represents a localized footer template that can be appended to notification mess
         <tr>
             <td><code>id</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
@@ -45,14 +46,14 @@ Represents a localized footer template that can be appended to notification mess
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>languageCode</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td>Gets or sets the language code for this footer</td>
         </tr>
@@ -66,22 +67,22 @@ Represents a localized footer template that can be appended to notification mess
         <tr>
             <td><code>isDefault</code></td>
             <td>boolean</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td>Gets or sets a value indicating whether this is the default footer</td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td>Gets or sets the current status of the footer</td>
         </tr></tbody>
 </table>
 
 
-Downstream models here
-## FooterAudit
+## Downstream models
+### FooterAudit
 
 Represents audit information for a Mpt.Notifications.Models.Footers.Footer.
 
@@ -127,7 +128,7 @@ Represents audit information for a Mpt.Notifications.Models.Footers.Footer.
     </tbody>
 </table>
 
-## PlatformIdentityRef
+### PlatformIdentityRef
 
 
 
@@ -173,7 +174,7 @@ Represents audit information for a Mpt.Notifications.Models.Footers.Footer.
     </tbody>
 </table>
 
-## PlatformMetadata
+### PlatformMetadata
 
 
 
@@ -198,7 +199,7 @@ Represents audit information for a Mpt.Notifications.Models.Footers.Footer.
     </tbody>
 </table>
 
-## PlatformObjectEvent
+### PlatformObjectEvent
 
 
 

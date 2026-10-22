@@ -2,11 +2,12 @@
 ## JournalSeller
 
 
-
-
 ### Description
 Represents a seller associated with a journal entry in the billing system.
 
+
+
+### Attributes
 
 {% include "../../../../.gitbook/includes/api-table-header.md" %}
 
@@ -15,7 +16,7 @@ Represents a seller associated with a journal entry in the billing system.
         <tr>
             <th>Field</th>
             <th>Type</th>
-	        <th>Core</th>
+	        <th>Rql</th>
 	        <th>Access</th>
             <th>Description</th>
         </tr>
@@ -24,35 +25,35 @@ Represents a seller associated with a journal entry in the billing system.
         <tr>
             <td><code>externalId</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>id</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
@@ -87,8 +88,8 @@ Represents a seller associated with a journal entry in the billing system.
 </table>
 
 
-Downstream models here
-## Address
+## Downstream models
+### Address
 
 
 
@@ -148,7 +149,7 @@ Downstream models here
     </tbody>
 </table>
 
-## JournalRef
+### JournalRef
 
 Represents a journal entry in the billing system.
 
@@ -194,7 +195,7 @@ Represents a journal entry in the billing system.
     </tbody>
 </table>
 
-## SellerAttributes
+### SellerAttributes
 
 
 

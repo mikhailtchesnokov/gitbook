@@ -2,11 +2,12 @@
 ## ProductProfileAttachment
 
 
-
-
 ### Description
 Represents a product profile attachment entity.
 
+
+
+### Attributes
 
 {% include "../../../../.gitbook/includes/api-table-header.md" %}
 
@@ -15,7 +16,7 @@ Represents a product profile attachment entity.
         <tr>
             <th>Field</th>
             <th>Type</th>
-	        <th>Core</th>
+	        <th>Rql</th>
 	        <th>Access</th>
             <th>Description</th>
         </tr>
@@ -24,7 +25,7 @@ Represents a product profile attachment entity.
         <tr>
             <td><code>id</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
@@ -45,14 +46,14 @@ Represents a product profile attachment entity.
         <tr>
             <td><code>name</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
@@ -101,8 +102,8 @@ Represents a product profile attachment entity.
 </table>
 
 
-Downstream models here
-## Account
+## Downstream models
+### Account
 
 
 
@@ -246,7 +247,7 @@ Downstream models here
     </tbody>
 </table>
 
-## AccountExternalIds
+### AccountExternalIds
 
 
 
@@ -271,7 +272,7 @@ Downstream models here
     </tbody>
 </table>
 
-## Address
+### Address
 
 
 
@@ -331,7 +332,7 @@ Downstream models here
     </tbody>
 </table>
 
-## CategoryRef
+### CategoryRef
 
 
 
@@ -377,7 +378,7 @@ Downstream models here
     </tbody>
 </table>
 
-## Eligibility
+### Eligibility
 
 
 
@@ -409,7 +410,7 @@ Downstream models here
     </tbody>
 </table>
 
-## PlatformIdentityRef
+### PlatformIdentityRef
 
 
 
@@ -455,7 +456,7 @@ Downstream models here
     </tbody>
 </table>
 
-## PlatformMetadata
+### PlatformMetadata
 
 
 
@@ -480,7 +481,7 @@ Downstream models here
     </tbody>
 </table>
 
-## PlatformObjectAudit
+### PlatformObjectAudit
 
 
 
@@ -512,7 +513,7 @@ Downstream models here
     </tbody>
 </table>
 
-## PlatformObjectEvent
+### PlatformObjectEvent
 
 
 
@@ -544,7 +545,7 @@ Downstream models here
     </tbody>
 </table>
 
-## ProductProfileAttachmentAudit
+### ProductProfileAttachmentAudit
 
 Represents ProductProfileAttachmentAudit.
 
@@ -590,7 +591,7 @@ Represents ProductProfileAttachmentAudit.
     </tbody>
 </table>
 
-## ProductProfileRef
+### ProductProfileRef
 
 
 
@@ -650,7 +651,7 @@ Represents ProductProfileAttachmentAudit.
     </tbody>
 </table>
 
-## UserGroupRef
+### UserGroupRef
 
 
 
@@ -710,7 +711,7 @@ Represents ProductProfileAttachmentAudit.
     </tbody>
 </table>
 
-## VendorProfile
+### VendorProfile
 
 
 
@@ -847,7 +848,7 @@ Represents ProductProfileAttachmentAudit.
     </tbody>
 </table>
 
-## VendorProfileAudit
+### VendorProfileAudit
 
 
 

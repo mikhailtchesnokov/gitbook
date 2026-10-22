@@ -4,6 +4,7 @@
 
 
 
+### Attributes
 
 {% include "../../../../.gitbook/includes/api-table-header.md" %}
 
@@ -12,7 +13,7 @@
         <tr>
             <th>Field</th>
             <th>Type</th>
-	        <th>Core</th>
+	        <th>Rql</th>
 	        <th>Access</th>
             <th>Description</th>
         </tr>
@@ -21,7 +22,7 @@
         <tr>
             <td><code>id</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
@@ -42,7 +43,7 @@
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
@@ -63,7 +64,7 @@
         <tr>
             <td><code>content</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td>Content of the chat message</td>
         </tr>
@@ -77,7 +78,7 @@
         <tr>
             <td><code>isDeleted</code></td>
             <td>boolean</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td>Set to true when the message should be considered deleted</td>
         </tr>
@@ -105,8 +106,8 @@
 </table>
 
 
-Downstream models here
-## ChatLinkRef
+## Downstream models
+### ChatLinkRef
 
 
 
@@ -173,7 +174,7 @@ Downstream models here
     </tbody>
 </table>
 
-## ChatMessageAudit
+### ChatMessageAudit
 
 
 
@@ -226,7 +227,7 @@ Downstream models here
     </tbody>
 </table>
 
-## ChatMessageRef
+### ChatMessageRef
 
 
 
@@ -279,7 +280,7 @@ Downstream models here
     </tbody>
 </table>
 
-## ChatParticipantRef
+### ChatParticipantRef
 
 
 
@@ -325,7 +326,7 @@ Downstream models here
     </tbody>
 </table>
 
-## ChatRef
+### ChatRef
 
 
 
@@ -378,7 +379,7 @@ Downstream models here
     </tbody>
 </table>
 
-## PlatformIdentityRef
+### PlatformIdentityRef
 
 
 
@@ -424,7 +425,7 @@ Downstream models here
     </tbody>
 </table>
 
-## PlatformMetadata
+### PlatformMetadata
 
 
 
@@ -449,7 +450,7 @@ Downstream models here
     </tbody>
 </table>
 
-## PlatformObjectEvent
+### PlatformObjectEvent
 
 
 

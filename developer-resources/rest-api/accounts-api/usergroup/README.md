@@ -5,11 +5,55 @@
 ### IdPrefix 
 UGR
 
-
-
 ### Description
 A User Group is a named permission set within a single [[Account]] that grants its members access to a specific selection of platform [[Module]]s. It is the granular half of the platform's permission model described in preamble §2.1a — Account type sets the broad Actor profile, while the User Group determines which platform features (Marketplace, Access management, Billing, and so on) a member can use within that Account. Groups are created and maintained by an Actor with the appropriate access-management permission in the Account; members are assigned to groups from the [[Account User]] side. Every Account has one system-provisioned Default group (named "Administrators") that grants the account's full module set.
 
+
+## Ownership & Visibility
+
+<table>
+  <thead>
+    <tr>
+      <th>Actor</th>
+      <th>Can Create</th>
+      <th>Can Read</th>
+      <th>Can Update</th>
+      <th>Can Delete</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Vendor</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Conditional</td>
+      <td>Only within Accounts the Actor operates in, subject to holding the relevant access-management permission. The Default group cannot be created or deleted. Delete requires no assigned members (BR-005).</td>
+    </tr>
+    <tr>
+      <td>Operations</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Conditional</td>
+      <td>Same scope as above. Modifying the Default group&#39;s module grant additionally requires the Account management module permission (BR-008).</td>
+    </tr>
+    <tr>
+      <td>Client</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Conditional</td>
+      <td>Same scope as above.</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+### Attributes
 
 {% include "../../../../.gitbook/includes/api-table-header.md" %}
 
@@ -18,7 +62,7 @@ A User Group is a named permission set within a single [[Account]] that grants i
         <tr>
             <th>Field</th>
             <th>Type</th>
-	        <th>Core</th>
+	        <th>Rql</th>
 	        <th>Access</th>
             <th>Description</th>
         </tr>
@@ -27,7 +71,7 @@ A User Group is a named permission set within a single [[Account]] that grants i
         <tr>
             <td><code>id</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
@@ -48,21 +92,21 @@ A User Group is a named permission set within a single [[Account]] that grants i
         <tr>
             <td><code>name</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>description</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
@@ -83,14 +127,14 @@ A User Group is a named permission set within a single [[Account]] that grants i
         <tr>
             <td><code>logo</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>isDefault</code></td>
             <td>boolean</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
@@ -118,8 +162,8 @@ A User Group is a named permission set within a single [[Account]] that grants i
 </table>
 
 
-Downstream models here
-## AccountRef
+## Downstream models
+### AccountRef
 
 
 
@@ -179,7 +223,7 @@ Downstream models here
     </tbody>
 </table>
 
-## BuyerRef
+### BuyerRef
 
 
 
@@ -225,7 +269,7 @@ Downstream models here
     </tbody>
 </table>
 
-## Filters
+### Filters
 
 
 
@@ -250,7 +294,7 @@ Downstream models here
     </tbody>
 </table>
 
-## ModuleRef
+### ModuleRef
 
 
 
@@ -310,7 +354,7 @@ Downstream models here
     </tbody>
 </table>
 
-## ModuleSettings
+### ModuleSettings
 
 
 
@@ -377,7 +421,7 @@ Downstream models here
     </tbody>
 </table>
 
-## ModuleSettingsEligibility
+### ModuleSettingsEligibility
 
 
 
@@ -409,7 +453,7 @@ Downstream models here
     </tbody>
 </table>
 
-## PlatformIdentityRef
+### PlatformIdentityRef
 
 
 
@@ -455,7 +499,7 @@ Downstream models here
     </tbody>
 </table>
 
-## PlatformMetadata
+### PlatformMetadata
 
 
 
@@ -480,7 +524,7 @@ Downstream models here
     </tbody>
 </table>
 
-## PlatformObjectAudit
+### PlatformObjectAudit
 
 
 
@@ -512,7 +556,7 @@ Downstream models here
     </tbody>
 </table>
 
-## PlatformObjectAuditPlatformExtension
+### PlatformObjectAuditPlatformExtension
 
 
 
@@ -579,7 +623,7 @@ Downstream models here
     </tbody>
 </table>
 
-## PlatformObjectEvent
+### PlatformObjectEvent
 
 
 
@@ -611,7 +655,7 @@ Downstream models here
     </tbody>
 </table>
 
-## UserRef
+### UserRef
 
 
 

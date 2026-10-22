@@ -4,6 +4,7 @@
 
 
 
+### Attributes
 
 {% include "../../../../.gitbook/includes/api-table-header.md" %}
 
@@ -12,7 +13,7 @@
         <tr>
             <th>Field</th>
             <th>Type</th>
-	        <th>Core</th>
+	        <th>Rql</th>
 	        <th>Access</th>
             <th>Description</th>
         </tr>
@@ -21,7 +22,7 @@
         <tr>
             <td><code>id</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
@@ -42,21 +43,21 @@
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
@@ -217,8 +218,8 @@
 </table>
 
 
-Downstream models here
-## PlatformIdentityRef
+## Downstream models
+### PlatformIdentityRef
 
 
 
@@ -264,7 +265,7 @@ Downstream models here
     </tbody>
 </table>
 
-## PlatformMetadata
+### PlatformMetadata
 
 
 
@@ -289,7 +290,7 @@ Downstream models here
     </tbody>
 </table>
 
-## PlatformObjectEvent
+### PlatformObjectEvent
 
 
 
@@ -321,7 +322,7 @@ Downstream models here
     </tbody>
 </table>
 
-## PriceInfo
+### PriceInfo
 
 
 
@@ -353,7 +354,7 @@ Downstream models here
     </tbody>
 </table>
 
-## PriceListItemAudit
+### PriceListItemAudit
 
 
 
@@ -399,7 +400,7 @@ Downstream models here
     </tbody>
 </table>
 
-## PriceListRef
+### PriceListRef
 
 
 
@@ -438,7 +439,7 @@ Downstream models here
     </tbody>
 </table>
 
-## ProductItemExternalIdBag
+### ProductItemExternalIdBag
 
 
 
@@ -470,7 +471,7 @@ Downstream models here
     </tbody>
 </table>
 
-## ProductItemRef
+### ProductItemRef
 
 
 

@@ -5,11 +5,55 @@
 ### IdPrefix 
 SEL
 
-
-
 ### Description
 A Seller is a SoftwareOne legal entity registered in the SoftwareOne Marketplace. Each Seller has a 1:1 relationship with an instance of SoftwareOne's ERP system. Sellers exist for every country or jurisdiction in which SoftwareOne conducts business, including entities acquired through mergers and acquisitions that continue to transact independently until ERP consolidation. A Seller acts as the owner of [[Authorization]]s and as the transacting party on [[Listing]]s — it is the named SoftwareOne entity on a commercial transaction with a Client.
 
+
+## Ownership & Visibility
+
+<table>
+  <thead>
+    <tr>
+      <th>Actor</th>
+      <th>Can Create</th>
+      <th>Can Read</th>
+      <th>Can Update</th>
+      <th>Can Delete</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Vendor</td>
+      <td>No</td>
+      <td>No (query returns empty)</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Seller is surfaced as a reference on Authorizations and Listings only — never fetched directly.</td>
+    </tr>
+    <tr>
+      <td>Operations</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes*</td>
+      <td>*Deletion is a soft-delete: sets status to `Deleted`, only permitted from `Active`, blocked while any related Licensee is `Active` or `Enabled`. See BR-001, BR-007.</td>
+    </tr>
+    <tr>
+      <td>Client</td>
+      <td>No</td>
+      <td>Yes (unfiltered, direct)</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Client&#39;s direct `GET` access to the Seller collection and by-ID endpoints returns the same unfiltered representation as Operations — no field-level suppression observed.</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+### Attributes
 
 {% include "../../../../.gitbook/includes/api-table-header.md" %}
 
@@ -18,7 +62,7 @@ A Seller is a SoftwareOne legal entity registered in the SoftwareOne Marketplace
         <tr>
             <th>Field</th>
             <th>Type</th>
-	        <th>Core</th>
+	        <th>Rql</th>
 	        <th>Access</th>
             <th>Description</th>
         </tr>
@@ -27,7 +71,7 @@ A Seller is a SoftwareOne legal entity registered in the SoftwareOne Marketplace
         <tr>
             <td><code>id</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
@@ -48,28 +92,28 @@ A Seller is a SoftwareOne legal entity registered in the SoftwareOne Marketplace
         <tr>
             <td><code>name</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>externalId</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
@@ -111,8 +155,8 @@ A Seller is a SoftwareOne legal entity registered in the SoftwareOne Marketplace
 </table>
 
 
-Downstream models here
-## Address
+## Downstream models
+### Address
 
 
 
@@ -172,7 +216,7 @@ Downstream models here
     </tbody>
 </table>
 
-## ErpLinkRef
+### ErpLinkRef
 
 
 
@@ -232,7 +276,7 @@ Downstream models here
     </tbody>
 </table>
 
-## PlatformIdentityRef
+### PlatformIdentityRef
 
 
 
@@ -278,7 +322,7 @@ Downstream models here
     </tbody>
 </table>
 
-## PlatformMetadata
+### PlatformMetadata
 
 
 
@@ -303,7 +347,7 @@ Downstream models here
     </tbody>
 </table>
 
-## PlatformObjectAudit
+### PlatformObjectAudit
 
 
 
@@ -335,7 +379,7 @@ Downstream models here
     </tbody>
 </table>
 
-## PlatformObjectEvent
+### PlatformObjectEvent
 
 
 
@@ -367,7 +411,7 @@ Downstream models here
     </tbody>
 </table>
 
-## SellerAttributes
+### SellerAttributes
 
 
 
@@ -392,7 +436,7 @@ Downstream models here
     </tbody>
 </table>
 
-## SellerCurrency
+### SellerCurrency
 
 
 

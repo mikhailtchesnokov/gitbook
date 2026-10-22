@@ -5,11 +5,55 @@
 ### IdPrefix 
 SVC
 
-
-
 ### Description
 A Service is the platform's identity for an internal, non-human component (for example, the billing or scheduler component). It sits alongside the human identity ([[User]]) and the programmatic identity ([[API Token]]) as one of the platform's identity types, so that actions performed autonomously by an internal component can be attributed to a named identity in the audit trail. Service identities are provisioned and maintained by the platform itself, not by any Actor; the public API exposes them as read-only reference data.
 
+
+## Ownership & Visibility
+
+<table>
+  <thead>
+    <tr>
+      <th>Actor</th>
+      <th>Can Create</th>
+      <th>Can Read</th>
+      <th>Can Update</th>
+      <th>Can Delete</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Vendor</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Read access via the public list and get-by-id endpoints.</td>
+    </tr>
+    <tr>
+      <td>Operations</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No elevated authority over this object — same read-only access as other Actors.</td>
+    </tr>
+    <tr>
+      <td>Client</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Read access via the public list and get-by-id endpoints.</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+### Attributes
 
 {% include "../../../../.gitbook/includes/api-table-header.md" %}
 
@@ -18,7 +62,7 @@ A Service is the platform's identity for an internal, non-human component (for e
         <tr>
             <th>Field</th>
             <th>Type</th>
-	        <th>Core</th>
+	        <th>Rql</th>
 	        <th>Access</th>
             <th>Description</th>
         </tr>
@@ -27,7 +71,7 @@ A Service is the platform's identity for an internal, non-human component (for e
         <tr>
             <td><code>id</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
@@ -48,21 +92,21 @@ A Service is the platform's identity for an internal, non-human component (for e
         <tr>
             <td><code>name</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
@@ -83,8 +127,8 @@ A Service is the platform's identity for an internal, non-human component (for e
 </table>
 
 
-Downstream models here
-## PlatformIdentityRef
+## Downstream models
+### PlatformIdentityRef
 
 
 
@@ -130,7 +174,7 @@ Downstream models here
     </tbody>
 </table>
 
-## PlatformMetadata
+### PlatformMetadata
 
 
 
@@ -155,7 +199,7 @@ Downstream models here
     </tbody>
 </table>
 
-## PlatformObjectAudit
+### PlatformObjectAudit
 
 
 
@@ -187,7 +231,7 @@ Downstream models here
     </tbody>
 </table>
 
-## PlatformObjectEvent
+### PlatformObjectEvent
 
 
 

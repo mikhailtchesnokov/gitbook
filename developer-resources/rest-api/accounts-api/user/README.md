@@ -5,11 +5,55 @@
 ### IdPrefix 
 USR
 
-
-
 ### Description
 A User is the platform's global identity for a single human being — one person, one User record, keyed by email address. It holds the person's name, contact details, locale/formatting preferences, authentication status, and the set of [[Account]]s they belong to. A User is not itself typed as Vendor, Operations, or Client; the Actor permissions that apply to any given call are derived from which Account the User is operating in and their Group memberships within it (preamble §2.1a). A User is created the first time a person is invited into any Account, and thereafter is reused — additional Account memberships attach to the same global identity rather than creating a second User.
 
+
+## Ownership & Visibility
+
+<table>
+  <thead>
+    <tr>
+      <th>Actor</th>
+      <th>Can Create</th>
+      <th>Can Read</th>
+      <th>Can Update</th>
+      <th>Can Delete</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Vendor</td>
+      <td>Yes*</td>
+      <td>Yes (scoped)</td>
+      <td>Yes*</td>
+      <td>Yes*</td>
+      <td>*Gated by holding an administration Group permission within the Account scope, not by Actor type (preamble &#167;2.1a). Vendor management is scoped to the Vendor&#39;s own Account. Read is scoped to Users sharing visibility; the `accounts` membership list is Operations-only. See BR-004, BR-007.</td>
+    </tr>
+    <tr>
+      <td>Operations</td>
+      <td>Yes*</td>
+      <td>Yes</td>
+      <td>Yes*</td>
+      <td>Yes*</td>
+      <td>*Same permission gating, unscoped. Operations additionally sees the full `accounts` membership list and the populated `currentAccount` (see Section 5).</td>
+    </tr>
+    <tr>
+      <td>Client</td>
+      <td>Yes*</td>
+      <td>Yes (scoped)</td>
+      <td>Yes*</td>
+      <td>Yes*</td>
+      <td>*Same permission gating as Vendor, scoped to the Client&#39;s own Account.</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+### Attributes
 
 {% include "../../../../.gitbook/includes/api-table-header.md" %}
 
@@ -18,7 +62,7 @@ A User is the platform's global identity for a single human being — one person
         <tr>
             <th>Field</th>
             <th>Type</th>
-	        <th>Core</th>
+	        <th>Rql</th>
 	        <th>Access</th>
             <th>Description</th>
         </tr>
@@ -27,7 +71,7 @@ A User is the platform's global identity for a single human being — one person
         <tr>
             <td><code>id</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
@@ -48,21 +92,21 @@ A User is the platform's global identity for a single human being — one person
         <tr>
             <td><code>name</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
@@ -132,8 +176,8 @@ A User is the platform's global identity for a single human being — one person
 </table>
 
 
-Downstream models here
-## AccountRef
+## Downstream models
+### AccountRef
 
 
 
@@ -193,7 +237,7 @@ Downstream models here
     </tbody>
 </table>
 
-## NumberFormat
+### NumberFormat
 
 
 
@@ -225,7 +269,7 @@ Downstream models here
     </tbody>
 </table>
 
-## PhoneNumber
+### PhoneNumber
 
 
 
@@ -257,7 +301,7 @@ Downstream models here
     </tbody>
 </table>
 
-## PlatformIdentityRef
+### PlatformIdentityRef
 
 
 
@@ -303,7 +347,7 @@ Downstream models here
     </tbody>
 </table>
 
-## PlatformMetadata
+### PlatformMetadata
 
 
 
@@ -328,7 +372,7 @@ Downstream models here
     </tbody>
 </table>
 
-## PlatformObjectEvent
+### PlatformObjectEvent
 
 
 
@@ -360,7 +404,7 @@ Downstream models here
     </tbody>
 </table>
 
-## UserAudit
+### UserAudit
 
 
 
@@ -399,7 +443,7 @@ Downstream models here
     </tbody>
 </table>
 
-## UserSettings
+### UserSettings
 
 
 
@@ -466,7 +510,7 @@ Downstream models here
     </tbody>
 </table>
 
-## UserSettingsOptOuts
+### UserSettingsOptOuts
 
 
 

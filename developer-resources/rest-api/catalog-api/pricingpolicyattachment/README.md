@@ -4,6 +4,7 @@
 
 
 
+### Attributes
 
 {% include "../../../../.gitbook/includes/api-table-header.md" %}
 
@@ -12,7 +13,7 @@
         <tr>
             <th>Field</th>
             <th>Type</th>
-	        <th>Core</th>
+	        <th>Rql</th>
 	        <th>Access</th>
             <th>Description</th>
         </tr>
@@ -21,7 +22,7 @@
         <tr>
             <td><code>id</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
@@ -42,21 +43,21 @@
         <tr>
             <td><code>name</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>type</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
@@ -70,7 +71,7 @@
         <tr>
             <td><code>description</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
@@ -91,7 +92,7 @@
         <tr>
             <td><code>status</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
@@ -105,8 +106,8 @@
 </table>
 
 
-Downstream models here
-## Account
+## Downstream models
+### Account
 
 
 
@@ -250,7 +251,7 @@ Downstream models here
     </tbody>
 </table>
 
-## AccountExternalIds
+### AccountExternalIds
 
 
 
@@ -275,7 +276,7 @@ Downstream models here
     </tbody>
 </table>
 
-## AccountRef
+### AccountRef
 
 
 
@@ -335,7 +336,7 @@ Downstream models here
     </tbody>
 </table>
 
-## Address
+### Address
 
 
 
@@ -395,7 +396,7 @@ Downstream models here
     </tbody>
 </table>
 
-## Eligibility
+### Eligibility
 
 
 
@@ -427,7 +428,7 @@ Downstream models here
     </tbody>
 </table>
 
-## PlatformIdentityRef
+### PlatformIdentityRef
 
 
 
@@ -473,7 +474,7 @@ Downstream models here
     </tbody>
 </table>
 
-## PlatformMetadata
+### PlatformMetadata
 
 
 
@@ -498,7 +499,7 @@ Downstream models here
     </tbody>
 </table>
 
-## PlatformObjectAudit
+### PlatformObjectAudit
 
 
 
@@ -530,7 +531,7 @@ Downstream models here
     </tbody>
 </table>
 
-## PlatformObjectEvent
+### PlatformObjectEvent
 
 
 
@@ -562,7 +563,7 @@ Downstream models here
     </tbody>
 </table>
 
-## PreValidationSettings
+### PreValidationSettings
 
 
 
@@ -615,7 +616,7 @@ Downstream models here
     </tbody>
 </table>
 
-## PricingPolicyEligibility
+### PricingPolicyEligibility
 
 
 
@@ -647,7 +648,7 @@ Downstream models here
     </tbody>
 </table>
 
-## PricingPolicyRef
+### PricingPolicyRef
 
 
 
@@ -707,9 +708,9 @@ Downstream models here
     </tbody>
 </table>
 
-## Product
+### Product
 
-A Product is the top-level unit of a Vendor's commercial offering on the SoftwareOne Marketplace. It is the container for everything that defines what can be sold and how — [[Item]]s (orderable SKUs), [[Parameter]]s (data fields), [[Template]]s (contextual communications), [[Terms]] (acceptance requirements), [[Media]] (visual assets), and pricing via [[Price List]]s. A Product must go through a publication review before it is available to Clients. Once published, it can be made available through one or more [[Listing]]s, each of which connects the Product to a SoftwareOne [[Seller]], a currency, and an eligible Client population.
+
 
 <table data-search="false">
     <thead>
@@ -823,7 +824,7 @@ A Product is the top-level unit of a Vendor's commercial offering on the Softwar
     </tbody>
 </table>
 
-## ProductAudit
+### ProductAudit
 
 
 
@@ -876,7 +877,7 @@ A Product is the top-level unit of a Vendor's commercial offering on the Softwar
     </tbody>
 </table>
 
-## ProductExternalIdBag
+### ProductExternalIdBag
 
 
 
@@ -908,7 +909,7 @@ A Product is the top-level unit of a Vendor's commercial offering on the Softwar
     </tbody>
 </table>
 
-## ProductRequestsSetting
+### ProductRequestsSetting
 
 
 
@@ -947,7 +948,7 @@ A Product is the top-level unit of a Vendor's commercial offering on the Softwar
     </tbody>
 </table>
 
-## ProductSettings
+### ProductSettings
 
 
 
@@ -1021,7 +1022,7 @@ A Product is the top-level unit of a Vendor's commercial offering on the Softwar
     </tbody>
 </table>
 
-## ProductSplitBillingRequestsSetting
+### ProductSplitBillingRequestsSetting
 
 
 
@@ -1053,7 +1054,7 @@ A Product is the top-level unit of a Vendor's commercial offering on the Softwar
     </tbody>
 </table>
 
-## ProductStatistics
+### ProductStatistics
 
 
 
@@ -1099,7 +1100,7 @@ A Product is the top-level unit of a Vendor's commercial offering on the Softwar
     </tbody>
 </table>
 
-## SubscriptionCessationSetting
+### SubscriptionCessationSetting
 
 
 
@@ -1131,7 +1132,7 @@ A Product is the top-level unit of a Vendor's commercial offering on the Softwar
     </tbody>
 </table>
 
-## UserGroupRef
+### UserGroupRef
 
 
 

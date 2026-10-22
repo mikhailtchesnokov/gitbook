@@ -5,11 +5,55 @@
 ### IdPrefix 
 ERP
 
-
-
 ### Description
 An ErpLink is the join record that relates one [[Buyer]] to one [[Seller]] — the per-Seller projection of a Buyer's ERP customer data. It represents how a given customer entity is integrated within the scope of a specific SoftwareOne selling entity, carrying that instance's ERP identifiers, address, and ship-to / bill-to detail. ErpLinks are created and removed by the automated ERP-sync integration as it reconciles a Buyer's set of Sellers; the platform exposes them for reading and for a narrow set of Operations actions (blocking, unblocking, and editing an internal note), but not for direct creation or deletion.
 
+
+## Ownership & Visibility
+
+<table>
+  <thead>
+    <tr>
+      <th>Actor</th>
+      <th>Can Create</th>
+      <th>Can Read</th>
+      <th>Can Update</th>
+      <th>Can Delete</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Vendor</td>
+      <td>No</td>
+      <td>Yes*</td>
+      <td>No</td>
+      <td>No</td>
+      <td>*Read is row-scoped: a Vendor sees only ErpLinks whose [[Buyer]] is reachable through a Commerce: [[Agreement]] where it is the Vendor, excluding ErpLinks of Deleted Buyers.</td>
+    </tr>
+    <tr>
+      <td>Operations</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Yes*</td>
+      <td>No</td>
+      <td>Requires the platform Account Management module permission. *Can Block and Unblock a link and edit its internal `note` (and icon); cannot create or delete. Full field visibility.</td>
+    </tr>
+    <tr>
+      <td>Client</td>
+      <td>No</td>
+      <td>Yes*</td>
+      <td>No</td>
+      <td>No</td>
+      <td>*Read is row-scoped to ErpLinks whose [[Buyer]] belongs to the Client&#39;s own [[Account]], excluding Deleted Buyers.</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+### Attributes
 
 {% include "../../../../.gitbook/includes/api-table-header.md" %}
 
@@ -18,7 +62,7 @@ An ErpLink is the join record that relates one [[Buyer]] to one [[Seller]] — t
         <tr>
             <th>Field</th>
             <th>Type</th>
-	        <th>Core</th>
+	        <th>Rql</th>
 	        <th>Access</th>
             <th>Description</th>
         </tr>
@@ -27,7 +71,7 @@ An ErpLink is the join record that relates one [[Buyer]] to one [[Seller]] — t
         <tr>
             <td><code>id</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
@@ -48,21 +92,21 @@ An ErpLink is the join record that relates one [[Buyer]] to one [[Seller]] — t
         <tr>
             <td><code>name</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
@@ -83,7 +127,7 @@ An ErpLink is the join record that relates one [[Buyer]] to one [[Seller]] — t
         <tr>
             <td><code>companyName</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
@@ -132,8 +176,8 @@ An ErpLink is the join record that relates one [[Buyer]] to one [[Seller]] — t
 </table>
 
 
-Downstream models here
-## Address
+## Downstream models
+### Address
 
 
 
@@ -193,7 +237,7 @@ Downstream models here
     </tbody>
 </table>
 
-## BuyerExternalIds
+### BuyerExternalIds
 
 
 
@@ -232,7 +276,7 @@ Downstream models here
     </tbody>
 </table>
 
-## BuyerRef
+### BuyerRef
 
 
 
@@ -278,7 +322,7 @@ Downstream models here
     </tbody>
 </table>
 
-## ErpLinkAddress
+### ErpLinkAddress
 
 
 
@@ -352,7 +396,7 @@ Downstream models here
     </tbody>
 </table>
 
-## ErpLinkAudit
+### ErpLinkAudit
 
 
 
@@ -405,7 +449,7 @@ Downstream models here
     </tbody>
 </table>
 
-## PlatformIdentityRef
+### PlatformIdentityRef
 
 
 
@@ -451,7 +495,7 @@ Downstream models here
     </tbody>
 </table>
 
-## PlatformMetadata
+### PlatformMetadata
 
 
 
@@ -476,7 +520,7 @@ Downstream models here
     </tbody>
 </table>
 
-## PlatformObjectEvent
+### PlatformObjectEvent
 
 
 
@@ -508,7 +552,7 @@ Downstream models here
     </tbody>
 </table>
 
-## SellerRef
+### SellerRef
 
 
 

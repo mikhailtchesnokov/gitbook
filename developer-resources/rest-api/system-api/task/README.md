@@ -2,11 +2,12 @@
 ## Task
 
 
-
-
 ### Description
 The Task represents the state of an asynchronous, usually long running operation.
 
+
+
+### Attributes
 
 {% include "../../../../.gitbook/includes/api-table-header.md" %}
 
@@ -15,7 +16,7 @@ The Task represents the state of an asynchronous, usually long running operation
         <tr>
             <th>Field</th>
             <th>Type</th>
-	        <th>Core</th>
+	        <th>Rql</th>
 	        <th>Access</th>
             <th>Description</th>
         </tr>
@@ -24,7 +25,7 @@ The Task represents the state of an asynchronous, usually long running operation
         <tr>
             <td><code>id</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
@@ -45,21 +46,21 @@ The Task represents the state of an asynchronous, usually long running operation
         <tr>
             <td><code>name</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
@@ -73,7 +74,7 @@ The Task represents the state of an asynchronous, usually long running operation
         <tr>
             <td><code>code</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td>Task code for the workflow, prefixed with the service namespace</td>
         </tr>
@@ -157,8 +158,8 @@ The Task represents the state of an asynchronous, usually long running operation
 </table>
 
 
-Downstream models here
-## PlatformAccountRef
+## Downstream models
+### PlatformAccountRef
 
 
 
@@ -218,7 +219,7 @@ Downstream models here
     </tbody>
 </table>
 
-## PlatformIdentityRef
+### PlatformIdentityRef
 
 
 
@@ -264,7 +265,7 @@ Downstream models here
     </tbody>
 </table>
 
-## PlatformMetadata
+### PlatformMetadata
 
 
 
@@ -289,7 +290,7 @@ Downstream models here
     </tbody>
 </table>
 
-## PlatformObjectEvent
+### PlatformObjectEvent
 
 
 
@@ -321,7 +322,7 @@ Downstream models here
     </tbody>
 </table>
 
-## TaskAuditBag
+### TaskAuditBag
 
 
 
@@ -388,7 +389,7 @@ Downstream models here
     </tbody>
 </table>
 
-## TaskPlatform
+### TaskPlatform
 
 
 
@@ -427,7 +428,7 @@ Downstream models here
     </tbody>
 </table>
 
-## TaskRef
+### TaskRef
 
 The Task represents the state of an asynchronous, usually long running operation.
 

@@ -5,11 +5,55 @@
 ### IdPrefix 
 TKN
 
-
-
 ### Description
 An API Token is a non-human authentication credential used to call the platform API on behalf of an [[Account]]. It is the mechanism by which Extensions, integrations, and automation authenticate — the machine equivalent of a [[User]]'s interactive session. Each API Token is scoped to exactly one [[Account]] and carries a permission set derived from that Account's type and the [[Module]]s assigned to the token, so a token can never act outside the Account it belongs to or beyond the permissions granted to it (preamble §2.1a and §67). A token is created by an administrator when an integration needs programmatic access, and its secret credential is used thereafter to authenticate every call the integration makes.
 
+
+## Ownership & Visibility
+
+<table>
+  <thead>
+    <tr>
+      <th>Actor</th>
+      <th>Can Create</th>
+      <th>Can Read</th>
+      <th>Can Update</th>
+      <th>Can Delete</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Vendor</td>
+      <td>Yes*</td>
+      <td>Yes (scoped)</td>
+      <td>Yes*</td>
+      <td>Yes*</td>
+      <td>*Gated by holding the Access Management permission within the token&#39;s Account, not by Actor type (preamble &#167;2.1a). Scoped to tokens in the Vendor&#39;s own Account. See BR-003, BR-004.</td>
+    </tr>
+    <tr>
+      <td>Operations</td>
+      <td>Yes*</td>
+      <td>Yes</td>
+      <td>Yes*</td>
+      <td>Yes*</td>
+      <td>*Same permission gating. With Platform Account Management, Operations manages and reads tokens across Accounts; with Platform Account Management plus Access Management it also sees tokens in Operations Accounts. See BR-004.</td>
+    </tr>
+    <tr>
+      <td>Client</td>
+      <td>Yes*</td>
+      <td>Yes (scoped)</td>
+      <td>Yes*</td>
+      <td>Yes*</td>
+      <td>*Same permission gating as Vendor, scoped to the Client&#39;s own Account.</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+### Attributes
 
 {% include "../../../../.gitbook/includes/api-table-header.md" %}
 
@@ -18,7 +62,7 @@ An API Token is a non-human authentication credential used to call the platform 
         <tr>
             <th>Field</th>
             <th>Type</th>
-	        <th>Core</th>
+	        <th>Rql</th>
 	        <th>Access</th>
             <th>Description</th>
         </tr>
@@ -27,7 +71,7 @@ An API Token is a non-human authentication credential used to call the platform 
         <tr>
             <td><code>id</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
@@ -48,21 +92,21 @@ An API Token is a non-human authentication credential used to call the platform 
         <tr>
             <td><code>name</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
@@ -118,8 +162,8 @@ An API Token is a non-human authentication credential used to call the platform 
 </table>
 
 
-Downstream models here
-## AccountRef
+## Downstream models
+### AccountRef
 
 
 
@@ -179,7 +223,7 @@ Downstream models here
     </tbody>
 </table>
 
-## Filters
+### Filters
 
 
 
@@ -204,7 +248,7 @@ Downstream models here
     </tbody>
 </table>
 
-## ModuleRef
+### ModuleRef
 
 
 
@@ -264,7 +308,7 @@ Downstream models here
     </tbody>
 </table>
 
-## ModuleSettings
+### ModuleSettings
 
 
 
@@ -331,7 +375,7 @@ Downstream models here
     </tbody>
 </table>
 
-## ModuleSettingsEligibility
+### ModuleSettingsEligibility
 
 
 
@@ -363,7 +407,7 @@ Downstream models here
     </tbody>
 </table>
 
-## PlatformIdentityRef
+### PlatformIdentityRef
 
 
 
@@ -409,7 +453,7 @@ Downstream models here
     </tbody>
 </table>
 
-## PlatformMetadata
+### PlatformMetadata
 
 
 
@@ -434,7 +478,7 @@ Downstream models here
     </tbody>
 </table>
 
-## PlatformObjectAudit
+### PlatformObjectAudit
 
 
 
@@ -466,7 +510,7 @@ Downstream models here
     </tbody>
 </table>
 
-## PlatformObjectAuditPlatformExtension
+### PlatformObjectAuditPlatformExtension
 
 
 
@@ -533,7 +577,7 @@ Downstream models here
     </tbody>
 </table>
 
-## PlatformObjectEvent
+### PlatformObjectEvent
 
 
 

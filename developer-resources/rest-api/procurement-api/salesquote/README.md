@@ -4,6 +4,7 @@
 
 
 
+### Attributes
 
 {% include "../../../../.gitbook/includes/api-table-header.md" %}
 
@@ -12,7 +13,7 @@
         <tr>
             <th>Field</th>
             <th>Type</th>
-	        <th>Core</th>
+	        <th>Rql</th>
 	        <th>Access</th>
             <th>Description</th>
         </tr>
@@ -21,7 +22,7 @@
         <tr>
             <td><code>id</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
@@ -42,7 +43,7 @@
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
@@ -147,8 +148,8 @@
 </table>
 
 
-Downstream models here
-## Account
+## Downstream models
+### Account
 
 
 
@@ -292,7 +293,7 @@ Downstream models here
     </tbody>
 </table>
 
-## AccountExternalIds
+### AccountExternalIds
 
 
 
@@ -317,7 +318,7 @@ Downstream models here
     </tbody>
 </table>
 
-## AccountRef
+### AccountRef
 
 
 
@@ -377,7 +378,7 @@ Downstream models here
     </tbody>
 </table>
 
-## Address
+### Address
 
 
 
@@ -437,7 +438,7 @@ Downstream models here
     </tbody>
 </table>
 
-## BuyerRef
+### BuyerRef
 
 
 
@@ -483,7 +484,7 @@ Downstream models here
     </tbody>
 </table>
 
-## CategoryRef
+### CategoryRef
 
 
 
@@ -529,7 +530,7 @@ Downstream models here
     </tbody>
 </table>
 
-## DatePeriod
+### DatePeriod
 
 Represents the period during which a charge is applicable.
 
@@ -561,7 +562,7 @@ Represents the period during which a charge is applicable.
     </tbody>
 </table>
 
-## Eligibility
+### Eligibility
 
 
 
@@ -593,7 +594,7 @@ Represents the period during which a charge is applicable.
     </tbody>
 </table>
 
-## ErpAttributes
+### ErpAttributes
 
 
 
@@ -618,7 +619,7 @@ Represents the period during which a charge is applicable.
     </tbody>
 </table>
 
-## ErpAuditBag
+### ErpAuditBag
 
 
 
@@ -657,7 +658,7 @@ Represents the period during which a charge is applicable.
     </tbody>
 </table>
 
-## ErpItemExternalIds
+### ErpItemExternalIds
 
 
 
@@ -689,7 +690,7 @@ Represents the period during which a charge is applicable.
     </tbody>
 </table>
 
-## ErpItemRef
+### ErpItemRef
 
 
 
@@ -742,7 +743,7 @@ Represents the period during which a charge is applicable.
     </tbody>
 </table>
 
-## ParametrisedMessage
+### ParametrisedMessage
 
 
 
@@ -781,7 +782,7 @@ Represents the period during which a charge is applicable.
     </tbody>
 </table>
 
-## PlatformIdentityRef
+### PlatformIdentityRef
 
 
 
@@ -827,7 +828,7 @@ Represents the period during which a charge is applicable.
     </tbody>
 </table>
 
-## PlatformMetadata
+### PlatformMetadata
 
 
 
@@ -852,7 +853,7 @@ Represents the period during which a charge is applicable.
     </tbody>
 </table>
 
-## PlatformObjectAudit
+### PlatformObjectAudit
 
 
 
@@ -884,7 +885,7 @@ Represents the period during which a charge is applicable.
     </tbody>
 </table>
 
-## PlatformObjectEvent
+### PlatformObjectEvent
 
 
 
@@ -916,7 +917,7 @@ Represents the period during which a charge is applicable.
     </tbody>
 </table>
 
-## ProductProfileRef
+### ProductProfileRef
 
 
 
@@ -976,7 +977,7 @@ Represents the period during which a charge is applicable.
     </tbody>
 </table>
 
-## SalesDocumentExternalIds
+### SalesDocumentExternalIds
 
 
 
@@ -1001,7 +1002,7 @@ Represents the period during which a charge is applicable.
     </tbody>
 </table>
 
-## SalesDocumentLinePrice
+### SalesDocumentLinePrice
 
 
 
@@ -1068,7 +1069,7 @@ Represents the period during which a charge is applicable.
     </tbody>
 </table>
 
-## SalesDocumentPrice
+### SalesDocumentPrice
 
 
 
@@ -1121,7 +1122,7 @@ Represents the period during which a charge is applicable.
     </tbody>
 </table>
 
-## SalesOrderRef
+### SalesOrderRef
 
 
 
@@ -1167,7 +1168,7 @@ Represents the period during which a charge is applicable.
     </tbody>
 </table>
 
-## SalesQuoteLine
+### SalesQuoteLine
 
 
 
@@ -1255,7 +1256,7 @@ Represents the period during which a charge is applicable.
     </tbody>
 </table>
 
-## SalesQuoteRef
+### SalesQuoteRef
 
 
 
@@ -1301,7 +1302,7 @@ Represents the period during which a charge is applicable.
     </tbody>
 </table>
 
-## SellerRef
+### SellerRef
 
 
 
@@ -1354,7 +1355,7 @@ Represents the period during which a charge is applicable.
     </tbody>
 </table>
 
-## UserGroupRef
+### UserGroupRef
 
 
 
@@ -1414,7 +1415,7 @@ Represents the period during which a charge is applicable.
     </tbody>
 </table>
 
-## VendorProfile
+### VendorProfile
 
 
 
@@ -1551,7 +1552,7 @@ Represents the period during which a charge is applicable.
     </tbody>
 </table>
 
-## VendorProfileAudit
+### VendorProfileAudit
 
 
 
@@ -1597,7 +1598,7 @@ Represents the period during which a charge is applicable.
     </tbody>
 </table>
 
-## VendorProfileRef
+### VendorProfileRef
 
 
 

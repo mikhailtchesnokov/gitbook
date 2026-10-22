@@ -2,11 +2,12 @@
 ## Rate
 
 
-
-
 ### Description
 Record of rate for specific day
 
+
+
+### Attributes
 
 {% include "../../../../.gitbook/includes/api-table-header.md" %}
 
@@ -15,7 +16,7 @@ Record of rate for specific day
         <tr>
             <th>Field</th>
             <th>Type</th>
-	        <th>Core</th>
+	        <th>Rql</th>
 	        <th>Access</th>
             <th>Description</th>
         </tr>
@@ -24,7 +25,7 @@ Record of rate for specific day
         <tr>
             <td><code>id</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
@@ -45,14 +46,14 @@ Record of rate for specific day
         <tr>
             <td><code>icon</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
@@ -73,14 +74,14 @@ Record of rate for specific day
         <tr>
             <td><code>value</code></td>
             <td>number</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td>Rate from source to destination currency</td>
         </tr>
         <tr>
             <td><code>externalId</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td>External id of rate</td>
         </tr>
@@ -101,8 +102,8 @@ Record of rate for specific day
 </table>
 
 
-Downstream models here
-## ExchangeAudit
+## Downstream models
+### ExchangeAudit
 
 Exchange Entity Audit properties bag
 
@@ -141,7 +142,7 @@ Exchange Entity Audit properties bag
     </tbody>
 </table>
 
-## PairRef
+### PairRef
 
 Represents a pair of currencies in exchange module.
 
@@ -208,7 +209,7 @@ Represents a pair of currencies in exchange module.
     </tbody>
 </table>
 
-## PlatformIdentityRef
+### PlatformIdentityRef
 
 
 
@@ -254,7 +255,7 @@ Represents a pair of currencies in exchange module.
     </tbody>
 </table>
 
-## PlatformMetadata
+### PlatformMetadata
 
 
 
@@ -279,7 +280,7 @@ Represents a pair of currencies in exchange module.
     </tbody>
 </table>
 
-## PlatformObjectEvent
+### PlatformObjectEvent
 
 
 
@@ -311,7 +312,7 @@ Represents a pair of currencies in exchange module.
     </tbody>
 </table>
 
-## RateRef
+### RateRef
 
 Record of rate for specific day
 

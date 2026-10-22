@@ -4,6 +4,7 @@
 
 
 
+### Attributes
 
 {% include "../../../../.gitbook/includes/api-table-header.md" %}
 
@@ -12,7 +13,7 @@
         <tr>
             <th>Field</th>
             <th>Type</th>
-	        <th>Core</th>
+	        <th>Rql</th>
 	        <th>Access</th>
             <th>Description</th>
         </tr>
@@ -21,7 +22,7 @@
         <tr>
             <td><code>id</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
@@ -42,7 +43,7 @@
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
@@ -77,8 +78,8 @@
 </table>
 
 
-Downstream models here
-## AccountRef
+## Downstream models
+### AccountRef
 
 
 
@@ -138,7 +139,7 @@ Downstream models here
     </tbody>
 </table>
 
-## ContactRef
+### ContactRef
 
 Represents a notification contact who can receive email notifications.
 
@@ -198,7 +199,7 @@ Represents a notification contact who can receive email notifications.
     </tbody>
 </table>
 
-## NumberFormat
+### NumberFormat
 
 
 
@@ -230,7 +231,7 @@ Represents a notification contact who can receive email notifications.
     </tbody>
 </table>
 
-## PhoneNumber
+### PhoneNumber
 
 
 
@@ -262,7 +263,7 @@ Represents a notification contact who can receive email notifications.
     </tbody>
 </table>
 
-## PlatformIdentity
+### PlatformIdentity
 
 
 
@@ -322,7 +323,7 @@ Represents a notification contact who can receive email notifications.
     </tbody>
 </table>
 
-## PlatformIdentityRef
+### PlatformIdentityRef
 
 
 
@@ -368,7 +369,7 @@ Represents a notification contact who can receive email notifications.
     </tbody>
 </table>
 
-## PlatformMetadata
+### PlatformMetadata
 
 
 
@@ -393,7 +394,7 @@ Represents a notification contact who can receive email notifications.
     </tbody>
 </table>
 
-## PlatformObjectAudit
+### PlatformObjectAudit
 
 
 
@@ -425,7 +426,7 @@ Represents a notification contact who can receive email notifications.
     </tbody>
 </table>
 
-## PlatformObjectEvent
+### PlatformObjectEvent
 
 
 
@@ -457,7 +458,7 @@ Represents a notification contact who can receive email notifications.
     </tbody>
 </table>
 
-## User
+### User
 
 
 
@@ -580,7 +581,7 @@ Represents a notification contact who can receive email notifications.
     </tbody>
 </table>
 
-## UserAudit
+### UserAudit
 
 
 
@@ -619,7 +620,7 @@ Represents a notification contact who can receive email notifications.
     </tbody>
 </table>
 
-## UserSettings
+### UserSettings
 
 
 
@@ -686,7 +687,7 @@ Represents a notification contact who can receive email notifications.
     </tbody>
 </table>
 
-## UserSettingsOptOuts
+### UserSettingsOptOuts
 
 
 

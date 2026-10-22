@@ -2,11 +2,12 @@
 ## JournalCharge
 
 
-
-
 ### Description
 Represents a charge associated with a journal in the billing system.
 
+
+
+### Attributes
 
 {% include "../../../../.gitbook/includes/api-table-header.md" %}
 
@@ -15,7 +16,7 @@ Represents a charge associated with a journal in the billing system.
         <tr>
             <th>Field</th>
             <th>Type</th>
-	        <th>Core</th>
+	        <th>Rql</th>
 	        <th>Access</th>
             <th>Description</th>
         </tr>
@@ -38,14 +39,14 @@ Represents a charge associated with a journal in the billing system.
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>id</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td>The unique identifier of the charge</td>
         </tr>
@@ -262,8 +263,8 @@ Represents a charge associated with a journal in the billing system.
 </table>
 
 
-Downstream models here
-## Account
+## Downstream models
+### Account
 
 
 
@@ -407,7 +408,7 @@ Downstream models here
     </tbody>
 </table>
 
-## AccountExternalIds
+### AccountExternalIds
 
 
 
@@ -432,7 +433,7 @@ Downstream models here
     </tbody>
 </table>
 
-## AccountRef
+### AccountRef
 
 
 
@@ -492,7 +493,7 @@ Downstream models here
     </tbody>
 </table>
 
-## Address
+### Address
 
 
 
@@ -552,7 +553,7 @@ Downstream models here
     </tbody>
 </table>
 
-## Agreement
+### Agreement
 
 
 
@@ -766,7 +767,7 @@ Downstream models here
     </tbody>
 </table>
 
-## AgreementAudit
+### AgreementAudit
 
 
 
@@ -819,7 +820,7 @@ Downstream models here
     </tbody>
 </table>
 
-## AgreementLine
+### AgreementLine
 
 
 
@@ -956,7 +957,7 @@ Downstream models here
     </tbody>
 </table>
 
-## AgreementLineAudit
+### AgreementLineAudit
 
 
 
@@ -1002,7 +1003,7 @@ Downstream models here
     </tbody>
 </table>
 
-## AgreementLinePrice
+### AgreementLinePrice
 
 
 
@@ -1111,7 +1112,7 @@ Downstream models here
     </tbody>
 </table>
 
-## AgreementRef
+### AgreementRef
 
 
 
@@ -1164,7 +1165,7 @@ Downstream models here
     </tbody>
 </table>
 
-## AgreementSummaryPrice
+### AgreementSummaryPrice
 
 
 
@@ -1273,7 +1274,7 @@ Downstream models here
     </tbody>
 </table>
 
-## Asset
+### Asset
 
 
 
@@ -1410,7 +1411,7 @@ Downstream models here
     </tbody>
 </table>
 
-## AssetAudit
+### AssetAudit
 
 
 
@@ -1463,7 +1464,7 @@ Downstream models here
     </tbody>
 </table>
 
-## AssetParameterBag
+### AssetParameterBag
 
 
 
@@ -1488,7 +1489,7 @@ Downstream models here
     </tbody>
 </table>
 
-## AssetRef
+### AssetRef
 
 
 
@@ -1534,7 +1535,7 @@ Downstream models here
     </tbody>
 </table>
 
-## AssetSummaryPrice
+### AssetSummaryPrice
 
 
 
@@ -1615,7 +1616,7 @@ Downstream models here
     </tbody>
 </table>
 
-## AuthorizationRef
+### AuthorizationRef
 
 
 
@@ -1661,7 +1662,7 @@ Downstream models here
     </tbody>
 </table>
 
-## Buyer
+### Buyer
 
 
 
@@ -1770,7 +1771,7 @@ Downstream models here
     </tbody>
 </table>
 
-## BuyerAudit
+### BuyerAudit
 
 
 
@@ -1823,7 +1824,7 @@ Downstream models here
     </tbody>
 </table>
 
-## BuyerExternalIds
+### BuyerExternalIds
 
 
 
@@ -1862,7 +1863,7 @@ Downstream models here
     </tbody>
 </table>
 
-## BuyerRef
+### BuyerRef
 
 
 
@@ -1908,7 +1909,7 @@ Downstream models here
     </tbody>
 </table>
 
-## CapacitySettings
+### CapacitySettings
 
 
 
@@ -1940,7 +1941,7 @@ Downstream models here
     </tbody>
 </table>
 
-## CertificateRef
+### CertificateRef
 
 
 
@@ -1979,7 +1980,7 @@ Downstream models here
     </tbody>
 </table>
 
-## ChargeAttributes
+### ChargeAttributes
 
 Represents additional attributes associated with a charge in the billing system.
 
@@ -2046,7 +2047,7 @@ Represents additional attributes associated with a charge in the billing system.
     </tbody>
 </table>
 
-## ChargeAuditBag
+### ChargeAuditBag
 
 Represents a container for audit-related events for a charge
 
@@ -2078,7 +2079,7 @@ Represents a container for audit-related events for a charge
     </tbody>
 </table>
 
-## ChargeDescription
+### ChargeDescription
 
 Represents a description of a charge.
 
@@ -2110,7 +2111,7 @@ Represents a description of a charge.
     </tbody>
 </table>
 
-## ChargeExternalIds
+### ChargeExternalIds
 
 Represents external identifiers associated with a charge.
 
@@ -2149,7 +2150,7 @@ Represents external identifiers associated with a charge.
     </tbody>
 </table>
 
-## ChargePrice
+### ChargePrice
 
 Represents the pricing details of a charge, including currency, markup, margin, and unit prices.
 
@@ -2237,7 +2238,7 @@ Represents the pricing details of a charge, including currency, markup, margin, 
     </tbody>
 </table>
 
-## ChargeRef
+### ChargeRef
 
 Represents a charge in the billing system.
 
@@ -2276,7 +2277,7 @@ Represents a charge in the billing system.
     </tbody>
 </table>
 
-## ChargeSearch
+### ChargeSearch
 
 Represents a search criterion and its value for a charge.
 
@@ -2308,7 +2309,7 @@ Represents a search criterion and its value for a charge.
     </tbody>
 </table>
 
-## ChargeSearchBag
+### ChargeSearchBag
 
 Represents search-related details for a charge.
 
@@ -2347,7 +2348,7 @@ Represents search-related details for a charge.
     </tbody>
 </table>
 
-## ChargeSourceSearch
+### ChargeSourceSearch
 
 Represents a search criterion and its value for a charge.
 
@@ -2386,7 +2387,7 @@ Represents a search criterion and its value for a charge.
     </tbody>
 </table>
 
-## ChargeSplit
+### ChargeSplit
 
 Represents the details of a charge split.
 
@@ -2411,7 +2412,7 @@ Represents the details of a charge split.
     </tbody>
 </table>
 
-## ChargeStatusBag
+### ChargeStatusBag
 
 Represents the status and associated errors of a charge in the billing system.
 
@@ -2443,7 +2444,7 @@ Represents the status and associated errors of a charge in the billing system.
     </tbody>
 </table>
 
-## CommerceParameter
+### CommerceParameter
 
 
 
@@ -2538,7 +2539,7 @@ Represents the status and associated errors of a charge in the billing system.
     </tbody>
 </table>
 
-## CommerceTermsAndConditionsRef
+### CommerceTermsAndConditionsRef
 
 
 
@@ -2591,7 +2592,7 @@ Represents the status and associated errors of a charge in the billing system.
     </tbody>
 </table>
 
-## CustomLedgerRef
+### CustomLedgerRef
 
 Represents a custom ledger in the billing system.
 
@@ -2630,7 +2631,7 @@ Represents a custom ledger in the billing system.
     </tbody>
 </table>
 
-## DatePeriod
+### DatePeriod
 
 Represents the period during which a charge is applicable.
 
@@ -2662,7 +2663,7 @@ Represents the period during which a charge is applicable.
     </tbody>
 </table>
 
-## Eligibility
+### Eligibility
 
 
 
@@ -2694,7 +2695,7 @@ Represents the period during which a charge is applicable.
     </tbody>
 </table>
 
-## ErpData
+### ErpData
 
 Represents ERP-related data associated with a charge in the billing system.
 
@@ -2761,7 +2762,7 @@ Represents ERP-related data associated with a charge in the billing system.
     </tbody>
 </table>
 
-## ErpLinkRef
+### ErpLinkRef
 
 
 
@@ -2821,7 +2822,7 @@ Represents ERP-related data associated with a charge in the billing system.
     </tbody>
 </table>
 
-## ExtendedIdentity
+### ExtendedIdentity
 
 
 
@@ -2895,7 +2896,7 @@ Represents ERP-related data associated with a charge in the billing system.
     </tbody>
 </table>
 
-## ExternalIds
+### ExternalIds
 
 
 
@@ -2934,7 +2935,7 @@ Represents ERP-related data associated with a charge in the billing system.
     </tbody>
 </table>
 
-## ItemGroupRef
+### ItemGroupRef
 
 
 
@@ -2973,7 +2974,7 @@ Represents ERP-related data associated with a charge in the billing system.
     </tbody>
 </table>
 
-## JournalRef
+### JournalRef
 
 Represents a journal entry in the billing system.
 
@@ -3019,7 +3020,7 @@ Represents a journal entry in the billing system.
     </tbody>
 </table>
 
-## LedgerRef
+### LedgerRef
 
 Represents a ledger in the billing system.
 
@@ -3051,7 +3052,7 @@ Represents a ledger in the billing system.
     </tbody>
 </table>
 
-## LicenseeRef
+### LicenseeRef
 
 
 
@@ -3104,7 +3105,7 @@ Represents a ledger in the billing system.
     </tbody>
 </table>
 
-## ListingRef
+### ListingRef
 
 
 
@@ -3143,7 +3144,7 @@ Represents a ledger in the billing system.
     </tbody>
 </table>
 
-## MarkupSourcePrice
+### MarkupSourcePrice
 
 
 
@@ -3175,7 +3176,7 @@ Represents a ledger in the billing system.
     </tbody>
 </table>
 
-## MarkupSourceRefPrice
+### MarkupSourceRefPrice
 
 
 
@@ -3207,7 +3208,7 @@ Represents a ledger in the billing system.
     </tbody>
 </table>
 
-## Order
+### Order
 
 
 
@@ -3449,7 +3450,7 @@ Represents a ledger in the billing system.
     </tbody>
 </table>
 
-## OrderAsset
+### OrderAsset
 
 
 
@@ -3551,7 +3552,7 @@ Represents a ledger in the billing system.
     </tbody>
 </table>
 
-## OrderAssetAudit
+### OrderAssetAudit
 
 
 
@@ -3604,7 +3605,7 @@ Represents a ledger in the billing system.
     </tbody>
 </table>
 
-## OrderAssetRef
+### OrderAssetRef
 
 
 
@@ -3650,7 +3651,7 @@ Represents a ledger in the billing system.
     </tbody>
 </table>
 
-## OrderAudit
+### OrderAudit
 
 
 
@@ -3724,7 +3725,7 @@ Represents a ledger in the billing system.
     </tbody>
 </table>
 
-## OrderLine
+### OrderLine
 
 
 
@@ -3861,7 +3862,7 @@ Represents a ledger in the billing system.
     </tbody>
 </table>
 
-## OrderLinePrice
+### OrderLinePrice
 
 
 
@@ -3970,7 +3971,7 @@ Represents a ledger in the billing system.
     </tbody>
 </table>
 
-## OrderRef
+### OrderRef
 
 
 
@@ -4002,7 +4003,7 @@ Represents a ledger in the billing system.
     </tbody>
 </table>
 
-## OrderSubscription
+### OrderSubscription
 
 
 
@@ -4146,7 +4147,7 @@ Represents a ledger in the billing system.
     </tbody>
 </table>
 
-## OrderSubscriptionAudit
+### OrderSubscriptionAudit
 
 
 
@@ -4206,7 +4207,7 @@ Represents a ledger in the billing system.
     </tbody>
 </table>
 
-## OrderSubscriptionRef
+### OrderSubscriptionRef
 
 
 
@@ -4259,7 +4260,7 @@ Represents a ledger in the billing system.
     </tbody>
 </table>
 
-## OrderSummaryPrice
+### OrderSummaryPrice
 
 
 
@@ -4361,7 +4362,7 @@ Represents a ledger in the billing system.
     </tbody>
 </table>
 
-## OriginalValues
+### OriginalValues
 
 Values assigned during initial journal calculation.
 
@@ -4407,7 +4408,7 @@ Values assigned during initial journal calculation.
     </tbody>
 </table>
 
-## ParameterBag
+### ParameterBag
 
 
 
@@ -4439,7 +4440,7 @@ Values assigned during initial journal calculation.
     </tbody>
 </table>
 
-## ParameterConstraints
+### ParameterConstraints
 
 
 
@@ -4485,7 +4486,7 @@ Values assigned during initial journal calculation.
     </tbody>
 </table>
 
-## ParameterValue
+### ParameterValue
 
 
 
@@ -4552,7 +4553,7 @@ Values assigned during initial journal calculation.
     </tbody>
 </table>
 
-## ParametrisedMessage
+### ParametrisedMessage
 
 
 
@@ -4591,7 +4592,7 @@ Values assigned during initial journal calculation.
     </tbody>
 </table>
 
-## PlatformIdentityRef
+### PlatformIdentityRef
 
 
 
@@ -4637,7 +4638,7 @@ Values assigned during initial journal calculation.
     </tbody>
 </table>
 
-## PlatformMetadata
+### PlatformMetadata
 
 
 
@@ -4662,7 +4663,7 @@ Values assigned during initial journal calculation.
     </tbody>
 </table>
 
-## PlatformObjectAudit
+### PlatformObjectAudit
 
 
 
@@ -4694,7 +4695,7 @@ Values assigned during initial journal calculation.
     </tbody>
 </table>
 
-## PlatformObjectEvent
+### PlatformObjectEvent
 
 
 
@@ -4726,7 +4727,7 @@ Values assigned during initial journal calculation.
     </tbody>
 </table>
 
-## PreValidationSettings
+### PreValidationSettings
 
 
 
@@ -4779,7 +4780,7 @@ Values assigned during initial journal calculation.
     </tbody>
 </table>
 
-## PriceCurrency
+### PriceCurrency
 
 Represents the currency details for pricing, including purchase and sale values.
 
@@ -4818,7 +4819,7 @@ Represents the currency details for pricing, including purchase and sale values.
     </tbody>
 </table>
 
-## PriceInfo
+### PriceInfo
 
 
 
@@ -4850,7 +4851,7 @@ Represents the currency details for pricing, including purchase and sale values.
     </tbody>
 </table>
 
-## PriceListRef
+### PriceListRef
 
 
 
@@ -4889,7 +4890,7 @@ Represents the currency details for pricing, including purchase and sale values.
     </tbody>
 </table>
 
-## PricingPolicyEligibility
+### PricingPolicyEligibility
 
 
 
@@ -4921,7 +4922,7 @@ Represents the currency details for pricing, including purchase and sale values.
     </tbody>
 </table>
 
-## PricingPolicyRef
+### PricingPolicyRef
 
 
 
@@ -4981,7 +4982,7 @@ Represents the currency details for pricing, including purchase and sale values.
     </tbody>
 </table>
 
-## Product
+### Product
 
 
 
@@ -5097,7 +5098,7 @@ Represents the currency details for pricing, including purchase and sale values.
     </tbody>
 </table>
 
-## ProductAudit
+### ProductAudit
 
 
 
@@ -5150,7 +5151,7 @@ Represents the currency details for pricing, including purchase and sale values.
     </tbody>
 </table>
 
-## ProductExternalIdBag
+### ProductExternalIdBag
 
 
 
@@ -5182,7 +5183,7 @@ Represents the currency details for pricing, including purchase and sale values.
     </tbody>
 </table>
 
-## ProductItem
+### ProductItem
 
 
 
@@ -5298,7 +5299,7 @@ Represents the currency details for pricing, including purchase and sale values.
     </tbody>
 </table>
 
-## ProductItemAudit
+### ProductItemAudit
 
 
 
@@ -5351,7 +5352,7 @@ Represents the currency details for pricing, including purchase and sale values.
     </tbody>
 </table>
 
-## ProductItemExternalIdBag
+### ProductItemExternalIdBag
 
 
 
@@ -5383,7 +5384,7 @@ Represents the currency details for pricing, including purchase and sale values.
     </tbody>
 </table>
 
-## ProductItemRef
+### ProductItemRef
 
 
 
@@ -5429,7 +5430,7 @@ Represents the currency details for pricing, including purchase and sale values.
     </tbody>
 </table>
 
-## ProductRef
+### ProductRef
 
 
 
@@ -5489,7 +5490,7 @@ Represents the currency details for pricing, including purchase and sale values.
     </tbody>
 </table>
 
-## ProductRequestsSetting
+### ProductRequestsSetting
 
 
 
@@ -5528,7 +5529,7 @@ Represents the currency details for pricing, including purchase and sale values.
     </tbody>
 </table>
 
-## ProductSettings
+### ProductSettings
 
 
 
@@ -5602,7 +5603,7 @@ Represents the currency details for pricing, including purchase and sale values.
     </tbody>
 </table>
 
-## ProductSplitBillingRequestsSetting
+### ProductSplitBillingRequestsSetting
 
 
 
@@ -5634,7 +5635,7 @@ Represents the currency details for pricing, including purchase and sale values.
     </tbody>
 </table>
 
-## ProductStatistics
+### ProductStatistics
 
 
 
@@ -5680,7 +5681,7 @@ Represents the currency details for pricing, including purchase and sale values.
     </tbody>
 </table>
 
-## Reconciliation
+### Reconciliation
 
 Represents reconciliation info for a journal charge.
 
@@ -5729,7 +5730,7 @@ Possible values: Mpt.Models.Billing.Charges.JournalChargeSource.Agreement, Mpt.M
     </tbody>
 </table>
 
-## Seller
+### Seller
 
 
 
@@ -5831,7 +5832,7 @@ Possible values: Mpt.Models.Billing.Charges.JournalChargeSource.Agreement, Mpt.M
     </tbody>
 </table>
 
-## SellerAttributes
+### SellerAttributes
 
 
 
@@ -5856,7 +5857,7 @@ Possible values: Mpt.Models.Billing.Charges.JournalChargeSource.Agreement, Mpt.M
     </tbody>
 </table>
 
-## SellerCurrency
+### SellerCurrency
 
 
 
@@ -5895,7 +5896,7 @@ Possible values: Mpt.Models.Billing.Charges.JournalChargeSource.Agreement, Mpt.M
     </tbody>
 </table>
 
-## SellerRef
+### SellerRef
 
 
 
@@ -5948,7 +5949,7 @@ Possible values: Mpt.Models.Billing.Charges.JournalChargeSource.Agreement, Mpt.M
     </tbody>
 </table>
 
-## SplitBillingAgreementRef
+### SplitBillingAgreementRef
 
 
 
@@ -5980,7 +5981,7 @@ Possible values: Mpt.Models.Billing.Charges.JournalChargeSource.Agreement, Mpt.M
     </tbody>
 </table>
 
-## SplitBillingSubscriptionRef
+### SplitBillingSubscriptionRef
 
 
 
@@ -6012,7 +6013,7 @@ Possible values: Mpt.Models.Billing.Charges.JournalChargeSource.Agreement, Mpt.M
     </tbody>
 </table>
 
-## StatementRef
+### StatementRef
 
 Represents a billing statement in the system, containing details about transactions, pricing, and associated entities.
 
@@ -6044,7 +6045,7 @@ Represents a billing statement in the system, containing details about transacti
     </tbody>
 </table>
 
-## Subscription
+### Subscription
 
 
 
@@ -6223,7 +6224,7 @@ Represents a billing statement in the system, containing details about transacti
     </tbody>
 </table>
 
-## SubscriptionAudit
+### SubscriptionAudit
 
 
 
@@ -6297,7 +6298,7 @@ Represents a billing statement in the system, containing details about transacti
     </tbody>
 </table>
 
-## SubscriptionCessationSetting
+### SubscriptionCessationSetting
 
 
 
@@ -6329,7 +6330,7 @@ Represents a billing statement in the system, containing details about transacti
     </tbody>
 </table>
 
-## SubscriptionParameterBag
+### SubscriptionParameterBag
 
 
 
@@ -6354,7 +6355,7 @@ Represents a billing statement in the system, containing details about transacti
     </tbody>
 </table>
 
-## SubscriptionRef
+### SubscriptionRef
 
 
 
@@ -6393,7 +6394,7 @@ Represents a billing statement in the system, containing details about transacti
     </tbody>
 </table>
 
-## SubscriptionSummaryPrice
+### SubscriptionSummaryPrice
 
 
 
@@ -6488,7 +6489,7 @@ Represents a billing statement in the system, containing details about transacti
     </tbody>
 </table>
 
-## TemplateRef
+### TemplateRef
 
 
 
@@ -6527,7 +6528,7 @@ Represents a billing statement in the system, containing details about transacti
     </tbody>
 </table>
 
-## Terms
+### Terms
 
 
 
@@ -6566,7 +6567,7 @@ Represents a billing statement in the system, containing details about transacti
     </tbody>
 </table>
 
-## UnitOfMeasureRef
+### UnitOfMeasureRef
 
 
 
@@ -6612,7 +6613,7 @@ Represents a billing statement in the system, containing details about transacti
     </tbody>
 </table>
 
-## UserGroupRef
+### UserGroupRef
 
 
 

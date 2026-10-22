@@ -5,11 +5,55 @@
 ### IdPrefix 
 ACC
 
-
-
 ### Description
 An Account is the platform identity record for an Actor — either a Vendor (a software manufacturer transacting through the SoftwareOne Marketplace), an Operations entity (SoftwareOne itself, acting as platform steward), or a Client (a customer organisation purchasing through the SoftwareOne Marketplace). Every Account has a `type` field that determines which Actor permission profile applies to its Users and API Tokens. In PROD, there is exactly one Operations Account, one Account per Vendor entity, and one Account per Client organisation. Client Accounts have a 1:1 relationship with a CDG (Customer Discount Group) in SoftwareOne's ERP.
 
+
+## Ownership & Visibility
+
+<table>
+  <thead>
+    <tr>
+      <th>Actor</th>
+      <th>Can Create</th>
+      <th>Can Read</th>
+      <th>Can Update</th>
+      <th>Can Delete</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Vendor</td>
+      <td>No</td>
+      <td>Yes*</td>
+      <td>Yes**</td>
+      <td>No</td>
+      <td>*A Vendor can read its own Account and any Client Account with a Commerce: [[Agreement]] where this Vendor is the Agreement&#39;s Vendor. Non-visible Accounts return 404 — their existence is masked entirely. No field-level suppression exists once an Account is visible. **A Vendor can update its own Account only.</td>
+    </tr>
+    <tr>
+      <td>Operations</td>
+      <td>Yes</td>
+      <td>Yes*</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>*Platform-wide read access requires the Account Management module permission. Without it, an Operations user is scoped to their own Account only — the same restriction as Client. No DELETE endpoint exists in the spec.</td>
+    </tr>
+    <tr>
+      <td>Client</td>
+      <td>No</td>
+      <td>Yes*</td>
+      <td>Yes**</td>
+      <td>No</td>
+      <td>*A Client can read its own Account only. All other Accounts return 404 — their existence is masked entirely. **A Client can update its own Account only.</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+### Attributes
 
 {% include "../../../../.gitbook/includes/api-table-header.md" %}
 
@@ -18,7 +62,7 @@ An Account is the platform identity record for an Actor — either a Vendor (a s
         <tr>
             <th>Field</th>
             <th>Type</th>
-	        <th>Core</th>
+	        <th>Rql</th>
 	        <th>Access</th>
             <th>Description</th>
         </tr>
@@ -27,7 +71,7 @@ An Account is the platform identity record for an Actor — either a Vendor (a s
         <tr>
             <td><code>id</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
@@ -48,21 +92,21 @@ An Account is the platform identity record for an Actor — either a Vendor (a s
         <tr>
             <td><code>name</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
@@ -153,8 +197,8 @@ An Account is the platform identity record for an Actor — either a Vendor (a s
 </table>
 
 
-Downstream models here
-## AccountExternalIds
+## Downstream models
+### AccountExternalIds
 
 
 
@@ -179,7 +223,7 @@ Downstream models here
     </tbody>
 </table>
 
-## Address
+### Address
 
 
 
@@ -239,7 +283,7 @@ Downstream models here
     </tbody>
 </table>
 
-## Eligibility
+### Eligibility
 
 
 
@@ -271,7 +315,7 @@ Downstream models here
     </tbody>
 </table>
 
-## PlatformIdentityRef
+### PlatformIdentityRef
 
 
 
@@ -317,7 +361,7 @@ Downstream models here
     </tbody>
 </table>
 
-## PlatformMetadata
+### PlatformMetadata
 
 
 
@@ -342,7 +386,7 @@ Downstream models here
     </tbody>
 </table>
 
-## PlatformObjectAudit
+### PlatformObjectAudit
 
 
 
@@ -374,7 +418,7 @@ Downstream models here
     </tbody>
 </table>
 
-## PlatformObjectEvent
+### PlatformObjectEvent
 
 
 
@@ -406,7 +450,7 @@ Downstream models here
     </tbody>
 </table>
 
-## UserGroupRef
+### UserGroupRef
 
 
 

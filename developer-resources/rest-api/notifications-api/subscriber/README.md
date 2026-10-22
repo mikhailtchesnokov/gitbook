@@ -2,11 +2,12 @@
 ## Subscriber
 
 
-
-
 ### Description
 Represents a subscription that defines which users or user groups should automatically receive notifications for a specific category.
 
+
+
+### Attributes
 
 {% include "../../../../.gitbook/includes/api-table-header.md" %}
 
@@ -15,7 +16,7 @@ Represents a subscription that defines which users or user groups should automat
         <tr>
             <th>Field</th>
             <th>Type</th>
-	        <th>Core</th>
+	        <th>Rql</th>
 	        <th>Access</th>
             <th>Description</th>
         </tr>
@@ -24,7 +25,7 @@ Represents a subscription that defines which users or user groups should automat
         <tr>
             <td><code>id</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
@@ -45,21 +46,21 @@ Represents a subscription that defines which users or user groups should automat
         <tr>
             <td><code>name</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td>Gets or initializes the current status of the subscriber</td>
         </tr>
@@ -94,8 +95,8 @@ Represents a subscription that defines which users or user groups should automat
 </table>
 
 
-Downstream models here
-## Account
+## Downstream models
+### Account
 
 
 
@@ -239,7 +240,7 @@ Downstream models here
     </tbody>
 </table>
 
-## AccountExternalIds
+### AccountExternalIds
 
 
 
@@ -264,7 +265,7 @@ Downstream models here
     </tbody>
 </table>
 
-## AccountRef
+### AccountRef
 
 
 
@@ -324,7 +325,7 @@ Downstream models here
     </tbody>
 </table>
 
-## Address
+### Address
 
 
 
@@ -384,7 +385,7 @@ Downstream models here
     </tbody>
 </table>
 
-## BuyerRef
+### BuyerRef
 
 
 
@@ -430,7 +431,7 @@ Downstream models here
     </tbody>
 </table>
 
-## Category
+### Category
 
 Represents a notification category that can be used to organize and filter notifications.
 
@@ -539,7 +540,7 @@ Represents a notification category that can be used to organize and filter notif
     </tbody>
 </table>
 
-## Eligibility
+### Eligibility
 
 
 
@@ -571,7 +572,7 @@ Represents a notification category that can be used to organize and filter notif
     </tbody>
 </table>
 
-## Filters
+### Filters
 
 
 
@@ -596,7 +597,7 @@ Represents a notification category that can be used to organize and filter notif
     </tbody>
 </table>
 
-## MessageStatistics
+### MessageStatistics
 
 Represents message statistics aggregated over different time periods.
 
@@ -635,7 +636,7 @@ Represents message statistics aggregated over different time periods.
     </tbody>
 </table>
 
-## ModuleRef
+### ModuleRef
 
 
 
@@ -695,7 +696,7 @@ Represents message statistics aggregated over different time periods.
     </tbody>
 </table>
 
-## ModuleSettings
+### ModuleSettings
 
 
 
@@ -762,7 +763,7 @@ Represents message statistics aggregated over different time periods.
     </tbody>
 </table>
 
-## ModuleSettingsEligibility
+### ModuleSettingsEligibility
 
 
 
@@ -794,7 +795,7 @@ Represents message statistics aggregated over different time periods.
     </tbody>
 </table>
 
-## NotificationCategoryAudit
+### NotificationCategoryAudit
 
 Represents audit information for a Mpt.Notifications.Models.Categories.Category.
 
@@ -847,7 +848,7 @@ Represents audit information for a Mpt.Notifications.Models.Categories.Category.
     </tbody>
 </table>
 
-## NumberFormat
+### NumberFormat
 
 
 
@@ -879,7 +880,7 @@ Represents audit information for a Mpt.Notifications.Models.Categories.Category.
     </tbody>
 </table>
 
-## PhoneNumber
+### PhoneNumber
 
 
 
@@ -911,7 +912,7 @@ Represents audit information for a Mpt.Notifications.Models.Categories.Category.
     </tbody>
 </table>
 
-## PlatformIdentityRef
+### PlatformIdentityRef
 
 
 
@@ -957,7 +958,7 @@ Represents audit information for a Mpt.Notifications.Models.Categories.Category.
     </tbody>
 </table>
 
-## PlatformMetadata
+### PlatformMetadata
 
 
 
@@ -982,7 +983,7 @@ Represents audit information for a Mpt.Notifications.Models.Categories.Category.
     </tbody>
 </table>
 
-## PlatformObjectAudit
+### PlatformObjectAudit
 
 
 
@@ -1014,7 +1015,7 @@ Represents audit information for a Mpt.Notifications.Models.Categories.Category.
     </tbody>
 </table>
 
-## PlatformObjectAuditPlatformExtension
+### PlatformObjectAuditPlatformExtension
 
 
 
@@ -1081,7 +1082,7 @@ Represents audit information for a Mpt.Notifications.Models.Categories.Category.
     </tbody>
 </table>
 
-## PlatformObjectEvent
+### PlatformObjectEvent
 
 
 
@@ -1113,7 +1114,7 @@ Represents audit information for a Mpt.Notifications.Models.Categories.Category.
     </tbody>
 </table>
 
-## Recipients
+### Recipients
 
 Represents the recipients of a subscriber.
 
@@ -1145,7 +1146,7 @@ Represents the recipients of a subscriber.
     </tbody>
 </table>
 
-## SubscriberAudit
+### SubscriberAudit
 
 Represents audit information for a Mpt.Notifications.Models.Subscribers.Subscriber.
 
@@ -1198,7 +1199,7 @@ Represents audit information for a Mpt.Notifications.Models.Subscribers.Subscrib
     </tbody>
 </table>
 
-## User
+### User
 
 
 
@@ -1321,7 +1322,7 @@ Represents audit information for a Mpt.Notifications.Models.Subscribers.Subscrib
     </tbody>
 </table>
 
-## UserAudit
+### UserAudit
 
 
 
@@ -1360,7 +1361,7 @@ Represents audit information for a Mpt.Notifications.Models.Subscribers.Subscrib
     </tbody>
 </table>
 
-## UserGroup
+### UserGroup
 
 
 
@@ -1469,7 +1470,7 @@ Represents audit information for a Mpt.Notifications.Models.Subscribers.Subscrib
     </tbody>
 </table>
 
-## UserGroupRef
+### UserGroupRef
 
 
 
@@ -1529,7 +1530,7 @@ Represents audit information for a Mpt.Notifications.Models.Subscribers.Subscrib
     </tbody>
 </table>
 
-## UserRef
+### UserRef
 
 
 
@@ -1575,7 +1576,7 @@ Represents audit information for a Mpt.Notifications.Models.Subscribers.Subscrib
     </tbody>
 </table>
 
-## UserSettings
+### UserSettings
 
 
 
@@ -1642,7 +1643,7 @@ Represents audit information for a Mpt.Notifications.Models.Subscribers.Subscrib
     </tbody>
 </table>
 
-## UserSettingsOptOuts
+### UserSettingsOptOuts
 
 
 

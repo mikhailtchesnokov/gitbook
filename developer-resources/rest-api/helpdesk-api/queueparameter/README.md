@@ -2,11 +2,12 @@
 ## QueueParameter
 
 
-
-
 ### Description
 Represents a parameter definition associated with a queue, including its display order within the queue.
 
+
+
+### Attributes
 
 {% include "../../../../.gitbook/includes/api-table-header.md" %}
 
@@ -15,7 +16,7 @@ Represents a parameter definition associated with a queue, including its display
         <tr>
             <th>Field</th>
             <th>Type</th>
-	        <th>Core</th>
+	        <th>Rql</th>
 	        <th>Access</th>
             <th>Description</th>
         </tr>
@@ -24,7 +25,7 @@ Represents a parameter definition associated with a queue, including its display
         <tr>
             <td><code>id</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
@@ -45,21 +46,21 @@ Represents a parameter definition associated with a queue, including its display
         <tr>
             <td><code>name</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
@@ -94,7 +95,7 @@ Represents a parameter definition associated with a queue, including its display
         <tr>
             <td><code>externalId</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td>The optional external identifier of the parameter for integration purposes</td>
         </tr>
@@ -150,8 +151,8 @@ Represents a parameter definition associated with a queue, including its display
 </table>
 
 
-Downstream models here
-## AccountRef
+## Downstream models
+### AccountRef
 
 
 
@@ -211,7 +212,7 @@ Downstream models here
     </tbody>
 </table>
 
-## CapacitySettings
+### CapacitySettings
 
 
 
@@ -243,7 +244,7 @@ Downstream models here
     </tbody>
 </table>
 
-## HelpdeskConstraints
+### HelpdeskConstraints
 
 Constraints specific to helpdesk parameters
 
@@ -296,7 +297,7 @@ Constraints specific to helpdesk parameters
     </tbody>
 </table>
 
-## ParameterDefinitionAudit
+### ParameterDefinitionAudit
 
 Audit information for a parameter definition
 
@@ -335,7 +336,7 @@ Audit information for a parameter definition
     </tbody>
 </table>
 
-## ParameterUsageStatistics
+### ParameterUsageStatistics
 
 Usage statistics for a parameter definition
 
@@ -374,7 +375,7 @@ Usage statistics for a parameter definition
     </tbody>
 </table>
 
-## PlatformIdentityRef
+### PlatformIdentityRef
 
 
 
@@ -420,7 +421,7 @@ Usage statistics for a parameter definition
     </tbody>
 </table>
 
-## PlatformMetadata
+### PlatformMetadata
 
 
 
@@ -445,7 +446,7 @@ Usage statistics for a parameter definition
     </tbody>
 </table>
 
-## PlatformObjectEvent
+### PlatformObjectEvent
 
 
 

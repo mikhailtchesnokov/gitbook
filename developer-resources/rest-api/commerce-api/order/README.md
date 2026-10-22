@@ -2,14 +2,9 @@
 ## Order
 
 
-### IdPrefix 
-ORD
 
 
-
-### Description
-An Order is the platform's record of a request to create, modify, configure, terminate, suspend, or resume the commercial relationship between a Client and a Vendor for a specific [[Product]]. Every Order exists within the scope of an [[Agreement]] and carries a type — Purchase, Change, Configuration, Termination, Suspend, or Resume — that defines the nature of the requested change. Purchase, Change, Configuration, and Termination Orders are created and placed by the Client Actor; Suspend and Resume Orders are created and placed by Operations and act on existing [[Subscription]]s. All Order types are fulfilled by the Vendor, driving coupled state transitions on the [[Agreement]] and its associated [[Subscription]]s and [[Asset]]s. An Order moves through a defined lifecycle from Draft to a terminal state of Completed, Failed, or Deleted.
-
+### Attributes
 
 {% include "../../../../.gitbook/includes/api-table-header.md" %}
 
@@ -18,7 +13,7 @@ An Order is the platform's record of a request to create, modify, configure, ter
         <tr>
             <th>Field</th>
             <th>Type</th>
-	        <th>Core</th>
+	        <th>Rql</th>
 	        <th>Access</th>
             <th>Description</th>
         </tr>
@@ -27,7 +22,7 @@ An Order is the platform's record of a request to create, modify, configure, ter
         <tr>
             <td><code>id</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
@@ -48,7 +43,7 @@ An Order is the platform's record of a request to create, modify, configure, ter
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
@@ -251,8 +246,8 @@ An Order is the platform's record of a request to create, modify, configure, ter
 </table>
 
 
-Downstream models here
-## Account
+## Downstream models
+### Account
 
 
 
@@ -396,7 +391,7 @@ Downstream models here
     </tbody>
 </table>
 
-## AccountExternalIds
+### AccountExternalIds
 
 
 
@@ -421,7 +416,7 @@ Downstream models here
     </tbody>
 </table>
 
-## AccountRef
+### AccountRef
 
 
 
@@ -481,7 +476,7 @@ Downstream models here
     </tbody>
 </table>
 
-## Address
+### Address
 
 
 
@@ -541,9 +536,9 @@ Downstream models here
     </tbody>
 </table>
 
-## Agreement
+### Agreement
 
-An Agreement is the platform's record of the ongoing commercial relationship between a Client and a Vendor for a specific Catalog: [[Product]]. It is the container for all [[Subscription]]s, [[Asset]]s, Lines ([[Entitlement]]s), and Commerce: [[Order]]s associated with that relationship, and it carries the relationship's own Agreement-scoped parameter state. An Agreement is normally co-created by the platform when a Purchase [[Order]] is first persisted, and thereafter its lifecycle is driven by the state transitions of its Orders and Subscriptions — from Draft through Active to the terminal states Terminated, Failed, or Deleted. Operations can additionally create an Agreement directly, outside the Order flow, for reconciliation and back-office scenarios.
+
 
 <table data-search="false">
     <thead>
@@ -755,7 +750,7 @@ An Agreement is the platform's record of the ongoing commercial relationship bet
     </tbody>
 </table>
 
-## AgreementAudit
+### AgreementAudit
 
 
 
@@ -808,7 +803,7 @@ An Agreement is the platform's record of the ongoing commercial relationship bet
     </tbody>
 </table>
 
-## AgreementLine
+### AgreementLine
 
 
 
@@ -945,7 +940,7 @@ An Agreement is the platform's record of the ongoing commercial relationship bet
     </tbody>
 </table>
 
-## AgreementLineAudit
+### AgreementLineAudit
 
 
 
@@ -991,7 +986,7 @@ An Agreement is the platform's record of the ongoing commercial relationship bet
     </tbody>
 </table>
 
-## AgreementLinePrice
+### AgreementLinePrice
 
 
 
@@ -1100,7 +1095,7 @@ An Agreement is the platform's record of the ongoing commercial relationship bet
     </tbody>
 </table>
 
-## AgreementRef
+### AgreementRef
 
 
 
@@ -1153,7 +1148,7 @@ An Agreement is the platform's record of the ongoing commercial relationship bet
     </tbody>
 </table>
 
-## AgreementSummaryPrice
+### AgreementSummaryPrice
 
 
 
@@ -1262,9 +1257,9 @@ An Agreement is the platform's record of the ongoing commercial relationship bet
     </tbody>
 </table>
 
-## Asset
+### Asset
 
-An Asset is the platform's record of a one-time purchase fulfilment for a Client under a specific [[Agreement]]. Assets represent [[Item]]s billed once rather than on a recurring schedule — as opposed to [[Subscription]]s, which represent recurring Items. Like Subscriptions, Assets are owned by the Vendor. They are created during [[Order]] Processing as an OrderAsset (a temporary representation scoped to the Order) and promoted to a live Asset when the Purchase or Change Order completes, retaining the same ID. The Vendor may also create Assets directly without an Order for migration and edge-case scenarios — this direct-creation path requires at least one Line and requires the parent Agreement to be in New, Draft, or Active status. Assets carry their own parameters, pricing, template, and Lines, but unlike Subscriptions have no renewal service, no commitment date, and no expiry path. A Terminated Asset has no effect on its parent Agreement's status — Active Assets can exist under Terminated Agreements.
+
 
 <table data-search="false">
     <thead>
@@ -1399,7 +1394,7 @@ An Asset is the platform's record of a one-time purchase fulfilment for a Client
     </tbody>
 </table>
 
-## AssetAudit
+### AssetAudit
 
 
 
@@ -1452,7 +1447,7 @@ An Asset is the platform's record of a one-time purchase fulfilment for a Client
     </tbody>
 </table>
 
-## AssetParameterBag
+### AssetParameterBag
 
 
 
@@ -1477,7 +1472,7 @@ An Asset is the platform's record of a one-time purchase fulfilment for a Client
     </tbody>
 </table>
 
-## AssetRef
+### AssetRef
 
 
 
@@ -1523,7 +1518,7 @@ An Asset is the platform's record of a one-time purchase fulfilment for a Client
     </tbody>
 </table>
 
-## AssetSummaryPrice
+### AssetSummaryPrice
 
 
 
@@ -1604,7 +1599,7 @@ An Asset is the platform's record of a one-time purchase fulfilment for a Client
     </tbody>
 </table>
 
-## AuthorizationRef
+### AuthorizationRef
 
 
 
@@ -1650,7 +1645,7 @@ An Asset is the platform's record of a one-time purchase fulfilment for a Client
     </tbody>
 </table>
 
-## Buyer
+### Buyer
 
 
 
@@ -1759,7 +1754,7 @@ An Asset is the platform's record of a one-time purchase fulfilment for a Client
     </tbody>
 </table>
 
-## BuyerAudit
+### BuyerAudit
 
 
 
@@ -1812,7 +1807,7 @@ An Asset is the platform's record of a one-time purchase fulfilment for a Client
     </tbody>
 </table>
 
-## BuyerExternalIds
+### BuyerExternalIds
 
 
 
@@ -1851,7 +1846,7 @@ An Asset is the platform's record of a one-time purchase fulfilment for a Client
     </tbody>
 </table>
 
-## BuyerRef
+### BuyerRef
 
 
 
@@ -1897,7 +1892,7 @@ An Asset is the platform's record of a one-time purchase fulfilment for a Client
     </tbody>
 </table>
 
-## CapacitySettings
+### CapacitySettings
 
 
 
@@ -1929,7 +1924,7 @@ An Asset is the platform's record of a one-time purchase fulfilment for a Client
     </tbody>
 </table>
 
-## CertificateRef
+### CertificateRef
 
 
 
@@ -1968,7 +1963,7 @@ An Asset is the platform's record of a one-time purchase fulfilment for a Client
     </tbody>
 </table>
 
-## CommerceParameter
+### CommerceParameter
 
 
 
@@ -2063,7 +2058,7 @@ An Asset is the platform's record of a one-time purchase fulfilment for a Client
     </tbody>
 </table>
 
-## CommerceTermsAndConditionsRef
+### CommerceTermsAndConditionsRef
 
 
 
@@ -2116,7 +2111,7 @@ An Asset is the platform's record of a one-time purchase fulfilment for a Client
     </tbody>
 </table>
 
-## Eligibility
+### Eligibility
 
 
 
@@ -2148,7 +2143,7 @@ An Asset is the platform's record of a one-time purchase fulfilment for a Client
     </tbody>
 </table>
 
-## ErpLinkRef
+### ErpLinkRef
 
 
 
@@ -2208,7 +2203,7 @@ An Asset is the platform's record of a one-time purchase fulfilment for a Client
     </tbody>
 </table>
 
-## ExtendedIdentity
+### ExtendedIdentity
 
 
 
@@ -2282,7 +2277,7 @@ An Asset is the platform's record of a one-time purchase fulfilment for a Client
     </tbody>
 </table>
 
-## ExternalIds
+### ExternalIds
 
 
 
@@ -2321,7 +2316,7 @@ An Asset is the platform's record of a one-time purchase fulfilment for a Client
     </tbody>
 </table>
 
-## ItemGroupRef
+### ItemGroupRef
 
 
 
@@ -2360,7 +2355,7 @@ An Asset is the platform's record of a one-time purchase fulfilment for a Client
     </tbody>
 </table>
 
-## LicenseeRef
+### LicenseeRef
 
 
 
@@ -2413,7 +2408,7 @@ An Asset is the platform's record of a one-time purchase fulfilment for a Client
     </tbody>
 </table>
 
-## ListingRef
+### ListingRef
 
 
 
@@ -2452,7 +2447,7 @@ An Asset is the platform's record of a one-time purchase fulfilment for a Client
     </tbody>
 </table>
 
-## MarkupSourcePrice
+### MarkupSourcePrice
 
 
 
@@ -2484,7 +2479,7 @@ An Asset is the platform's record of a one-time purchase fulfilment for a Client
     </tbody>
 </table>
 
-## MarkupSourceRefPrice
+### MarkupSourceRefPrice
 
 
 
@@ -2516,7 +2511,7 @@ An Asset is the platform's record of a one-time purchase fulfilment for a Client
     </tbody>
 </table>
 
-## OrderAsset
+### OrderAsset
 
 
 
@@ -2618,7 +2613,7 @@ An Asset is the platform's record of a one-time purchase fulfilment for a Client
     </tbody>
 </table>
 
-## OrderAssetAudit
+### OrderAssetAudit
 
 
 
@@ -2671,7 +2666,7 @@ An Asset is the platform's record of a one-time purchase fulfilment for a Client
     </tbody>
 </table>
 
-## OrderAssetRef
+### OrderAssetRef
 
 
 
@@ -2717,7 +2712,7 @@ An Asset is the platform's record of a one-time purchase fulfilment for a Client
     </tbody>
 </table>
 
-## OrderAudit
+### OrderAudit
 
 
 
@@ -2791,7 +2786,7 @@ An Asset is the platform's record of a one-time purchase fulfilment for a Client
     </tbody>
 </table>
 
-## OrderLine
+### OrderLine
 
 
 
@@ -2928,7 +2923,7 @@ An Asset is the platform's record of a one-time purchase fulfilment for a Client
     </tbody>
 </table>
 
-## OrderLinePrice
+### OrderLinePrice
 
 
 
@@ -3037,7 +3032,7 @@ An Asset is the platform's record of a one-time purchase fulfilment for a Client
     </tbody>
 </table>
 
-## OrderSubscription
+### OrderSubscription
 
 
 
@@ -3181,7 +3176,7 @@ An Asset is the platform's record of a one-time purchase fulfilment for a Client
     </tbody>
 </table>
 
-## OrderSubscriptionAudit
+### OrderSubscriptionAudit
 
 
 
@@ -3241,7 +3236,7 @@ An Asset is the platform's record of a one-time purchase fulfilment for a Client
     </tbody>
 </table>
 
-## OrderSubscriptionRef
+### OrderSubscriptionRef
 
 
 
@@ -3294,7 +3289,7 @@ An Asset is the platform's record of a one-time purchase fulfilment for a Client
     </tbody>
 </table>
 
-## OrderSummaryPrice
+### OrderSummaryPrice
 
 
 
@@ -3396,7 +3391,7 @@ An Asset is the platform's record of a one-time purchase fulfilment for a Client
     </tbody>
 </table>
 
-## ParameterBag
+### ParameterBag
 
 
 
@@ -3428,7 +3423,7 @@ An Asset is the platform's record of a one-time purchase fulfilment for a Client
     </tbody>
 </table>
 
-## ParameterConstraints
+### ParameterConstraints
 
 
 
@@ -3474,7 +3469,7 @@ An Asset is the platform's record of a one-time purchase fulfilment for a Client
     </tbody>
 </table>
 
-## ParameterValue
+### ParameterValue
 
 
 
@@ -3541,7 +3536,7 @@ An Asset is the platform's record of a one-time purchase fulfilment for a Client
     </tbody>
 </table>
 
-## ParametrisedMessage
+### ParametrisedMessage
 
 
 
@@ -3580,7 +3575,7 @@ An Asset is the platform's record of a one-time purchase fulfilment for a Client
     </tbody>
 </table>
 
-## PlatformIdentityRef
+### PlatformIdentityRef
 
 
 
@@ -3626,7 +3621,7 @@ An Asset is the platform's record of a one-time purchase fulfilment for a Client
     </tbody>
 </table>
 
-## PlatformMetadata
+### PlatformMetadata
 
 
 
@@ -3651,7 +3646,7 @@ An Asset is the platform's record of a one-time purchase fulfilment for a Client
     </tbody>
 </table>
 
-## PlatformObjectAudit
+### PlatformObjectAudit
 
 
 
@@ -3683,7 +3678,7 @@ An Asset is the platform's record of a one-time purchase fulfilment for a Client
     </tbody>
 </table>
 
-## PlatformObjectEvent
+### PlatformObjectEvent
 
 
 
@@ -3715,7 +3710,7 @@ An Asset is the platform's record of a one-time purchase fulfilment for a Client
     </tbody>
 </table>
 
-## PreValidationSettings
+### PreValidationSettings
 
 
 
@@ -3768,7 +3763,7 @@ An Asset is the platform's record of a one-time purchase fulfilment for a Client
     </tbody>
 </table>
 
-## PriceInfo
+### PriceInfo
 
 
 
@@ -3800,7 +3795,7 @@ An Asset is the platform's record of a one-time purchase fulfilment for a Client
     </tbody>
 </table>
 
-## PriceListRef
+### PriceListRef
 
 
 
@@ -3839,7 +3834,7 @@ An Asset is the platform's record of a one-time purchase fulfilment for a Client
     </tbody>
 </table>
 
-## PricingPolicyEligibility
+### PricingPolicyEligibility
 
 
 
@@ -3871,7 +3866,7 @@ An Asset is the platform's record of a one-time purchase fulfilment for a Client
     </tbody>
 </table>
 
-## PricingPolicyRef
+### PricingPolicyRef
 
 
 
@@ -3931,7 +3926,7 @@ An Asset is the platform's record of a one-time purchase fulfilment for a Client
     </tbody>
 </table>
 
-## Product
+### Product
 
 
 
@@ -4047,7 +4042,7 @@ An Asset is the platform's record of a one-time purchase fulfilment for a Client
     </tbody>
 </table>
 
-## ProductAudit
+### ProductAudit
 
 
 
@@ -4100,7 +4095,7 @@ An Asset is the platform's record of a one-time purchase fulfilment for a Client
     </tbody>
 </table>
 
-## ProductExternalIdBag
+### ProductExternalIdBag
 
 
 
@@ -4132,7 +4127,7 @@ An Asset is the platform's record of a one-time purchase fulfilment for a Client
     </tbody>
 </table>
 
-## ProductItem
+### ProductItem
 
 
 
@@ -4248,7 +4243,7 @@ An Asset is the platform's record of a one-time purchase fulfilment for a Client
     </tbody>
 </table>
 
-## ProductItemAudit
+### ProductItemAudit
 
 
 
@@ -4301,7 +4296,7 @@ An Asset is the platform's record of a one-time purchase fulfilment for a Client
     </tbody>
 </table>
 
-## ProductItemExternalIdBag
+### ProductItemExternalIdBag
 
 
 
@@ -4333,7 +4328,7 @@ An Asset is the platform's record of a one-time purchase fulfilment for a Client
     </tbody>
 </table>
 
-## ProductRef
+### ProductRef
 
 
 
@@ -4393,7 +4388,7 @@ An Asset is the platform's record of a one-time purchase fulfilment for a Client
     </tbody>
 </table>
 
-## ProductRequestsSetting
+### ProductRequestsSetting
 
 
 
@@ -4432,7 +4427,7 @@ An Asset is the platform's record of a one-time purchase fulfilment for a Client
     </tbody>
 </table>
 
-## ProductSettings
+### ProductSettings
 
 
 
@@ -4506,7 +4501,7 @@ An Asset is the platform's record of a one-time purchase fulfilment for a Client
     </tbody>
 </table>
 
-## ProductSplitBillingRequestsSetting
+### ProductSplitBillingRequestsSetting
 
 
 
@@ -4538,7 +4533,7 @@ An Asset is the platform's record of a one-time purchase fulfilment for a Client
     </tbody>
 </table>
 
-## ProductStatistics
+### ProductStatistics
 
 
 
@@ -4584,7 +4579,7 @@ An Asset is the platform's record of a one-time purchase fulfilment for a Client
     </tbody>
 </table>
 
-## Seller
+### Seller
 
 
 
@@ -4686,7 +4681,7 @@ An Asset is the platform's record of a one-time purchase fulfilment for a Client
     </tbody>
 </table>
 
-## SellerAttributes
+### SellerAttributes
 
 
 
@@ -4711,7 +4706,7 @@ An Asset is the platform's record of a one-time purchase fulfilment for a Client
     </tbody>
 </table>
 
-## SellerCurrency
+### SellerCurrency
 
 
 
@@ -4750,7 +4745,7 @@ An Asset is the platform's record of a one-time purchase fulfilment for a Client
     </tbody>
 </table>
 
-## SellerRef
+### SellerRef
 
 
 
@@ -4803,7 +4798,7 @@ An Asset is the platform's record of a one-time purchase fulfilment for a Client
     </tbody>
 </table>
 
-## SplitBillingAgreementRef
+### SplitBillingAgreementRef
 
 
 
@@ -4835,7 +4830,7 @@ An Asset is the platform's record of a one-time purchase fulfilment for a Client
     </tbody>
 </table>
 
-## SplitBillingSubscriptionRef
+### SplitBillingSubscriptionRef
 
 
 
@@ -4867,9 +4862,9 @@ An Asset is the platform's record of a one-time purchase fulfilment for a Client
     </tbody>
 </table>
 
-## Subscription
+### Subscription
 
-A Subscription is the platform's record of a recurring fulfilment relationship between a Client and a Vendor for a specific Item under a Commerce [[Agreement]]. Subscriptions are owned by the Vendor — the Vendor creates and maintains them as the authoritative fulfilment record — while SoftwareOne (Operations) owns the parent [[Agreement]]. A Subscription is created during [[Order]] processing and promoted to a live record when the Purchase or Change [[Order]] completes, or created directly by the Vendor for migration and edge-case scenarios. Subscriptions carry their own parameters, pricing, terms, and rendered [[Template]], and are renewed or expired automatically by the platform's daily renewal service. A Subscription can also be suspended and resumed.
+
 
 <table data-search="false">
     <thead>
@@ -5046,7 +5041,7 @@ A Subscription is the platform's record of a recurring fulfilment relationship b
     </tbody>
 </table>
 
-## SubscriptionAudit
+### SubscriptionAudit
 
 
 
@@ -5120,7 +5115,7 @@ A Subscription is the platform's record of a recurring fulfilment relationship b
     </tbody>
 </table>
 
-## SubscriptionCessationSetting
+### SubscriptionCessationSetting
 
 
 
@@ -5152,7 +5147,7 @@ A Subscription is the platform's record of a recurring fulfilment relationship b
     </tbody>
 </table>
 
-## SubscriptionParameterBag
+### SubscriptionParameterBag
 
 
 
@@ -5177,7 +5172,7 @@ A Subscription is the platform's record of a recurring fulfilment relationship b
     </tbody>
 </table>
 
-## SubscriptionRef
+### SubscriptionRef
 
 
 
@@ -5216,7 +5211,7 @@ A Subscription is the platform's record of a recurring fulfilment relationship b
     </tbody>
 </table>
 
-## SubscriptionSummaryPrice
+### SubscriptionSummaryPrice
 
 
 
@@ -5311,7 +5306,7 @@ A Subscription is the platform's record of a recurring fulfilment relationship b
     </tbody>
 </table>
 
-## TemplateRef
+### TemplateRef
 
 
 
@@ -5350,7 +5345,7 @@ A Subscription is the platform's record of a recurring fulfilment relationship b
     </tbody>
 </table>
 
-## Terms
+### Terms
 
 
 
@@ -5389,7 +5384,7 @@ A Subscription is the platform's record of a recurring fulfilment relationship b
     </tbody>
 </table>
 
-## UnitOfMeasureRef
+### UnitOfMeasureRef
 
 
 
@@ -5435,7 +5430,7 @@ A Subscription is the platform's record of a recurring fulfilment relationship b
     </tbody>
 </table>
 
-## UserGroupRef
+### UserGroupRef
 
 
 

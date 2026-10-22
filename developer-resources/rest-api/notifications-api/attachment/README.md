@@ -2,11 +2,12 @@
 ## Attachment
 
 
-
-
 ### Description
 Represents a file attachment associated with a notification message or batch.
 
+
+
+### Attributes
 
 {% include "../../../../.gitbook/includes/api-table-header.md" %}
 
@@ -15,7 +16,7 @@ Represents a file attachment associated with a notification message or batch.
         <tr>
             <th>Field</th>
             <th>Type</th>
-	        <th>Core</th>
+	        <th>Rql</th>
 	        <th>Access</th>
             <th>Description</th>
         </tr>
@@ -66,4 +67,4 @@ Represents a file attachment associated with a notification message or batch.
 </table>
 
 
-Downstream models here
+## Downstream models

@@ -5,11 +5,55 @@
 ### IdPrefix 
 LCE
 
-
-
 ### Description
 A Licensee represents a specific pairing of a customer legal entity and a SoftwareOne selling entity — the [[Buyer]] as it transacts through one [[Seller]]. It is the party on whose behalf a Commerce: [[Agreement]] (and the resulting [[Subscription]]s and [[Asset]]s) is established, and so it is the customer-facing procurement identity used throughout ordering. A Licensee is created — by a Client for its own [[Account]], or by Operations — only once an [[ErpLink]] joins the chosen Buyer and Seller. In a Tier 2 reselling arrangement, the Licensee is the reseller's downstream customer.
 
+
+## Ownership & Visibility
+
+<table>
+  <thead>
+    <tr>
+      <th>Actor</th>
+      <th>Can Create</th>
+      <th>Can Read</th>
+      <th>Can Update</th>
+      <th>Can Delete</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Vendor</td>
+      <td>No</td>
+      <td>Yes*</td>
+      <td>No</td>
+      <td>No</td>
+      <td>*Read is row-scoped: a Vendor sees only Licensees reachable through a Commerce: [[Agreement]] where it is the Vendor. Deleted Licensees are not visible.</td>
+    </tr>
+    <tr>
+      <td>Operations</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes*</td>
+      <td>Requires the platform Account Management module permission. Can create, read, and update for any Account, and is the only Actor that sees Deleted Licensees. *Delete is a soft-delete — see BR-013.</td>
+    </tr>
+    <tr>
+      <td>Client</td>
+      <td>Yes*</td>
+      <td>Yes*</td>
+      <td>Yes*</td>
+      <td>Yes*</td>
+      <td>*Scoped to the Client&#39;s own [[Account]] and requires the account management permission. Deleted Licensees are not visible. Delete is a soft-delete — see BR-013.</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+### Attributes
 
 {% include "../../../../.gitbook/includes/api-table-header.md" %}
 
@@ -18,7 +62,7 @@ A Licensee represents a specific pairing of a customer legal entity and a Softwa
         <tr>
             <th>Field</th>
             <th>Type</th>
-	        <th>Core</th>
+	        <th>Rql</th>
 	        <th>Access</th>
             <th>Description</th>
         </tr>
@@ -27,7 +71,7 @@ A Licensee represents a specific pairing of a customer legal entity and a Softwa
         <tr>
             <td><code>id</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
@@ -48,28 +92,28 @@ A Licensee represents a specific pairing of a customer legal entity and a Softwa
         <tr>
             <td><code>name</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>externalId</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
@@ -132,8 +176,8 @@ A Licensee represents a specific pairing of a customer legal entity and a Softwa
 </table>
 
 
-Downstream models here
-## AccountRef
+## Downstream models
+### AccountRef
 
 
 
@@ -193,7 +237,7 @@ Downstream models here
     </tbody>
 </table>
 
-## Address
+### Address
 
 
 
@@ -253,7 +297,7 @@ Downstream models here
     </tbody>
 </table>
 
-## BuyerRef
+### BuyerRef
 
 
 
@@ -299,7 +343,7 @@ Downstream models here
     </tbody>
 </table>
 
-## Eligibility
+### Eligibility
 
 
 
@@ -331,7 +375,7 @@ Downstream models here
     </tbody>
 </table>
 
-## LicenseeAudit
+### LicenseeAudit
 
 
 
@@ -370,7 +414,7 @@ Downstream models here
     </tbody>
 </table>
 
-## PlatformIdentityRef
+### PlatformIdentityRef
 
 
 
@@ -416,7 +460,7 @@ Downstream models here
     </tbody>
 </table>
 
-## PlatformMetadata
+### PlatformMetadata
 
 
 
@@ -441,7 +485,7 @@ Downstream models here
     </tbody>
 </table>
 
-## PlatformObjectEvent
+### PlatformObjectEvent
 
 
 
@@ -473,7 +517,7 @@ Downstream models here
     </tbody>
 </table>
 
-## SellerRef
+### SellerRef
 
 
 

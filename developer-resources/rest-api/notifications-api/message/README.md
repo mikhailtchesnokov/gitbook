@@ -2,11 +2,12 @@
 ## Message
 
 
-
-
 ### Description
 Represents an individual notification message sent to a specific contact.
 
+
+
+### Attributes
 
 {% include "../../../../.gitbook/includes/api-table-header.md" %}
 
@@ -15,7 +16,7 @@ Represents an individual notification message sent to a specific contact.
         <tr>
             <th>Field</th>
             <th>Type</th>
-	        <th>Core</th>
+	        <th>Rql</th>
 	        <th>Access</th>
             <th>Description</th>
         </tr>
@@ -24,7 +25,7 @@ Represents an individual notification message sent to a specific contact.
         <tr>
             <td><code>id</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
@@ -45,7 +46,7 @@ Represents an individual notification message sent to a specific contact.
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
@@ -108,29 +109,29 @@ Represents an individual notification message sent to a specific contact.
         <tr>
             <td><code>status</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td>Gets or sets the current status of the message</td>
         </tr>
         <tr>
             <td><code>statusReason</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td>Gets or sets the reason for the current status</td>
         </tr>
         <tr>
             <td><code>subject</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td>Gets or sets the subject of the message</td>
         </tr></tbody>
 </table>
 
 
-Downstream models here
-## Account
+## Downstream models
+### Account
 
 
 
@@ -274,7 +275,7 @@ Downstream models here
     </tbody>
 </table>
 
-## AccountExternalIds
+### AccountExternalIds
 
 
 
@@ -299,7 +300,7 @@ Downstream models here
     </tbody>
 </table>
 
-## AccountRef
+### AccountRef
 
 
 
@@ -359,7 +360,7 @@ Downstream models here
     </tbody>
 </table>
 
-## Address
+### Address
 
 
 
@@ -419,7 +420,7 @@ Downstream models here
     </tbody>
 </table>
 
-## Attachment
+### Attachment
 
 Represents a file attachment associated with a notification message or batch.
 
@@ -479,7 +480,7 @@ Represents a file attachment associated with a notification message or batch.
     </tbody>
 </table>
 
-## BatchRef
+### BatchRef
 
 Represents a batch of notification messages that share common properties.
 
@@ -546,7 +547,7 @@ Represents a batch of notification messages that share common properties.
     </tbody>
 </table>
 
-## Category
+### Category
 
 Represents a notification category that can be used to organize and filter notifications.
 
@@ -655,7 +656,7 @@ Represents a notification category that can be used to organize and filter notif
     </tbody>
 </table>
 
-## CategoryRef
+### CategoryRef
 
 
 
@@ -701,7 +702,7 @@ Represents a notification category that can be used to organize and filter notif
     </tbody>
 </table>
 
-## Contact
+### Contact
 
 Represents a notification contact who can receive email notifications.
 
@@ -810,7 +811,7 @@ Represents a notification contact who can receive email notifications.
     </tbody>
 </table>
 
-## ContactAudit
+### ContactAudit
 
 Represents audit information for a Mpt.Notifications.Models.Contacts.Contact.
 
@@ -863,7 +864,7 @@ Represents audit information for a Mpt.Notifications.Models.Contacts.Contact.
     </tbody>
 </table>
 
-## DirectoryRef
+### DirectoryRef
 
 
 
@@ -895,7 +896,7 @@ Represents audit information for a Mpt.Notifications.Models.Contacts.Contact.
     </tbody>
 </table>
 
-## Eligibility
+### Eligibility
 
 
 
@@ -927,7 +928,7 @@ Represents audit information for a Mpt.Notifications.Models.Contacts.Contact.
     </tbody>
 </table>
 
-## MessageAudit
+### MessageAudit
 
 Represents audit information for a Mpt.Notifications.Models.Messages.Message.
 
@@ -1001,7 +1002,7 @@ Represents audit information for a Mpt.Notifications.Models.Messages.Message.
     </tbody>
 </table>
 
-## MessageStatistics
+### MessageStatistics
 
 Represents message statistics aggregated over different time periods.
 
@@ -1040,7 +1041,7 @@ Represents message statistics aggregated over different time periods.
     </tbody>
 </table>
 
-## NotificationCategoryAudit
+### NotificationCategoryAudit
 
 Represents audit information for a Mpt.Notifications.Models.Categories.Category.
 
@@ -1093,7 +1094,7 @@ Represents audit information for a Mpt.Notifications.Models.Categories.Category.
     </tbody>
 </table>
 
-## NotificationTemplate
+### NotificationTemplate
 
 Represents a reusable template that can be used to generate messages.
 
@@ -1216,7 +1217,7 @@ Represents a reusable template that can be used to generate messages.
     </tbody>
 </table>
 
-## NotificationTemplateAudit
+### NotificationTemplateAudit
 
 Represents audit information for a Mpt.Notifications.Models.NotificationTemplates.NotificationTemplate.
 
@@ -1269,7 +1270,7 @@ Represents audit information for a Mpt.Notifications.Models.NotificationTemplate
     </tbody>
 </table>
 
-## NotificationTemplateCriteria
+### NotificationTemplateCriteria
 
 Represents the criteria for automatically triggering a template based on platform events.
 
@@ -1315,7 +1316,7 @@ Represents the criteria for automatically triggering a template based on platfor
     </tbody>
 </table>
 
-## NotificationTemplateCriteriaRecipients
+### NotificationTemplateCriteriaRecipients
 
 Represents the recipients criteria for automatically triggering a template based on platform events.
 
@@ -1340,7 +1341,7 @@ Represents the recipients criteria for automatically triggering a template based
     </tbody>
 </table>
 
-## NotificationTemplateRef
+### NotificationTemplateRef
 
 Represents a reusable template that can be used to generate messages.
 
@@ -1393,7 +1394,7 @@ Represents a reusable template that can be used to generate messages.
     </tbody>
 </table>
 
-## NumberFormat
+### NumberFormat
 
 
 
@@ -1425,7 +1426,7 @@ Represents a reusable template that can be used to generate messages.
     </tbody>
 </table>
 
-## PhoneNumber
+### PhoneNumber
 
 
 
@@ -1457,7 +1458,7 @@ Represents a reusable template that can be used to generate messages.
     </tbody>
 </table>
 
-## PlatformIdentity
+### PlatformIdentity
 
 
 
@@ -1517,7 +1518,7 @@ Represents a reusable template that can be used to generate messages.
     </tbody>
 </table>
 
-## PlatformIdentityRef
+### PlatformIdentityRef
 
 
 
@@ -1563,7 +1564,7 @@ Represents a reusable template that can be used to generate messages.
     </tbody>
 </table>
 
-## PlatformMetadata
+### PlatformMetadata
 
 
 
@@ -1588,7 +1589,7 @@ Represents a reusable template that can be used to generate messages.
     </tbody>
 </table>
 
-## PlatformObjectAudit
+### PlatformObjectAudit
 
 
 
@@ -1620,7 +1621,7 @@ Represents a reusable template that can be used to generate messages.
     </tbody>
 </table>
 
-## PlatformObjectEvent
+### PlatformObjectEvent
 
 
 
@@ -1652,7 +1653,7 @@ Represents a reusable template that can be used to generate messages.
     </tbody>
 </table>
 
-## TemplateVariantRef
+### TemplateVariantRef
 
 Represents a language-specific variant of a template.
 
@@ -1705,7 +1706,7 @@ Represents a language-specific variant of a template.
     </tbody>
 </table>
 
-## User
+### User
 
 
 
@@ -1828,7 +1829,7 @@ Represents a language-specific variant of a template.
     </tbody>
 </table>
 
-## UserAudit
+### UserAudit
 
 
 
@@ -1867,7 +1868,7 @@ Represents a language-specific variant of a template.
     </tbody>
 </table>
 
-## UserGroupRef
+### UserGroupRef
 
 
 
@@ -1927,7 +1928,7 @@ Represents a language-specific variant of a template.
     </tbody>
 </table>
 
-## UserSettings
+### UserSettings
 
 
 
@@ -1994,7 +1995,7 @@ Represents a language-specific variant of a template.
     </tbody>
 </table>
 
-## UserSettingsOptOuts
+### UserSettingsOptOuts
 
 
 

@@ -4,6 +4,7 @@
 
 
 
+### Attributes
 
 {% include "../../../../.gitbook/includes/api-table-header.md" %}
 
@@ -12,7 +13,7 @@
         <tr>
             <th>Field</th>
             <th>Type</th>
-	        <th>Core</th>
+	        <th>Rql</th>
 	        <th>Access</th>
             <th>Description</th>
         </tr>
@@ -21,7 +22,7 @@
         <tr>
             <td><code>id</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
@@ -42,14 +43,14 @@
         <tr>
             <td><code>name</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
@@ -91,8 +92,8 @@
 </table>
 
 
-Downstream models here
-## Channel
+## Downstream models
+### Channel
 
 
 
@@ -117,7 +118,7 @@ Downstream models here
     </tbody>
 </table>
 
-## ExtensionMetaRef
+### ExtensionMetaRef
 
 
 
@@ -163,7 +164,7 @@ Downstream models here
     </tbody>
 </table>
 
-## ExtensionRef
+### ExtensionRef
 
 
 
@@ -209,7 +210,7 @@ Downstream models here
     </tbody>
 </table>
 
-## InstanceAudit
+### InstanceAudit
 
 
 
@@ -262,7 +263,7 @@ Downstream models here
     </tbody>
 </table>
 
-## PlatformIdentityRef
+### PlatformIdentityRef
 
 
 
@@ -308,7 +309,7 @@ Downstream models here
     </tbody>
 </table>
 
-## PlatformMetadata
+### PlatformMetadata
 
 
 
@@ -333,7 +334,7 @@ Downstream models here
     </tbody>
 </table>
 
-## PlatformObjectEvent
+### PlatformObjectEvent
 
 
 

@@ -2,14 +2,9 @@
 ## Listing
 
 
-### IdPrefix 
-LST
 
 
-
-### Description
-A Listing makes a [[Product]] available for purchase through a specific SoftwareOne [[Seller]] at the prices held in a specific [[Price List]], under a specific [[Authorization]]. It ties those four references together — [[Authorization]], [[Product]], [[Seller]], and [[Price List]] — and governs which Client types may transact against it through its eligibility flags. When an [[Order]] is placed without naming a Listing explicitly, the platform routes it to the primary Listing matching the ordering Client's [[Seller]], [[Product]], and eligibility. The [[Authorization]], [[Product]], [[Seller]], and [[Price List]] a Listing references are fixed at creation and cannot be changed afterward.
-
+### Attributes
 
 {% include "../../../../.gitbook/includes/api-table-header.md" %}
 
@@ -18,7 +13,7 @@ A Listing makes a [[Product]] available for purchase through a specific Software
         <tr>
             <th>Field</th>
             <th>Type</th>
-	        <th>Core</th>
+	        <th>Rql</th>
 	        <th>Access</th>
             <th>Description</th>
         </tr>
@@ -27,7 +22,7 @@ A Listing makes a [[Product]] available for purchase through a specific Software
         <tr>
             <td><code>id</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
@@ -48,14 +43,14 @@ A Listing makes a [[Product]] available for purchase through a specific Software
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
@@ -125,8 +120,8 @@ A Listing makes a [[Product]] available for purchase through a specific Software
 </table>
 
 
-Downstream models here
-## AccountRef
+## Downstream models
+### AccountRef
 
 
 
@@ -186,7 +181,7 @@ Downstream models here
     </tbody>
 </table>
 
-## AuthorizationRef
+### AuthorizationRef
 
 
 
@@ -232,7 +227,7 @@ Downstream models here
     </tbody>
 </table>
 
-## ListingEligibility
+### ListingEligibility
 
 
 
@@ -264,7 +259,7 @@ Downstream models here
     </tbody>
 </table>
 
-## ListingStatistics
+### ListingStatistics
 
 
 
@@ -296,7 +291,7 @@ Downstream models here
     </tbody>
 </table>
 
-## PlatformIdentityRef
+### PlatformIdentityRef
 
 
 
@@ -342,7 +337,7 @@ Downstream models here
     </tbody>
 </table>
 
-## PlatformMetadata
+### PlatformMetadata
 
 
 
@@ -367,7 +362,7 @@ Downstream models here
     </tbody>
 </table>
 
-## PlatformObjectAudit
+### PlatformObjectAudit
 
 
 
@@ -399,7 +394,7 @@ Downstream models here
     </tbody>
 </table>
 
-## PlatformObjectEvent
+### PlatformObjectEvent
 
 
 
@@ -431,7 +426,7 @@ Downstream models here
     </tbody>
 </table>
 
-## PriceListRef
+### PriceListRef
 
 
 
@@ -470,7 +465,7 @@ Downstream models here
     </tbody>
 </table>
 
-## ProductExternalIdBag
+### ProductExternalIdBag
 
 
 
@@ -502,7 +497,7 @@ Downstream models here
     </tbody>
 </table>
 
-## ProductRef
+### ProductRef
 
 
 
@@ -562,7 +557,7 @@ Downstream models here
     </tbody>
 </table>
 
-## SellerRef
+### SellerRef
 
 
 

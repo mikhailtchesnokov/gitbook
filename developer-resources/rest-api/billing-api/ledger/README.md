@@ -2,14 +2,12 @@
 ## Ledger
 
 
-### IdPrefix 
-BLE
-
-
-
 ### Description
-A Ledger is the per-Seller rating output of the platform's billing pipeline, sitting between the [[Journal]] and the [[Statement]] (the pipeline is Journal → Ledger → Statement). When the Operations Actor accepts a [[Journal]], the platform generates one Ledger for each [[Seller]] whose [[Charge]] entries appear in that Journal, and rates those charges into the Ledger scoped to that one Seller. A Ledger inherits its [[Authorization]], [[Product]], owning [[Seller]], and currency from its parent Journal; it carries the rated pricing roll-ups and a processing summary for its slice of the Journal's charges. Operations reviews each rated Ledger and accepts it, which produces the client-facing Statements; the Ledger then queues for ERP integration and completes automatically once all of its Statements complete. A Ledger is not created or deleted directly through the API — it exists only as a consequence of its Journal's lifecycle.
+Represents a ledger in the billing system.
 
+
+
+### Attributes
 
 {% include "../../../../.gitbook/includes/api-table-header.md" %}
 
@@ -18,7 +16,7 @@ A Ledger is the per-Seller rating output of the platform's billing pipeline, sit
         <tr>
             <th>Field</th>
             <th>Type</th>
-	        <th>Core</th>
+	        <th>Rql</th>
 	        <th>Access</th>
             <th>Description</th>
         </tr>
@@ -41,14 +39,14 @@ A Ledger is the per-Seller rating output of the platform's billing pipeline, sit
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>id</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td>The unique identifier of the ledger</td>
         </tr>
@@ -132,8 +130,8 @@ A Ledger is the per-Seller rating output of the platform's billing pipeline, sit
 </table>
 
 
-Downstream models here
-## AuthorizationRef
+## Downstream models
+### AuthorizationRef
 
 
 
@@ -179,7 +177,7 @@ Downstream models here
     </tbody>
 </table>
 
-## BackupDetails
+### BackupDetails
 
 Represents the details of a backup operation, including its status and date.
 
@@ -211,7 +209,7 @@ Represents the details of a backup operation, including its status and date.
     </tbody>
 </table>
 
-## BillingError
+### BillingError
 
 Represents an error related to a billing entity.
 
@@ -257,7 +255,7 @@ Represents an error related to a billing entity.
     </tbody>
 </table>
 
-## JournalRef
+### JournalRef
 
 Represents a journal entry in the billing system.
 
@@ -303,7 +301,7 @@ Represents a journal entry in the billing system.
     </tbody>
 </table>
 
-## LedgerAuditBag
+### LedgerAuditBag
 
 Represents a container for audit-related events for a ledger
 
@@ -384,7 +382,7 @@ Represents a container for audit-related events for a ledger
     </tbody>
 </table>
 
-## LedgerPriceSummary
+### LedgerPriceSummary
 
 Represents a detailed summary of pricing for a ledger.
 
@@ -437,7 +435,7 @@ Represents a detailed summary of pricing for a ledger.
     </tbody>
 </table>
 
-## PlatformIdentityRef
+### PlatformIdentityRef
 
 
 
@@ -483,7 +481,7 @@ Represents a detailed summary of pricing for a ledger.
     </tbody>
 </table>
 
-## PlatformMetadata
+### PlatformMetadata
 
 
 
@@ -508,7 +506,7 @@ Represents a detailed summary of pricing for a ledger.
     </tbody>
 </table>
 
-## PlatformObjectEvent
+### PlatformObjectEvent
 
 
 
@@ -540,7 +538,7 @@ Represents a detailed summary of pricing for a ledger.
     </tbody>
 </table>
 
-## ProcessingSummary
+### ProcessingSummary
 
 Represents a summary of the processing status for various billing operations.
 
@@ -600,7 +598,7 @@ Represents a summary of the processing status for various billing operations.
     </tbody>
 </table>
 
-## ProductExternalIdBag
+### ProductExternalIdBag
 
 
 
@@ -632,7 +630,7 @@ Represents a summary of the processing status for various billing operations.
     </tbody>
 </table>
 
-## ProductRef
+### ProductRef
 
 
 
@@ -692,7 +690,7 @@ Represents a summary of the processing status for various billing operations.
     </tbody>
 </table>
 
-## SellerRef
+### SellerRef
 
 
 

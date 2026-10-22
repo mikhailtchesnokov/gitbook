@@ -2,14 +2,12 @@
 ## Statement
 
 
-### IdPrefix 
-SOM
-
-
-
 ### Description
-A Statement is the client-facing billing document the platform's billing pipeline produces from a [[Ledger]] (or, for manually-uploaded billing, a Custom Ledger — not yet canonised), scoped to exactly one Commerce: [[Agreement]]. Its net total determines its type — Debit (zero or positive, becoming an ERP Sales Order and, once posted, an [[Invoice]]) or Credit (negative, becoming an ERP [[Credit Memo]]) — and its per-line detail is exposed as a separate child [[Charge]] collection rather than an embedded array. A Statement can also be a Consolidated grouping — an Operations-created shell that rolls several existing standalone Statements together into a single ERP posting. Clients read their own Statements; every action on a Statement, including its own creation, is restricted to the Operations Actor.
+Represents a billing statement in the system, containing details about transactions, pricing, and associated entities.
 
+
+
+### Attributes
 
 {% include "../../../../.gitbook/includes/api-table-header.md" %}
 
@@ -18,7 +16,7 @@ A Statement is the client-facing billing document the platform's billing pipelin
         <tr>
             <th>Field</th>
             <th>Type</th>
-	        <th>Core</th>
+	        <th>Rql</th>
 	        <th>Access</th>
             <th>Description</th>
         </tr>
@@ -41,14 +39,14 @@ A Statement is the client-facing billing document the platform's billing pipelin
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>id</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td>The unique identifier of the statement</td>
         </tr>
@@ -209,8 +207,8 @@ A Statement is the client-facing billing document the platform's billing pipelin
 </table>
 
 
-Downstream models here
-## AccountRef
+## Downstream models
+### AccountRef
 
 
 
@@ -270,7 +268,7 @@ Downstream models here
     </tbody>
 </table>
 
-## AgreementRef
+### AgreementRef
 
 
 
@@ -323,7 +321,7 @@ Downstream models here
     </tbody>
 </table>
 
-## BackupDetails
+### BackupDetails
 
 Represents the details of a backup operation, including its status and date.
 
@@ -355,7 +353,7 @@ Represents the details of a backup operation, including its status and date.
     </tbody>
 </table>
 
-## BillingError
+### BillingError
 
 Represents an error related to a billing entity.
 
@@ -401,7 +399,7 @@ Represents an error related to a billing entity.
     </tbody>
 </table>
 
-## BillingParametrisedMessage
+### BillingParametrisedMessage
 
 Represents a message with associated parameters for use in parameterized communication or formatting scenarios.
 
@@ -433,7 +431,7 @@ Represents a message with associated parameters for use in parameterized communi
     </tbody>
 </table>
 
-## BuyerRef
+### BuyerRef
 
 
 
@@ -479,7 +477,7 @@ Represents a message with associated parameters for use in parameterized communi
     </tbody>
 </table>
 
-## CreditMemoRef
+### CreditMemoRef
 
 Represents a credit memo in the billing system.
 
@@ -511,7 +509,7 @@ Represents a credit memo in the billing system.
     </tbody>
 </table>
 
-## CustomLedgerRef
+### CustomLedgerRef
 
 Represents a custom ledger in the billing system.
 
@@ -550,7 +548,7 @@ Represents a custom ledger in the billing system.
     </tbody>
 </table>
 
-## InvoiceRef
+### InvoiceRef
 
 Represents an invoice entity in the billing system.
 
@@ -582,7 +580,7 @@ Represents an invoice entity in the billing system.
     </tbody>
 </table>
 
-## LedgerRef
+### LedgerRef
 
 Represents a ledger in the billing system.
 
@@ -614,7 +612,7 @@ Represents a ledger in the billing system.
     </tbody>
 </table>
 
-## LicenseeRef
+### LicenseeRef
 
 
 
@@ -667,7 +665,7 @@ Represents a ledger in the billing system.
     </tbody>
 </table>
 
-## PlatformIdentityRef
+### PlatformIdentityRef
 
 
 
@@ -713,7 +711,7 @@ Represents a ledger in the billing system.
     </tbody>
 </table>
 
-## PlatformMetadata
+### PlatformMetadata
 
 
 
@@ -738,7 +736,7 @@ Represents a ledger in the billing system.
     </tbody>
 </table>
 
-## PlatformObjectEvent
+### PlatformObjectEvent
 
 
 
@@ -770,7 +768,7 @@ Represents a ledger in the billing system.
     </tbody>
 </table>
 
-## PriceCurrency
+### PriceCurrency
 
 Represents the currency details for pricing, including purchase and sale values.
 
@@ -809,7 +807,7 @@ Represents the currency details for pricing, including purchase and sale values.
     </tbody>
 </table>
 
-## ProcessingSummary
+### ProcessingSummary
 
 Represents a summary of the processing status for various billing operations.
 
@@ -869,7 +867,7 @@ Represents a summary of the processing status for various billing operations.
     </tbody>
 </table>
 
-## ProductExternalIdBag
+### ProductExternalIdBag
 
 
 
@@ -901,7 +899,7 @@ Represents a summary of the processing status for various billing operations.
     </tbody>
 </table>
 
-## ProductRef
+### ProductRef
 
 
 
@@ -961,7 +959,7 @@ Represents a summary of the processing status for various billing operations.
     </tbody>
 </table>
 
-## SellerRef
+### SellerRef
 
 
 
@@ -1014,7 +1012,7 @@ Represents a summary of the processing status for various billing operations.
     </tbody>
 </table>
 
-## StatementAuditBag
+### StatementAuditBag
 
 Represents a container for audit-related events for a statement
 
@@ -1109,7 +1107,7 @@ Represents a container for audit-related events for a statement
     </tbody>
 </table>
 
-## StatementExternalIds
+### StatementExternalIds
 
 Represents external identifiers associated with a billing statement.
 
@@ -1155,7 +1153,7 @@ Represents external identifiers associated with a billing statement.
     </tbody>
 </table>
 
-## StatementPriceSummary
+### StatementPriceSummary
 
 Represents a detailed summary of pricing for a billing statement, including currency and totals.
 
@@ -1215,7 +1213,7 @@ Represents a detailed summary of pricing for a billing statement, including curr
     </tbody>
 </table>
 
-## StatementRef
+### StatementRef
 
 Represents a billing statement in the system, containing details about transactions, pricing, and associated entities.
 
@@ -1247,7 +1245,7 @@ Represents a billing statement in the system, containing details about transacti
     </tbody>
 </table>
 
-## StatementStatistics
+### StatementStatistics
 
 Counts of key dimensions derived from child statements, recalculated on consolidation changes.
 

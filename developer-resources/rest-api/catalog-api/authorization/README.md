@@ -2,14 +2,9 @@
 ## Authorization
 
 
-### IdPrefix 
-AUT
 
 
-
-### Description
-An Authorization is the formal record of a commercial relationship between a SoftwareOne [[Seller]] and a Vendor, scoped to a specific [[Product]] and currency. It represents the contractual basis under which the Seller is permitted to transact that Product in that currency on behalf of SoftwareOne. An Authorization is a precondition for creating a [[Listing]] — no Listing can exist without an Authorization. It carries billing cadence, eligibility rules, and an optional schemaless settings blob for Vendor-specific configuration.
-
+### Attributes
 
 {% include "../../../../.gitbook/includes/api-table-header.md" %}
 
@@ -18,7 +13,7 @@ An Authorization is the formal record of a commercial relationship between a Sof
         <tr>
             <th>Field</th>
             <th>Type</th>
-	        <th>Core</th>
+	        <th>Rql</th>
 	        <th>Access</th>
             <th>Description</th>
         </tr>
@@ -27,7 +22,7 @@ An Authorization is the formal record of a commercial relationship between a Sof
         <tr>
             <td><code>id</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
@@ -48,14 +43,14 @@ An Authorization is the formal record of a commercial relationship between a Sof
         <tr>
             <td><code>name</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
@@ -69,7 +64,7 @@ An Authorization is the formal record of a commercial relationship between a Sof
         <tr>
             <td><code>currency</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
@@ -132,8 +127,8 @@ An Authorization is the formal record of a commercial relationship between a Sof
 </table>
 
 
-Downstream models here
-## AccountRef
+## Downstream models
+### AccountRef
 
 
 
@@ -193,7 +188,7 @@ Downstream models here
     </tbody>
 </table>
 
-## AuthorizationEligibility
+### AuthorizationEligibility
 
 
 
@@ -225,7 +220,7 @@ Downstream models here
     </tbody>
 </table>
 
-## AuthorizationExternalIdBag
+### AuthorizationExternalIdBag
 
 
 
@@ -250,7 +245,7 @@ Downstream models here
     </tbody>
 </table>
 
-## AuthorizationJournal
+### AuthorizationJournal
 
 
 
@@ -282,7 +277,7 @@ Downstream models here
     </tbody>
 </table>
 
-## AuthorizationStatistics
+### AuthorizationStatistics
 
 
 
@@ -328,7 +323,7 @@ Downstream models here
     </tbody>
 </table>
 
-## PlatformIdentityRef
+### PlatformIdentityRef
 
 
 
@@ -374,7 +369,7 @@ Downstream models here
     </tbody>
 </table>
 
-## PlatformMetadata
+### PlatformMetadata
 
 
 
@@ -399,7 +394,7 @@ Downstream models here
     </tbody>
 </table>
 
-## PlatformObjectAudit
+### PlatformObjectAudit
 
 
 
@@ -431,7 +426,7 @@ Downstream models here
     </tbody>
 </table>
 
-## PlatformObjectEvent
+### PlatformObjectEvent
 
 
 
@@ -463,7 +458,7 @@ Downstream models here
     </tbody>
 </table>
 
-## ProductExternalIdBag
+### ProductExternalIdBag
 
 
 
@@ -495,7 +490,7 @@ Downstream models here
     </tbody>
 </table>
 
-## ProductRef
+### ProductRef
 
 
 
@@ -555,7 +550,7 @@ Downstream models here
     </tbody>
 </table>
 
-## SellerRef
+### SellerRef
 
 
 

@@ -2,11 +2,12 @@
 ## Batch
 
 
-
-
 ### Description
 Represents a batch of notification messages that share common properties.
 
+
+
+### Attributes
 
 {% include "../../../../.gitbook/includes/api-table-header.md" %}
 
@@ -15,7 +16,7 @@ Represents a batch of notification messages that share common properties.
         <tr>
             <th>Field</th>
             <th>Type</th>
-	        <th>Core</th>
+	        <th>Rql</th>
 	        <th>Access</th>
             <th>Description</th>
         </tr>
@@ -24,7 +25,7 @@ Represents a batch of notification messages that share common properties.
         <tr>
             <td><code>id</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
@@ -45,7 +46,7 @@ Represents a batch of notification messages that share common properties.
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
@@ -101,7 +102,7 @@ Represents a batch of notification messages that share common properties.
         <tr>
             <td><code>status</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td>Gets or sets the current status of the batch</td>
         </tr>
@@ -115,7 +116,7 @@ Represents a batch of notification messages that share common properties.
         <tr>
             <td><code>type</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td>Gets or sets the type of batch</td>
         </tr>
@@ -143,8 +144,8 @@ Represents a batch of notification messages that share common properties.
 </table>
 
 
-Downstream models here
-## Account
+## Downstream models
+### Account
 
 
 
@@ -288,7 +289,7 @@ Downstream models here
     </tbody>
 </table>
 
-## AccountExternalIds
+### AccountExternalIds
 
 
 
@@ -313,7 +314,7 @@ Downstream models here
     </tbody>
 </table>
 
-## AccountRef
+### AccountRef
 
 
 
@@ -373,7 +374,7 @@ Downstream models here
     </tbody>
 </table>
 
-## Address
+### Address
 
 
 
@@ -433,7 +434,7 @@ Downstream models here
     </tbody>
 </table>
 
-## Attachment
+### Attachment
 
 Represents a file attachment associated with a notification message or batch.
 
@@ -493,7 +494,7 @@ Represents a file attachment associated with a notification message or batch.
     </tbody>
 </table>
 
-## BatchAudit
+### BatchAudit
 
 Represents audit information for a Mpt.Notifications.Models.Messages.Batch.
 
@@ -539,7 +540,7 @@ Represents audit information for a Mpt.Notifications.Models.Messages.Batch.
     </tbody>
 </table>
 
-## BatchStatistics
+### BatchStatistics
 
 Represents statistics for a notification batch, tracking the count of messages in various states.
 
@@ -606,7 +607,7 @@ Represents statistics for a notification batch, tracking the count of messages i
     </tbody>
 </table>
 
-## Category
+### Category
 
 Represents a notification category that can be used to organize and filter notifications.
 
@@ -715,7 +716,7 @@ Represents a notification category that can be used to organize and filter notif
     </tbody>
 </table>
 
-## CategoryRef
+### CategoryRef
 
 
 
@@ -761,7 +762,7 @@ Represents a notification category that can be used to organize and filter notif
     </tbody>
 </table>
 
-## Eligibility
+### Eligibility
 
 
 
@@ -793,7 +794,7 @@ Represents a notification category that can be used to organize and filter notif
     </tbody>
 </table>
 
-## MessageStatistics
+### MessageStatistics
 
 Represents message statistics aggregated over different time periods.
 
@@ -832,7 +833,7 @@ Represents message statistics aggregated over different time periods.
     </tbody>
 </table>
 
-## NotificationCategoryAudit
+### NotificationCategoryAudit
 
 Represents audit information for a Mpt.Notifications.Models.Categories.Category.
 
@@ -885,7 +886,7 @@ Represents audit information for a Mpt.Notifications.Models.Categories.Category.
     </tbody>
 </table>
 
-## NotificationTemplate
+### NotificationTemplate
 
 Represents a reusable template that can be used to generate messages.
 
@@ -1008,7 +1009,7 @@ Represents a reusable template that can be used to generate messages.
     </tbody>
 </table>
 
-## NotificationTemplateAudit
+### NotificationTemplateAudit
 
 Represents audit information for a Mpt.Notifications.Models.NotificationTemplates.NotificationTemplate.
 
@@ -1061,7 +1062,7 @@ Represents audit information for a Mpt.Notifications.Models.NotificationTemplate
     </tbody>
 </table>
 
-## NotificationTemplateCriteria
+### NotificationTemplateCriteria
 
 Represents the criteria for automatically triggering a template based on platform events.
 
@@ -1107,7 +1108,7 @@ Represents the criteria for automatically triggering a template based on platfor
     </tbody>
 </table>
 
-## NotificationTemplateCriteriaRecipients
+### NotificationTemplateCriteriaRecipients
 
 Represents the recipients criteria for automatically triggering a template based on platform events.
 
@@ -1132,7 +1133,7 @@ Represents the recipients criteria for automatically triggering a template based
     </tbody>
 </table>
 
-## PlatformIdentityRef
+### PlatformIdentityRef
 
 
 
@@ -1178,7 +1179,7 @@ Represents the recipients criteria for automatically triggering a template based
     </tbody>
 </table>
 
-## PlatformMetadata
+### PlatformMetadata
 
 
 
@@ -1203,7 +1204,7 @@ Represents the recipients criteria for automatically triggering a template based
     </tbody>
 </table>
 
-## PlatformObjectAudit
+### PlatformObjectAudit
 
 
 
@@ -1235,7 +1236,7 @@ Represents the recipients criteria for automatically triggering a template based
     </tbody>
 </table>
 
-## PlatformObjectEvent
+### PlatformObjectEvent
 
 
 
@@ -1267,7 +1268,7 @@ Represents the recipients criteria for automatically triggering a template based
     </tbody>
 </table>
 
-## TemplateVariantRef
+### TemplateVariantRef
 
 Represents a language-specific variant of a template.
 
@@ -1320,7 +1321,7 @@ Represents a language-specific variant of a template.
     </tbody>
 </table>
 
-## UserGroupRef
+### UserGroupRef
 
 
 

@@ -2,11 +2,12 @@
 ## OrderedParameterGroup
 
 
-
-
 ### Description
 Ordered parameter group within a form
 
+
+
+### Attributes
 
 {% include "../../../../.gitbook/includes/api-table-header.md" %}
 
@@ -15,7 +16,7 @@ Ordered parameter group within a form
         <tr>
             <th>Field</th>
             <th>Type</th>
-	        <th>Core</th>
+	        <th>Rql</th>
 	        <th>Access</th>
             <th>Description</th>
         </tr>
@@ -24,7 +25,7 @@ Ordered parameter group within a form
         <tr>
             <td><code>id</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
@@ -45,21 +46,21 @@ Ordered parameter group within a form
         <tr>
             <td><code>name</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
@@ -87,7 +88,7 @@ Ordered parameter group within a form
         <tr>
             <td><code>externalId</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td>The optional external identifier associated with the parameter group</td>
         </tr>
@@ -115,15 +116,15 @@ Ordered parameter group within a form
         <tr>
             <td><code>displayOrder</code></td>
             <td>integer</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td>The display order of this parameter group within the form</td>
         </tr></tbody>
 </table>
 
 
-Downstream models here
-## AccountRef
+## Downstream models
+### AccountRef
 
 
 
@@ -183,7 +184,7 @@ Downstream models here
     </tbody>
 </table>
 
-## OrderedParameterDefinitionRef
+### OrderedParameterDefinitionRef
 
 Ordered parameter definition within a parameter group
 
@@ -236,7 +237,7 @@ Ordered parameter definition within a parameter group
     </tbody>
 </table>
 
-## ParameterGroupAudit
+### ParameterGroupAudit
 
 
 
@@ -275,7 +276,7 @@ Ordered parameter definition within a parameter group
     </tbody>
 </table>
 
-## ParameterGroupStatistics
+### ParameterGroupStatistics
 
 Usage statistics for a parameter group
 
@@ -307,7 +308,7 @@ Usage statistics for a parameter group
     </tbody>
 </table>
 
-## PlatformIdentityRef
+### PlatformIdentityRef
 
 
 
@@ -353,7 +354,7 @@ Usage statistics for a parameter group
     </tbody>
 </table>
 
-## PlatformMetadata
+### PlatformMetadata
 
 
 
@@ -378,7 +379,7 @@ Usage statistics for a parameter group
     </tbody>
 </table>
 
-## PlatformObjectEvent
+### PlatformObjectEvent
 
 
 

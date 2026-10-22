@@ -2,11 +2,12 @@
 ## AnalyticsResult
 
 
-
-
 ### Description
 Represents analytics result data with date-based buckets and aggregated values.
 
+
+
+### Attributes
 
 {% include "../../../../.gitbook/includes/api-table-header.md" %}
 
@@ -15,7 +16,7 @@ Represents analytics result data with date-based buckets and aggregated values.
         <tr>
             <th>Field</th>
             <th>Type</th>
-	        <th>Core</th>
+	        <th>Rql</th>
 	        <th>Access</th>
             <th>Description</th>
         </tr>
@@ -38,8 +39,8 @@ Represents analytics result data with date-based buckets and aggregated values.
 </table>
 
 
-Downstream models here
-## Bucket
+## Downstream models
+### Bucket
 
 Represents a bucket for grouping analytics data.
 
@@ -92,7 +93,7 @@ Represents a bucket for grouping analytics data.
     </tbody>
 </table>
 
-## DateRange
+### DateRange
 
 Represents a date range with from and to dates.
 

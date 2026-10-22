@@ -2,11 +2,12 @@
 ## CustomLedger
 
 
-
-
 ### Description
 Represents a custom ledger in the billing system.
 
+
+
+### Attributes
 
 {% include "../../../../.gitbook/includes/api-table-header.md" %}
 
@@ -15,7 +16,7 @@ Represents a custom ledger in the billing system.
         <tr>
             <th>Field</th>
             <th>Type</th>
-	        <th>Core</th>
+	        <th>Rql</th>
 	        <th>Access</th>
             <th>Description</th>
         </tr>
@@ -38,21 +39,21 @@ Represents a custom ledger in the billing system.
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>id</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td>The unique identifier of the custom ledger</td>
         </tr>
         <tr>
             <td><code>name</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td>Name of the custom ledger</td>
         </tr>
@@ -143,8 +144,8 @@ Represents a custom ledger in the billing system.
 </table>
 
 
-Downstream models here
-## AccountRef
+## Downstream models
+### AccountRef
 
 
 
@@ -204,7 +205,7 @@ Downstream models here
     </tbody>
 </table>
 
-## BackupDetails
+### BackupDetails
 
 Represents the details of a backup operation, including its status and date.
 
@@ -236,7 +237,7 @@ Represents the details of a backup operation, including its status and date.
     </tbody>
 </table>
 
-## BillingError
+### BillingError
 
 Represents an error related to a billing entity.
 
@@ -282,7 +283,7 @@ Represents an error related to a billing entity.
     </tbody>
 </table>
 
-## BillingExternalIds
+### BillingExternalIds
 
 Represents external identifiers associated with billing entities.
 
@@ -314,7 +315,7 @@ Represents external identifiers associated with billing entities.
     </tbody>
 </table>
 
-## CustomLedgerAuditBag
+### CustomLedgerAuditBag
 
 Represents a container for audit-related events for a custom ledger
 
@@ -409,7 +410,7 @@ Represents a container for audit-related events for a custom ledger
     </tbody>
 </table>
 
-## CustomLedgerPriceSummary
+### CustomLedgerPriceSummary
 
 Represents a detailed summary of pricing for a custom ledger, including currency and totals.
 
@@ -469,7 +470,7 @@ Represents a detailed summary of pricing for a custom ledger, including currency
     </tbody>
 </table>
 
-## PlatformIdentityRef
+### PlatformIdentityRef
 
 
 
@@ -515,7 +516,7 @@ Represents a detailed summary of pricing for a custom ledger, including currency
     </tbody>
 </table>
 
-## PlatformMetadata
+### PlatformMetadata
 
 
 
@@ -540,7 +541,7 @@ Represents a detailed summary of pricing for a custom ledger, including currency
     </tbody>
 </table>
 
-## PlatformObjectEvent
+### PlatformObjectEvent
 
 
 
@@ -572,7 +573,7 @@ Represents a detailed summary of pricing for a custom ledger, including currency
     </tbody>
 </table>
 
-## PriceCurrency
+### PriceCurrency
 
 Represents the currency details for pricing, including purchase and sale values.
 
@@ -611,7 +612,7 @@ Represents the currency details for pricing, including purchase and sale values.
     </tbody>
 </table>
 
-## ProcessingSummary
+### ProcessingSummary
 
 Represents a summary of the processing status for various billing operations.
 
@@ -671,7 +672,7 @@ Represents a summary of the processing status for various billing operations.
     </tbody>
 </table>
 
-## SellerRef
+### SellerRef
 
 
 

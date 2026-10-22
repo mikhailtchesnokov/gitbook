@@ -2,11 +2,12 @@
 ## Answer
 
 
-
-
 ### Description
 A form submission within a chat, containing parameter values filled by participants
 
+
+
+### Attributes
 
 {% include "../../../../.gitbook/includes/api-table-header.md" %}
 
@@ -15,7 +16,7 @@ A form submission within a chat, containing parameter values filled by participa
         <tr>
             <th>Field</th>
             <th>Type</th>
-	        <th>Core</th>
+	        <th>Rql</th>
 	        <th>Access</th>
             <th>Description</th>
         </tr>
@@ -24,7 +25,7 @@ A form submission within a chat, containing parameter values filled by participa
         <tr>
             <td><code>id</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
@@ -45,21 +46,21 @@ A form submission within a chat, containing parameter values filled by participa
         <tr>
             <td><code>name</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
@@ -94,15 +95,15 @@ A form submission within a chat, containing parameter values filled by participa
         <tr>
             <td><code>isDeleted</code></td>
             <td>boolean</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td>Indicates whether the answer has been soft-deleted</td>
         </tr></tbody>
 </table>
 
 
-Downstream models here
-## AccountRef
+## Downstream models
+### AccountRef
 
 
 
@@ -162,7 +163,7 @@ Downstream models here
     </tbody>
 </table>
 
-## AnswerAudit
+### AnswerAudit
 
 Audit information for answer lifecycle events
 
@@ -222,7 +223,7 @@ Audit information for answer lifecycle events
     </tbody>
 </table>
 
-## AnswerParameter
+### AnswerParameter
 
 A parameter value within an answer, identified by its ParameterDefinition ID
 
@@ -317,7 +318,7 @@ system error</td>
     </tbody>
 </table>
 
-## CapacitySettings
+### CapacitySettings
 
 
 
@@ -349,7 +350,7 @@ system error</td>
     </tbody>
 </table>
 
-## Chat
+### Chat
 
 
 
@@ -444,7 +445,7 @@ system error</td>
     </tbody>
 </table>
 
-## ChatAttachmentRef
+### ChatAttachmentRef
 
 
 
@@ -497,7 +498,7 @@ system error</td>
     </tbody>
 </table>
 
-## ChatMessageRef
+### ChatMessageRef
 
 
 
@@ -550,7 +551,7 @@ system error</td>
     </tbody>
 </table>
 
-## ChatParticipantRef
+### ChatParticipantRef
 
 
 
@@ -596,7 +597,7 @@ system error</td>
     </tbody>
 </table>
 
-## ErrorDetails
+### ErrorDetails
 
 Structured error details for an answer parameter
 
@@ -628,7 +629,7 @@ Structured error details for an answer parameter
     </tbody>
 </table>
 
-## File
+### File
 
 Represents a file in the helpdesk module
 
@@ -716,7 +717,7 @@ Represents a file in the helpdesk module
     </tbody>
 </table>
 
-## Form
+### Form
 
 
 
@@ -818,7 +819,7 @@ Represents a file in the helpdesk module
     </tbody>
 </table>
 
-## FormAudit
+### FormAudit
 
 
 
@@ -871,7 +872,7 @@ Represents a file in the helpdesk module
     </tbody>
 </table>
 
-## FormStatistics
+### FormStatistics
 
 Represents usage statistics for a form.
 
@@ -903,7 +904,7 @@ Represents usage statistics for a form.
     </tbody>
 </table>
 
-## HelpdeskConstraints
+### HelpdeskConstraints
 
 Constraints specific to helpdesk parameters
 
@@ -956,7 +957,7 @@ Constraints specific to helpdesk parameters
     </tbody>
 </table>
 
-## JsonNode
+### JsonNode
 
 
 
@@ -995,7 +996,7 @@ Constraints specific to helpdesk parameters
     </tbody>
 </table>
 
-## JsonNodeOptions
+### JsonNodeOptions
 
 
 
@@ -1020,7 +1021,7 @@ Constraints specific to helpdesk parameters
     </tbody>
 </table>
 
-## OrderedParameterGroupRef
+### OrderedParameterGroupRef
 
 Ordered parameter group within a form
 
@@ -1080,7 +1081,7 @@ Ordered parameter group within a form
     </tbody>
 </table>
 
-## PlatformIdentityRef
+### PlatformIdentityRef
 
 
 
@@ -1126,7 +1127,7 @@ Ordered parameter group within a form
     </tbody>
 </table>
 
-## PlatformMetadata
+### PlatformMetadata
 
 
 
@@ -1151,7 +1152,7 @@ Ordered parameter group within a form
     </tbody>
 </table>
 
-## PlatformObjectAudit
+### PlatformObjectAudit
 
 
 
@@ -1183,7 +1184,7 @@ Ordered parameter group within a form
     </tbody>
 </table>
 
-## PlatformObjectEvent
+### PlatformObjectEvent
 
 
 

@@ -2,11 +2,12 @@
 ## Pair
 
 
-
-
 ### Description
 Represents a pair of currencies in exchange module.
 
+
+
+### Attributes
 
 {% include "../../../../.gitbook/includes/api-table-header.md" %}
 
@@ -15,7 +16,7 @@ Represents a pair of currencies in exchange module.
         <tr>
             <th>Field</th>
             <th>Type</th>
-	        <th>Core</th>
+	        <th>Rql</th>
 	        <th>Access</th>
             <th>Description</th>
         </tr>
@@ -38,42 +39,42 @@ Represents a pair of currencies in exchange module.
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>id</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td>The unique identifier of the pair</td>
         </tr>
         <tr>
             <td><code>name</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td>The name of the pair</td>
         </tr>
         <tr>
             <td><code>externalId</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td>The external id of the pair</td>
         </tr>
         <tr>
             <td><code>notes</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td>Notes for the pair</td>
         </tr>
         <tr>
             <td><code>primary</code></td>
             <td>boolean</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td>If the pair is primary</td>
         </tr>
@@ -129,8 +130,8 @@ Represents a pair of currencies in exchange module.
 </table>
 
 
-Downstream models here
-## CurrencyRef
+## Downstream models
+### CurrencyRef
 
 Represents currency in exchange module.
 
@@ -190,7 +191,7 @@ Represents currency in exchange module.
     </tbody>
 </table>
 
-## ExchangeAudit
+### ExchangeAudit
 
 Exchange Entity Audit properties bag
 
@@ -229,7 +230,7 @@ Exchange Entity Audit properties bag
     </tbody>
 </table>
 
-## PairRef
+### PairRef
 
 Represents a pair of currencies in exchange module.
 
@@ -296,7 +297,7 @@ Represents a pair of currencies in exchange module.
     </tbody>
 </table>
 
-## PlatformIdentityRef
+### PlatformIdentityRef
 
 
 
@@ -342,7 +343,7 @@ Represents a pair of currencies in exchange module.
     </tbody>
 </table>
 
-## PlatformMetadata
+### PlatformMetadata
 
 
 
@@ -367,7 +368,7 @@ Represents a pair of currencies in exchange module.
     </tbody>
 </table>
 
-## PlatformObjectEvent
+### PlatformObjectEvent
 
 
 
@@ -399,7 +400,7 @@ Represents a pair of currencies in exchange module.
     </tbody>
 </table>
 
-## Rate
+### Rate
 
 Record of rate for specific day
 
@@ -494,7 +495,7 @@ Record of rate for specific day
     </tbody>
 </table>
 
-## RateRef
+### RateRef
 
 Record of rate for specific day
 

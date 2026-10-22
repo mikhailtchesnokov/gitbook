@@ -2,11 +2,12 @@
 ## TemplateVariant
 
 
-
-
 ### Description
 Represents a language-specific variant of a template.
 
+
+
+### Attributes
 
 {% include "../../../../.gitbook/includes/api-table-header.md" %}
 
@@ -15,7 +16,7 @@ Represents a language-specific variant of a template.
         <tr>
             <th>Field</th>
             <th>Type</th>
-	        <th>Core</th>
+	        <th>Rql</th>
 	        <th>Access</th>
             <th>Description</th>
         </tr>
@@ -24,7 +25,7 @@ Represents a language-specific variant of a template.
         <tr>
             <td><code>id</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
@@ -45,7 +46,7 @@ Represents a language-specific variant of a template.
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
@@ -59,14 +60,14 @@ Represents a language-specific variant of a template.
         <tr>
             <td><code>default</code></td>
             <td>boolean</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td>Gets or sets a value indicating whether this is the default variant for the parent template</td>
         </tr>
         <tr>
             <td><code>languageCode</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td>Gets or sets the language code for this variant</td>
         </tr>
@@ -80,7 +81,7 @@ Represents a language-specific variant of a template.
         <tr>
             <td><code>status</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td>Gets or sets the current status of the variant</td>
         </tr>
@@ -94,8 +95,8 @@ Represents a language-specific variant of a template.
 </table>
 
 
-Downstream models here
-## NotificationTemplateRef
+## Downstream models
+### NotificationTemplateRef
 
 Represents a reusable template that can be used to generate messages.
 
@@ -148,7 +149,7 @@ Represents a reusable template that can be used to generate messages.
     </tbody>
 </table>
 
-## PlatformIdentityRef
+### PlatformIdentityRef
 
 
 
@@ -194,7 +195,7 @@ Represents a reusable template that can be used to generate messages.
     </tbody>
 </table>
 
-## PlatformMetadata
+### PlatformMetadata
 
 
 
@@ -219,7 +220,7 @@ Represents a reusable template that can be used to generate messages.
     </tbody>
 </table>
 
-## PlatformObjectEvent
+### PlatformObjectEvent
 
 
 
@@ -251,7 +252,7 @@ Represents a reusable template that can be used to generate messages.
     </tbody>
 </table>
 
-## TemplateVariantAudit
+### TemplateVariantAudit
 
 Represents audit information for a Mpt.Notifications.Models.NotificationTemplates.TemplateVariant.
 

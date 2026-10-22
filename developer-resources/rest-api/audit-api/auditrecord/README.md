@@ -2,14 +2,9 @@
 ## AuditRecord
 
 
-### IdPrefix 
-AUD
 
 
-
-### Description
-An Audit Record is a single, immutable log entry capturing a significant change or action on a platform object. The Audit namespace is platform-wide (preamble §4): records are produced for objects across every namespace — an [[Agreement]] update, a [[User]] login, an [[Account]] module change, and so on. Most records are generated automatically by the platform when an object event occurs, but the record can also be submitted through the API by an automation or extension that needs to log a business-critical action, including actions on objects the platform does not itself persist. Each record identifies what happened, which object it concerned, who did it, and — for public records — which accounts are permitted to see it. Every record belongs to exactly one [[Event Type]], which classifies the kind of event it represents.
-
+### Attributes
 
 {% include "../../../../.gitbook/includes/api-table-header.md" %}
 
@@ -18,7 +13,7 @@ An Audit Record is a single, immutable log entry capturing a significant change 
         <tr>
             <th>Field</th>
             <th>Type</th>
-	        <th>Core</th>
+	        <th>Rql</th>
 	        <th>Access</th>
             <th>Description</th>
         </tr>
@@ -111,8 +106,8 @@ An Audit Record is a single, immutable log entry capturing a significant change 
 </table>
 
 
-Downstream models here
-## AuditRecordApiRequest
+## Downstream models
+### AuditRecordApiRequest
 
 
 
@@ -151,7 +146,7 @@ Downstream models here
     </tbody>
 </table>
 
-## AuditRecordLogInfo
+### AuditRecordLogInfo
 
 
 
@@ -183,7 +178,7 @@ Downstream models here
     </tbody>
 </table>
 
-## AuditRecordMessageInfo
+### AuditRecordMessageInfo
 
 
 
@@ -208,7 +203,7 @@ Downstream models here
     </tbody>
 </table>
 
-## AuditRecordRequest
+### AuditRecordRequest
 
 
 
@@ -254,7 +249,7 @@ Downstream models here
     </tbody>
 </table>
 
-## AuditRecordWorkerRequest
+### AuditRecordWorkerRequest
 
 
 
@@ -279,7 +274,7 @@ Downstream models here
     </tbody>
 </table>
 
-## EventActor
+### EventActor
 
 
 
@@ -325,7 +320,7 @@ Downstream models here
     </tbody>
 </table>
 
-## EventActorAccount
+### EventActorAccount
 
 
 
@@ -371,7 +366,7 @@ Downstream models here
     </tbody>
 </table>
 
-## EventObject
+### EventObject
 
 
 
@@ -417,7 +412,7 @@ Downstream models here
     </tbody>
 </table>
 
-## EventViewer
+### EventViewer
 
 
 
@@ -463,7 +458,7 @@ Downstream models here
     </tbody>
 </table>
 
-## GeolocationData
+### GeolocationData
 
 
 
@@ -502,7 +497,7 @@ Downstream models here
     </tbody>
 </table>
 
-## JsonNode
+### JsonNode
 
 
 
@@ -541,7 +536,7 @@ Downstream models here
     </tbody>
 </table>
 
-## JsonNodeOptions
+### JsonNodeOptions
 
 
 

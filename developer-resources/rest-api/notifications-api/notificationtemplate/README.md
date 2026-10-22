@@ -2,11 +2,12 @@
 ## NotificationTemplate
 
 
-
-
 ### Description
 Represents a reusable template that can be used to generate messages.
 
+
+
+### Attributes
 
 {% include "../../../../.gitbook/includes/api-table-header.md" %}
 
@@ -15,7 +16,7 @@ Represents a reusable template that can be used to generate messages.
         <tr>
             <th>Field</th>
             <th>Type</th>
-	        <th>Core</th>
+	        <th>Rql</th>
 	        <th>Access</th>
             <th>Description</th>
         </tr>
@@ -24,7 +25,7 @@ Represents a reusable template that can be used to generate messages.
         <tr>
             <td><code>id</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
@@ -45,14 +46,14 @@ Represents a reusable template that can be used to generate messages.
         <tr>
             <td><code>name</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
@@ -87,7 +88,7 @@ Represents a reusable template that can be used to generate messages.
         <tr>
             <td><code>lastUsed</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td>Gets or sets the timestamp of when this template was last used to send a notification</td>
         </tr>
@@ -108,7 +109,7 @@ Represents a reusable template that can be used to generate messages.
         <tr>
             <td><code>status</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td>Gets or sets the current status of the template</td>
         </tr>
@@ -129,8 +130,8 @@ Represents a reusable template that can be used to generate messages.
 </table>
 
 
-Downstream models here
-## AccountRef
+## Downstream models
+### AccountRef
 
 
 
@@ -190,7 +191,7 @@ Downstream models here
     </tbody>
 </table>
 
-## CategoryRef
+### CategoryRef
 
 
 
@@ -236,7 +237,7 @@ Downstream models here
     </tbody>
 </table>
 
-## MessageStatistics
+### MessageStatistics
 
 Represents message statistics aggregated over different time periods.
 
@@ -275,7 +276,7 @@ Represents message statistics aggregated over different time periods.
     </tbody>
 </table>
 
-## NotificationTemplateAudit
+### NotificationTemplateAudit
 
 Represents audit information for a Mpt.Notifications.Models.NotificationTemplates.NotificationTemplate.
 
@@ -328,7 +329,7 @@ Represents audit information for a Mpt.Notifications.Models.NotificationTemplate
     </tbody>
 </table>
 
-## NotificationTemplateCriteria
+### NotificationTemplateCriteria
 
 Represents the criteria for automatically triggering a template based on platform events.
 
@@ -374,7 +375,7 @@ Represents the criteria for automatically triggering a template based on platfor
     </tbody>
 </table>
 
-## NotificationTemplateCriteriaRecipients
+### NotificationTemplateCriteriaRecipients
 
 Represents the recipients criteria for automatically triggering a template based on platform events.
 
@@ -399,7 +400,7 @@ Represents the recipients criteria for automatically triggering a template based
     </tbody>
 </table>
 
-## PlatformIdentityRef
+### PlatformIdentityRef
 
 
 
@@ -445,7 +446,7 @@ Represents the recipients criteria for automatically triggering a template based
     </tbody>
 </table>
 
-## PlatformMetadata
+### PlatformMetadata
 
 
 
@@ -470,7 +471,7 @@ Represents the recipients criteria for automatically triggering a template based
     </tbody>
 </table>
 
-## PlatformObjectEvent
+### PlatformObjectEvent
 
 
 
@@ -502,7 +503,7 @@ Represents the recipients criteria for automatically triggering a template based
     </tbody>
 </table>
 
-## TemplateVariantRef
+### TemplateVariantRef
 
 Represents a language-specific variant of a template.
 

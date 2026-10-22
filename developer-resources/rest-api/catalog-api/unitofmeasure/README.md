@@ -2,14 +2,9 @@
 ## UnitOfMeasure
 
 
-### IdPrefix 
-UNT (confirmed via observed real object IDs, e.g. `UNT-1593`, `UNT-3691`).
 
 
-
-### Description
-A Unit of Measure is a platform-managed reference object that describes what is being counted or measured when an [[Item]] is ordered. Vendors select a Unit of Measure when creating a Product [[Item]] to communicate the commercial unit of the Item (e.g. User, Licenses, Gigabytes). The set of available Units of Measure is maintained exclusively by Operations. Units of Measure are not Product-scoped — the same unit is available to all Vendors across all Products.
-
+### Attributes
 
 {% include "../../../../.gitbook/includes/api-table-header.md" %}
 
@@ -18,7 +13,7 @@ A Unit of Measure is a platform-managed reference object that describes what is 
         <tr>
             <th>Field</th>
             <th>Type</th>
-	        <th>Core</th>
+	        <th>Rql</th>
 	        <th>Access</th>
             <th>Description</th>
         </tr>
@@ -27,7 +22,7 @@ A Unit of Measure is a platform-managed reference object that describes what is 
         <tr>
             <td><code>id</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
@@ -48,21 +43,21 @@ A Unit of Measure is a platform-managed reference object that describes what is 
         <tr>
             <td><code>name</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>description</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
@@ -76,8 +71,8 @@ A Unit of Measure is a platform-managed reference object that describes what is 
 </table>
 
 
-Downstream models here
-## PlatformIdentityRef
+## Downstream models
+### PlatformIdentityRef
 
 
 
@@ -123,7 +118,7 @@ Downstream models here
     </tbody>
 </table>
 
-## PlatformMetadata
+### PlatformMetadata
 
 
 
@@ -148,7 +143,7 @@ Downstream models here
     </tbody>
 </table>
 
-## PlatformObjectAudit
+### PlatformObjectAudit
 
 
 
@@ -180,7 +175,7 @@ Downstream models here
     </tbody>
 </table>
 
-## PlatformObjectEvent
+### PlatformObjectEvent
 
 
 
@@ -212,7 +207,7 @@ Downstream models here
     </tbody>
 </table>
 
-## UnitOfMeasureStatistics
+### UnitOfMeasureStatistics
 
 
 

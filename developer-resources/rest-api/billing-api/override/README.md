@@ -2,11 +2,12 @@
 ## Override
 
 
-
-
 ### Description
 Represents a manual override in the billing system, allowing specific adjustments to billing processing.
 
+
+
+### Attributes
 
 {% include "../../../../.gitbook/includes/api-table-header.md" %}
 
@@ -15,7 +16,7 @@ Represents a manual override in the billing system, allowing specific adjustment
         <tr>
             <th>Field</th>
             <th>Type</th>
-	        <th>Core</th>
+	        <th>Rql</th>
 	        <th>Access</th>
             <th>Description</th>
         </tr>
@@ -87,8 +88,8 @@ Represents a manual override in the billing system, allowing specific adjustment
 </table>
 
 
-Downstream models here
-## Account
+## Downstream models
+### Account
 
 
 
@@ -232,7 +233,7 @@ Downstream models here
     </tbody>
 </table>
 
-## AccountExternalIds
+### AccountExternalIds
 
 
 
@@ -257,7 +258,7 @@ Downstream models here
     </tbody>
 </table>
 
-## Address
+### Address
 
 
 
@@ -317,7 +318,7 @@ Downstream models here
     </tbody>
 </table>
 
-## Eligibility
+### Eligibility
 
 
 
@@ -349,7 +350,7 @@ Downstream models here
     </tbody>
 </table>
 
-## ManualOverrideAuditBag
+### ManualOverrideAuditBag
 
 Represents a container for audit-related events for a manual override
 
@@ -395,7 +396,7 @@ Represents a container for audit-related events for a manual override
     </tbody>
 </table>
 
-## PlatformIdentityRef
+### PlatformIdentityRef
 
 
 
@@ -441,7 +442,7 @@ Represents a container for audit-related events for a manual override
     </tbody>
 </table>
 
-## PlatformMetadata
+### PlatformMetadata
 
 
 
@@ -466,7 +467,7 @@ Represents a container for audit-related events for a manual override
     </tbody>
 </table>
 
-## PlatformObjectAudit
+### PlatformObjectAudit
 
 
 
@@ -498,7 +499,7 @@ Represents a container for audit-related events for a manual override
     </tbody>
 </table>
 
-## PlatformObjectEvent
+### PlatformObjectEvent
 
 
 
@@ -530,7 +531,7 @@ Represents a container for audit-related events for a manual override
     </tbody>
 </table>
 
-## UserGroupRef
+### UserGroupRef
 
 
 

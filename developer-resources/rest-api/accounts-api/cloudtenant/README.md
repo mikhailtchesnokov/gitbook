@@ -5,11 +5,55 @@
 ### IdPrefix 
 CLT
 
-
-
 ### Description
 A Cloud Tenant represents a single cloud environment used for cloud-spend management — an AWS, Microsoft Azure, or Microsoft 365 subscription (CSP or EA), or an SLM or Virtual tenant — mapped onto a client [[Account]]. It is the Marketplace-side representation of a tenant that lives in SoftwareOne's legacy consumption-management system; the Marketplace object exists so that cloud-spend data can be attributed to the correct client Account and so that [[User]] access to spend data can be scoped per tenant. A Cloud Tenant does not provision or create anything in the external consumption-management system — creating one registers (maps) an already-existing consumption tenant to an Account.
 
+
+## Ownership & Visibility
+
+<table>
+  <thead>
+    <tr>
+      <th>Actor</th>
+      <th>Can Create</th>
+      <th>Can Read</th>
+      <th>Can Update</th>
+      <th>Can Delete</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Vendor</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No access to the object on this API surface — requests are rejected.</td>
+    </tr>
+    <tr>
+      <td>Operations</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Gated by the platform account-management permission. Delete is a soft-delete (see BR-009).</td>
+    </tr>
+    <tr>
+      <td>Client</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No access to the object on this API surface — requests are rejected.</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+### Attributes
 
 {% include "../../../../.gitbook/includes/api-table-header.md" %}
 
@@ -18,7 +62,7 @@ A Cloud Tenant represents a single cloud environment used for cloud-spend manage
         <tr>
             <th>Field</th>
             <th>Type</th>
-	        <th>Core</th>
+	        <th>Rql</th>
 	        <th>Access</th>
             <th>Description</th>
         </tr>
@@ -27,7 +71,7 @@ A Cloud Tenant represents a single cloud environment used for cloud-spend manage
         <tr>
             <td><code>id</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
@@ -48,14 +92,14 @@ A Cloud Tenant represents a single cloud environment used for cloud-spend manage
         <tr>
             <td><code>name</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
@@ -90,8 +134,8 @@ A Cloud Tenant represents a single cloud environment used for cloud-spend manage
 </table>
 
 
-Downstream models here
-## AccountRef
+## Downstream models
+### AccountRef
 
 
 
@@ -151,7 +195,7 @@ Downstream models here
     </tbody>
 </table>
 
-## CloudTenantExternalIds
+### CloudTenantExternalIds
 
 
 
@@ -190,7 +234,7 @@ Downstream models here
     </tbody>
 </table>
 
-## PlatformIdentityRef
+### PlatformIdentityRef
 
 
 
@@ -236,7 +280,7 @@ Downstream models here
     </tbody>
 </table>
 
-## PlatformMetadata
+### PlatformMetadata
 
 
 
@@ -261,7 +305,7 @@ Downstream models here
     </tbody>
 </table>
 
-## PlatformObjectAudit
+### PlatformObjectAudit
 
 
 
@@ -293,7 +337,7 @@ Downstream models here
     </tbody>
 </table>
 
-## PlatformObjectEvent
+### PlatformObjectEvent
 
 
 

@@ -2,11 +2,12 @@
 ## Contact
 
 
-
-
 ### Description
 Represents a notification contact who can receive email notifications.
 
+
+
+### Attributes
 
 {% include "../../../../.gitbook/includes/api-table-header.md" %}
 
@@ -15,7 +16,7 @@ Represents a notification contact who can receive email notifications.
         <tr>
             <th>Field</th>
             <th>Type</th>
-	        <th>Core</th>
+	        <th>Rql</th>
 	        <th>Access</th>
             <th>Description</th>
         </tr>
@@ -24,7 +25,7 @@ Represents a notification contact who can receive email notifications.
         <tr>
             <td><code>id</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
@@ -45,14 +46,14 @@ Represents a notification contact who can receive email notifications.
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
@@ -66,7 +67,7 @@ Represents a notification contact who can receive email notifications.
         <tr>
             <td><code>email</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
@@ -115,8 +116,8 @@ Represents a notification contact who can receive email notifications.
 </table>
 
 
-Downstream models here
-## AccountRef
+## Downstream models
+### AccountRef
 
 
 
@@ -176,7 +177,7 @@ Downstream models here
     </tbody>
 </table>
 
-## CategoryRef
+### CategoryRef
 
 
 
@@ -222,7 +223,7 @@ Downstream models here
     </tbody>
 </table>
 
-## ContactAudit
+### ContactAudit
 
 Represents audit information for a Mpt.Notifications.Models.Contacts.Contact.
 
@@ -275,7 +276,7 @@ Represents audit information for a Mpt.Notifications.Models.Contacts.Contact.
     </tbody>
 </table>
 
-## DirectoryRef
+### DirectoryRef
 
 
 
@@ -307,7 +308,7 @@ Represents audit information for a Mpt.Notifications.Models.Contacts.Contact.
     </tbody>
 </table>
 
-## NumberFormat
+### NumberFormat
 
 
 
@@ -339,7 +340,7 @@ Represents audit information for a Mpt.Notifications.Models.Contacts.Contact.
     </tbody>
 </table>
 
-## PhoneNumber
+### PhoneNumber
 
 
 
@@ -371,7 +372,7 @@ Represents audit information for a Mpt.Notifications.Models.Contacts.Contact.
     </tbody>
 </table>
 
-## PlatformIdentity
+### PlatformIdentity
 
 
 
@@ -431,7 +432,7 @@ Represents audit information for a Mpt.Notifications.Models.Contacts.Contact.
     </tbody>
 </table>
 
-## PlatformIdentityRef
+### PlatformIdentityRef
 
 
 
@@ -477,7 +478,7 @@ Represents audit information for a Mpt.Notifications.Models.Contacts.Contact.
     </tbody>
 </table>
 
-## PlatformMetadata
+### PlatformMetadata
 
 
 
@@ -502,7 +503,7 @@ Represents audit information for a Mpt.Notifications.Models.Contacts.Contact.
     </tbody>
 </table>
 
-## PlatformObjectAudit
+### PlatformObjectAudit
 
 
 
@@ -534,7 +535,7 @@ Represents audit information for a Mpt.Notifications.Models.Contacts.Contact.
     </tbody>
 </table>
 
-## PlatformObjectEvent
+### PlatformObjectEvent
 
 
 
@@ -566,7 +567,7 @@ Represents audit information for a Mpt.Notifications.Models.Contacts.Contact.
     </tbody>
 </table>
 
-## User
+### User
 
 
 
@@ -689,7 +690,7 @@ Represents audit information for a Mpt.Notifications.Models.Contacts.Contact.
     </tbody>
 </table>
 
-## UserAudit
+### UserAudit
 
 
 
@@ -728,7 +729,7 @@ Represents audit information for a Mpt.Notifications.Models.Contacts.Contact.
     </tbody>
 </table>
 
-## UserSettings
+### UserSettings
 
 
 
@@ -795,7 +796,7 @@ Represents audit information for a Mpt.Notifications.Models.Contacts.Contact.
     </tbody>
 </table>
 
-## UserSettingsOptOuts
+### UserSettingsOptOuts
 
 
 

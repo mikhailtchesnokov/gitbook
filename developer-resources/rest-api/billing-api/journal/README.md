@@ -2,14 +2,12 @@
 ## Journal
 
 
-### IdPrefix 
-BJO
-
-
-
 ### Description
-A Journal is the entry point of the platform's billing pipeline: the normalized set of billing charges a Vendor submits for one [[Authorization]] and one billing period. A Vendor creates it in the scope of a single [[Authorization]], which fixes the Vendor [[Account]], the [[Product]], the owning [[Seller]], the currency, and the submission cadence; the Vendor then uploads charge data, which the platform validates and enriches with matched commercial identities. Once the Vendor submits the Journal to SoftwareOne, the Operations Actor reviews it and either returns it to the Vendor for clarification or accepts it. Accepting a Journal rates its charges into one [[Ledger]] per Seller, and the Journal completes automatically when all of its Ledgers complete.
+Represents a journal entry in the billing system.
 
+
+
+### Attributes
 
 {% include "../../../../.gitbook/includes/api-table-header.md" %}
 
@@ -18,7 +16,7 @@ A Journal is the entry point of the platform's billing pipeline: the normalized 
         <tr>
             <th>Field</th>
             <th>Type</th>
-	        <th>Core</th>
+	        <th>Rql</th>
 	        <th>Access</th>
             <th>Description</th>
         </tr>
@@ -41,21 +39,21 @@ A Journal is the entry point of the platform's billing pipeline: the normalized 
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>id</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td>The unique identifier of the journal entry</td>
         </tr>
         <tr>
             <td><code>name</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td>Name of the journal</td>
         </tr>
@@ -118,7 +116,7 @@ A Journal is the entry point of the platform's billing pipeline: the normalized 
         <tr>
             <td><code>dueDate</code></td>
             <td>string</td>
-	        <td>✔</td>
+	        <td> ```core``` </td>
 	        <td>client,vendor,ops</td>
             <td>The due date for the journal entry</td>
         </tr>
@@ -167,8 +165,8 @@ A Journal is the entry point of the platform's billing pipeline: the normalized 
 </table>
 
 
-Downstream models here
-## AccountRef
+## Downstream models
+### AccountRef
 
 
 
@@ -228,7 +226,7 @@ Downstream models here
     </tbody>
 </table>
 
-## AuthorizationRef
+### AuthorizationRef
 
 
 
@@ -274,7 +272,7 @@ Downstream models here
     </tbody>
 </table>
 
-## BackupDetails
+### BackupDetails
 
 Represents the details of a backup operation, including its status and date.
 
@@ -306,7 +304,7 @@ Represents the details of a backup operation, including its status and date.
     </tbody>
 </table>
 
-## BillingError
+### BillingError
 
 Represents an error related to a billing entity.
 
@@ -352,7 +350,7 @@ Represents an error related to a billing entity.
     </tbody>
 </table>
 
-## BillingExternalIds
+### BillingExternalIds
 
 Represents external identifiers associated with billing entities.
 
@@ -384,7 +382,7 @@ Represents external identifiers associated with billing entities.
     </tbody>
 </table>
 
-## JournalAuditBag
+### JournalAuditBag
 
 Represents a container for audit-related events for a journal
 
@@ -493,7 +491,7 @@ Represents a container for audit-related events for a journal
     </tbody>
 </table>
 
-## JournalPriceSummary
+### JournalPriceSummary
 
 Represents a detailed summary of pricing.
 
@@ -546,7 +544,7 @@ Represents a detailed summary of pricing.
     </tbody>
 </table>
 
-## JournalUploadSummary
+### JournalUploadSummary
 
 Represents a summary of the upload status for a journal entry.
 
@@ -592,7 +590,7 @@ Represents a summary of the upload status for a journal entry.
     </tbody>
 </table>
 
-## PlatformIdentityRef
+### PlatformIdentityRef
 
 
 
@@ -638,7 +636,7 @@ Represents a summary of the upload status for a journal entry.
     </tbody>
 </table>
 
-## PlatformMetadata
+### PlatformMetadata
 
 
 
@@ -663,7 +661,7 @@ Represents a summary of the upload status for a journal entry.
     </tbody>
 </table>
 
-## PlatformObjectEvent
+### PlatformObjectEvent
 
 
 
@@ -695,7 +693,7 @@ Represents a summary of the upload status for a journal entry.
     </tbody>
 </table>
 
-## ProcessingSummary
+### ProcessingSummary
 
 Represents a summary of the processing status for various billing operations.
 
@@ -755,7 +753,7 @@ Represents a summary of the processing status for various billing operations.
     </tbody>
 </table>
 
-## ProductExternalIdBag
+### ProductExternalIdBag
 
 
 
@@ -787,7 +785,7 @@ Represents a summary of the processing status for various billing operations.
     </tbody>
 </table>
 
-## ProductRef
+### ProductRef
 
 
 
@@ -847,7 +845,7 @@ Represents a summary of the processing status for various billing operations.
     </tbody>
 </table>
 
-## SellerRef
+### SellerRef
 
 
 
