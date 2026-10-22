@@ -56,7 +56,7 @@ stateDiagram-v2
 
 
 
-## Transitions 123
+## Transitions
 
 <table>
   <thead>
