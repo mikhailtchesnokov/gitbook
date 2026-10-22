@@ -1,5 +1,5 @@
 
-## State diagram
+## Diagram
 
 
 
@@ -63,85 +63,45 @@ stateDiagram-v2
   <thead>
     <tr>
       <th>ID</th>
-      <th>From State</th>
       <th>To State</th>
-      <th>Action</th>
       <th>Endpoint / Verb</th>
-      <th>Actor</th>
-      <th>Precondition</th>
-      <th>Notes</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>T1</td>
-      <td>—</td>
       <td>Active</td>
-      <td>Create (ERP-sync reconciliation)</td>
       <td>(no endpoint — created during [[Buyer]] synchronisation)</td>
-      <td>Platform</td>
-      <td>—</td>
-      <td>ErpLinks are minted by the platform when a Buyer&#39;s Seller set is reconciled. Cannot be created Blocked.</td>
     </tr>
     <tr>
       <td>T2</td>
-      <td>Active</td>
       <td>Blocked</td>
-      <td>Block link</td>
       <td>`POST /v1/accounts/erp-links/{id}/block`</td>
-      <td>Operations</td>
-      <td>Link not Disabled; [[Buyer]] is ERP-activated; no Accounts: Licensee in Active or Enabled status on the (Buyer, Seller) pair; linked [[Seller]] not Disabled or Deleted</td>
-      <td>See BR-005. In practice driven by the ERP-sync integration reflecting an ERP-side customer block.</td>
     </tr>
     <tr>
       <td>T3</td>
-      <td>Blocked</td>
       <td>Active</td>
-      <td>Unblock link</td>
       <td>`POST /v1/accounts/erp-links/{id}/unblock`</td>
-      <td>Operations</td>
-      <td>Link not Disabled; [[Buyer]] is ERP-activated</td>
-      <td>—</td>
     </tr>
     <tr>
       <td>T4a</td>
-      <td>Active</td>
       <td>Disabled</td>
-      <td>Disable link (Seller Disabled)</td>
       <td>(no endpoint — system, at [[Buyer]] synchronisation)</td>
-      <td>Platform</td>
-      <td>Linked [[Seller]] became Disabled</td>
-      <td>Records the prior status for later restore.</td>
     </tr>
     <tr>
       <td>T4b</td>
-      <td>Blocked</td>
       <td>Disabled</td>
-      <td>Disable link (Seller Disabled)</td>
       <td>(no endpoint — system, at [[Buyer]] synchronisation)</td>
-      <td>Platform</td>
-      <td>Linked [[Seller]] became Disabled</td>
-      <td>Records the prior status for later restore.</td>
     </tr>
     <tr>
       <td>T5a</td>
-      <td>Disabled</td>
       <td>Active</td>
-      <td>Enable link (Seller no longer Disabled)</td>
       <td>(no endpoint — system, at [[Buyer]] synchronisation)</td>
-      <td>Platform</td>
-      <td>Linked [[Seller]] no longer Disabled; prior status was Active</td>
-      <td>Restores the status held before Disable.</td>
     </tr>
     <tr>
       <td>T5b</td>
-      <td>Disabled</td>
       <td>Blocked</td>
-      <td>Enable link (Seller no longer Disabled)</td>
       <td>(no endpoint — system, at [[Buyer]] synchronisation)</td>
-      <td>Platform</td>
-      <td>Linked [[Seller]] no longer Disabled; prior status was Blocked</td>
-      <td>Restores the status held before Disable.</td>
     </tr>
   </tbody>
 </table>

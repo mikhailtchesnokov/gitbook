@@ -1,5 +1,5 @@
 
-## State diagram
+## Diagram
 
 
 

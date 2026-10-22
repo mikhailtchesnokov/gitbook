@@ -1,5 +1,5 @@
 
-## State diagram
+## Diagram
 
 
 
@@ -60,65 +60,35 @@ stateDiagram-v2
   <thead>
     <tr>
       <th>ID</th>
-      <th>From State</th>
       <th>To State</th>
-      <th>Action</th>
       <th>Endpoint / Verb</th>
-      <th>Actor</th>
-      <th>Precondition</th>
-      <th>Notes</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>T1</td>
-      <td>—</td>
       <td>Enabled</td>
-      <td>Create Webhook</td>
       <td>`POST` (base collection endpoint)</td>
-      <td>Vendor, Operations</td>
-      <td>The `criteria` block must include the mandatory anchor key for the given `type` (see BR-005a)</td>
-      <td>Webhook created in Enabled state by default (BR-002).</td>
     </tr>
     <tr>
       <td>T2</td>
-      <td>Enabled</td>
       <td>Disabled</td>
-      <td>Disable Webhook</td>
       <td>`disable` (`POST .../{id}/disable`)</td>
-      <td>Vendor, Operations</td>
-      <td>None found</td>
-      <td>Webhook stops intercepting events. No queuing of missed events.</td>
     </tr>
     <tr>
       <td>T3</td>
-      <td>Disabled</td>
       <td>Enabled</td>
-      <td>Enable Webhook</td>
       <td>`enable` (`POST .../{id}/enable`)</td>
-      <td>Vendor, Operations</td>
-      <td>Same as T2 — no additional guard confirmed</td>
-      <td>Webhook resumes intercepting matching events.</td>
     </tr>
     <tr>
       <td>T4</td>
-      <td>Enabled</td>
       <td>Deleted</td>
-      <td>Delete Webhook</td>
       <td>`DELETE /{id}`</td>
-      <td>Vendor, Operations</td>
-      <td>None found</td>
-      <td>Sets the internal deletion flag (see 3.1 note); `status` value is retained but unused. Permanently removed — no longer retrievable via the API.</td>
     </tr>
     <tr>
       <td>T5</td>
-      <td>Disabled</td>
       <td>Deleted</td>
-      <td>Delete Webhook</td>
       <td>`DELETE /{id}`</td>
-      <td>Vendor, Operations</td>
-      <td>None found</td>
-      <td>Same as T4.</td>
     </tr>
   </tbody>
 </table>

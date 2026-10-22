@@ -1,5 +1,5 @@
 
-## State diagram
+## Diagram
 
 
 
@@ -62,95 +62,50 @@ stateDiagram-v2
   <thead>
     <tr>
       <th>ID</th>
-      <th>From State</th>
       <th>To State</th>
-      <th>Action</th>
       <th>Endpoint / Verb</th>
-      <th>Actor</th>
-      <th>Precondition</th>
-      <th>Notes</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>T1a</td>
-      <td>—</td>
       <td>Active</td>
-      <td>Create</td>
       <td>`POST /v1/accounts/accounts`</td>
-      <td>Operations</td>
-      <td>None</td>
-      <td>Vendor Accounts are created directly into `Active` status. No ERP validation required.</td>
     </tr>
     <tr>
       <td>T1b</td>
-      <td>—</td>
       <td>Enabled</td>
-      <td>Create</td>
       <td>`POST /v1/accounts/accounts`</td>
-      <td>Operations</td>
-      <td>None</td>
-      <td>Client and Operations Accounts are created directly into `Enabled` status.</td>
     </tr>
     <tr>
       <td>T2</td>
-      <td>Enabled</td>
       <td>Active</td>
-      <td>Activate Account</td>
       <td>`POST /v1/accounts/accounts/{id}/activate`</td>
-      <td>Operations</td>
-      <td>CDG present in `externalId` and validated against ERP</td>
-      <td>Client Accounts only — the platform rejects this action outright on Vendor or Operations Accounts.</td>
     </tr>
     <tr>
       <td>T3a</td>
-      <td>Active</td>
       <td>Disabled</td>
-      <td>Disable Account</td>
       <td>`POST /v1/accounts/accounts/{id}/disable`</td>
-      <td>Operations</td>
-      <td>Not confirmed</td>
-      <td>Applies to Vendor and Client Accounts only.</td>
     </tr>
     <tr>
       <td>T3b</td>
-      <td>Enabled</td>
       <td>Disabled</td>
-      <td>Disable Account</td>
       <td>`POST /v1/accounts/accounts/{id}/disable`</td>
-      <td>Operations</td>
-      <td>Not confirmed</td>
-      <td>Applies to Vendor and Client Accounts only.</td>
     </tr>
     <tr>
       <td>T4a</td>
-      <td>Disabled</td>
       <td>Active</td>
-      <td>Enable Account</td>
       <td>`POST /v1/accounts/accounts/{id}/enable`</td>
-      <td>Operations</td>
-      <td>Not confirmed</td>
-      <td>Reversal of T3a.</td>
     </tr>
     <tr>
       <td>T4b</td>
-      <td>Disabled</td>
       <td>Enabled</td>
-      <td>Enable Account</td>
       <td>`POST /v1/accounts/accounts/{id}/enable`</td>
-      <td>Operations</td>
-      <td>Not confirmed</td>
-      <td>Reversal of T3b.</td>
     </tr>
     <tr>
       <td>T5</td>
-      <td>Active</td>
       <td>Enabled</td>
-      <td>Deactivate Account</td>
       <td>`POST /v1/accounts/accounts/{id}/deactivate`</td>
-      <td>Operations</td>
-      <td>None confirmed</td>
-      <td>Client Accounts only — the platform rejects this action outright on Vendor or Operations Accounts. Previously undocumented.</td>
     </tr>
   </tbody>
 </table>
