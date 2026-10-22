@@ -2,6 +2,55 @@
 ## Product
 
 
+### IdPrefix 
+PRD (confirmed via `preamble/PLATFORM_CANON_PREAMBLE.md` §5.3 and observed real object IDs, e.g. `PRD-2873-8874`, `PRD-3427-4385`).
+
+### Description
+A Product is the top-level unit of a Vendor's commercial offering on the SoftwareOne Marketplace. It is the container for everything that defines what can be sold and how — [[Item]]s (orderable SKUs), [[Parameter]]s (data fields), [[Template]]s (contextual communications), [[Terms]] (acceptance requirements), [[Media]] (visual assets), and pricing via [[Price List]]s. A Product must go through a publication review before it is available to Clients. Once published, it can be made available through one or more [[Listing]]s, each of which connects the Product to a SoftwareOne [[Seller]], a currency, and an eligible Client population.
+
+
+### Ownership & Visibility
+
+<table>
+  <thead>
+    <tr>
+      <th>Actor</th>
+      <th>Can Create</th>
+      <th>Can Read</th>
+      <th>Can Update</th>
+      <th>Can Delete</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Vendor</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes — Draft state only</td>
+      <td>Primary lifecycle owner. Deletion via `DELETE /catalog/products/{id}` is Vendor-only and rejected unless the Product is in Draft state — see BR-002.</td>
+    </tr>
+    <tr>
+      <td>Operations</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Read across all states including Draft. Collaborates with Vendor to make Product publishable. Cannot delete under any circumstances.</td>
+    </tr>
+    <tr>
+      <td>Client</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Visible in Published state only. Existing-Agreement Clients retain transactional access in Unpublished state.</td>
+    </tr>
+  </tbody>
+</table>
+
+
 
 
 ### Attributes

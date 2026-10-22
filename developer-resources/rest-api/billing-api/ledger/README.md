@@ -2,8 +2,54 @@
 ## Ledger
 
 
+### IdPrefix 
+BLE
+
 ### Description
-Represents a ledger in the billing system.
+A Ledger is the per-Seller rating output of the platform's billing pipeline, sitting between the [[Journal]] and the [[Statement]] (the pipeline is Journal → Ledger → Statement). When the Operations Actor accepts a [[Journal]], the platform generates one Ledger for each [[Seller]] whose [[Charge]] entries appear in that Journal, and rates those charges into the Ledger scoped to that one Seller. A Ledger inherits its [[Authorization]], [[Product]], owning [[Seller]], and currency from its parent Journal; it carries the rated pricing roll-ups and a processing summary for its slice of the Journal's charges. Operations reviews each rated Ledger and accepts it, which produces the client-facing Statements; the Ledger then queues for ERP integration and completes automatically once all of its Statements complete. A Ledger is not created or deleted directly through the API — it exists only as a consequence of its Journal's lifecycle.
+
+
+### Ownership & Visibility
+
+<table>
+  <thead>
+    <tr>
+      <th>Actor</th>
+      <th>Can Create</th>
+      <th>Can Read</th>
+      <th>Can Update</th>
+      <th>Can Delete</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Vendor</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>The Ledger endpoint is Operations-only; a Vendor request is refused. See BR-003.</td>
+    </tr>
+    <tr>
+      <td>Operations</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>Cannot create or delete a Ledger — creation is a side effect of accepting the parent Journal, and there is no delete endpoint. Reviews, accepts, queues, and recalculates a Ledger, and may set the assignee (the only field a PUT changes — BR-004). Full field visibility.</td>
+    </tr>
+    <tr>
+      <td>Client</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>The Ledger endpoint is Operations-only; a Client request is refused. See BR-003.</td>
+    </tr>
+  </tbody>
+</table>
+
 
 
 
@@ -27,7 +73,7 @@ Represents a ledger in the billing system.
             <td>LedgerAuditBag</td>
 	        <td></td>
 	        <td></td>
-            <td>Represents a container for audit-related events for a ledger</td>
+            <td>Represents a container for audit-related events for a ledgerCreated and updated events plus a per-status event history (Rating, Error, Review, Generating, Generated, Queued, Completed).Records the timestamp and Actor for the most recent entry into each status</td>
         </tr>
         <tr>
             <td><code>$meta</code></td>
@@ -41,77 +87,77 @@ Represents a ledger in the billing system.
             <td>integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
-            <td></td>
+            <td>Monotonic revision counter.Increments on each change</td>
         </tr>
         <tr>
             <td><code>id</code></td>
             <td>string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
-            <td>The unique identifier of the ledger</td>
+            <td>The unique identifier of the ledger.Unique identifier, format `BLE-NNNN-NNNN-NNNN-NNNN`.Deterministic per (parent Journal, Seller) pair</td>
         </tr>
         <tr>
             <td><code>journal</code></td>
             <td>JournalRef</td>
 	        <td></td>
 	        <td></td>
-            <td></td>
+            <td>The parent Journal this Ledger was generated from.Fixes the Ledger's scope — see BR-002</td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>LedgerStatus</td>
 	        <td></td>
 	        <td></td>
-            <td>The current status of the ledger. Allowed values: Rating,Error,Review,Generating,Generated,Queued,Completed</td>
+            <td>The current status of the ledger.Current lifecycle state — one of the Section 3.1 states.Changes only through the Section 3.2 transitions, never by a direct field write. Allowed values: Rating,Error,Review,Generating,Generated,Queued,Completed</td>
         </tr>
         <tr>
             <td><code>authorization</code></td>
             <td>AuthorizationRef</td>
 	        <td></td>
 	        <td></td>
-            <td></td>
+            <td>The Authorization the billing is under, inherited from the Journal.Carries the currency</td>
         </tr>
         <tr>
             <td><code>owner</code></td>
             <td>SellerRef</td>
 	        <td></td>
 	        <td></td>
-            <td></td>
+            <td>The owning Seller — the parent Journal's owning Seller.See BR-002</td>
         </tr>
         <tr>
             <td><code>seller</code></td>
             <td>SellerRef</td>
 	        <td></td>
 	        <td></td>
-            <td></td>
+            <td>The Seller this Ledger is scoped to.Each distinct Seller in the Journal yields one Ledger — see BR-001</td>
         </tr>
         <tr>
             <td><code>product</code></td>
             <td>ProductRef</td>
 	        <td></td>
 	        <td></td>
-            <td></td>
+            <td>The Product being billed, inherited from the Journal.—</td>
         </tr>
         <tr>
             <td><code>assignee</code></td>
             <td>PlatformIdentityRef</td>
 	        <td></td>
 	        <td></td>
-            <td></td>
+            <td>The Operations reviewer assigned to the Ledger.The only field a PUT changes (BR-004). Operations-set only. Absent from response when null</td>
         </tr>
         <tr>
             <td><code>price</code></td>
             <td>LedgerPriceSummary</td>
 	        <td></td>
 	        <td></td>
-            <td>Pricing details associated with the ledger</td>
+            <td>Pricing details associated with the ledger.Pricing roll-up for the Ledger: currency, total purchase price (totalPP), total buyer sale price (totalBSP), markup, margin.markup and margin are Operations-only; per the schema totalPP is Vendor/Operations and totalBSP/currency are Client/Operations, but Ledger read is Operations-only by design (BR-003), so only Operations reaches them in practice. Recalculated on each rating run. See BR-010</td>
         </tr>
         <tr>
             <td><code>processing</code></td>
             <td>ProcessingSummary</td>
 	        <td></td>
 	        <td></td>
-            <td>Processing status and related details for the ledger, visible to operations</td>
+            <td>Processing status and related details for the ledger, visible to operations.Processing summary for the Ledger's charges: total, ready, error, split, skipped, ignored counts.Visible to Operations only</td>
         </tr>
         <tr>
             <td><code>error</code></td>
@@ -125,7 +171,7 @@ Represents a ledger in the billing system.
             <td>BackupDetails</td>
 	        <td></td>
 	        <td></td>
-            <td>Backup details for the ledger</td>
+            <td>Backup details for the ledger.Backup summary: status and date of the Ledger's data backup.Visible to Operations only. `status` is one of Pending, Exporting, Exported, Verifying, Completed, Failed, Skipped</td>
         </tr></tbody>
 </table>
 

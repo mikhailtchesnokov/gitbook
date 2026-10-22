@@ -2,6 +2,55 @@
 ## Listing
 
 
+### IdPrefix 
+LST
+
+### Description
+A Listing makes a [[Product]] available for purchase through a specific SoftwareOne [[Seller]] at the prices held in a specific [[Price List]], under a specific [[Authorization]]. It ties those four references together — [[Authorization]], [[Product]], [[Seller]], and [[Price List]] — and governs which Client types may transact against it through its eligibility flags. When an [[Order]] is placed without naming a Listing explicitly, the platform routes it to the primary Listing matching the ordering Client's [[Seller]], [[Product]], and eligibility. The [[Authorization]], [[Product]], [[Seller]], and [[Price List]] a Listing references are fixed at creation and cannot be changed afterward.
+
+
+### Ownership & Visibility
+
+<table>
+  <thead>
+    <tr>
+      <th>Actor</th>
+      <th>Can Create</th>
+      <th>Can Read</th>
+      <th>Can Update</th>
+      <th>Can Delete</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Vendor</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>No</td>
+      <td>A Vendor reads only Listings whose [[Product]] it owns, and receives the full object — there is no field-level suppression for the Vendor.</td>
+    </tr>
+    <tr>
+      <td>Operations</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Full access. All write operations are Operations-only. Deletion subject to BR-012.</td>
+    </tr>
+    <tr>
+      <td>Client</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Scoped read only, mediated by an eligible Listing relationship (see BR-007). Where readable, the Client sees the full object except the `statistics` block, which is suppressed. A Listing that does not satisfy the eligibility relationship is not returned at all (404).</td>
+    </tr>
+  </tbody>
+</table>
+
+
 
 
 ### Attributes
@@ -45,14 +94,14 @@
             <td>integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
-            <td></td>
+            <td>Increments on each update.Visible To: All. Read-only</td>
         </tr>
         <tr>
             <td><code>name</code></td>
             <td>string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
-            <td></td>
+            <td>System-generated. Always identical to `id`.Visible To: All. No semantic value — see BR-015</td>
         </tr>
         <tr>
             <td><code>authorization</code></td>
@@ -66,14 +115,14 @@
             <td>ProductRef</td>
 	        <td></td>
 	        <td></td>
-            <td></td>
+            <td>Reference to the Product this Listing makes available for purchase. Required on creation.Visible To: All. Determines the derived `vendor`; the Authorization and Price List must belong to it — see BR-002</td>
         </tr>
         <tr>
             <td><code>vendor</code></td>
             <td>AccountRef</td>
 	        <td></td>
 	        <td></td>
-            <td></td>
+            <td>Reference to the Vendor Account associated with this Listing.Visible To: All. Derived from the referenced Product; never independently settable — see BR-002</td>
         </tr>
         <tr>
             <td><code>seller</code></td>
@@ -94,14 +143,14 @@
             <td>boolean</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
-            <td></td>
+            <td>Marks this Listing as the primary for its Product+Seller combination and eligibility target.Visible To: All. Optional on creation — null is treated as false. See BR-009, BR-010</td>
         </tr>
         <tr>
             <td><code>notes</code></td>
             <td>string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
-            <td></td>
+            <td>Internal plain-text documentation field.Visible To: All. Optional. See BR-014</td>
         </tr>
         <tr>
             <td><code>statistics</code></td>

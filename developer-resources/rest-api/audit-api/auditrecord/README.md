@@ -3,6 +3,49 @@
 
 
 
+### Ownership & Visibility
+
+<table>
+  <thead>
+    <tr>
+      <th>Actor</th>
+      <th>Can Create</th>
+      <th>Can Read</th>
+      <th>Can Update</th>
+      <th>Can Delete</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Vendor</td>
+      <td>Yes (conditional)</td>
+      <td>Yes (linked records only)</td>
+      <td>No</td>
+      <td>No</td>
+      <td>May submit records only for objects it is already linked to as a viewer (see BR-007); submitted event names must use the extension format (BR-004). Reads only records whose account links include its own account.</td>
+    </tr>
+    <tr>
+      <td>Operations</td>
+      <td>Yes</td>
+      <td>Yes (all records)</td>
+      <td>No</td>
+      <td>No</td>
+      <td>May submit records for any object, including explicitly Private records (BR-008). Reads every record regardless of account links.</td>
+    </tr>
+    <tr>
+      <td>Client</td>
+      <td>No</td>
+      <td>Yes (linked public records only)</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Cannot submit records. Reads only public records whose account links include its own account.</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
 
 ### Attributes
 

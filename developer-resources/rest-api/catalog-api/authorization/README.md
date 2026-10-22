@@ -2,6 +2,55 @@
 ## Authorization
 
 
+### IdPrefix 
+AUT
+
+### Description
+An Authorization is the formal record of a commercial relationship between a SoftwareOne [[Seller]] and a Vendor, scoped to a specific [[Product]] and currency. It represents the contractual basis under which the Seller is permitted to transact that Product in that currency on behalf of SoftwareOne. An Authorization is a precondition for creating a [[Listing]] — no Listing can exist without an Authorization. It carries billing cadence, eligibility rules, and an optional schemaless settings blob for Vendor-specific configuration.
+
+
+### Ownership & Visibility
+
+<table>
+  <thead>
+    <tr>
+      <th>Actor</th>
+      <th>Can Create</th>
+      <th>Can Read</th>
+      <th>Can Update</th>
+      <th>Can Delete</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Vendor</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Yes*</td>
+      <td>No</td>
+      <td>Read is self-scoped to Authorizations where they are the Vendor — no field-level suppression at all; Vendor sees every field, including `notes` and `statistics`. *Vendor can only write `settings`. All other fields are Operations-managed.</td>
+    </tr>
+    <tr>
+      <td>Operations</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Full access. Creates and manages Authorizations. Deletion subject to BR-006.</td>
+    </tr>
+    <tr>
+      <td>Client</td>
+      <td>No</td>
+      <td>Yes**</td>
+      <td>No</td>
+      <td>No</td>
+      <td>**Client can query Authorizations directly (list and by-ID) — this is a real, implemented row-scoping rule, not an oversight: Client&#39;s read access is restricted to Authorizations whose [[Product]] is Published. Field visibility is nearly identical to Operations/Vendor — every field is visible except `statistics`, which is suppressed for Client only.</td>
+    </tr>
+  </tbody>
+</table>
+
+
 
 
 ### Attributes
@@ -45,14 +94,14 @@
             <td>string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
-            <td></td>
+            <td>Human-readable label for the AuthorizationVisible To: Vendor, Operations, Client. Required on creation despite the OpenAPI schema's `required` array omitting it — a spec-generation gap, not real optionality</td>
         </tr>
         <tr>
             <td><code>revision</code></td>
             <td>integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
-            <td></td>
+            <td>Increments on each updateVisible To: All. Read-only</td>
         </tr>
         <tr>
             <td><code>externalIds</code></td>
@@ -66,14 +115,14 @@
             <td>string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
-            <td></td>
+            <td>ISO 4217 currency code. The currency in which this Authorization permits the Seller to transact.Visible To: Vendor, Operations, Client. Required on creation (same spec-generation gap as `name`). Mutable via update — see BR-013. Not validated against the Owner [[Seller]]'s supported currencies at creation or update</td>
         </tr>
         <tr>
             <td><code>notes</code></td>
             <td>string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
-            <td></td>
+            <td>Internal plain-text documentation fieldVisible To: Vendor, Operations, Client — see BR-008. Optional</td>
         </tr>
         <tr>
             <td><code>product</code></td>
@@ -87,7 +136,7 @@
             <td>AccountRef</td>
 	        <td></td>
 	        <td></td>
-            <td></td>
+            <td>Reference to the Vendor Account associated with this AuthorizationVisible To: Vendor, Operations, Client. Derived from the parent [[Product]]'s own vendor Account at creation — see BR-012. Immutable</td>
         </tr>
         <tr>
             <td><code>owner</code></td>
@@ -122,7 +171,7 @@
             <td>string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
-            <td></td>
+            <td>Schemaless JSON blob for Vendor-specific configurationVisible To: Vendor, Operations, Client. Optional. Max 4,000 characters. Must be valid JSON. No schema enforced. Omitted from API responses when null — use select=+settings to include. Clear text only — not suitable for credentials</td>
         </tr></tbody>
 </table>
 

@@ -2,6 +2,55 @@
 ## Webhook
 
 
+### IdPrefix 
+WBH (confirmed via `preamble/PLATFORM_CANON_PREAMBLE.md` §5.3 and observed real object IDs, e.g. `WBH-8684-4304`).
+
+### Description
+A Webhook is an [[Account]]-owned integration hook that causes the platform to call an external HTTP endpoint when a specific platform event occurs. For the event types currently confirmed (see BR-003), this is a **synchronous validation/mutation callout**, not a fire-and-forget notification — the platform waits for the endpoint's response and applies it as a mutation (`Delta`) back onto the triggering object (e.g. [[Order]], Enrollment). Webhooks belong to an Account, not to a specific [[Product]] or other object — the object reference in a Webhook is a scoping filter that determines which single object instance's events it listens for, not a parent relationship.
+
+
+### Ownership & Visibility
+
+<table>
+  <thead>
+    <tr>
+      <th>Actor</th>
+      <th>Can Create</th>
+      <th>Can Read</th>
+      <th>Can Update</th>
+      <th>Can Delete</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Vendor</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Owns Webhooks scoped to their Account. No field suppression relative to Operations.</td>
+    </tr>
+    <tr>
+      <td>Operations</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Owns Webhooks scoped to the Operations Account. Treated as the suppression baseline (preamble &#167;5.5).</td>
+    </tr>
+    <tr>
+      <td>Client</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>A `GET` on a Webhook ID with a Client token returns `404 Not Found` (not `403`) — Clients have no visibility into this object at all, rather than a narrower field-level restriction.</td>
+    </tr>
+  </tbody>
+</table>
+
+
 
 
 ### Attributes

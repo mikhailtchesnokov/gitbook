@@ -2,8 +2,54 @@
 ## Journal
 
 
+### IdPrefix 
+BJO
+
 ### Description
-Represents a journal entry in the billing system.
+A Journal is the entry point of the platform's billing pipeline: the normalized set of billing charges a Vendor submits for one [[Authorization]] and one billing period. A Vendor creates it in the scope of a single [[Authorization]], which fixes the Vendor [[Account]], the [[Product]], the owning [[Seller]], the currency, and the submission cadence; the Vendor then uploads charge data, which the platform validates and enriches with matched commercial identities. Once the Vendor submits the Journal to SoftwareOne, the Operations Actor reviews it and either returns it to the Vendor for clarification or accepts it. Accepting a Journal rates its charges into one [[Ledger]] per Seller, and the Journal completes automatically when all of its Ledgers complete.
+
+
+### Ownership & Visibility
+
+<table>
+  <thead>
+    <tr>
+      <th>Actor</th>
+      <th>Can Create</th>
+      <th>Can Read</th>
+      <th>Can Update</th>
+      <th>Can Delete</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Vendor</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Creates the Journal, uploads charge data, and submits it to SoftwareOne. Cannot see sell-side pricing (markup, margin, total sale price), the processing summary, or the backup summary. Delete is state-guarded — see BR-011.</td>
+    </tr>
+    <tr>
+      <td>Operations</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>Cannot create or delete a Journal. Reviews and adjudicates a submitted Journal — return to vendor (enquiry), accept, regenerate, recalculate, reset — and may re-upload charge data. Full field visibility.</td>
+    </tr>
+    <tr>
+      <td>Client</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>A Journal is never readable by the Client Actor (BR-015); client-facing billing figures surface downstream via the Statement, not the Journal.</td>
+    </tr>
+  </tbody>
+</table>
+
 
 
 
@@ -27,7 +73,7 @@ Represents a journal entry in the billing system.
             <td>JournalAuditBag</td>
 	        <td></td>
 	        <td></td>
-            <td>Represents a container for audit-related events for a journal</td>
+            <td>Represents a container for audit-related events for a journalCreated/updated events plus a per-status event history (Draft, Validating, Validated, Error, Review, Enquiring, Generating, Generated, Accepted, Completed, Deleted).—</td>
         </tr>
         <tr>
             <td><code>$meta</code></td>
@@ -41,28 +87,28 @@ Represents a journal entry in the billing system.
             <td>integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
-            <td></td>
+            <td>Monotonic revision counter.Increments on each change</td>
         </tr>
         <tr>
             <td><code>id</code></td>
             <td>string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
-            <td>The unique identifier of the journal entry</td>
+            <td>The unique identifier of the journal entry.Unique identifier, format `BJO-NNNN-NNNN`.—</td>
         </tr>
         <tr>
             <td><code>name</code></td>
             <td>string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
-            <td>Name of the journal</td>
+            <td>Name of the journal.Human-readable Journal name.Required at creation</td>
         </tr>
         <tr>
             <td><code>description</code></td>
             <td>string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
-            <td>A description of the journal entry</td>
+            <td>A description of the journal entry.Free-text description of the Journal.Absent from response when null</td>
         </tr>
         <tr>
             <td><code>externalIds</code></td>
@@ -76,77 +122,77 @@ Represents a journal entry in the billing system.
             <td>string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
-            <td>Additional notes or comments about the journal entry</td>
+            <td>Additional notes or comments about the journal entry.Additional notes or comments.Absent from response when null</td>
         </tr>
         <tr>
             <td><code>status</code></td>
             <td>JournalStatus</td>
 	        <td></td>
 	        <td></td>
-            <td>The current status of the journal entry. Allowed values: Draft,Deleted,Error,Validating,Validated,Review,Reconciling,Enquiring,Generating,Generated,Accepted,Queued,Completed,Resetting</td>
+            <td>The current status of the journal entry.Current lifecycle state — one of the Section 3.1 states.Changes only through the Section 3.2 transitions, never by a direct field write. Allowed values: Draft,Deleted,Error,Validating,Validated,Review,Reconciling,Enquiring,Generating,Generated,Accepted,Queued,Completed,Resetting</td>
         </tr>
         <tr>
             <td><code>vendor</code></td>
             <td>AccountRef</td>
 	        <td></td>
 	        <td></td>
-            <td></td>
+            <td>The Vendor Account.Derived from the Authorization</td>
         </tr>
         <tr>
             <td><code>owner</code></td>
             <td>SellerRef</td>
 	        <td></td>
 	        <td></td>
-            <td></td>
+            <td>The owning Seller — always the Authorization's Seller.The Journal's charges may span multiple Sellers, each of which yields a Ledger on accept</td>
         </tr>
         <tr>
             <td><code>product</code></td>
             <td>ProductRef</td>
 	        <td></td>
 	        <td></td>
-            <td></td>
+            <td>The Product being billed.Derived from the Authorization</td>
         </tr>
         <tr>
             <td><code>authorization</code></td>
             <td>AuthorizationRef</td>
 	        <td></td>
 	        <td></td>
-            <td></td>
+            <td>The Authorization the Journal is billed under.Required at creation; fixes vendor, product, owner, and currency — see BR-001</td>
         </tr>
         <tr>
             <td><code>dueDate</code></td>
             <td>string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
-            <td>The due date for the journal entry</td>
+            <td>The due date for the journal entry.The billing due date for the period.Cadence is defined by the Authorization</td>
         </tr>
         <tr>
             <td><code>assignee</code></td>
             <td>PlatformIdentityRef</td>
 	        <td></td>
 	        <td></td>
-            <td></td>
+            <td>The Operations reviewer assigned to the Journal.Operations-set only. Absent from response when null</td>
         </tr>
         <tr>
             <td><code>price</code></td>
             <td>JournalPriceSummary</td>
 	        <td></td>
 	        <td></td>
-            <td>Pricing details associated with the journal entry</td>
+            <td>Pricing details associated with the journal entry.Pricing summary: currency, total purchase price (totalPP), total sale price in buyer currency (totalBSP), markup, margin.markup and margin are Operations-only; totalBSP is not visible to the Vendor; totalPP and currency are visible to the Vendor. Recalculated on each processing run. See BR-014</td>
         </tr>
         <tr>
             <td><code>upload</code></td>
             <td>JournalUploadSummary</td>
 	        <td></td>
 	        <td></td>
-            <td>Upload summary details for the journal entry, visible to vendors or operations</td>
+            <td>Upload summary details for the journal entry, visible to vendors or operations.Upload summary: total, split, ready, error counts from the latest upload.Visible to Vendor and Operations</td>
         </tr>
         <tr>
             <td><code>processing</code></td>
             <td>ProcessingSummary</td>
 	        <td></td>
 	        <td></td>
-            <td>Processing status and related details for the journal entry, visible to operations</td>
+            <td>Processing status and related details for the journal entry, visible to operations.Processing summary: total, ready, error, split, skipped, ignored counts.Visible to Operations only; omitted for the Vendor</td>
         </tr>
         <tr>
             <td><code>error</code></td>
@@ -160,7 +206,7 @@ Represents a journal entry in the billing system.
             <td>BackupDetails</td>
 	        <td></td>
 	        <td></td>
-            <td>Backup details for the journal</td>
+            <td>Backup details for the journal.Backup summary: status and date of the Journal's data backup.Visible to Operations only</td>
         </tr></tbody>
 </table>
 

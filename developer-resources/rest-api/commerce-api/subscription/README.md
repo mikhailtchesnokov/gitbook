@@ -2,6 +2,55 @@
 ## Subscription
 
 
+### IdPrefix 
+SUB
+
+### Description
+A Subscription is the platform's record of a recurring fulfilment relationship between a Client and a Vendor for a specific Item under a Commerce [[Agreement]]. Subscriptions are owned by the Vendor — the Vendor creates and maintains them as the authoritative fulfilment record — while SoftwareOne (Operations) owns the parent [[Agreement]]. A Subscription is created during [[Order]] processing and promoted to a live record when the Purchase or Change [[Order]] completes, or created directly by the Vendor for migration and edge-case scenarios. Subscriptions carry their own parameters, pricing, terms, and rendered [[Template]], and are renewed or expired automatically by the platform's daily renewal service. A Subscription can also be suspended and resumed.
+
+
+### Ownership & Visibility
+
+<table>
+  <thead>
+    <tr>
+      <th>Actor</th>
+      <th>Can Create</th>
+      <th>Can Read</th>
+      <th>Can Update</th>
+      <th>Can Delete</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Vendor</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>Creates Subscriptions directly (migration/edge cases) or via [[Order]] processing. Updates `name`, `template`, `autoRenew`, `commitmentDate`, `parameters.fulfillment`, `externalIds.vendor`. Terminates, suspends, and resumes via dedicated endpoints. Read is scoped to Subscriptions on [[Agreement]]s where they are the Vendor (BR-020).</td>
+    </tr>
+    <tr>
+      <td>Operations</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>Updates `commitmentDate` and `price.defaultMarkup` (only while Active or Suspended), and manages Split Billing via the `/split` endpoint. Suspend and resume Orders are Operations-driven. Read is not self-scoped — Operations sees all Subscriptions platform-wide.</td>
+    </tr>
+    <tr>
+      <td>Client</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>Updates `name` and `externalIds.client`. Cannot create, terminate, suspend, resume, or delete. Read is scoped to Subscriptions on [[Agreement]]s belonging to their own [[Account]] (BR-020).</td>
+    </tr>
+  </tbody>
+</table>
+
+
 
 
 ### Attributes
@@ -475,7 +524,7 @@
 
 ### Agreement
 
-
+An Agreement is the platform's record of the ongoing commercial relationship between a Client and a Vendor for a specific Catalog: [[Product]]. It is the container for all [[Subscription]]s, [[Asset]]s, Lines ([[Entitlement]]s), and Commerce: [[Order]]s associated with that relationship, and it carries the relationship's own Agreement-scoped parameter state. An Agreement is normally co-created by the platform when a Purchase [[Order]] is first persisted, and thereafter its lifecycle is driven by the state transitions of its Orders and Subscriptions — from Draft through Active to the terminal states Terminated, Failed, or Deleted. Operations can additionally create an Agreement directly, outside the Order flow, for reconciliation and back-office scenarios.
 
 <table data-search="false">
     <thead>
@@ -1196,7 +1245,7 @@
 
 ### Asset
 
-
+An Asset is the platform's record of a one-time purchase fulfilment for a Client under a specific [[Agreement]]. Assets represent [[Item]]s billed once rather than on a recurring schedule — as opposed to [[Subscription]]s, which represent recurring Items. Like Subscriptions, Assets are owned by the Vendor. They are created during [[Order]] Processing as an OrderAsset (a temporary representation scoped to the Order) and promoted to a live Asset when the Purchase or Change Order completes, retaining the same ID. The Vendor may also create Assets directly without an Order for migration and edge-case scenarios — this direct-creation path requires at least one Line and requires the parent Agreement to be in New, Draft, or Active status. Assets carry their own parameters, pricing, template, and Lines, but unlike Subscriptions have no renewal service, no commitment date, and no expiry path. A Terminated Asset has no effect on its parent Agreement's status — Active Assets can exist under Terminated Agreements.
 
 <table data-search="false">
     <thead>
@@ -2450,7 +2499,7 @@
 
 ### Order
 
-
+An Order is the platform's record of a request to create, modify, configure, terminate, suspend, or resume the commercial relationship between a Client and a Vendor for a specific [[Product]]. Every Order exists within the scope of an [[Agreement]] and carries a type — Purchase, Change, Configuration, Termination, Suspend, or Resume — that defines the nature of the requested change. Purchase, Change, Configuration, and Termination Orders are created and placed by the Client Actor; Suspend and Resume Orders are created and placed by Operations and act on existing [[Subscription]]s. All Order types are fulfilled by the Vendor, driving coupled state transitions on the [[Agreement]] and its associated [[Subscription]]s and [[Asset]]s. An Order moves through a defined lifecycle from Draft to a terminal state of Completed, Failed, or Deleted.
 
 <table data-search="false">
     <thead>
