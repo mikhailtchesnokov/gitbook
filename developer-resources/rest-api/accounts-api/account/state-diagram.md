@@ -5,13 +5,12 @@
 
 ```mermaid
 stateDiagram-v2
-    direction TB
-    Enabled --> Active : Activate : Operations (Client Accounts only — CDG ERP-validated)
-    Active --> Enabled : Deactivate : Operations (Client Accounts only)
-    Active --> Disabled : Disable : Operations (Vendor and Client Accounts only)
-    Enabled --> Disabled : Disable : Operations (Vendor and Client Accounts only)
-    Disabled --> Active : Enable : Operations (reversal)
-    Disabled --> Enabled : Enable : Operations (reversal)
+    Enabled --> Active : Activate : Operations
+    Active --> Enabled : Deactivate : Operations
+    Active --> Disabled : Disable : Operations
+    Enabled --> Disabled : Disable : Operations
+    Disabled --> Active : Enable : Operations
+    Disabled --> Enabled : Enable : Operations
 ```
 
 

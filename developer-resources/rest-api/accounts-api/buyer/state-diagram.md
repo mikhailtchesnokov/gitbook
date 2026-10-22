@@ -10,14 +10,14 @@ stateDiagram-v2
     [*] --> Enabled : Create, Account, no ERP IDs
     [*] --> Active : Create, Account + ERP IDs
     %% Action-driven transitions:
-    Unassigned --> Active : Assign Account (→ Enabled if no ERP IDs)
+    Unassigned --> Active : Assign Account
     Active --> Unassigned : Unassign Account
     Disabled --> Unassigned : Unassign Account
     Mismatch --> Unassigned : Unassign Account
     Enabled --> Active : Activate
     Active --> Disabled : Disable
     Enabled --> Disabled : Disable
-    Disabled --> Active : Enable (re-derived: Active / Enabled / Unassigned)
+    Disabled --> Active : Enable
     Unassigned --> Deleted : Delete, soft
     Enabled --> Deleted : Delete, soft
     Active --> Deleted : Delete, soft

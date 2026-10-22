@@ -10,7 +10,7 @@ stateDiagram-v2
     Active --> Suspended : Vendor suspends directly : Vendor
     Active --> Suspending : Suspend Order placed : Platform
     Active --> Expired : Renewal service, not renewed : Platform
-    Active --> Active : Renewal service, renewed : Platform (commitmentDate advanced)
+    Active --> Active : Renewal service, renewed : Platform
     Active --> Terminated : Vendor terminates directly : Vendor
     Updating --> Active : Order completed or failed : Platform
     Terminating --> Terminated : Termination Order completed : Platform

@@ -11,10 +11,10 @@ stateDiagram-v2
     InvitationExpired --> Disabled
     Disabled --> Active : re-added
     Disabled --> Invited : re-added
-    Invited --> Blocked : Block | (Delete, from Disabled only)
-    InvitationExpired --> Blocked : Block | (Delete, from Disabled only)
-    Active --> Blocked : Block | (Delete, from Disabled only)
-    Disabled --> Blocked : Block | (Delete, from Disabled only)
+    Invited --> Blocked : Block |
+    InvitationExpired --> Blocked : Block |
+    Active --> Blocked : Block |
+    Disabled --> Blocked : Block |
     Blocked --> Active : Unblock: recalculated
     Blocked --> Invited : Unblock: recalculated
     Blocked --> InvitationExpired : Unblock: recalculated
