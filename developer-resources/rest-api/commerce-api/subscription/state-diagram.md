@@ -12,26 +12,26 @@ The diagrams show different transitions depending on whether the account is a Cl
 
 ```mermaid
 stateDiagram-v2
-    Active --> Updating : Change/Configuration Order placed : Platform
-    Active --> Terminating : Termination Order placed : Platform
-    Active --> Suspended : Vendor suspends directly : Vendor
-    Active --> Suspending : Suspend Order placed : Platform
-    Active --> Expired : Renewal service, not renewed : Platform
-    Active --> Active : Renewal service, renewed : Platform
-    Active --> Terminated : Vendor terminates directly : Vendor
-    Updating --> Active : Order completed or failed : Platform
-    Terminating --> Terminated : Termination Order completed : Platform
-    Terminating --> Active : Termination Order failed : Platform )
-    Terminating --> Suspended : Termination Order failed : Platform )
-    Suspending --> Suspended : Suspend Order completed : Platform
-    Suspending --> Active : Suspend Order failed : Platform
-    Suspended --> Active : Vendor resumes directly : Vendor
-    Suspended --> Resuming : Resume Order placed : Platform
-    Suspended --> Terminating : Termination Order placed : Platform
-    Suspended --> Terminated : Vendor terminates directly : Vendor
-    Suspended --> Expired : Renewal service, not renewed : Platform
-    Resuming --> Active : Resume Order completed : Platform
-    Resuming --> Suspended : Resume Order failed : Platform
+    Active --> Updating : ChangeConfigurationOrderPlaced
+    Active --> Terminating : TerminationOrderPlaced
+    Active --> Suspended : VendorSuspendsDirectly
+    Active --> Suspending : SuspendOrderPlaced
+    Active --> Expired : RenewalServiceNotRenewed
+    Active --> Active : RenewalServiceRenewed
+    Active --> Terminated : VendorTerminatesDirectly
+    Updating --> Active : OrderCompletedOrFailed
+    Terminating --> Terminated : TerminationOrderCompleted
+    Terminating --> Active : TerminationOrderFailed
+    Terminating --> Suspended : TerminationOrderFailed
+    Suspending --> Suspended : SuspendOrderCompleted
+    Suspending --> Active : SuspendOrderFailed
+    Suspended --> Active : VendorResumesDirectly
+    Suspended --> Resuming : ResumeOrderPlaced
+    Suspended --> Terminating : TerminationOrderPlaced
+    Suspended --> Terminated : VendorTerminatesDirectly
+    Suspended --> Expired : RenewalServiceNotRenewed
+    Resuming --> Active : ResumeOrderCompleted
+    Resuming --> Suspended : ResumeOrderFailed
 ```
 
 

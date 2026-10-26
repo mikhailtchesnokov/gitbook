@@ -12,12 +12,12 @@ The diagrams show different transitions depending on whether the account is a Cl
 
 ```mermaid
 stateDiagram-v2
-    Draft --> Pending : review : Vendor
-    Draft --> Deleted : DELETE /{id} : Vendor
-    Pending --> Published : publish : Operations
-    Published --> Unpublished : unpublish : Vendor, Operations
-    Unpublished --> Published : publish : Operations
-    Unpublished --> Pending : review : Vendor
+    Draft --> Pending : Review
+    Draft --> Deleted : DELETEId
+    Pending --> Published : Publish
+    Published --> Unpublished : Unpublish
+    Unpublished --> Published : Publish
+    Unpublished --> Pending : Review
 ```
 
 

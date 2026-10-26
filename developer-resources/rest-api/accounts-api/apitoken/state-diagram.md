@@ -12,7 +12,7 @@ The diagrams show different transitions depending on whether the account is a Cl
 
 ```mermaid
 stateDiagram-v2
-    [*] --> Active : Create : Actor w/ Access Management
+    [*] --> Active : Create
     Active --> Disabled : Disable
     Disabled --> Active : Enable
     Active --> Deleted : Delete

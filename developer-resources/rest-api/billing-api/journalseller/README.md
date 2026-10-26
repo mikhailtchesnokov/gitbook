@@ -4,7 +4,7 @@
 
 ### Description
 Represents a seller associated with a journal entry in the billing system.
-
+ 
 
 
 ### Attributes

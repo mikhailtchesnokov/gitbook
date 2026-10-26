@@ -12,20 +12,20 @@ The diagrams show different transitions depending on whether the account is a Cl
 
 ```mermaid
 stateDiagram-v2
-    [*] --> New : Create identity
-    New --> Invited : invited
-    Invited --> Active : membership activated
+    [*] --> New : CreateIdentity
+    New --> Invited : Invited
+    Invited --> Active : MembershipActivated
     InvitationExpired --> Disabled
-    Disabled --> Active : re-added
-    Disabled --> Invited : re-added
-    Invited --> Blocked : Block |
-    InvitationExpired --> Blocked : Block |
-    Active --> Blocked : Block |
-    Disabled --> Blocked : Block |
-    Blocked --> Active : Unblock: recalculated
-    Blocked --> Invited : Unblock: recalculated
-    Blocked --> InvitationExpired : Unblock: recalculated
-    Blocked --> Disabled : Unblock: recalculated
+    Disabled --> Active : ReAdded
+    Disabled --> Invited : ReAdded
+    Invited --> Blocked : Block
+    InvitationExpired --> Blocked : Block
+    Active --> Blocked : Block
+    Disabled --> Blocked : Block
+    Blocked --> Active : Unblock
+    Blocked --> Invited : Unblock
+    Blocked --> InvitationExpired : Unblock
+    Blocked --> Disabled : Unblock
 ```
 
 

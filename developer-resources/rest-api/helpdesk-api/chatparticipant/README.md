@@ -1,7 +1,7 @@
 
 ## ChatParticipant
 
-
+ 
 
 
 ### Attributes

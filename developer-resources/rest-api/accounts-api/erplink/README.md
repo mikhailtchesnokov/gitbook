@@ -49,8 +49,42 @@ An ErpLink is the join record that relates one [[Buyer]] to one [[Seller]] — t
     </tr>
   </tbody>
 </table>
+### Example
+{% code title="ErpLink" overflow="wrap" lineNumbers="true" %}
+```json
+{
+  "id": "ERP-0808-7934-2576",
+  "revision": 2,
+  "name": "AGCO Corporation - SoftwareONE Argentina",
+  "status": "Active",
+  "companyName": "AGCO Corporation",
+  "buyer": {
+    "id": "BUY-0808-7934",
+    "name": "AGCO Corporation"
+  },
+  "seller": {
+    "id": "SEL-1968-2576",
+    "name": "SoftwareONE Argentina",
+    "icon": "/v1/accounts/sellers/SEL-1968-2576/icon"
+  },
+  "externalIds": {
+    "erpCompanyContact": "US-CON-183485",
+    "erpCustomer": "US-SCU-117126",
+    "accountExternalId": "WW-100502"
+  },
+  "address": {
+    "addressLine1": "4205 River Green Pkwy",
+    "postCode": "30096",
+    "city": "DULUTH",
+    "state": "GA",
+    "country": "US"
+  }
+}
+```
+{% code %}
 
 
+ 
 
 
 ### Attributes

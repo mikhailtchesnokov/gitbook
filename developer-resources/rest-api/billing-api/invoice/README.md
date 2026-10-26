@@ -50,7 +50,7 @@ An Invoice is the Marketplace's own record of a client-facing billing document g
   </tbody>
 </table>
 
-
+ 
 
 
 ### Attributes

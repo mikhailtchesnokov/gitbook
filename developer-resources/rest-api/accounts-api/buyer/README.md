@@ -50,7 +50,7 @@ A Buyer is the platform's record of a customer entity as it exists in SoftwareOn
   </tbody>
 </table>
 
-
+ 
 
 
 ### Attributes

@@ -50,7 +50,7 @@ A Ledger is the per-Seller rating output of the platform's billing pipeline, sit
   </tbody>
 </table>
 
-
+ 
 
 
 ### Attributes

@@ -4,7 +4,7 @@
 
 ### Description
 Represents a language-specific variant of a template.
-
+ 
 
 
 ### Attributes

@@ -13,7 +13,7 @@ The diagrams show different transitions depending on whether the account is a Cl
 ```mermaid
 stateDiagram-v2
     Review --> Error
-    Generating --> Review : system, statement failure
+    Generating --> Review : SystemStatementFailure
 ```
 
 

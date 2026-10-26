@@ -4,7 +4,7 @@
 
 ### Description
 Represents a notification contact who can receive email notifications.
-
+ 
 
 
 ### Attributes

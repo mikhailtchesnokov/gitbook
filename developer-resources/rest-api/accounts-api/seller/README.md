@@ -49,8 +49,48 @@ A Seller is a SoftwareOne legal entity registered in the SoftwareOne Marketplace
     </tr>
   </tbody>
 </table>
+### Example
+{% code title="Seller" overflow="wrap" lineNumbers="true" %}
+```json
+{
+  "id": "SEL-7295-4834",
+  "revision": 1,
+  "name": "SoftwareOne AG",
+  "externalId": "SWO_CH",
+  "status": "Active",
+  "currencies": [
+    "USD"
+  ],
+  "address": {
+    "addressLine1": "Some street",
+    "addressLine2": "Apt 4B",
+    "postCode": "P0S C0D3",
+    "city": "Some city",
+    "state": "SS",
+    "country": "CH"
+  },
+  "audit": {
+    "created": {
+      "at": "2024-02-01T09:12:23.0000000+00:00",
+      "by": {
+        "id": "USR-0001",
+        "name": "Ops User"
+      }
+    },
+    "updated": {
+      "at": "2024-02-01T09:12:23.0000000+00:00",
+      "by": {
+        "id": "USR-0001",
+        "name": "Ops User"
+      }
+    }
+  }
+}
+```
+{% code %}
 
 
+ 
 
 
 ### Attributes

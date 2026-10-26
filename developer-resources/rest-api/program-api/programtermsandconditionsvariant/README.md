@@ -1,7 +1,7 @@
 
 ## ProgramTermsAndConditionsVariant
 
-
+ 
 
 
 ### Attributes

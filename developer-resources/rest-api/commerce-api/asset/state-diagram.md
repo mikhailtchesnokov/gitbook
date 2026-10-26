@@ -12,7 +12,7 @@ The diagrams show different transitions depending on whether the account is a Cl
 
 ```mermaid
 stateDiagram-v2
-    Active --> Terminated : Vendor terminates directly : Vendor
+    Active --> Terminated : VendorTerminatesDirectly
 ```
 
 

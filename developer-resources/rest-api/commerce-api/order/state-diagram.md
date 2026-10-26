@@ -12,18 +12,18 @@ The diagrams show different transitions depending on whether the account is a Cl
 
 ```mermaid
 stateDiagram-v2
-    Draft --> Draft : Update Order : Client, Operations
-    Draft --> Quoted : Quote Order : Client
-    Draft --> Quoted : Operations updates a Draft Order : Operations
-    Draft --> Processing : Place Order : Client
-    Draft --> Deleted : Delete Order : Client, Vendor, Operations
-    Quoted --> Processing : Place Order : Client
-    Quoted --> Deleted : Delete Order : Client, Vendor, Operations
-    Processing --> Completed : Complete Order : Vendor
-    Processing --> Failed : Fail Order : Vendor, Operations
-    Processing --> Querying : Move to Querying : Vendor
-    Querying --> Processing : Return to Processing : Client, Vendor, Operations
-    Querying --> Failed : Fail Order : Operations
+    Draft --> Draft : UpdateOrder
+    Draft --> Quoted : QuoteOrder
+    Draft --> Quoted : OperationsUpdatesADraftOrder
+    Draft --> Processing : PlaceOrder
+    Draft --> Deleted : DeleteOrder
+    Quoted --> Processing : PlaceOrder
+    Quoted --> Deleted : DeleteOrder
+    Processing --> Completed : CompleteOrder
+    Processing --> Failed : FailOrder
+    Processing --> Querying : MoveToQuerying
+    Querying --> Processing : ReturnToProcessing
+    Querying --> Failed : FailOrder
 ```
 
 

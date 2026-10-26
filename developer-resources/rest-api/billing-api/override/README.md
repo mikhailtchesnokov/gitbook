@@ -4,7 +4,7 @@
 
 ### Description
 Represents a manual override in the billing system, allowing specific adjustments to billing processing.
-
+ 
 
 
 ### Attributes

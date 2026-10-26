@@ -4,7 +4,7 @@
 
 ### Description
 Record of rate for specific day
-
+ 
 
 
 ### Attributes

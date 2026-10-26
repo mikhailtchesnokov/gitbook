@@ -12,13 +12,13 @@ The diagrams show different transitions depending on whether the account is a Cl
 
 ```mermaid
 stateDiagram-v2
-    Draft --> Provisioning : Purchase Order placed : Platform
-    Draft --> Deleted : Purchase Order deleted : Platform
-    Provisioning --> Active : Purchase Order completed : Platform
-    Provisioning --> Failed : Purchase Order failed : Platform
-    Active --> Updating : Change/Configuration/Termination Order placed : Platform
-    Updating --> Active : Order completed or failed : Platform
-    Active --> Terminated : All Subscriptions terminated : Platform
+    Draft --> Provisioning : PurchaseOrderPlaced
+    Draft --> Deleted : PurchaseOrderDeleted
+    Provisioning --> Active : PurchaseOrderCompleted
+    Provisioning --> Failed : PurchaseOrderFailed
+    Active --> Updating : ChangeConfigurationTerminationOrderPlaced
+    Updating --> Active : OrderCompletedOrFailed
+    Active --> Terminated : AllSubscriptionsTerminated
 ```
 
 

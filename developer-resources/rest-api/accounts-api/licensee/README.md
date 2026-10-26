@@ -49,8 +49,37 @@ A Licensee represents a specific pairing of a customer legal entity and a Softwa
     </tr>
   </tbody>
 </table>
+### Example
+{% code title="Licensee" overflow="wrap" lineNumbers="true" %}
+```json
+{
+  "id": "LCE-8893-6916-0000",
+  "revision": 1,
+  "name": "Rolls-Royce Canada Limited",
+  "status": "Active",
+  "icon": "/static/accounts/LCE-8893-6916-0000/logo.png",
+  "audit": {
+    "created": {
+      "at": "2024-02-01T09:12:23.0000000+00:00",
+      "by": {
+        "id": "USR-0001",
+        "name": "Ops User"
+      }
+    },
+    "updated": {
+      "at": "2024-02-01T09:12:23.0000000+00:00",
+      "by": {
+        "id": "USR-0001",
+        "name": "Ops User"
+      }
+    }
+  }
+}
+```
+{% code %}
 
 
+ 
 
 
 ### Attributes

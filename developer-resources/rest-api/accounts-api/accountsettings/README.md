@@ -4,7 +4,7 @@
 
 ### Description
 Represents account-specific notification settings.
-
+ 
 
 
 ### Attributes

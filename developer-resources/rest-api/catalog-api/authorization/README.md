@@ -50,7 +50,7 @@ An Authorization is the formal record of a commercial relationship between a Sof
   </tbody>
 </table>
 
-
+ 
 
 
 ### Attributes

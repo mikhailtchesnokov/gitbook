@@ -13,15 +13,15 @@ The diagrams show different transitions depending on whether the account is a Cl
 ```mermaid
 stateDiagram-v2
     state "Active | Enabled | Disabled" as Active_Enabled_Disabled
-    [*] --> Active : create, Buyer Active : Client/Operations
-    [*] --> Enabled : create, Buyer Enabled : Client/Operations
-    Enabled --> Active : Buyer becomes Active : Platform
-    Active --> Enabled : Buyer becomes Enabled : Platform
-    Active --> Disabled : disable : Client/Operations/Platform
-    Enabled --> Disabled : disable : Client/Operations/Platform
-    Disabled --> Active : enable, Buyer Active : Client/Operations
-    Disabled --> Enabled : enable, Buyer Enabled : Client/Operations
-    Active_Enabled_Disabled --> Deleted : delete : Client/Operations
+    [*] --> Active : CreateBuyerActive
+    [*] --> Enabled : CreateBuyerEnabled
+    Enabled --> Active : BuyerBecomesActive
+    Active --> Enabled : BuyerBecomesEnabled
+    Active --> Disabled : Disable
+    Enabled --> Disabled : Disable
+    Disabled --> Active : EnableBuyerActive
+    Disabled --> Enabled : EnableBuyerEnabled
+    Active_Enabled_Disabled --> Deleted : Delete
     Deleted --> [*]
 ```
 

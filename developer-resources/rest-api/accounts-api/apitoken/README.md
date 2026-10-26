@@ -49,8 +49,50 @@ An API Token is a non-human authentication credential used to call the platform 
     </tr>
   </tbody>
 </table>
+### Example
+{% code title="ApiToken" overflow="wrap" lineNumbers="true" %}
+```json
+{
+  "id": "TKN-4134-7330",
+  "revision": 1,
+  "name": "Robot",
+  "description": "Token for ERP integration",
+  "status": "Active",
+  "token": "idt:TKN-4134-7330:z24kA...328f",
+  "account": {
+    "id": "ACC-1234-5678",
+    "name": "Microsoft"
+  },
+  "modules": [
+    {
+      "id": "MOD-1756-1452"
+    },
+    {
+      "id": "MOD-9042-8216"
+    }
+  ],
+  "audit": {
+    "created": {
+      "at": "2024-02-01T09:12:23.0000000+00:00",
+      "by": {
+        "id": "USR-0001",
+        "name": "Ops User"
+      }
+    },
+    "updated": {
+      "at": "2024-02-01T09:12:23.0000000+00:00",
+      "by": {
+        "id": "USR-0001",
+        "name": "Ops User"
+      }
+    }
+  }
+}
+```
+{% code %}
 
 
+ 
 
 
 ### Attributes

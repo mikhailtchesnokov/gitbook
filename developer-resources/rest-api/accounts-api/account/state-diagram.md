@@ -12,12 +12,12 @@ The diagrams show different transitions depending on whether the account is a Cl
 
 ```mermaid
 stateDiagram-v2
-    Enabled --> Active : Activate : Operations
-    Active --> Enabled : Deactivate : Operations
-    Active --> Disabled : Disable : Operations
-    Enabled --> Disabled : Disable : Operations
-    Disabled --> Active : Enable : Operations
-    Disabled --> Enabled : Enable : Operations
+    Enabled --> Active : Activate
+    Active --> Enabled : Deactivate
+    Active --> Disabled : Disable
+    Enabled --> Disabled : Disable
+    Disabled --> Active : Enable
+    Disabled --> Enabled : Enable
 ```
 
 

@@ -49,8 +49,61 @@ An Account User is the membership object that links one platform User identity t
     </tr>
   </tbody>
 </table>
+### Example
+{% code title="AccountUser" overflow="wrap" lineNumbers="true" %}
+```json
+{
+  "id": "USR-3758-7092",
+  "email": "new.user@example.com",
+  "firstName": "New",
+  "lastName": "User",
+  "status": "Invited",
+  "groups": [
+    {
+      "id": "UGR-3758-7092",
+      "name": "test2"
+    }
+  ],
+  "account": {
+    "id": "ACC-3758-7092",
+    "type": "Client",
+    "status": "Active",
+    "name": "Example Account",
+    "icon": "/v1/accounts/accounts/ACC-3758-7092/icon"
+  },
+  "invitation": {
+    "url": "https://...",
+    "status": "Invited"
+  },
+  "audit": {
+    "created": {
+      "at": "2024-01-29T11:36:54.2660000+00:00",
+      "by": {
+        "id": "USR-1234-5678",
+        "name": "Ops User"
+      }
+    },
+    "updated": {
+      "at": "2026-02-10T16:02:12.5220000+00:00",
+      "by": {
+        "id": "USR-0000-0022",
+        "name": "Ops User"
+      }
+    },
+    "invited": {
+      "at": "2026-02-10T16:02:12.5220000+00:00",
+      "by": {
+        "id": "USR-0000-0022",
+        "name": "Ops User"
+      }
+    }
+  }
+}
+```
+{% code %}
 
 
+ 
 
 
 ### Attributes

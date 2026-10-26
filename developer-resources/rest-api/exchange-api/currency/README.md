@@ -4,7 +4,7 @@
 
 ### Description
 Represents currency in exchange module.
-
+ 
 
 
 ### Attributes

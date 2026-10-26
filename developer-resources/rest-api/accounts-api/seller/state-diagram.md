@@ -14,7 +14,7 @@ The diagrams show different transitions depending on whether the account is a Cl
 stateDiagram-v2
     [*] --> Active : Create
     [*] --> Disabled : Create
-    Offline --> Active : Activate, no Buyer sync
+    Offline --> Active : ActivateNoBuyerSync
 ```
 
 

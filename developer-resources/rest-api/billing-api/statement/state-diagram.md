@@ -12,9 +12,9 @@ The diagrams show different transitions depending on whether the account is a Cl
 
 ```mermaid
 stateDiagram-v2
-    Generating --> Error : errors |
-    Queued --> Consolidating : add-child : Operations
-    Consolidating --> Generated : remove-child |
+    Generating --> Error : Errors
+    Queued --> Consolidating : AddChild
+    Consolidating --> Generated : RemoveChild
 ```
 
 

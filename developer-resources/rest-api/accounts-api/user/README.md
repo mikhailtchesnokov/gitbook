@@ -49,8 +49,22 @@ A User is the platform's global identity for a single human being — one person
     </tr>
   </tbody>
 </table>
+### Example
+{% code title="User" overflow="wrap" lineNumbers="true" %}
+```json
+{
+  "id": "USR-3758-7092",
+  "email": "john.doe@example.com",
+  "status": "Active",
+  "audit": {
+    "invitationAcceptedAt": "2026-02-02T10:00:00.0000000+00:00"
+  }
+}
+```
+{% code %}
 
 
+ 
 
 
 ### Attributes

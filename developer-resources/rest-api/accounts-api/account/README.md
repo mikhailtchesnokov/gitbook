@@ -49,8 +49,53 @@ An Account is the platform identity record for an Actor — either a Vendor (a s
     </tr>
   </tbody>
 </table>
+### Example
+{% code title="Account" overflow="wrap" lineNumbers="true" %}
+```json
+{
+  "id": "ACC-1234-1234",
+  "revision": 1,
+  "name": "Contoso Ltd",
+  "type": "Vendor",
+  "status": "Active",
+  "externalId": "WW-CON-123456",
+  "externalName": "Contoso",
+  "website": "https://contoso.com",
+  "description": "Enterprise customer account",
+  "address": {
+    "addressLine1": "123 Main Street",
+    "addressLine2": "Apt 4B",
+    "postCode": "12345",
+    "city": "Cityville",
+    "state": "S",
+    "country": "ST"
+  },
+  "eligibility": {
+    "client": true,
+    "partner": false
+  },
+  "audit": {
+    "created": {
+      "at": "2024-02-01T09:12:23.0000000+00:00",
+      "by": {
+        "id": "USR-0001",
+        "name": "Ops User"
+      }
+    },
+    "updated": {
+      "at": "2024-02-01T09:12:23.0000000+00:00",
+      "by": {
+        "id": "USR-0001",
+        "name": "Ops User"
+      }
+    }
+  }
+}
+```
+{% code %}
 
 
+ 
 
 
 ### Attributes

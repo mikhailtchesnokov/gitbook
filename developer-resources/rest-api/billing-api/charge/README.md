@@ -4,7 +4,7 @@
 
 ### Description
 Represents a charge in the billing system.
-
+ 
 
 
 ### Attributes

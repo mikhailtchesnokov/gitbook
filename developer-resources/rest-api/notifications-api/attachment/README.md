@@ -4,7 +4,7 @@
 
 ### Description
 Represents a file attachment associated with a notification message or batch.
-
+ 
 
 
 ### Attributes

@@ -4,7 +4,7 @@
 
 ### Description
 Represents analytics result data with date-based buckets and aggregated values.
-
+ 
 
 
 ### Attributes

@@ -4,7 +4,7 @@
 
 ### Description
 Represents a product profile media entity.
-
+ 
 
 
 ### Attributes

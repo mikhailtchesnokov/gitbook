@@ -4,7 +4,7 @@
 
 ### Description
 Represents a custom ledger in the billing system.
-
+ 
 
 
 ### Attributes

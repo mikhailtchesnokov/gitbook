@@ -49,8 +49,21 @@ A Service is the platform's identity for an internal, non-human component (for e
     </tr>
   </tbody>
 </table>
+### Example
+{% code title="Service" overflow="wrap" lineNumbers="true" %}
+```json
+{
+  "id": "SVC-1234",
+  "name": "Billing",
+  "description": "Billing component",
+  "icon": null,
+  "status": "Active"
+}
+```
+{% code %}
 
 
+ 
 
 
 ### Attributes

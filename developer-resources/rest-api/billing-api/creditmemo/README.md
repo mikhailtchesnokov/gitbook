@@ -4,7 +4,7 @@
 
 ### Description
 Represents a credit memo in the billing system.
-
+ 
 
 
 ### Attributes

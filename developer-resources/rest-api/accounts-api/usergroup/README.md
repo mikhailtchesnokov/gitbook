@@ -49,8 +49,49 @@ A User Group is a named permission set within a single [[Account]] that grants i
     </tr>
   </tbody>
 </table>
+### Example
+{% code title="UserGroup" overflow="wrap" lineNumbers="true" %}
+```json
+{
+  "id": "UGR-5116-6265",
+  "revision": 1,
+  "name": "Rolls-Royce",
+  "description": "The best car producer ever",
+  "isDefault": false,
+  "account": {
+    "id": "ACC-1234-5678",
+    "name": "Microsoft"
+  },
+  "modules": [
+    {
+      "id": "MOD-1756-1452"
+    },
+    {
+      "id": "MOD-9042-8216"
+    }
+  ],
+  "audit": {
+    "created": {
+      "at": "2024-02-01T09:12:23.0000000+00:00",
+      "by": {
+        "id": "USR-0001",
+        "name": "Ops User"
+      }
+    },
+    "updated": {
+      "at": "2024-02-01T09:12:23.0000000+00:00",
+      "by": {
+        "id": "USR-0001",
+        "name": "Ops User"
+      }
+    }
+  }
+}
+```
+{% code %}
 
 
+ 
 
 
 ### Attributes

@@ -49,8 +49,36 @@ A Module is a platform-defined functional area of the Marketplace — for exampl
     </tr>
   </tbody>
 </table>
+### Example
+{% code title="Module" overflow="wrap" lineNumbers="true" %}
+```json
+{
+  "id": "MOD-1234",
+  "name": "Invoices",
+  "description": "Invoices module",
+  "accountTypes": [
+    "vendor",
+    "client",
+    "operations"
+  ],
+  "settings": {
+    "sharedAccount": true,
+    "configurable": true,
+    "default": true,
+    "paid": false
+  },
+  "filters": {
+    "group.buyers": [
+      "selected",
+      "all"
+    ]
+  }
+}
+```
+{% code %}
 
 
+ 
 
 
 ### Attributes

@@ -49,8 +49,46 @@ A Cloud Tenant represents a single cloud environment used for cloud-spend manage
     </tr>
   </tbody>
 </table>
+### Example
+{% code title="CloudTenant" overflow="wrap" lineNumbers="true" %}
+```json
+{
+  "id": "CLT-3206-7146",
+  "revision": 1,
+  "name": "AdAstraflex Germany",
+  "status": "Active",
+  "type": "CspAzure",
+  "account": {
+    "id": "ACC-2253-2884",
+    "name": "AdAstrafleX"
+  },
+  "externalIds": {
+    "pyraTenantId": "c6469e97-302a-408a-8589-2122a0bb725d",
+    "cloudConsumptionId": "012b2a18-1df0-473f-8759-c3c019b54486",
+    "providerId": "7270638c-ca21-4500-ac82-25dca634566a"
+  },
+  "audit": {
+    "created": {
+      "at": "2024-02-01T09:12:23.0000000+00:00",
+      "by": {
+        "id": "TKN-9299-7556",
+        "name": "Migration token"
+      }
+    },
+    "updated": {
+      "at": "2024-02-01T09:12:23.0000000+00:00",
+      "by": {
+        "id": "TKN-9299-7556",
+        "name": "Migration token"
+      }
+    }
+  }
+}
+```
+{% code %}
 
 
+ 
 
 
 ### Attributes

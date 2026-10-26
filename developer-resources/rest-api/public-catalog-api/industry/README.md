@@ -1,7 +1,7 @@
 
 ## Industry
 
-
+ 
 
 
 ### Attributes

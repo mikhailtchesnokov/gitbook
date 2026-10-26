@@ -13,10 +13,10 @@ The diagrams show different transitions depending on whether the account is a Cl
 ```mermaid
 stateDiagram-v2
     state "Active | Inactive" as Active_Inactive
-    [*] --> Active : Create : Operations
-    Active --> Inactive : Disable : Operations
-    Inactive --> Active : Activate : Operations
-    Active_Inactive --> Deleted : Delete : Operations
+    [*] --> Active : Create
+    Active --> Inactive : Disable
+    Inactive --> Active : Activate
+    Active_Inactive --> Deleted : Delete
 ```
 
 

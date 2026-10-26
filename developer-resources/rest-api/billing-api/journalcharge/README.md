@@ -4,7 +4,7 @@
 
 ### Description
 Represents a charge associated with a journal in the billing system.
-
+ 
 
 
 ### Attributes

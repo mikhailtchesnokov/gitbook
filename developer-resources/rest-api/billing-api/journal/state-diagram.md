@@ -12,14 +12,14 @@ The diagrams show different transitions depending on whether the account is a Cl
 
 ```mermaid
 stateDiagram-v2
-    Draft --> Deleted : delete : Vendor
-    Validating --> Error : system, errors
-    Error --> Validating : upload
-    Validated --> Deleted : delete : Vendor
-    Review --> Generating : accept : Operations
-    Accepted --> Resetting : reset : Operations
-    Resetting --> Review : system
-    Resetting --> Queued : system
+    Draft --> Deleted : Delete
+    Validating --> Error : SystemErrors
+    Error --> Validating : Upload
+    Validated --> Deleted : Delete
+    Review --> Generating : Accept
+    Accepted --> Resetting : Reset
+    Resetting --> Review : System
+    Resetting --> Queued : System
 ```
 
 

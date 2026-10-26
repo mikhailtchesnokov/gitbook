@@ -12,13 +12,13 @@ The diagrams show different transitions depending on whether the account is a Cl
 
 ```mermaid
 stateDiagram-v2
-    [*] --> Active : created during Buyer sync : Platform
-    Active --> Blocked : Block : Operations
-    Blocked --> Active : Unblock : Operations
-    Active --> Disabled : Seller Disabled : Platform
-    Blocked --> Disabled : Seller Disabled : Platform
-    Disabled --> Active : Seller no longer Disabled : Platform — restores prior status)
-    Disabled --> Blocked : Seller no longer Disabled : Platform — restores prior status)
+    [*] --> Active : CreatedDuringBuyerSync
+    Active --> Blocked : Block
+    Blocked --> Active : Unblock
+    Active --> Disabled : SellerDisabled
+    Blocked --> Disabled : SellerDisabled
+    Disabled --> Active : SellerNoLongerDisabled
+    Disabled --> Blocked : SellerNoLongerDisabled
 ```
 
 

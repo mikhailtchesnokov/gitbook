@@ -13,32 +13,32 @@ The diagrams show different transitions depending on whether the account is a Cl
 ```mermaid
 stateDiagram-v2
     %% Creation (status derived from Account + ERP identifiers):
-    [*] --> Unassigned : Create, no Account
-    [*] --> Enabled : Create, Account, no ERP IDs
-    [*] --> Active : Create, Account + ERP IDs
+    [*] --> Unassigned : CreateNoAccount
+    [*] --> Enabled : CreateAccountNoERPIDs
+    [*] --> Active : CreateAccountERPIDs
     %% Action-driven transitions:
-    Unassigned --> Active : Assign Account
-    Active --> Unassigned : Unassign Account
-    Disabled --> Unassigned : Unassign Account
-    Mismatch --> Unassigned : Unassign Account
+    Unassigned --> Active : AssignAccount
+    Active --> Unassigned : UnassignAccount
+    Disabled --> Unassigned : UnassignAccount
+    Mismatch --> Unassigned : UnassignAccount
     Enabled --> Active : Activate
     Active --> Disabled : Disable
     Enabled --> Disabled : Disable
     Disabled --> Active : Enable
-    Unassigned --> Deleted : Delete, soft
-    Enabled --> Deleted : Delete, soft
-    Active --> Deleted : Delete, soft
-    Disabled --> Deleted : Delete, soft
-    Mismatch --> Deleted : Delete, soft
-    Conflict --> Deleted : Delete, soft
+    Unassigned --> Deleted : DeleteSoft
+    Enabled --> Deleted : DeleteSoft
+    Active --> Deleted : DeleteSoft
+    Disabled --> Deleted : DeleteSoft
+    Mismatch --> Deleted : DeleteSoft
+    Conflict --> Deleted : DeleteSoft
     Deleted --> [*]
     %% Error overlays (automatic, not action-driven — see 3.1 note and Section 7.2):
-    Unassigned --> Conflict : errors
-    Conflict --> Unassigned : errors cleared
-    Active --> Mismatch : errors
-    Mismatch --> Active : errors cleared
-    Disabled --> Mismatch : errors
-    Mismatch --> Disabled : errors cleared
+    Unassigned --> Conflict : Errors
+    Conflict --> Unassigned : ErrorsCleared
+    Active --> Mismatch : Errors
+    Mismatch --> Active : ErrorsCleared
+    Disabled --> Mismatch : Errors
+    Mismatch --> Disabled : ErrorsCleared
 ```
 
 

@@ -50,7 +50,7 @@ A Price List is a currency-scoped container that holds pricing for all Items in 
   </tbody>
 </table>
 
-
+ 
 
 
 ### Attributes
