@@ -52,7 +52,6 @@ An ErpLink is the join record that relates one [[Buyer]] to one [[Seller]] — t
 
 
 ### Example
-{% code title="ErpLink" overflow="wrap" lineNumbers="true" %}
 ```json
 {
   "id": "ERP-0808-7934-2576",
@@ -83,7 +82,6 @@ An ErpLink is the join record that relates one [[Buyer]] to one [[Seller]] — t
   }
 }
 ```
-{% code %}
 
 
  

@@ -52,7 +52,6 @@ An API Token is a non-human authentication credential used to call the platform 
 
 
 ### Example
-{% code title="ApiToken" overflow="wrap" lineNumbers="true" %}
 ```json
 {
   "id": "TKN-4134-7330",
@@ -91,7 +90,6 @@ An API Token is a non-human authentication credential used to call the platform 
   }
 }
 ```
-{% code %}
 
 
  

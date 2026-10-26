@@ -52,7 +52,6 @@ An Account User is the membership object that links one platform User identity t
 
 
 ### Example
-{% code title="AccountUser" overflow="wrap" lineNumbers="true" %}
 ```json
 {
   "id": "USR-3758-7092",
@@ -102,7 +101,6 @@ An Account User is the membership object that links one platform User identity t
   }
 }
 ```
-{% code %}
 
 
  

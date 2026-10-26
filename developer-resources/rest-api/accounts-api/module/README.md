@@ -52,7 +52,6 @@ A Module is a platform-defined functional area of the Marketplace — for exampl
 
 
 ### Example
-{% code title="Module" overflow="wrap" lineNumbers="true" %}
 ```json
 {
   "id": "MOD-1234",
@@ -77,7 +76,6 @@ A Module is a platform-defined functional area of the Marketplace — for exampl
   }
 }
 ```
-{% code %}
 
 
  

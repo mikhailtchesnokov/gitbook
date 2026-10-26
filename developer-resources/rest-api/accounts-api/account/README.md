@@ -52,7 +52,6 @@ An Account is the platform identity record for an Actor — either a Vendor (a s
 
 
 ### Example
-{% code title="Account" overflow="wrap" lineNumbers="true" %}
 ```json
 {
   "id": "ACC-1234-1234",
@@ -94,7 +93,6 @@ An Account is the platform identity record for an Actor — either a Vendor (a s
   }
 }
 ```
-{% code %}
 
 
  

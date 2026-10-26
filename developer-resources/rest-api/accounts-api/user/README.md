@@ -52,7 +52,6 @@ A User is the platform's global identity for a single human being — one person
 
 
 ### Example
-{% code title="User" overflow="wrap" lineNumbers="true" %}
 ```json
 {
   "id": "USR-3758-7092",
@@ -63,7 +62,6 @@ A User is the platform's global identity for a single human being — one person
   }
 }
 ```
-{% code %}
 
 
  

@@ -52,7 +52,6 @@ A User Group is a named permission set within a single [[Account]] that grants i
 
 
 ### Example
-{% code title="UserGroup" overflow="wrap" lineNumbers="true" %}
 ```json
 {
   "id": "UGR-5116-6265",
@@ -90,7 +89,6 @@ A User Group is a named permission set within a single [[Account]] that grants i
   }
 }
 ```
-{% code %}
 
 
  

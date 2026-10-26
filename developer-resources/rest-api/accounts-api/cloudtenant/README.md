@@ -52,7 +52,6 @@ A Cloud Tenant represents a single cloud environment used for cloud-spend manage
 
 
 ### Example
-{% code title="CloudTenant" overflow="wrap" lineNumbers="true" %}
 ```json
 {
   "id": "CLT-3206-7146",
@@ -87,7 +86,6 @@ A Cloud Tenant represents a single cloud environment used for cloud-spend manage
   }
 }
 ```
-{% code %}
 
 
  

@@ -52,7 +52,6 @@ A Licensee represents a specific pairing of a customer legal entity and a Softwa
 
 
 ### Example
-{% code title="Licensee" overflow="wrap" lineNumbers="true" %}
 ```json
 {
   "id": "LCE-8893-6916-0000",
@@ -78,7 +77,6 @@ A Licensee represents a specific pairing of a customer legal entity and a Softwa
   }
 }
 ```
-{% code %}
 
 
  

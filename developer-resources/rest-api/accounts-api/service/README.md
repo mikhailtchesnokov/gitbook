@@ -52,7 +52,6 @@ A Service is the platform's identity for an internal, non-human component (for e
 
 
 ### Example
-{% code title="Service" overflow="wrap" lineNumbers="true" %}
 ```json
 {
   "id": "SVC-1234",
@@ -62,7 +61,6 @@ A Service is the platform's identity for an internal, non-human component (for e
   "status": "Active"
 }
 ```
-{% code %}
 
 
  

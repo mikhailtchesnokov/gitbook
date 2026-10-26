@@ -52,7 +52,6 @@ A Seller is a SoftwareOne legal entity registered in the SoftwareOne Marketplace
 
 
 ### Example
-{% code title="Seller" overflow="wrap" lineNumbers="true" %}
 ```json
 {
   "id": "SEL-7295-4834",
@@ -89,7 +88,6 @@ A Seller is a SoftwareOne legal entity registered in the SoftwareOne Marketplace
   }
 }
 ```
-{% code %}
 
 
  
