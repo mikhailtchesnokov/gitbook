@@ -50,6 +50,8 @@ An Asset is the platform's record of a one-time purchase fulfilment for a Client
   </tbody>
 </table>
 
+
+
  
 
 

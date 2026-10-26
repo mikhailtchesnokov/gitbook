@@ -49,6 +49,8 @@ An API Token is a non-human authentication credential used to call the platform 
     </tr>
   </tbody>
 </table>
+
+
 ### Example
 {% code title="ApiToken" overflow="wrap" lineNumbers="true" %}
 ```json

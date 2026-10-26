@@ -49,6 +49,8 @@ A Service is the platform's identity for an internal, non-human component (for e
     </tr>
   </tbody>
 </table>
+
+
 ### Example
 {% code title="Service" overflow="wrap" lineNumbers="true" %}
 ```json

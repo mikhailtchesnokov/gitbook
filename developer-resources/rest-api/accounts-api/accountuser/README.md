@@ -49,6 +49,8 @@ An Account User is the membership object that links one platform User identity t
     </tr>
   </tbody>
 </table>
+
+
 ### Example
 {% code title="AccountUser" overflow="wrap" lineNumbers="true" %}
 ```json

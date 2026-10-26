@@ -49,6 +49,8 @@ An Account is the platform identity record for an Actor — either a Vendor (a s
     </tr>
   </tbody>
 </table>
+
+
 ### Example
 {% code title="Account" overflow="wrap" lineNumbers="true" %}
 ```json

@@ -50,6 +50,8 @@ A Journal is the entry point of the platform's billing pipeline: the normalized 
   </tbody>
 </table>
 
+
+
  
 
 

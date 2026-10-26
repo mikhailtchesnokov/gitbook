@@ -49,6 +49,8 @@ A User is the platform's global identity for a single human being — one person
     </tr>
   </tbody>
 </table>
+
+
 ### Example
 {% code title="User" overflow="wrap" lineNumbers="true" %}
 ```json

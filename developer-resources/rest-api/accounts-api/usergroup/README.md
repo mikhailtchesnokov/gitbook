@@ -49,6 +49,8 @@ A User Group is a named permission set within a single [[Account]] that grants i
     </tr>
   </tbody>
 </table>
+
+
 ### Example
 {% code title="UserGroup" overflow="wrap" lineNumbers="true" %}
 ```json

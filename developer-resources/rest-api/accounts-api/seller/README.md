@@ -49,6 +49,8 @@ A Seller is a SoftwareOne legal entity registered in the SoftwareOne Marketplace
     </tr>
   </tbody>
 </table>
+
+
 ### Example
 {% code title="Seller" overflow="wrap" lineNumbers="true" %}
 ```json

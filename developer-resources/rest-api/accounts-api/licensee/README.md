@@ -49,6 +49,8 @@ A Licensee represents a specific pairing of a customer legal entity and a Softwa
     </tr>
   </tbody>
 </table>
+
+
 ### Example
 {% code title="Licensee" overflow="wrap" lineNumbers="true" %}
 ```json

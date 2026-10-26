@@ -49,6 +49,8 @@ A Module is a platform-defined functional area of the Marketplace — for exampl
     </tr>
   </tbody>
 </table>
+
+
 ### Example
 {% code title="Module" overflow="wrap" lineNumbers="true" %}
 ```json
