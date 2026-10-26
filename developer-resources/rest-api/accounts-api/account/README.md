@@ -122,7 +122,7 @@ An Account is the platform identity record for an Actor — either a Vendor (a s
         </tr>
         <tr>
             <td><code>audit</code></td>
-            <td><a href="#PlatformObjectAudit">PlatformObjectAudit</a></td>
+            <td><a href="#platformobjectaudit">PlatformObjectAudit</a></td>
 	        <td></td>
 	        <td></td>
             <td>Standard platform audit block. Records `created` and `updated` timestamps and Actor references.Omitted from API responses by default. Request via `select=+audit`. The Operations Account's `audit.created.by` is absent — believed to be a system-bootstrapped account predating Actor attribution</td>
