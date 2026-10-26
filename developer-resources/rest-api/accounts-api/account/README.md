@@ -18,7 +18,7 @@ An Account is the platform identity record for an Actor — either a Vendor (a s
       <th width="0">Can Create</th>
       <th width="0">Can Read</th>
       <th width="0">Can Update</th>
-      <th width="1" style="white-space: nowrap">Can Delete</th>
+      <th width="1" style="white-space: nowrap"><nobr>Can Delete</nobr></th>
       <th>Notes</th>
     </tr>
   </thead>
