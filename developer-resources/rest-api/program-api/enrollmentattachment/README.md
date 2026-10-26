@@ -21,77 +21,77 @@
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>audit</code></td>
-            <td>PlatformObjectAudit</td>
+            <td><a href="#platformobjectaudit">PlatformObjectAudit</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>$meta</code></td>
-            <td>PlatformMetadata</td>
+            <td><a href="#platformmetadata">PlatformMetadata</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>description</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>type</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>filename</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>size</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>contentType</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>enrollment</code></td>
-            <td>EnrollmentRef</td>
+            <td><a href="#enrollmentref">EnrollmentRef</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
@@ -117,49 +117,49 @@
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>applicableTo</code></td>
-            <td>ProgramApplicableTo</td>
+            <td> ProgramApplicableTo</td>
 	        <td></td>
 	        <td></td>
             <td>. Allowed values: Buyer,Licensee</td>
         </tr>
         <tr>
             <td><code>type</code></td>
-            <td>EnrollmentType</td>
+            <td> EnrollmentType</td>
 	        <td></td>
 	        <td></td>
             <td>. Allowed values: Change,New</td>
         </tr>
         <tr>
             <td><code>eligibility</code></td>
-            <td>ProgramEligibility</td>
+            <td><a href="#programeligibility">ProgramEligibility</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>status</code></td>
-            <td>EnrollmentStatus</td>
+            <td> EnrollmentStatus</td>
 	        <td></td>
 	        <td></td>
             <td>. Allowed values: Draft,Processing,Querying,Completed,Failed,Deleted</td>
@@ -184,28 +184,28 @@
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -230,7 +230,7 @@
     <tbody>
         <tr>
             <td><code>omitted</code></td>
-            <td>array</td>
+            <td> array</td>
 	        <td></td>
 	        <td></td>
             <td></td>
@@ -255,14 +255,14 @@
     <tbody>
         <tr>
             <td><code>created</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>updated</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
@@ -287,14 +287,14 @@
     <tbody>
         <tr>
             <td><code>at</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>by</code></td>
-            <td>PlatformIdentityRef</td>
+            <td><a href="#platformidentityref">PlatformIdentityRef</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
@@ -319,14 +319,14 @@
     <tbody>
         <tr>
             <td><code>client</code></td>
-            <td>boolean</td>
+            <td> boolean</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>partner</code></td>
-            <td>boolean</td>
+            <td> boolean</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>

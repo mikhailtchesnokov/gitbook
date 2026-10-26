@@ -21,14 +21,14 @@
     <tbody>
         <tr>
             <td><code>userId</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>notifyMe</code></td>
-            <td>boolean</td>
+            <td> boolean</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>

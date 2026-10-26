@@ -72,49 +72,49 @@ A Unit of Measure is a platform-managed reference object that describes what is 
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>audit</code></td>
-            <td>PlatformObjectAudit</td>
+            <td><a href="#platformobjectaudit">PlatformObjectAudit</a </td>
 	        <td></td>
 	        <td></td>
             <td>created and updated events, each with timestamp and Actor attributionRead-only. `updated` is populated once the unit has been updated</td>
         </tr>
         <tr>
             <td><code>$meta</code></td>
-            <td>PlatformMetadata</td>
+            <td><a href="#platformmetadata">PlatformMetadata</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td>Display name of the Unit of Measure (e.g. User, Licenses, Gigabytes)Required. Globally unique. Maximum 128 characters; no leading/trailing whitespace (see BR-006)</td>
         </tr>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td>Increments on each update to the Unit of MeasureRead-only. Starts at 1</td>
         </tr>
         <tr>
             <td><code>description</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td>Human-readable explanation of what this unit represents and how it is used commerciallyRequired — see BR-007. Maximum 256 characters. Marked nullable in the schema but enforced as required</td>
         </tr>
         <tr>
             <td><code>statistics</code></td>
-            <td>UnitOfMeasureStatistics</td>
+            <td><a href="#unitofmeasurestatistics">UnitOfMeasureStatistics</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
@@ -140,28 +140,28 @@ A Unit of Measure is a platform-managed reference object that describes what is 
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -186,7 +186,7 @@ A Unit of Measure is a platform-managed reference object that describes what is 
     <tbody>
         <tr>
             <td><code>omitted</code></td>
-            <td>array</td>
+            <td> array</td>
 	        <td></td>
 	        <td></td>
             <td></td>
@@ -211,14 +211,14 @@ A Unit of Measure is a platform-managed reference object that describes what is 
     <tbody>
         <tr>
             <td><code>created</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>updated</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
@@ -243,14 +243,14 @@ A Unit of Measure is a platform-managed reference object that describes what is 
     <tbody>
         <tr>
             <td><code>at</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>by</code></td>
-            <td>PlatformIdentityRef</td>
+            <td><a href="#platformidentityref">PlatformIdentityRef</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
@@ -275,7 +275,7 @@ A Unit of Measure is a platform-managed reference object that describes what is 
     <tbody>
         <tr>
             <td><code>itemCount</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>

@@ -83,56 +83,56 @@ A Service is the platform's identity for an internal, non-human component (for e
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td>Unique identifier, prefixed `SVC-`.Read-only</td>
         </tr>
         <tr>
             <td><code>audit</code></td>
-            <td>PlatformObjectAudit</td>
+            <td><a href="#platformobjectaudit">PlatformObjectAudit</a </td>
 	        <td></td>
 	        <td></td>
             <td>Creation and last-modification events, each with a timestamp and the attributed identity.Omitted by default — request via `select=+audit`. Contains `created` and `updated`</td>
         </tr>
         <tr>
             <td><code>$meta</code></td>
-            <td>PlatformMetadata</td>
+            <td><a href="#platformmetadata">PlatformMetadata</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td>Human-readable name of the internal component (e.g. `platform`, `scheduler`, `Billing`).—</td>
         </tr>
         <tr>
             <td><code>icon</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td>Reference to a visual identity image for the component (see preamble §9).Nullable; null in observed data. Absent from response when null</td>
         </tr>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td>Monotonic revision counter for the record.Increments on internal modification</td>
         </tr>
         <tr>
             <td><code>status</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>Lifecycle status of the Service.Enum: `Active`, `Deleted`. No public transition — see Section 3</td>
         </tr>
         <tr>
             <td><code>description</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>Free-text description of the component's purpose.Nullable. Absent from response when null</td>
@@ -158,28 +158,28 @@ A Service is the platform's identity for an internal, non-human component (for e
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -204,7 +204,7 @@ A Service is the platform's identity for an internal, non-human component (for e
     <tbody>
         <tr>
             <td><code>omitted</code></td>
-            <td>array</td>
+            <td> array</td>
 	        <td></td>
 	        <td></td>
             <td></td>
@@ -229,14 +229,14 @@ A Service is the platform's identity for an internal, non-human component (for e
     <tbody>
         <tr>
             <td><code>created</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>updated</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
@@ -261,14 +261,14 @@ A Service is the platform's identity for an internal, non-human component (for e
     <tbody>
         <tr>
             <td><code>at</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>by</code></td>
-            <td>PlatformIdentityRef</td>
+            <td><a href="#platformidentityref">PlatformIdentityRef</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>

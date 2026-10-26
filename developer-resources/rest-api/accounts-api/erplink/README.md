@@ -104,105 +104,105 @@ An ErpLink is the join record that relates one [[Buyer]] to one [[Seller]] — t
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>audit</code></td>
-            <td>ErpLinkAudit</td>
+            <td><a href="#erplinkaudit">ErpLinkAudit</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>$meta</code></td>
-            <td>PlatformMetadata</td>
+            <td><a href="#platformmetadata">PlatformMetadata</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>buyer</code></td>
-            <td>BuyerRef</td>
+            <td><a href="#buyerref">BuyerRef</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>seller</code></td>
-            <td>SellerRef</td>
+            <td><a href="#sellerref">SellerRef</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>companyName</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>status</code></td>
-            <td>ErpLinkStatus</td>
+            <td> ErpLinkStatus</td>
 	        <td></td>
 	        <td></td>
             <td>. Allowed values: Active,Blocked,Disabled</td>
         </tr>
         <tr>
             <td><code>note</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>externalIds</code></td>
-            <td>BuyerExternalIds</td>
+            <td><a href="#buyerexternalids">BuyerExternalIds</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>address</code></td>
-            <td>Address</td>
+            <td><a href="#address">Address</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>shipTo</code></td>
-            <td>array</td>
+            <td> array</td>
 	        <td></td>
 	        <td>ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>billTo</code></td>
-            <td>array</td>
+            <td> array</td>
 	        <td></td>
 	        <td>ops</td>
             <td></td>
@@ -228,42 +228,42 @@ An ErpLink is the join record that relates one [[Buyer]] to one [[Seller]] — t
     <tbody>
         <tr>
             <td><code>addressLine1</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>addressLine2</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>postCode</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>city</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>state</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>country</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -288,21 +288,21 @@ An ErpLink is the join record that relates one [[Buyer]] to one [[Seller]] — t
     <tbody>
         <tr>
             <td><code>erpCompanyContact</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>erpCustomer</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>accountExternalId</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -327,28 +327,28 @@ An ErpLink is the join record that relates one [[Buyer]] to one [[Seller]] — t
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -373,56 +373,56 @@ An ErpLink is the join record that relates one [[Buyer]] to one [[Seller]] — t
     <tbody>
         <tr>
             <td><code>addressLine1</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>addressLine2</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>postCode</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>city</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>state</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>country</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>externalId</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -447,35 +447,35 @@ An ErpLink is the join record that relates one [[Buyer]] to one [[Seller]] — t
     <tbody>
         <tr>
             <td><code>created</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>updated</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>blocked</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>unblocked</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>disabled</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
@@ -500,28 +500,28 @@ An ErpLink is the join record that relates one [[Buyer]] to one [[Seller]] — t
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -546,7 +546,7 @@ An ErpLink is the join record that relates one [[Buyer]] to one [[Seller]] — t
     <tbody>
         <tr>
             <td><code>omitted</code></td>
-            <td>array</td>
+            <td> array</td>
 	        <td></td>
 	        <td></td>
             <td></td>
@@ -571,14 +571,14 @@ An ErpLink is the join record that relates one [[Buyer]] to one [[Seller]] — t
     <tbody>
         <tr>
             <td><code>at</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>by</code></td>
-            <td>PlatformIdentityRef</td>
+            <td><a href="#platformidentityref">PlatformIdentityRef</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
@@ -603,35 +603,35 @@ An ErpLink is the join record that relates one [[Buyer]] to one [[Seller]] — t
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>externalId</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>

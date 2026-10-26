@@ -21,84 +21,84 @@
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>audit</code></td>
-            <td>PlatformObjectAudit</td>
+            <td><a href="#platformobjectaudit">PlatformObjectAudit</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>$meta</code></td>
-            <td>PlatformMetadata</td>
+            <td><a href="#platformmetadata">PlatformMetadata</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>type</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>size</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>description</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>fileName</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>contentType</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>status</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>pricingPolicy</code></td>
-            <td>PricingPolicyRef</td>
+            <td><a href="#pricingpolicyref">PricingPolicyRef</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
@@ -124,126 +124,126 @@
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>audit</code></td>
-            <td>PlatformObjectAudit</td>
+            <td><a href="#platformobjectaudit">PlatformObjectAudit</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>$meta</code></td>
-            <td>PlatformMetadata</td>
+            <td><a href="#platformmetadata">PlatformMetadata</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>type</code></td>
-            <td>AccountType</td>
+            <td> AccountType</td>
 	        <td></td>
 	        <td></td>
             <td>. Allowed values: Client,Vendor,Operations</td>
         </tr>
         <tr>
             <td><code>status</code></td>
-            <td>AccountStatus</td>
+            <td> AccountStatus</td>
 	        <td></td>
 	        <td></td>
             <td>. Allowed values: Active,Enabled,Disabled</td>
         </tr>
         <tr>
             <td><code>externalIds</code></td>
-            <td>AccountExternalIds</td>
+            <td><a href="#accountexternalids">AccountExternalIds</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>externalId</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>externalName</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>address</code></td>
-            <td>Address</td>
+            <td><a href="#address">Address</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>technicalSupportEmail</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>website</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>description</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>groups</code></td>
-            <td>array</td>
+            <td> array</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>eligibility</code></td>
-            <td>Eligibility</td>
+            <td><a href="#eligibility">Eligibility</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>defaultLanguageCode</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -268,7 +268,7 @@
     <tbody>
         <tr>
             <td><code>pyraTenantId</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -293,42 +293,42 @@
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>type</code></td>
-            <td>AccountType</td>
+            <td> AccountType</td>
 	        <td></td>
 	        <td></td>
             <td>. Allowed values: Client,Vendor,Operations</td>
         </tr>
         <tr>
             <td><code>status</code></td>
-            <td>AccountStatus</td>
+            <td> AccountStatus</td>
 	        <td></td>
 	        <td></td>
             <td>. Allowed values: Active,Enabled,Disabled</td>
@@ -353,42 +353,42 @@
     <tbody>
         <tr>
             <td><code>addressLine1</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>addressLine2</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>postCode</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>city</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>state</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>country</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -413,14 +413,14 @@
     <tbody>
         <tr>
             <td><code>client</code></td>
-            <td>boolean</td>
+            <td> boolean</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>partner</code></td>
-            <td>boolean</td>
+            <td> boolean</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -445,28 +445,28 @@
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -491,7 +491,7 @@
     <tbody>
         <tr>
             <td><code>omitted</code></td>
-            <td>array</td>
+            <td> array</td>
 	        <td></td>
 	        <td></td>
             <td></td>
@@ -516,14 +516,14 @@
     <tbody>
         <tr>
             <td><code>created</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>updated</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
@@ -548,14 +548,14 @@
     <tbody>
         <tr>
             <td><code>at</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>by</code></td>
-            <td>PlatformIdentityRef</td>
+            <td><a href="#platformidentityref">PlatformIdentityRef</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
@@ -580,35 +580,35 @@
     <tbody>
         <tr>
             <td><code>purchaseOrderDraft</code></td>
-            <td>boolean</td>
+            <td> boolean</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>purchaseOrderQuerying</code></td>
-            <td>boolean</td>
+            <td> boolean</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>changeOrderDraft</code></td>
-            <td>boolean</td>
+            <td> boolean</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>configurationOrderDraft</code></td>
-            <td>boolean</td>
+            <td> boolean</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>terminationOrder</code></td>
-            <td>boolean</td>
+            <td> boolean</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -633,14 +633,14 @@
     <tbody>
         <tr>
             <td><code>client</code></td>
-            <td>boolean</td>
+            <td> boolean</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>partner</code></td>
-            <td>boolean</td>
+            <td> boolean</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -665,42 +665,42 @@
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>client</code></td>
-            <td>Account</td>
+            <td><a href="#account">Account</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>eligibility</code></td>
-            <td>PricingPolicyEligibility</td>
+            <td><a href="#pricingpolicyeligibility">PricingPolicyEligibility</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>products</code></td>
-            <td>array</td>
+            <td> array</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -725,98 +725,98 @@ A Product is the top-level unit of a Vendor's commercial offering on the Softwar
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>audit</code></td>
-            <td>ProductAudit</td>
+            <td><a href="#productaudit">ProductAudit</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>$meta</code></td>
-            <td>PlatformMetadata</td>
+            <td><a href="#platformmetadata">PlatformMetadata</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>shortDescription</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>longDescription</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>externalIds</code></td>
-            <td>ProductExternalIdBag</td>
+            <td><a href="#productexternalidbag">ProductExternalIdBag</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>website</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>status</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>vendor</code></td>
-            <td>AccountRef</td>
+            <td><a href="#accountref">AccountRef</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>settings</code></td>
-            <td>ProductSettings</td>
+            <td><a href="#productsettings">ProductSettings</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>statistics</code></td>
-            <td>ProductStatistics</td>
+            <td><a href="#productstatistics">ProductStatistics</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
@@ -841,35 +841,35 @@ A Product is the top-level unit of a Vendor's commercial offering on the Softwar
     <tbody>
         <tr>
             <td><code>created</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>updated</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>published</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>pending</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>unpublished</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
@@ -894,14 +894,14 @@ A Product is the top-level unit of a Vendor's commercial offering on the Softwar
     <tbody>
         <tr>
             <td><code>operations</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>defaultErpItem</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -926,21 +926,21 @@ A Product is the top-level unit of a Vendor's commercial offering on the Softwar
     <tbody>
         <tr>
             <td><code>enabled</code></td>
-            <td>boolean</td>
+            <td> boolean</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>label</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -965,56 +965,56 @@ A Product is the top-level unit of a Vendor's commercial offering on the Softwar
     <tbody>
         <tr>
             <td><code>productOrdering</code></td>
-            <td>boolean</td>
+            <td> boolean</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>productRequests</code></td>
-            <td>ProductRequestsSetting</td>
+            <td><a href="#productrequestssetting">ProductRequestsSetting</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>itemSelection</code></td>
-            <td>boolean</td>
+            <td> boolean</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>orderQueueChanges</code></td>
-            <td>boolean</td>
+            <td> boolean</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>preValidation</code></td>
-            <td>PreValidationSettings</td>
+            <td><a href="#prevalidationsettings">PreValidationSettings</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>splitBilling</code></td>
-            <td>ProductSplitBillingRequestsSetting</td>
+            <td><a href="#productsplitbillingrequestssetting">ProductSplitBillingRequestsSetting</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>sendCostToErp</code></td>
-            <td>boolean</td>
+            <td> boolean</td>
 	        <td></td>
 	        <td>ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>subscriptionCessation</code></td>
-            <td>SubscriptionCessationSetting</td>
+            <td><a href="#subscriptioncessationsetting">SubscriptionCessationSetting</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
@@ -1039,14 +1039,14 @@ A Product is the top-level unit of a Vendor's commercial offering on the Softwar
     <tbody>
         <tr>
             <td><code>enabled</code></td>
-            <td>boolean</td>
+            <td> boolean</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>type</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -1071,28 +1071,28 @@ A Product is the top-level unit of a Vendor's commercial offering on the Softwar
     <tbody>
         <tr>
             <td><code>itemCount</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>ordersPlacedCount</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>agreementCount</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>subscriptionCount</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -1117,14 +1117,14 @@ A Product is the top-level unit of a Vendor's commercial offering on the Softwar
     <tbody>
         <tr>
             <td><code>enabled</code></td>
-            <td>boolean</td>
+            <td> boolean</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>mode</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -1149,42 +1149,42 @@ A Product is the top-level unit of a Vendor's commercial offering on the Softwar
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>description</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>logo</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>isDefault</code></td>
-            <td>boolean</td>
+            <td> boolean</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>

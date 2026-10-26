@@ -21,119 +21,119 @@
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>audit</code></td>
-            <td>PlatformObjectAudit</td>
+            <td><a href="#platformobjectaudit">PlatformObjectAudit</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>oldQuantity</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>quantity</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>price</code></td>
-            <td>OrderLinePrice</td>
+            <td><a href="#orderlineprice">OrderLinePrice</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>item</code></td>
-            <td>ProductItem</td>
+            <td><a href="#productitem">ProductItem</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>subscription</code></td>
-            <td>OrderSubscription</td>
+            <td><a href="#ordersubscription">OrderSubscription</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>asset</code></td>
-            <td>OrderAsset</td>
+            <td><a href="#orderasset">OrderAsset</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>agreement</code></td>
-            <td>Agreement</td>
+            <td><a href="#agreement">Agreement</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>order</code></td>
-            <td>Order</td>
+            <td><a href="#order">Order</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>client</code></td>
-            <td>Account</td>
+            <td><a href="#account">Account</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>vendor</code></td>
-            <td>Account</td>
+            <td><a href="#account">Account</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>buyer</code></td>
-            <td>Buyer</td>
+            <td><a href="#buyer">Buyer</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>seller</code></td>
-            <td>Seller</td>
+            <td><a href="#seller">Seller</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>product</code></td>
-            <td>Product</td>
+            <td><a href="#product">Product</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>description</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>info</code></td>
-            <td>PriceInfo</td>
+            <td><a href="#priceinfo">PriceInfo</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
@@ -159,126 +159,126 @@
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>audit</code></td>
-            <td>PlatformObjectAudit</td>
+            <td><a href="#platformobjectaudit">PlatformObjectAudit</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>$meta</code></td>
-            <td>PlatformMetadata</td>
+            <td><a href="#platformmetadata">PlatformMetadata</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>type</code></td>
-            <td>AccountType</td>
+            <td> AccountType</td>
 	        <td></td>
 	        <td></td>
             <td>. Allowed values: Client,Vendor,Operations</td>
         </tr>
         <tr>
             <td><code>status</code></td>
-            <td>AccountStatus</td>
+            <td> AccountStatus</td>
 	        <td></td>
 	        <td></td>
             <td>. Allowed values: Active,Enabled,Disabled</td>
         </tr>
         <tr>
             <td><code>externalIds</code></td>
-            <td>AccountExternalIds</td>
+            <td><a href="#accountexternalids">AccountExternalIds</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>externalId</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>externalName</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>address</code></td>
-            <td>Address</td>
+            <td><a href="#address">Address</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>technicalSupportEmail</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>website</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>description</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>groups</code></td>
-            <td>array</td>
+            <td> array</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>eligibility</code></td>
-            <td>Eligibility</td>
+            <td><a href="#eligibility">Eligibility</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>defaultLanguageCode</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -303,7 +303,7 @@
     <tbody>
         <tr>
             <td><code>pyraTenantId</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -328,42 +328,42 @@
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>type</code></td>
-            <td>AccountType</td>
+            <td> AccountType</td>
 	        <td></td>
 	        <td></td>
             <td>. Allowed values: Client,Vendor,Operations</td>
         </tr>
         <tr>
             <td><code>status</code></td>
-            <td>AccountStatus</td>
+            <td> AccountStatus</td>
 	        <td></td>
 	        <td></td>
             <td>. Allowed values: Active,Enabled,Disabled</td>
@@ -388,42 +388,42 @@
     <tbody>
         <tr>
             <td><code>addressLine1</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>addressLine2</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>postCode</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>city</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>state</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>country</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -448,196 +448,196 @@ An Agreement is the platform's record of the ongoing commercial relationship bet
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>audit</code></td>
-            <td>AgreementAudit</td>
+            <td><a href="#agreementaudit">AgreementAudit</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>$meta</code></td>
-            <td>PlatformMetadata</td>
+            <td><a href="#platformmetadata">PlatformMetadata</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>status</code></td>
-            <td>AgreementStatus</td>
+            <td> AgreementStatus</td>
 	        <td></td>
 	        <td></td>
             <td>. Allowed values: New,Draft,Provisioning,Updating,Active,Terminated,Failed,Deleted</td>
         </tr>
         <tr>
             <td><code>listing</code></td>
-            <td>ListingRef</td>
+            <td><a href="#listingref">ListingRef</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>authorization</code></td>
-            <td>AuthorizationRef</td>
+            <td><a href="#authorizationref">AuthorizationRef</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>vendor</code></td>
-            <td>AccountRef</td>
+            <td><a href="#accountref">AccountRef</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>client</code></td>
-            <td>AccountRef</td>
+            <td><a href="#accountref">AccountRef</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>price</code></td>
-            <td>AgreementSummaryPrice</td>
+            <td><a href="#agreementsummaryprice">AgreementSummaryPrice</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>startDate</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>endDate</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>template</code></td>
-            <td>TemplateRef</td>
+            <td><a href="#templateref">TemplateRef</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>error</code></td>
-            <td>ParametrisedMessage</td>
+            <td><a href="#parametrisedmessage">ParametrisedMessage</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>lines</code></td>
-            <td>array</td>
+            <td> array</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>assets</code></td>
-            <td>array</td>
+            <td> array</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>subscriptions</code></td>
-            <td>array</td>
+            <td> array</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>parameters</code></td>
-            <td>ParameterBag</td>
+            <td><a href="#parameterbag">ParameterBag</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>licensee</code></td>
-            <td>LicenseeRef</td>
+            <td><a href="#licenseeref">LicenseeRef</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>buyer</code></td>
-            <td>BuyerRef</td>
+            <td><a href="#buyerref">BuyerRef</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>seller</code></td>
-            <td>SellerRef</td>
+            <td><a href="#sellerref">SellerRef</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>product</code></td>
-            <td>ProductRef</td>
+            <td><a href="#productref">ProductRef</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>externalIds</code></td>
-            <td>ExternalIds</td>
+            <td><a href="#externalids">ExternalIds</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>split</code></td>
-            <td>SplitBillingAgreementRef</td>
+            <td><a href="#splitbillingagreementref">SplitBillingAgreementRef</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>termsAndConditions</code></td>
-            <td>array</td>
+            <td> array</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>certificates</code></td>
-            <td>array</td>
+            <td> array</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -662,35 +662,35 @@ An Agreement is the platform's record of the ongoing commercial relationship bet
     <tbody>
         <tr>
             <td><code>created</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>updated</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>active</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>provisioning</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>terminated</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
@@ -715,119 +715,119 @@ An Agreement is the platform's record of the ongoing commercial relationship bet
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>audit</code></td>
-            <td>AgreementLineAudit</td>
+            <td><a href="#agreementlineaudit">AgreementLineAudit</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>quantity</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>item</code></td>
-            <td>ProductItem</td>
+            <td><a href="#productitem">ProductItem</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>price</code></td>
-            <td>AgreementLinePrice</td>
+            <td><a href="#agreementlineprice">AgreementLinePrice</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>order</code></td>
-            <td>Order</td>
+            <td><a href="#order">Order</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>status</code></td>
-            <td>AgreementLineStatus</td>
+            <td> AgreementLineStatus</td>
 	        <td></td>
 	        <td></td>
             <td>. Allowed values: Active,Terminated,Deleted,Expired</td>
         </tr>
         <tr>
             <td><code>subscription</code></td>
-            <td>Subscription</td>
+            <td><a href="#subscription">Subscription</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>asset</code></td>
-            <td>Asset</td>
+            <td><a href="#asset">Asset</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>agreement</code></td>
-            <td>Agreement</td>
+            <td><a href="#agreement">Agreement</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>client</code></td>
-            <td>Account</td>
+            <td><a href="#account">Account</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>vendor</code></td>
-            <td>Account</td>
+            <td><a href="#account">Account</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>buyer</code></td>
-            <td>Buyer</td>
+            <td><a href="#buyer">Buyer</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>seller</code></td>
-            <td>Seller</td>
+            <td><a href="#seller">Seller</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>product</code></td>
-            <td>Product</td>
+            <td><a href="#product">Product</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>description</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>info</code></td>
-            <td>PriceInfo</td>
+            <td><a href="#priceinfo">PriceInfo</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
@@ -852,28 +852,28 @@ An Agreement is the platform's record of the ongoing commercial relationship bet
     <tbody>
         <tr>
             <td><code>created</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>updated</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>terminated</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>deleted</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
@@ -898,91 +898,91 @@ An Agreement is the platform's record of the ongoing commercial relationship bet
     <tbody>
         <tr>
             <td><code>currency</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>markup</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>margin</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>defaultMarkupSource</code></td>
-            <td>MarkupSourcePrice</td>
+            <td><a href="#markupsourceprice">MarkupSourcePrice</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>markupSource</code></td>
-            <td>MarkupSourcePrice</td>
+            <td><a href="#markupsourceprice">MarkupSourcePrice</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>unitSP</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>unitPP</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>PPx1</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>SPx1</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>SPxY</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>SPxM</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>PPxY</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>PPxM</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td></td>
             <td></td>
@@ -1007,35 +1007,35 @@ An Agreement is the platform's record of the ongoing commercial relationship bet
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>status</code></td>
-            <td>AgreementStatus</td>
+            <td> AgreementStatus</td>
 	        <td></td>
 	        <td></td>
             <td>. Allowed values: New,Draft,Provisioning,Updating,Active,Terminated,Failed,Deleted</td>
@@ -1060,91 +1060,91 @@ An Agreement is the platform's record of the ongoing commercial relationship bet
     <tbody>
         <tr>
             <td><code>currency</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>markup</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>margin</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>defaultMarkupSource</code></td>
-            <td>MarkupSourcePrice</td>
+            <td><a href="#markupsourceprice">MarkupSourcePrice</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>markupSource</code></td>
-            <td>MarkupSourcePrice</td>
+            <td><a href="#markupsourceprice">MarkupSourcePrice</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>SPxY</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>client,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>SPxM</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>client,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>PPxY</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>PPxM</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>defaultMarkup</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>defaultMargin</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>billingCurrency</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>source</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>ops</td>
             <td></td>
@@ -1169,119 +1169,119 @@ An Asset is the platform's record of a one-time purchase fulfilment for a Client
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>audit</code></td>
-            <td>AssetAudit</td>
+            <td><a href="#assetaudit">AssetAudit</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>$meta</code></td>
-            <td>PlatformMetadata</td>
+            <td><a href="#platformmetadata">PlatformMetadata</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>externalIds</code></td>
-            <td>ExternalIds</td>
+            <td><a href="#externalids">ExternalIds</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>status</code></td>
-            <td>AssetStatus</td>
+            <td> AssetStatus</td>
 	        <td></td>
 	        <td></td>
             <td>. Allowed values: New,Draft,Active,Terminated</td>
         </tr>
         <tr>
             <td><code>price</code></td>
-            <td>AssetSummaryPrice</td>
+            <td><a href="#assetsummaryprice">AssetSummaryPrice</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>template</code></td>
-            <td>TemplateRef</td>
+            <td><a href="#templateref">TemplateRef</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>parameters</code></td>
-            <td>AssetParameterBag</td>
+            <td><a href="#assetparameterbag">AssetParameterBag</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>terms</code></td>
-            <td>Terms</td>
+            <td><a href="#terms">Terms</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>agreement</code></td>
-            <td>AgreementRef</td>
+            <td><a href="#agreementref">AgreementRef</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>product</code></td>
-            <td>ProductRef</td>
+            <td><a href="#productref">ProductRef</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>priceList</code></td>
-            <td>PriceListRef</td>
+            <td><a href="#pricelistref">PriceListRef</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>listing</code></td>
-            <td>ListingRef</td>
+            <td><a href="#listingref">ListingRef</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>licensee</code></td>
-            <td>LicenseeRef</td>
+            <td><a href="#licenseeref">LicenseeRef</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>lines</code></td>
-            <td>array</td>
+            <td> array</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -1306,35 +1306,35 @@ An Asset is the platform's record of a one-time purchase fulfilment for a Client
     <tbody>
         <tr>
             <td><code>created</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>updated</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>draft</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>active</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>terminated</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
@@ -1359,7 +1359,7 @@ An Asset is the platform's record of a one-time purchase fulfilment for a Client
     <tbody>
         <tr>
             <td><code>fulfillment</code></td>
-            <td>array</td>
+            <td> array</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -1384,28 +1384,28 @@ An Asset is the platform's record of a one-time purchase fulfilment for a Client
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>status</code></td>
-            <td>AssetStatus</td>
+            <td> AssetStatus</td>
 	        <td></td>
 	        <td></td>
             <td>. Allowed values: New,Draft,Active,Terminated</td>
@@ -1430,63 +1430,63 @@ An Asset is the platform's record of a one-time purchase fulfilment for a Client
     <tbody>
         <tr>
             <td><code>currency</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>markup</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>margin</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>defaultMarkupSource</code></td>
-            <td>MarkupSourcePrice</td>
+            <td><a href="#markupsourceprice">MarkupSourcePrice</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>markupSource</code></td>
-            <td>MarkupSourcePrice</td>
+            <td><a href="#markupsourceprice">MarkupSourcePrice</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>PPx1</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>SPx1</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>client,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>defaultMarkup</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>defaultMargin</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>ops</td>
             <td></td>
@@ -1511,28 +1511,28 @@ An Asset is the platform's record of a one-time purchase fulfilment for a Client
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>currency</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -1557,91 +1557,91 @@ An Asset is the platform's record of a one-time purchase fulfilment for a Client
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>audit</code></td>
-            <td>BuyerAudit</td>
+            <td><a href="#buyeraudit">BuyerAudit</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>$meta</code></td>
-            <td>PlatformMetadata</td>
+            <td><a href="#platformmetadata">PlatformMetadata</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>externalIds</code></td>
-            <td>BuyerExternalIds</td>
+            <td><a href="#buyerexternalids">BuyerExternalIds</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>status</code></td>
-            <td>BuyerStatus</td>
+            <td> BuyerStatus</td>
 	        <td></td>
 	        <td></td>
             <td>. Allowed values: Active,Enabled,Disabled,Deleted,Unassigned,Conflict,Mismatch</td>
         </tr>
         <tr>
             <td><code>address</code></td>
-            <td>Address</td>
+            <td><a href="#address">Address</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>taxId</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>account</code></td>
-            <td>AccountRef</td>
+            <td><a href="#accountref">AccountRef</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>errors</code></td>
-            <td>array</td>
+            <td> array</td>
 	        <td></td>
 	        <td>ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>sellers</code></td>
-            <td>array</td>
+            <td> array</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -1666,35 +1666,35 @@ An Asset is the platform's record of a one-time purchase fulfilment for a Client
     <tbody>
         <tr>
             <td><code>created</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>updated</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>activated</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>unassigned</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>disabled</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
@@ -1719,21 +1719,21 @@ An Asset is the platform's record of a one-time purchase fulfilment for a Client
     <tbody>
         <tr>
             <td><code>erpCompanyContact</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>erpCustomer</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>accountExternalId</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -1758,28 +1758,28 @@ An Asset is the platform's record of a one-time purchase fulfilment for a Client
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -1804,14 +1804,14 @@ An Asset is the platform's record of a one-time purchase fulfilment for a Client
     <tbody>
         <tr>
             <td><code>min</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>max</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -1836,21 +1836,21 @@ An Asset is the platform's record of a one-time purchase fulfilment for a Client
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -1875,77 +1875,77 @@ An Asset is the platform's record of a one-time purchase fulfilment for a Client
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>externalId</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>type</code></td>
-            <td>ParameterType</td>
+            <td> ParameterType</td>
 	        <td></td>
 	        <td></td>
             <td>. Allowed values: SingleLineText,MultiLineText,Address,Contact,Checkbox,Choice,Subdomain,Heading,DropDown,Email,DataObject,Date,DateAndTime,Collection</td>
         </tr>
         <tr>
             <td><code>phase</code></td>
-            <td>ParameterPhase</td>
+            <td> ParameterPhase</td>
 	        <td></td>
 	        <td></td>
             <td>. Allowed values: Configuration,Order,Fulfillment</td>
         </tr>
         <tr>
             <td><code>scope</code></td>
-            <td>ParameterScope</td>
+            <td> ParameterScope</td>
 	        <td></td>
 	        <td></td>
             <td>. Allowed values: Agreement,Item,Subscription,Order,Asset</td>
         </tr>
         <tr>
             <td><code>multiple</code></td>
-            <td>boolean</td>
+            <td> boolean</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>error</code></td>
-            <td>ParametrisedMessage</td>
+            <td><a href="#parametrisedmessage">ParametrisedMessage</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>constraints</code></td>
-            <td>ParameterConstraints</td>
+            <td><a href="#parameterconstraints">ParameterConstraints</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>displayValue</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>value</code></td>
-            <td>object</td>
+            <td> object</td>
 	        <td></td>
 	        <td></td>
             <td></td>
@@ -1970,35 +1970,35 @@ An Asset is the platform's record of a one-time purchase fulfilment for a Client
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>accepted</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>acceptedBy</code></td>
-            <td>ExtendedIdentity</td>
+            <td><a href="#extendedidentity">ExtendedIdentity</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
@@ -2023,14 +2023,14 @@ An Asset is the platform's record of a one-time purchase fulfilment for a Client
     <tbody>
         <tr>
             <td><code>client</code></td>
-            <td>boolean</td>
+            <td> boolean</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>partner</code></td>
-            <td>boolean</td>
+            <td> boolean</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -2055,42 +2055,42 @@ An Asset is the platform's record of a one-time purchase fulfilment for a Client
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>companyName</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>status</code></td>
-            <td>ErpLinkStatus</td>
+            <td> ErpLinkStatus</td>
 	        <td></td>
 	        <td></td>
             <td>. Allowed values: Active,Blocked,Disabled</td>
@@ -2115,56 +2115,56 @@ An Asset is the platform's record of a one-time purchase fulfilment for a Client
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>$meta</code></td>
-            <td>PlatformMetadata</td>
+            <td><a href="#platformmetadata">PlatformMetadata</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>firstName</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>lastName</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>email</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -2189,21 +2189,21 @@ An Asset is the platform's record of a one-time purchase fulfilment for a Client
     <tbody>
         <tr>
             <td><code>client</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>operations</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>vendor</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td></td>
             <td></td>
@@ -2228,21 +2228,21 @@ An Asset is the platform's record of a one-time purchase fulfilment for a Client
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -2267,35 +2267,35 @@ An Asset is the platform's record of a one-time purchase fulfilment for a Client
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>externalId</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -2320,21 +2320,21 @@ An Asset is the platform's record of a one-time purchase fulfilment for a Client
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -2359,14 +2359,14 @@ An Asset is the platform's record of a one-time purchase fulfilment for a Client
     <tbody>
         <tr>
             <td><code>type</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>ref</code></td>
-            <td>MarkupSourceRefPrice</td>
+            <td><a href="#markupsourcerefprice">MarkupSourceRefPrice</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
@@ -2391,14 +2391,14 @@ An Asset is the platform's record of a one-time purchase fulfilment for a Client
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>ops</td>
             <td></td>
@@ -2423,224 +2423,224 @@ An Order is the platform's record of a request to create, modify, configure, ter
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>audit</code></td>
-            <td>OrderAudit</td>
+            <td><a href="#orderaudit">OrderAudit</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>$meta</code></td>
-            <td>PlatformMetadata</td>
+            <td><a href="#platformmetadata">PlatformMetadata</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>type</code></td>
-            <td>OrderType</td>
+            <td> OrderType</td>
 	        <td></td>
 	        <td></td>
             <td>. Allowed values: Purchase,Change,Termination,Configuration</td>
         </tr>
         <tr>
             <td><code>status</code></td>
-            <td>OrderStatus</td>
+            <td> OrderStatus</td>
 	        <td></td>
 	        <td></td>
             <td>. Allowed values: New,Draft,Deleted,Processing,Querying,Failed,Completed,Quoted</td>
         </tr>
         <tr>
             <td><code>notes</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>comments</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>statusNotes</code></td>
-            <td>ParametrisedMessage</td>
+            <td><a href="#parametrisedmessage">ParametrisedMessage</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>template</code></td>
-            <td>TemplateRef</td>
+            <td><a href="#templateref">TemplateRef</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>listing</code></td>
-            <td>ListingRef</td>
+            <td><a href="#listingref">ListingRef</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>authorization</code></td>
-            <td>AuthorizationRef</td>
+            <td><a href="#authorizationref">AuthorizationRef</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>agreement</code></td>
-            <td>AgreementRef</td>
+            <td><a href="#agreementref">AgreementRef</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>assignee</code></td>
-            <td>PlatformIdentityRef</td>
+            <td><a href="#platformidentityref">PlatformIdentityRef</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>externalIds</code></td>
-            <td>ExternalIds</td>
+            <td><a href="#externalids">ExternalIds</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>price</code></td>
-            <td>OrderSummaryPrice</td>
+            <td><a href="#ordersummaryprice">OrderSummaryPrice</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>lines</code></td>
-            <td>array</td>
+            <td> array</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>subscriptions</code></td>
-            <td>array</td>
+            <td> array</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>assets</code></td>
-            <td>array</td>
+            <td> array</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>parameters</code></td>
-            <td>ParameterBag</td>
+            <td><a href="#parameterbag">ParameterBag</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>error</code></td>
-            <td>ParametrisedMessage</td>
+            <td><a href="#parametrisedmessage">ParametrisedMessage</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>product</code></td>
-            <td>ProductRef</td>
+            <td><a href="#productref">ProductRef</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>client</code></td>
-            <td>AccountRef</td>
+            <td><a href="#accountref">AccountRef</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>licensee</code></td>
-            <td>LicenseeRef</td>
+            <td><a href="#licenseeref">LicenseeRef</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>buyer</code></td>
-            <td>BuyerRef</td>
+            <td><a href="#buyerref">BuyerRef</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>seller</code></td>
-            <td>SellerRef</td>
+            <td><a href="#sellerref">SellerRef</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>vendor</code></td>
-            <td>AccountRef</td>
+            <td><a href="#accountref">AccountRef</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>billTo</code></td>
-            <td>BuyerRef</td>
+            <td><a href="#buyerref">BuyerRef</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>pricingPolicy</code></td>
-            <td>PricingPolicyRef</td>
+            <td><a href="#pricingpolicyref">PricingPolicyRef</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>termsAndConditions</code></td>
-            <td>array</td>
+            <td> array</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>certificates</code></td>
-            <td>array</td>
+            <td> array</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>defaultMarkupSource</code></td>
-            <td>MarkupSource</td>
+            <td> MarkupSource</td>
 	        <td></td>
 	        <td></td>
             <td>. Allowed values: Unknown,PriceList,PricingPolicy,Manual</td>
@@ -2665,84 +2665,84 @@ An Order is the platform's record of a request to create, modify, configure, ter
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>audit</code></td>
-            <td>OrderAssetAudit</td>
+            <td><a href="#orderassetaudit">OrderAssetAudit</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>$meta</code></td>
-            <td>PlatformMetadata</td>
+            <td><a href="#platformmetadata">PlatformMetadata</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>externalIds</code></td>
-            <td>ExternalIds</td>
+            <td><a href="#externalids">ExternalIds</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>status</code></td>
-            <td>AssetStatus</td>
+            <td> AssetStatus</td>
 	        <td></td>
 	        <td></td>
             <td>. Allowed values: New,Draft,Active,Terminated</td>
         </tr>
         <tr>
             <td><code>price</code></td>
-            <td>AssetSummaryPrice</td>
+            <td><a href="#assetsummaryprice">AssetSummaryPrice</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>template</code></td>
-            <td>TemplateRef</td>
+            <td><a href="#templateref">TemplateRef</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>parameters</code></td>
-            <td>AssetParameterBag</td>
+            <td><a href="#assetparameterbag">AssetParameterBag</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>terms</code></td>
-            <td>Terms</td>
+            <td><a href="#terms">Terms</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>lines</code></td>
-            <td>array</td>
+            <td> array</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -2767,35 +2767,35 @@ An Order is the platform's record of a request to create, modify, configure, ter
     <tbody>
         <tr>
             <td><code>created</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>updated</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>draft</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>active</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>terminated</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
@@ -2820,28 +2820,28 @@ An Order is the platform's record of a request to create, modify, configure, ter
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>status</code></td>
-            <td>AssetStatus</td>
+            <td> AssetStatus</td>
 	        <td></td>
 	        <td></td>
             <td>. Allowed values: New,Draft,Active,Terminated</td>
@@ -2866,56 +2866,56 @@ An Order is the platform's record of a request to create, modify, configure, ter
     <tbody>
         <tr>
             <td><code>created</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>updated</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>completed</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>deleted</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>failed</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>processing</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>querying</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>quoted</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
@@ -2940,91 +2940,91 @@ An Order is the platform's record of a request to create, modify, configure, ter
     <tbody>
         <tr>
             <td><code>currency</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>markup</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>margin</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>defaultMarkupSource</code></td>
-            <td>MarkupSourcePrice</td>
+            <td><a href="#markupsourceprice">MarkupSourcePrice</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>markupSource</code></td>
-            <td>MarkupSourcePrice</td>
+            <td><a href="#markupsourceprice">MarkupSourcePrice</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>unitSP</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>client,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>unitPP</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>PPx1</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>SPx1</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>client,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>SPxY</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>client,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>SPxM</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>client,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>PPxY</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>PPxM</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>vendor,ops</td>
             <td></td>
@@ -3049,126 +3049,126 @@ An Order is the platform's record of a request to create, modify, configure, ter
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>audit</code></td>
-            <td>OrderSubscriptionAudit</td>
+            <td><a href="#ordersubscriptionaudit">OrderSubscriptionAudit</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>$meta</code></td>
-            <td>PlatformMetadata</td>
+            <td><a href="#platformmetadata">PlatformMetadata</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>startDate</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>terminationDate</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>externalIds</code></td>
-            <td>ExternalIds</td>
+            <td><a href="#externalids">ExternalIds</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>terms</code></td>
-            <td>Terms</td>
+            <td><a href="#terms">Terms</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>product</code></td>
-            <td>ProductRef</td>
+            <td><a href="#productref">ProductRef</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>status</code></td>
-            <td>OrderSubscriptionStatus</td>
+            <td> OrderSubscriptionStatus</td>
 	        <td></td>
 	        <td></td>
             <td>. Allowed values: Draft,Active,Deleted,Updating,Terminating,Terminated</td>
         </tr>
         <tr>
             <td><code>commitmentDate</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>parameters</code></td>
-            <td>SubscriptionParameterBag</td>
+            <td><a href="#subscriptionparameterbag">SubscriptionParameterBag</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>agreement</code></td>
-            <td>AgreementRef</td>
+            <td><a href="#agreementref">AgreementRef</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>price</code></td>
-            <td>SubscriptionSummaryPrice</td>
+            <td><a href="#subscriptionsummaryprice">SubscriptionSummaryPrice</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>lines</code></td>
-            <td>array</td>
+            <td> array</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>template</code></td>
-            <td>TemplateRef</td>
+            <td><a href="#templateref">TemplateRef</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>autoRenew</code></td>
-            <td>boolean</td>
+            <td> boolean</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -3193,42 +3193,42 @@ An Order is the platform's record of a request to create, modify, configure, ter
     <tbody>
         <tr>
             <td><code>created</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>updated</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>active</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>terminated</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>terminating</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>updating</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
@@ -3253,35 +3253,35 @@ An Order is the platform's record of a request to create, modify, configure, ter
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>status</code></td>
-            <td>OrderSubscriptionStatus</td>
+            <td> OrderSubscriptionStatus</td>
 	        <td></td>
 	        <td></td>
             <td>. Allowed values: Draft,Active,Deleted,Updating,Terminating,Terminated</td>
         </tr>
         <tr>
             <td><code>autoRenew</code></td>
-            <td>boolean</td>
+            <td> boolean</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -3306,84 +3306,84 @@ An Order is the platform's record of a request to create, modify, configure, ter
     <tbody>
         <tr>
             <td><code>currency</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>markup</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>margin</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>defaultMarkupSource</code></td>
-            <td>MarkupSourcePrice</td>
+            <td><a href="#markupsourceprice">MarkupSourcePrice</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>markupSource</code></td>
-            <td>MarkupSourcePrice</td>
+            <td><a href="#markupsourceprice">MarkupSourcePrice</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>defaultMarkup</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>PPx1</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>SPx1</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>client,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>SPxY</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>client,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>SPxM</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>client,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>PPxY</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>PPxM</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>vendor,ops</td>
             <td></td>
@@ -3408,14 +3408,14 @@ An Order is the platform's record of a request to create, modify, configure, ter
     <tbody>
         <tr>
             <td><code>ordering</code></td>
-            <td>array</td>
+            <td> array</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>fulfillment</code></td>
-            <td>array</td>
+            <td> array</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -3440,28 +3440,28 @@ An Order is the platform's record of a request to create, modify, configure, ter
     <tbody>
         <tr>
             <td><code>required</code></td>
-            <td>boolean</td>
+            <td> boolean</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>hidden</code></td>
-            <td>boolean</td>
+            <td> boolean</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>readonly</code></td>
-            <td>boolean</td>
+            <td> boolean</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>capacity</code></td>
-            <td>CapacitySettings</td>
+            <td><a href="#capacitysettings">CapacitySettings</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
@@ -3486,49 +3486,49 @@ An Order is the platform's record of a request to create, modify, configure, ter
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>externalId</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>type</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>multiple</code></td>
-            <td>boolean</td>
+            <td> boolean</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>value</code></td>
-            <td>object</td>
+            <td> object</td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>displayValue</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -3553,21 +3553,21 @@ An Order is the platform's record of a request to create, modify, configure, ter
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>message</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>parameters</code></td>
-            <td>object</td>
+            <td> object</td>
 	        <td></td>
 	        <td></td>
             <td></td>
@@ -3592,28 +3592,28 @@ An Order is the platform's record of a request to create, modify, configure, ter
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -3638,7 +3638,7 @@ An Order is the platform's record of a request to create, modify, configure, ter
     <tbody>
         <tr>
             <td><code>omitted</code></td>
-            <td>array</td>
+            <td> array</td>
 	        <td></td>
 	        <td></td>
             <td></td>
@@ -3663,14 +3663,14 @@ An Order is the platform's record of a request to create, modify, configure, ter
     <tbody>
         <tr>
             <td><code>created</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>updated</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
@@ -3695,14 +3695,14 @@ An Order is the platform's record of a request to create, modify, configure, ter
     <tbody>
         <tr>
             <td><code>at</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>by</code></td>
-            <td>PlatformIdentityRef</td>
+            <td><a href="#platformidentityref">PlatformIdentityRef</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
@@ -3727,35 +3727,35 @@ An Order is the platform's record of a request to create, modify, configure, ter
     <tbody>
         <tr>
             <td><code>purchaseOrderDraft</code></td>
-            <td>boolean</td>
+            <td> boolean</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>purchaseOrderQuerying</code></td>
-            <td>boolean</td>
+            <td> boolean</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>changeOrderDraft</code></td>
-            <td>boolean</td>
+            <td> boolean</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>configurationOrderDraft</code></td>
-            <td>boolean</td>
+            <td> boolean</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>terminationOrder</code></td>
-            <td>boolean</td>
+            <td> boolean</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -3780,14 +3780,14 @@ An Order is the platform's record of a request to create, modify, configure, ter
     <tbody>
         <tr>
             <td><code>visible</code></td>
-            <td>boolean</td>
+            <td> boolean</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>description</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -3812,21 +3812,21 @@ An Order is the platform's record of a request to create, modify, configure, ter
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>currency</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -3851,14 +3851,14 @@ An Order is the platform's record of a request to create, modify, configure, ter
     <tbody>
         <tr>
             <td><code>client</code></td>
-            <td>boolean</td>
+            <td> boolean</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>partner</code></td>
-            <td>boolean</td>
+            <td> boolean</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -3883,42 +3883,42 @@ An Order is the platform's record of a request to create, modify, configure, ter
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>client</code></td>
-            <td>Account</td>
+            <td><a href="#account">Account</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>eligibility</code></td>
-            <td>PricingPolicyEligibility</td>
+            <td><a href="#pricingpolicyeligibility">PricingPolicyEligibility</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>products</code></td>
-            <td>array</td>
+            <td> array</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -3943,98 +3943,98 @@ An Order is the platform's record of a request to create, modify, configure, ter
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>audit</code></td>
-            <td>ProductAudit</td>
+            <td><a href="#productaudit">ProductAudit</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>$meta</code></td>
-            <td>PlatformMetadata</td>
+            <td><a href="#platformmetadata">PlatformMetadata</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>shortDescription</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>longDescription</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>externalIds</code></td>
-            <td>ProductExternalIdBag</td>
+            <td><a href="#productexternalidbag">ProductExternalIdBag</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>website</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>status</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>vendor</code></td>
-            <td>AccountRef</td>
+            <td><a href="#accountref">AccountRef</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>settings</code></td>
-            <td>ProductSettings</td>
+            <td><a href="#productsettings">ProductSettings</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>statistics</code></td>
-            <td>ProductStatistics</td>
+            <td><a href="#productstatistics">ProductStatistics</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
@@ -4059,35 +4059,35 @@ An Order is the platform's record of a request to create, modify, configure, ter
     <tbody>
         <tr>
             <td><code>created</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>updated</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>published</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>pending</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>unpublished</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
@@ -4112,14 +4112,14 @@ An Order is the platform's record of a request to create, modify, configure, ter
     <tbody>
         <tr>
             <td><code>operations</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>defaultErpItem</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -4144,98 +4144,98 @@ An Order is the platform's record of a request to create, modify, configure, ter
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>audit</code></td>
-            <td>ProductItemAudit</td>
+            <td><a href="#productitemaudit">ProductItemAudit</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>$meta</code></td>
-            <td>PlatformMetadata</td>
+            <td><a href="#platformmetadata">PlatformMetadata</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>description</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>externalIds</code></td>
-            <td>ProductItemExternalIdBag</td>
+            <td><a href="#productitemexternalidbag">ProductItemExternalIdBag</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>group</code></td>
-            <td>ItemGroupRef</td>
+            <td><a href="#itemgroupref">ItemGroupRef</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>unit</code></td>
-            <td>UnitOfMeasureRef</td>
+            <td><a href="#unitofmeasureref">UnitOfMeasureRef</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>terms</code></td>
-            <td>Terms</td>
+            <td><a href="#terms">Terms</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>quantityNotApplicable</code></td>
-            <td>boolean</td>
+            <td> boolean</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>status</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>product</code></td>
-            <td>ProductRef</td>
+            <td><a href="#productref">ProductRef</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>parameters</code></td>
-            <td>array</td>
+            <td> array</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -4260,35 +4260,35 @@ An Order is the platform's record of a request to create, modify, configure, ter
     <tbody>
         <tr>
             <td><code>created</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>updated</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>pending</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>published</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>unpublished</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
@@ -4313,14 +4313,14 @@ An Order is the platform's record of a request to create, modify, configure, ter
     <tbody>
         <tr>
             <td><code>vendor</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>operations</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -4345,42 +4345,42 @@ An Order is the platform's record of a request to create, modify, configure, ter
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>externalIds</code></td>
-            <td>ProductExternalIdBag</td>
+            <td><a href="#productexternalidbag">ProductExternalIdBag</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>status</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -4405,21 +4405,21 @@ An Order is the platform's record of a request to create, modify, configure, ter
     <tbody>
         <tr>
             <td><code>enabled</code></td>
-            <td>boolean</td>
+            <td> boolean</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>label</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -4444,56 +4444,56 @@ An Order is the platform's record of a request to create, modify, configure, ter
     <tbody>
         <tr>
             <td><code>productOrdering</code></td>
-            <td>boolean</td>
+            <td> boolean</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>productRequests</code></td>
-            <td>ProductRequestsSetting</td>
+            <td><a href="#productrequestssetting">ProductRequestsSetting</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>itemSelection</code></td>
-            <td>boolean</td>
+            <td> boolean</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>orderQueueChanges</code></td>
-            <td>boolean</td>
+            <td> boolean</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>preValidation</code></td>
-            <td>PreValidationSettings</td>
+            <td><a href="#prevalidationsettings">PreValidationSettings</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>splitBilling</code></td>
-            <td>ProductSplitBillingRequestsSetting</td>
+            <td><a href="#productsplitbillingrequestssetting">ProductSplitBillingRequestsSetting</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>sendCostToErp</code></td>
-            <td>boolean</td>
+            <td> boolean</td>
 	        <td></td>
 	        <td>ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>subscriptionCessation</code></td>
-            <td>SubscriptionCessationSetting</td>
+            <td><a href="#subscriptioncessationsetting">SubscriptionCessationSetting</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
@@ -4518,14 +4518,14 @@ An Order is the platform's record of a request to create, modify, configure, ter
     <tbody>
         <tr>
             <td><code>enabled</code></td>
-            <td>boolean</td>
+            <td> boolean</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>type</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -4550,28 +4550,28 @@ An Order is the platform's record of a request to create, modify, configure, ter
     <tbody>
         <tr>
             <td><code>itemCount</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>ordersPlacedCount</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>agreementCount</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>subscriptionCount</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -4596,84 +4596,84 @@ An Order is the platform's record of a request to create, modify, configure, ter
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>audit</code></td>
-            <td>PlatformObjectAudit</td>
+            <td><a href="#platformobjectaudit">PlatformObjectAudit</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>$meta</code></td>
-            <td>PlatformMetadata</td>
+            <td><a href="#platformmetadata">PlatformMetadata</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>externalId</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>status</code></td>
-            <td>SellerStatus</td>
+            <td> SellerStatus</td>
 	        <td></td>
 	        <td></td>
             <td>. Allowed values: Active,Disabled,Offline,Deleted</td>
         </tr>
         <tr>
             <td><code>currencies</code></td>
-            <td>array</td>
+            <td> array</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>address</code></td>
-            <td>Address</td>
+            <td><a href="#address">Address</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>erpLink</code></td>
-            <td>ErpLinkRef</td>
+            <td><a href="#erplinkref">ErpLinkRef</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>attributes</code></td>
-            <td>SellerAttributes</td>
+            <td><a href="#sellerattributes">SellerAttributes</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
@@ -4698,7 +4698,7 @@ An Order is the platform's record of a request to create, modify, configure, ter
     <tbody>
         <tr>
             <td><code>navision</code></td>
-            <td>object</td>
+            <td> object</td>
 	        <td></td>
 	        <td></td>
             <td></td>
@@ -4723,21 +4723,21 @@ An Order is the platform's record of a request to create, modify, configure, ter
     <tbody>
         <tr>
             <td><code>value</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>billingEnabled</code></td>
-            <td>boolean</td>
+            <td> boolean</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>isDefault</code></td>
-            <td>boolean</td>
+            <td> boolean</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -4762,35 +4762,35 @@ An Order is the platform's record of a request to create, modify, configure, ter
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>externalId</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -4815,14 +4815,14 @@ An Order is the platform's record of a request to create, modify, configure, ter
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -4847,14 +4847,14 @@ An Order is the platform's record of a request to create, modify, configure, ter
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -4879,161 +4879,161 @@ A Subscription is the platform's record of a recurring fulfilment relationship b
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>audit</code></td>
-            <td>SubscriptionAudit</td>
+            <td><a href="#subscriptionaudit">SubscriptionAudit</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>$meta</code></td>
-            <td>PlatformMetadata</td>
+            <td><a href="#platformmetadata">PlatformMetadata</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>startDate</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>terminationDate</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>externalIds</code></td>
-            <td>ExternalIds</td>
+            <td><a href="#externalids">ExternalIds</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>terms</code></td>
-            <td>Terms</td>
+            <td><a href="#terms">Terms</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>product</code></td>
-            <td>ProductRef</td>
+            <td><a href="#productref">ProductRef</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>autoRenew</code></td>
-            <td>boolean</td>
+            <td> boolean</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>status</code></td>
-            <td>SubscriptionStatus</td>
+            <td> SubscriptionStatus</td>
 	        <td></td>
 	        <td></td>
             <td>. Allowed values: Active,Updating,Terminating,Terminated,Expired</td>
         </tr>
         <tr>
             <td><code>commitmentDate</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>price</code></td>
-            <td>SubscriptionSummaryPrice</td>
+            <td><a href="#subscriptionsummaryprice">SubscriptionSummaryPrice</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>parameters</code></td>
-            <td>SubscriptionParameterBag</td>
+            <td><a href="#subscriptionparameterbag">SubscriptionParameterBag</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>agreement</code></td>
-            <td>AgreementRef</td>
+            <td><a href="#agreementref">AgreementRef</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>buyer</code></td>
-            <td>BuyerRef</td>
+            <td><a href="#buyerref">BuyerRef</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>licensee</code></td>
-            <td>LicenseeRef</td>
+            <td><a href="#licenseeref">LicenseeRef</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>seller</code></td>
-            <td>SellerRef</td>
+            <td><a href="#sellerref">SellerRef</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>split</code></td>
-            <td>SplitBillingSubscriptionRef</td>
+            <td><a href="#splitbillingsubscriptionref">SplitBillingSubscriptionRef</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>splitStatus</code></td>
-            <td>SplitStatus</td>
+            <td> SplitStatus</td>
 	        <td></td>
 	        <td></td>
             <td>. Allowed values: Disabled,Active,Review</td>
         </tr>
         <tr>
             <td><code>lines</code></td>
-            <td>array</td>
+            <td> array</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>template</code></td>
-            <td>TemplateRef</td>
+            <td><a href="#templateref">TemplateRef</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
@@ -5058,56 +5058,56 @@ A Subscription is the platform's record of a recurring fulfilment relationship b
     <tbody>
         <tr>
             <td><code>created</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>updated</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>active</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>terminated</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>terminating</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>updating</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>expired</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>renewed</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
@@ -5132,14 +5132,14 @@ A Subscription is the platform's record of a recurring fulfilment relationship b
     <tbody>
         <tr>
             <td><code>enabled</code></td>
-            <td>boolean</td>
+            <td> boolean</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>mode</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -5164,7 +5164,7 @@ A Subscription is the platform's record of a recurring fulfilment relationship b
     <tbody>
         <tr>
             <td><code>fulfillment</code></td>
-            <td>array</td>
+            <td> array</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -5189,21 +5189,21 @@ A Subscription is the platform's record of a recurring fulfilment relationship b
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -5228,77 +5228,77 @@ A Subscription is the platform's record of a recurring fulfilment relationship b
     <tbody>
         <tr>
             <td><code>currency</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>markup</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>margin</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>defaultMarkupSource</code></td>
-            <td>MarkupSourcePrice</td>
+            <td><a href="#markupsourceprice">MarkupSourcePrice</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>markupSource</code></td>
-            <td>MarkupSourcePrice</td>
+            <td><a href="#markupsourceprice">MarkupSourcePrice</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>SPxY</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>client,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>SPxM</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>client,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>PPxY</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>PPxM</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>defaultMarkup</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>defaultMargin</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>ops</td>
             <td></td>
@@ -5323,21 +5323,21 @@ A Subscription is the platform's record of a recurring fulfilment relationship b
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -5362,21 +5362,21 @@ A Subscription is the platform's record of a recurring fulfilment relationship b
     <tbody>
         <tr>
             <td><code>model</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>period</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>commitment</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -5401,28 +5401,28 @@ A Subscription is the platform's record of a recurring fulfilment relationship b
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>description</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -5447,42 +5447,42 @@ A Subscription is the platform's record of a recurring fulfilment relationship b
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>description</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>logo</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>isDefault</code></td>
-            <td>boolean</td>
+            <td> boolean</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>

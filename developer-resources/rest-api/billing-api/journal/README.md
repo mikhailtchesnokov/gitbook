@@ -72,140 +72,140 @@ A Journal is the entry point of the platform's billing pipeline: the normalized 
     <tbody>
         <tr>
             <td><code>audit</code></td>
-            <td>JournalAuditBag</td>
+            <td><a href="#journalauditbag">JournalAuditBag</a </td>
 	        <td></td>
 	        <td></td>
             <td>Represents a container for audit-related events for a journalCreated/updated events plus a per-status event history (Draft, Validating, Validated, Error, Review, Enquiring, Generating, Generated, Accepted, Completed, Deleted).—</td>
         </tr>
         <tr>
             <td><code>$meta</code></td>
-            <td>PlatformMetadata</td>
+            <td><a href="#platformmetadata">PlatformMetadata</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td>Monotonic revision counter.Increments on each change</td>
         </tr>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td>The unique identifier of the journal entry.Unique identifier, format `BJO-NNNN-NNNN`.—</td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td>Name of the journal.Human-readable Journal name.Required at creation</td>
         </tr>
         <tr>
             <td><code>description</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>A description of the journal entry.Free-text description of the Journal.Absent from response when null</td>
         </tr>
         <tr>
             <td><code>externalIds</code></td>
-            <td>BillingExternalIds</td>
+            <td><a href="#billingexternalids">BillingExternalIds</a </td>
 	        <td></td>
 	        <td></td>
             <td>External identifiers associated with the journal entry</td>
         </tr>
         <tr>
             <td><code>notes</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>Additional notes or comments about the journal entry.Additional notes or comments.Absent from response when null</td>
         </tr>
         <tr>
             <td><code>status</code></td>
-            <td>JournalStatus</td>
+            <td> JournalStatus</td>
 	        <td></td>
 	        <td></td>
             <td>The current status of the journal entry.Current lifecycle state — one of the Section 3.1 states.Changes only through the Section 3.2 transitions, never by a direct field write. Allowed values: Draft,Deleted,Error,Validating,Validated,Review,Reconciling,Enquiring,Generating,Generated,Accepted,Queued,Completed,Resetting</td>
         </tr>
         <tr>
             <td><code>vendor</code></td>
-            <td>AccountRef</td>
+            <td><a href="#accountref">AccountRef</a </td>
 	        <td></td>
 	        <td></td>
             <td>The Vendor Account.Derived from the Authorization</td>
         </tr>
         <tr>
             <td><code>owner</code></td>
-            <td>SellerRef</td>
+            <td><a href="#sellerref">SellerRef</a </td>
 	        <td></td>
 	        <td></td>
             <td>The owning Seller — always the Authorization's Seller.The Journal's charges may span multiple Sellers, each of which yields a Ledger on accept</td>
         </tr>
         <tr>
             <td><code>product</code></td>
-            <td>ProductRef</td>
+            <td><a href="#productref">ProductRef</a </td>
 	        <td></td>
 	        <td></td>
             <td>The Product being billed.Derived from the Authorization</td>
         </tr>
         <tr>
             <td><code>authorization</code></td>
-            <td>AuthorizationRef</td>
+            <td><a href="#authorizationref">AuthorizationRef</a </td>
 	        <td></td>
 	        <td></td>
             <td>The Authorization the Journal is billed under.Required at creation; fixes vendor, product, owner, and currency — see BR-001</td>
         </tr>
         <tr>
             <td><code>dueDate</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td>The due date for the journal entry.The billing due date for the period.Cadence is defined by the Authorization</td>
         </tr>
         <tr>
             <td><code>assignee</code></td>
-            <td>PlatformIdentityRef</td>
+            <td><a href="#platformidentityref">PlatformIdentityRef</a </td>
 	        <td></td>
 	        <td></td>
             <td>The Operations reviewer assigned to the Journal.Operations-set only. Absent from response when null</td>
         </tr>
         <tr>
             <td><code>price</code></td>
-            <td>JournalPriceSummary</td>
+            <td><a href="#journalpricesummary">JournalPriceSummary</a </td>
 	        <td></td>
 	        <td></td>
             <td>Pricing details associated with the journal entry.Pricing summary: currency, total purchase price (totalPP), total sale price in buyer currency (totalBSP), markup, margin.markup and margin are Operations-only; totalBSP is not visible to the Vendor; totalPP and currency are visible to the Vendor. Recalculated on each processing run. See BR-014</td>
         </tr>
         <tr>
             <td><code>upload</code></td>
-            <td>JournalUploadSummary</td>
+            <td><a href="#journaluploadsummary">JournalUploadSummary</a </td>
 	        <td></td>
 	        <td></td>
             <td>Upload summary details for the journal entry, visible to vendors or operations.Upload summary: total, split, ready, error counts from the latest upload.Visible to Vendor and Operations</td>
         </tr>
         <tr>
             <td><code>processing</code></td>
-            <td>ProcessingSummary</td>
+            <td><a href="#processingsummary">ProcessingSummary</a </td>
 	        <td></td>
 	        <td></td>
             <td>Processing status and related details for the journal entry, visible to operations.Processing summary: total, ready, error, split, skipped, ignored counts.Visible to Operations only; omitted for the Vendor</td>
         </tr>
         <tr>
             <td><code>error</code></td>
-            <td>BillingError</td>
+            <td><a href="#billingerror">BillingError</a </td>
 	        <td></td>
 	        <td></td>
             <td>Error details associated with the journal entry, if any</td>
         </tr>
         <tr>
             <td><code>backup</code></td>
-            <td>BackupDetails</td>
+            <td><a href="#backupdetails">BackupDetails</a </td>
 	        <td></td>
 	        <td></td>
             <td>Backup details for the journal.Backup summary: status and date of the Journal's data backup.Visible to Operations only</td>
@@ -231,42 +231,42 @@ A Journal is the entry point of the platform's billing pipeline: the normalized 
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>type</code></td>
-            <td>AccountType</td>
+            <td> AccountType</td>
 	        <td></td>
 	        <td></td>
             <td>. Allowed values: Client,Vendor,Operations</td>
         </tr>
         <tr>
             <td><code>status</code></td>
-            <td>AccountStatus</td>
+            <td> AccountStatus</td>
 	        <td></td>
 	        <td></td>
             <td>. Allowed values: Active,Enabled,Disabled</td>
@@ -291,28 +291,28 @@ A Journal is the entry point of the platform's billing pipeline: the normalized 
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>currency</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -337,14 +337,14 @@ Represents the details of a backup operation, including its status and date.
     <tbody>
         <tr>
             <td><code>status</code></td>
-            <td>BackupStatus</td>
+            <td> BackupStatus</td>
 	        <td></td>
 	        <td></td>
             <td>Status of the backup. Allowed values: Pending,Exporting,Exported,Verifying,Completed,Failed,Skipped</td>
         </tr>
         <tr>
             <td><code>date</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>Date and time of the backup action, if available</td>
@@ -369,28 +369,28 @@ Represents an error related to a billing entity.
     <tbody>
         <tr>
             <td><code>errorCode</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>Represents the error code associated with the billing entity</td>
         </tr>
         <tr>
             <td><code>errorMessage</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>Represents the error message providing details about the issue</td>
         </tr>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>Represents the unique identifier for the error, if applicable</td>
         </tr>
         <tr>
             <td><code>message</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>Represents the detailed message associated with the error, if applicable</td>
@@ -415,14 +415,14 @@ Represents external identifiers associated with billing entities.
     <tbody>
         <tr>
             <td><code>operations</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td>Represents the identifier used for operations in the billing system</td>
         </tr>
         <tr>
             <td><code>vendor</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td>Represents the identifier used for vendors in the billing system</td>
@@ -447,91 +447,91 @@ Represents a container for audit-related events for a journal
     <tbody>
         <tr>
             <td><code>created</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>updated</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>draft</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td>Contains details about the most recent event when the journal reached the "Draft" status</td>
         </tr>
         <tr>
             <td><code>deleted</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td>Contains details about the most recent event when the journal reached the "Deleted" status</td>
         </tr>
         <tr>
             <td><code>error</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td>Contains details about the most recent event when the journal reached the "Error" status</td>
         </tr>
         <tr>
             <td><code>validating</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td>Contains details about the most recent event when the journal reached the "Validating" status</td>
         </tr>
         <tr>
             <td><code>validated</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td>Contains details about the most recent event when the journal reached the "Validated" status</td>
         </tr>
         <tr>
             <td><code>review</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td>Contains details about the most recent event when the journal reached the "Review" status</td>
         </tr>
         <tr>
             <td><code>enquiring</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td>Contains details about the most recent event when the journal reached the "Enquiring" status</td>
         </tr>
         <tr>
             <td><code>generating</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td>Contains details about the most recent event when the journal reached the "Generating" status</td>
         </tr>
         <tr>
             <td><code>generated</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td>Contains details about the most recent event when the journal reached the "Generated" status</td>
         </tr>
         <tr>
             <td><code>accepted</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td>Contains details about the most recent event when the journal reached the "Accepted" status</td>
         </tr>
         <tr>
             <td><code>completed</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td>Contains details about the most recent event when the journal reached the "Completed" status</td>
@@ -556,35 +556,35 @@ Represents a detailed summary of pricing.
     <tbody>
         <tr>
             <td><code>markup</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>ops</td>
             <td>Represents the markup value applied to the pricing</td>
         </tr>
         <tr>
             <td><code>margin</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>ops</td>
             <td>Represents the margin value calculated for the pricing</td>
         </tr>
         <tr>
             <td><code>totalPP</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>vendor,ops</td>
             <td>Represents the total purchase price</td>
         </tr>
         <tr>
             <td><code>totalBSP</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>client,ops</td>
             <td>Represents the total sale price in buyer currency</td>
         </tr>
         <tr>
             <td><code>currency</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,ops</td>
             <td>Specifies the currency for the pricing</td>
@@ -609,28 +609,28 @@ Represents a summary of the upload status for a journal entry.
     <tbody>
         <tr>
             <td><code>total</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>The total number of items in the upload</td>
         </tr>
         <tr>
             <td><code>split</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>The number of items that were split during the upload</td>
         </tr>
         <tr>
             <td><code>ready</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>The number of items that are ready for processing</td>
         </tr>
         <tr>
             <td><code>error</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>The number of items that encountered errors during the upload</td>
@@ -655,28 +655,28 @@ Represents a summary of the upload status for a journal entry.
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -701,7 +701,7 @@ Represents a summary of the upload status for a journal entry.
     <tbody>
         <tr>
             <td><code>omitted</code></td>
-            <td>array</td>
+            <td> array</td>
 	        <td></td>
 	        <td></td>
             <td></td>
@@ -726,14 +726,14 @@ Represents a summary of the upload status for a journal entry.
     <tbody>
         <tr>
             <td><code>at</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>by</code></td>
-            <td>PlatformIdentityRef</td>
+            <td><a href="#platformidentityref">PlatformIdentityRef</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
@@ -758,42 +758,42 @@ Represents a summary of the processing status for various billing operations.
     <tbody>
         <tr>
             <td><code>total</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>Indicates the total number of items involved in the processing</td>
         </tr>
         <tr>
             <td><code>ready</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>Indicates the number of items that are ready for further processing</td>
         </tr>
         <tr>
             <td><code>error</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>Indicates the number of items that encountered errors during processing</td>
         </tr>
         <tr>
             <td><code>split</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>Indicates the number of items that were split into multiple parts during processing</td>
         </tr>
         <tr>
             <td><code>skipped</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>Indicates the number of items that were skipped during processing</td>
         </tr>
         <tr>
             <td><code>ignored</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>Indicates the number of items that were manually ignored</td>
@@ -818,14 +818,14 @@ Represents a summary of the processing status for various billing operations.
     <tbody>
         <tr>
             <td><code>operations</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>defaultErpItem</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -850,42 +850,42 @@ Represents a summary of the processing status for various billing operations.
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>externalIds</code></td>
-            <td>ProductExternalIdBag</td>
+            <td><a href="#productexternalidbag">ProductExternalIdBag</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>status</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -910,35 +910,35 @@ Represents a summary of the processing status for various billing operations.
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>externalId</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>

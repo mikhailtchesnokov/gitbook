@@ -21,14 +21,14 @@
     <tbody>
         <tr>
             <td><code>footer</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>sender</code></td>
-            <td>AccountSettingsSenderDto</td>
+            <td><a href="#accountsettingssenderdto">AccountSettingsSenderDto</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
@@ -54,7 +54,7 @@
     <tbody>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>

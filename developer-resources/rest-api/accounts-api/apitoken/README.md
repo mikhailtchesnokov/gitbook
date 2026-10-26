@@ -112,91 +112,91 @@ An API Token is a non-human authentication credential used to call the platform 
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td>Platform identifier, `TKN-NNNN-NNNN`.—</td>
         </tr>
         <tr>
             <td><code>audit</code></td>
-            <td>PlatformObjectAudit</td>
+            <td><a href="#platformobjectaudit">PlatformObjectAudit</a </td>
 	        <td></td>
 	        <td></td>
             <td>Created/updated (and enabled/disabled) event metadata with acting identity.Omitted by default — request via `select=+audit`</td>
         </tr>
         <tr>
             <td><code>$meta</code></td>
-            <td>PlatformMetadata</td>
+            <td><a href="#platformmetadata">PlatformMetadata</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td>Human-readable label for the token.Required; max 200 chars; restricted charset (BR-006)</td>
         </tr>
         <tr>
             <td><code>icon</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td>Optional URL of a custom image for the token.Optional; no server-generated default is produced when absent (this object is not in the preamble §9 jdenticon set). Absent from response when null</td>
         </tr>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td>Monotonic revision counter.Increments on change</td>
         </tr>
         <tr>
             <td><code>status</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>Lifecycle state.Values: `Active`, `Disabled`, `Deleted`. `Deleted` is internal and not reachable on a readable token for Vendor/Client (BR-009)</td>
         </tr>
         <tr>
             <td><code>description</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>Free-text description of the token's purpose.Optional; max 2000 chars. Absent from response when null</td>
         </tr>
         <tr>
             <td><code>lastAccessAt</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>Approximate timestamp of the token's most recent authenticated access.Updated only when the token's session token is refreshed, so it is approximate, not per-call. Absent from response when null</td>
         </tr>
         <tr>
             <td><code>token</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>The authentication secret used to call the API as this token.Form `idt:<id>:<opaque value>`. Generated once at creation and not regenerable (BR-005). Returned in full on read as well as at creation, by design (BR-011) — see Section 9</td>
         </tr>
         <tr>
             <td><code>account</code></td>
-            <td>AccountRef</td>
+            <td><a href="#accountref">AccountRef</a </td>
 	        <td></td>
 	        <td></td>
             <td>The owning [[Account]].Set at creation from the request; immutable (BR-001)</td>
         </tr>
         <tr>
             <td><code>modules</code></td>
-            <td>array</td>
+            <td> array</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>The Modules that define the token's granular permission scope.See BR-002. Can also narrow automatically when the Account's Modules change (BR-007)</td>
         </tr>
         <tr>
             <td><code>extensions</code></td>
-            <td>array</td>
+            <td> array</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>The Extensions the token may act through.Null = all Extensions; empty = none; populated = only those listed (BR-010). Absent from response when null. Extensions are not yet canonised</td>
@@ -222,42 +222,42 @@ An API Token is a non-human authentication credential used to call the platform 
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>type</code></td>
-            <td>AccountType</td>
+            <td> AccountType</td>
 	        <td></td>
 	        <td></td>
             <td>. Allowed values: Client,Vendor,Operations</td>
         </tr>
         <tr>
             <td><code>status</code></td>
-            <td>AccountStatus</td>
+            <td> AccountStatus</td>
 	        <td></td>
 	        <td></td>
             <td>. Allowed values: Active,Enabled,Disabled</td>
@@ -282,7 +282,7 @@ An API Token is a non-human authentication credential used to call the platform 
     <tbody>
         <tr>
             <td><code>group.buyers</code></td>
-            <td>array</td>
+            <td> array</td>
 	        <td></td>
 	        <td></td>
             <td></td>
@@ -307,42 +307,42 @@ An API Token is a non-human authentication credential used to call the platform 
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>description</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>filters</code></td>
-            <td>Filters</td>
+            <td><a href="#filters">Filters</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>settings</code></td>
-            <td>ModuleSettings</td>
+            <td><a href="#modulesettings">ModuleSettings</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
@@ -367,49 +367,49 @@ An API Token is a non-human authentication credential used to call the platform 
     <tbody>
         <tr>
             <td><code>sharedAccount</code></td>
-            <td>boolean</td>
+            <td> boolean</td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>configurable</code></td>
-            <td>boolean</td>
+            <td> boolean</td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>default</code></td>
-            <td>boolean</td>
+            <td> boolean</td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>paid</code></td>
-            <td>boolean</td>
+            <td> boolean</td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>type</code></td>
-            <td>array</td>
+            <td> array</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>obsolete</code></td>
-            <td>boolean</td>
+            <td> boolean</td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>eligibility</code></td>
-            <td>ModuleSettingsEligibility</td>
+            <td><a href="#modulesettingseligibility">ModuleSettingsEligibility</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
@@ -434,14 +434,14 @@ An API Token is a non-human authentication credential used to call the platform 
     <tbody>
         <tr>
             <td><code>multi</code></td>
-            <td>boolean</td>
+            <td> boolean</td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>single</code></td>
-            <td>boolean</td>
+            <td> boolean</td>
 	        <td></td>
 	        <td></td>
             <td></td>
@@ -466,28 +466,28 @@ An API Token is a non-human authentication credential used to call the platform 
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -512,7 +512,7 @@ An API Token is a non-human authentication credential used to call the platform 
     <tbody>
         <tr>
             <td><code>omitted</code></td>
-            <td>array</td>
+            <td> array</td>
 	        <td></td>
 	        <td></td>
             <td></td>
@@ -537,14 +537,14 @@ An API Token is a non-human authentication credential used to call the platform 
     <tbody>
         <tr>
             <td><code>created</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>updated</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
@@ -569,49 +569,49 @@ An API Token is a non-human authentication credential used to call the platform 
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>audit</code></td>
-            <td>PlatformObjectAudit</td>
+            <td><a href="#platformobjectaudit">PlatformObjectAudit</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>$meta</code></td>
-            <td>PlatformMetadata</td>
+            <td><a href="#platformmetadata">PlatformMetadata</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>status</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td></td>
             <td></td>
@@ -636,14 +636,14 @@ An API Token is a non-human authentication credential used to call the platform 
     <tbody>
         <tr>
             <td><code>at</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>by</code></td>
-            <td>PlatformIdentityRef</td>
+            <td><a href="#platformidentityref">PlatformIdentityRef</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>

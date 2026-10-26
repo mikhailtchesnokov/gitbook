@@ -21,196 +21,196 @@
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>audit</code></td>
-            <td>PriceListItemAudit</td>
+            <td><a href="#pricelistitemaudit">PriceListItemAudit</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>$meta</code></td>
-            <td>PlatformMetadata</td>
+            <td><a href="#platformmetadata">PlatformMetadata</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>status</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>description</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>info</code></td>
-            <td>PriceInfo</td>
+            <td><a href="#priceinfo">PriceInfo</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>reasonForChange</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>unitLP</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>unitPP</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>markup</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>margin</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>unitSP</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>client,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>PPx1</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>PPxM</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>PPxY</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>PPx3Y</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>SPx1</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>client,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>SPxM</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>client,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>SPxY</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>client,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>SPx3Y</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>client,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>LPx1</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>LPxM</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>LPxY</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>LPx3Y</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>priceList</code></td>
-            <td>PriceListRef</td>
+            <td><a href="#pricelistref">PriceListRef</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>item</code></td>
-            <td>ProductItemRef</td>
+            <td><a href="#productitemref">ProductItemRef</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
@@ -236,28 +236,28 @@
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -282,7 +282,7 @@
     <tbody>
         <tr>
             <td><code>omitted</code></td>
-            <td>array</td>
+            <td> array</td>
 	        <td></td>
 	        <td></td>
             <td></td>
@@ -307,14 +307,14 @@
     <tbody>
         <tr>
             <td><code>at</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>by</code></td>
-            <td>PlatformIdentityRef</td>
+            <td><a href="#platformidentityref">PlatformIdentityRef</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
@@ -339,14 +339,14 @@
     <tbody>
         <tr>
             <td><code>visible</code></td>
-            <td>boolean</td>
+            <td> boolean</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>description</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -371,28 +371,28 @@
     <tbody>
         <tr>
             <td><code>created</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>updated</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>published</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>unpublished</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
@@ -417,21 +417,21 @@
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>currency</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -456,14 +456,14 @@
     <tbody>
         <tr>
             <td><code>vendor</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>operations</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -488,28 +488,28 @@
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>externalIds</code></td>
-            <td>ProductItemExternalIdBag</td>
+            <td><a href="#productitemexternalidbag">ProductItemExternalIdBag</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>

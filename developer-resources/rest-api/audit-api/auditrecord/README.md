@@ -66,84 +66,84 @@
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>event</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>summary</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>details</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>object</code></td>
-            <td>EventObject</td>
+            <td><a href="#eventobject">EventObject</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>timestamp</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>actor</code></td>
-            <td>EventActor</td>
+            <td><a href="#eventactor">EventActor</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>documents</code></td>
-            <td>object</td>
+            <td> object</td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>viewers</code></td>
-            <td>array</td>
+            <td> array</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>request</code></td>
-            <td>AuditRecordRequest</td>
+            <td><a href="#auditrecordrequest">AuditRecordRequest</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>type</code></td>
-            <td>AuditRecordType</td>
+            <td> AuditRecordType</td>
 	        <td></td>
 	        <td></td>
             <td>. Allowed values: Private,Public</td>
         </tr>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -169,21 +169,21 @@
     <tbody>
         <tr>
             <td><code>ip</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>geolocation</code></td>
-            <td>GeolocationData</td>
+            <td><a href="#geolocationdata">GeolocationData</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>userAgent</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -208,14 +208,14 @@
     <tbody>
         <tr>
             <td><code>requestId</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>operationId</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -240,7 +240,7 @@
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -265,28 +265,28 @@
     <tbody>
         <tr>
             <td><code>api</code></td>
-            <td>AuditRecordApiRequest</td>
+            <td><a href="#auditrecordapirequest">AuditRecordApiRequest</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>worker</code></td>
-            <td>AuditRecordWorkerRequest</td>
+            <td><a href="#auditrecordworkerrequest">AuditRecordWorkerRequest</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>log</code></td>
-            <td>AuditRecordLogInfo</td>
+            <td><a href="#auditrecordloginfo">AuditRecordLogInfo</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>message</code></td>
-            <td>AuditRecordMessageInfo</td>
+            <td><a href="#auditrecordmessageinfo">AuditRecordMessageInfo</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
@@ -311,7 +311,7 @@
     <tbody>
         <tr>
             <td><code>workerName</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -336,28 +336,28 @@
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>account</code></td>
-            <td>EventActorAccount</td>
+            <td><a href="#eventactoraccount">EventActorAccount</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
@@ -382,28 +382,28 @@
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>accountType</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -428,28 +428,28 @@
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>objectType</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -474,28 +474,28 @@
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>type</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -520,21 +520,21 @@
     <tbody>
         <tr>
             <td><code>countryCode</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>countryName</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>region</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -559,21 +559,21 @@
     <tbody>
         <tr>
             <td><code>options</code></td>
-            <td>JsonNodeOptions</td>
+            <td><a href="#jsonnodeoptions">JsonNodeOptions</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>parent</code></td>
-            <td>JsonNode</td>
+            <td><a href="#jsonnode">JsonNode</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>root</code></td>
-            <td>JsonNode</td>
+            <td><a href="#jsonnode">JsonNode</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
@@ -598,7 +598,7 @@
     <tbody>
         <tr>
             <td><code>propertyNameCaseInsensitive</code></td>
-            <td>boolean</td>
+            <td> boolean</td>
 	        <td></td>
 	        <td></td>
             <td></td>

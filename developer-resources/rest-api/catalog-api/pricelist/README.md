@@ -72,91 +72,91 @@ A Price List is a currency-scoped container that holds pricing for all Items in 
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>audit</code></td>
-            <td>PlatformObjectAudit</td>
+            <td><a href="#platformobjectaudit">PlatformObjectAudit</a </td>
 	        <td></td>
 	        <td></td>
             <td>Records the `created` and `updated` events for this Price List, including timestamp and Actor reference for eachVisible To: All. Returned by default</td>
         </tr>
         <tr>
             <td><code>$meta</code></td>
-            <td>PlatformMetadata</td>
+            <td><a href="#platformmetadata">PlatformMetadata</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td>Increments on each updateVisible To: All</td>
         </tr>
         <tr>
             <td><code>currency</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td>ISO 4217 currency code (e.g. USD, EUR, JPY)Visible To: All. Required on creation. Immutable</td>
         </tr>
         <tr>
             <td><code>precision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>Number of decimal places for prices in this currencyVisible To: All. Required on creation. Immutable. e.g. 2 for USD/EUR/GBP, 0 for JPY</td>
         </tr>
         <tr>
             <td><code>defaultMarkup</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>ops</td>
             <td>Default markup % for the Price ListVisible To: Operations only. Vendor cannot set (see BR-006). Vendor-created lists receive a system-assigned default</td>
         </tr>
         <tr>
             <td><code>defaultMargin</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>ops</td>
             <td>Default gross margin %, the linked counterpart of `defaultMarkup`Visible To: Operations only. Stored; derived from `defaultMarkup` when only markup is supplied (see BR-007)</td>
         </tr>
         <tr>
             <td><code>notes</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>Free-text field for Vendor-authored internal documentation about this Price ListVisible To: All. Optional. Absent from response when null</td>
         </tr>
         <tr>
             <td><code>externalIds</code></td>
-            <td>PriceListExternalIdBag</td>
+            <td><a href="#pricelistexternalidbag">PriceListExternalIdBag</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>statistics</code></td>
-            <td>PriceListStatistics</td>
+            <td><a href="#priceliststatistics">PriceListStatistics</a </td>
 	        <td></td>
 	        <td></td>
             <td>Container of computed platform metrics (sub-fields above).Visible To: Vendor, Operations. The entire block is suppressed for Client tokens</td>
         </tr>
         <tr>
             <td><code>product</code></td>
-            <td>ProductRef</td>
+            <td><a href="#productref">ProductRef</a </td>
 	        <td></td>
 	        <td></td>
             <td>Reference to the parent [[Product]]Visible To: All. Summary reference (id, name, icon, status, externalIds)</td>
         </tr>
         <tr>
             <td><code>vendor</code></td>
-            <td>AccountRef</td>
+            <td><a href="#accountref">AccountRef</a </td>
 	        <td></td>
 	        <td></td>
             <td>Reference to the owning Vendor accountVisible To: All. Summary reference (id, name, icon, type, status)</td>
@@ -182,42 +182,42 @@ A Price List is a currency-scoped container that holds pricing for all Items in 
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>type</code></td>
-            <td>AccountType</td>
+            <td> AccountType</td>
 	        <td></td>
 	        <td></td>
             <td>. Allowed values: Client,Vendor,Operations</td>
         </tr>
         <tr>
             <td><code>status</code></td>
-            <td>AccountStatus</td>
+            <td> AccountStatus</td>
 	        <td></td>
 	        <td></td>
             <td>. Allowed values: Active,Enabled,Disabled</td>
@@ -242,28 +242,28 @@ A Price List is a currency-scoped container that holds pricing for all Items in 
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -288,7 +288,7 @@ A Price List is a currency-scoped container that holds pricing for all Items in 
     <tbody>
         <tr>
             <td><code>omitted</code></td>
-            <td>array</td>
+            <td> array</td>
 	        <td></td>
 	        <td></td>
             <td></td>
@@ -313,14 +313,14 @@ A Price List is a currency-scoped container that holds pricing for all Items in 
     <tbody>
         <tr>
             <td><code>created</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>updated</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
@@ -345,14 +345,14 @@ A Price List is a currency-scoped container that holds pricing for all Items in 
     <tbody>
         <tr>
             <td><code>at</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>by</code></td>
-            <td>PlatformIdentityRef</td>
+            <td><a href="#platformidentityref">PlatformIdentityRef</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
@@ -377,7 +377,7 @@ A Price List is a currency-scoped container that holds pricing for all Items in 
     <tbody>
         <tr>
             <td><code>vendor</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -402,63 +402,63 @@ A Price List is a currency-scoped container that holds pricing for all Items in 
     <tbody>
         <tr>
             <td><code>sellers</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>listings</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>priceListItems</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>purchasePriceItems</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>purchasePriceCompleteness</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>salesPriceItems</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td></td>
 	        <td>ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>salesPriceCompleteness</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td></td>
 	        <td>ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>averageMarkup</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>averageMargin</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>ops</td>
             <td></td>
@@ -483,14 +483,14 @@ A Price List is a currency-scoped container that holds pricing for all Items in 
     <tbody>
         <tr>
             <td><code>operations</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>defaultErpItem</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -515,42 +515,42 @@ A Price List is a currency-scoped container that holds pricing for all Items in 
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>externalIds</code></td>
-            <td>ProductExternalIdBag</td>
+            <td><a href="#productexternalidbag">ProductExternalIdBag</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>status</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>

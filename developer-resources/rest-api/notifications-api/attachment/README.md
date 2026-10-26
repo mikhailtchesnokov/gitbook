@@ -24,42 +24,42 @@ Represents a file attachment associated with a notification message or batch.
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td></td>
             <td>Gets or sets the unique identifier for the attachment</td>
         </tr>
         <tr>
             <td><code>href</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td></td>
             <td>Gets the URL to download the attachment</td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td></td>
             <td>Gets or sets the display name for the attachment</td>
         </tr>
         <tr>
             <td><code>fileName</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td></td>
             <td>Gets or sets the file name of the attachment</td>
         </tr>
         <tr>
             <td><code>fileSize</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td></td>
 	        <td></td>
             <td>Gets or sets the size of the attachment in bytes</td>
         </tr>
         <tr>
             <td><code>contentType</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td></td>
             <td>Gets or sets the content type of the attachment</td>

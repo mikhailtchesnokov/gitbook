@@ -72,175 +72,175 @@ An Invoice is the Marketplace's own record of a client-facing billing document g
     <tbody>
         <tr>
             <td><code>audit</code></td>
-            <td>InvoiceAuditBag</td>
+            <td><a href="#invoiceauditbag">InvoiceAuditBag</a </td>
 	        <td></td>
 	        <td></td>
             <td>Represents a container for audit-related events for an invoicecreated/updated events plus per-status (issued/paid/overdue) event history.Included in the default response — unlike some other Billing objects, no `select=+audit` is needed</td>
         </tr>
         <tr>
             <td><code>$meta</code></td>
-            <td>PlatformMetadata</td>
+            <td><a href="#platformmetadata">PlatformMetadata</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td>Platform optimistic-concurrency counter.Increments on each save</td>
         </tr>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td>The unique identifier of the invoice.Unique identifier, format `INV-NNN-NNN-NNN`.Deterministically provisioned from documentNo + countryCode. See BR-002</td>
         </tr>
         <tr>
             <td><code>countryCode</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>The country code.The ERP country/company code used to resolve the Seller.Together with documentNo forms the Invoice's identity key (BR-002); a different value resolves to a different Invoice rather than updating this one</td>
         </tr>
         <tr>
             <td><code>documentNo</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>The document number assigned by the ERP system.The ERP-assigned document number (the NAV invoice number).See BR-002</td>
         </tr>
         <tr>
             <td><code>externalIds</code></td>
-            <td>ErpExternalIds</td>
+            <td><a href="#erpexternalids">ErpExternalIds</a </td>
 	        <td></td>
 	        <td></td>
             <td>Invoice external ids.Raw ERP-supplied reference identifiers: statement, customer, agreement.`customer` resolves the Buyer (BR-009); `agreement` seeds the Agreement reference (BR-008); `statement` is stored but is not the field used to resolve the Statement link (BR-006)</td>
         </tr>
         <tr>
             <td><code>buyer</code></td>
-            <td>BuyerRef</td>
+            <td><a href="#buyerref">BuyerRef</a </td>
 	        <td></td>
 	        <td></td>
             <td>The Buyer this Invoice was raised for.See BR-009</td>
         </tr>
         <tr>
             <td><code>seller</code></td>
-            <td>SellerRef</td>
+            <td><a href="#sellerref">SellerRef</a </td>
 	        <td></td>
 	        <td></td>
             <td>The owning Seller.See BR-010</td>
         </tr>
         <tr>
             <td><code>attributes</code></td>
-            <td>InvoiceErpAttributes</td>
+            <td><a href="#invoiceerpattributes">InvoiceErpAttributes</a </td>
 	        <td></td>
 	        <td></td>
             <td>ERP attributes associated with the entity.Read-only projection of selected ERP data (quoteNo, orderNo, yourReference, externalDocumentNo/2, dueDate, postingDate, documentDate).Recomputed on every sync. See BR-011</td>
         </tr>
         <tr>
             <td><code>status</code></td>
-            <td>InvoiceStatus</td>
+            <td> InvoiceStatus</td>
 	        <td></td>
 	        <td></td>
             <td>The current status of the invoice.Issued, Paid, or Overdue.See BR-014. Allowed values: Issued,Paid,Overdue</td>
         </tr>
         <tr>
             <td><code>statement</code></td>
-            <td>StatementRef</td>
+            <td><a href="#statementref">StatementRef</a </td>
 	        <td></td>
 	        <td></td>
             <td>The Statement this Invoice was generated from, if resolved.Null when no ERP sales-order match is found. See BR-006 and Section 9</td>
         </tr>
         <tr>
             <td><code>agreement</code></td>
-            <td>AgreementRef</td>
+            <td><a href="#agreementref">AgreementRef</a </td>
 	        <td></td>
 	        <td></td>
             <td>The Commerce: Agreement this Invoice bills against, if any.See BR-008</td>
         </tr>
         <tr>
             <td><code>billingType</code></td>
-            <td>BillingType</td>
+            <td> BillingType</td>
 	        <td></td>
 	        <td></td>
             <td>The billing type associated with the invoice.Automated, Manual, or Consolidated.Derived from the matched Statement. See BR-007. Allowed values: Automated,Manual,Consolidated</td>
         </tr>
         <tr>
             <td><code>client</code></td>
-            <td>AccountRef</td>
+            <td><a href="#accountref">AccountRef</a </td>
 	        <td></td>
 	        <td></td>
             <td>The client Account, derived from the resolved Buyer's own Account.Null if the Buyer could not be resolved</td>
         </tr>
         <tr>
             <td><code>clientId</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>The client identifier associated with the invoice, if any.Denormalised copy of `client.id`.Avoids an extra lookup when filtering by client</td>
         </tr>
         <tr>
             <td><code>licensee</code></td>
-            <td>LicenseeRef</td>
+            <td><a href="#licenseeref">LicenseeRef</a </td>
 	        <td></td>
 	        <td></td>
             <td>The Licensee consuming the service, if any.—</td>
         </tr>
         <tr>
             <td><code>product</code></td>
-            <td>ProductRef</td>
+            <td><a href="#productref">ProductRef</a </td>
 	        <td></td>
 	        <td></td>
             <td>The Product being invoiced, if any.—</td>
         </tr>
         <tr>
             <td><code>vendor</code></td>
-            <td>AccountRef</td>
+            <td><a href="#accountref">AccountRef</a </td>
 	        <td></td>
 	        <td></td>
             <td>The vendor Account, if any.—</td>
         </tr>
         <tr>
             <td><code>erpData</code></td>
-            <td>InvoiceErpData</td>
+            <td><a href="#invoiceerpdata">InvoiceErpData</a </td>
 	        <td></td>
 	        <td></td>
             <td>ERP-specific data related to the invoice, if available.Full ERP-specific data: erpId, documentNo, countryCode, dates, external document numbers, balanceDue, invoiceTotal, revision, rowVersion, yourReference, addresses (billTo/licenseTo/sellTo/shipTo), referenceNumber (eInvoiceNo/orderNo/ppqNo/quoteNo), payment (methodCode/termsCode).Its `revision` (distinct from the top-level `revision`) governs whether a resync is applied. See BR-003</td>
         </tr>
         <tr>
             <td><code>price</code></td>
-            <td>InvoicePrice</td>
+            <td><a href="#invoiceprice">InvoicePrice</a </td>
 	        <td></td>
 	        <td></td>
             <td>Pricing details of the invoice, if available.Pricing summary: currency, two currency-conversion factors, markup, margin, totalPP, totalSP, totalST (sales tax), totalGT (grand total).markup/margin/totalPP are Operations-only; currency, totalSP, totalST, totalGT are Client/Operations. See BR-005</td>
         </tr>
         <tr>
             <td><code>lines</code></td>
-            <td>array</td>
+            <td> array</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>The list of invoice lines associated with the invoice.The invoice's line items, each with its own description, ERP line data, period, and price breakdown.Replaced wholesale on each sync rather than incrementally patched. Per-line purchase-side price fields are Operations-only, mirroring BR-005</td>
         </tr>
         <tr>
             <td><code>analytics</code></td>
-            <td>AnalyticsInfo</td>
+            <td><a href="#analyticsinfo">AnalyticsInfo</a </td>
 	        <td></td>
 	        <td></td>
             <td>Analytics information related to the credit invoice.Status (Pending, Running, Ready, Failed) of the platform's internal reporting breakdown for this Invoice.Computed by an internal process, not by any live API call</td>
         </tr>
         <tr>
             <td><code>cloudiqInvoiceReference</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>Cloud iQ invoice reference</td>
         </tr>
         <tr>
             <td><code>cloudiqReportLayout</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>Cloud iQ report layout</td>
@@ -266,42 +266,42 @@ An Invoice is the Marketplace's own record of a client-facing billing document g
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>type</code></td>
-            <td>AccountType</td>
+            <td> AccountType</td>
 	        <td></td>
 	        <td></td>
             <td>. Allowed values: Client,Vendor,Operations</td>
         </tr>
         <tr>
             <td><code>status</code></td>
-            <td>AccountStatus</td>
+            <td> AccountStatus</td>
 	        <td></td>
 	        <td></td>
             <td>. Allowed values: Active,Enabled,Disabled</td>
@@ -326,35 +326,35 @@ An Invoice is the Marketplace's own record of a client-facing billing document g
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>status</code></td>
-            <td>AgreementStatus</td>
+            <td> AgreementStatus</td>
 	        <td></td>
 	        <td></td>
             <td>. Allowed values: New,Draft,Provisioning,Updating,Active,Terminated,Failed,Deleted</td>
@@ -379,7 +379,7 @@ Analytics insofmation.
     <tbody>
         <tr>
             <td><code>status</code></td>
-            <td>AnalyticsStatus</td>
+            <td> AnalyticsStatus</td>
 	        <td></td>
 	        <td></td>
             <td>The current status of the analytics operation. Allowed values: Pending,Running,Ready,Failed</td>
@@ -404,28 +404,28 @@ Analytics insofmation.
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -450,14 +450,14 @@ Represents the period during which a charge is applicable.
     <tbody>
         <tr>
             <td><code>start</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td></td>
             <td>The start date and time of the period</td>
         </tr>
         <tr>
             <td><code>end</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td></td>
             <td>The end date and time of the period</td>
@@ -482,112 +482,112 @@ Represents an address with various details such as name, address lines, city, po
     <tbody>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>The primary name associated with the address</td>
         </tr>
         <tr>
             <td><code>name2</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>The secondary name associated with the address</td>
         </tr>
         <tr>
             <td><code>email</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>The email associated with the address</td>
         </tr>
         <tr>
             <td><code>customerNo</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>The customer number associated with the address</td>
         </tr>
         <tr>
             <td><code>addressLine1</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>The first line of the address</td>
         </tr>
         <tr>
             <td><code>addressLine2</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>The second line of the address</td>
         </tr>
         <tr>
             <td><code>addressLine3</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>The third line of the address</td>
         </tr>
         <tr>
             <td><code>city</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>The city of the address</td>
         </tr>
         <tr>
             <td><code>postCode</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>The postal code of the address</td>
         </tr>
         <tr>
             <td><code>county</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>The county/state/region of the address</td>
         </tr>
         <tr>
             <td><code>country</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>The country of the address</td>
         </tr>
         <tr>
             <td><code>contactName</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>The contact name associated with the address</td>
         </tr>
         <tr>
             <td><code>contactNo</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>The contact number associated with the address</td>
         </tr>
         <tr>
             <td><code>contactEmail</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>The contact email associated with the address</td>
         </tr>
         <tr>
             <td><code>contactPhone</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>The contact phone number associated with the address</td>
         </tr>
         <tr>
             <td><code>code</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>The code associated with the address</td>
@@ -612,28 +612,28 @@ Represents a list of addresses for billing purposes.
     <tbody>
         <tr>
             <td><code>billTo</code></td>
-            <td>ErpAddress</td>
+            <td><a href="#erpaddress">ErpAddress</a </td>
 	        <td></td>
 	        <td></td>
             <td>The bill to address</td>
         </tr>
         <tr>
             <td><code>licenseTo</code></td>
-            <td>ErpAddress</td>
+            <td><a href="#erpaddress">ErpAddress</a </td>
 	        <td></td>
 	        <td></td>
             <td>The license to address</td>
         </tr>
         <tr>
             <td><code>sellTo</code></td>
-            <td>ErpAddress</td>
+            <td><a href="#erpaddress">ErpAddress</a </td>
 	        <td></td>
 	        <td></td>
             <td>The sell to address</td>
         </tr>
         <tr>
             <td><code>shipTo</code></td>
-            <td>ErpAddress</td>
+            <td><a href="#erpaddress">ErpAddress</a </td>
 	        <td></td>
 	        <td></td>
             <td>The ship to address</td>
@@ -658,21 +658,21 @@ Represents ERP-specific data related to a credit memo line or invoice line.
     <tbody>
         <tr>
             <td><code>identifier</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>The unique identifier for the ERP code</td>
         </tr>
         <tr>
             <td><code>value</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>The value of the ERP code</td>
         </tr>
         <tr>
             <td><code>version</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>The version of the ERP code</td>
@@ -697,21 +697,21 @@ Represents invoice references .
     <tbody>
         <tr>
             <td><code>statement</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>Statement identifier</td>
         </tr>
         <tr>
             <td><code>customer</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>Bill to customer identifier</td>
         </tr>
         <tr>
             <td><code>agreement</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>Agreement identifier</td>
@@ -736,14 +736,14 @@ Represents payment data for ERP systems.
     <tbody>
         <tr>
             <td><code>methodCode</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>Gets or sets the payment method code</td>
         </tr>
         <tr>
             <td><code>termsCode</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>Gets or sets the payment terms code</td>
@@ -768,28 +768,28 @@ Represents reference numbers associated with an ERP system.
     <tbody>
         <tr>
             <td><code>eInvoiceNo</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>The e-invoice number associated with the invoice</td>
         </tr>
         <tr>
             <td><code>orderNo</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>The order number associated with the invoice. Also known as "Sales Order ID"</td>
         </tr>
         <tr>
             <td><code>ppqNo</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>The PPQ number associated with the invoice</td>
         </tr>
         <tr>
             <td><code>quoteNo</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>The quote number associated with the invoice</td>
@@ -814,35 +814,35 @@ Represents a container for audit-related events for an invoice
     <tbody>
         <tr>
             <td><code>created</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>updated</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>issued</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td>Contains details about the most recent event when the invoice reached the "Issued" status</td>
         </tr>
         <tr>
             <td><code>paid</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td>Contains details about the most recent event when the invoice reached the "Paid" status</td>
         </tr>
         <tr>
             <td><code>overdue</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td>Contains details about the most recent event when the invoice reached the "Overdue" status</td>
@@ -867,56 +867,56 @@ Attributes related to ERP systems for an invoice.
     <tbody>
         <tr>
             <td><code>postingDate</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>The date when the invoice was posted</td>
         </tr>
         <tr>
             <td><code>documentDate</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>The date when the document was created</td>
         </tr>
         <tr>
             <td><code>externalDocumentNo</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>The external document number associated with the invoice</td>
         </tr>
         <tr>
             <td><code>externalDocumentNo2</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>The second external document number associated with the invoice</td>
         </tr>
         <tr>
             <td><code>yourReference</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>Can be the custom reference (free text) or the statement ID (fixed format)</td>
         </tr>
         <tr>
             <td><code>dueDate</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>The due date for the invoice payment</td>
         </tr>
         <tr>
             <td><code>orderNo</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>The order number associated with the invoice. Also known as "Sales Order ID"</td>
         </tr>
         <tr>
             <td><code>quoteNo</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>The quote number associated with the invoice</td>
@@ -941,112 +941,112 @@ Represents ERP-specific data related to an invoice.
     <tbody>
         <tr>
             <td><code>erpId</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>The ERP system identifier for the invoice</td>
         </tr>
         <tr>
             <td><code>documentNo</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>The document number assigned by the ERP system</td>
         </tr>
         <tr>
             <td><code>countryCode</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>The country code of the credit memo</td>
         </tr>
         <tr>
             <td><code>documentDate</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>The date when the document was created</td>
         </tr>
         <tr>
             <td><code>dueDate</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>The due date for the invoice payment</td>
         </tr>
         <tr>
             <td><code>externalDocumentNo</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>The external document number associated with the invoice</td>
         </tr>
         <tr>
             <td><code>externalDocumentNo2</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>The second external document number associated with the invoice</td>
         </tr>
         <tr>
             <td><code>balanceDue</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>The remaining balance due on the invoice</td>
         </tr>
         <tr>
             <td><code>invoiceTotal</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>The total amount of the invoice</td>
         </tr>
         <tr>
             <td><code>postingDate</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>The date when the invoice was posted</td>
         </tr>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>The revision of the invoice, used for versioning control</td>
         </tr>
         <tr>
             <td><code>rowVersion</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>The row version of the invoice, used for concurrency control</td>
         </tr>
         <tr>
             <td><code>yourReference</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>Can be the custom reference (free text) or the statement ID (fixed format)</td>
         </tr>
         <tr>
             <td><code>addresses</code></td>
-            <td>ErpAddressList</td>
+            <td><a href="#erpaddresslist">ErpAddressList</a </td>
 	        <td></td>
 	        <td></td>
             <td>The list of addresses associated with the invoice</td>
         </tr>
         <tr>
             <td><code>referenceNumber</code></td>
-            <td>ErpReferenceNumber</td>
+            <td><a href="#erpreferencenumber">ErpReferenceNumber</a </td>
 	        <td></td>
 	        <td></td>
             <td>The additional identifiers related to the invoice</td>
         </tr>
         <tr>
             <td><code>payment</code></td>
-            <td>ErpPayment</td>
+            <td><a href="#erppayment">ErpPayment</a </td>
 	        <td></td>
 	        <td></td>
             <td>The payment data associated with the invoice</td>
@@ -1071,70 +1071,70 @@ Represents a line item in an invoice.
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>The unique identifier of the invoice line</td>
         </tr>
         <tr>
             <td><code>description</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>The primary description of the line item</td>
         </tr>
         <tr>
             <td><code>description2</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>The secondary description of the line item, if any</td>
         </tr>
         <tr>
             <td><code>documentNo</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>The document number associated with the invoice line</td>
         </tr>
         <tr>
             <td><code>erpData</code></td>
-            <td>InvoiceLineErpData</td>
+            <td><a href="#invoicelineerpdata">InvoiceLineErpData</a </td>
 	        <td></td>
 	        <td></td>
             <td>The ERP-specific data related to the line item</td>
         </tr>
         <tr>
             <td><code>itemNo</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>The item number associated with the line item</td>
         </tr>
         <tr>
             <td><code>lineNo</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>The line number within the invoice</td>
         </tr>
         <tr>
             <td><code>period</code></td>
-            <td>DatePeriod</td>
+            <td><a href="#dateperiod">DatePeriod</a </td>
 	        <td></td>
 	        <td></td>
             <td>The period associated with the line item, if any</td>
         </tr>
         <tr>
             <td><code>price</code></td>
-            <td>InvoiceLinePrice</td>
+            <td><a href="#invoicelineprice">InvoiceLinePrice</a </td>
 	        <td></td>
 	        <td></td>
             <td>The price details for the line</td>
         </tr>
         <tr>
             <td><code>cloudiqTenant</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>Cloud iQ tenant</td>
@@ -1159,147 +1159,147 @@ Represents ERP-specific data related to a invoice line.
     <tbody>
         <tr>
             <td><code>contractNo</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>The contract number associated with the line</td>
         </tr>
         <tr>
             <td><code>countryOfUsage</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>The country of usage for the line</td>
         </tr>
         <tr>
             <td><code>dataOrigin</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>The data origin for the line</td>
         </tr>
         <tr>
             <td><code>externalPositionNo</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>The external position number for the line</td>
         </tr>
         <tr>
             <td><code>navisionCountryCode</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>The Navision country code for the line</td>
         </tr>
         <tr>
             <td><code>parentItemNo</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>The parent item number for the line</td>
         </tr>
         <tr>
             <td><code>primary</code></td>
-            <td>ErpCode</td>
+            <td><a href="#erpcode">ErpCode</a </td>
 	        <td></td>
 	        <td></td>
             <td>The primary code details for the line, if any</td>
         </tr>
         <tr>
             <td><code>secondary</code></td>
-            <td>ErpCode</td>
+            <td><a href="#erpcode">ErpCode</a </td>
 	        <td></td>
 	        <td></td>
             <td>The secondary code details for the line, if any</td>
         </tr>
         <tr>
             <td><code>rowVersion</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>The row version of the line item for concurrency control</td>
         </tr>
         <tr>
             <td><code>responsibilityCenterCode</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>The responsibility center code for the line</td>
         </tr>
         <tr>
             <td><code>swoPurchaseOrderNo</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>The SWO purchase order number for the line</td>
         </tr>
         <tr>
             <td><code>type</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>The type of the line</td>
         </tr>
         <tr>
             <td><code>unitOfMeasure</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>The unit of measure for the line</td>
         </tr>
         <tr>
             <td><code>varAgreementNo</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>The VAR agreement number for the line</td>
         </tr>
         <tr>
             <td><code>varPartnerNo</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>The VAR partner number for the line</td>
         </tr>
         <tr>
             <td><code>msrp</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>The manufacturer's suggested retail price (MSRP) for the line item</td>
         </tr>
         <tr>
             <td><code>timestamp</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>The timestamp of the line item for concurrency control</td>
         </tr>
         <tr>
             <td><code>sellToContactNo</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>The contact number for the sell-to party, if any</td>
         </tr>
         <tr>
             <td><code>externalDocumentNo</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>The external document number associated with the line item</td>
         </tr>
         <tr>
             <td><code>externalDocumentNo2</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>An additional external document number, if any</td>
         </tr>
         <tr>
             <td><code>yourReference</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>The reference provided by the customer for the line item</td>
@@ -1324,119 +1324,119 @@ Represents the price details of an invoice line.
     <tbody>
         <tr>
             <td><code>amount</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>client,ops</td>
             <td>The net amount of the invoice line, visible to clients or operations</td>
         </tr>
         <tr>
             <td><code>amountIncludingVat</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>client,ops</td>
             <td>The total amount including VAT, visible to clients or operations</td>
         </tr>
         <tr>
             <td><code>discountAmount</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>client,ops</td>
             <td>The discount amount applied to the invoice line, visible to clients or operations</td>
         </tr>
         <tr>
             <td><code>lineAmount</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>client,ops</td>
             <td>The total line amount after applying discounts, visible to clients or operations</td>
         </tr>
         <tr>
             <td><code>purchaseCurrencyCode</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>ops</td>
             <td>The currency used for the purchase price, visible only to operations</td>
         </tr>
         <tr>
             <td><code>purchaseCurrencyFactor</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>ops</td>
             <td>The factor applied to the purchase currency, visible only to operations</td>
         </tr>
         <tr>
             <td><code>purchasePrice</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>ops</td>
             <td>The purchase price, visible only to operations</td>
         </tr>
         <tr>
             <td><code>purchasePriceLcy</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>ops</td>
             <td>The purchase price in local currency, visible only to operations</td>
         </tr>
         <tr>
             <td><code>purchasePriceTotal</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>ops</td>
             <td>The total purchase price, visible only to operations</td>
         </tr>
         <tr>
             <td><code>purchasePriceTotalLcy</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>ops</td>
             <td>The total purchase price in local currency, visible only to operations</td>
         </tr>
         <tr>
             <td><code>quantity</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>The quantity for the credit memo line</td>
         </tr>
         <tr>
             <td><code>salesMarkup</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>ops</td>
             <td>The sales markup percentage for the invoice line, visible only to operations</td>
         </tr>
         <tr>
             <td><code>salesMargin</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>ops</td>
             <td>The sales margin percentage for the invoice line, visible only to operations</td>
         </tr>
         <tr>
             <td><code>unitPrice</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>The unit price for the credit memo line</td>
         </tr>
         <tr>
             <td><code>vatBaseAmount</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>client,ops</td>
             <td>The base amount used for VAT calculation</td>
         </tr>
         <tr>
             <td><code>vatCalculationType</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>The VAT calculation type for the line</td>
         </tr>
         <tr>
             <td><code>vatPercent</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>The VAT percentage for the line</td>
@@ -1461,63 +1461,63 @@ Represents the pricing details of an invoice.
     <tbody>
         <tr>
             <td><code>currency</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>The currency used for the invoice pricing</td>
         </tr>
         <tr>
             <td><code>currencyFactor</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>The factor applied to the currency, used for conversion or adjustments</td>
         </tr>
         <tr>
             <td><code>currencyFactor2</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>The second factor applied to the currency, used for conversion or adjustments</td>
         </tr>
         <tr>
             <td><code>markup</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>ops</td>
             <td>The markup applied to the invoice, visible to operations</td>
         </tr>
         <tr>
             <td><code>margin</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>ops</td>
             <td>The margin applied to the invoice, visible to operations</td>
         </tr>
         <tr>
             <td><code>totalPP</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>ops</td>
             <td>The total purchase price, visible to operations</td>
         </tr>
         <tr>
             <td><code>totalSP</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>client,ops</td>
             <td>The total selling price, visible to clients or operations</td>
         </tr>
         <tr>
             <td><code>totalST</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>client,ops</td>
             <td>The total sales tax, visible to clients or operations</td>
         </tr>
         <tr>
             <td><code>totalGT</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>client,ops</td>
             <td>The total gross amount, visible to clients or operations</td>
@@ -1542,35 +1542,35 @@ Represents the pricing details of an invoice.
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>externalId</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -1595,28 +1595,28 @@ Represents the pricing details of an invoice.
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -1641,7 +1641,7 @@ Represents the pricing details of an invoice.
     <tbody>
         <tr>
             <td><code>omitted</code></td>
-            <td>array</td>
+            <td> array</td>
 	        <td></td>
 	        <td></td>
             <td></td>
@@ -1666,14 +1666,14 @@ Represents the pricing details of an invoice.
     <tbody>
         <tr>
             <td><code>at</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>by</code></td>
-            <td>PlatformIdentityRef</td>
+            <td><a href="#platformidentityref">PlatformIdentityRef</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
@@ -1698,14 +1698,14 @@ Represents the pricing details of an invoice.
     <tbody>
         <tr>
             <td><code>operations</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>defaultErpItem</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -1730,42 +1730,42 @@ Represents the pricing details of an invoice.
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>externalIds</code></td>
-            <td>ProductExternalIdBag</td>
+            <td><a href="#productexternalidbag">ProductExternalIdBag</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>status</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -1790,35 +1790,35 @@ Represents the pricing details of an invoice.
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>externalId</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -1843,14 +1843,14 @@ Represents a billing statement in the system, containing details about transacti
     <tbody>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td>The unique identifier of the statement</td>

@@ -115,126 +115,126 @@ An Account is the platform identity record for an Actor — either a Vendor (a s
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td>Platform-assigned unique identifier. Format: `ACC-NNNN-NNNN`.Immutable. Assigned at creation</td>
         </tr>
         <tr>
             <td><code>audit</code></td>
-            <td><a href="#platformobjectaudit">PlatformObjectAudit</a></td>
+            <td><a href="#platformobjectaudit">PlatformObjectAudit</a </td>
 	        <td></td>
 	        <td></td>
             <td>Standard platform audit block. Records `created` and `updated` timestamps and Actor references.Omitted from API responses by default. Request via `select=+audit`. The Operations Account's `audit.created.by` is absent — believed to be a system-bootstrapped account predating Actor attribution</td>
         </tr>
         <tr>
             <td><code>$meta</code></td>
-            <td>PlatformMetadata</td>
+            <td><a href="#platformmetadata">PlatformMetadata</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td>Human-readable name of the Account.Required on creation and update. `minLength: 1`, `maxLength: 500`</td>
         </tr>
         <tr>
             <td><code>icon</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td>URL path to the Account's icon. Defaults to a server-generated jdenticon; a custom icon may be uploaded to replace it.Nullable. Uploaded via `logo` binary field on PUT (`multipart/form-data`). See Preamble Section 9</td>
         </tr>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td>Increments on each update.Read-only</td>
         </tr>
         <tr>
             <td><code>type</code></td>
-            <td>AccountType</td>
+            <td> AccountType</td>
 	        <td></td>
 	        <td></td>
             <td>Actor type for this Account. One of: `Vendor`, `Operations`, `Client`.Required on creation. Immutable after creation. Determines the Actor permission profile for all associated Users and API Tokens. Creation with `type: Operations` is rejected — see BR-002. Allowed values: Client,Vendor,Operations</td>
         </tr>
         <tr>
             <td><code>status</code></td>
-            <td>AccountStatus</td>
+            <td> AccountStatus</td>
 	        <td></td>
 	        <td></td>
             <td>Operational status. One of: `Active`, `Enabled`, `Disabled`.`Active`: on Client Accounts, CDG is ERP-validated — can transact and be billed; on Vendor Accounts, default creation state with no ERP gate. `Enabled`: on Client Accounts, not Disabled but CDG not ERP-validated — cannot transact or be billed; on Operations Account, default creation state. `Disabled`: Vendor and Client Accounts only. See Section 3. Allowed values: Active,Enabled,Disabled</td>
         </tr>
         <tr>
             <td><code>externalIds</code></td>
-            <td>AccountExternalIds</td>
+            <td><a href="#accountexternalids">AccountExternalIds</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>externalId</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>Operations-managed ERP reference. Meaning varies by Account type: on Vendor Accounts, maps to the ERP manufacturer code; on Client Accounts, maps to the CDG (Customer Discount Group) — the global ERP identifier for a customer organisation; on the Operations Account, has no defined operational purpose. Always set and maintained exclusively by Operations regardless of Account type.`maxLength: 250`. Nullable. Absent from response when null</td>
         </tr>
         <tr>
             <td><code>externalName</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>The ERP's own display name for the entity identified by `externalId`.See BR-016. Nullable. Absent from response when null</td>
         </tr>
         <tr>
             <td><code>address</code></td>
-            <td>Address</td>
+            <td><a href="#address">Address</a </td>
 	        <td></td>
 	        <td></td>
             <td>Registered address of the Account. All sub-fields are nullable. An empty address object (`{}`) is valid.Sub-fields: `addressLine1`, `addressLine2`, `postCode`, `city`, `state`, `country` — all nullable strings</td>
         </tr>
         <tr>
             <td><code>technicalSupportEmail</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>Technical support email address for the Account.Optional. `maxLength: 320`. Must be valid email format. Available on all Account types — see BR-011</td>
         </tr>
         <tr>
             <td><code>website</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>Website URL for the Account.Optional. `maxLength: 2000`. Available on all Account types — see BR-012</td>
         </tr>
         <tr>
             <td><code>description</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>Description of the Account.Optional. `maxLength: 2000`. Available on all Account types — see BR-012</td>
         </tr>
         <tr>
             <td><code>groups</code></td>
-            <td>array</td>
+            <td> array</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>User Groups associated with this Account.Omitted from API responses by default. Request via `select=+groups`. Every Account has exactly one Default User Group, permanently assigned — see BR-006</td>
         </tr>
         <tr>
             <td><code>eligibility</code></td>
-            <td>Eligibility</td>
+            <td><a href="#eligibility">Eligibility</a </td>
 	        <td></td>
 	        <td></td>
             <td>Controls Client transacting eligibility. Sub-fields: `eligibility.client` (Boolean), `eligibility.partner` (Boolean).Present on Client Accounts only — rejected on other types, see BR-007. Absent from response when null</td>
         </tr>
         <tr>
             <td><code>defaultLanguageCode</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>BCP 47 language tag representing the Account's preferred language.Optional. Observed as `"en-US"` on all three Account types in data sample</td>
@@ -260,7 +260,7 @@ An Account is the platform identity record for an Actor — either a Vendor (a s
     <tbody>
         <tr>
             <td><code>pyraTenantId</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -285,42 +285,42 @@ An Account is the platform identity record for an Actor — either a Vendor (a s
     <tbody>
         <tr>
             <td><code>addressLine1</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>addressLine2</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>postCode</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>city</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>state</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>country</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -345,14 +345,14 @@ An Account is the platform identity record for an Actor — either a Vendor (a s
     <tbody>
         <tr>
             <td><code>client</code></td>
-            <td>boolean</td>
+            <td> boolean</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>partner</code></td>
-            <td>boolean</td>
+            <td> boolean</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -377,28 +377,28 @@ An Account is the platform identity record for an Actor — either a Vendor (a s
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -423,7 +423,7 @@ An Account is the platform identity record for an Actor — either a Vendor (a s
     <tbody>
         <tr>
             <td><code>omitted</code></td>
-            <td>array</td>
+            <td> array</td>
 	        <td></td>
 	        <td></td>
             <td></td>
@@ -448,14 +448,14 @@ An Account is the platform identity record for an Actor — either a Vendor (a s
     <tbody>
         <tr>
             <td><code>created</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>updated</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
@@ -480,14 +480,14 @@ An Account is the platform identity record for an Actor — either a Vendor (a s
     <tbody>
         <tr>
             <td><code>at</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>by</code></td>
-            <td>PlatformIdentityRef</td>
+            <td><a href="#platformidentityref">PlatformIdentityRef</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
@@ -512,42 +512,42 @@ An Account is the platform identity record for an Actor — either a Vendor (a s
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>description</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>logo</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>isDefault</code></td>
-            <td>boolean</td>
+            <td> boolean</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>

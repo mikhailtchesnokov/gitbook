@@ -21,7 +21,7 @@
     <tbody>
         <tr>
             <td><code>token</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>

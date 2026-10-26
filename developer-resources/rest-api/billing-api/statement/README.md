@@ -72,182 +72,182 @@ A Statement is the client-facing billing document the platform's billing pipelin
     <tbody>
         <tr>
             <td><code>audit</code></td>
-            <td>StatementAuditBag</td>
+            <td><a href="#statementauditbag">StatementAuditBag</a </td>
 	        <td></td>
 	        <td></td>
             <td>Represents a container for audit-related events for a statementCreated and updated events plus a per-status event history.Records the timestamp and Actor for the most recent entry into each status</td>
         </tr>
         <tr>
             <td><code>$meta</code></td>
-            <td>PlatformMetadata</td>
+            <td><a href="#platformmetadata">PlatformMetadata</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td>Monotonic revision counter.Increments on each change</td>
         </tr>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td>The unique identifier of the statement.Unique identifier, format `SOM-NNNN-NNNN-NNNN-NNNN`.—</td>
         </tr>
         <tr>
             <td><code>externalIds</code></td>
-            <td>StatementExternalIds</td>
+            <td><a href="#statementexternalids">StatementExternalIds</a </td>
 	        <td></td>
 	        <td></td>
             <td>Contains external identifiers associated with the statement.Operations, Vendor, ERP, and Client reference identifiers.Absent from response when null</td>
         </tr>
         <tr>
             <td><code>ledger</code></td>
-            <td>LedgerRef</td>
+            <td><a href="#ledgerref">LedgerRef</a </td>
 	        <td></td>
 	        <td></td>
             <td>The source Ledger, for an Automated Statement.Null for Manual and Consolidated Statements</td>
         </tr>
         <tr>
             <td><code>customLedger</code></td>
-            <td>CustomLedgerRef</td>
+            <td><a href="#customledgerref">CustomLedgerRef</a </td>
 	        <td></td>
 	        <td></td>
             <td>The source Custom Ledger, for a Manual Statement.Null for Automated and Consolidated Statements. Custom Ledger not yet canonised</td>
         </tr>
         <tr>
             <td><code>type</code></td>
-            <td>StatementType</td>
+            <td> StatementType</td>
 	        <td></td>
 	        <td></td>
             <td>Specifies the type of the statement.Debit or Credit.Derived from the sign of the net total. See BR-002. Allowed values: Debit,Credit</td>
         </tr>
         <tr>
             <td><code>billingType</code></td>
-            <td>BillingType</td>
+            <td> BillingType</td>
 	        <td></td>
 	        <td></td>
             <td>Specifies the billing type of the statement.Automated, Manual, or Consolidated.Fixes which creation path produced the Statement (see T1) and governs the add/remove-child rules (BR-008). Allowed values: Automated,Manual,Consolidated</td>
         </tr>
         <tr>
             <td><code>status</code></td>
-            <td>StatementStatus</td>
+            <td> StatementStatus</td>
 	        <td></td>
 	        <td></td>
             <td>Indicates the current status of the statement.Current lifecycle state — one of the Section 3.1 states.Changes only through Section 3.2 transitions, never by a direct field write. Allowed values: Generated,Queued,Error,Cancelled,Pending,Issued,Generating,Consolidating,Consolidated</td>
         </tr>
         <tr>
             <td><code>client</code></td>
-            <td>AccountRef</td>
+            <td><a href="#accountref">AccountRef</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>buyer</code></td>
-            <td>BuyerRef</td>
+            <td><a href="#buyerref">BuyerRef</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>vendor</code></td>
-            <td>AccountRef</td>
+            <td><a href="#accountref">AccountRef</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>seller</code></td>
-            <td>SellerRef</td>
+            <td><a href="#sellerref">SellerRef</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>product</code></td>
-            <td>ProductRef</td>
+            <td><a href="#productref">ProductRef</a </td>
 	        <td></td>
 	        <td></td>
             <td>The Product being billed.Null for a Consolidated shell</td>
         </tr>
         <tr>
             <td><code>agreement</code></td>
-            <td>AgreementRef</td>
+            <td><a href="#agreementref">AgreementRef</a </td>
 	        <td></td>
 	        <td></td>
             <td>The Agreement the Statement is scoped to.Null for a Consolidated shell — see BR-001</td>
         </tr>
         <tr>
             <td><code>licensee</code></td>
-            <td>LicenseeRef</td>
+            <td><a href="#licenseeref">LicenseeRef</a </td>
 	        <td></td>
 	        <td></td>
             <td>The Licensee consuming the service.—</td>
         </tr>
         <tr>
             <td><code>price</code></td>
-            <td>StatementPriceSummary</td>
+            <td><a href="#statementpricesummary">StatementPriceSummary</a </td>
 	        <td></td>
 	        <td></td>
             <td>Contains the pricing summary for the statement.Pricing summary: currency (purchase, sale, rate), totalPP, totalSP, totalBSP, markup, margin.markup, margin, totalPP, and purchase currency/rate are Operations-only; totalSP/totalBSP and sale currency are Client/Operations. Recalculated on every re-enrichment and on every add/remove-child. See BR-012</td>
         </tr>
         <tr>
             <td><code>processing</code></td>
-            <td>ProcessingSummary</td>
+            <td><a href="#processingsummary">ProcessingSummary</a </td>
 	        <td></td>
 	        <td></td>
             <td>Contains the processing summary for the statement, visible to operations.Processing summary: total, ready, error, split, skipped, ignored counts.Operations-only</td>
         </tr>
         <tr>
             <td><code>statusNotes</code></td>
-            <td>BillingParametrisedMessage</td>
+            <td><a href="#billingparametrisedmessage">BillingParametrisedMessage</a </td>
 	        <td></td>
 	        <td></td>
             <td>Contains additional notes or messages about the status of the statement, if applicable.A message and parameters describing the current status.The message is required when transitioning to Error. Absent from response when null</td>
         </tr>
         <tr>
             <td><code>error</code></td>
-            <td>BillingError</td>
+            <td><a href="#billingerror">BillingError</a </td>
 	        <td></td>
 	        <td></td>
             <td>Represents any error associated with the statement, visible to clients or operations</td>
         </tr>
         <tr>
             <td><code>creditMemo</code></td>
-            <td>CreditMemoRef</td>
+            <td><a href="#creditmemoref">CreditMemoRef</a </td>
 	        <td></td>
 	        <td></td>
             <td>The downstream ERP Credit Memo, once created.Populated only for a Credit-type Statement</td>
         </tr>
         <tr>
             <td><code>invoice</code></td>
-            <td>InvoiceRef</td>
+            <td><a href="#invoiceref">InvoiceRef</a </td>
 	        <td></td>
 	        <td></td>
             <td>The downstream ERP Sales Order/Invoice, once created.Populated only for a Debit-type Statement</td>
         </tr>
         <tr>
             <td><code>backup</code></td>
-            <td>BackupDetails</td>
+            <td><a href="#backupdetails">BackupDetails</a </td>
 	        <td></td>
 	        <td></td>
             <td>Backup details for the statement.Status and date of the Statement's data export/backup.Operations-only</td>
         </tr>
         <tr>
             <td><code>parent</code></td>
-            <td>StatementRef</td>
+            <td><a href="#statementref">StatementRef</a </td>
 	        <td></td>
 	        <td></td>
             <td>The Consolidated parent Statement this Statement is linked to, if any.Set by add-child, cleared by remove-child or by the parent's own cancel. See T16/T17/T19/T20</td>
         </tr>
         <tr>
             <td><code>statistics</code></td>
-            <td>StatementStatistics</td>
+            <td><a href="#statementstatistics">StatementStatistics</a </td>
 	        <td></td>
 	        <td></td>
             <td>Statistics to summarize the composition of a statement.Counts of distinct child Statements, Products, Agreements, and Licensees — Consolidated parent only.Client/Operations visible. Recalculated on every add/remove-child</td>
@@ -273,42 +273,42 @@ A Statement is the client-facing billing document the platform's billing pipelin
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>type</code></td>
-            <td>AccountType</td>
+            <td> AccountType</td>
 	        <td></td>
 	        <td></td>
             <td>. Allowed values: Client,Vendor,Operations</td>
         </tr>
         <tr>
             <td><code>status</code></td>
-            <td>AccountStatus</td>
+            <td> AccountStatus</td>
 	        <td></td>
 	        <td></td>
             <td>. Allowed values: Active,Enabled,Disabled</td>
@@ -333,35 +333,35 @@ A Statement is the client-facing billing document the platform's billing pipelin
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>status</code></td>
-            <td>AgreementStatus</td>
+            <td> AgreementStatus</td>
 	        <td></td>
 	        <td></td>
             <td>. Allowed values: New,Draft,Provisioning,Updating,Active,Terminated,Failed,Deleted</td>
@@ -386,14 +386,14 @@ Represents the details of a backup operation, including its status and date.
     <tbody>
         <tr>
             <td><code>status</code></td>
-            <td>BackupStatus</td>
+            <td> BackupStatus</td>
 	        <td></td>
 	        <td></td>
             <td>Status of the backup. Allowed values: Pending,Exporting,Exported,Verifying,Completed,Failed,Skipped</td>
         </tr>
         <tr>
             <td><code>date</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>Date and time of the backup action, if available</td>
@@ -418,28 +418,28 @@ Represents an error related to a billing entity.
     <tbody>
         <tr>
             <td><code>errorCode</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>Represents the error code associated with the billing entity</td>
         </tr>
         <tr>
             <td><code>errorMessage</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>Represents the error message providing details about the issue</td>
         </tr>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>Represents the unique identifier for the error, if applicable</td>
         </tr>
         <tr>
             <td><code>message</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>Represents the detailed message associated with the error, if applicable</td>
@@ -464,14 +464,14 @@ Represents a message with associated parameters for use in parameterized communi
     <tbody>
         <tr>
             <td><code>message</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td>Gets the message associated with the current object</td>
         </tr>
         <tr>
             <td><code>parameters</code></td>
-            <td>object</td>
+            <td> object</td>
 	        <td></td>
 	        <td></td>
             <td>Gets the parameters associated with the current request or operation</td>
@@ -496,28 +496,28 @@ Represents a message with associated parameters for use in parameterized communi
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -542,14 +542,14 @@ Represents a credit memo in the billing system.
     <tbody>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td>The unique identifier of the credit memo</td>
@@ -574,21 +574,21 @@ Represents a custom ledger in the billing system.
     <tbody>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td>The unique identifier of the custom ledger</td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td>Name of the custom ledger</td>
@@ -613,14 +613,14 @@ Represents an invoice entity in the billing system.
     <tbody>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td>The unique identifier of the invoice</td>
@@ -645,14 +645,14 @@ Represents a ledger in the billing system.
     <tbody>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td>The unique identifier of the ledger</td>
@@ -677,35 +677,35 @@ Represents a ledger in the billing system.
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>externalId</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -730,28 +730,28 @@ Represents a ledger in the billing system.
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -776,7 +776,7 @@ Represents a ledger in the billing system.
     <tbody>
         <tr>
             <td><code>omitted</code></td>
-            <td>array</td>
+            <td> array</td>
 	        <td></td>
 	        <td></td>
             <td></td>
@@ -801,14 +801,14 @@ Represents a ledger in the billing system.
     <tbody>
         <tr>
             <td><code>at</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>by</code></td>
-            <td>PlatformIdentityRef</td>
+            <td><a href="#platformidentityref">PlatformIdentityRef</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
@@ -833,21 +833,21 @@ Represents the currency details for pricing, including purchase and sale values.
     <tbody>
         <tr>
             <td><code>purchase</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>vendor,ops</td>
             <td>Indicates the purchase price currency visible to vendors or operations</td>
         </tr>
         <tr>
             <td><code>sale</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,ops</td>
             <td>Indicates the sale price currency visible to clients or operations</td>
         </tr>
         <tr>
             <td><code>rate</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>ops</td>
             <td>Exchange rate between the purchase and sale currencies</td>
@@ -872,42 +872,42 @@ Represents a summary of the processing status for various billing operations.
     <tbody>
         <tr>
             <td><code>total</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>Indicates the total number of items involved in the processing</td>
         </tr>
         <tr>
             <td><code>ready</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>Indicates the number of items that are ready for further processing</td>
         </tr>
         <tr>
             <td><code>error</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>Indicates the number of items that encountered errors during processing</td>
         </tr>
         <tr>
             <td><code>split</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>Indicates the number of items that were split into multiple parts during processing</td>
         </tr>
         <tr>
             <td><code>skipped</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>Indicates the number of items that were skipped during processing</td>
         </tr>
         <tr>
             <td><code>ignored</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>Indicates the number of items that were manually ignored</td>
@@ -932,14 +932,14 @@ Represents a summary of the processing status for various billing operations.
     <tbody>
         <tr>
             <td><code>operations</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>defaultErpItem</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -964,42 +964,42 @@ Represents a summary of the processing status for various billing operations.
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>externalIds</code></td>
-            <td>ProductExternalIdBag</td>
+            <td><a href="#productexternalidbag">ProductExternalIdBag</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>status</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -1024,35 +1024,35 @@ Represents a summary of the processing status for various billing operations.
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>externalId</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -1077,77 +1077,77 @@ Represents a container for audit-related events for a statement
     <tbody>
         <tr>
             <td><code>created</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>updated</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>generated</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td>Contains details about the most recent event when the statement reached the "Generated" status</td>
         </tr>
         <tr>
             <td><code>queued</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td>Contains details about the most recent event when the statement reached the "Queued" status</td>
         </tr>
         <tr>
             <td><code>error</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td>Contains details about the most recent event when the statement reached the "Error" status</td>
         </tr>
         <tr>
             <td><code>cancelled</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td>Contains details about the most recent event when the statement reached the "Cancelled" status</td>
         </tr>
         <tr>
             <td><code>pending</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td>Contains details about the most recent event when the statement reached the "Pending" status</td>
         </tr>
         <tr>
             <td><code>issued</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td>Contains details about the most recent event when the statement reached the "Issued" status</td>
         </tr>
         <tr>
             <td><code>generating</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td>Contains details about the most recent event when the statement reached the "Generating" status</td>
         </tr>
         <tr>
             <td><code>consolidating</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td>Contains details about the most recent event when the statement reached the "Consolidating" status</td>
         </tr>
         <tr>
             <td><code>consolidated</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td>Contains details about the most recent event when the statement reached the "Consolidated" status</td>
@@ -1172,28 +1172,28 @@ Represents external identifiers associated with a billing statement.
     <tbody>
         <tr>
             <td><code>operations</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td>Represents the identifier used for operations in the billing system</td>
         </tr>
         <tr>
             <td><code>vendor</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td>Represents the identifier used for vendors in the billing system</td>
         </tr>
         <tr>
             <td><code>erpId</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td>Represents the identifier used in the ERP system for the statement, if applicable</td>
         </tr>
         <tr>
             <td><code>client</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td>Represents the identifier used for clients in the billing system</td>
@@ -1218,42 +1218,42 @@ Represents a detailed summary of pricing for a billing statement, including curr
     <tbody>
         <tr>
             <td><code>markup</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>ops</td>
             <td>Represents the markup value applied to the pricing</td>
         </tr>
         <tr>
             <td><code>margin</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>ops</td>
             <td>Represents the margin value calculated for the pricing</td>
         </tr>
         <tr>
             <td><code>totalPP</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>vendor,ops</td>
             <td>Represents the total purchase price</td>
         </tr>
         <tr>
             <td><code>totalBSP</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>client,ops</td>
             <td>Represents the total sale price in buyer currency</td>
         </tr>
         <tr>
             <td><code>currency</code></td>
-            <td>PriceCurrency</td>
+            <td><a href="#pricecurrency">PriceCurrency</a </td>
 	        <td></td>
 	        <td></td>
             <td>Specifies the currency details for the pricing, including purchase and sale values</td>
         </tr>
         <tr>
             <td><code>totalSP</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>client,ops</td>
             <td>Represents the total sale price</td>
@@ -1278,14 +1278,14 @@ Represents a billing statement in the system, containing details about transacti
     <tbody>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td>The unique identifier of the statement</td>
@@ -1310,28 +1310,28 @@ Counts of key dimensions derived from child statements, recalculated on consolid
     <tbody>
         <tr>
             <td><code>statements</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>Gets or sets the count of child statements</td>
         </tr>
         <tr>
             <td><code>products</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>Gets or sets the count of distinct products across child statements</td>
         </tr>
         <tr>
             <td><code>agreements</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>Gets or sets the count of distinct agreements across child statements</td>
         </tr>
         <tr>
             <td><code>licensees</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>Gets or sets the count of distinct licensees across child statements</td>

@@ -24,119 +24,119 @@ Represents a custom ledger in the billing system.
     <tbody>
         <tr>
             <td><code>audit</code></td>
-            <td>CustomLedgerAuditBag</td>
+            <td><a href="#customledgerauditbag">CustomLedgerAuditBag</a </td>
 	        <td></td>
 	        <td></td>
             <td>Represents a container for audit-related events for a custom ledger</td>
         </tr>
         <tr>
             <td><code>$meta</code></td>
-            <td>PlatformMetadata</td>
+            <td><a href="#platformmetadata">PlatformMetadata</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td>The unique identifier of the custom ledger</td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td>Name of the custom ledger</td>
         </tr>
         <tr>
             <td><code>externalIds</code></td>
-            <td>BillingExternalIds</td>
+            <td><a href="#billingexternalids">BillingExternalIds</a </td>
 	        <td></td>
 	        <td></td>
             <td>External identifiers associated with the custom ledger</td>
         </tr>
         <tr>
             <td><code>seller</code></td>
-            <td>SellerRef</td>
+            <td><a href="#sellerref">SellerRef</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>vendor</code></td>
-            <td>AccountRef</td>
+            <td><a href="#accountref">AccountRef</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>billingStartDate</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>The start date of the billing period for the custom ledger</td>
         </tr>
         <tr>
             <td><code>billingEndDate</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>The end date of the billing period for the custom ledger</td>
         </tr>
         <tr>
             <td><code>notes</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>Additional notes or comments about the custom ledger</td>
         </tr>
         <tr>
             <td><code>status</code></td>
-            <td>CustomLedgerStatus</td>
+            <td> CustomLedgerStatus</td>
 	        <td></td>
 	        <td></td>
             <td>The current status of the custom ledger. Allowed values: Draft,Deleted,Validating,Validated,Error,Generating,Generated,Queued,Completed</td>
         </tr>
         <tr>
             <td><code>assignee</code></td>
-            <td>PlatformIdentityRef</td>
+            <td><a href="#platformidentityref">PlatformIdentityRef</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>price</code></td>
-            <td>CustomLedgerPriceSummary</td>
+            <td><a href="#customledgerpricesummary">CustomLedgerPriceSummary</a </td>
 	        <td></td>
 	        <td></td>
             <td>Pricing details associated with the custom ledger</td>
         </tr>
         <tr>
             <td><code>processing</code></td>
-            <td>ProcessingSummary</td>
+            <td><a href="#processingsummary">ProcessingSummary</a </td>
 	        <td></td>
 	        <td></td>
             <td>Processing status and related details for the custom ledger, visible to operations</td>
         </tr>
         <tr>
             <td><code>error</code></td>
-            <td>BillingError</td>
+            <td><a href="#billingerror">BillingError</a </td>
 	        <td></td>
 	        <td></td>
             <td>Error details associated with the custom ledger, if any</td>
         </tr>
         <tr>
             <td><code>backup</code></td>
-            <td>BackupDetails</td>
+            <td><a href="#backupdetails">BackupDetails</a </td>
 	        <td></td>
 	        <td></td>
             <td>Backup details for the custom ledger</td>
@@ -162,42 +162,42 @@ Represents a custom ledger in the billing system.
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>type</code></td>
-            <td>AccountType</td>
+            <td> AccountType</td>
 	        <td></td>
 	        <td></td>
             <td>. Allowed values: Client,Vendor,Operations</td>
         </tr>
         <tr>
             <td><code>status</code></td>
-            <td>AccountStatus</td>
+            <td> AccountStatus</td>
 	        <td></td>
 	        <td></td>
             <td>. Allowed values: Active,Enabled,Disabled</td>
@@ -222,14 +222,14 @@ Represents the details of a backup operation, including its status and date.
     <tbody>
         <tr>
             <td><code>status</code></td>
-            <td>BackupStatus</td>
+            <td> BackupStatus</td>
 	        <td></td>
 	        <td></td>
             <td>Status of the backup. Allowed values: Pending,Exporting,Exported,Verifying,Completed,Failed,Skipped</td>
         </tr>
         <tr>
             <td><code>date</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>Date and time of the backup action, if available</td>
@@ -254,28 +254,28 @@ Represents an error related to a billing entity.
     <tbody>
         <tr>
             <td><code>errorCode</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>Represents the error code associated with the billing entity</td>
         </tr>
         <tr>
             <td><code>errorMessage</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>Represents the error message providing details about the issue</td>
         </tr>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>Represents the unique identifier for the error, if applicable</td>
         </tr>
         <tr>
             <td><code>message</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>Represents the detailed message associated with the error, if applicable</td>
@@ -300,14 +300,14 @@ Represents external identifiers associated with billing entities.
     <tbody>
         <tr>
             <td><code>operations</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td>Represents the identifier used for operations in the billing system</td>
         </tr>
         <tr>
             <td><code>vendor</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td>Represents the identifier used for vendors in the billing system</td>
@@ -332,77 +332,77 @@ Represents a container for audit-related events for a custom ledger
     <tbody>
         <tr>
             <td><code>created</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>updated</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
         </tr>
         <tr>
             <td><code>draft</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td>Contains details about the most recent event when the custom ledger reached the "Draft" status</td>
         </tr>
         <tr>
             <td><code>deleted</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td>Contains details about the most recent event when the custom ledger reached the "Deleted" status</td>
         </tr>
         <tr>
             <td><code>validating</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td>Contains details about the most recent event when the custom ledger reached the "Validating" status</td>
         </tr>
         <tr>
             <td><code>validated</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td>Contains details about the most recent event when the custom ledger reached the "Validated" status</td>
         </tr>
         <tr>
             <td><code>error</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td>Contains details about the most recent event when the custom ledger reached the "Error" status</td>
         </tr>
         <tr>
             <td><code>generating</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td>Contains details about the most recent event when the custom ledger reached the "Generating" status</td>
         </tr>
         <tr>
             <td><code>generated</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td>Contains details about the most recent event when the custom ledger reached the "Generated" status</td>
         </tr>
         <tr>
             <td><code>queued</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td>Contains details about the most recent event when the custom ledger reached the "Queued" status</td>
         </tr>
         <tr>
             <td><code>completed</code></td>
-            <td>PlatformObjectEvent</td>
+            <td><a href="#platformobjectevent">PlatformObjectEvent</a </td>
 	        <td></td>
 	        <td></td>
             <td>Contains details about the most recent event when the custom ledger reached the "Completed" status</td>
@@ -427,42 +427,42 @@ Represents a detailed summary of pricing for a custom ledger, including currency
     <tbody>
         <tr>
             <td><code>markup</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>ops</td>
             <td>Represents the markup value applied to the pricing</td>
         </tr>
         <tr>
             <td><code>margin</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>ops</td>
             <td>Represents the margin value calculated for the pricing</td>
         </tr>
         <tr>
             <td><code>totalPP</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>vendor,ops</td>
             <td>Represents the total purchase price</td>
         </tr>
         <tr>
             <td><code>totalBSP</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>client,ops</td>
             <td>Represents the total sale price in buyer currency</td>
         </tr>
         <tr>
             <td><code>currency</code></td>
-            <td>PriceCurrency</td>
+            <td><a href="#pricecurrency">PriceCurrency</a </td>
 	        <td></td>
 	        <td></td>
             <td>Specifies the currency details for the pricing, including purchase and sale values</td>
         </tr>
         <tr>
             <td><code>totalSP</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>client,ops</td>
             <td>Represents the total sale price</td>
@@ -487,28 +487,28 @@ Represents a detailed summary of pricing for a custom ledger, including currency
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
@@ -533,7 +533,7 @@ Represents a detailed summary of pricing for a custom ledger, including currency
     <tbody>
         <tr>
             <td><code>omitted</code></td>
-            <td>array</td>
+            <td> array</td>
 	        <td></td>
 	        <td></td>
             <td></td>
@@ -558,14 +558,14 @@ Represents a detailed summary of pricing for a custom ledger, including currency
     <tbody>
         <tr>
             <td><code>at</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>by</code></td>
-            <td>PlatformIdentityRef</td>
+            <td><a href="#platformidentityref">PlatformIdentityRef</a </td>
 	        <td></td>
 	        <td></td>
             <td></td>
@@ -590,21 +590,21 @@ Represents the currency details for pricing, including purchase and sale values.
     <tbody>
         <tr>
             <td><code>purchase</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>vendor,ops</td>
             <td>Indicates the purchase price currency visible to vendors or operations</td>
         </tr>
         <tr>
             <td><code>sale</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td></td>
 	        <td>client,ops</td>
             <td>Indicates the sale price currency visible to clients or operations</td>
         </tr>
         <tr>
             <td><code>rate</code></td>
-            <td>number</td>
+            <td> number</td>
 	        <td></td>
 	        <td>ops</td>
             <td>Exchange rate between the purchase and sale currencies</td>
@@ -629,42 +629,42 @@ Represents a summary of the processing status for various billing operations.
     <tbody>
         <tr>
             <td><code>total</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>Indicates the total number of items involved in the processing</td>
         </tr>
         <tr>
             <td><code>ready</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>Indicates the number of items that are ready for further processing</td>
         </tr>
         <tr>
             <td><code>error</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>Indicates the number of items that encountered errors during processing</td>
         </tr>
         <tr>
             <td><code>split</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>Indicates the number of items that were split into multiple parts during processing</td>
         </tr>
         <tr>
             <td><code>skipped</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>Indicates the number of items that were skipped during processing</td>
         </tr>
         <tr>
             <td><code>ignored</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td></td>
 	        <td>client,vendor,ops</td>
             <td>Indicates the number of items that were manually ignored</td>
@@ -689,35 +689,35 @@ Represents a summary of the processing status for various billing operations.
     <tbody>
         <tr>
             <td><code>id</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>name</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>icon</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>revision</code></td>
-            <td>integer</td>
+            <td> integer</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
         </tr>
         <tr>
             <td><code>externalId</code></td>
-            <td>string</td>
+            <td> string</td>
 	        <td><code>core</code></td>
 	        <td>client,vendor,ops</td>
             <td></td>
