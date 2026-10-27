@@ -5,13 +5,7 @@ The Marketplace Platform provides three distinct user interfaces, namely the Cli
 The diagrams show different transitions depending on whether the account is a Client/Partner or a Vendor, but the underlying statuses are the same.
 {% endhint %}
 
-<img
-  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAIAAAD91JpzAAAAFUlEQVR4nAXBAQEAAACAEP9PF0JQGR7vBPykAXTzAAAAAElFTkSuQmCC"
-  alt="Four pixels: red, green, blue, and yellow"
-  width="160"
-  height="160"
-  style="image-rendering: pixelated;"
-/>
+
 
 
 ## Diagram
